@@ -1,0 +1,31 @@
+{
+  "request": {
+    "phoneNumber": "8005550123",
+    "email": "",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_CORRELATION"
+    ]
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "8005550123",
+      "cleansedPhoneNumber": "+918005550123",
+      "referenceId": "UI-73bdb9fa2c0fb8bc3c207c543f464e39ee5c97e1",
+      "requestedPackages": [
+        "IDENTITY_CORRELATION"
+      ]
+    },
+    "errors": [
+      {
+        "package": "IDENTITY_CORRELATION",
+        "message": "At least one Additional search parameter email or ip address is required.",
+        "code": "MISSING_ADDITIONAL_SEARCH_PARAMETER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

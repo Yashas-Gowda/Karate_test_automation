@@ -1,0 +1,71 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "15560000000",
+    "phoneDefaultCountryCode": "MX"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "525560000000",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": false,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "MX",
+          "originalCarrier": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+            "originalCarrierCircle": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+            "serviceProfileId": "52512"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "15560000000",
+      "cleansedPhoneNumber": "+525560000000",
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+  }

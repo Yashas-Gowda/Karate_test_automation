@@ -1,0 +1,56 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "email": "krishankumar.1765@gmail.com",
+    "phoneNumber": "9998107772",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "accounts": [
+            {
+              "appName": "Paytm",
+              "nameAtBank": "Suraj Ramdas Thorat",
+              "upiId": "9998107772@paytm"
+            },
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "SURAJ RAMDAS THORAT",
+              "upiId": "9998107772@ibl"
+            },
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "KRISHAN KUMAR",
+              "upiId": "krishankumar.1765@okhdfcbank"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9998107772",
+      "cleansedPhoneNumber": "+919998107772",
+      "referenceId": "#ignore",
+      "inputEmail": "krishankumar.1765@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}

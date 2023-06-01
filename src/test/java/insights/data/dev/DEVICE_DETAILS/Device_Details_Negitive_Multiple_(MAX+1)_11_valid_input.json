@@ -1,0 +1,23 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": []
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "DEVICE_DETAILS",
+        "message": "Number of devices Ids are more than 10",
+        "code": "NUMBER_OF_DEVICE_IDS_EXCEEDED",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": ""
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "upiId": "9108510043@axl",
+    "countryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": {
+          "isUpiValid": true,
+          "name": "YASHAS GOWDA E M"
+        },
+        "advanced": null
+      },
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "inputUpiId": "9108510043@axl",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

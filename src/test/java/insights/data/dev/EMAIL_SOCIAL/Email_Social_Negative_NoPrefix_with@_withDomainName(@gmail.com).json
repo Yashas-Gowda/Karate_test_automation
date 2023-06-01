@@ -1,0 +1,22 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "@gmail.com"
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "EMAIL_BASIC",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

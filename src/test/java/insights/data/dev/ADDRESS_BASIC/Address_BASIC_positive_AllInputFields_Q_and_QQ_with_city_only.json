@@ -1,0 +1,83 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_BASIC"
+    ],
+    "address": {
+      "addressLine1": "TajMahal",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "addressLine5": "",
+      "addressLine6": "",
+      "addressLine7": "",
+      "addressLine8": "",
+      "city": "Agra",
+      "state": "",
+      "postalCode": "",
+      "Country": ""
+    }
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": {
+          "records": [
+            {
+              "cleansedAddress": "Tajmahal, Agra, Taj Nature Walk & Forest Area, Forest Area, Agra 282006, India",
+              "city": "Agra",
+              "state": "Uttar Pradesh",
+              "postalCode": "282006",
+              "countryName": "India",
+              "countryISO3166_1_Alpha2": null,
+              "countryISO3166_1_Alpha3": "IND",
+              "building": null,
+              "premisesNumber": null,
+              "subPremisesType": null,
+              "subPremisesNumber": null,
+              "postbox": null,
+              "latitude": "27.17359",
+              "longitude": "78.04496",
+              "addressType": null,
+              "utcOffset": null,
+              "observesDst": null,
+              "resultType": "place",
+              "district": "Forest Area"
+            }
+          ]
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "ADDRESS_BASIC"
+      ],
+      "inputAddress": {
+        "addressLine1": "TajMahal",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": "",
+        "addressLine6": "",
+        "addressLine7": "",
+        "addressLine8": "",
+        "city": "Agra",
+        "state": "",
+        "postalCode": "",
+        "country": null
+      }
+    },
+    "errors": []
+  }
+}

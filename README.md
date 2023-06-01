@@ -1,29 +1,29 @@
-# README #
+# Monnai Test/QA Automation #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repository constitutes of test cases automated at feture level.
 
-### What is this repository for? ###
+### Requirements? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* [Java 1.7 Above](https://openjdk.org/projects/jdk/17/)
+* [Maven Latest](https://maven.apache.org/)
+
+OR
+
+* [Use Brew to install above plugins or frameworks](https://brew.sh/)
+
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Clone the repo
+* Import it in any IDE like VS Code or IntelliJ IDE
+* [Please refer plugin installation for VS code](https://marketplace.visualstudio.com/items?itemName=karatelabs.karate)
+* [Please refer plugin installation for VS code](https://plugins.jetbrains.com/plugin/19232-karate)
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Please write your test cases in following product / package
+* Maintain sanity while writing TCs with proper comments or jira for any enhancements requested for any service
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Owner ( Sameena@Monnai.com OR Yashas@Monnai.com )

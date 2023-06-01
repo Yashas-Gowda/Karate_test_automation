@@ -1,0 +1,59 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IP_BASIC"
+    ],
+    "ipAddress": "192.168.1.1"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": {
+        "basic": {
+          "location": {
+            "country": "N/A",
+            "region": "N/A",
+            "city": "N/A",
+            "latitude": 0.0,
+            "longitude": 0.0,
+            "postalCode": null,
+            "timeZone": "N/A",
+            "geoNameId": null
+          },
+          "internetServiceProvider": "Private IP Address",
+          "connectionType": "data center",
+          "autonomousSystemNumber": 0,
+          "organization": "N/A",
+          "isCrawler": false,
+          "host": "N/A",
+          "proxy": true,
+          "vpn": true,
+          "tor": false,
+          "activeVpn": false,
+          "activeTor": false,
+          "recentAbuse": true,
+          "botStatus": true,
+          "abuseVelocity": "high"
+        }
+      },
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "inputIpAddress": "192.168.1.1",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

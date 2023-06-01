@@ -1,0 +1,104 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_BASIC"
+    ],
+    "address": {
+      "addressLine1": "S",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "addressLine5": "",
+      "addressLine6": "",
+      "addressLine7": "",
+      "addressLine8": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "Country": ""
+    }
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": {
+          "records": [
+            {
+              "cleansedAddress": "Värmlands län, Sverige",
+              "city": null,
+              "state": "Värmlands län",
+              "postalCode": null,
+              "countryName": "Sverige",
+              "countryISO3166_1_Alpha2": null,
+              "countryISO3166_1_Alpha3": "SWE",
+              "building": null,
+              "premisesNumber": null,
+              "subPremisesType": null,
+              "subPremisesNumber": null,
+              "postbox": null,
+              "latitude": "59.3805",
+              "longitude": "13.49937",
+              "addressType": null,
+              "utcOffset": null,
+              "observesDst": null,
+              "resultType": "administrativeArea",
+              "district": null
+            },
+            {
+              "cleansedAddress": "الجنوب, لبنان",
+              "city": null,
+              "state": "الجنوب",
+              "postalCode": null,
+              "countryName": "لبنان",
+              "countryISO3166_1_Alpha2": null,
+              "countryISO3166_1_Alpha3": "LBN",
+              "building": null,
+              "premisesNumber": null,
+              "subPremisesType": null,
+              "subPremisesNumber": null,
+              "postbox": null,
+              "latitude": "33.56253",
+              "longitude": "35.36757",
+              "addressType": null,
+              "utcOffset": null,
+              "observesDst": null,
+              "resultType": "administrativeArea",
+              "district": null
+            }
+          ]
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "ADDRESS_BASIC"
+      ],
+      "inputAddress": {
+        "addressLine1": "S",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": "",
+        "addressLine6": "",
+        "addressLine7": "",
+        "addressLine8": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": null
+      }
+    },
+    "errors": []
+  }
+}

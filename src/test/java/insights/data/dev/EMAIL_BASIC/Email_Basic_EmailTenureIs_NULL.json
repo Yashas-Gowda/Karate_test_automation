@@ -1,0 +1,67 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "PARAS.SHARMA2@HDFCBANK.COM"
+  },
+  "response":{
+  "data": {
+    "phone": null,
+    "email": {
+      "social": null,
+      "basic": {
+        "deliverable": true,
+        "domainDetails": {
+          "domainName": "hdfcbank.com",
+          "tld": ".com",
+          "creationTime": null,
+          "updateTime": null,
+          "expiryTime": null,
+          "registered": true,
+          "companyName": null,
+          "disposable": false,
+          "freeProvider": false,
+          "dmarcCompliance": true,
+          "spfStrict": true,
+          "suspiciousTld": false,
+          "websiteExists": true,
+          "acceptAll": false,
+          "custom": true
+        },
+        "breach": {
+          "isBreached": false,
+          "noOfBreaches": 0,
+          "firstBreach": null,
+          "lastBreach": null,
+          "breaches": []
+        },
+        "emailTenure": null
+      }
+    },
+    "address": null,
+    "name": null,
+    "ip": null,
+    "identity": null,
+    "upi": null,
+    "device": null,
+    "bre": null
+  },
+  "meta": {
+    "inputPhoneNumber": null,
+    "cleansedPhoneNumber": null,
+    "referenceId": "#ignore",
+    "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
+    "inputIpAddress": null,
+    "inputUpiId": null,
+    "inputDeviceIds": null,
+    "requestedPackages": [
+      "EMAIL_BASIC"
+    ],
+    "inputAddress": null
+  },
+  "errors": []
+}
+}

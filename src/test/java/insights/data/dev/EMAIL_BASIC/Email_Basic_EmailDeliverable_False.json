@@ -1,0 +1,62 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "sdfdsfsd@HDFCBANK.COM"
+  },
+  "response":{
+    "phone": null,
+    "email": {
+      "social": null,
+      "basic": {
+        "deliverable": true,
+        "domainDetails": {
+          "domainName": "hdfcbank.com",
+          "tld": ".com",
+          "creationTime": null,
+          "updateTime": null,
+          "expiryTime": null,
+          "registered": true,
+          "companyName": null,
+          "disposable": false,
+          "freeProvider": false,
+          "dmarcCompliance": true,
+          "spfStrict": true,
+          "suspiciousTld": false,
+          "websiteExists": true,
+          "acceptAll": false,
+          "custom": true
+        },
+        "breach": {
+          "isBreached": false,
+          "noOfBreaches": 0,
+          "firstBreach": null,
+          "lastBreach": null,
+          "breaches": [
+          ]
+        },
+        "emailTenure": null
+      }
+    },
+    "address": null,
+    "name": null,
+    "ip": null,
+    "identity": null,
+    "upi": null,
+    "device": null,
+    "employment": null,
+    "bre": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "inputEmail": "sdfdsfsd@HDFCBANK.COM",
+    "requestedPackages": [
+      "EMAIL_BASIC"
+    ]
+  },
+  "errors": [
+  ]
+}

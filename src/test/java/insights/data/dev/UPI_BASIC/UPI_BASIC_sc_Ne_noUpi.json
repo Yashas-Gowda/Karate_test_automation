@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "upiId": "",
+    "countryCode": "IN"
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "UPI_BASIC",
+        "message": "Invalid UPI address",
+        "code": "INVALID_UPI",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "UPI_BASIC",
+        "message": "Missing UPI address",
+        "code": "MISSING_UPI",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": []
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "8d182c92-781c-441f-a179-4dcdac151bb3",
+            "country": "IN",
+            "lastModified": "2023-02-13",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "OnePlus",
+              "model": "A3003 (3)"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": 23.11875343322754,
+                "longitude": 70.11594772338867,
+                "city": "Anjar",
+                "state": "GJ",
+                "zipCode": "370110"
+              },
+              "mostSeenLocation": {
+                "latitude": 23.063135147094727,
+                "longitude": 70.10805130004883,
+                "city": "Adipur",
+                "state": "GJ",
+                "zipCode": "370205"
+              }
+            }
+          },
+          {
+            "deviceId": "345d1cd3-a754-4556-800f-65fb37ccce66",
+            "country": "IN",
+            "lastModified": "2023-02-13",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Samsung",
+              "model": "SM-G770F"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "inputDeviceIds": [
+        "345d1cd3-a754-4556-800f-65fb37ccce66",
+        "8d182c92-781c-441f-a179-4dcdac151bb3"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

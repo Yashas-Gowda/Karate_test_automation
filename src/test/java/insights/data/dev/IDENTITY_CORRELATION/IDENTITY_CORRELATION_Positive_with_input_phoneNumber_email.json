@@ -1,0 +1,45 @@
+{
+  "request": {
+    "phoneNumber": "8005550123",
+    "email": "example@me.com",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_CORRELATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": {
+          "phoneAndEmailMatched": "YES",
+          "phoneAndIpAddressMatched": "NO_INPUT",
+          "phoneAndIpLocationMatched": "NO_INPUT",
+          "phoneEmailAndIpAddressMatched": "NO_INPUT"
+        },
+        "enrichment": null,
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "8005550123",
+      "cleansedPhoneNumber": "+918005550123",
+      "referenceId": "#ignore",
+      "inputEmail": "example@me.com",
+      "requestedPackages": [
+        "IDENTITY_CORRELATION"
+      ]
+    },
+    "errors": []
+  }
+}

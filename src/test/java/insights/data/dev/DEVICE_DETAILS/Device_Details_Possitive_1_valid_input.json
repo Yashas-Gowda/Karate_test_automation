@@ -1,0 +1,74 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": [
+      "d498b340-25fc-4cf3-a927-c9a37f885841"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "d498b340-25fc-4cf3-a927-c9a37f885841",
+            "country": "IN",
+            "lastModified": "2023-02-13",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Xiaomi",
+              "model": "M2006C3MII"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "inputDeviceIds": [
+        "d498b340-25fc-4cf3-a927-c9a37f885841"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

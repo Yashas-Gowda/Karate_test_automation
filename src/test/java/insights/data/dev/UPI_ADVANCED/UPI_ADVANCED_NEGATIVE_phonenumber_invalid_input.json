@@ -1,0 +1,22 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "phoneNumber":"9108510043",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

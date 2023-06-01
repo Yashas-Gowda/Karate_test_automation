@@ -1,0 +1,59 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IP_BASIC"
+    ],
+    "ipAddress": "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": {
+        "basic": {
+          "location": {
+            "country": "SG",
+            "region": "N/A",
+            "city": "Singapore",
+            "latitude": 1.28999996,
+            "longitude": 103.86000061,
+            "postalCode": null,
+            "timeZone": "Asia/Singapore",
+            "geoNameId": null
+          },
+          "internetServiceProvider": "Asia Pacific Network Information Centre",
+          "connectionType": "data center",
+          "autonomousSystemNumber": 45154,
+          "organization": "N/A",
+          "isCrawler": false,
+          "host": "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF",
+          "proxy": true,
+          "vpn": true,
+          "tor": false,
+          "activeVpn": false,
+          "activeTor": false,
+          "recentAbuse": false,
+          "botStatus": false,
+          "abuseVelocity": "low"
+        }
+      },
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "#ignore",
+      "inputIpAddress": "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
