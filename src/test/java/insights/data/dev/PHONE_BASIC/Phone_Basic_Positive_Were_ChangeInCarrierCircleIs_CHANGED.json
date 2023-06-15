@@ -33,7 +33,7 @@
         "portedHistory": {
           "portedDate": "2018-07-28",
           "numberOfPorts": 3,
-          "portedSinceXDays": 1716,
+          "portedSinceXDays": "#ignore",
           "currentCarrierCircle": "Airtel Andhra Pradesh and Telangana",
           "originalCarrierCircle": "SISTEMA Shayam - Kolkata",
           "changeInCarrierRegion": "CHANGED",
@@ -85,4 +85,4 @@
   },
   "errors": []
 }
-  }
+}

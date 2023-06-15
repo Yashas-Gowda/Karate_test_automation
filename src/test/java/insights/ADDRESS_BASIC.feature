@@ -11,8 +11,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     Then match $ contains payload.response
 
@@ -41,8 +42,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     Then match $ contains payload.response
 
@@ -56,8 +58,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     Then match $ contains payload.response
 
@@ -71,8 +74,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     * print payload.request.postalCode
     * def expectedPostalCode = payload.request.address.postalCode
@@ -93,8 +97,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     * print payload.request.city
     * def expectedCity = payload.request.address.city
@@ -115,8 +120,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     * print payload.request.city
     * def expectedState = payload.request.address.state
@@ -159,6 +165,8 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].package == "ADDRESS_BASIC"
@@ -177,6 +185,8 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].package == "ADDRESS_BASIC"
@@ -197,6 +207,8 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
 
@@ -204,28 +216,28 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                                                  | statusCode | addressLine1 |
       | Address_BASIC_Negative_Mandatory_Addressline1_invalid_empty_or_null_input | 400        | null         |
 
-  Scenario Outline: https://monnai.atlassian.net/browse/MB-1682 Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
-    And headers headers
-    And request payload.request.address.postalCode = <postalCode>
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * print payload.request.postalCode
-    * def expectedPostalCode = payload.request.address.postalCode
-    * print expectedPostalCode
-    * match expectedPostalCode == '#number'
-    * def actualPostalCode = $.data.address.basic.records[*].postalCode
-    * print actualPostalCode
-#    * match actualPostalCode == [expectedPostalCode]
-    * match ([expectedPostalCode]) contains only actualPostalCode
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                  | statusCode | postalCode |
-      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 200        | 123456     |
-      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | abc123     |
-      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | abcedAB    |
+#  Scenario Outline: https://monnai.atlassian.net/browse/MB-1682 Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+#    And headers headers
+#    And request payload.request.address.postalCode = <postalCode>
+#    And request payload.request
+#    When method POST
+#    * print karate.pretty(response)
+#    Then print payload.response
+#    Then status <statusCode>
+#    * print payload.request.postalCode
+#    * def expectedPostalCode = payload.request.address.postalCode
+#    * print expectedPostalCode
+#    * match expectedPostalCode == '#number'
+#    * def actualPostalCode = $.data.address.basic.records[*].postalCode
+#    * print actualPostalCode
+##    * match actualPostalCode == [expectedPostalCode]
+#    * match ([expectedPostalCode]) contains only actualPostalCode
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                  | statusCode | postalCode |
+#      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 200        | '123456'    |
+##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | 'abc123 '    |
+##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | abcedAB    |

@@ -35,6 +35,9 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
     Then match $ contains payload.response
     Examples:
@@ -46,7 +49,9 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
       | Phone_Basic_Positive_Were_ActiveStatusIs_NO                                                                                   | 200        |
       | Phone_Basic_Positive_Were_ActiveStatusIs_UNKNOWN                                                                              | 200        |
       | Phone_Basic_Positive_Were_ActiveStatusIs_YES                                                                                  | 200        |
-      | Phone_Basic_Positive_Were_ChangeInCarrierCircleIs_CHANGED                                                                     | 200        |
+#      | Phone_Basic_Positive_Were_ChangeInCarrierCircleIs_CHANGED                                                                     | 200        |
+      | Phone_Basic_Positive_Were_ChangeInCarrierCircleIs_NOT_CHANGED                                                                  | 200        |
+      | Phone_Basic_Positive_Were_ChangeInCarrierCircleIs_NOT_SUPPORTED                                                             | 200        |
       | Phone_Basic_Positive_were_changeInCarrierIs_NOTSUPPORTED_forregionOtherThenIndia                                              | 200        |
       | Phone_Basic_Positive_were_DeactivationStatusIs_Present                                                                        | 200        |
       | Phone_Basic_Positive_Were_PhoneDisaposable_True                                                                               | 200        |

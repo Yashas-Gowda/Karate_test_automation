@@ -20,14 +20,14 @@
         "advanced": {
           "accounts": [
             {
-              "appName": "Paytm",
-              "nameAtBank": "Yashasgowda E M . .",
-              "upiId": "9108510043@paytm"
-            },
-            {
               "appName": "PhonePe",
               "nameAtBank": "YASHAS GOWDA E M",
               "upiId": "9108510043@ybl"
+            },
+            {
+              "appName": "Paytm",
+              "nameAtBank": "Yashasgowda E M . .",
+              "upiId": "9108510043@paytm"
             }
           ]
         }
@@ -44,6 +44,7 @@
         "UPI_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

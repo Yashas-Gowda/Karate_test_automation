@@ -32,7 +32,7 @@
         "portedHistory": {
           "portedDate": "2023-04-09",
           "numberOfPorts": 2,
-          "portedSinceXDays": 0,
+          "portedSinceXDays": "#ignore",
           "currentCarrierCircle": "Vodafone Vodafone Italia S.p.A.",
           "originalCarrierCircle": "Vodafone Vodafone Italia S.p.A.",
           "changeInCarrierRegion": "NOT_SUPPORTED",

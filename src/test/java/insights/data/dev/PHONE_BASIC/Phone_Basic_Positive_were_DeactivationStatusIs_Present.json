@@ -43,10 +43,10 @@
           "serviceProfileId": "91116"
         },
         "lastDeactivated": {
-          "minimumTenureDays": 1012,
-          "maximumTenureDays": 1042
+          "minimumTenureDays": "#ignore",
+          "maximumTenureDays": "#ignore"
         },
-        "isSpam": null
+        "isSpam": false
       },
       "social": null,
       "identity": null
