@@ -1,0 +1,108 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneNumber": "6281518551",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "details": {
+          "pfVerification": {
+            "summary": {
+              "isEmployed": false,
+              "isNameUnique": true,
+              "isNameExact": true,
+              "isPfFiledLastMonth": false,
+              "hasPfFilingDetails": true,
+              "recentEmployerName": "Harish Milk And Milk Products Private Limited",
+              "noOfPfAccounts": 1,
+              "dateOfJoining": "2020-11-01",
+              "dateOfExit": null,
+              "matchingPfAccountNumber": "101226863051"
+            },
+            "pfDetails": [
+              {
+                "pfAccountNumber": "101226863051",
+                "name": "K PAVAN KALYAN",
+                "gender": "MALE",
+                "dateOfBirth": "1998-03-14",
+                "nationalIdVerificationStatus": true,
+                "employerName": "Harish Milk And Milk Products Private Limited",
+                "dateOfJoining": "2020-11-01",
+                "dateOfExit": null,
+                "reasonOfExit": "",
+                "additionalDetails": {
+                  "nationalId": "742828508928",
+                  "taxId": "EDXPP5195R",
+                  "email": "pavan85512@gmail.com",
+                  "bankAccountNumber": "125610100047327",
+                  "bankBranchCode": "UBIN0812561",
+                  "bankAddress": "UNION BANK OF INDIA,PETAMITTA",
+                  "pfNomineeName": "K DAMODARAM",
+                  "pfNomineeRelation": "FATHER"
+                }
+              }
+            ],
+            "pfFilingDetails": {
+              "employeePfMatches": [
+                {
+                  "name": "K PAVAN KALYAN",
+                  "confidence": 1.0,
+                  "pfHistory": {
+                    "APR-23": null,
+                    "MAR-23": null,
+                    "FEB-23": true
+                  }
+                }
+              ],
+              "employerPfFilingDetails": [
+                {
+                  "currency": "INR",
+                  "totalAmount": "41800",
+                  "employeeCount": 14,
+                  "wageMonth": "APR-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "72358",
+                  "employeeCount": 28,
+                  "wageMonth": "MAR-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "98054",
+                  "employeeCount": 37,
+                  "wageMonth": "FEB-23"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "income": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6281518551",
+      "cleansedPhoneNumber": "+916281518551",
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

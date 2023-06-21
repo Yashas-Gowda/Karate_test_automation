@@ -1,0 +1,39 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneNumber": "6206372776",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "details": {
+          "pfVerification": null
+        }
+      },
+      "income": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6206372776",
+      "cleansedPhoneNumber": "+916206372776",
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

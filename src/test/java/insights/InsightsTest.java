@@ -11,7 +11,7 @@ public class InsightsTest {
 
   @Karate.Test
   Karate testTags() {
-    return Karate.run("tags").tags("@second").relativeTo(getClass());
+    return Karate.run("EMPLOYMENT_DETAILS").tags("@second").relativeTo(getClass());
   }
 
   @Karate.Test

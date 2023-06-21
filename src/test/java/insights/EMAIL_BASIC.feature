@@ -4,6 +4,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+  @second
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
