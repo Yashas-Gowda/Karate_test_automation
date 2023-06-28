@@ -12,6 +12,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then print payload.response
     Then match $ contains payload.response
@@ -30,6 +32,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then status 200
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then match $ contains payload.response
 
@@ -52,6 +56,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     When method POST
     Then status 200
     Then match $ contains payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then print payload.response
     Then match payload.response.data.device.deviceRecords == '#[10]'
@@ -81,6 +87,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then print payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status 400
     And match $.errors[0].message == "Number of devices Ids are more than 10"
@@ -113,6 +121,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].message == "Device Ids cannot blank/null"
     And match $.errors[0].code == "MISSING_DEVICE_IDS"
@@ -135,6 +146,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].message == "Device Ids cannot blank/null"
     And match $.errors[0].code == "MISSING_DEVICE_IDS"
@@ -155,8 +169,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And headers headers
     And request payload.request
     When method POST
-    Then status 200
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
+    Then status 200
     Then match $ contains payload.response
     Then print payload.request
     Then print payload.response
@@ -175,9 +191,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.countryCode = <countryCode>
     And headers headers
     And request payload.request
-    When method POST
-    Then print payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
+    When method POST
     Then status 400
     And match $.errors[0].message == "Missing Country Code"
     And match $.errors[0].code == "MISSING_COUNTRY_CODE"
@@ -198,6 +215,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then print payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status 400
     And match $.errors[0].message == "Invalid country code"
@@ -221,6 +240,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then print payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status 400
     And match $.errors[*].message contains only ["Device Id Format is invalid/incorrect","Invalid country code"]
@@ -245,6 +266,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     Then print payload.response
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
     Then status 400
     And match $.errors[0].message == "Device Id Format is invalid/incorrect"

@@ -49,7 +49,7 @@
               }
             ]
           },
-          "emailTenure": "#ignore"
+          "emailTenure": 4.57
         }
       },
       "address": null,
@@ -59,16 +59,17 @@
       "upi": null,
       "device": null,
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

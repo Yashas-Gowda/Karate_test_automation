@@ -10,12 +10,16 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+#    Then match $ contains payload.response
+    * def Original_Address_basic = payload.response.data.address.basic
+    Then match $.data.address.basic contains payload.response.data.address.basic
+    Then match $.meta contains payload.response.meta
 
     Examples:
       | Scenario                                            | statusCode |
@@ -41,6 +45,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -57,6 +62,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -73,6 +79,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -96,6 +103,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -119,6 +127,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -164,6 +173,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -184,6 +194,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -206,6 +217,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And headers headers
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response

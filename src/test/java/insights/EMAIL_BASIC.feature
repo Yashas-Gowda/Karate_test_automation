@@ -10,6 +10,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print karate.pretty(response)
@@ -51,6 +52,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print karate.pretty(response)

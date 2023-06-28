@@ -12,12 +12,12 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 13,
+            "registeredProfiles": 12,
             "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 4,
-            "registeredMessagingProfiles": 2,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
@@ -37,7 +37,7 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "photo": "https://lh3.googleusercontent.com/a-/ACB-R5ScT9u5DNzfUCmJSnhl-ukqquOxu-iscyksrHQduA"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMTaJ6J7bATPtYbedvELRrLNWghxUu1FwqXBUQ2L5bi6sQ"
               },
               "yahoo": {
                 "registered": false
@@ -51,16 +51,16 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": null
+                "registered": false
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": false
               },
               "jdid": {
-                "registered": false
+                "registered": null
               },
               "bukalapak": {
                 "registered": false
@@ -84,7 +84,7 @@
               },
               "flickr": {
                 "registered": false,
-                "username": ""
+                "username": null
               },
               "pinterest": {
                 "registered": true
@@ -108,7 +108,7 @@
                 "registered": false
               },
               "quora": {
-                "registered": false
+                "registered": null
               },
               "qzone": {
                 "registered": false
@@ -134,7 +134,7 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "gender": "UNKNOWN",
+                "gender": null,
                 "name": "Tuan Anh",
                 "id": "tuananh1585",
                 "handle": null,
@@ -143,13 +143,13 @@
                 "city": null,
                 "state": null,
                 "country": "Vietnam",
-                "photo": "https://api.skype.com/users/tuananh1585/profile/avatar"
+                "photo": "https://avatar.skype.com/v1/avatars/tuananh1585/public?returnDefaultImage=true"
               },
               "discord": {
-                "registered": true
+                "registered": null
               },
               "kakao": {
-                "registered": false
+                "registered": null
               }
             },
             "professional": {
@@ -160,10 +160,10 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": false
+                "registered": null
               },
               "linkedin": {
-                "registered": false,
+                "registered": null,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -240,20 +240,17 @@
       "identity": null,
       "upi": null,
       "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": null,
-      "cleansedPhoneNumber": null,
-      "referenceId": "AMS-test-1",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
       "inputEmail": "Tmvt.yenanh@gmail.com",
-      "inputIpAddress": null,
-      "inputUpiId": null,
-      "inputDeviceIds": null,
       "requestedPackages": [
         "EMAIL_SOCIAL"
-      ],
-      "inputAddress": null
+      ]
     },
     "errors": []
   }

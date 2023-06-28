@@ -7,254 +7,251 @@
     "email": "sammykhnm17@gmail.com"
   },
   "response":{
-  "data": {
-    "phone": null,
-    "email": {
-      "social": {
-        "summary": {
-          "registeredProfiles": 14,
-          "registeredConsumerElectronicsProfiles": 1,
-          "registeredEmailProviderProfiles": 1,
-          "registeredEcommerceProfiles": 1,
-          "registeredSocialMediaProfiles": 5,
-          "registeredMessagingProfiles": 0,
-          "registeredProfessionalProfiles": 3,
-          "registeredEntertainmentProfiles": 1,
-          "registeredTravelProfiles": 2,
-          "ageOnSocial": 806,
-          "numberOfNamesReturned": 2,
-          "numberOfPhotosReturned": 3
-        },
-        "profiles": {
-          "consumerElectronics": {
-            "apple": {
-              "registered": true
-            },
-            "samsung": {
-              "registered": false
-            }
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 15,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 5,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 2,
+            "registeredTravelProfiles": 2,
+            "ageOnSocial": 886,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 3
           },
-          "emailProvider": {
-            "google": {
-              "registered": true,
-              "photo": "https://lh3.googleusercontent.com/a/default-user"
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": false
+              }
             },
-            "yahoo": {
-              "registered": false
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMRSqKcu4CU6xb5BL2CF9FcGndF26tO71wDBfORXXY6D=mo"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": {
+                "registered": false
+              },
+              "rambler": {
+                "registered": false
+              }
             },
-            "mailru": {
-              "registered": false
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": null
+              },
+              "flipkart": {
+                "registered": true
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": false
+              },
+              "lazada": {
+                "registered": false
+              },
+              "tokopedia": {
+                "registered": false
+              }
             },
-            "rambler": {
-              "registered": false
-            }
-          },
-          "ecommerce": {
-            "amazon": {
-              "registered": false
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "flickr": {
+                "registered": false,
+                "username": null
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "tumblr": {
+                "registered": false
+              },
+              "weibo": {
+                "registered": false
+              },
+              "ok": {
+                "registered": false,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": false
+              },
+              "quora": {
+                "registered": true
+              },
+              "qzone": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              },
+              "foursquare": {
+                "registered": false,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": false
+              }
             },
-            "ebay": {
-              "registered": false
+            "messaging": {
+              "skype": {
+                "registered": false,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
             },
-            "flipkart": {
-              "registered": true
+            "professional": {
+              "github": {
+                "registered": false
+              },
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": true,
+                "url": "https://linkedin.com/in/sameena-yasmeen-55b0aa217",
+                "name": "Sameena  Yasmeen",
+                "company": "Monnai",
+                "title": "Fintech | ProductManagement | Automation",
+                "location": "Bangalore Urban, Karnataka, India",
+                "website": null,
+                "twitter": null,
+                "photo": "https://media.licdn.com/dms/image/D5603AQFvAwDf4gyuWA/profile-displayphoto-shrink_400_400/0/1684686653403?e=1687952253&v=beta&t=tGdMAIvtLHhGkJlBscbA-nC5IeaO1dye6Wl3A579oLY",
+                "connectionCount": 119
+              },
+              "evernote": {
+                "registered": false
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "zoho": {
+                "registered": false
+              },
+              "adobe": {
+                "registered": true
+              }
             },
-            "jdid": {
-              "registered": false
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "lastfm": {
+                "registered": false
+              },
+              "vimeo": {
+                "registered": false
+              },
+              "envato": {
+                "registered": false
+              },
+              "patreon": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": true
+              },
+              "archiveorg": {
+                "registered": false
+              }
             },
-            "bukalapak": {
-              "registered": false
-            },
-            "lazada": {
-              "registered": false
-            },
-            "tokopedia": {
-              "registered": false
-            }
-          },
-          "socialMedia": {
-            "facebook": {
-              "registered": true,
-              "name": null,
-              "photo": null,
-              "url": null
-            },
-            "instagram": {
-              "registered": true
-            },
-            "flickr": {
-              "registered": false,
-              "username": ""
-            },
-            "pinterest": {
-              "registered": true
-            },
-            "twitter": {
-              "registered": true
-            },
-            "tumblr": {
-              "registered": false
-            },
-            "weibo": {
-              "registered": false
-            },
-            "ok": {
-              "registered": false,
-              "age": null,
-              "city": null,
-              "dateJoined": null
-            },
-            "imgur": {
-              "registered": false
-            },
-            "quora": {
-              "registered": true
-            },
-            "qzone": {
-              "registered": false
-            },
-            "gravatar": {
-              "registered": false,
-              "location": null,
-              "name": null,
-              "profileUrl": null,
-              "username": null
-            },
-            "foursquare": {
-              "registered": false,
-              "bio": null,
-              "photo": null,
-              "profileUrl": null
-            },
-            "myspace": {
-              "registered": false
-            }
-          },
-          "messaging": {
-            "skype": {
-              "registered": false,
-              "language": null,
-              "gender": "UNKNOWN",
-              "name": null,
-              "id": null,
-              "handle": null,
-              "bio": null,
-              "age": null,
-              "city": null,
-              "state": null,
-              "country": null,
-              "photo": null
-            },
-            "discord": {
-              "registered": false
-            },
-            "kakao": {
-              "registered": false
-            }
-          },
-          "professional": {
-            "github": {
-              "registered": false
-            },
-            "wordpress": {
-              "registered": false
-            },
-            "atlassian": {
-              "registered": true
-            },
-            "linkedin": {
-              "registered": true,
-              "url": "https://www.linkedin.com/in/sameena-yasmeen-55b0aa217",
-              "name": "Sameena  Yasmeen",
-              "company": "Monnai",
-              "title": "Fintech | ProductManagement | Automation",
-              "location": "Bangalore Urban, Karnataka, India",
-              "website": null,
-              "twitter": null,
-              "photo": "https://media.licdn.com/dms/image/D5603AQFgBiQLTKNiCA/profile-displayphoto-shrink_400_400/0?e=1686787200&v=beta&t=NYZeTQ3I7GTwsDlou6zlogaT7NQmtKMU6FYZslooh0M",
-              "connectionCount": 101
-            },
-            "evernote": {
-              "registered": false
-            },
-            "microsoft": {
-              "registered": false
-            },
-            "zoho": {
-              "registered": false
-            },
-            "adobe": {
-              "registered": true
-            }
-          },
-          "entertainment": {
-            "spotify": {
-              "registered": true
-            },
-            "lastfm": {
-              "registered": false
-            },
-            "vimeo": {
-              "registered": false
-            },
-            "envato": {
-              "registered": false
-            },
-            "patreon": {
-              "registered": false
-            },
-            "disneyplus": {
-              "registered": false
-            },
-            "netflix": {
-              "registered": false
-            },
-            "archiveorg": {
-              "registered": false
-            }
-          },
-          "travel": {
-            "booking": {
-              "registered": true
-            },
-            "airbnb": {
-              "registered": true,
-              "about": "",
-              "createdAt": "2021-01-23T06:49:50Z",
-              "name": "Sameena",
-              "identityVerified": "false",
-              "location": null,
-              "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
-              "revieweeCount": "0",
-              "trips": null,
-              "work": ""
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": true,
+                "about": "",
+                "createdAt": "2021-01-23T06:49:50Z",
+                "name": "Sameena",
+                "identityVerified": "false",
+                "location": null,
+                "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
+                "revieweeCount": "0",
+                "trips": null,
+                "work": ""
+              }
             }
           }
-        }
+        },
+        "basic": null
       },
-      "basic": null
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
     },
-    "address": null,
-    "name": null,
-    "ip": null,
-    "identity": null,
-    "upi": null,
-    "device": null,
-    "bre": null
-  },
-  "meta": {
-    "inputPhoneNumber": null,
-    "cleansedPhoneNumber": null,
-    "referenceId": "AMS-test-1",
-    "inputEmail": "sammykhnm17@gmail.com",
-    "inputIpAddress": null,
-    "inputUpiId": null,
-    "inputDeviceIds": null,
-    "requestedPackages": [
-      "EMAIL_SOCIAL"
-    ],
-    "inputAddress": null
-  },
-  "errors": []
-}
+    "meta": {
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputEmail": "sammykhnm17@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
   }

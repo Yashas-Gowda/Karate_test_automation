@@ -9,6 +9,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     Then match $ contains payload.response
@@ -30,6 +31,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     Then match $ contains payload.response
@@ -47,6 +49,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     Then match $ contains payload.response
