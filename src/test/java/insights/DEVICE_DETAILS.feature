@@ -11,6 +11,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And headers headers
     And request payload.request
     When method POST
+    * set payload.response.meta.referenceId = "#ignore"
     Then status <statusCode>
     * print payload.request
     * print payload.response
@@ -30,6 +31,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status 200
     * print payload.request
@@ -53,6 +55,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status 200
     Then match $ contains payload.response
@@ -85,6 +88,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print payload.request
@@ -120,6 +124,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -145,6 +150,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -168,6 +174,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -191,9 +198,11 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.countryCode = <countryCode>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+
     When method POST
     Then status 400
     And match $.errors[0].message == "Missing Country Code"
@@ -213,6 +222,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.countryCode = <countryCode>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print payload.request
@@ -238,6 +248,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print payload.request
@@ -264,6 +275,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then print payload.response
     * print payload.request

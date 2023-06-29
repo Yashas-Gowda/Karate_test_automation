@@ -23,9 +23,9 @@
           "pfVerification": {
             "summary": {
               "isEmployed": false,
-              "isNameUnique": true,
-              "isNameExact": true,
-              "isPfFiledLastMonth": false,
+              "isNameUnique": null,
+              "isNameExact": null,
+              "isPfFiledLastMonth": null,
               "hasPfFilingDetails": true,
               "recentEmployerName": "Harish Milk And Milk Products Private Limited",
               "noOfPfAccounts": 1,
@@ -57,18 +57,14 @@
               }
             ],
             "pfFilingDetails": {
-              "employeePfMatches": [
-                {
-                  "name": "K PAVAN KALYAN",
-                  "confidence": 1.0,
-                  "pfHistory": {
-                    "APR-23": null,
-                    "MAR-23": null,
-                    "FEB-23": true
-                  }
-                }
-              ],
+              "employeePfMatches": [],
               "employerPfFilingDetails": [
+                {
+                  "currency": "INR",
+                  "totalAmount": "34300",
+                  "employeeCount": 12,
+                  "wageMonth": "MAY-23"
+                },
                 {
                   "currency": "INR",
                   "totalAmount": "41800",
@@ -80,12 +76,6 @@
                   "totalAmount": "72358",
                   "employeeCount": 28,
                   "wageMonth": "MAR-23"
-                },
-                {
-                  "currency": "INR",
-                  "totalAmount": "98054",
-                  "employeeCount": 37,
-                  "wageMonth": "FEB-23"
                 }
               ]
             }
@@ -93,12 +83,13 @@
         }
       },
       "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "6281518551",
       "cleansedPhoneNumber": "+916281518551",
-      "referenceId": "#ignore",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
       "requestedPackages": [
         "EMPLOYMENT_DETAILS"
       ]

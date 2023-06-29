@@ -12,6 +12,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -29,6 +30,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -48,6 +50,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -70,6 +73,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -86,6 +90,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -113,6 +118,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -141,6 +147,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)

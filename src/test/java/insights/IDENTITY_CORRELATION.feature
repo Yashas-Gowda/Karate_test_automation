@@ -347,7 +347,6 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
       | IDENTITY_CORRELATION_Negative_with_input_phoneNumber_validation | 400        | " "                     |
       | IDENTITY_CORRELATION_Negative_with_input_phoneNumber_validation | 400        | null                    |
 
-  @
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for email with EMPTY/NULL input <Scenario>
     Given url requestUrl

@@ -9,6 +9,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     Then match $ contains payload.response
@@ -28,6 +29,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     Then match $ contains payload.response

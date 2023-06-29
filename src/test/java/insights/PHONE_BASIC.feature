@@ -10,6 +10,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -29,6 +30,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -49,6 +51,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -73,6 +76,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -114,6 +118,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -152,6 +157,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/LAST_DEACTIVATED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -174,6 +180,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -196,6 +203,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -230,6 +238,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -251,6 +260,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -282,6 +292,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response

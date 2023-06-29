@@ -10,6 +10,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request.phoneNumber = <phoneNumber>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -29,6 +30,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request.phoneNumber = <phoneNumber>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -47,6 +49,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -66,6 +69,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -84,6 +88,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -125,6 +130,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print karate.pretty(response)
     * print payload.request
@@ -148,6 +154,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print karate.pretty(response)
     * print payload.request
@@ -165,6 +172,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print karate.pretty(response)
     * print payload.request
@@ -182,6 +190,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
@@ -201,6 +210,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
     * print payload.response
