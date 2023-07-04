@@ -19,15 +19,15 @@
             "country": "SG",
             "region": "N/A",
             "city": "Singapore",
-            "latitude": 1.28999996,
-            "longitude": 103.86000061,
+            "latitude": 1.35,
+            "longitude": 103.82,
             "postalCode": null,
             "timeZone": "Asia/Singapore",
             "geoNameId": null
           },
           "internetServiceProvider": "Asia Pacific Network Information Centre",
-          "connectionType": "data center",
-          "autonomousSystemNumber": 45154,
+          "connectionType": "n/a",
+          "autonomousSystemNumber": 64212,
           "organization": "N/A",
           "isCrawler": false,
           "host": "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF",
@@ -45,10 +45,12 @@
       "upi": null,
       "device": null,
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
       "inputIpAddress": "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF",
       "requestedPackages": [
         "IP_BASIC"

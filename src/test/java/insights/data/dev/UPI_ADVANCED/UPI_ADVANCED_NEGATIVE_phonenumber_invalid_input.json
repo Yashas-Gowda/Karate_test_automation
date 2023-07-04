@@ -4,12 +4,19 @@
     "packages": [
       "UPI_ADVANCED"
     ],
-    "phoneNumber":"9108510043",
+    "phoneNumber":"",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
     "data": null,
-    "meta": null,
+    "meta": {
+      "inputPhoneNumber": "910851004abc",
+      "cleansedPhoneNumber": "+91910851004222",
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
     "errors": [
       {
         "package": "UPI_ADVANCED",

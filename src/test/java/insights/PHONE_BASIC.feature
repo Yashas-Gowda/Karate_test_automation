@@ -315,17 +315,6 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.errors[1].code == "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
     And match $.errors[1].type == "INVALID_INPUT"
 
-
-
     Examples:
       | Scenario                                                                               | statusCode |
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        |
-
-
-
-
-
-
-
-
-
