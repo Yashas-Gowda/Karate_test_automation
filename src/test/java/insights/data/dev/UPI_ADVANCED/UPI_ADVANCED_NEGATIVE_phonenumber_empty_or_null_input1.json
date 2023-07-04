@@ -5,12 +5,13 @@
     "packages": [
       "UPI_ADVANCED"
     ],
-    "phoneNumber": "9108510043",
-    "phoneDefaultCountryCode": ""
+    "phoneNumber": " ",
+    "phoneDefaultCountryCode": "IN"
   },
   "response": {
     "data": null,
     "meta": {
+      "inputPhoneNumber": " ",
       "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
       "requestedPackages": [
         "UPI_ADVANCED"
@@ -19,8 +20,8 @@
     "errors": [
       {
         "package": "UPI_ADVANCED",
-        "message": "Missing phone default country code",
-        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
         "type": "INVALID_INPUT"
       }
     ]

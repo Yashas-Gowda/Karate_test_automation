@@ -11,19 +11,18 @@
   },
   "response":{
     "data": null,
-    "meta": {
-      "inputPhoneNumber": "8005550123",
-      "cleansedPhoneNumber": "+918005550123",
-      "referenceId": "UI-73bdb9fa2c0fb8bc3c207c543f464e39ee5c97e1",
-      "requestedPackages": [
-        "IDENTITY_CORRELATION"
-      ]
-    },
+    "meta": null,
     "errors": [
       {
-        "package": "IDENTITY_CORRELATION",
-        "message": "At least one Additional search parameter email or ip address is required.",
-        "code": "MISSING_ADDITIONAL_SEARCH_PARAMETER",
+        "package": null,
+        "message": "Missing event type",
+        "code": "MISSING_EVENT_TYPE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": null,
+        "message": "package is not selected",
+        "code": "PACKAGE_NOT_SELECTED",
         "type": "INVALID_INPUT"
       }
     ]

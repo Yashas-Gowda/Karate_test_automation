@@ -29,17 +29,20 @@
       "upi": null,
       "device": null,
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "8005550123",
       "cleansedPhoneNumber": "+918005550123",
-      "referenceId": "#ignore",
+      "referenceId": "AMS-test-1",
       "inputEmail": "example@me.com",
       "requestedPackages": [
         "IDENTITY_CORRELATION"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

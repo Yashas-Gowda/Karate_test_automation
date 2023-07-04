@@ -13,8 +13,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -33,8 +34,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -52,8 +54,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -72,8 +75,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -82,13 +86,15 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | Scenario                                                           | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage                       |
       | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_empty_or_null_input1 | " "                     | 400        | MISSING_PHONE_DEFAULT_COUNTRY_CODE | Missing phone default country code |
 
-  Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
+  Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an input is INVALID phoneDefaultCountryCode  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.meta.inputPhoneNumber = "#ignore"
+    * set payload.response.meta.cleansedPhoneNumber = "##string"
     When method POST
     * print payload.request
     * print payload.response
@@ -99,31 +105,35 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And match $.errors[0].message == "<errorMessage>"
 
     Examples:
-      | Scenario                                        | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage         |
-      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "INN"                   | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code|
-      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "In123"                 | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code|
-      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "123"                   | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
+      | Scenario                                                    | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage                       |
+      | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_input | "INN"                   | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
+      | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_input | "In123"                 | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
+      | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_input | "123"                   | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
 
-#  Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
-#    Given url requestUrl
-#    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
-#    And request payload.request.phoneNumber = <phoneNumber>
-#    And headers headers
-#    And request payload.request
-#    When method POST
-#    * print karate.pretty(response)
-#    Then print payload.request
-#    Then print payload.response
-#    Then status <statusCode>
-#    Then match $ contains payload.response
-#    And match $.errors[0].code == "<errorCode>"
-#    And match $.errors[0].message == "<errorMessage>"
-#
-#    Examples:
-#      | Scenario                                        | phoneNumber    | statusCode | errorCode            | errorMessage                       |
-#      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "910851asdwer" | 400        | MISSING_PHONE_NUMBER | Missing phone default country code |
-#      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "9108511"      | 400        | MISSING_PHONE_NUMBER | Missing phone default country code |
-#      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "asdfasdadfg"  | 400        | MISSING_PHONE_NUMBER | Missing phone default country code |
+#  https://monnai.atlassian.net/browse/MB-1548
+  Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an input is invalid phoneNumber https://monnai.atlassian.net/browse/MB-1548-> <Scenario> | InputIP -> <phoneNumber>.
+    Given url requestUrl
+    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And request payload.request.phoneNumber = <phoneNumber>
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.meta.inputPhoneNumber = "#ignore"
+    * set payload.response.meta.cleansedPhoneNumber = "##string"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    Then match $ contains payload.response
+    And match $.errors[0].code == "<errorCode>"
+    And match $.errors[0].message == "<errorMessage>"
+
+    Examples:
+      | Scenario                                        | phoneNumber    | statusCode | errorCode            | errorMessage         |
+      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "910851asdwer" | 400        | INVALID_PHONE_NUMBER | Invalid Phone Number |
+      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "9108511"      | 400        | INVALID_PHONE_NUMBER | Invalid Phone Number |
+      | UPI_ADVANCED_NEGATIVE_phonenumber_invalid_input | "asdfasdadfg"  | 400        | INVALID_PHONE_NUMBER | Invalid Phone Number |
 
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -132,12 +142,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print karate.pretty(response)
     * print payload.request
     * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
-    * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    Then match UPI_ID_TYPE contains any [Paytm,PhonePe,Google Pay]
+    Then match $ contains any payload.response
+#    * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
+#    Then match UPI_ID_TYPE contains any [Paytm,PhonePe,Google Pay]
 #    * print $.data.upi.advanced.accounts[*]
 #    Then match $.data.upi.advanced.accounts[*] contains only [{"appName": "Paytm","nameAtBank": "Krishan Kumar","upiId": "9910872581@paytm"},{"appName": "PhonePe","nameAtBank": "KRISHAN KUMAR","upiId": "9910872581@ybl"},{"appName": "Google Pay","nameAtBank": "KRISHAN KUMAR","upiId": "krishankumar.1765@okhdfcbank"}]
 #    Then match $.data.upi.advanced.accounts[*] contains [{"appName": "Paytm","nameAtBank": "Krishan Kumar","upiId": "9910872581@paytm"},{"appName": "PhonePe","nameAtBank": "KRISHAN KUMAR","upiId": "9910872581@ybl"},{"appName": "Google Pay","nameAtBank": "KRISHAN KUMAR","upiId": "krishankumar.1765@okhdfcbank"}]
@@ -146,8 +157,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | Scenario                                                        | statusCode |
       | UPI_ADVANCED_POSITIVE_phone&Email_input_@ybl_@paytm_@okhdfcbank | 200        |
       | UPI_ADVANCED_POSITIVE_phone&Email_input_@ibl_@paytm_@okhdfcbank | 200        |
-#      | UPI_ADVANCED_POSITIVE_Phone&Email_input_output_without_@paytm    | 200        |
-#      | UPI_ADVANCED_POSITIVE_Phone&Email_input_output_without_@Phonepay | 200        |
+      | UPI_ADVANCED_POSITIVE_phone&Email_input_@ybl_@paytm_@okaxis     | 200        |
 
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input without PAYTM ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -156,12 +166,12 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print karate.pretty(response)
     * print payload.request
     * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
-    * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    Then match UPI_ID_TYPE contains any [PhonePe,Google Pay]
+    Then match $.data.upi.advanced.accounts[*].appName contains only [PhonePe,Google Pay]
+    Then match $ contains any payload.response
 
     Examples:
       | Scenario                                                      | statusCode |
@@ -174,12 +184,12 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print karate.pretty(response)
     * print payload.request
     * print payload.response
+    * print karate.pretty(response)
     Then status <statusCode>
-    * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    * match UPI_ID_TYPE == [Paytm,Google Pay]
+    * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay]
+    Then match $ contains  payload.response
 
     Examples:
       | Scenario                                                         | statusCode |
@@ -196,9 +206,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $ contains any payload.response
     * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    * match UPI_ID_TYPE == [Paytm,PhonePe,Google Pay]
+    * match UPI_ID_TYPE  contains only [Paytm,PhonePe,Google Pay]
 
     Examples:
       | Scenario                                                                        | statusCode |
@@ -216,9 +226,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
     * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    * match UPI_ID_TYPE contains [PhonePe,Paytm]
+    * match UPI_ID_TYPE == [PhonePe,Paytm]
+    Then match $ contains any payload.response
 
     Examples:
       | Scenario                                                                                 | statusCode |

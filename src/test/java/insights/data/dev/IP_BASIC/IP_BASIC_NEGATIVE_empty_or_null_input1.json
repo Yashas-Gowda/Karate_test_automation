@@ -3,24 +3,24 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "UPI_ADVANCED"
+      "IP_BASIC"
     ],
-    "phoneNumber": "9108510043",
-    "phoneDefaultCountryCode": ""
+    "ipAddress":""
   },
   "response": {
     "data": null,
     "meta": {
       "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "inputIpAddress": " ",
       "requestedPackages": [
-        "UPI_ADVANCED"
+        "IP_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "UPI_ADVANCED",
-        "message": "Missing phone default country code",
-        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "package": "IP_BASIC",
+        "message": "Missing IPv4 or IPv6 address",
+        "code": "MISSING_IP_ADDRESS",
         "type": "INVALID_INPUT"
       }
     ]

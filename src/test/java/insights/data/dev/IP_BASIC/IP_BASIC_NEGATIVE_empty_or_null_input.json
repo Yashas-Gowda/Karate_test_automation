@@ -9,7 +9,12 @@
   },
   "response": {
     "data": null,
-    "meta": null,
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
     "errors": [
       {
         "package": "IP_BASIC",

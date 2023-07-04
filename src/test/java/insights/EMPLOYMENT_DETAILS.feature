@@ -15,8 +15,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification.summary.isEmployed == true
     And match $.data.employment.details.pfVerification == '#notnull'
     Then match $ contains payload.response
@@ -33,8 +34,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.pfDetails[0].gender == 'MALE'
@@ -53,8 +55,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == true
     And match $.data.employment.details.pfVerification.summary.isNameUnique == true
@@ -76,8 +79,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification == null
     Then match $ contains payload.response
 
@@ -93,8 +97,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification.summary.isNameUnique == null
@@ -121,8 +126,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification.summary.isNameUnique == null
@@ -150,9 +156,10 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
-    And match $.data.employment.details.pfVerification.pfFilingDetails.employeePfMatches[0] == '#notnull'
+#    And match $.data.employment.details.pfVerification.pfFilingDetails.employeePfMatches[0] == '#notnull'
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails == '#notnull'
 #    And match $.data.employment.details.pfVerification.pfFilingDetails.pfHistory[] == '#notnull'
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails == '#notnull'

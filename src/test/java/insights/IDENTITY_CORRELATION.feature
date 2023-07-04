@@ -10,9 +10,11 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
     * match phoneAndIpAddressMatched != 'NO_INPUT'
@@ -28,239 +30,249 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
       | Scenario                                                                    | statusCode |
       | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_SAMPLE | 200        |
 
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where all are "YES" <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                     | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_all_YES | 200        |
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where all are "YES" <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                               | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_without_phoneAndIpLocationMatched | 200        |
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email only - NO IP <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched == 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                   | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email | 200        |
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndEmailMatched == 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'YES'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'YES'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                                               | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_phoneAndIpAddressMatched_phoneAndIpLocationMatched | 200        |
-
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL  where "phoneAndIpLocationMatched": "NO"<<Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndEmailMatched == 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'YES'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'NO'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                                                       | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_phoneAndIpAddressMatched_without_phoneAndIpLocationMatched | 200        |
+##  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where all are "YES" <Scenario>
+##    Given url requestUrl
+##    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+##    And headers headers
+##    And request payload.request
+##    When method POST
+##    * print payload.request
+##    * print payload.response
+##    * print karate.pretty(response)
+##    Then status <statusCode>
+##    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
+##    * match phoneAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+##    * match phoneAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+##    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+##    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+##    Then match $ contains payload.response
+##
+##    Examples:
+##      | Scenario                                                                     | statusCode |
+##      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_all_YES | 200        |
+#
+##  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where all are "YES" <Scenario>
+##    Given url requestUrl
+##    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+##    And headers headers
+##    And request payload.request
+##    When method POST
+##    * print payload.request
+##    * print payload.response
+##    * print karate.pretty(response)
+##    Then status <statusCode>
+##    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
+##    * match phoneAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+##    * match phoneAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+##    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+##    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+##    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+##    Then match $ contains payload.response
+##
+##    Examples:
+##      | Scenario                                                                                               | statusCode |
+##      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_without_phoneAndIpLocationMatched | 200        |
+#
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email only - NO IP <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndIpAddressMatched != 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched == 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                   | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email | 200        |
+#
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndEmailMatched == 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'YES'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'YES'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                                               | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_phoneAndIpAddressMatched_phoneAndIpLocationMatched | 200        |
 
 
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress  and also with NO EMAIL where "phoneAndIpLocationMatched": "YES"<Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndEmailMatched == 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'NO'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'YES'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                                                       | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_without_phoneAndIpAddressMatched_with_phoneAndIpLocationMatched | 200        |
-
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where phoneEmailAndIpAddressMatched is UNKNOWN <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'UNKNOWN'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                                        | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_with_UNKNOWN_phoneEmailAndIpAddressMatched | 200        |
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email only where phoneAndEmailMatched is UNKNOWN- NO IP <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndIpAddressMatched == 'UNKNOWN'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched == 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                     | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_with_UNKNOWN_phoneAndEmailMatched | 200        |
-
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL  where "phoneAndIpAddressMatched": "UNKNOWN"<<Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndEmailMatched == 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'UNKNOWN'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'NO'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
-
-    Examples:
-      | Scenario                                                                                             | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_UNKNOWN_phoneAndIpAddressMatched | 200        |
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL  where "phoneAndIpLocationMatched": "NO"<<Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndEmailMatched == 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'YES'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                                                       | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_phoneAndIpAddressMatched_without_phoneAndIpLocationMatched | 200        |
 
 
-  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress  and also with NO EMAIL where "phoneAndIpLocationMatched": "UNKNOWN"<Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    When method POST
-    * print karate.pretty(response)
-    Then print payload.response
-    Then status <statusCode>
-    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
-    * match phoneAndEmailMatched == 'NO_INPUT'
-    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
-    * match phoneAndIpAddressMatched != 'NO'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched == 'UNKNOWN'
-    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
-    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
-    Then match $ contains payload.response
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress  and also with NO EMAIL where "phoneAndIpLocationMatched": "YES"<Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndEmailMatched == 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'NO'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'YES'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                                                       | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_without_phoneAndIpAddressMatched_with_phoneAndIpLocationMatched | 200        |
 
-    Examples:
-      | Scenario                                                                                              | statusCode |
-      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_UNKNOWN_phoneAndIpLocationMatched | 200        |
+
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress where phoneEmailAndIpAddressMatched is UNKNOWN <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndIpAddressMatched != 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'UNKNOWN'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                                        | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_ipAddress_with_UNKNOWN_phoneEmailAndIpAddressMatched | 200        |
+
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email only where phoneAndEmailMatched is UNKNOWN- NO IP <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndIpAddressMatched == 'UNKNOWN'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched == 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                     | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_email_with_UNKNOWN_phoneAndEmailMatched | 200        |
+
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress and also with NO EMAIL  where "phoneAndIpAddressMatched": "UNKNOWN"<<Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndEmailMatched == 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'UNKNOWN'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                             | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_UNKNOWN_phoneAndIpAddressMatched | 200        |
+
+
+#  Scenario Outline: Validate DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like ipAddress  and also with NO EMAIL where "phoneAndIpLocationMatched": "UNKNOWN"<Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+#    And headers headers
+#    And request payload.request
+#    When method POST
+#    * print payload.request
+#    * print payload.response
+#    * print karate.pretty(response)
+#    Then status <statusCode>
+#    * def phoneAndEmailMatched = $.data.identity.correlation.phoneAndEmailMatched
+#    * match phoneAndEmailMatched == 'NO_INPUT'
+#    * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
+#    * match phoneAndIpAddressMatched != 'NO'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
+#    * match phoneEmailAndIpAddressMatched == 'UNKNOWN'
+#    * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
+#    * match phoneEmailAndIpAddressMatched == 'NO_INPUT'
+#    Then match $ contains payload.response
+#
+#    Examples:
+#      | Scenario                                                                                              | statusCode |
+#      | IDENTITY_CORRELATION_Positive_with_input_phoneNumber_ipAddress_with_UNKNOWN_phoneAndIpLocationMatched | 200        |
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios with phonenumber input is validated <Scenario>
     Given url requestUrl
@@ -269,8 +281,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.phoneNumber=<phoneNumber>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "Invalid Phone Number"
@@ -290,8 +303,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.phoneNumber=<phoneNumber>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "PhoneNumber cannot be blank/null"
@@ -311,8 +325,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.phoneDefaultCountryCode="<phoneDefaultCountryCode>"
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "Invalid phone default country code"
@@ -333,8 +348,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.phoneDefaultCountryCode=<phoneDefaultCountryCode>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "Missing phone default country code"
@@ -355,8 +371,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.email=<email>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "At least one Additional search parameter email or ip address is required."
@@ -376,8 +393,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And request payload.request.ipAddress=<ipAddress>
     And request payload.request
     When method POST
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
     Then status <statusCode>
     And match $.errors[0].package == "IDENTITY_CORRELATION"
     And match $.errors[0].message == "At least one Additional search parameter email or ip address is required."

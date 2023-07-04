@@ -12,9 +12,11 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
+    Then status <statusCode>
+
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -23,7 +25,27 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
       | Scenario                              | ipAddress | statusCode | errorCode          | errorMessage                 |
       | IP_BASIC_NEGATIVE_empty_or_null_input | ""        | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
       | IP_BASIC_NEGATIVE_empty_or_null_input | null      | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
-      | IP_BASIC_NEGATIVE_empty_or_null_input | " "       | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
+
+  Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
+    Given url requestUrl
+    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And request payload.request.ipAddress = <ipAddress>
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+
+    Then match $ contains payload.response
+    And match $.errors[0].code == "<errorCode>"
+    And match $.errors[0].message == "<errorMessage>"
+
+    Examples:
+      | Scenario                               | ipAddress | statusCode | errorCode          | errorMessage                 |
+      | IP_BASIC_NEGATIVE_empty_or_null_input1 | " "       | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
 
 
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
@@ -33,10 +55,13 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.meta.inputIpAddress = "#ignore"
     When method POST
-    Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
+    Then status <statusCode>
+
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
@@ -55,9 +80,11 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
+    Then status <statusCode>
+    Then match $ contains payload.response
 
     Examples:
       | Scenario                     | ipAddress                                | statusCode |
@@ -73,8 +100,11 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
+    * print payload.request
+    * print payload.response
     * print karate.pretty(response)
-    Then print payload.response
+    Then match $ contains payload.response
+
     And match $.data.ip.basic.abuseVelocity == "high"
     And match $.data.ip.basic.recentAbuse == true
     And match $.data.ip.basic.botStatus == true

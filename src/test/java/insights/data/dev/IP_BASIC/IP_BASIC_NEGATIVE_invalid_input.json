@@ -9,7 +9,13 @@
   },
   "response": {
     "data": null,
-    "meta": null,
+    "meta": {
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "inputIpAddress": "123abc",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
     "errors": [
       {
         "package": "IP_BASIC",

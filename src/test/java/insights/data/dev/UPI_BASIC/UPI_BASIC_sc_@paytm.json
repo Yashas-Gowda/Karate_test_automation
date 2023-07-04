@@ -25,10 +25,12 @@
       },
       "device": null,
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
       "inputUpiId": "9108510043@paytm",
       "requestedPackages": [
         "UPI_BASIC"

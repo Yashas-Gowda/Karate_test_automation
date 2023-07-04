@@ -7,7 +7,7 @@
     ],
     "ipAddress": "192.168.1.1"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": null,
       "email": null,
@@ -45,10 +45,12 @@
       "upi": null,
       "device": null,
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
       "inputIpAddress": "192.168.1.1",
       "requestedPackages": [
         "IP_BASIC"
