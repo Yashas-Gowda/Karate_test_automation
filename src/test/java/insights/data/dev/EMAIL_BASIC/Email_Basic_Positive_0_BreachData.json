@@ -8,60 +8,57 @@
     "email": "PARAS.SHARMA2@HDFCBANK.COM"
   },
   "response":{
-  "data": {
-    "phone": null,
-    "email": {
-      "social": null,
-      "basic": {
-        "deliverable": true,
-        "domainDetails": {
-          "domainName": "hdfcbank.com",
-          "tld": ".com",
-          "creationTime": null,
-          "updateTime": null,
-          "expiryTime": null,
-          "registered": true,
-          "companyName": null,
-          "disposable": false,
-          "freeProvider": false,
-          "dmarcCompliance": true,
-          "spfStrict": true,
-          "suspiciousTld": false,
-          "websiteExists": true,
-          "acceptAll": false,
-          "custom": true
-        },
-        "breach": {
-          "isBreached": false,
-          "noOfBreaches": 0,
-          "firstBreach": null,
-          "lastBreach": null,
-          "breaches": []
-        },
-        "emailTenure": "#ignore"
-      }
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainName": "hdfcbank.com",
+            "tld": ".com",
+            "creationTime": "1997-04-10 04:00:00",
+            "updateTime": "2023-04-15 17:58:07",
+            "expiryTime": "2027-04-11 04:00:00",
+            "registered": true,
+            "companyName": "HDFC Bank Limited",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": true,
+            "spfStrict": true,
+            "suspiciousTld": false,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": true
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
     },
-    "address": null,
-    "name": null,
-    "ip": null,
-    "identity": null,
-    "upi": null,
-    "device": null,
-    "bre": null
-  },
-  "meta": {
-    "inputPhoneNumber": null,
-    "cleansedPhoneNumber": null,
-    "referenceId": "#ignore",
-    "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
-    "inputIpAddress": null,
-    "inputUpiId": null,
-    "inputDeviceIds": null,
-    "requestedPackages": [
-      "EMAIL_BASIC"
-    ],
-    "inputAddress": null
-  },
-  "errors": []
-}
+    "meta": {
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
 }

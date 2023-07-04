@@ -1,0 +1,85 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "13475785486",
+    "phoneDefaultCountryCode": "US"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "13475785486",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 6,
+            "max": 12
+          },
+          "country": "US",
+          "originalCarrier": "Verizon Wireless:6006 - SVR/2",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": "2022-08-10",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 318,
+            "currentCarrierCircle": "Verizon Verizon Wireless",
+            "originalCarrierCircle": "Verizon Verizon Wireless",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2022-08-10"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2022-08-09"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "310",
+            "mobileNetworkCode": "004",
+            "networkName": "Verizon Wireless:6006 - SVR/2",
+            "serviceProfileId": "151971"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "13475785486",
+      "cleansedPhoneNumber": "+13475785486",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

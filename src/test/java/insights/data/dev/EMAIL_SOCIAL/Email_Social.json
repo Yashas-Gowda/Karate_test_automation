@@ -7,255 +7,251 @@
     "email": "sammy.khnm@gmail.com"
   },
   "response":{
-
-  "data": {
-    "phone": null,
-    "email": {
-      "social": {
-        "summary": {
-          "registeredProfiles": 15,
-          "registeredConsumerElectronicsProfiles": 1,
-          "registeredEmailProviderProfiles": 1,
-          "registeredEcommerceProfiles": 2,
-          "registeredSocialMediaProfiles": 4,
-          "registeredMessagingProfiles": 1,
-          "registeredProfessionalProfiles": 5,
-          "registeredEntertainmentProfiles": 0,
-          "registeredTravelProfiles": 1,
-          "ageOnSocial": null,
-          "numberOfNamesReturned": 1,
-          "numberOfPhotosReturned": 2
-        },
-        "profiles": {
-          "consumerElectronics": {
-            "apple": {
-              "registered": true
-            },
-            "samsung": {
-              "registered": false
-            }
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 13,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 3,
+            "registeredEntertainmentProfiles": 0,
+            "registeredTravelProfiles": 2,
+            "ageOnSocial": 1347,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 3
           },
-          "emailProvider": {
-            "google": {
-              "registered": true,
-              "photo": "https://lh3.googleusercontent.com/a-/ACB-R5Stb7LDNPbK7ubPWPBS8G8T-ZOytlBuTF3P7COk"
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": false
+              }
             },
-            "yahoo": {
-              "registered": false
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR2LiD_qxW0YO_ibKZ3MIDNLR3NHQbpqrXIpZILhM1ytQ"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": {
+                "registered": false
+              },
+              "rambler": {
+                "registered": false
+              }
             },
-            "mailru": {
-              "registered": false
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": null
+              },
+              "flipkart": {
+                "registered": true
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": false
+              },
+              "lazada": {
+                "registered": false
+              },
+              "tokopedia": {
+                "registered": false
+              }
             },
-            "rambler": {
-              "registered": false
-            }
-          },
-          "ecommerce": {
-            "amazon": {
-              "registered": true
+            "socialMedia": {
+              "facebook": {
+                "registered": false,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "flickr": {
+                "registered": false,
+                "username": null
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "tumblr": {
+                "registered": false
+              },
+              "weibo": {
+                "registered": false
+              },
+              "ok": {
+                "registered": false,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": false
+              },
+              "quora": {
+                "registered": true
+              },
+              "qzone": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              },
+              "foursquare": {
+                "registered": false,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": false
+              }
             },
-            "ebay": {
-              "registered": false
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "sameena khnm",
+                "id": "sammy901991",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "mysore",
+                "state": "Karnataka",
+                "country": "India",
+                "photo": "https://avatar.skype.com/v1/avatars/sammy901991/public?returnDefaultImage=true"
+              },
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
             },
-            "flipkart": {
-              "registered": true
+            "professional": {
+              "github": {
+                "registered": true
+              },
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "evernote": {
+                "registered": false
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "zoho": {
+                "registered": false
+              },
+              "adobe": {
+                "registered": true
+              }
             },
-            "jdid": {
-              "registered": false
+            "entertainment": {
+              "spotify": {
+                "registered": false
+              },
+              "lastfm": {
+                "registered": false
+              },
+              "vimeo": {
+                "registered": false
+              },
+              "envato": {
+                "registered": false
+              },
+              "patreon": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": false
+              },
+              "archiveorg": {
+                "registered": false
+              }
             },
-            "bukalapak": {
-              "registered": false
-            },
-            "lazada": {
-              "registered": false
-            },
-            "tokopedia": {
-              "registered": false
-            }
-          },
-          "socialMedia": {
-            "facebook": {
-              "registered": false,
-              "name": null,
-              "photo": null,
-              "url": null
-            },
-            "instagram": {
-              "registered": true
-            },
-            "flickr": {
-              "registered": false,
-              "username": ""
-            },
-            "pinterest": {
-              "registered": true
-            },
-            "twitter": {
-              "registered": true
-            },
-            "tumblr": {
-              "registered": false
-            },
-            "weibo": {
-              "registered": false
-            },
-            "ok": {
-              "registered": false,
-              "age": null,
-              "city": null,
-              "dateJoined": null
-            },
-            "imgur": {
-              "registered": false
-            },
-            "quora": {
-              "registered": true
-            },
-            "qzone": {
-              "registered": false
-            },
-            "gravatar": {
-              "registered": false,
-              "location": null,
-              "name": null,
-              "profileUrl": null,
-              "username": null
-            },
-            "foursquare": {
-              "registered": false,
-              "bio": null,
-              "photo": null,
-              "profileUrl": null
-            },
-            "myspace": {
-              "registered": false
-            }
-          },
-          "messaging": {
-            "skype": {
-              "registered": true,
-              "language": null,
-              "gender": "UNKNOWN",
-              "name": "sameena khnm",
-              "id": "sammy901991",
-              "handle": null,
-              "bio": null,
-              "age": null,
-              "city": "mysore",
-              "state": "Karnataka",
-              "country": "India",
-              "photo": "https://api.skype.com/users/sammy901991/profile/avatar"
-            },
-            "discord": {
-              "registered": false
-            },
-            "kakao": {
-              "registered": false
-            }
-          },
-          "professional": {
-            "github": {
-              "registered": true
-            },
-            "wordpress": {
-              "registered": false
-            },
-            "atlassian": {
-              "registered": true
-            },
-            "linkedin": {
-              "registered": true,
-              "url": null,
-              "name": null,
-              "company": null,
-              "title": null,
-              "location": null,
-              "website": null,
-              "twitter": null,
-              "photo": null,
-              "connectionCount": null
-            },
-            "evernote": {
-              "registered": false
-            },
-            "microsoft": {
-              "registered": true
-            },
-            "zoho": {
-              "registered": false
-            },
-            "adobe": {
-              "registered": true
-            }
-          },
-          "entertainment": {
-            "spotify": {
-              "registered": false
-            },
-            "lastfm": {
-              "registered": false
-            },
-            "vimeo": {
-              "registered": false
-            },
-            "envato": {
-              "registered": false
-            },
-            "patreon": {
-              "registered": false
-            },
-            "disneyplus": {
-              "registered": false
-            },
-            "netflix": {
-              "registered": null
-            },
-            "archiveorg": {
-              "registered": false
-            }
-          },
-          "travel": {
-            "booking": {
-              "registered": true
-            },
-            "airbnb": {
-              "registered": null,
-              "about": null,
-              "createdAt": null,
-              "name": null,
-              "identityVerified": null,
-              "location": null,
-              "photo": null,
-              "revieweeCount": null,
-              "trips": null,
-              "work": null
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": true,
+                "about": "",
+                "createdAt": "2019-10-20T13:56:35Z",
+                "name": "Sammy",
+                "identityVerified": "false",
+                "location": null,
+                "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
+                "revieweeCount": "0",
+                "trips": null,
+                "work": ""
+              }
             }
           }
-        }
+        },
+        "basic": null
       },
-      "basic": null
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
     },
-    "address": null,
-    "name": null,
-    "ip": null,
-    "identity": null,
-    "upi": null,
-    "device": null,
-    "bre": null
-  },
-  "meta": {
-    "inputPhoneNumber": null,
-    "cleansedPhoneNumber": null,
-    "referenceId": "AMS-test-1",
-    "inputEmail": "sammy.khnm@gmail.com",
-    "inputIpAddress": null,
-    "inputUpiId": null,
-    "inputDeviceIds": null,
-    "requestedPackages": [
-      "EMAIL_SOCIAL"
-    ],
-    "inputAddress": null
-  },
-  "errors": []
-}
+    "meta": {
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputEmail": "sammy.khnm@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
   }
+}

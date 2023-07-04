@@ -10,6 +10,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -31,6 +32,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -51,6 +53,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)
@@ -67,6 +70,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
     * print karate.pretty(response)

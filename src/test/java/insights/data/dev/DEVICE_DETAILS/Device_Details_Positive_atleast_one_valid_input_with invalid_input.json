@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -28,7 +28,7 @@
           {
             "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-05-31",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -61,19 +61,27 @@
           }
         ]
       },
-      "employment": null,
       "bre": null
     },
     "meta": {
+      "inputPhoneNumber": null,
+      "cleansedPhoneNumber": null,
       "referenceId": "#ignore",
+      "inputEmail": null,
+      "inputIpAddress": null,
+      "inputUpiId": null,
       "inputDeviceIds": [
-        "3342b21d-6ba2-4294-b808-f9612b24fed6"
+        "3342b21d-6ba2-4294-b808-f9612b24fed6",
+        "  ",
+        null,
+        "",
+        null
       ],
       "requestedPackages": [
         "DEVICE_DETAILS"
-      ]
+      ],
+      "inputAddress": null
     },
     "errors": []
   }
-
 }

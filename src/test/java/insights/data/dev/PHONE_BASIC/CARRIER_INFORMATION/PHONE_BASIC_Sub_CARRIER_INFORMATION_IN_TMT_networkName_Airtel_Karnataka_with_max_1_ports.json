@@ -1,0 +1,81 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "919742555992",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "919742555992",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 6,
+            "max": 12
+          },
+          "country": "IN",
+          "originalCarrier": "Vodafone - Karnataka",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-08-25",
+            "numberOfPorts": 1,
+            "portedSinceXDays": 305,
+            "currentCarrierCircle": "Airtel Karnataka",
+            "originalCarrierCircle": "Vi India Karnataka",
+            "changeInCarrierRegion": "NOT_CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "Airtel Karnataka",
+                "portedDate": "2022-08-25"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "45",
+            "networkName": "Airtel - Karnataka",
+            "serviceProfileId": "91031"
+          },
+          "lastDeactivated": null,
+          "isSpam": false
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919742555992",
+      "cleansedPhoneNumber": "+919742555992",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
