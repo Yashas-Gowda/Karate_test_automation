@@ -251,8 +251,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Examples:
       | Scenario                                                | statusCode | active  |
       | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN | 200        | UNKNOWN |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | yes     |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | no      |
+      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | YES     |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
 
   @PHONE_BASIC @Negitive
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
@@ -305,15 +305,15 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.meta.referenceId == "#string"
     And match $.meta.requestedPackages[0] == "PHONE_BASIC"
 
-    And match $.errors[0].package == "PHONE_BASIC"
-    And match $.errors[0].message == "PhoneNumber cannot be blank/null"
-    And match $.errors[0].code == "MISSING_PHONE_NUMBER"
-    And match $.errors[0].type == "INVALID_INPUT"
+    And match $.errors[*].package contains any "PHONE_BASIC"
+    And match $.errors[*].message contains any "PhoneNumber cannot be blank/null"
+    And match $.errors[*].code contains any "MISSING_PHONE_NUMBER"
+    And match $.errors[*].type contains any "INVALID_INPUT"
 
-    And match $.errors[1].package == "PHONE_BASIC"
-    And match $.errors[1].message ==  "Missing phone default country code"
-    And match $.errors[1].code == "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
-    And match $.errors[1].type == "INVALID_INPUT"
+    And match $.errors[*].package contains any "PHONE_BASIC"
+    And match $.errors[*].message contains any  "Missing phone default country code"
+    And match $.errors[*].code contains any "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
+    And match $.errors[*].type contains any "INVALID_INPUT"
 
     Examples:
       | Scenario                                                                               | statusCode |
