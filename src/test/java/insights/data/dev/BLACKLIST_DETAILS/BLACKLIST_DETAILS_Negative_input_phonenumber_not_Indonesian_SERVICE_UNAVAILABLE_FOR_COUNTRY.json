@@ -1,0 +1,30 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9108510043",
+    "packages": [
+      "BLACKLIST_DETAILS"
+    ]
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "9108510043",
+      "cleansedPhoneNumber": "+919108510043",
+      "referenceId": "H2HzmhE4SQ0EMYg=",
+      "requestedPackages": [
+        "BLACKLIST_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "BLACKLIST_DETAILS",
+        "message": "Service unavailable for country India",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

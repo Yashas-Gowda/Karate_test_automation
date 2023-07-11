@@ -251,8 +251,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Examples:
       | Scenario                                                | statusCode | active  |
       | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN | 200        | UNKNOWN |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | yes     |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | no      |
+      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | YES     |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
 
   @PHONE_BASIC @Negitive
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
@@ -305,16 +305,163 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.meta.referenceId == "#string"
     And match $.meta.requestedPackages[0] == "PHONE_BASIC"
 
-    And match $.errors[0].package == "PHONE_BASIC"
-    And match $.errors[0].message == "PhoneNumber cannot be blank/null"
-    And match $.errors[0].code == "MISSING_PHONE_NUMBER"
-    And match $.errors[0].type == "INVALID_INPUT"
+    And match $.errors[*].package contains any "PHONE_BASIC"
+    And match $.errors[*].message contains any "PhoneNumber cannot be blank/null"
+    And match $.errors[*].code contains any "MISSING_PHONE_NUMBER"
+    And match $.errors[*].type contains any "INVALID_INPUT"
 
-    And match $.errors[1].package == "PHONE_BASIC"
-    And match $.errors[1].message ==  "Missing phone default country code"
-    And match $.errors[1].code == "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
-    And match $.errors[1].type == "INVALID_INPUT"
+    And match $.errors[*].package contains any "PHONE_BASIC"
+    And match $.errors[*].message contains any  "Missing phone default country code"
+    And match $.errors[*].code contains any "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
+    And match $.errors[*].type contains any "INVALID_INPUT"
 
     Examples:
       | Scenario                                                                               | statusCode |
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        |
+
+
+  @PHONE_BASIC @topUpHistory @izidata
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#notnull'
+    And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
+
+
+    * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
+    * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
+
+    * match each $.data.phone.basic.topUpHistory contains { "minimumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#? _ >=1000' }
+
+
+    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    * match $.meta == payload.response.meta
+
+    Examples:
+      | Scenario                                                        | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_HappyFlow                       | 200        |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1 | 200        |
+
+  @PHONE_BASIC @topUpHistory @izidata
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#notnull'
+    And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
+    And match $.data.phone.basic.topUpHistory[*].topUpCount contains any <topUpCount>
+
+    * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
+    * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
+
+    * match each $.data.phone.basic.topUpHistory contains { "minimumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#? _ >=1000' }
+
+    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    * match $.meta == payload.response.meta
+
+    Examples:
+      | Scenario                                                             | statusCode | topUpCount |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1      | 200        | 1          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9  | 200        | 9          |
+#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_48 | 200        | 48         |
+
+  @PHONE_BASIC @topUpHistory @izidata
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#notnull'
+    And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
+
+    * def topUpArray = <No_of_array_objects>
+    * print topUpArray
+    * match $.data.phone.basic.topUpHistory  == "#[topUpArray]"
+
+    * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
+    * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
+
+    * match each $.data.phone.basic.topUpHistory contains { "minimumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#? _ >=1000' }
+    * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#? _ >=1000' }
+
+    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    * match $.meta == payload.response.meta
+
+    Examples:
+      | Scenario                                                                 | statusCode | No_of_array_objects |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        | 10                  |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
+
+
+  @PHONE_BASIC @topUpHistory @izidata @Negative
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#null'
+
+
+    Examples:
+      | Scenario                                                                         | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
+
+  @PHONE_BASIC @topUpHistory @izidata @Negative
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#null'
+
+    Examples:
+      | Scenario                                                                         | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
+

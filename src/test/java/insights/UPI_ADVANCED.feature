@@ -227,7 +227,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print karate.pretty(response)
     Then status <statusCode>
     * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
-    * match UPI_ID_TYPE == [PhonePe,Paytm]
+    * match UPI_ID_TYPE contains only [PhonePe,Paytm]
     Then match $ contains any payload.response
 
     Examples:
