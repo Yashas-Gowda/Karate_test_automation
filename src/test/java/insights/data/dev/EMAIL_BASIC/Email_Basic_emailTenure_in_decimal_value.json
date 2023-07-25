@@ -1,13 +1,13 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "yashasgowda2510@gmail.com"
-  },
-  "response": {
+    "email": "sammykhnm17@gmail.com"
+  } ,
+  "response":{
     "data": {
       "phone": null,
       "email": {
@@ -33,23 +33,18 @@
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 2,
-            "firstBreach": "2018-12-01",
-            "lastBreach": "2020-06-20",
+            "noOfBreaches": 1,
+            "firstBreach": "2023-04-15",
+            "lastBreach": "2023-04-15",
             "breaches": [
               {
-                "platformName": "Dubsmash",
-                "domainName": "dubsmash.com",
-                "breachDate": "2018-12-01"
-              },
-              {
-                "platformName": "SitePoint",
-                "domainName": "sitepoint.com",
-                "breachDate": "2020-06-20"
+                "platformName": "RentoMojo",
+                "domainName": "rentomojo.com",
+                "breachDate": "2023-04-15"
               }
             ]
           },
-          "emailTenure": 4.65
+          "emailTenure": 0.28
         }
       },
       "address": null,
@@ -64,13 +59,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "yashasgowda2510@gmail.com",
+      "referenceId": "InsF6ghgSQ0EMgQ=",
+      "inputEmail": "sammykhnm17@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

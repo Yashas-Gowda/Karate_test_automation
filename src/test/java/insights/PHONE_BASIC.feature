@@ -446,22 +446,3 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
-  @PHONE_BASIC @topUpHistory @izidata @Negative
-  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
-    And headers headers
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
-    Then status <statusCode>
-    And match $.data.phone.basic == '#notnull'
-    And match $.data.phone.basic.topUpHistory == '#null'
-
-    Examples:
-      | Scenario                                                                         | statusCode |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
-

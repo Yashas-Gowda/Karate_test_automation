@@ -5,46 +5,40 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "mysite@ourearth.com"
-  },
+    "email": "azlin@moa.gov.in"
+  } ,
   "response":{
     "data": {
       "phone": null,
       "email": {
         "social": null,
         "basic": {
-          "deliverable": null,
+          "deliverable": false,
           "domainDetails": {
-            "domainName": "ourearth.com",
-            "tld": ".com",
-            "creationTime": "1997-02-20 05:00:00",
-            "updateTime": "2023-02-22 15:21:09",
-            "expiryTime": "2024-02-21 05:00:00",
-            "registered": true,
-            "companyName": "Domains By Proxy, LLC",
+            "domainName": "moa.gov.in",
+            "tld": ".in",
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": false,
+            "companyName": null,
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": false,
             "spfStrict": false,
             "suspiciousTld": false,
             "websiteExists": false,
-            "acceptAll": null,
+            "acceptAll": false,
             "custom": true
           },
           "breach": {
-            "isBreached": true,
-            "noOfBreaches": 1,
-            "firstBreach": "2019-02-25",
-            "lastBreach": "2019-02-25",
-            "breaches": [
-              {
-                "platformName": "Verifications.io",
-                "domainName": "verifications.io",
-                "breachDate": "2019-02-25"
-              }
-            ]
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
           },
-          "emailTenure": 4.41
+          "emailTenure": null
         }
       },
       "address": null,
@@ -59,8 +53,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "In-TMhYcSQ0EPEQ=",
-      "inputEmail": "mysite@ourearth.com",
+      "referenceId": "InqFYjctSQ0EM_g=",
+      "inputEmail": "azlin@moa.gov.in",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]

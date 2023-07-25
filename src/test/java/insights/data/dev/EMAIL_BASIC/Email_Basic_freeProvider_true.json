@@ -1,13 +1,13 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "yashasgowda2510@gmail.com"
-  },
-  "response": {
+  } ,
+  "response":{
     "data": {
       "phone": null,
       "email": {
@@ -64,13 +64,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "InKivg5_yQ0EJSQ=",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

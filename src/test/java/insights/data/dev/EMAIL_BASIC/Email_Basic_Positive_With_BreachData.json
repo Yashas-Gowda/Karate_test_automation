@@ -18,7 +18,7 @@
             "domainName": "yahoo.co.in",
             "tld": ".in",
             "creationTime": "2003-06-30 04:00:00",
-            "updateTime": "2023-06-03 09:13:20",
+            "updateTime": "2023-06-13 21:08:51",
             "expiryTime": "2024-06-30 04:00:00",
             "registered": true,
             "companyName": null,
@@ -114,7 +114,7 @@
               }
             ]
           },
-          "emailTenure": 11.15
+          "emailTenure": 11.22
         }
       },
       "address": null,
@@ -129,12 +129,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "AMS-test-1",
       "inputEmail": "deepakjain_878@yahoo.co.in",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
