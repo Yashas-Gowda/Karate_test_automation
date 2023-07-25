@@ -183,7 +183,6 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
       | Scenario                          | statusCode |
       | PHONE_SOCIAL_FIXED_line_summary_0 | 200        |
 
-
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
@@ -215,5 +214,3 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
       | PHONE_SOCIAL_country_Vietnam_VN_response_viber_respondent                                                                           | 200        |
       | PHONE_SOCIAL_country_UnitedKingdom_GB_response                                                                                      | 200        |
       | PHONE_SOCIAL_country_Italy_IT_response_google_flipkart_bukalapak_facebook_twitter_instagram_microsoft_telegram_whatsapp_viber_false | 200        |
-
-

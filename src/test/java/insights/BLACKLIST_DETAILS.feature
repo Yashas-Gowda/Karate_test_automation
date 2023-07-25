@@ -20,11 +20,11 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     Then match $ contains payload.response
 
     Examples:
-      | Scenario                                                              | statusCode |
-      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO | 200        |
-#      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_YES                | 200        |
+      | Scenario                                                                              | statusCode |
+      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO                 | 200        |
+      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_YES                | 200        |
 #      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NEEDS_VERIFICATION | 200        |
-#      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_null | 200        |
+      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_null                             | 200        |
 
   Scenario Outline: Validate DPI BLACKLIST_DETAILS Negative scenario where input is not an Indonesian number <Scenario>
     Given url requestUrl
@@ -46,3 +46,4 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     Examples:
       | Scenario                                                                                    | statusCode |
       | BLACKLIST_DETAILS_Negative_input_phonenumber_not_Indonesian_SERVICE_UNAVAILABLE_FOR_COUNTRY | 501        |
+

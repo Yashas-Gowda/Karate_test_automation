@@ -13,7 +13,7 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": false,
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
