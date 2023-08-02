@@ -1,12 +1,14 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "DEVICE_DETAILS"
     ],
     "countryCode": "IN",
-    "deviceIds": []
+    "deviceIds": [
+      "1db61125-297f-4544-abad-eae8a56ecd90"
+    ]
   },
   "response": {
     "data": {
@@ -19,40 +21,6 @@
       "upi": null,
       "device": {
         "deviceRecords": [
-          {
-            "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
-            "country": "IN",
-            "lastModified": "2023-07-29",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "M2101K7AI"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": 26.894960403442383,
-                "longitude": 75.76601028442383,
-                "city": "Jaipur",
-                "state": "RJ",
-                "zipCode": "302019"
-              },
-              "nightLocation": {
-                "latitude": 26.600217819213867,
-                "longitude": 75.72549819946289,
-                "city": "Bagru",
-                "state": "RJ",
-                "zipCode": "303904"
-              },
-              "mostSeenLocation": {
-                "latitude": 26.600217819213867,
-                "longitude": 75.72549819946289,
-                "city": "Bagru",
-                "state": "RJ",
-                "zipCode": "303904"
-              }
-            }
-          },
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
@@ -97,7 +65,6 @@
     "meta": {
       "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "inputDeviceIds": [
-        "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],
       "requestedPackages": [
