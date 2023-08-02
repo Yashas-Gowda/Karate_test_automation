@@ -1,13 +1,13 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "sdfdsfsd@HDFCBANK.COM"
-  },
-  "response": {
+  } ,
+  "response":{
     "data": {
       "phone": null,
       "email": {
@@ -53,7 +53,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "InFAMh1pyQ0EP1A=",
       "inputEmail": "sdfdsfsd@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

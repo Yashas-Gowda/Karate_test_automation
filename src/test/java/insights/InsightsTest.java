@@ -17,9 +17,9 @@ public class InsightsTest {
   @Karate.Test
   Karate testSystemProperty() {
     return Karate.run("classpath:insights")
-            .tags("@hello")
+            .tags("@topUpHistory")
             .outputCucumberJson(true)
-            .karateEnv("dev")
-            .systemProperty("foo", "bar");
+            .karateEnv("dev");
+//            .systemProperty("foo", "bar");
   }
 }

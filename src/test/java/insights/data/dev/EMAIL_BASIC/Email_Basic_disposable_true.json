@@ -5,9 +5,9 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "sdfdsfsd@HDFCBANK.COM"
+    "email": "ssam09999329420@junk.com"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": null,
       "email": {
@@ -15,21 +15,21 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
-            "domainName": "hdfcbank.com",
+            "domainName": "junk.com",
             "tld": ".com",
-            "creationTime": "1997-04-10 04:00:00",
-            "updateTime": "2023-04-15 17:58:07",
-            "expiryTime": "2027-04-11 04:00:00",
+            "creationTime": "1998-03-16 05:00:00",
+            "updateTime": "2023-06-23 15:22:58",
+            "expiryTime": "2030-03-15 04:00:00",
             "registered": true,
-            "companyName": "HDFC Bank Limited",
-            "disposable": false,
+            "companyName": "Domains By Proxy, LLC",
+            "disposable": true,
             "freeProvider": false,
-            "dmarcCompliance": true,
+            "dmarcCompliance": false,
             "spfStrict": true,
             "suspiciousTld": false,
             "websiteExists": true,
             "acceptAll": false,
-            "custom": true
+            "custom": false
           },
           "breach": {
             "isBreached": false,
@@ -53,8 +53,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
-      "inputEmail": "sdfdsfsd@HDFCBANK.COM",
+      "referenceId": "InFcvhr7SQ0EPxA=",
+      "inputEmail": "ssam09999329420@junk.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]

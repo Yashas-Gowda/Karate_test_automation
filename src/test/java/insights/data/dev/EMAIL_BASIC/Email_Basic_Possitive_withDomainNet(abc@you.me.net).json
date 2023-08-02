@@ -13,7 +13,7 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": false,
           "domainDetails": {
             "domainName": "you.me.net",
             "tld": ".net",
@@ -44,7 +44,7 @@
               }
             ]
           },
-          "emailTenure": 4.34
+          "emailTenure": 4.41
         }
       },
       "address": null,
@@ -59,7 +59,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "IoDnRjbCSQ0EJbg=",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"

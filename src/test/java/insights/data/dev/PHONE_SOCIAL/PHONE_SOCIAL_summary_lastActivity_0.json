@@ -1,0 +1,145 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "9917555811",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 8,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 3,
+            "lastActivity": 0,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "accountId": null,
+                "name": null
+              },
+              "yahoo": {
+                "registered": null
+              }
+            },
+            "ecommerce": {
+              "flipkart": {
+                "registered": true
+              },
+              "bukalapak": {
+                "registered": false
+              },
+              "jdid": {
+                "registered": null
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": true
+              },
+              "instagram": {
+                "registered": true
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": true
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": true,
+                "photo": null,
+                "lastSeen": "2023-07-18T13:31:55Z"
+              },
+              "whatsapp": {
+                "registered": true,
+                "photo": null,
+                "lastSeen": null,
+                "about": "Available"
+              },
+              "viber": {
+                "registered": false,
+                "photo": null,
+                "lastSeen": null,
+                "name": null
+              },
+              "kakao": {
+                "registered": null
+              },
+              "skype": {
+                "registered": true,
+                "language": null,
+                "id": "live:.cid.40728def97a3b150",
+                "handle": "live:.cid.40728def97a3b150",
+                "bio": null,
+                "name": "vijay pratap",
+                "age": null,
+                "gender": null,
+                "photo": "https://avatar.skype.com/v1/avatars/live:.cid.40728def97a3b150/public?returnDefaultImage=true",
+                "city": null,
+                "state": null,
+                "country": null
+              },
+              "ok": {
+                "registered": false,
+                "age": null
+              },
+              "zalo": {
+                "registered": false,
+                "uid": null,
+                "name": null,
+                "dateOfBirth": null
+              },
+              "line": {
+                "registered": false,
+                "name": null,
+                "photo": null
+              },
+              "snapchat": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9917555811",
+      "cleansedPhoneNumber": "+919917555811",
+      "referenceId": "01H5N2JDD04HNRHXAD8BR11435",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}
