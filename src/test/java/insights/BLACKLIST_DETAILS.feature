@@ -4,6 +4,7 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * configure charset = null
     * path '/api/insights/'
 
+    @smokeTest
   Scenario Outline: Validate DPI BLACKLIST_DETAILS positive scenario with single valid input where isBlacklisted is No<Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/BLACKLIST_DETAILS/<Scenario>.json")

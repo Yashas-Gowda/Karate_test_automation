@@ -5,6 +5,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+
   Scenario Outline: Validate DPI DEVICE_DETAILS possitive scenario with single valid input <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
@@ -23,7 +24,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | Scenario                               | statusCode |
       | Device_Details_Possitive_1_valid_input | 200        |
 
-
+  @smokeTest
   Scenario Outline: Validate DPI DEVICE_DETAILS possitive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple(TWO)_valid_input.json'

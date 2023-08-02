@@ -1,10 +1,16 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email":"sanjaytelecom2006@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "consentDetails": {
+      "consentId": "12W4HD",
+      "consentTimestamp": "2022-02-17T16:07:49Z",
+      "consentType": "TOC"
+    }
   },
   "response":{
     "data": {
@@ -12,16 +18,16 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 15,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 17,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 5,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 2,
-            "ageOnSocial": 891,
+            "registeredTravelProfiles": 1,
+            "ageOnSocial": null,
             "numberOfNamesReturned": 2,
             "numberOfPhotosReturned": 3
           },
@@ -31,13 +37,13 @@
                 "registered": true
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMRSqKcu4CU6xb5BL2CF9FcGndF26tO71wDBfORXXY6D=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR_n8F0p-N6kK2w7o7GLJmXJAVdDsA_nxx6P3b4EOyWwvM"
               },
               "yahoo": {
                 "registered": false
@@ -121,7 +127,7 @@
                 "username": null
               },
               "foursquare": {
-                "registered": false,
+                "registered": null,
                 "bio": null,
                 "photo": null,
                 "profileUrl": null
@@ -132,18 +138,18 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
-                "handle": null,
+                "name": "Sanjay Yadav",
+                "id": "sanvan2006",
+                "handle": "sanvan2006",
                 "bio": null,
                 "age": null,
-                "city": null,
+                "city": "Delhi",
                 "state": null,
-                "country": null,
-                "photo": null
+                "country": "India",
+                "photo": "https://avatar.skype.com/v1/avatars/sanvan2006/public?returnDefaultImage=true"
               },
               "discord": {
                 "registered": null
@@ -164,21 +170,21 @@
               },
               "linkedin": {
                 "registered": true,
-                "url": "https://linkedin.com/in/sameena-yasmeen-55b0aa217",
-                "name": "Sameena  Yasmeen",
-                "company": "Monnai",
-                "title": "Fintech | ProductManagement | Automation",
-                "location": "Bangalore Urban, Karnataka, India",
+                "url": "https://linkedin.com/in/sanjay-yadav-301b0a15",
+                "name": "Sanjay Yadav",
+                "company": "Samsung Electronics",
+                "title": "Operation Manager ll Production Planning ll  System Management ll SCM ll Electrical Maintenance ll Testing",
+                "location": "New Delhi, Delhi, India",
                 "website": null,
                 "twitter": null,
-                "photo": "https://media.licdn.com/dms/image/D5603AQFvAwDf4gyuWA/profile-displayphoto-shrink_400_400/0/1684686653403?e=1688369822&v=beta&t=6iHqw5WVt32VEodqhVerHlXCgJYjNrptUGDPm7j66hU",
-                "connectionCount": 119
+                "photo": "https://media.licdn.com/dms/image/C4D03AQGpBPMMXE4M6Q/profile-displayphoto-shrink_400_400/0/1641350788598?e=1690837200&v=beta&t=7NUUYDKJVvX3mAtGo8Td-dIX7dDP0s0k350RF1e0k8A",
+                "connectionCount": 228
               },
               "evernote": {
                 "registered": false
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": false
@@ -218,16 +224,16 @@
                 "registered": true
               },
               "airbnb": {
-                "registered": true,
-                "about": "",
-                "createdAt": "2021-01-23T06:49:50Z",
-                "name": "Sameena",
-                "identityVerified": "false",
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
                 "location": null,
-                "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
-                "revieweeCount": "0",
+                "photo": null,
+                "revieweeCount": null,
                 "trips": null,
-                "work": ""
+                "work": null
               }
             }
           }
@@ -246,13 +252,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "referenceId": "UI-b25c86f1d53c13a46192d97bdc2ab88aa7d601ed",
+      "inputEmail": "sanjaytelecom2006@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
-  }
+}

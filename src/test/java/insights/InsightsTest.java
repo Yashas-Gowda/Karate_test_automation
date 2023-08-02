@@ -6,7 +6,12 @@ import com.intuit.karate.junit5.Karate;
 public class InsightsTest {
   @Karate.Test
   Karate testSample() {
-    return Karate.run("classpath:insights").relativeTo(getClass());
+    return Karate.run("classpath:insights/EMAIL_SOCIAL.feature").relativeTo(getClass());
+  }
+
+  @Karate.Test
+  Karate smokeTest(){
+    return Karate.run("classpath:insights").tags("@smokeTest").relativeTo(getClass());
   }
 
   @Karate.Test
