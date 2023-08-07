@@ -4,8 +4,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
-    @smokeTest
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
+  @smokeTest
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - Email_Social_Schema validation,Booking&Spotify&Adobe&Quora_Registered,LinkedIn&Airbnb_Registered,Lazada&Microsoft&Evernote_Registered, wordpress&Gravatar&Twitter&Flipkart_Registered   - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
@@ -22,13 +22,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
     Then match $ contains payload.response
     Examples:
-      | Scenario                                                                    | statusCode |
-      | Email_Social                                                                | 200        |
-      | Email_Social_EmailProvider_Booking&Spotify&Adobe&Quora_Registered           | 200        |
-      | Email_Social_EmailProvider_LinkedIn&Airbnb_Registered                       | 200        |
+      | Scenario                                                          | statusCode |
+      | Email_Social                                                      | 200        |
+      | Email_Social_EmailProvider_Booking&Spotify&Adobe&Quora_Registered | 200        |
+      | Email_Social_EmailProvider_LinkedIn&Airbnb_Registered             | 200        |
 #      | Email_Social_EmailProvider_LinkedIn&Email_Social_EmailProvider_Yahoo&Google_Registered | 200        |
-      | Email_Social_Lazada&Microsoft&Evernote_Registered                           | 200        |
-      | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered                 | 200        |
+      | Email_Social_Lazada&Microsoft&Evernote_Registered                 | 200        |
+      | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered       | 200        |
 
      ## Check - Can we test scenario with ageonSocial NOT NULL
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
@@ -92,11 +92,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     Examples:
       | Scenario                                    | statusCode |
       | Email_Social_Negative_Emptyinput('')        | 400        |
-      | Email_Social_Negative_NullInput(' ')         | 400        |
-      | Email_Social_Negative_Invalid_email_address  | 400 |
+      | Email_Social_Negative_NullInput(' ')        | 400        |
+      | Email_Social_Negative_Invalid_email_address | 400        |
 
 
-    @smokeTest
+  @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL validate Summary section - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -136,8 +136,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
 
     Examples:
-      | Scenario                             | statusCode |
-      | Email_Social_Validate_summary        | 200        |
+      | Scenario                      | statusCode |
+      | Email_Social_Validate_summary | 200        |
 
 
   Scenario Outline:  DPI EMAIL_SOCIAL Test Google_registered, LinkedIn_IsNull,  - <Scenario>
@@ -159,5 +159,5 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
 
     Examples:
-      | Scenario                                                            | statusCode |
-      | Email_Social_Google_With_Photo_IsRegistered_LinkedIn_IsNull         | 200        |
+      | Scenario                                                    | statusCode |
+      | Email_Social_Google_With_Photo_IsRegistered_LinkedIn_IsNull | 200        |

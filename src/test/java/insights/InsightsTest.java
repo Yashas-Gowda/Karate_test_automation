@@ -6,7 +6,7 @@ import com.intuit.karate.junit5.Karate;
 public class InsightsTest {
   @Karate.Test
   Karate testSample() {
-    return Karate.run("classpath:insights/EMAIL_SOCIAL.feature").relativeTo(getClass());
+    return Karate.run("classpath:insights/UPI_ADVANCED.feature").tags("test").relativeTo(getClass());
   }
 
   @Karate.Test
@@ -22,9 +22,9 @@ public class InsightsTest {
   @Karate.Test
   Karate testSystemProperty() {
     return Karate.run("classpath:insights")
-            .tags("@hello")
+            .tags("@topUpHistory")
             .outputCucumberJson(true)
-            .karateEnv("dev")
-            .systemProperty("foo", "bar");
+            .karateEnv("dev");
+//            .systemProperty("foo", "bar");
   }
 }

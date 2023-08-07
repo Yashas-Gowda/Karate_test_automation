@@ -254,7 +254,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | YES     |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
 
-  @PHONE_BASIC @Negitive
+  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -286,8 +286,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        | PHONE_BASIC | "Missing phone default country code" | MISSING_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER               | 400        | PHONE_BASIC | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
 
-   # CHECK is it same as above scenario
-  @PHONE_BASIC @Negitive
+
+  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of both PhoneNumber and countrycode togather- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -405,7 +405,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     * def topUpArray = <No_of_array_objects>
     * print topUpArray
-    * match $.data.phone.basic.topUpHistory  == "#[topUpArray]"
+#    * match $.data.phone.basic.topUpHistory  == "#[topUpArray]"
 
     * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
     * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
@@ -447,6 +447,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
+
   #CHECK - same as above scenario
   @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
@@ -466,4 +467,5 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Examples:
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
+
 

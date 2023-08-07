@@ -234,35 +234,3 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Examples:
       | Scenario                                                                                 | statusCode |
       | UPI_ADVANCED_POSITIVE_Phone_input_only_&_get_output_wiyhoutGpayid_with_spycloud_no_email | 200        |
-
-    ## CHECK
-  Scenario: sample assertions
-    Given url requestUrl
-    And headers headers
-    * def data = { foo: [1, 2, 3] }
-    * match data.foo contains any [9, 2, 8]
-
-    * def data = { foo: [1, 2, 3] }
-    * match data.foo contains only [3, 2, 1]
-    * match data.foo contains only [2, 3, 1]
-
-  Scenario: sample assertions
-    Given url requestUrl
-    And headers headers
-    * def cat =
-  """
-  {
-    name: 'Billie',
-    kittens: [
-      { id: 23, name: 'Bob' },
-      { id: 42, name: 'Wild' }
-    ]
-  }
-  """
-    * def kitnums = $cat.kittens[*]
-    * print kitnums
-
-    * def kitnums = $cat.kittens[*].name
-    * print kitnums
-
-
