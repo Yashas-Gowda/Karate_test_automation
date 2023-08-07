@@ -4,6 +4,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+   @smokeTest
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
     And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
@@ -26,6 +27,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
       | IP_BASIC_NEGATIVE_empty_or_null_input | ""        | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
       | IP_BASIC_NEGATIVE_empty_or_null_input | null      | 400        | MISSING_IP_ADDRESS | Missing IPv4 or IPv6 address |
 
+    #CHECK - Looks same as the above sceanrio
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
     And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
@@ -72,6 +74,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
       | IP_BASIC_NEGATIVE_invalid_input | "123"     | 400        | INVALID_IP_ADDRESS | Invalid IP Address |
       | IP_BASIC_NEGATIVE_invalid_input | "123abc"  | 400        | INVALID_IP_ADDRESS | Invalid IP Address |
 
+    @smokeTest
   Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
     And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
