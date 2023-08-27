@@ -1,0 +1,23 @@
+{
+  "request":{
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": null,
+    "packages": [
+      "abc"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "invalid package name",
+        "code": "INVALID_PACKAGE_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

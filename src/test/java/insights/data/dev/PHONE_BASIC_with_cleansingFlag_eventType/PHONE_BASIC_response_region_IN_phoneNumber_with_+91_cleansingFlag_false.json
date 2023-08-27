@@ -1,46 +1,46 @@
 {
   "request":{
-    "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
+    "phoneNumber": "+919148771222",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_TRANSACTION",
+    "cleansingFlag": false,
     "packages": [
       "PHONE_BASIC"
-    ],
-    "phoneNumber": "919448493493",
-    "phoneDefaultCountryCode": "IN"
+    ]
   } ,
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919448493493",
+          "phoneNumber": "919148771222",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
+          "simType": "POSTPAID",
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": null,
           "country": "IN",
-          "originalCarrier": "BSNL - Karnataka",
+          "originalCarrier": "Airtel - Karnataka",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
-            "originalCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
+            "currentCarrierCircle": "Airtel Karnataka",
+            "originalCarrierCircle": "Airtel Karnataka",
             "changeInCarrierRegion": "NOT_CHANGED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "404",
-            "mobileNetworkCode": "71",
-            "networkName": "BSNL - Karnataka",
-            "serviceProfileId": "91062"
+            "mobileNetworkCode": "45",
+            "networkName": "Airtel - Karnataka",
+            "serviceProfileId": "91031"
           },
           "lastDeactivated": null,
           "isSpam": false,
@@ -62,8 +62,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919448493493",
-      "cleansedPhoneNumber": "+919448493493",
+      "inputPhoneNumber": "+919148771222",
+      "cleansedPhoneNumber": "+919148771222",
       "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "requestedPackages": [
         "PHONE_BASIC"

@@ -1,7 +1,7 @@
 {
   "request":{
-    "phoneNumber": "895395261892",
-    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6591725469",
+    "phoneDefaultCountryCode": "SG",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -12,51 +12,39 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "62895395261892",
+          "phoneNumber": "6591725469",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": null,
-          "country": "ID",
-          "originalCarrier": "H3G (PT. Hutchison 3 Indonesia)",
+          "country": "SG",
+          "originalCarrier": "Singtel Mobile",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "3 PT Hutchison 3 Indonesia",
-            "originalCarrierCircle": "3 PT Hutchison 3 Indonesia",
+            "currentCarrierCircle": "SingTel Singapore Telecom",
+            "originalCarrierCircle": "SingTel Singapore Telecom",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": null
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "510",
-            "mobileNetworkCode": "89",
-            "networkName": "H3G (PT. Hutchison 3 Indonesia)",
-            "serviceProfileId": "62501"
+            "mobileCountryCode": "525",
+            "mobileNetworkCode": "01",
+            "networkName": "Singtel Mobile",
+            "serviceProfileId": "65501"
           },
           "lastDeactivated": null,
           "isSpam": null,
-          "topUpHistory": [
-            {
-              "topUpTenure": {
-                "min": 360,
-                "max": 720
-              },
-              "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            }
-          ]
+          "topUpHistory": null
         },
         "social": null,
         "identity": null
@@ -74,9 +62,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "895395261892",
-      "cleansedPhoneNumber": "+62895395261892",
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "inputPhoneNumber": "6591725469",
+      "cleansedPhoneNumber": "+6591725469",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

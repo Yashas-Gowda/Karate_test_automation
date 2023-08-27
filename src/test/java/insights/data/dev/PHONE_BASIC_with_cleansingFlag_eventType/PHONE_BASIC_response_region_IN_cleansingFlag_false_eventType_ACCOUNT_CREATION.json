@@ -1,46 +1,54 @@
 {
   "request":{
+    "phoneNumber": "+919108510043",
+    "phoneDefaultCountryCode": "IN",
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
+    "cleansingFlag": false,
     "packages": [
       "PHONE_BASIC"
-    ],
-    "phoneNumber": "919448493493",
-    "phoneDefaultCountryCode": "IN"
+    ]
   } ,
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919448493493",
+          "phoneNumber": "919108510043",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
+          "simType": "PREPAID",
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
-          "phoneTenure": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
           "country": "IN",
-          "originalCarrier": "BSNL - Karnataka",
-          "ported": false,
+          "originalCarrier": "Airtel - Karnataka",
+          "ported": true,
           "portedHistory": {
-            "portedDate": null,
-            "numberOfPorts": 0,
-            "portedSinceXDays": null,
-            "currentCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
-            "originalCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
+            "portedDate": "2019-03-10",
+            "numberOfPorts": 1,
+            "portedSinceXDays": 1620,
+            "currentCarrierCircle": "Jio Karnataka",
+            "originalCarrierCircle": "Airtel Karnataka",
             "changeInCarrierRegion": "NOT_CHANGED",
-            "portedEvents": []
+            "portedEvents": [
+              {
+                "carrierCircle": "JIO Karnataka",
+                "portedDate": "2019-03-10"
+              }
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "404",
-            "mobileNetworkCode": "71",
-            "networkName": "BSNL - Karnataka",
-            "serviceProfileId": "91062"
+            "mobileCountryCode": "405",
+            "mobileNetworkCode": "861",
+            "networkName": "JIO - Karnataka",
+            "serviceProfileId": "91106"
           },
           "lastDeactivated": null,
           "isSpam": false,
@@ -62,8 +70,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919448493493",
-      "cleansedPhoneNumber": "+919448493493",
+      "inputPhoneNumber": "+919108510043",
+      "cleansedPhoneNumber": "+919108510043",
       "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "requestedPackages": [
         "PHONE_BASIC"

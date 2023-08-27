@@ -407,10 +407,9 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Examples:
       | Scenario                               | statusCode |
       | PHONE_SOCIAL_country_Malaysia_response | 200        |
-#      | PHONE_SOCIAL_country_Indonesia_response   | 200        |
-#      | PHONE_SOCIAL_country_Philippines_response | 200        |
-#      | PHONE_SOCIAL_country_Vietnam_VN_response  | 200        |
+      | PHONE_SOCIAL_country_Indonesia_response   | 200        |
+      | PHONE_SOCIAL_country_Philippines_response | 200        |
+      | PHONE_SOCIAL_country_Vietnam_VN_response  | 200        |
 
 
 
-# include

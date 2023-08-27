@@ -1,46 +1,62 @@
 {
-  "request":{
+  "request": {
+    "phoneNumber": "9986004990",
+    "phoneDefaultCountryCode": "IN",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_BASIC"
-    ],
-    "phoneNumber": "919448493493",
-    "phoneDefaultCountryCode": "IN"
-  } ,
+    ]
+  },
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919448493493",
+          "phoneNumber": "919986004990",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
+          "simType": "POSTPAID",
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
-          "phoneTenure": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
           "country": "IN",
-          "originalCarrier": "BSNL - Karnataka",
-          "ported": false,
+          "originalCarrier": "Vodafone - Karnataka",
+          "ported": true,
           "portedHistory": {
-            "portedDate": null,
-            "numberOfPorts": 0,
-            "portedSinceXDays": null,
-            "currentCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
-            "originalCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
+            "portedDate": "2017-12-20",
+            "numberOfPorts": 3,
+            "portedSinceXDays": 2066,
+            "currentCarrierCircle": "Airtel Karnataka",
+            "originalCarrierCircle": "Vi India Karnataka",
             "changeInCarrierRegion": "NOT_CHANGED",
-            "portedEvents": []
+            "portedEvents": [
+              {
+                "carrierCircle": "Airtel Karnataka",
+                "portedDate": "2017-12-20"
+              },
+              {
+                "carrierCircle": "Vodafone Karnataka",
+                "portedDate": "2017-06-23"
+              },
+              {
+                "carrierCircle": "Airtel Karnataka",
+                "portedDate": "2014-12-09"
+              }
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "404",
-            "mobileNetworkCode": "71",
-            "networkName": "BSNL - Karnataka",
-            "serviceProfileId": "91062"
+            "mobileNetworkCode": "45",
+            "networkName": "Airtel - Karnataka",
+            "serviceProfileId": "91031"
           },
           "lastDeactivated": null,
           "isSpam": false,
@@ -62,8 +78,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919448493493",
-      "cleansedPhoneNumber": "+919448493493",
+      "inputPhoneNumber": "9986004990",
+      "cleansedPhoneNumber": "+919986004990",
       "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "requestedPackages": [
         "PHONE_BASIC"

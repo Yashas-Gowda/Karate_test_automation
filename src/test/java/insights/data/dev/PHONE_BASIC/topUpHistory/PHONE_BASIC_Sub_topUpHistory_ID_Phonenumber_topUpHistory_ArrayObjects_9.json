@@ -48,24 +48,13 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 30
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 3,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 11000
             },
             {
               "topUpTenure": {
@@ -73,10 +62,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 3,
+              "topUpCount": 4,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 10000
             },
             {
               "topUpTenure": {
@@ -84,10 +73,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 22,
+              "topUpCount": 10,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 47000
+              "maximumTopUpAmount": 80000,
+              "averageTopUpAmount": 35000
             },
             {
               "topUpTenure": {
@@ -95,10 +84,21 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 81,
+              "topUpCount": 73,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 46000
+              "averageTopUpAmount": 44000
+            },
+            {
+              "topUpTenure": {
+                "min": 30,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 3,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 11000
             },
             {
               "topUpTenure": {
@@ -106,7 +106,7 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 1,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 5000,
               "averageTopUpAmount": 5000
@@ -117,10 +117,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 19,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 54000
+              "topUpCount": 6,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 80000,
+              "averageTopUpAmount": 51000
             },
             {
               "topUpTenure": {
@@ -128,10 +128,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 59,
+              "topUpCount": 63,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 45000
+              "averageTopUpAmount": 46000
             },
             {
               "topUpTenure": {
@@ -139,10 +139,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 46,
+              "topUpCount": 56,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 43000
+              "averageTopUpAmount": 45000
             }
           ]
         },
