@@ -5,6 +5,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+  @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-postal code,city,state,country) <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
@@ -188,6 +189,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                                  | statusCode |
       | Address_BASIC_Negative_Mandatory_Addressline1_Key_Missing | 400        |
 
+    #this same as above sceanrio?? CHECK
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where mandatory field "addressLine1" is with invalid input <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")

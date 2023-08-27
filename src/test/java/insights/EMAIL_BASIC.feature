@@ -4,7 +4,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
-  @second
+  @second @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
@@ -90,6 +90,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
       | Email_Basic_creationTime_updateTime_expiryTime_companyName_acceptAll_null__registered_disposable_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_websiteExists_false | 200        |
 
     # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
+  ## Check this
+  @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")

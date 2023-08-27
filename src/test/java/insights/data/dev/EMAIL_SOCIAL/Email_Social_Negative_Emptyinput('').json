@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMAIL_BASIC"
+      "EMAIL_SOCIAL"
     ],
     "email": ""
   },
@@ -12,12 +12,12 @@
     "meta": {
       "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
       "requestedPackages": [
-        "EMAIL_BASIC"
+        "EMAIL_SOCIAL"
       ]
     },
     "errors": [
       {
-        "package": "EMAIL_BASIC",
+        "package": "EMAIL_SOCIAL",
         "message": "Email cannot be empty/null",
         "code": "MISSING_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"

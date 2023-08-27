@@ -5,6 +5,7 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+    @smokeTest
   Scenario Outline: Validate SAMPLE DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")

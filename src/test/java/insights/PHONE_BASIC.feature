@@ -24,7 +24,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true             | 200        |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_UnitedKingdom(GB)_phoneValid_phoneDisposable_true | 200        |
 
-  @PHONE_BASIC @SPAM_CHECK @isSpam  @Eyecon
+  @smokeTest @PHONE_BASIC @SPAM_CHECK @isSpam  @Eyecon
   Scenario Outline:  DPI PHONE_BASIC_Sub_SPAM_CHECK positive scenario for Indian region with validation of isSpam - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
@@ -113,7 +113,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
 
-  @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
+  @smokeTest @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
@@ -363,7 +363,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        |
 
 
-  @PHONE_BASIC @topUpHistory @izidata
+  @smokeTest @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
@@ -489,6 +489,27 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
+
+  #CHECK - same as above scenario
+  @PHONE_BASIC @topUpHistory @izidata @Negative
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.basic.topUpHistory == '#null'
+
+    Examples:
+      | Scenario                                                                         | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
+
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
@@ -519,7 +540,6 @@ Feature: Testing of DPI  - Phone_basic scenarios
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
-
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
