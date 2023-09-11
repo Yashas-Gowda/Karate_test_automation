@@ -142,7 +142,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | Device_Details_Negitive_withInvalidInput | 400        | ["","",""]     |
 
 
-  Scenario Outline: Validation of DEVICE_DETAILS Package Negitive senarios with Invalid inputs - <Scenario>
+  Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
     And request payload.request.deviceIds = <deviceIds>
@@ -225,7 +225,6 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-
     Then status 400
     And match $.errors[0].message == "Invalid country code"
     And match $.errors[0].code == "INVALID_COUNTRY_CODE"
@@ -252,7 +251,6 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-
     Then status 400
     And match $.errors[*].message contains only ["Device Id Format is invalid/incorrect","Invalid country code"]
     And match $.errors[*].code contains only ["INVALID_COUNTRY_CODE","INVALID_DEVICE_ID"]
