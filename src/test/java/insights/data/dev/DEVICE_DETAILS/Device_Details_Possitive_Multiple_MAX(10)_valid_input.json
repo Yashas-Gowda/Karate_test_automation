@@ -20,320 +20,184 @@
       "device": {
         "deviceRecords": [
           {
-            "deviceId": "d498b340-25fc-4cf3-a927-c9a37f885841",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "M2006C3MII"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "mostSeenLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              }
-            }
-          },
-          {
-            "deviceId": "64aa8f98-9d60-4d72-a178-b06034cda47a",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "tecno",
-              "model": "LC8"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": 13.012018203735352,
-                "longitude": 77.54751205444336,
-                "city": "Bengaluru",
-                "state": "KA",
-                "zipCode": "560086"
-              },
-              "nightLocation": {
-                "latitude": 12.949533462524414,
-                "longitude": 77.56433486938477,
-                "city": "Bengaluru",
-                "state": "KA",
-                "zipCode": "560019"
-              },
-              "mostSeenLocation": {
-                "latitude": 13.012018203735352,
-                "longitude": 77.54751205444336,
-                "city": "Bengaluru",
-                "state": "KA",
-                "zipCode": "560086"
-              }
-            }
-          },
-          {
-            "deviceId": "a439a0c4-343b-41f3-b62b-64b1be2e3a7f",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Samsung",
-              "model": "SM-F7210"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "mostSeenLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              }
-            }
-          },
-          {
-            "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "2107113SI"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": 12.978544235229492,
-                "longitude": 77.58527755737305,
-                "city": "Bengaluru",
-                "state": "KA",
-                "zipCode": "560001"
-              },
-              "nightLocation": {
-                "latitude": 25.372838973999023,
-                "longitude": 83.00394058227539,
-                "city": "Varanasi",
-                "state": "UP",
-                "zipCode": "221007"
-              },
-              "mostSeenLocation": {
-                "latitude": 25.372838973999023,
-                "longitude": 83.00394058227539,
-                "city": "Varanasi",
-                "state": "UP",
-                "zipCode": "221007"
-              }
-            }
-          },
-          {
-            "deviceId": "2dd3825c-22b8-4efb-97f0-f1cfdeda4641",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "xiaomi",
-              "model": "Note 9 Pro"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": 13.097848892211914,
-                "longitude": 80.23881912231445,
-                "city": "Chennai",
-                "state": "TN",
-                "zipCode": "600023"
-              },
-              "nightLocation": {
-                "latitude": 13.096647262573242,
-                "longitude": 80.23847579956055,
-                "city": "Chennai",
-                "state": "TN",
-                "zipCode": "600023"
-              },
-              "mostSeenLocation": {
-                "latitude": 13.097848892211914,
-                "longitude": 80.23881912231445,
-                "city": "Chennai",
-                "state": "TN",
-                "zipCode": "600023"
-              }
-            }
-          },
-          {
-            "deviceId": "cab22197-414b-4ceb-9517-183774766d00",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Samsung",
-              "model": "SM-G950F"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "mostSeenLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              }
-            }
-          },
-          {
-            "deviceId": "345d1cd3-a754-4556-800f-65fb37ccce66",
-            "country": "IN",
-            "lastModified": "2023-02-13",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Samsung",
-              "model": "SM-G770F"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "mostSeenLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              }
-            }
-          },
-          {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-07-29",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "realme",
+              "manufacturer": "Realme",
               "model": "RMX2170"
             },
             "location": {
               "dayLocation": {
-                "latitude": 19.231481552124023,
-                "longitude": 72.83987045288086,
-                "city": "Mumbai",
-                "state": "MH",
-                "zipCode": "400092"
-              },
-              "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
-              },
-              "mostSeenLocation": {
                 "latitude": 19.169340133666992,
                 "longitude": 72.9741096496582,
                 "city": "Mumbai",
                 "state": "MH",
                 "zipCode": "400081"
+              },
+              "nightLocation": {
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
+              },
+              "mostSeenLocation": {
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
               }
             }
           },
           {
-            "deviceId": "8d182c92-781c-441f-a179-4dcdac151bb3",
+            "deviceId": "880ff4be-1bcb-453c-a823-5a35c8cd9642",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-07-29",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "OnePlus",
-              "model": "A3003 (3)"
+              "manufacturer": "Realme",
+              "model": "RMX2185"
             },
             "location": {
               "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 24.10752296447754,
+                "longitude": 74.80436325073242,
+                "city": "Mandsaur",
+                "state": "RJ",
+                "zipCode": "312623"
               },
               "nightLocation": {
-                "latitude": 23.11875343322754,
-                "longitude": 70.11594772338867,
-                "city": "Anjar",
-                "state": "GJ",
-                "zipCode": "370110"
+                "latitude": 24.10752296447754,
+                "longitude": 74.80436325073242,
+                "city": "Mandsaur",
+                "state": "RJ",
+                "zipCode": "312623"
               },
               "mostSeenLocation": {
-                "latitude": 23.063135147094727,
-                "longitude": 70.10805130004883,
-                "city": "Adipur",
-                "state": "GJ",
-                "zipCode": "370205"
+                "latitude": 24.10752296447754,
+                "longitude": 74.80436325073242,
+                "city": "Mandsaur",
+                "state": "RJ",
+                "zipCode": "312623"
               }
             }
           },
           {
-            "deviceId": "7dfdd56e-e795-4cfa-99d6-d548aaf55866",
+            "deviceId": "e84d8f43-d986-45bc-a529-ed9d494dac01",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-07-29",
             "deviceDetails": {
               "platform": "ANDROID",
-              "type": "TABLET",
+              "type": null,
+              "manufacturer": null,
+              "model": null
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 25.837011337280273,
+                "longitude": 72.24798202514648,
+                "city": "Balotra",
+                "state": "RJ",
+                "zipCode": "344022"
+              },
+              "nightLocation": {
+                "latitude": 24.790048599243164,
+                "longitude": 72.3200798034668,
+                "city": "Raniwara",
+                "state": "RJ",
+                "zipCode": "343039"
+              },
+              "mostSeenLocation": {
+                "latitude": 24.790048599243164,
+                "longitude": 72.3200798034668,
+                "city": "Raniwara",
+                "state": "RJ",
+                "zipCode": "343039"
+              }
+            }
+          },
+          {
+            "deviceId": "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Xiaomi",
+              "model": "M2006C3LII"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 25.4099178314209,
+                "longitude": 76.06985092163086,
+                "city": "Kapren",
+                "state": "RJ",
+                "zipCode": "323301"
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": 25.4099178314209,
+                "longitude": 76.06985092163086,
+                "city": "Kapren",
+                "state": "RJ",
+                "zipCode": "323301"
+              }
+            }
+          },
+          {
+            "deviceId": "bc42981d-6231-4834-a076-83a83478dbe8",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
               "manufacturer": "Samsung",
-              "model": "SM-T870"
+              "model": "SM-M307F"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 25.2231502532959,
+                "longitude": 77.17329025268555,
+                "city": "Kolaras",
+                "state": "RJ",
+                "zipCode": "325217"
+              },
+              "nightLocation": {
+                "latitude": 25.219545364379883,
+                "longitude": 77.1763801574707,
+                "city": "Kolaras",
+                "state": "RJ",
+                "zipCode": "325217"
+              },
+              "mostSeenLocation": {
+                "latitude": 25.219545364379883,
+                "longitude": 77.1763801574707,
+                "city": "Kolaras",
+                "state": "RJ",
+                "zipCode": "325217"
+              }
+            }
+          },
+          {
+            "deviceId": "702f643d-8c6f-4150-8d6a-6851ab58be09",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Oppo",
+              "model": "CPH1729"
             },
             "location": {
               "dayLocation": {
@@ -344,6 +208,40 @@
                 "zipCode": null
               },
               "nightLocation": {
+                "latitude": 26.57069206237793,
+                "longitude": 74.87131118774414,
+                "city": "Kishangarh",
+                "state": "RJ",
+                "zipCode": "305802"
+              },
+              "mostSeenLocation": {
+                "latitude": 26.57069206237793,
+                "longitude": 74.87131118774414,
+                "city": "Kishangarh",
+                "state": "RJ",
+                "zipCode": "305802"
+              }
+            }
+          },
+          {
+            "deviceId": "de2aa48d-7654-46b3-957d-11bb1b206c59",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Samsung",
+              "model": "SM-M015G"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 22.982454299926758,
+                "longitude": 72.59233474731445,
+                "city": "Ahmedabad",
+                "state": "GJ",
+                "zipCode": "380050"
+              },
+              "nightLocation": {
                 "latitude": null,
                 "longitude": null,
                 "city": null,
@@ -351,32 +249,136 @@
                 "zipCode": null
               },
               "mostSeenLocation": {
-                "latitude": 19.234914779663086,
-                "longitude": 72.83987045288086,
-                "city": "Mumbai",
-                "state": "MH",
-                "zipCode": "400092"
+                "latitude": 22.982454299926758,
+                "longitude": 72.59233474731445,
+                "city": "Ahmedabad",
+                "state": "GJ",
+                "zipCode": "380050"
+              }
+            }
+          },
+          {
+            "deviceId": "9cb44865-1d74-4744-b056-d7e71070da3c",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Xiaomi",
+              "model": "POCO F1"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 29.711923599243164,
+                "longitude": 74.5777702331543,
+                "city": "Tibbi",
+                "state": "RJ",
+                "zipCode": "335526"
+              },
+              "nightLocation": {
+                "latitude": 29.711923599243164,
+                "longitude": 74.5777702331543,
+                "city": "Tibbi",
+                "state": "RJ",
+                "zipCode": "335526"
+              },
+              "mostSeenLocation": {
+                "latitude": 29.711923599243164,
+                "longitude": 74.5777702331543,
+                "city": "Tibbi",
+                "state": "RJ",
+                "zipCode": "335526"
+              }
+            }
+          },
+          {
+            "deviceId": "0b45e826-d875-4d7f-8b8d-30388ebf40d2",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Samsung",
+              "model": "SM-A205F"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 26.841745376586914,
+                "longitude": 75.77287673950195,
+                "city": "Jaipur",
+                "state": "RJ",
+                "zipCode": "302020"
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": 26.868009567260742,
+                "longitude": 75.79519271850586,
+                "city": "Jaipur",
+                "state": "RJ",
+                "zipCode": "302015"
+              }
+            }
+          },
+          {
+            "deviceId": "0bb3f398-184d-43a1-aea6-637521dcf368",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Vivo",
+              "model": "V2037"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 28.388757705688477,
+                "longitude": 74.75698471069336,
+                "city": "Churu",
+                "state": "RJ",
+                "zipCode": "331001"
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": 28.388757705688477,
+                "longitude": 74.75698471069336,
+                "city": "Churu",
+                "state": "RJ",
+                "zipCode": "331001"
               }
             }
           }
         ]
       },
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "inputDeviceIds": [
-        "3342b21d-6ba2-4294-b808-f9612b24fed6",
-        "d498b340-25fc-4cf3-a927-c9a37f885841",
-        "8d182c92-781c-441f-a179-4dcdac151bb3",
-        "345d1cd3-a754-4556-800f-65fb37ccce66",
-        "2dd3825c-22b8-4efb-97f0-f1cfdeda4641",
-        "64aa8f98-9d60-4d72-a178-b06034cda47a",
-        "7dfdd56e-e795-4cfa-99d6-d548aaf55866",
         "1db61125-297f-4544-abad-eae8a56ecd90",
-        "cab22197-414b-4ceb-9517-183774766d00",
-        "a439a0c4-343b-41f3-b62b-64b1be2e3a7f"
+        "880ff4be-1bcb-453c-a823-5a35c8cd9642",
+        "e84d8f43-d986-45bc-a529-ed9d494dac01",
+        "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
+        "bc42981d-6231-4834-a076-83a83478dbe8",
+        "702f643d-8c6f-4150-8d6a-6851ab58be09",
+        "de2aa48d-7654-46b3-957d-11bb1b206c59",
+        "9cb44865-1d74-4744-b056-d7e71070da3c",
+        "0b45e826-d875-4d7f-8b8d-30388ebf40d2",
+        "0bb3f398-184d-43a1-aea6-637521dcf368"
       ],
       "requestedPackages": [
         "DEVICE_DETAILS"

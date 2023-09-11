@@ -47,33 +47,11 @@
           "topUpHistory": [
             {
               "topUpTenure": {
-                "min": 0,
-                "max": 360
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            },
-            {
-              "topUpTenure": {
-                "min": 180,
-                "max": 360
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            },
-            {
-              "topUpTenure": {
                 "min": 360,
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 3,
+              "topUpCount": 4,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 5000,
               "averageTopUpAmount": 5000

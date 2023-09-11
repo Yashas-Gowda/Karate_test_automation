@@ -409,3 +409,5 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
       | IDENTITY_CORRELATION_Negative_with_input_email_validation | 400        | " "       |
       | IDENTITY_CORRELATION_Negative_with_input_email_validation | 400        | null      |
 
+#Aug 1st 2023
+#Note: QA TEAM checked with TAPAN, as TAPAN CONFIRMED HE HAVEN'T RAN POC FOR Phone,Email, ip_adderessgit

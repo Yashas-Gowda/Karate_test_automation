@@ -5,18 +5,18 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "9420213952",
+    "phoneNumber": "919448493493",
     "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919420213952",
+          "phoneNumber": "919448493493",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "YES",
+          "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -24,26 +24,27 @@
           "phoneNumberAgeDescription": null,
           "phoneTenure": null,
           "country": "IN",
-          "originalCarrier": "BSNL - Maharashtra & Goa",
+          "originalCarrier": "BSNL - Karnataka",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "BSNL Mobile Maharashtra & Goa",
-            "originalCarrierCircle": "BSNL Mobile Maharashtra & Goa",
+            "currentCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
+            "originalCarrierCircle": "BSNL Mobile Karnataka (Bangalore)",
             "changeInCarrierRegion": "NOT_CHANGED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "404",
-            "mobileNetworkCode": "66",
-            "networkName": "BSNL - Maharashtra & Goa",
-            "serviceProfileId": "91061"
+            "mobileNetworkCode": "71",
+            "networkName": "BSNL - Karnataka",
+            "serviceProfileId": "91062"
           },
           "lastDeactivated": null,
-          "isSpam": false
+          "isSpam": false,
+          "topUpHistory": null
         },
         "social": null,
         "identity": null
@@ -61,9 +62,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9420213952",
-      "cleansedPhoneNumber": "+919420213952",
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputPhoneNumber": "919448493493",
+      "cleansedPhoneNumber": "+919448493493",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

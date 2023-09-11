@@ -20,83 +20,85 @@
       "device": {
         "deviceRecords": [
           {
-            "deviceId": "8d182c92-781c-441f-a179-4dcdac151bb3",
+            "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-07-29",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "OnePlus",
-              "model": "A3003 (3)"
+              "manufacturer": "Xiaomi",
+              "model": "M2101K7AI"
             },
             "location": {
               "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 26.894960403442383,
+                "longitude": 75.76601028442383,
+                "city": "Jaipur",
+                "state": "RJ",
+                "zipCode": "302019"
               },
               "nightLocation": {
-                "latitude": 23.11875343322754,
-                "longitude": 70.11594772338867,
-                "city": "Anjar",
-                "state": "GJ",
-                "zipCode": "370110"
+                "latitude": 26.600217819213867,
+                "longitude": 75.72549819946289,
+                "city": "Bagru",
+                "state": "RJ",
+                "zipCode": "303904"
               },
               "mostSeenLocation": {
-                "latitude": 23.063135147094727,
-                "longitude": 70.10805130004883,
-                "city": "Adipur",
-                "state": "GJ",
-                "zipCode": "370205"
+                "latitude": 26.600217819213867,
+                "longitude": 75.72549819946289,
+                "city": "Bagru",
+                "state": "RJ",
+                "zipCode": "303904"
               }
             }
           },
           {
-            "deviceId": "345d1cd3-a754-4556-800f-65fb37ccce66",
+            "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-02-13",
+            "lastModified": "2023-07-29",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "Samsung",
-              "model": "SM-G770F"
+              "manufacturer": "Realme",
+              "model": "RMX2170"
             },
             "location": {
               "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 19.169340133666992,
+                "longitude": 72.9741096496582,
+                "city": "Mumbai",
+                "state": "MH",
+                "zipCode": "400081"
               },
               "nightLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
               },
               "mostSeenLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
               }
             }
           }
         ]
       },
       "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "#ignore",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
       "inputDeviceIds": [
-        "345d1cd3-a754-4556-800f-65fb37ccce66",
-        "8d182c92-781c-441f-a179-4dcdac151bb3"
+        "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
+        "1db61125-297f-4544-abad-eae8a56ecd90"
       ],
       "requestedPackages": [
         "DEVICE_DETAILS"

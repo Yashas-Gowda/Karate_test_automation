@@ -5,8 +5,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
-
-  Scenario Outline: Validate DPI DEVICE_DETAILS possitive scenario with single valid input <Scenario>
+  Scenario Outline: Validate DPI DEVICE_DETAILS positive scenario with single valid input <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
     And headers headers
@@ -21,11 +20,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     Then match $ contains payload.response
 
     Examples:
-      | Scenario                               | statusCode |
-      | Device_Details_Possitive_1_valid_input | 200        |
+      | Scenario                              | statusCode |
+      | Device_Details_Positive_1_valid_input | 200        |
 
-  @smokeTest
-  Scenario Outline: Validate DPI DEVICE_DETAILS possitive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS Positive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple(TWO)_valid_input.json'
     And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
@@ -46,10 +44,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
     Examples:
       | deviceIds                                                                       |
-      | ["345d1cd3-a754-4556-800f-65fb37ccce66","8d182c92-781c-441f-a179-4dcdac151bb3"] |
+      | ["97867bc8-0cdc-4072-86c4-2cc7e9d05616","1db61125-297f-4544-abad-eae8a56ecd90"] |
 
-
-  Scenario Outline: Validate DPI DEVICE_DETAILS possitive scenario with Multiple valid input(10 devices) - Device_Details_Possitive_Multiple_MAX(10)_valid_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS positive scenario with Multiple valid input(10 devices) - Device_Details_Possitive_Multiple_MAX(10)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple_MAX(10)_valid_input.json'
     And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
@@ -66,8 +63,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     Then print payload.response
     Then match payload.response.data.device.deviceRecords == '#[10]'
     Examples:
-      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                               |
-      | ["3342b21d-6ba2-4294-b808-f9612b24fed6","d498b340-25fc-4cf3-a927-c9a37f885841","8d182c92-781c-441f-a179-4dcdac151bb3","345d1cd3-a754-4556-800f-65fb37ccce66","2dd3825c-22b8-4efb-97f0-f1cfdeda4641","64aa8f98-9d60-4d72-a178-b06034cda47a","7dfdd56e-e795-4cfa-99d6-d548aaf55866","1db61125-297f-4544-abad-eae8a56ecd90","cab22197-414b-4ceb-9517-183774766d00","a439a0c4-343b-41f3-b62b-64b1be2e3a7f"] |
+      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+      | ["1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
 
 
 #      | "3342b21d-6ba2-4294-b808-f9612b24fed6" |
@@ -101,9 +98,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].package == "DEVICE_DETAILS"
     Then match $ contains payload.response
     Examples:
-      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-      | ["3342b21d-6ba2-4294-b808-f9612b24fed6","d498b340-25fc-4cf3-a927-c9a37f885841","8d182c92-781c-441f-a179-4dcdac151bb3","345d1cd3-a754-4556-800f-65fb37ccce66","2dd3825c-22b8-4efb-97f0-f1cfdeda4641","64aa8f98-9d60-4d72-a178-b06034cda47a","7dfdd56e-e795-4cfa-99d6-d548aaf55866","1db61125-297f-4544-abad-eae8a56ecd90","cab22197-414b-4ceb-9517-183774766d00","a439a0c4-343b-41f3-b62b-64b1be2e3a7f","c8ce79ec-dd48-4ad0-8a7b-6637decd91b5"] |
-
+      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+#    old  | ["3342b21d-6ba2-4294-b808-f9612b24fed6","d498b340-25fc-4cf3-a927-c9a37f885841","8d182c92-781c-441f-a179-4dcdac151bb3","345d1cd3-a754-4556-800f-65fb37ccce66","2dd3825c-22b8-4efb-97f0-f1cfdeda4641","64aa8f98-9d60-4d72-a178-b06034cda47a","7dfdd56e-e795-4cfa-99d6-d548aaf55866","1db61125-297f-4544-abad-eae8a56ecd90","cab22197-414b-4ceb-9517-183774766d00","a439a0c4-343b-41f3-b62b-64b1be2e3a7f","c8ce79ec-dd48-4ad0-8a7b-6637decd91b5"]                                        |
+      | ["97867bc8-0cdc-4072-86c4-2cc7e9d05616","1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
 
 
 #      | "3342b21d-6ba2-4294-b808-f9612b24fed6" |
@@ -119,7 +116,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 #      | "a439a0c4-343b-41f3-b62b-64b1be2e3a7f" |
 #      | "c8ce79ec-dd48-4ad0-8a7b-6637decd91b5" |
 
-  Scenario Outline: Validation of DEVICE_DETAILS Package Negitive senarios with Invalid inputs - <Scenario>
+  Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
     And request payload.request.deviceIds = <deviceIds>
@@ -145,7 +142,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | Device_Details_Negitive_withInvalidInput | 400        | ["","",""]     |
 
 
-  Scenario Outline: Validation of DEVICE_DETAILS Package Negitive senarios with Invalid inputs - <Scenario>
+  Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
     And request payload.request.deviceIds = <deviceIds>
@@ -192,19 +189,18 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | ["3342b21d-6ba2-4294-b808-f9612b24fed6","  ",null,"",null] |
 
 
-  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with null/empty countryCode inputs - Device_Details_Negitive_CountryCode_Empty&null_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with null/empty countryCode inputs - Device_Details_Negative_CountryCode_Empty&null_input.json
     Given url requestUrl
-    * def Scenario = 'Device_Details_Negitive_CountryCode_Empty&null_input.json'
+    * def Scenario = 'Device_Details_Negative_CountryCode_Empty&null_input.json'
     And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    When method POST
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-
-    When method POST
     Then status 400
     And match $.errors[0].message == "Missing Country Code"
     And match $.errors[0].code == "MISSING_COUNTRY_CODE"
@@ -216,9 +212,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | ""          |
       | "  "        |
 
-  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with Invalid countryCode inputs - Device_Details_Negitive_CountryCode_invalid_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with Invalid countryCode inputs - Device_Details_Negative_CountryCode_invalid_input.json
     Given url requestUrl
-    * def Scenario = 'Device_Details_Negitive_CountryCode_invalid_input.json'
+    * def Scenario = 'Device_Details_Negative_CountryCode_invalid_input.json'
     And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And headers headers
@@ -241,9 +237,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | "ab1"       |
 
 
-  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with INVALID Device_id & CountryCode inputs - Device_Details_Negitive_CountryCode_invalid_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with INVALID Device_id & CountryCode inputs - Device_Details_Negative_CountryCode_invalid_input.json
     Given url requestUrl
-    * def Scenario = 'Device_Details_Negitive_InvalidCountryCode_InvalidDeviceid_input.json'
+    * def Scenario = 'Device_Details_Negative_InvalidCountryCode_InvalidDeviceid_input.json'
     And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And request payload.request.deviceIds = <deviceIds>
@@ -293,4 +289,24 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | ["123abc"] |
 
     
+#valid device id
+#  "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
+#  "1db61125-297f-4544-abad-eae8a56ecd90",
+#  "1db61125-297f-4544-abad-eae8a56ecd90",
+#  880ff4be-1bcb-453c-a823-5a35c8cd9642
+#  e84d8f43-d986-45bc-a529-ed9d494dac01
+#  9723ec2b-17e2-43da-86c6-76f30a4c4f39
+#
+#  bc42981d-6231-4834-a076-83a83478dbe8
+#  702f643d-8c6f-4150-8d6a-6851ab58be09
+#  de2aa48d-7654-46b3-957d-11bb1b206c59
+#  9cb44865-1d74-4744-b056-d7e71070da3c
+#  0b45e826-d875-4d7f-8b8d-30388ebf40d2
+#
+#  0bb3f398-184d-43a1-aea6-637521dcf368
+#
+#
+# 11 device id - ["97867bc8-0cdc-4072-86c4-2cc7e9d05616","1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"]
+
+# 10 device id - ["1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"]
 

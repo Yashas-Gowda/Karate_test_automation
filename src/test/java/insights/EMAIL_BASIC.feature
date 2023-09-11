@@ -157,3 +157,111 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
       | Email_Basic_Negitive_Nullinput(' ')     | 400        |
       | Email_Basic_Negitive_Nullinput(null)    | 400        |
       | Email_Basic_Negitive_No_input_Email_key | 400        |
+
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+
+    And match $.data.email.social == '#null'
+    And match $.data.email.basic == '#notnull'
+    And match $.data.email.basic == '#object'
+    And match $.data.email.basic contains deep {"deliverable": '#present',"emailTenure": '#present'}
+    And match $.data.email.basic.domainDetails contains deep {"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"}
+    And match $.data.email.basic.breach contains deep {"isBreached":"#present","noOfBreaches":"#present","firstBreach":"#present","lastBreach":"#present","breaches":[{"platformName":"#present","domainName":"#present","breachDate":"#present"}]}
+    And match $.data contains deep {"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_BASIC"]}
+    And match $.errors == []
+
+    Examples:
+      | Scenario                                        | statusCode |
+      | Email_Basic_isBreached_true_emailTenure_notnull | 200        |
+
+  @Schema_validation_2
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    Then match $ contains deep
+
+    """
+   {
+	"data": {
+		"phone": null,
+		"email": {
+			"social": null,
+			"basic": {
+				"deliverable": '#present',
+				"domainDetails": {
+					"domainName": '#present',
+					"tld": '#present',
+					"creationTime": '#present',
+					"updateTime": '#present',
+					"expiryTime": '#present',
+					"registered": '#present',
+					"companyName": '#present',
+					"disposable": '#present',
+					"freeProvider": '#present',
+					"dmarcCompliance": '#present',
+					"spfStrict": '#present',
+					"suspiciousTld": '#present',
+					"websiteExists": '#present',
+					"acceptAll": '#present',
+					"custom": '#present'
+				},
+				"breach": {
+					"isBreached": '#present',
+					"noOfBreaches": '#present',
+					"firstBreach": '#present',
+					"lastBreach": '#present',
+					"breaches": [
+						{
+							"platformName": '#present',
+							"domainName": '#present',
+							"breachDate": '#present'
+						}
+					]
+				},
+				"emailTenure": '#present'
+			}
+		},
+		"address": '#null',
+		"name": '#null',
+		"ip": '#null',
+		"identity": '#null',
+		"upi": '#null',
+		"device": '#null',
+		"employment": '#null',
+		"income": '#null',
+		"blacklist": '#null',
+		"bre": '#null'
+	},
+	"meta": {
+		"referenceId": '#present',
+		"inputEmail": '#present',
+		"requestedPackages": [
+			"EMAIL_BASIC"
+		]
+	},
+	"errors": []
+}
+    """
+
+    Examples:
+      | Scenario                              | statusCode |
+      | Email_Basic_FIDO_V2_Schema_validation | 200        |
+

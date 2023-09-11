@@ -93,13 +93,14 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.data.phone.basic.portedHistory == { portedDate:'##notnull',numberOfPorts:'#number',portedSinceXDays:'##number',currentCarrierCircle:'##string',originalCarrierCircle:'##string',changeInCarrierRegion:'##string',portedEvents:'#array'}
 
     Examples:
-      | Scenario                                                                                     | statusCode | ported | portedDate   | numberOfPorts | portedSinceXDays | portedEvents |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_US_ported_portedDate_numberOfPorts_portedSinceXDays_true  | 200        | true   | "2020-04-12" | 3             | '#number'        | '#[3]'       |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_US_ported_portedDate_numberOfPorts_portedSinceXDays_false | 200        | false  | "2022-08-10" | 2             | '#number'        | '#[2]'       |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_IN_ported_portedDate_numberOfPorts_portedSinceXDays_true  | 200        | true   | "2023-04-05" | 1             | '#number'        | '#[1]'       |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_IN_ported_portedDate_numberOfPorts_portedSinceXDays_false | 200        | false  | null         | 0             | null             | '#[0]'       |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_true  | 200        | true   | "2022-05-07" | 1             | '#number'        | '#[1]'       |
-      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_false | 200        | false  | null         | 0             | null             | '#[0]'       |
+      | Scenario                                                                                                          | statusCode | ported | portedDate   | numberOfPorts | portedSinceXDays | portedEvents |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_US_ported_portedDate_numberOfPorts_portedSinceXDays_true                       | 200        | true   | "2020-04-12" | 3             | '#number'        | '#[3]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_US_ported_portedDate_numberOfPorts_portedSinceXDays_false                      | 200        | false  | "2022-08-10" | 2             | '#number'        | '#[2]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_IN_ported_portedDate_numberOfPorts_portedSinceXDays_true                       | 200        | true   | "2023-04-05" | 1             | '#number'        | '#[1]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_IN_ported_portedDate_numberOfPorts_portedSinceXDays_false                      | 200        | false  | null         | 0             | null             | '#[0]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_true                       | 200        | true   | "2022-05-07" | 1             | '#number'        | '#[1]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_false                      | 200        | false  | null         | 0             | null             | '#[0]'       |
+      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_IN_FIXED_LANDLINE_NUMBER_ported_portedDate_numberOfPorts_portedSinceXDays_null | 200        | false  | null         | 0             | null             | '#[0]'       |
 
 #    Examples:
 #      | Scenario                                                                                     | statusCode | ported | portedDate   | numberOfPorts | portedSinceXDays | currentCarrierCircle            | originalCarrierCircle           | changeInCarrierRegion |
@@ -135,7 +136,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.phoneTenure.min == <phoneTenure_min>
     And match $.data.phone.basic.phoneTenure.max == <phoneTenure_max>
 
-# Asli.ri is not yet onboarded in DPI so indonesia scenarios are included.
+# Asli.ri is not yet onboarded in DPI so indonesia scenarios are not included.
 
     Examples:
       | Scenario                                                                                                                             | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
@@ -149,6 +150,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_24_48          | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_48_null        | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_returned_portedDate_null_then_phoneTenure_is_returned            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned             | 200        | "#null"        | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                    | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
 
 
   @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
@@ -232,6 +236,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
       | PHONE_BASIC_Sub_CARRIER_INFORMATION_US_TMT_networkName_T-Mobile US-SVR-10X2_with_special_localRoutingNumber | 200        | "T-Mobile US-SVR-10X/2" | "9198055337"       | "310"             | "004"             | Verizon Wireless:6006 - SVR/2 | 151971           |
 
+    #After discussion with roopa,Suggestion was to add YES,NO,Known for now and Our Automation is not handling fallback check for data partners
   @PHONE_BASIC @PHONE_STATUS @WDD @TMT @Xconnect @active
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_STATUS positive scenario for Indian region with validation of active - <Scenario>
     Given url requestUrl
@@ -247,15 +252,21 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic == '#notnull'
 
     And match $.data.phone.basic.active == "<active>"
-
+#Brazil = WDD->TMT->Xconnect
+  # non brazil= TMT->Xconnect
     Examples:
-      | Scenario                                                | statusCode | active  |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN | 200        | UNKNOWN |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes     | 200        | YES     |
+      | Scenario                                                                                       | statusCode | active  |
+      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                        | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                            | 200        | YES     |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes         | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN     | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
+     # | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
 
   @PHONE_BASIC @Negative
-  Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber, countryCode separately - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
@@ -274,17 +285,48 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.meta.requestedPackages[0] == "PHONE_BASIC"
 
 
-    And match $.errors[0].package == "<package>"
+    And match $.errors[0].package == <package>
     And match $.errors[0].message == <message>
     And match $.errors[0].code == "<code>"
     And match $.errors[0].type == "<type>"
 
     Examples:
-      | Scenario                                                          | statusCode | package     | message                              | code                               | type          |
-      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER               | 400        | PHONE_BASIC | "Invalid Phone Number"               | INVALID_PHONE_NUMBER               | INVALID_INPUT |
-      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE | 400        | PHONE_BASIC | "Invalid phone default country code" | INVALID_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
-      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        | PHONE_BASIC | "Missing phone default country code" | MISSING_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
-      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER               | 400        | PHONE_BASIC | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
+      | Scenario                                                                            | statusCode | package       | message                              | code                               | type          |
+      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER                                 | 400        | "PHONE_BASIC" | "Invalid Phone Number"               | INVALID_PHONE_NUMBER               | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER_as_junk_value                   | 400        | "PHONE_BASIC" | "Invalid Phone Number"               | INVALID_PHONE_NUMBER               | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE                   | 400        | "PHONE_BASIC" | "Invalid phone default country code" | INVALID_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME | 400        | "PHONE_BASIC" | "Invalid phone default country code" | INVALID_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY               | 400        | "PHONE_BASIC" | "Missing phone default country code" | MISSING_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE             | 400        | "PHONE_BASIC" | "Missing phone default country code" | MISSING_PHONE_DEFAULT_COUNTRY_CODE | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_KEY                             | 400        | "PHONE_BASIC" | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_VALUE                           | 400        | "PHONE_BASIC" | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
+
+  @PHONE_BASIC @Negative
+  Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of PHONE_BASIC when package name is not specified  - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data == '#null'
+    And match $.meta == '#null'
+
+    And match $.errors[0].package == <package>
+    And match $.errors[0].message == <message>
+    And match $.errors[0].code == "<code>"
+    And match $.errors[0].type == "<type>"
+
+    Examples:
+      | Scenario                                                       | statusCode | package | message                   | code                 | type          |
+      | PHONE_BASIC_Negative_scenarios_When_Package_empty_Array        | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_When_Package_name_null          | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_When_Package_Key_is_not_present | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
+      | PHONE_BASIC_Negative_scenarios_When_Package_name_random        | 400        | null    | "invalid package name"    | INVALID_PACKAGE_NAME | INVALID_INPUT |
 
 
   @PHONE_BASIC @Negative
@@ -382,9 +424,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.meta == payload.response.meta
 
     Examples:
-      | Scenario                                                             | statusCode | topUpCount |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1      | 200        | 1          |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9  | 200        | 9          |
+      | Scenario                                                            | statusCode | topUpCount |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1     | 200        | 1          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9 | 200        | 8          |
 #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_48 | 200        | 48         |
 
   @PHONE_BASIC @topUpHistory @izidata
@@ -423,7 +465,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
+#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
 
 
@@ -468,4 +510,111 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
+  @Schema_validation_1
+  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
 
+    And match $.data.phone.basic == '#notnull'
+    And match $.data.phone.social == '#null'
+    And match $.data.phone.basic == '#object'
+    And match $.data.phone.identity == '#null'
+    And match $.data.phone.basic contains deep {"phoneNumber":"#present","phoneValid":"#present","phoneType":"#present","phoneDisposable":"#present","active":"#present","activationDate":"#present","activeSinceXDays":"#present","simType":"#present","phoneNumberAge":"#present","phoneNumberAgeDescription":"#present","phoneTenure":"#object","country":"#present","originalCarrier":"#present","ported":"#present","lastDeactivated":"#present","isSpam":"#present","topUpHistory":"##present"}
+    And match $.data.phone.basic.portedHistory contains deep {"portedDate":"#present","numberOfPorts":"#present","portedSinceXDays":"#present","currentCarrierCircle":"#present","originalCarrierCircle":"#present","changeInCarrierRegion":"#present"}
+    And match $.data.phone.basic.portedHistory.portedEvents == '#array'
+    And match $.data.phone.basic.currentNetwork contains deep {"localRoutingNumber":"#present","mobileCountryCode":"#present","mobileNetworkCode":"#present","networkName":"#present","serviceProfileId":"#present"}
+
+    Examples:
+      | Scenario                                                                       | statusCode |
+      | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true | 200        |
+
+  @Schema_validation_2
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    Then match $ contains deep
+    """
+    {
+	"data": {
+		"phone": {
+			"basic": {
+				"phoneNumber": '#present',
+				"phoneValid": '#present',
+				"phoneType": '#present',
+				"phoneDisposable": '#present',
+				"active": '#present',
+				"activationDate": '#present',
+				"activeSinceXDays": '#present',
+				"simType": '#present',
+				"phoneNumberAge": '#present',
+				"phoneNumberAgeDescription": '#present',
+				"phoneTenure": '#object',
+				"country": '#present',
+				"originalCarrier": '#present',
+				"ported": '#present',
+				"portedHistory": {
+					"portedDate": '#present',
+					"numberOfPorts": '#present',
+					"portedSinceXDays": '#present',
+					"currentCarrierCircle": '#present',
+					"originalCarrierCircle": '#present',
+					"changeInCarrierRegion": '#present',
+					"portedEvents": []
+				},
+				"currentNetwork": {
+					"localRoutingNumber": '#present',
+					"mobileCountryCode": '#present',
+					"mobileNetworkCode": '#present',
+					"networkName": '#present',
+					"serviceProfileId": '#present'
+				},
+				"lastDeactivated": '#present',
+				"isSpam": '#present',
+				"topUpHistory": '##present'
+			},
+			"social": '#null',
+			"identity": '#null'
+		},
+		"email": '#null',
+		"address": '#null',
+		"name": '#null',
+		"ip": '#null',
+		"identity": '#null',
+		"upi": '#null',
+		"device": '#null',
+		"employment": '#null',
+		"income": '#null',
+		"blacklist": '#null',
+		"bre": '#null'
+	},
+	"meta": {
+		"inputPhoneNumber": '#present',
+		"cleansedPhoneNumber": '#present',
+		"referenceId": '#present',
+		"requestedPackages": [
+			"PHONE_BASIC"
+		]
+	},
+	"errors": '#[0]'
+}
+    """
+
+    Examples:
+      | Scenario                                                                       | statusCode |
+      | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true | 200        |

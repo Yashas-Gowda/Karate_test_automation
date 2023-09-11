@@ -13,7 +13,15 @@
   },
   "response": {
     "data": null,
-    "meta": null,
+    "meta": {
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "inputDeviceIds": [
+        "3342b21d-6ba2-4294-b808-f9612b24fed6"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
     "errors": [
       {
         "package": "DEVICE_DETAILS",
