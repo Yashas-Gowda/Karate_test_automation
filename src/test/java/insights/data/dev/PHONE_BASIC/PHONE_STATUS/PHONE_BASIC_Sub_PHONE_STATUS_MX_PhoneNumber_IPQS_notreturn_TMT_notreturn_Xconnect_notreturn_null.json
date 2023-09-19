@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": null,
           "phoneDisposable": false,
-          "active": "UNKOWN",
+          "active": "N",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,

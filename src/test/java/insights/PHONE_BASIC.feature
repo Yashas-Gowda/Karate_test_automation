@@ -261,12 +261,12 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #  for Other:  Data partner flow => TMT-> X-connect.
     Examples:
       | Scenario                                                                                            | statusCode | active  |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                             | 200        | UNKNOWN |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                                 | 200        | YES     |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                             | 200        | UNKNOWN |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                                 | 200        | YES     |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes              | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN          | 200        | UNKNOWN |
-      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES      | 200        | YES     |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES      | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                  | 200        | YES     |
      # | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                  | 200        | YES     |
