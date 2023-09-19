@@ -1,0 +1,53 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_BASIC"
+    ],
+    "address": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "addressLine5": "",
+      "addressLine6": "",
+      "addressLine7": "",
+      "addressLine8": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "Country": ""
+    }
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "ADDRESS_BASIC"
+      ],
+      "inputAddress": {
+        "addressLine1": "",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": "",
+        "addressLine6": "",
+        "addressLine7": "",
+        "addressLine8": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": null
+      }
+    },
+    "errors": [
+      {
+        "package": "ADDRESS_BASIC",
+        "message": "address.addressLine1 is missing",
+        "code": "MISSING_ADDRESSLINE1",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

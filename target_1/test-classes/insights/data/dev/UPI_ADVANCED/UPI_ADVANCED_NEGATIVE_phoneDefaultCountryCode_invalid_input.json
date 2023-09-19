@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": ""
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "9108510043",
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "Invalid phone default country code",
+        "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

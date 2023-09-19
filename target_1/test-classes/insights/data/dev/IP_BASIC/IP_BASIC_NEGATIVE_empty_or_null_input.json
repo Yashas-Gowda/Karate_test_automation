@@ -1,0 +1,27 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IP_BASIC"
+    ],
+    "ipAddress":""
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "IP_BASIC",
+        "message": "Missing IPv4 or IPv6 address",
+        "code": "MISSING_IP_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

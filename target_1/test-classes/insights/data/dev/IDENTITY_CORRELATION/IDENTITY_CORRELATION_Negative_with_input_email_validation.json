@@ -1,0 +1,30 @@
+{
+  "request": {
+    "phoneNumber": "8005550123",
+    "email": "",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_CORRELATION"
+    ]
+  },
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Missing event type",
+        "code": "MISSING_EVENT_TYPE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": null,
+        "message": "package is not selected",
+        "code": "PACKAGE_NOT_SELECTED",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

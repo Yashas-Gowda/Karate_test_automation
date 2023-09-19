@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[1.1:27]","start":1694761924524,"end":1694761925807,"title":"src\/test\/java\/insights\/IP_BASIC[1.1:27] 12:42:04.524-12:42:05.807 Validation of IP_BASIC Negative scenario for error code when an invalid \/ null \/ empty IP address in input -> IP_BASIC_NEGATIVE_empty_or_null_input | InputIP -> \"\"."},{"id":2,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[1.2:28]","start":1694761925817,"end":1694761926291,"title":"src\/test\/java\/insights\/IP_BASIC[1.2:28] 12:42:05.817-12:42:06.291 Validation of IP_BASIC Negative scenario for error code when an invalid \/ null \/ empty IP address in input -> IP_BASIC_NEGATIVE_empty_or_null_input | InputIP -> null."},{"id":3,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[2.1:50]","start":1694761926298,"end":1694761926546,"title":"src\/test\/java\/insights\/IP_BASIC[2.1:50] 12:42:06.298-12:42:06.546 Validation of IP_BASIC Negative scenario for error code when an invalid \/ null \/ empty IP address in input -> IP_BASIC_NEGATIVE_empty_or_null_input1 | InputIP -> \" \".","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[3.1:73]","start":1694761926558,"end":1694761926758,"title":"src\/test\/java\/insights\/IP_BASIC[3.1:73] 12:42:06.558-12:42:06.758 Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> IP_BASIC_NEGATIVE_invalid_input | InputIP -> \"abc\"."},{"id":5,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[3.2:74]","start":1694761926764,"end":1694761927062,"title":"src\/test\/java\/insights\/IP_BASIC[3.2:74] 12:42:06.764-12:42:07.062 Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> IP_BASIC_NEGATIVE_invalid_input | InputIP -> \"123\"."},{"id":6,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[3.3:75]","start":1694761927067,"end":1694761927294,"title":"src\/test\/java\/insights\/IP_BASIC[3.3:75] 12:42:07.067-12:42:07.294 Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> IP_BASIC_NEGATIVE_invalid_input | InputIP -> \"123abc\"."},{"id":7,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[4.1:94]","start":1694761927300,"end":1694761928309,"title":"src\/test\/java\/insights\/IP_BASIC[4.1:94] 12:42:07.300-12:42:08.309 Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> IP_BASIC_POSITIVE_IPV4_Input | InputIP -> \"206.84.238.175\".","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[4.2:95]","start":1694761928314,"end":1694761929194,"title":"src\/test\/java\/insights\/IP_BASIC[4.2:95] 12:42:08.314-12:42:09.194 Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> IP_BASIC_POSITIVE_IPV6_Input | InputIP -> \"2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF\".","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/insights\/IP_BASIC[5.1:118]","start":1694761929199,"end":1694761929701,"title":"src\/test\/java\/insights\/IP_BASIC[5.1:118] 12:42:09.199-12:42:09.701 Validation of IP_BASIC Positive scenario for Valid IP_address with \"High Abuse velocity\",\"recent abuse\", \"bot status\",\"VPN\" -> IP_BASIC_POSITIVE_SpecialCases | InputIP -> \"192.168.1.1\".","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

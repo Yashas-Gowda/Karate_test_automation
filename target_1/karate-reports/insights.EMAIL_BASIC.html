@@ -1,0 +1,5050 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"9077676e-3af5-4a0a-8119-eba7e7b32c01",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>insights.EMAIL_BASIC</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-09-15 03:25:48 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:23]"><span>[1.1:23]</span> <span>DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Possitive_withTLDGmail(abc@gmail.com)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:26]"><span>[1.2:26]</span> <span>DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Positive_With_BreachData</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:27]"><span>[1.3:27]</span> <span>DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Positive_EmailTenure_Present_in_doubledigit</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:28]"><span>[1.4:28]</span> <span>DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_emailTenure_in_decimal_value</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5.1:110]"><span>[5.1:110]</span> <span>DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_EmailDeliverable_False</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5.2:111]"><span>[5.2:111]</span> <span>DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_EmailTenureIs_NULL</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5.3:112]"><span>[5.3:112]</span> <span>DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_Positive_0_BreachData</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5.4:113]"><span>[5.4:113]</span> <span>DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_Positive_CustomDomain_True</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">insights/EMAIL_BASIC.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing of DPI  - EMAIL_BASIC feature scenarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a><a class="badge badge-primary" href="karate-tags.html">second</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:23]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Possitive_withTLDGmail(abc@gmail.com)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1205</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">15:25:29.693 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_Possitive_withTLDGmail(abc@gmail.com).json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1194</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">15:25:29.702 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 116
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;yashasgowda2510@gmail.com&quot;}
+
+15:25:30.894 response time in milliseconds: 1190
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:29 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 999
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;gmail.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1995-08-13 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-07-11 10:10:13&quot;,&quot;expiryTime&quot;:&quot;2024-08-12 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;Google LLC&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:true,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:false},&quot;breach&quot;:{&quot;isBreached&quot;:true,&quot;noOfBreaches&quot;:2,&quot;firstBreach&quot;:&quot;2018-12-01&quot;,&quot;lastBreach&quot;:&quot;2020-06-20&quot;,&quot;breaches&quot;:[{&quot;platformName&quot;:&quot;Dubsmash&quot;,&quot;domainName&quot;:&quot;dubsmash.com&quot;,&quot;breachDate&quot;:&quot;2018-12-01&quot;},{&quot;platformName&quot;:&quot;SitePoint&quot;,&quot;domainName&quot;:&quot;sitepoint.com&quot;,&quot;breachDate&quot;:&quot;2020-06-20&quot;}]},&quot;emailTenure&quot;:4.79}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;yashasgowda2510@gmail.com&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">15:25:30.895 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;yashasgowda2510@gmail.com&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">15:25:30.895 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;gmail.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1995-08-13 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-07-11 10:10:13&quot;,
+          &quot;expiryTime&quot;: &quot;2024-08-12 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;Google LLC&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 2,
+          &quot;firstBreach&quot;: &quot;2018-12-01&quot;,
+          &quot;lastBreach&quot;: &quot;2020-06-20&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Dubsmash&quot;,
+              &quot;domainName&quot;: &quot;dubsmash.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-12-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;SitePoint&quot;,
+              &quot;domainName&quot;: &quot;sitepoint.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-20&quot;
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: &quot;#number&quot;
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;yashasgowda2510@gmail.com&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">15:25:30.898 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;gmail.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1995-08-13 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-07-11 10:10:13&quot;,
+          &quot;expiryTime&quot;: &quot;2024-08-12 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;Google LLC&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 2,
+          &quot;firstBreach&quot;: &quot;2018-12-01&quot;,
+          &quot;lastBreach&quot;: &quot;2020-06-20&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Dubsmash&quot;,
+              &quot;domainName&quot;: &quot;dubsmash.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-12-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;SitePoint&quot;,
+              &quot;domainName&quot;: &quot;sitepoint.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-20&quot;
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: 4.79
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;yashasgowda2510@gmail.com&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a><a class="badge badge-primary" href="karate-tags.html">second</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:26]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Positive_With_BreachData</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2638</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">15:25:30.908 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_Positive_With_BreachData.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2630</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">15:25:30.914 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 117
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;deepakjain_878@yahoo.co.in&quot;}
+
+15:25:33.543 response time in milliseconds: 2626
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 2042
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;yahoo.co.in&quot;,&quot;tld&quot;:&quot;.in&quot;,&quot;creationTime&quot;:&quot;2003-06-30 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-06-13 21:08:51&quot;,&quot;expiryTime&quot;:&quot;2024-06-30 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:null,&quot;disposable&quot;:false,&quot;freeProvider&quot;:true,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:true,&quot;custom&quot;:false},&quot;breach&quot;:{&quot;isBreached&quot;:true,&quot;noOfBreaches&quot;:15,&quot;firstBreach&quot;:&quot;2012-05-05&quot;,&quot;lastBreach&quot;:&quot;2021-05-23&quot;,&quot;breaches&quot;:[{&quot;platformName&quot;:&quot;Animoto&quot;,&quot;domainName&quot;:&quot;animoto.com&quot;,&quot;breachDate&quot;:&quot;2018-07-10&quot;},{&quot;platformName&quot;:&quot;bigbasket&quot;,&quot;domainName&quot;:&quot;bigbasket.com&quot;,&quot;breachDate&quot;:&quot;2020-10-14&quot;},{&quot;platformName&quot;:&quot;Canva&quot;,&quot;domainName&quot;:&quot;canva.com&quot;,&quot;breachDate&quot;:&quot;2019-05-24&quot;},{&quot;platformName&quot;:&quot;Cit0day&quot;,&quot;domainName&quot;:&quot;cit0day.in&quot;,&quot;breachDate&quot;:&quot;2020-11-04&quot;},{&quot;platformName&quot;:&quot;Digimon&quot;,&quot;domainName&quot;:&quot;digimon.co.in&quot;,&quot;breachDate&quot;:&quot;2016-09-05&quot;},{&quot;platformName&quot;:&quot;Domino&#39;s India&quot;,&quot;domainName&quot;:&quot;dominos.co.in&quot;,&quot;breachDate&quot;:&quot;2021-03-24&quot;},{&quot;platformName&quot;:&quot;Gaadi&quot;,&quot;domainName&quot;:&quot;gaadi.com&quot;,&quot;breachDate&quot;:&quot;2015-05-14&quot;},{&quot;platformName&quot;:&quot;iMesh&quot;,&quot;domainName&quot;:&quot;imesh.com&quot;,&quot;breachDate&quot;:&quot;2013-09-22&quot;},{&quot;platformName&quot;:&quot;IndiaMART&quot;,&quot;domainName&quot;:&quot;indiamart.com&quot;,&quot;breachDate&quot;:&quot;2021-05-23&quot;},{&quot;platformName&quot;:&quot;LinkedIn&quot;,&quot;domainName&quot;:&quot;linkedin.com&quot;,&quot;breachDate&quot;:&quot;2012-05-05&quot;},{&quot;platformName&quot;:&quot;Promo&quot;,&quot;domainName&quot;:&quot;promo.com&quot;,&quot;breachDate&quot;:&quot;2020-06-22&quot;},{&quot;platformName&quot;:&quot;Twitter (200M)&quot;,&quot;domainName&quot;:&quot;twitter.com&quot;,&quot;breachDate&quot;:&quot;2021-01-01&quot;},{&quot;platformName&quot;:&quot;Verifications.io&quot;,&quot;domainName&quot;:&quot;verifications.io&quot;,&quot;breachDate&quot;:&quot;2019-02-25&quot;},{&quot;platformName&quot;:&quot;Zomato&quot;,&quot;domainName&quot;:&quot;zomato.com&quot;,&quot;breachDate&quot;:&quot;2017-05-17&quot;},{&quot;platformName&quot;:&quot;demo.zeeroq.com&quot;,&quot;domainName&quot;:null,&quot;breachDate&quot;:null}]},&quot;emailTenure&quot;:11.36}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;deepakjain_878@yahoo.co.in&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.16">15:25:33.544 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;deepakjain_878@yahoo.co.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.17">15:25:33.545 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;yahoo.co.in&quot;,
+          &quot;tld&quot;: &quot;.in&quot;,
+          &quot;creationTime&quot;: &quot;2003-06-30 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-06-13 21:08:51&quot;,
+          &quot;expiryTime&quot;: &quot;2024-06-30 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: null,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: true,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 15,
+          &quot;firstBreach&quot;: &quot;2012-05-05&quot;,
+          &quot;lastBreach&quot;: &quot;2021-05-23&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Animoto&quot;,
+              &quot;domainName&quot;: &quot;animoto.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-07-10&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;bigbasket&quot;,
+              &quot;domainName&quot;: &quot;bigbasket.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-10-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Canva&quot;,
+              &quot;domainName&quot;: &quot;canva.com&quot;,
+              &quot;breachDate&quot;: &quot;2019-05-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Cit0day&quot;,
+              &quot;domainName&quot;: &quot;cit0day.in&quot;,
+              &quot;breachDate&quot;: &quot;2020-11-04&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Digimon&quot;,
+              &quot;domainName&quot;: &quot;digimon.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2016-09-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Domino&#39;s India&quot;,
+              &quot;domainName&quot;: &quot;dominos.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2021-03-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Gaadi&quot;,
+              &quot;domainName&quot;: &quot;gaadi.com&quot;,
+              &quot;breachDate&quot;: &quot;2015-05-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;iMesh&quot;,
+              &quot;domainName&quot;: &quot;imesh.com&quot;,
+              &quot;breachDate&quot;: &quot;2013-09-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;IndiaMART&quot;,
+              &quot;domainName&quot;: &quot;indiamart.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-05-23&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;LinkedIn&quot;,
+              &quot;domainName&quot;: &quot;linkedin.com&quot;,
+              &quot;breachDate&quot;: &quot;2012-05-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Promo&quot;,
+              &quot;domainName&quot;: &quot;promo.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Twitter (200M)&quot;,
+              &quot;domainName&quot;: &quot;twitter.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-01-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Verifications.io&quot;,
+              &quot;domainName&quot;: &quot;verifications.io&quot;,
+              &quot;breachDate&quot;: &quot;2019-02-25&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Zomato&quot;,
+              &quot;domainName&quot;: &quot;zomato.com&quot;,
+              &quot;breachDate&quot;: &quot;2017-05-17&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;demo.zeeroq.com&quot;,
+              &quot;domainName&quot;: null,
+              &quot;breachDate&quot;: null
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: &quot;#number&quot;
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;deepakjain_878@yahoo.co.in&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.18">15:25:33.548 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;yahoo.co.in&quot;,
+          &quot;tld&quot;: &quot;.in&quot;,
+          &quot;creationTime&quot;: &quot;2003-06-30 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-06-13 21:08:51&quot;,
+          &quot;expiryTime&quot;: &quot;2024-06-30 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: null,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: true,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 15,
+          &quot;firstBreach&quot;: &quot;2012-05-05&quot;,
+          &quot;lastBreach&quot;: &quot;2021-05-23&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Animoto&quot;,
+              &quot;domainName&quot;: &quot;animoto.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-07-10&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;bigbasket&quot;,
+              &quot;domainName&quot;: &quot;bigbasket.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-10-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Canva&quot;,
+              &quot;domainName&quot;: &quot;canva.com&quot;,
+              &quot;breachDate&quot;: &quot;2019-05-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Cit0day&quot;,
+              &quot;domainName&quot;: &quot;cit0day.in&quot;,
+              &quot;breachDate&quot;: &quot;2020-11-04&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Digimon&quot;,
+              &quot;domainName&quot;: &quot;digimon.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2016-09-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Domino&#39;s India&quot;,
+              &quot;domainName&quot;: &quot;dominos.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2021-03-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Gaadi&quot;,
+              &quot;domainName&quot;: &quot;gaadi.com&quot;,
+              &quot;breachDate&quot;: &quot;2015-05-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;iMesh&quot;,
+              &quot;domainName&quot;: &quot;imesh.com&quot;,
+              &quot;breachDate&quot;: &quot;2013-09-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;IndiaMART&quot;,
+              &quot;domainName&quot;: &quot;indiamart.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-05-23&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;LinkedIn&quot;,
+              &quot;domainName&quot;: &quot;linkedin.com&quot;,
+              &quot;breachDate&quot;: &quot;2012-05-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Promo&quot;,
+              &quot;domainName&quot;: &quot;promo.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Twitter (200M)&quot;,
+              &quot;domainName&quot;: &quot;twitter.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-01-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Verifications.io&quot;,
+              &quot;domainName&quot;: &quot;verifications.io&quot;,
+              &quot;breachDate&quot;: &quot;2019-02-25&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Zomato&quot;,
+              &quot;domainName&quot;: &quot;zomato.com&quot;,
+              &quot;breachDate&quot;: &quot;2017-05-17&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;demo.zeeroq.com&quot;,
+              &quot;domainName&quot;: null,
+              &quot;breachDate&quot;: null
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: 11.36
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;deepakjain_878@yahoo.co.in&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a><a class="badge badge-primary" href="karate-tags.html">second</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:27]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_Positive_EmailTenure_Present_in_doubledigit</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2990</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">15:25:33.556 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_Positive_EmailTenure_Present_in_doubledigit.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2981</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.15">15:25:33.563 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 117
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;deepakjain_878@yahoo.co.in&quot;}
+
+15:25:36.540 response time in milliseconds: 2976
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 2042
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;yahoo.co.in&quot;,&quot;tld&quot;:&quot;.in&quot;,&quot;creationTime&quot;:&quot;2003-06-30 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-06-13 21:08:51&quot;,&quot;expiryTime&quot;:&quot;2024-06-30 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:null,&quot;disposable&quot;:false,&quot;freeProvider&quot;:true,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:true,&quot;custom&quot;:false},&quot;breach&quot;:{&quot;isBreached&quot;:true,&quot;noOfBreaches&quot;:15,&quot;firstBreach&quot;:&quot;2012-05-05&quot;,&quot;lastBreach&quot;:&quot;2021-05-23&quot;,&quot;breaches&quot;:[{&quot;platformName&quot;:&quot;Animoto&quot;,&quot;domainName&quot;:&quot;animoto.com&quot;,&quot;breachDate&quot;:&quot;2018-07-10&quot;},{&quot;platformName&quot;:&quot;bigbasket&quot;,&quot;domainName&quot;:&quot;bigbasket.com&quot;,&quot;breachDate&quot;:&quot;2020-10-14&quot;},{&quot;platformName&quot;:&quot;Canva&quot;,&quot;domainName&quot;:&quot;canva.com&quot;,&quot;breachDate&quot;:&quot;2019-05-24&quot;},{&quot;platformName&quot;:&quot;Cit0day&quot;,&quot;domainName&quot;:&quot;cit0day.in&quot;,&quot;breachDate&quot;:&quot;2020-11-04&quot;},{&quot;platformName&quot;:&quot;Digimon&quot;,&quot;domainName&quot;:&quot;digimon.co.in&quot;,&quot;breachDate&quot;:&quot;2016-09-05&quot;},{&quot;platformName&quot;:&quot;Domino&#39;s India&quot;,&quot;domainName&quot;:&quot;dominos.co.in&quot;,&quot;breachDate&quot;:&quot;2021-03-24&quot;},{&quot;platformName&quot;:&quot;Gaadi&quot;,&quot;domainName&quot;:&quot;gaadi.com&quot;,&quot;breachDate&quot;:&quot;2015-05-14&quot;},{&quot;platformName&quot;:&quot;iMesh&quot;,&quot;domainName&quot;:&quot;imesh.com&quot;,&quot;breachDate&quot;:&quot;2013-09-22&quot;},{&quot;platformName&quot;:&quot;IndiaMART&quot;,&quot;domainName&quot;:&quot;indiamart.com&quot;,&quot;breachDate&quot;:&quot;2021-05-23&quot;},{&quot;platformName&quot;:&quot;LinkedIn&quot;,&quot;domainName&quot;:&quot;linkedin.com&quot;,&quot;breachDate&quot;:&quot;2012-05-05&quot;},{&quot;platformName&quot;:&quot;Promo&quot;,&quot;domainName&quot;:&quot;promo.com&quot;,&quot;breachDate&quot;:&quot;2020-06-22&quot;},{&quot;platformName&quot;:&quot;Twitter (200M)&quot;,&quot;domainName&quot;:&quot;twitter.com&quot;,&quot;breachDate&quot;:&quot;2021-01-01&quot;},{&quot;platformName&quot;:&quot;Verifications.io&quot;,&quot;domainName&quot;:&quot;verifications.io&quot;,&quot;breachDate&quot;:&quot;2019-02-25&quot;},{&quot;platformName&quot;:&quot;Zomato&quot;,&quot;domainName&quot;:&quot;zomato.com&quot;,&quot;breachDate&quot;:&quot;2017-05-17&quot;},{&quot;platformName&quot;:&quot;demo.zeeroq.com&quot;,&quot;domainName&quot;:null,&quot;breachDate&quot;:null}]},&quot;emailTenure&quot;:11.36}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;deepakjain_878@yahoo.co.in&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.16">15:25:36.541 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;deepakjain_878@yahoo.co.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.17">15:25:36.542 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;yahoo.co.in&quot;,
+          &quot;tld&quot;: &quot;.in&quot;,
+          &quot;creationTime&quot;: &quot;2003-06-30 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-06-13 21:08:51&quot;,
+          &quot;expiryTime&quot;: &quot;2024-06-30 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: null,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: true,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 15,
+          &quot;firstBreach&quot;: &quot;2012-05-05&quot;,
+          &quot;lastBreach&quot;: &quot;2021-05-23&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Animoto&quot;,
+              &quot;domainName&quot;: &quot;animoto.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-07-10&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;bigbasket&quot;,
+              &quot;domainName&quot;: &quot;bigbasket.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-10-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Canva&quot;,
+              &quot;domainName&quot;: &quot;canva.com&quot;,
+              &quot;breachDate&quot;: &quot;2019-05-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Cit0day&quot;,
+              &quot;domainName&quot;: &quot;cit0day.in&quot;,
+              &quot;breachDate&quot;: &quot;2020-11-04&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Digimon&quot;,
+              &quot;domainName&quot;: &quot;digimon.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2016-09-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Domino&#39;s India&quot;,
+              &quot;domainName&quot;: &quot;dominos.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2021-03-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Gaadi&quot;,
+              &quot;domainName&quot;: &quot;gaadi.com&quot;,
+              &quot;breachDate&quot;: &quot;2015-05-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;iMesh&quot;,
+              &quot;domainName&quot;: &quot;imesh.com&quot;,
+              &quot;breachDate&quot;: &quot;2013-09-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;IndiaMART&quot;,
+              &quot;domainName&quot;: &quot;indiamart.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-05-23&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;LinkedIn&quot;,
+              &quot;domainName&quot;: &quot;linkedin.com&quot;,
+              &quot;breachDate&quot;: &quot;2012-05-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Promo&quot;,
+              &quot;domainName&quot;: &quot;promo.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Twitter (200M)&quot;,
+              &quot;domainName&quot;: &quot;twitter.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-01-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Verifications.io&quot;,
+              &quot;domainName&quot;: &quot;verifications.io&quot;,
+              &quot;breachDate&quot;: &quot;2019-02-25&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Zomato&quot;,
+              &quot;domainName&quot;: &quot;zomato.com&quot;,
+              &quot;breachDate&quot;: &quot;2017-05-17&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;demo.zeeroq.com&quot;,
+              &quot;domainName&quot;: null,
+              &quot;breachDate&quot;: null
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: &quot;#number&quot;
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;deepakjain_878@yahoo.co.in&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.18">15:25:36.547 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;yahoo.co.in&quot;,
+          &quot;tld&quot;: &quot;.in&quot;,
+          &quot;creationTime&quot;: &quot;2003-06-30 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-06-13 21:08:51&quot;,
+          &quot;expiryTime&quot;: &quot;2024-06-30 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: null,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: true,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 15,
+          &quot;firstBreach&quot;: &quot;2012-05-05&quot;,
+          &quot;lastBreach&quot;: &quot;2021-05-23&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;Animoto&quot;,
+              &quot;domainName&quot;: &quot;animoto.com&quot;,
+              &quot;breachDate&quot;: &quot;2018-07-10&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;bigbasket&quot;,
+              &quot;domainName&quot;: &quot;bigbasket.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-10-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Canva&quot;,
+              &quot;domainName&quot;: &quot;canva.com&quot;,
+              &quot;breachDate&quot;: &quot;2019-05-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Cit0day&quot;,
+              &quot;domainName&quot;: &quot;cit0day.in&quot;,
+              &quot;breachDate&quot;: &quot;2020-11-04&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Digimon&quot;,
+              &quot;domainName&quot;: &quot;digimon.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2016-09-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Domino&#39;s India&quot;,
+              &quot;domainName&quot;: &quot;dominos.co.in&quot;,
+              &quot;breachDate&quot;: &quot;2021-03-24&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Gaadi&quot;,
+              &quot;domainName&quot;: &quot;gaadi.com&quot;,
+              &quot;breachDate&quot;: &quot;2015-05-14&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;iMesh&quot;,
+              &quot;domainName&quot;: &quot;imesh.com&quot;,
+              &quot;breachDate&quot;: &quot;2013-09-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;IndiaMART&quot;,
+              &quot;domainName&quot;: &quot;indiamart.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-05-23&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;LinkedIn&quot;,
+              &quot;domainName&quot;: &quot;linkedin.com&quot;,
+              &quot;breachDate&quot;: &quot;2012-05-05&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Promo&quot;,
+              &quot;domainName&quot;: &quot;promo.com&quot;,
+              &quot;breachDate&quot;: &quot;2020-06-22&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Twitter (200M)&quot;,
+              &quot;domainName&quot;: &quot;twitter.com&quot;,
+              &quot;breachDate&quot;: &quot;2021-01-01&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Verifications.io&quot;,
+              &quot;domainName&quot;: &quot;verifications.io&quot;,
+              &quot;breachDate&quot;: &quot;2019-02-25&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;Zomato&quot;,
+              &quot;domainName&quot;: &quot;zomato.com&quot;,
+              &quot;breachDate&quot;: &quot;2017-05-17&quot;
+            },
+            {
+              &quot;platformName&quot;: &quot;demo.zeeroq.com&quot;,
+              &quot;domainName&quot;: null,
+              &quot;breachDate&quot;: null
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: 11.36
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;deepakjain_878@yahoo.co.in&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a><a class="badge badge-primary" href="karate-tags.html">second</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:28]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario - where emailTenure = notnull Email_Basic_emailTenure_in_decimal_value</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>863</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.4">15:25:36.553 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_emailTenure_in_decimal_value.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">858</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.15">15:25:36.558 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 112
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;sammykhnm17@gmail.com&quot;}
+
+15:25:37.414 response time in milliseconds: 854
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 913
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;gmail.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1995-08-13 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-07-11 10:10:13&quot;,&quot;expiryTime&quot;:&quot;2024-08-12 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;Google LLC&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:true,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:false},&quot;breach&quot;:{&quot;isBreached&quot;:true,&quot;noOfBreaches&quot;:1,&quot;firstBreach&quot;:&quot;2023-04-15&quot;,&quot;lastBreach&quot;:&quot;2023-04-15&quot;,&quot;breaches&quot;:[{&quot;platformName&quot;:&quot;RentoMojo&quot;,&quot;domainName&quot;:&quot;rentomojo.com&quot;,&quot;breachDate&quot;:&quot;2023-04-15&quot;}]},&quot;emailTenure&quot;:0.42}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;sammykhnm17@gmail.com&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.16">15:25:37.415 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;sammykhnm17@gmail.com&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.17">15:25:37.415 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;gmail.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1995-08-13 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-07-11 10:10:13&quot;,
+          &quot;expiryTime&quot;: &quot;2024-08-12 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;Google LLC&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 1,
+          &quot;firstBreach&quot;: &quot;2023-04-15&quot;,
+          &quot;lastBreach&quot;: &quot;2023-04-15&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;RentoMojo&quot;,
+              &quot;domainName&quot;: &quot;rentomojo.com&quot;,
+              &quot;breachDate&quot;: &quot;2023-04-15&quot;
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: &quot;#number&quot;
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;sammykhnm17@gmail.com&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.18">15:25:37.417 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;gmail.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1995-08-13 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-07-11 10:10:13&quot;,
+          &quot;expiryTime&quot;: &quot;2024-08-12 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;Google LLC&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: true,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: false
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: true,
+          &quot;noOfBreaches&quot;: 1,
+          &quot;firstBreach&quot;: &quot;2023-04-15&quot;,
+          &quot;lastBreach&quot;: &quot;2023-04-15&quot;,
+          &quot;breaches&quot;: [
+            {
+              &quot;platformName&quot;: &quot;RentoMojo&quot;,
+              &quot;domainName&quot;: &quot;rentomojo.com&quot;,
+              &quot;breachDate&quot;: &quot;2023-04-15&quot;
+            }
+          ]
+        },
+        &quot;emailTenure&quot;: 0.42
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;sammykhnm17@gmail.com&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.1:110]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.1:110]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_EmailDeliverable_False</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2463</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.1:110]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.1:110]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">15:25:37.425 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.1:110]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_EmailDeliverable_False.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2453</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.102">15:25:37.431 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 112
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;sdfdsfsd@HDFCBANK.COM&quot;}
+
+15:25:39.882 response time in milliseconds: 2450
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:38 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 825
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;sdfdsfsd@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.103">15:25:39.883 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;sdfdsfsd@HDFCBANK.COM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.104">15:25:39.884 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: false,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;sdfdsfsd@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.105">15:25:39.886 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;sdfdsfsd@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.107">
+      <div class="step-ref failed">107</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.107">15:25:39.890 classpath:insights/EMAIL_BASIC.feature:107
+Then match $ contains payload.response
+match failed: CONTAINS
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [data] (MAP:MAP)
+  {&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;sdfdsfsd@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+  {&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:false,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;#ignore&quot;,&quot;inputEmail&quot;:&quot;sdfdsfsd@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+    $.data | not equal | match failed for name: &#39;email&#39; (MAP:MAP)
+    {&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null}
+    {&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:false,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null}
+
+      $.data.email | not equal | match failed for name: &#39;basic&#39; (MAP:MAP)
+      {&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}}
+      {&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:false,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}}
+
+        $.data.email.basic | not equal | match failed for name: &#39;deliverable&#39; (MAP:MAP)
+        {&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}
+        {&quot;deliverable&quot;:false,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}
+
+          $.data.email.basic.deliverable | not equal (BOOLEAN:BOOLEAN)
+          true
+          false
+
+classpath:insights/EMAIL_BASIC.feature:107
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.2:111]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.2:111]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_EmailTenureIs_NULL</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2107</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.2:111]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.2:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">15:25:39.909 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.2:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_EmailTenureIs_NULL.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2100</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.102">15:25:39.917 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 117
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;}
+
+15:25:42.014 response time in milliseconds: 2095
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:40 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 830
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.103">15:25:42.015 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.104">15:25:42.016 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.105">15:25:42.017 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.3:112]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.3:112]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_Positive_0_BreachData</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2459</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.3:112]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.3:112]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">15:25:42.023 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.3:112]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_Positive_0_BreachData.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2426</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.102">15:25:42.027 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 117
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;}
+
+15:25:44.452 response time in milliseconds: 2424
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:42 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 830
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.103">15:25:44.480 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.104">15:25:44.481 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.105">15:25:44.482 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.4:113]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.4:113]</span>
+                <span class="scenario-name">DPI EMAIL_BASIC positive scenario where emailTenure = null - Email_Basic_Positive_CustomDomain_True</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4006</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.4:113]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.4:113]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.4">15:25:44.489 karate.envData system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.4:113]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read(&quot;data/&quot; + env + &quot;/EMAIL_BASIC/Email_Basic_Positive_CustomDomain_True.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload.response.data.email.basic.emailTenure = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3999</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.102">15:25:44.495 request:
+1 &gt; POST https://test.monnai.com/api/insights
+1 &gt; x-reference-id: AMS-test-1
+1 &gt; x-request-id: AMS-req-id-1
+1 &gt; Content-Type: application/vnd.monnai.v1.2+json
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYTJjNTZkM2QtNGQxZC00N2Y5LTgyNjEtN2YxODM1NTQ5OGY3IiwiZXZlbnRfaWQiOiIzMDkyODI0MS00NGNmLTQ4NTQtOGFlMC02MzVjYTEyZWI4MzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk0NzYwMDc2LCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywianRpIjoiMDZiZGNjM2EtZWJmNS00NDQxLWFhN2MtOTgwOGM5NTBiYjcyIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.B1oBK9cCU_VkVqDYVk0FyR4-l-C2C-OGZHHEsNhQeWfIzuwQ81HKCr3iRwmnPyDWFRBpB0EO-p-4WrcE3RLNWg1Tdy0UMj9NcBy_3QuSCL5TT-Jj9ZH6HyrD0RLxL36xs9a5LLGBqLUYq_tUmdKT8BPYWEW9dqVJctfgRe2TyGoVkTMF4d8vptZQMe8oxvWCuJVFwK5InTKlf2a9zeERULANgt02gm9Ox531Png3yujk6Ufra-v11IojnZzRinQk2RYxB6S5MJr3snyLSvnfWJpL_CMyG5zhWOI4MWQaa7cufw1as-gdE-IwJ3kBJS2KfaG9e_c0U2nsRgKpguZA0g
+1 &gt; id_token: eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiRGxoRHJZeGN2aF9Sbl82dlk4Zy1OUSIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiJhMmM1NmQzZC00ZDFkLTQ3ZjktODI2MS03ZjE4MzU1NDk4ZjciLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsImV2ZW50X2lkIjoiMzA5MjgyNDEtNDRjZi00ODU0LThhZTAtNjM1Y2ExMmViODM3IiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5NDc2MDA3NiwidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTQ4NDY0NzYsImlhdCI6MTY5NDc2MDA3NywiZmFtaWx5X25hbWUiOiJHb3dkYXIgUyIsImp0aSI6ImUwOTIwMjMwLWM5M2UtNGZkOS1hYmU4LTgwZGVkY2E0NTFjYSIsImVtYWlsIjoic2FuamF5YUBtb25uYWkuY29tIn0.apiPm-dLNaCE7x6lRDHSh6fzteGYjiWy0NBF2bfhmysRZuHk9vh_MqKyNdMTLBNT2VRkIpNwDxy7f8Ye79e9X416PVbwjV6dEgz5nqnJSWbIdoHHx8sLd6PBRMmvxPZkCKREovWcMPJ34CalvGwhgqg_dvF22Vz0zUF6FsdrkbXAQBuoCWb0VtRKOFGUZBDc8FQROeXB40eTGx0NAcLMVUWfgRDaXcDifjvnNwXDUvpVaJEuQADeGQlirtrVATa3O7l9KfwNex8YIcb7AUVCRxWNZ9RIxHbIn1Ax6bMr7UpYnikayQzjKcBxeD6OJeOMfie1gtN-kg9EjIb7cFm7yw
+1 &gt; Content-Length: 117
+1 &gt; Host: test.monnai.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eventType&quot;:&quot;ACCOUNT_CREATION&quot;,&quot;cleansingFlag&quot;:true,&quot;packages&quot;:[&quot;EMAIL_BASIC&quot;],&quot;email&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;}
+
+15:25:48.491 response time in milliseconds: 3995
+1 &lt; 200
+1 &lt; Date: Fri, 15 Sep 2023 09:55:46 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 830
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1 ; mode=block
+1 &lt; Content-Security-Policy: form-action &#39;self&#39;
+1 &lt; Referrer-Policy: no-referrer
+{&quot;data&quot;:{&quot;phone&quot;:null,&quot;email&quot;:{&quot;social&quot;:null,&quot;basic&quot;:{&quot;deliverable&quot;:true,&quot;domainDetails&quot;:{&quot;domainName&quot;:&quot;hdfcbank.com&quot;,&quot;tld&quot;:&quot;.com&quot;,&quot;creationTime&quot;:&quot;1997-04-10 04:00:00&quot;,&quot;updateTime&quot;:&quot;2023-04-15 17:58:07&quot;,&quot;expiryTime&quot;:&quot;2027-04-11 04:00:00&quot;,&quot;registered&quot;:true,&quot;companyName&quot;:&quot;HDFC Bank Limited&quot;,&quot;disposable&quot;:false,&quot;freeProvider&quot;:false,&quot;dmarcCompliance&quot;:true,&quot;spfStrict&quot;:true,&quot;suspiciousTld&quot;:false,&quot;websiteExists&quot;:true,&quot;acceptAll&quot;:false,&quot;custom&quot;:true},&quot;breach&quot;:{&quot;isBreached&quot;:false,&quot;noOfBreaches&quot;:0,&quot;firstBreach&quot;:null,&quot;lastBreach&quot;:null,&quot;breaches&quot;:[]},&quot;emailTenure&quot;:null}},&quot;address&quot;:null,&quot;name&quot;:null,&quot;ip&quot;:null,&quot;identity&quot;:null,&quot;upi&quot;:null,&quot;device&quot;:null,&quot;employment&quot;:null,&quot;income&quot;:null,&quot;blacklist&quot;:null,&quot;bre&quot;:null},&quot;meta&quot;:{&quot;referenceId&quot;:&quot;AMS-test-1&quot;,&quot;inputEmail&quot;:&quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,&quot;requestedPackages&quot;:[&quot;EMAIL_BASIC&quot;]},&quot;errors&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.103">15:25:48.493 [print] {
+  &quot;eventType&quot;: &quot;ACCOUNT_CREATION&quot;,
+  &quot;cleansingFlag&quot;: true,
+  &quot;packages&quot;: [
+    &quot;EMAIL_BASIC&quot;
+  ],
+  &quot;email&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.104">15:25:48.493 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;#ignore&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.105">15:25:48.495 [print] {
+  &quot;data&quot;: {
+    &quot;phone&quot;: null,
+    &quot;email&quot;: {
+      &quot;social&quot;: null,
+      &quot;basic&quot;: {
+        &quot;deliverable&quot;: true,
+        &quot;domainDetails&quot;: {
+          &quot;domainName&quot;: &quot;hdfcbank.com&quot;,
+          &quot;tld&quot;: &quot;.com&quot;,
+          &quot;creationTime&quot;: &quot;1997-04-10 04:00:00&quot;,
+          &quot;updateTime&quot;: &quot;2023-04-15 17:58:07&quot;,
+          &quot;expiryTime&quot;: &quot;2027-04-11 04:00:00&quot;,
+          &quot;registered&quot;: true,
+          &quot;companyName&quot;: &quot;HDFC Bank Limited&quot;,
+          &quot;disposable&quot;: false,
+          &quot;freeProvider&quot;: false,
+          &quot;dmarcCompliance&quot;: true,
+          &quot;spfStrict&quot;: true,
+          &quot;suspiciousTld&quot;: false,
+          &quot;websiteExists&quot;: true,
+          &quot;acceptAll&quot;: false,
+          &quot;custom&quot;: true
+        },
+        &quot;breach&quot;: {
+          &quot;isBreached&quot;: false,
+          &quot;noOfBreaches&quot;: 0,
+          &quot;firstBreach&quot;: null,
+          &quot;lastBreach&quot;: null,
+          &quot;breaches&quot;: [
+          ]
+        },
+        &quot;emailTenure&quot;: null
+      }
+    },
+    &quot;address&quot;: null,
+    &quot;name&quot;: null,
+    &quot;ip&quot;: null,
+    &quot;identity&quot;: null,
+    &quot;upi&quot;: null,
+    &quot;device&quot;: null,
+    &quot;employment&quot;: null,
+    &quot;income&quot;: null,
+    &quot;blacklist&quot;: null,
+    &quot;bre&quot;: null
+  },
+  &quot;meta&quot;: {
+    &quot;referenceId&quot;: &quot;AMS-test-1&quot;,
+    &quot;inputEmail&quot;: &quot;PARAS.SHARMA2@HDFCBANK.COM&quot;,
+    &quot;requestedPackages&quot;: [
+      &quot;EMAIL_BASIC&quot;
+    ]
+  },
+  &quot;errors&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match $ contains payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

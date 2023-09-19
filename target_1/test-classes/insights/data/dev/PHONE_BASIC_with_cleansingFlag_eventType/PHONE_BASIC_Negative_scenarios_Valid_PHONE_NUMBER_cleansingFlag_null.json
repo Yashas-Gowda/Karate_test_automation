@@ -1,0 +1,30 @@
+{
+  "request":{
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": null,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "9108510043",
+      "cleansedPhoneNumber": "9108510043",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": null,
+        "message": "Invalid Cleansing Flag",
+        "code": "INVALID_CLEANSING_FLAG",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

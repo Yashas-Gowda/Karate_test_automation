@@ -1,0 +1,22 @@
+{
+  "request":{
+    "phoneNumber": "+919108510043",
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Missing event type",
+        "code": "MISSING_EVENT_TYPE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }s
+}

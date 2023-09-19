@@ -1,0 +1,3385 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "ABC@gmail.COM"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainName": "gmail.com",
+            "tld": ".com",
+            "creationTime": "1995-08-13 04:00:00",
+            "updateTime": "2023-07-11 10:10:13",
+            "expiryTime": "2024-08-12 04:00:00",
+            "registered": true,
+            "companyName": "Google LLC",
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": true,
+            "spfStrict": true,
+            "suspiciousTld": false,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": false
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 664,
+            "firstBreach": "2008-07-01",
+            "lastBreach": "2023-05-31",
+            "breaches": [
+              {
+                "platformName": "000webhost",
+                "domainName": "000webhost.com",
+                "breachDate": "2015-03-01"
+              },
+              {
+                "platformName": "123RF",
+                "domainName": "123rf.com",
+                "breachDate": "2020-03-22"
+              },
+              {
+                "platformName": "17",
+                "domainName": "17app.co",
+                "breachDate": "2016-04-19"
+              },
+              {
+                "platformName": "17173",
+                "domainName": "17173.com",
+                "breachDate": "2011-12-28"
+              },
+              {
+                "platformName": "2,844 Separate Data Breaches",
+                "domainName": "",
+                "breachDate": "2018-02-19"
+              },
+              {
+                "platformName": "500px",
+                "domainName": "500px.com",
+                "breachDate": "2018-07-05"
+              },
+              {
+                "platformName": "7k7k",
+                "domainName": "7k7k.com",
+                "breachDate": "2011-01-01"
+              },
+              {
+                "platformName": "8tracks",
+                "domainName": "8tracks.com",
+                "breachDate": "2017-06-27"
+              },
+              {
+                "platformName": "Abandonia (2015)",
+                "domainName": "abandonia.com",
+                "breachDate": "2015-11-01"
+              },
+              {
+                "platformName": "Abandonia (2022)",
+                "domainName": "abandonia.com",
+                "breachDate": "2022-11-15"
+              },
+              {
+                "platformName": "AbuseWith.Us",
+                "domainName": "abusewith.us",
+                "breachDate": "2016-07-01"
+              },
+              {
+                "platformName": "Acne.org",
+                "domainName": "acne.org",
+                "breachDate": "2014-11-25"
+              },
+              {
+                "platformName": "ActMobile",
+                "domainName": "actmobile.com",
+                "breachDate": "2021-10-08"
+              },
+              {
+                "platformName": "Adecco",
+                "domainName": "adecco.com",
+                "breachDate": "2021-01-03"
+              },
+              {
+                "platformName": "Aditya Birla Fashion and Retail",
+                "domainName": "abfrl.com",
+                "breachDate": "2021-12-01"
+              },
+              {
+                "platformName": "Adobe",
+                "domainName": "adobe.com",
+                "breachDate": "2013-10-04"
+              },
+              {
+                "platformName": "AhaShare.com",
+                "domainName": "ahashare.com",
+                "breachDate": "2013-05-30"
+              },
+              {
+                "platformName": "Aimware",
+                "domainName": "aimware.net",
+                "breachDate": "2019-04-28"
+              },
+              {
+                "platformName": "AKP Emails",
+                "domainName": "akparti.org.tr",
+                "breachDate": "2016-07-19"
+              },
+              {
+                "platformName": "Animal Jam",
+                "domainName": "animaljam.com",
+                "breachDate": "2020-10-12"
+              },
+              {
+                "platformName": "AnimeGame",
+                "domainName": "animegame.me",
+                "breachDate": "2020-02-27"
+              },
+              {
+                "platformName": "Anime-Planet",
+                "domainName": "anime-planet.com",
+                "breachDate": "2016-01-01"
+              },
+              {
+                "platformName": "Animoto",
+                "domainName": "animoto.com",
+                "breachDate": "2018-07-10"
+              },
+              {
+                "platformName": "Apollo",
+                "domainName": "apollo.io",
+                "breachDate": "2018-07-23"
+              },
+              {
+                "platformName": "Appen",
+                "domainName": "appen.com",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "Aptoide",
+                "domainName": "aptoide.com",
+                "breachDate": "2020-04-13"
+              },
+              {
+                "platformName": "Armor Games",
+                "domainName": "armorgames.com",
+                "breachDate": "2019-01-01"
+              },
+              {
+                "platformName": "Army Force Online",
+                "domainName": "armyforceonline.com",
+                "breachDate": "2016-05-18"
+              },
+              {
+                "platformName": "Artsy",
+                "domainName": "artsy.net",
+                "breachDate": "2018-04-01"
+              },
+              {
+                "platformName": "Artvalue",
+                "domainName": "artvalue.com",
+                "breachDate": "2019-06-19"
+              },
+              {
+                "platformName": "Atlas Quantum",
+                "domainName": "atlasquantum.com",
+                "breachDate": "2018-08-25"
+              },
+              {
+                "platformName": "Audi",
+                "domainName": "audiusa.com",
+                "breachDate": "2019-08-14"
+              },
+              {
+                "platformName": "Baby Names",
+                "domainName": "babynames.com",
+                "breachDate": "2008-10-24"
+              },
+              {
+                "platformName": "Banorte",
+                "domainName": "banorte.com",
+                "breachDate": "2014-08-18"
+              },
+              {
+                "platformName": "Bell (2017 breach)",
+                "domainName": "bell.ca",
+                "breachDate": "2017-05-15"
+              },
+              {
+                "platformName": "Bhinneka",
+                "domainName": "bhinneka.com",
+                "breachDate": "2020-01-27"
+              },
+              {
+                "platformName": "bigbasket",
+                "domainName": "bigbasket.com",
+                "breachDate": "2020-10-14"
+              },
+              {
+                "platformName": "Bin Weevils",
+                "domainName": "binweevils.com",
+                "breachDate": "2014-09-01"
+              },
+              {
+                "platformName": "Bitcoin Security Forum Gmail Dump",
+                "domainName": "forum.btcsec.com",
+                "breachDate": "2014-01-09"
+              },
+              {
+                "platformName": "Bitcoin Talk",
+                "domainName": "bitcointalk.org",
+                "breachDate": "2015-05-22"
+              },
+              {
+                "platformName": "Bitly",
+                "domainName": "bitly.com",
+                "breachDate": "2014-05-08"
+              },
+              {
+                "platformName": "Black Hat World",
+                "domainName": "blackhatworld.com",
+                "breachDate": "2014-06-23"
+              },
+              {
+                "platformName": "BlackBerry Fans",
+                "domainName": "blackberryfans.org",
+                "breachDate": "2022-05-06"
+              },
+              {
+                "platformName": "BlackSpigotMC",
+                "domainName": "blackspigot.com",
+                "breachDate": "2019-07-14"
+              },
+              {
+                "platformName": "BlankMediaGames",
+                "domainName": "blankmediagames.com",
+                "breachDate": "2018-12-28"
+              },
+              {
+                "platformName": "Bolt",
+                "domainName": "bolt.cd",
+                "breachDate": "2017-03-01"
+              },
+              {
+                "platformName": "Bombuj.eu",
+                "domainName": "bombuj.eu",
+                "breachDate": "2018-12-07"
+              },
+              {
+                "platformName": "Bonobos",
+                "domainName": "bonobos.com",
+                "breachDate": "2020-08-14"
+              },
+              {
+                "platformName": "Bookchor",
+                "domainName": "bookchor.com",
+                "breachDate": "2021-01-28"
+              },
+              {
+                "platformName": "Bookmate",
+                "domainName": "bookmate.com",
+                "breachDate": "2018-07-08"
+              },
+              {
+                "platformName": "Bot of Legends",
+                "domainName": "botoflegends.com",
+                "breachDate": "2014-11-13"
+              },
+              {
+                "platformName": "Bourse des Vols",
+                "domainName": "bourse-des-vols.com",
+                "breachDate": "2021-01-12"
+              },
+              {
+                "platformName": "Boxee",
+                "domainName": "forums.boxee.com",
+                "breachDate": "2014-03-29"
+              },
+              {
+                "platformName": "Bukalapak",
+                "domainName": "bukalapak.com",
+                "breachDate": "2017-10-23"
+              },
+              {
+                "platformName": "CafeMom",
+                "domainName": "cafemom.com",
+                "breachDate": "2014-04-10"
+              },
+              {
+                "platformName": "CafePress",
+                "domainName": "cafepress.com",
+                "breachDate": "2019-02-20"
+              },
+              {
+                "platformName": "Canva",
+                "domainName": "canva.com",
+                "breachDate": "2019-05-24"
+              },
+              {
+                "platformName": "CashCrate",
+                "domainName": "cashcrate.com",
+                "breachDate": "2016-11-17"
+              },
+              {
+                "platformName": "CDEK",
+                "domainName": "cdek.ru",
+                "breachDate": "2022-03-09"
+              },
+              {
+                "platformName": "Chatbooks",
+                "domainName": "chatbooks.com",
+                "breachDate": "2020-03-26"
+              },
+              {
+                "platformName": "Chegg",
+                "domainName": "chegg.com",
+                "breachDate": "2018-04-28"
+              },
+              {
+                "platformName": "Chowbus",
+                "domainName": "chowbus.com",
+                "breachDate": "2020-10-05"
+              },
+              {
+                "platformName": "Cit0day",
+                "domainName": "cit0day.in",
+                "breachDate": "2020-11-04"
+              },
+              {
+                "platformName": "Civil Online",
+                "domainName": "co188.com",
+                "breachDate": "2011-07-10"
+              },
+              {
+                "platformName": "ClearVoice Surveys",
+                "domainName": "clearvoicesurveys.com",
+                "breachDate": "2015-08-23"
+              },
+              {
+                "platformName": "ClixSense",
+                "domainName": "clixsense.com",
+                "breachDate": "2016-09-04"
+              },
+              {
+                "platformName": "CloudPets",
+                "domainName": "cloudpets.com",
+                "breachDate": "2017-01-01"
+              },
+              {
+                "platformName": "Club Penguin Rewritten (January 2018)",
+                "domainName": "cprewritten.net",
+                "breachDate": "2018-01-21"
+              },
+              {
+                "platformName": "Club Penguin Rewritten (July 2019)",
+                "domainName": "cprewritten.net",
+                "breachDate": "2019-07-27"
+              },
+              {
+                "platformName": "Coinmama",
+                "domainName": "coinmama.com",
+                "breachDate": "2017-08-03"
+              },
+              {
+                "platformName": "CoinMarketCap",
+                "domainName": "coinmarketcap.com",
+                "breachDate": "2021-10-12"
+              },
+              {
+                "platformName": "Collection #1",
+                "domainName": "",
+                "breachDate": "2019-01-07"
+              },
+              {
+                "platformName": "Coupon Mom / Armor Games",
+                "domainName": "",
+                "breachDate": "2014-02-08"
+              },
+              {
+                "platformName": "Covve",
+                "domainName": "covve.com",
+                "breachDate": "2020-02-20"
+              },
+              {
+                "platformName": "Cracked.to",
+                "domainName": "cracked.to",
+                "breachDate": "2019-07-21"
+              },
+              {
+                "platformName": "CrackingForum",
+                "domainName": "crackingforum.com",
+                "breachDate": "2016-07-01"
+              },
+              {
+                "platformName": "Cross Fire",
+                "domainName": "cfire.mail.ru",
+                "breachDate": "2016-08-08"
+              },
+              {
+                "platformName": "D3Scene",
+                "domainName": "d3scene.com",
+                "breachDate": "2016-01-01"
+              },
+              {
+                "platformName": "Daily Quiz",
+                "domainName": "dailyquiz.me",
+                "breachDate": "2021-01-13"
+              },
+              {
+                "platformName": "Dailymotion",
+                "domainName": "dailymotion.com",
+                "breachDate": "2016-10-20"
+              },
+              {
+                "platformName": "DailyObjects",
+                "domainName": "dailyobjects.com",
+                "breachDate": "2018-01-01"
+              },
+              {
+                "platformName": "DaniWeb",
+                "domainName": "daniweb.com",
+                "breachDate": "2015-12-01"
+              },
+              {
+                "platformName": "Data & Leads",
+                "domainName": "datanleads.com",
+                "breachDate": "2018-11-14"
+              },
+              {
+                "platformName": "Data Enrichment Exposure From PDL Customer",
+                "domainName": "",
+                "breachDate": "2019-10-16"
+              },
+              {
+                "platformName": "DataCamp",
+                "domainName": "datacamp.com",
+                "breachDate": "2017-01-30"
+              },
+              {
+                "platformName": "Deezer",
+                "domainName": "deezer.com",
+                "breachDate": "2019-04-22"
+              },
+              {
+                "platformName": "Demon Forums",
+                "domainName": "demonforums.net",
+                "breachDate": "2019-02-20"
+              },
+              {
+                "platformName": "Descomplica",
+                "domainName": "descomplica.com.br",
+                "breachDate": "2021-03-14"
+              },
+              {
+                "platformName": "Digimon",
+                "domainName": "digimon.co.in",
+                "breachDate": "2016-09-05"
+              },
+              {
+                "platformName": "Disqus",
+                "domainName": "disqus.com",
+                "breachDate": "2012-07-01"
+              },
+              {
+                "platformName": "DLH.net",
+                "domainName": "dlh.net",
+                "breachDate": "2016-07-31"
+              },
+              {
+                "platformName": "Dodonew.com",
+                "domainName": "dodonew.com",
+                "breachDate": "2011-12-01"
+              },
+              {
+                "platformName": "Domino's India",
+                "domainName": "dominos.co.in",
+                "breachDate": "2021-03-24"
+              },
+              {
+                "platformName": "DriveSure",
+                "domainName": "drivesure.com",
+                "breachDate": "2020-12-19"
+              },
+              {
+                "platformName": "Drizly",
+                "domainName": "drizly.com",
+                "breachDate": "2020-07-02"
+              },
+              {
+                "platformName": "Dropbox",
+                "domainName": "dropbox.com",
+                "breachDate": "2012-07-01"
+              },
+              {
+                "platformName": "Dubsmash",
+                "domainName": "dubsmash.com",
+                "breachDate": "2018-12-01"
+              },
+              {
+                "platformName": "Ducks Unlimited",
+                "domainName": "ducks.org",
+                "breachDate": "2021-01-29"
+              },
+              {
+                "platformName": "Dueling Network",
+                "domainName": "duelingnetwork.com",
+                "breachDate": "2017-03-29"
+              },
+              {
+                "platformName": "Dungeons & Dragons Online",
+                "domainName": "ddo.com",
+                "breachDate": "2013-04-02"
+              },
+              {
+                "platformName": "Dunzo",
+                "domainName": "dunzo.com",
+                "breachDate": "2020-06-19"
+              },
+              {
+                "platformName": "Eatigo",
+                "domainName": "eatigo.com",
+                "breachDate": "2018-10-16"
+              },
+              {
+                "platformName": "EatStreet",
+                "domainName": "eatstreet.com",
+                "breachDate": "2019-05-03"
+              },
+              {
+                "platformName": "Edmodo",
+                "domainName": "edmodo.com",
+                "breachDate": "2017-05-11"
+              },
+              {
+                "platformName": "Elance",
+                "domainName": "elance.com",
+                "breachDate": "2009-01-01"
+              },
+              {
+                "platformName": "Elanic",
+                "domainName": "elanic.in",
+                "breachDate": "2018-01-01"
+              },
+              {
+                "platformName": "EpicBot",
+                "domainName": "epicbot.com",
+                "breachDate": "2019-09-01"
+              },
+              {
+                "platformName": "EpicNPC",
+                "domainName": "epicnpc.com",
+                "breachDate": "2016-01-02"
+              },
+              {
+                "platformName": "Epik",
+                "domainName": "epik.com",
+                "breachDate": "2021-09-13"
+              },
+              {
+                "platformName": "Estonian Citizens (via Estonian Cybercrime Bureau)",
+                "domainName": "",
+                "breachDate": "2018-06-07"
+              },
+              {
+                "platformName": "Evermotion",
+                "domainName": "evermotion.org",
+                "breachDate": "2015-05-07"
+              },
+              {
+                "platformName": "Everybody Edits",
+                "domainName": "everybodyedits.com",
+                "breachDate": "2019-03-23"
+              },
+              {
+                "platformName": "Evony",
+                "domainName": "evony.com",
+                "breachDate": "2016-06-01"
+              },
+              {
+                "platformName": "Exactis",
+                "domainName": "exactis.com",
+                "breachDate": "2018-06-01"
+              },
+              {
+                "platformName": "Exploit.In",
+                "domainName": "",
+                "breachDate": "2016-10-13"
+              },
+              {
+                "platformName": "Eye4Fraud",
+                "domainName": "eye4fraud.com",
+                "breachDate": "2023-01-25"
+              },
+              {
+                "platformName": "EyeEm",
+                "domainName": "eyeem.com",
+                "breachDate": "2018-02-28"
+              },
+              {
+                "platformName": "Fashion Nexus",
+                "domainName": "fashionnexus.co.uk",
+                "breachDate": "2018-07-09"
+              },
+              {
+                "platformName": "FashionFantasyGame",
+                "domainName": "fashionfantasygame.com",
+                "breachDate": "2016-12-01"
+              },
+              {
+                "platformName": "Final Fantasy Shrine",
+                "domainName": "ffshrine.org",
+                "breachDate": "2015-09-18"
+              },
+              {
+                "platformName": "Flash Flash Revolution (2016 breach)",
+                "domainName": "flashflashrevolution.com",
+                "breachDate": "2016-02-01"
+              },
+              {
+                "platformName": "Flash Flash Revolution (2019 breach)",
+                "domainName": "flashflashrevolution.com",
+                "breachDate": "2019-07-16"
+              },
+              {
+                "platformName": "FlexBooker",
+                "domainName": "flexbooker.com",
+                "breachDate": "2021-12-23"
+              },
+              {
+                "platformName": "Foodora",
+                "domainName": "foodora.com",
+                "breachDate": "2016-04-22"
+              },
+              {
+                "platformName": "FreshMenu",
+                "domainName": "freshmenu.com",
+                "breachDate": "2016-07-01"
+              },
+              {
+                "platformName": "Funimation",
+                "domainName": "funimation.com",
+                "breachDate": "2016-07-01"
+              },
+              {
+                "platformName": "Funny Games",
+                "domainName": "funny-games.biz",
+                "breachDate": "2018-04-28"
+              },
+              {
+                "platformName": "Gaadi",
+                "domainName": "gaadi.com",
+                "breachDate": "2015-05-14"
+              },
+              {
+                "platformName": "Gamerzplanet",
+                "domainName": "gamerzplanet.net",
+                "breachDate": "2015-10-23"
+              },
+              {
+                "platformName": "GameSalad",
+                "domainName": "gamesalad.com",
+                "breachDate": "2019-02-24"
+              },
+              {
+                "platformName": "GameTuts",
+                "domainName": "game-tuts.com",
+                "breachDate": "2015-03-01"
+              },
+              {
+                "platformName": "GateHub",
+                "domainName": "gatehub.net",
+                "breachDate": "2019-06-04"
+              },
+              {
+                "platformName": "Gawker",
+                "domainName": "gawker.com",
+                "breachDate": "2010-12-11"
+              },
+              {
+                "platformName": "Ge.tt",
+                "domainName": "ge.tt",
+                "breachDate": "2017-05-04"
+              },
+              {
+                "platformName": "Gemini",
+                "domainName": "gemini.com",
+                "breachDate": "2022-12-13"
+              },
+              {
+                "platformName": "GeniusU",
+                "domainName": "geniusu.com",
+                "breachDate": "2020-10-02"
+              },
+              {
+                "platformName": "GFAN",
+                "domainName": "gfan.com",
+                "breachDate": "2016-10-10"
+              },
+              {
+                "platformName": "GGCorp",
+                "domainName": "ggcorp.me",
+                "breachDate": "2022-08-11"
+              },
+              {
+                "platformName": "Glofox",
+                "domainName": "glofox.com",
+                "breachDate": "2020-03-27"
+              },
+              {
+                "platformName": "Go Games",
+                "domainName": "gogames.me",
+                "breachDate": "2015-10-24"
+              },
+              {
+                "platformName": "GoldSilver",
+                "domainName": "goldsilver.com",
+                "breachDate": "2018-10-21"
+              },
+              {
+                "platformName": "Gravatar",
+                "domainName": "gravatar.com",
+                "breachDate": "2020-10-03"
+              },
+              {
+                "platformName": "GTAGaming",
+                "domainName": "gtagaming.com",
+                "breachDate": "2016-08-01"
+              },
+              {
+                "platformName": "HauteLook",
+                "domainName": "hautelook.com",
+                "breachDate": "2018-08-07"
+              },
+              {
+                "platformName": "Havenly",
+                "domainName": "havenly.com",
+                "breachDate": "2020-06-25"
+              },
+              {
+                "platformName": "HDB Financial Services",
+                "domainName": "hdbfs.com",
+                "breachDate": "2023-02-22"
+              },
+              {
+                "platformName": "Heroes of Gaia",
+                "domainName": "heroesofgaia.com",
+                "breachDate": "2013-01-04"
+              },
+              {
+                "platformName": "Heroes of Newerth",
+                "domainName": "heroesofnewerth.com",
+                "breachDate": "2012-12-17"
+              },
+              {
+                "platformName": "HiAPK",
+                "domainName": "hiapk.com",
+                "breachDate": "2014-01-01"
+              },
+              {
+                "platformName": "HLTV",
+                "domainName": "hltv.org",
+                "breachDate": "2016-06-19"
+              },
+              {
+                "platformName": "Home Chef",
+                "domainName": "homechef.com",
+                "breachDate": "2020-02-10"
+              },
+              {
+                "platformName": "Houzz",
+                "domainName": "houzz.com",
+                "breachDate": "2018-05-23"
+              },
+              {
+                "platformName": "HTC Mania",
+                "domainName": "htcmania.com",
+                "breachDate": "2020-01-04"
+              },
+              {
+                "platformName": "Hub4Tech",
+                "domainName": "hub4tech.com",
+                "breachDate": "2017-01-01"
+              },
+              {
+                "platformName": "Hurb",
+                "domainName": "hurb.com",
+                "breachDate": "2019-03-14"
+              },
+              {
+                "platformName": "IDC Games",
+                "domainName": "idcgames.com",
+                "breachDate": "2021-03-15"
+              },
+              {
+                "platformName": "i-Dressup",
+                "domainName": "i-dressup.com",
+                "breachDate": "2016-07-15"
+              },
+              {
+                "platformName": "IIMJobs",
+                "domainName": "iimjobs.com",
+                "breachDate": "2018-12-31"
+              },
+              {
+                "platformName": "Imavex",
+                "domainName": "imavex.com",
+                "breachDate": "2021-08-20"
+              },
+              {
+                "platformName": "iMesh",
+                "domainName": "imesh.com",
+                "breachDate": "2013-09-22"
+              },
+              {
+                "platformName": "imgur",
+                "domainName": "imgur.com",
+                "breachDate": "2013-09-01"
+              },
+              {
+                "platformName": "IndiaMART",
+                "domainName": "indiamart.com",
+                "breachDate": "2021-05-23"
+              },
+              {
+                "platformName": "Indian Railways",
+                "domainName": "indianrails.in",
+                "breachDate": "2019-10-28"
+              },
+              {
+                "platformName": "Instant Checkmate",
+                "domainName": "instantcheckmate.com",
+                "breachDate": "2019-04-12"
+              },
+              {
+                "platformName": "InterPals",
+                "domainName": "interpals.net",
+                "breachDate": "2015-11-04"
+              },
+              {
+                "platformName": "iPmart",
+                "domainName": "ipmart-forum.com",
+                "breachDate": "2015-07-01"
+              },
+              {
+                "platformName": "ixigo",
+                "domainName": "ixigo.com",
+                "breachDate": "2019-01-03"
+              },
+              {
+                "platformName": "James",
+                "domainName": "jamesdelivery.com.br",
+                "breachDate": "2020-03-25"
+              },
+              {
+                "platformName": "JD",
+                "domainName": "jd.com",
+                "breachDate": "2013-01-01"
+              },
+              {
+                "platformName": "JD Group",
+                "domainName": "jdgroup.co.za",
+                "breachDate": "2023-05-31"
+              },
+              {
+                "platformName": "Jefit",
+                "domainName": "jefit.com",
+                "breachDate": "2020-08-11"
+              },
+              {
+                "platformName": "Jobandtalent",
+                "domainName": "jobandtalent.com",
+                "breachDate": "2018-02-01"
+              },
+              {
+                "platformName": "JobStreet",
+                "domainName": "jobstreet.com",
+                "breachDate": "2012-03-07"
+              },
+              {
+                "platformName": "JukinMedia",
+                "domainName": "jukinmedia.com",
+                "breachDate": "2021-10-28"
+              },
+              {
+                "platformName": "Kayo.moe Credential Stuffing List",
+                "domainName": "",
+                "breachDate": "2018-09-11"
+              },
+              {
+                "platformName": "Kickstarter",
+                "domainName": "kickstarter.com",
+                "breachDate": "2014-02-16"
+              },
+              {
+                "platformName": "Knuddels",
+                "domainName": "knuddels.de",
+                "breachDate": "2018-09-05"
+              },
+              {
+                "platformName": "Kreditplus",
+                "domainName": "kreditplus.com",
+                "breachDate": "2020-06-23"
+              },
+              {
+                "platformName": "La Poste Mobile",
+                "domainName": "lapostemobile.fr",
+                "breachDate": "2022-07-04"
+              },
+              {
+                "platformName": "Last.fm",
+                "domainName": "last.fm",
+                "breachDate": "2012-03-22"
+              },
+              {
+                "platformName": "Lazada RedMart",
+                "domainName": "redmart.lazada.sg",
+                "breachDate": "2020-07-30"
+              },
+              {
+                "platformName": "Lead Hunter",
+                "domainName": "",
+                "breachDate": "2020-03-04"
+              },
+              {
+                "platformName": "League of Legends",
+                "domainName": "leagueoflegends.com",
+                "breachDate": "2012-06-11"
+              },
+              {
+                "platformName": "Leaked Reality",
+                "domainName": "leakedreality.com",
+                "breachDate": "2022-01-31"
+              },
+              {
+                "platformName": "Ledger",
+                "domainName": "ledger.com",
+                "breachDate": "2020-06-25"
+              },
+              {
+                "platformName": "Leet",
+                "domainName": "leet.cc",
+                "breachDate": "2016-09-10"
+              },
+              {
+                "platformName": "Lifebear",
+                "domainName": "lifebear.com",
+                "breachDate": "2019-02-28"
+              },
+              {
+                "platformName": "Lifeboat",
+                "domainName": "lbsg.net",
+                "breachDate": "2016-01-01"
+              },
+              {
+                "platformName": "Liker",
+                "domainName": "liker.com",
+                "breachDate": "2021-03-08"
+              },
+              {
+                "platformName": "LimeVPN",
+                "domainName": "limevpn.com",
+                "breachDate": "2020-10-08"
+              },
+              {
+                "platformName": "LinkedIn",
+                "domainName": "linkedin.com",
+                "breachDate": "2012-05-05"
+              },
+              {
+                "platformName": "Little Monsters",
+                "domainName": "littlemonsters.com",
+                "breachDate": "2017-01-01"
+              },
+              {
+                "platformName": "LiveAuctioneers",
+                "domainName": "liveauctioneers.com",
+                "breachDate": "2020-06-19"
+              },
+              {
+                "platformName": "LiveJournal",
+                "domainName": "livejournal.com",
+                "breachDate": "2017-01-01"
+              },
+              {
+                "platformName": "Livpure",
+                "domainName": "livpure.com",
+                "breachDate": "2020-08-29"
+              },
+              {
+                "platformName": "Locally",
+                "domainName": "locally.com",
+                "breachDate": "2022-10-01"
+              },
+              {
+                "platformName": "Lolzteam",
+                "domainName": "lolzteam.net",
+                "breachDate": "2018-05-13"
+              },
+              {
+                "platformName": "Lookbook",
+                "domainName": "lookbook.nu",
+                "breachDate": "2012-08-24"
+              },
+              {
+                "platformName": "Lord of the Rings Online",
+                "domainName": "lotro.com",
+                "breachDate": "2013-08-01"
+              },
+              {
+                "platformName": "Lumin PDF",
+                "domainName": "luminpdf.com",
+                "breachDate": "2019-04-01"
+              },
+              {
+                "platformName": "Luxottica",
+                "domainName": "luxottica.com",
+                "breachDate": "2021-03-16"
+              },
+              {
+                "platformName": "MajorGeeks",
+                "domainName": "majorgeeks.com",
+                "breachDate": "2015-11-15"
+              },
+              {
+                "platformName": "MangaDex",
+                "domainName": "mangadex.org",
+                "breachDate": "2021-03-22"
+              },
+              {
+                "platformName": "MangaFox.me",
+                "domainName": "mangafox.me",
+                "breachDate": "2016-06-01"
+              },
+              {
+                "platformName": "Mangatoon",
+                "domainName": "mangatoon.mobi",
+                "breachDate": "2022-05-13"
+              },
+              {
+                "platformName": "Mashable",
+                "domainName": "mashable.com",
+                "breachDate": "2020-06-01"
+              },
+              {
+                "platformName": "Master Deeds",
+                "domainName": "",
+                "breachDate": "2017-03-14"
+              },
+              {
+                "platformName": "Mathway",
+                "domainName": "mathway.com",
+                "breachDate": "2020-01-13"
+              },
+              {
+                "platformName": "MDPI",
+                "domainName": "mdpi.com",
+                "breachDate": "2016-08-30"
+              },
+              {
+                "platformName": "Mecho Download",
+                "domainName": "mechodownload.com",
+                "breachDate": "2013-10-31"
+              },
+              {
+                "platformName": "Minefield",
+                "domainName": "minefield.fr",
+                "breachDate": "2015-06-28"
+              },
+              {
+                "platformName": "Minehut",
+                "domainName": "minehut.com",
+                "breachDate": "2019-05-17"
+              },
+              {
+                "platformName": "Minted",
+                "domainName": "minted.com",
+                "breachDate": "2020-05-06"
+              },
+              {
+                "platformName": "MMG Fusion",
+                "domainName": "mmgfusion.com",
+                "breachDate": "2020-12-20"
+              },
+              {
+                "platformName": "Modern Business Solutions",
+                "domainName": "modbsolutions.com",
+                "breachDate": "2016-10-08"
+              },
+              {
+                "platformName": "Moneycontrol",
+                "domainName": "moneycontrol.com",
+                "breachDate": "2017-09-07"
+              },
+              {
+                "platformName": "Morele.net",
+                "domainName": "morele.net",
+                "breachDate": "2018-10-10"
+              },
+              {
+                "platformName": "MPGH",
+                "domainName": "mpgh.net",
+                "breachDate": "2015-10-22"
+              },
+              {
+                "platformName": "mSpy",
+                "domainName": "mspy.com",
+                "breachDate": "2015-05-14"
+              },
+              {
+                "platformName": "MyFitnessPal",
+                "domainName": "myfitnesspal.com",
+                "breachDate": "2018-02-01"
+              },
+              {
+                "platformName": "MyHeritage",
+                "domainName": "myheritage.com",
+                "breachDate": "2017-10-26"
+              },
+              {
+                "platformName": "myRepoSpace",
+                "domainName": "myrepospace.com",
+                "breachDate": "2015-07-06"
+              },
+              {
+                "platformName": "MySpace",
+                "domainName": "myspace.com",
+                "breachDate": "2008-07-01"
+              },
+              {
+                "platformName": "NemoWeb",
+                "domainName": "nemoweb.net",
+                "breachDate": "2016-09-04"
+              },
+              {
+                "platformName": "Neopets",
+                "domainName": "neopets.com",
+                "breachDate": "2013-05-05"
+              },
+              {
+                "platformName": "NetEase",
+                "domainName": "163.com",
+                "breachDate": "2015-10-19"
+              },
+              {
+                "platformName": "Neteller",
+                "domainName": "neteller.com",
+                "breachDate": "2010-05-17"
+              },
+              {
+                "platformName": "Netlog",
+                "domainName": "netlog.com",
+                "breachDate": "2012-11-01"
+              },
+              {
+                "platformName": "NextGenUpdate",
+                "domainName": "nextgenupdate.com",
+                "breachDate": "2014-04-22"
+              },
+              {
+                "platformName": "Nihonomaru",
+                "domainName": "nihonomaru.net",
+                "breachDate": "2015-12-01"
+              },
+              {
+                "platformName": "Nitro",
+                "domainName": "gonitro.com",
+                "breachDate": "2020-09-28"
+              },
+              {
+                "platformName": "Nival",
+                "domainName": "nival.com",
+                "breachDate": "2016-02-29"
+              },
+              {
+                "platformName": "Nulled.cr",
+                "domainName": "nulled.cr",
+                "breachDate": "2016-05-06"
+              },
+              {
+                "platformName": "OGUsers (2019 breach)",
+                "domainName": "ogusers.com",
+                "breachDate": "2018-12-26"
+              },
+              {
+                "platformName": "OGUsers (2020 breach)",
+                "domainName": "ogusers.com",
+                "breachDate": "2020-04-02"
+              },
+              {
+                "platformName": "OGUsers (2021 breach)",
+                "domainName": "ogusers.com",
+                "breachDate": "2021-04-11"
+              },
+              {
+                "platformName": "OGUsers (2022 breach)",
+                "domainName": "ogusers.com",
+                "breachDate": "2022-07-13"
+              },
+              {
+                "platformName": "Onliner Spambot",
+                "domainName": "",
+                "breachDate": "2017-08-28"
+              },
+              {
+                "platformName": "Onverse",
+                "domainName": "onverse.com",
+                "breachDate": "2016-01-01"
+              },
+              {
+                "platformName": "Open CS:GO",
+                "domainName": "opencsgo.com",
+                "breachDate": "2017-11-28"
+              },
+              {
+                "platformName": "Open Subtitles",
+                "domainName": "opensubtitles.org",
+                "breachDate": "2021-08-01"
+              },
+              {
+                "platformName": "OrderSnapp",
+                "domainName": "ordersnapp.com",
+                "breachDate": "2020-06-29"
+              },
+              {
+                "platformName": "OwnedCore",
+                "domainName": "OwnedCore.com",
+                "breachDate": "2013-08-01"
+              },
+              {
+                "platformName": "Oxfam",
+                "domainName": "oxfam.org.au",
+                "breachDate": "2021-01-20"
+              },
+              {
+                "platformName": "Paddy Power",
+                "domainName": "paddypower.com",
+                "breachDate": "2010-10-25"
+              },
+              {
+                "platformName": "ParkMobile",
+                "domainName": "parkmobile.io",
+                "breachDate": "2021-03-21"
+              },
+              {
+                "platformName": "Patreon",
+                "domainName": "patreon.com",
+                "breachDate": "2015-10-01"
+              },
+              {
+                "platformName": "PayAsUGym",
+                "domainName": "payasugym.com",
+                "breachDate": "2016-12-15"
+              },
+              {
+                "platformName": "PayHere",
+                "domainName": "payhere.lk",
+                "breachDate": "2022-03-27"
+              },
+              {
+                "platformName": "Paytm",
+                "domainName": "paytm.com",
+                "breachDate": "2020-08-30"
+              },
+              {
+                "platformName": "Peatix",
+                "domainName": "peatix.com",
+                "breachDate": "2019-01-20"
+              },
+              {
+                "platformName": "Pemiblanc",
+                "domainName": "pemiblanc.com",
+                "breachDate": "2018-04-02"
+              },
+              {
+                "platformName": "PetFlow",
+                "domainName": "petflow.com",
+                "breachDate": "2017-12-09"
+              },
+              {
+                "platformName": "Phone House España",
+                "domainName": "phonehouse.es",
+                "breachDate": "2021-04-08"
+              },
+              {
+                "platformName": "Pixlr",
+                "domainName": "pixlr.com",
+                "breachDate": "2020-10-07"
+              },
+              {
+                "platformName": "piZap",
+                "domainName": "pizap.com",
+                "breachDate": "2017-12-07"
+              },
+              {
+                "platformName": "Pluto TV",
+                "domainName": "pluto.tv",
+                "breachDate": "2018-10-12"
+              },
+              {
+                "platformName": "Pokémon Creed",
+                "domainName": "pokemoncreed.net",
+                "breachDate": "2014-08-08"
+              },
+              {
+                "platformName": "Pokémon Negro",
+                "domainName": "pokemonnegro.com",
+                "breachDate": "2016-10-01"
+              },
+              {
+                "platformName": "Polish Credentials",
+                "domainName": "",
+                "breachDate": "2023-05-29"
+              },
+              {
+                "platformName": "Poshmark",
+                "domainName": "poshmark.com",
+                "breachDate": "2018-05-16"
+              },
+              {
+                "platformName": "PPCGeeks",
+                "domainName": "ppcgeeks.com",
+                "breachDate": "2016-08-19"
+              },
+              {
+                "platformName": "Promo",
+                "domainName": "promo.com",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "PropTiger",
+                "domainName": "proptiger.com",
+                "breachDate": "2018-01-30"
+              },
+              {
+                "platformName": "Protemps",
+                "domainName": "protemps.com.sg",
+                "breachDate": "2021-10-04"
+              },
+              {
+                "platformName": "PSP ISO",
+                "domainName": "pspiso.com",
+                "breachDate": "2015-09-25"
+              },
+              {
+                "platformName": "QIP",
+                "domainName": "qip.ru",
+                "breachDate": "2011-06-01"
+              },
+              {
+                "platformName": "QuestionPro",
+                "domainName": "questionpro.com",
+                "breachDate": "2022-05-21"
+              },
+              {
+                "platformName": "Quidd",
+                "domainName": "quidd.co",
+                "breachDate": "2019-07-01"
+              },
+              {
+                "platformName": "QuinStreet",
+                "domainName": "quinstreet.com",
+                "breachDate": "2015-12-14"
+              },
+              {
+                "platformName": "R2Games",
+                "domainName": "r2games.com",
+                "breachDate": "2015-11-01"
+              },
+              {
+                "platformName": "Raychat",
+                "domainName": "raychat.ir",
+                "breachDate": "2021-01-31"
+              },
+              {
+                "platformName": "Rbx.Rocks",
+                "domainName": "rbx.rocks",
+                "breachDate": "2018-08-06"
+              },
+              {
+                "platformName": "Read Novel",
+                "domainName": "readnovel.com",
+                "breachDate": "2019-05-01"
+              },
+              {
+                "platformName": "RedDoorz",
+                "domainName": "reddoorz.com",
+                "breachDate": "2020-09-04"
+              },
+              {
+                "platformName": "RedLine Stealer",
+                "domainName": "",
+                "breachDate": "2021-12-05"
+              },
+              {
+                "platformName": "Reincubate",
+                "domainName": "reincubate.com",
+                "breachDate": "2017-05-11"
+              },
+              {
+                "platformName": "RentoMojo",
+                "domainName": "rentomojo.com",
+                "breachDate": "2023-04-15"
+              },
+              {
+                "platformName": "Retina-X",
+                "domainName": "retinax.com",
+                "breachDate": "2017-02-23"
+              },
+              {
+                "platformName": "ReverbNation",
+                "domainName": "reverbnation.com",
+                "breachDate": "2014-01-01"
+              },
+              {
+                "platformName": "River City Media Spam List",
+                "domainName": "rivercitymediaonline.com",
+                "breachDate": "2017-01-01"
+              },
+              {
+                "platformName": "Roll20",
+                "domainName": "roll20.net",
+                "breachDate": "2018-12-26"
+              },
+              {
+                "platformName": "Romwe",
+                "domainName": "romwe.com",
+                "breachDate": "2018-06-01"
+              },
+              {
+                "platformName": "Royal Enfield",
+                "domainName": "royalenfield.com",
+                "breachDate": "2019-01-01"
+              },
+              {
+                "platformName": "Scentbird",
+                "domainName": "scentbird.com",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "Sephora",
+                "domainName": "sephora.com.au",
+                "breachDate": "2017-01-09"
+              },
+              {
+                "platformName": "ShareThis",
+                "domainName": "sharethis.com",
+                "breachDate": "2018-07-09"
+              },
+              {
+                "platformName": "SHEIN",
+                "domainName": "shein.com",
+                "breachDate": "2018-06-01"
+              },
+              {
+                "platformName": "ShopBack",
+                "domainName": "shopback.com",
+                "breachDate": "2020-09-17"
+              },
+              {
+                "platformName": "Shopper+",
+                "domainName": "shopperplus.ca",
+                "breachDate": "2020-09-14"
+              },
+              {
+                "platformName": "Shotbow",
+                "domainName": "shotbow.net",
+                "breachDate": "2016-05-09"
+              },
+              {
+                "platformName": "SirHurt",
+                "domainName": "sirhurt.net",
+                "breachDate": "2021-04-23"
+              },
+              {
+                "platformName": "SitePoint",
+                "domainName": "sitepoint.com",
+                "breachDate": "2020-06-20"
+              },
+              {
+                "platformName": "SkTorrent",
+                "domainName": "sktorrent.eu",
+                "breachDate": "2016-02-19"
+              },
+              {
+                "platformName": "Slickwraps",
+                "domainName": "slickwraps.com",
+                "breachDate": "2020-02-16"
+              },
+              {
+                "platformName": "SlideTeam",
+                "domainName": "slideteam.net",
+                "breachDate": "2021-04-06"
+              },
+              {
+                "platformName": "Smogon",
+                "domainName": "smogon.com",
+                "breachDate": "2017-09-10"
+              },
+              {
+                "platformName": "Sonicbids",
+                "domainName": "sonicbids.com",
+                "breachDate": "2019-12-30"
+              },
+              {
+                "platformName": "Soundwave",
+                "domainName": "soundwave.com",
+                "breachDate": "2015-07-16"
+              },
+              {
+                "platformName": "SpyFone",
+                "domainName": "spyfone.com",
+                "breachDate": "2018-08-16"
+              },
+              {
+                "platformName": "START",
+                "domainName": "start.film",
+                "breachDate": "2021-06-01"
+              },
+              {
+                "platformName": "StarTribune",
+                "domainName": "startribune.com",
+                "breachDate": "2019-10-10"
+              },
+              {
+                "platformName": "StockX",
+                "domainName": "stockx.com",
+                "breachDate": "2019-07-26"
+              },
+              {
+                "platformName": "StoryBird",
+                "domainName": "storybird.com",
+                "breachDate": "2015-08-07"
+              },
+              {
+                "platformName": "Straffic",
+                "domainName": "straffic.io",
+                "breachDate": "2020-02-14"
+              },
+              {
+                "platformName": "Stratfor",
+                "domainName": "stratfor.com",
+                "breachDate": "2011-12-24"
+              },
+              {
+                "platformName": "StreetEasy",
+                "domainName": "streeteasy.com",
+                "breachDate": "2016-06-28"
+              },
+              {
+                "platformName": "Stronghold Kingdoms",
+                "domainName": "strongholdkingdoms.com",
+                "breachDate": "2018-07-04"
+              },
+              {
+                "platformName": "SubaGames",
+                "domainName": "subagames.com",
+                "breachDate": "2016-11-01"
+              },
+              {
+                "platformName": "Sundry Files",
+                "domainName": "sundryfiles.com",
+                "breachDate": "2022-01-21"
+              },
+              {
+                "platformName": "Swvl",
+                "domainName": "swvl.com",
+                "breachDate": "2020-06-23"
+              },
+              {
+                "platformName": "TaiLieu",
+                "domainName": "tailieu.vn",
+                "breachDate": "2019-11-24"
+              },
+              {
+                "platformName": "Tamodo",
+                "domainName": "tamodo.com",
+                "breachDate": "2020-02-28"
+              },
+              {
+                "platformName": "Taobao",
+                "domainName": "taobao.com",
+                "breachDate": "2012-01-01"
+              },
+              {
+                "platformName": "TAP Air Portugal",
+                "domainName": "flytap.com",
+                "breachDate": "2022-08-25"
+              },
+              {
+                "platformName": "Team SoloMid",
+                "domainName": "solomid.net",
+                "breachDate": "2014-12-22"
+              },
+              {
+                "platformName": "Teespring",
+                "domainName": "teespring.com",
+                "breachDate": "2020-04-01"
+              },
+              {
+                "platformName": "Terravision",
+                "domainName": "terravision.eu",
+                "breachDate": "2023-02-01"
+              },
+              {
+                "platformName": "TGBUS",
+                "domainName": "tgbus.com",
+                "breachDate": "2017-09-01"
+              },
+              {
+                "platformName": "TheGradCafe",
+                "domainName": "thegradcafe.com",
+                "breachDate": "2023-02-26"
+              },
+              {
+                "platformName": "TheTVDB.com",
+                "domainName": "thetvdb.com",
+                "breachDate": "2017-11-21"
+              },
+              {
+                "platformName": "Thingiverse",
+                "domainName": "thingiverse.com",
+                "breachDate": "2020-10-13"
+              },
+              {
+                "platformName": "ThisHabbo Forum",
+                "domainName": "thishabboforum.com",
+                "breachDate": "2014-01-01"
+              },
+              {
+                "platformName": "Tianya",
+                "domainName": "tianya.cn",
+                "breachDate": "2011-12-26"
+              },
+              {
+                "platformName": "Ticketcounter",
+                "domainName": "ticketcounter.nl",
+                "breachDate": "2021-02-22"
+              },
+              {
+                "platformName": "Ticketfly",
+                "domainName": "ticketfly.com",
+                "breachDate": "2018-05-31"
+              },
+              {
+                "platformName": "Tokopedia",
+                "domainName": "tokopedia.com",
+                "breachDate": "2020-04-17"
+              },
+              {
+                "platformName": "ToonDoo",
+                "domainName": "toondoo.com",
+                "breachDate": "2019-08-21"
+              },
+              {
+                "platformName": "Torrent Invites",
+                "domainName": "torrent-invites.com",
+                "breachDate": "2013-12-12"
+              },
+              {
+                "platformName": "Tout",
+                "domainName": "tout.com",
+                "breachDate": "2014-09-11"
+              },
+              {
+                "platformName": "Travel Oklahoma",
+                "domainName": "travelok.com",
+                "breachDate": "2020-12-17"
+              },
+              {
+                "platformName": "Travelio",
+                "domainName": "travelio.com",
+                "breachDate": "2021-11-23"
+              },
+              {
+                "platformName": "Trillian",
+                "domainName": "trillian.im",
+                "breachDate": "2015-12-27"
+              },
+              {
+                "platformName": "TrueFire",
+                "domainName": "truefire.com",
+                "breachDate": "2020-02-21"
+              },
+              {
+                "platformName": "Truth Finder",
+                "domainName": "truthfinder.com",
+                "breachDate": "2019-04-12"
+              },
+              {
+                "platformName": "tumblr",
+                "domainName": "tumblr.com",
+                "breachDate": "2013-02-28"
+              },
+              {
+                "platformName": "Tuned Global",
+                "domainName": "tunedglobal.com",
+                "breachDate": "2016-03-16"
+              },
+              {
+                "platformName": "Twitter",
+                "domainName": "twitter.com",
+                "breachDate": "2022-01-01"
+              },
+              {
+                "platformName": "Twitter (200M)",
+                "domainName": "twitter.com",
+                "breachDate": "2021-01-01"
+              },
+              {
+                "platformName": "Universarium",
+                "domainName": "universarium.org",
+                "breachDate": "2019-11-01"
+              },
+              {
+                "platformName": "Unverified Data Source",
+                "domainName": "astoriacompany.com",
+                "breachDate": "2021-01-26"
+              },
+              {
+                "platformName": "uuu9",
+                "domainName": "uuu9.com",
+                "breachDate": "2016-09-06"
+              },
+              {
+                "platformName": "Vakinha",
+                "domainName": "vakinha.com.br",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "vBulletin",
+                "domainName": "vbulletin.com",
+                "breachDate": "2015-11-03"
+              },
+              {
+                "platformName": "Vedantu",
+                "domainName": "vedantu.com",
+                "breachDate": "2019-07-08"
+              },
+              {
+                "platformName": "Verifications.io",
+                "domainName": "verifications.io",
+                "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "Vianet",
+                "domainName": "vianet.com.np",
+                "breachDate": "2020-04-08"
+              },
+              {
+                "platformName": "VK",
+                "domainName": "vk.com",
+                "breachDate": "2012-01-01"
+              },
+              {
+                "platformName": "VNG",
+                "domainName": "zing.vn",
+                "breachDate": "2015-05-19"
+              },
+              {
+                "platformName": "Void.to",
+                "domainName": "void.to",
+                "breachDate": "2019-06-13"
+              },
+              {
+                "platformName": "Wakanim",
+                "domainName": "wakanim.tv",
+                "breachDate": "2022-08-28"
+              },
+              {
+                "platformName": "Wanelo",
+                "domainName": "wanelo.com",
+                "breachDate": "2018-12-13"
+              },
+              {
+                "platformName": "War Inc.",
+                "domainName": "thewarinc.com",
+                "breachDate": "2012-07-04"
+              },
+              {
+                "platformName": "Warmane",
+                "domainName": "warmane.com",
+                "breachDate": "2016-12-01"
+              },
+              {
+                "platformName": "Wattpad",
+                "domainName": "wattpad.com",
+                "breachDate": "2020-06-29"
+              },
+              {
+                "platformName": "We Heart It",
+                "domainName": "weheartit.com",
+                "breachDate": "2013-11-03"
+              },
+              {
+                "platformName": "WedMeGood",
+                "domainName": "wedmegood.com",
+                "breachDate": "2021-01-06"
+              },
+              {
+                "platformName": "Weee",
+                "domainName": "sayweee.com",
+                "breachDate": "2022-07-11"
+              },
+              {
+                "platformName": "Whitepages",
+                "domainName": "whitepages.com",
+                "breachDate": "2016-06-27"
+              },
+              {
+                "platformName": "Win7Vista Forum",
+                "domainName": "win7vista.com",
+                "breachDate": "2013-09-03"
+              },
+              {
+                "platformName": "Wishbone (2016)",
+                "domainName": "wishbone.io",
+                "breachDate": "2016-08-07"
+              },
+              {
+                "platformName": "Wishbone (2020)",
+                "domainName": "wishbone.io",
+                "breachDate": "2020-01-27"
+              },
+              {
+                "platformName": "WiziShop",
+                "domainName": "wizishop.fr",
+                "breachDate": "2020-07-14"
+              },
+              {
+                "platformName": "Wongnai",
+                "domainName": "wongnai.com",
+                "breachDate": "2020-10-28"
+              },
+              {
+                "platformName": "xat",
+                "domainName": "xat.com",
+                "breachDate": "2015-11-04"
+              },
+              {
+                "platformName": "Xbox 360 ISO",
+                "domainName": "xbox360iso.com",
+                "breachDate": "2015-09-25"
+              },
+              {
+                "platformName": "XSplit",
+                "domainName": "xsplit.com",
+                "breachDate": "2013-11-07"
+              },
+              {
+                "platformName": "Yam",
+                "domainName": "yam.com",
+                "breachDate": "2013-06-02"
+              },
+              {
+                "platformName": "Yatra",
+                "domainName": "yatra.com",
+                "breachDate": "2013-09-01"
+              },
+              {
+                "platformName": "yotepresto.com",
+                "domainName": "yotepresto.com",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "Youku",
+                "domainName": "youku.com",
+                "breachDate": "2016-12-01"
+              },
+              {
+                "platformName": "YouNow",
+                "domainName": "younow.com",
+                "breachDate": "2019-02-15"
+              },
+              {
+                "platformName": "You've Been Scraped",
+                "domainName": "",
+                "breachDate": "2018-10-05"
+              },
+              {
+                "platformName": "Zacks",
+                "domainName": "zacks.com",
+                "breachDate": "2020-05-10"
+              },
+              {
+                "platformName": "Zomato",
+                "domainName": "zomato.com",
+                "breachDate": "2017-05-17"
+              },
+              {
+                "platformName": "Zoomcar",
+                "domainName": "zoomcar.com",
+                "breachDate": "2018-07-01"
+              },
+              {
+                "platformName": "Zynga",
+                "domainName": "zynga.com",
+                "breachDate": "2019-09-01"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2013-08-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-06-15"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-06-22"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-07-01"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-07-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-07-22"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-08-07"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-09-01"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-10-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-11-03"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2014-11-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-01-18"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-01-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-02-22"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-04-07"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-07-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-07-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-08-16"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-08-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-08-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-08-24"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-08-25"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2015-12-08"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-01-11"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-01-22"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-01-29"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-02-11"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-03-23"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-03-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-04-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-04-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-04-29"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-05-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-06-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-08-02"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-08-17"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-08-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-09-02"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-11-11"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-12-07"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-12-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-12-17"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2016-12-18"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-01-03"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-01-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-01-24"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-02-05"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-02-07"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-02-10"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-02-15"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-03-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-04-14"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-04-16"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-06-04"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-08-04"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2017-08-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-03"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-06"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-14"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-24"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-01-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-02-11"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-02-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-03-21"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-04-16"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-04-17"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-05-05"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-05-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-06-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-06-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-07-13"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-07-16"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-08-06"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-08-11"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-08-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-08-15"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-10-01"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2018-10-15"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-01-03"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-02-06"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-03-19"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-03-28"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-04-12"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-05-01"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-06-17"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-06-18"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-06-20"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-06-30"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2019-07-16"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2020-01-20"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2020-02-28"
+              },
+              {
+                "platformName": null,
+                "domainName": null,
+                "breachDate": "2020-07-06"
+              },
+              {
+                "platformName": "#Full Database ApkTops.ir",
+                "domainName": null,
+                "breachDate": "2017-02-09"
+              },
+              {
+                "platformName": "#OpUk ukindsup.co.uk DNS spoofing by Team IHC",
+                "domainName": null,
+                "breachDate": "2015-01-25"
+              },
+              {
+                "platformName": "&quot;&gt;&lt;img src=x onerror=prompt(document.domain)&gt;",
+                "domainName": null,
+                "breachDate": "2016-09-25"
+              },
+              {
+                "platformName": ".,.",
+                "domainName": null,
+                "breachDate": "2014-12-12"
+              },
+              {
+                "platformName": "[8832] bangladeshi matrimony users login detains",
+                "domainName": null,
+                "breachDate": "2014-08-29"
+              },
+              {
+                "platformName": "10k combo - Fimvark",
+                "domainName": null,
+                "breachDate": "2017-01-22"
+              },
+              {
+                "platformName": "10k E-mail Accounts Hacked By Null",
+                "domainName": null,
+                "breachDate": "2013-11-25"
+              },
+              {
+                "platformName": "10kEmpas",
+                "domainName": null,
+                "breachDate": "2018-11-24"
+              },
+              {
+                "platformName": "113 pyramydair hits with capture",
+                "domainName": null,
+                "breachDate": "2019-07-11"
+              },
+              {
+                "platformName": "130-danke-nein.de",
+                "domainName": null,
+                "breachDate": "2018-05-28"
+              },
+              {
+                "platformName": "142.44.253.104",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "142.44.253.104",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "1k kontol",
+                "domainName": null,
+                "breachDate": "2018-07-09"
+              },
+              {
+                "platformName": "1k PRIVAT Combo GMAIL.com [Email_Pass]",
+                "domainName": null,
+                "breachDate": "2019-12-17"
+              },
+              {
+                "platformName": "3anba.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "47K Mailing List",
+                "domainName": null,
+                "breachDate": "2017-02-03"
+              },
+              {
+                "platformName": "5.7k Email;Pass Combo List!",
+                "domainName": null,
+                "breachDate": "2015-07-21"
+              },
+              {
+                "platformName": "5k Fresh Mail List",
+                "domainName": null,
+                "breachDate": "2019-06-17"
+              },
+              {
+                "platformName": "691 indian email addresses",
+                "domainName": null,
+                "breachDate": "2016-05-10"
+              },
+              {
+                "platformName": "7 K spam mail list",
+                "domainName": null,
+                "breachDate": "2016-06-12"
+              },
+              {
+                "platformName": "7K Mail List",
+                "domainName": null,
+                "breachDate": "2015-08-19"
+              },
+              {
+                "platformName": "8362 LEAKED BECONE HOUSE DETAILS BY SHAMS KHAN SWATI (8362 H",
+                "domainName": null,
+                "breachDate": "2014-11-13"
+              },
+              {
+                "platformName": "8k",
+                "domainName": null,
+                "breachDate": "2019-09-08"
+              },
+              {
+                "platformName": "9000+ Emails and Passwords Of Russians By hell Shield Hakrzz",
+                "domainName": null,
+                "breachDate": "2015-04-19"
+              },
+              {
+                "platformName": "a.tgkanal.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Alabama Ashley Madison",
+                "domainName": null,
+                "breachDate": "2015-08-24"
+              },
+              {
+                "platformName": "ALAM",
+                "domainName": null,
+                "breachDate": "2015-08-23"
+              },
+              {
+                "platformName": "Andhra Pradesg Grameena Vikas Bank India Whole DB Lk By KaMi",
+                "domainName": null,
+                "breachDate": "2014-10-19"
+              },
+              {
+                "platformName": "Anon-IB - California Users",
+                "domainName": null,
+                "breachDate": "2018-04-04"
+              },
+              {
+                "platformName": "app442.host",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Ashlely Madison - ALABAMA 1",
+                "domainName": null,
+                "breachDate": "2015-08-24"
+              },
+              {
+                "platformName": "Ashley Madison AL List",
+                "domainName": null,
+                "breachDate": "2015-08-23"
+              },
+              {
+                "platformName": "Ashley Madison Alabama",
+                "domainName": null,
+                "breachDate": "2015-08-23"
+              },
+              {
+                "platformName": "Ashley Madison Alabama",
+                "domainName": null,
+                "breachDate": "2015-08-25"
+              },
+              {
+                "platformName": "atrium",
+                "domainName": null,
+                "breachDate": "2018-08-08"
+              },
+              {
+                "platformName": "Attacked by ISRAEL F.T.S dogfts israel , zeusfts israel",
+                "domainName": null,
+                "breachDate": "2013-08-13"
+              },
+              {
+                "platformName": "b4ckdoorarchive.club",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "balockae.online",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Beacon House Data Exposed by Anonymous",
+                "domainName": null,
+                "breachDate": "2015-04-25"
+              },
+              {
+                "platformName": "BIMTEC india 6000+ Emails Leaked By KaMi HaXor",
+                "domainName": null,
+                "breachDate": "2014-10-10"
+              },
+              {
+                "platformName": "binlerce ep posta",
+                "domainName": null,
+                "breachDate": "2016-11-20"
+              },
+              {
+                "platformName": "Bladehotel spelers 1,5k ip's die van jullie vind ik zo",
+                "domainName": null,
+                "breachDate": "2016-11-26"
+              },
+              {
+                "platformName": "botter",
+                "domainName": null,
+                "breachDate": "2016-11-11"
+              },
+              {
+                "platformName": "Br8awi",
+                "domainName": null,
+                "breachDate": "2018-08-09"
+              },
+              {
+                "platformName": "cdn-04.anonfile.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-08.anonfile.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-102.anonfiles.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-11.anonfiles.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-12.anonfile.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-14.anonfile.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-140.anonfiles.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "cdn-35.anonfiles.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Cebong",
+                "domainName": null,
+                "breachDate": "2019-01-04"
+              },
+              {
+                "platformName": "COMBO PASS",
+                "domainName": null,
+                "breachDate": "2015-07-22"
+              },
+              {
+                "platformName": "corediagnostic 2000+ Phone, Emails Leaked By KaMi HaXor",
+                "domainName": null,
+                "breachDate": "2014-10-12"
+              },
+              {
+                "platformName": "C-Team.Org Database Leaked By redsm0ke",
+                "domainName": null,
+                "breachDate": "2015-11-01"
+              },
+              {
+                "platformName": "Data Leaked from India Railway Employee",
+                "domainName": null,
+                "breachDate": "2018-04-17"
+              },
+              {
+                "platformName": "data users bps.go.id",
+                "domainName": null,
+                "breachDate": "2017-05-30"
+              },
+              {
+                "platformName": "dccda",
+                "domainName": null,
+                "breachDate": "2015-08-27"
+              },
+              {
+                "platformName": "discordgg.ga",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Dox Hotel DB",
+                "domainName": null,
+                "breachDate": "2017-03-22"
+              },
+              {
+                "platformName": "Doxhotel // data base",
+                "domainName": null,
+                "breachDate": "2016-08-22"
+              },
+              {
+                "platformName": "EISEAN",
+                "domainName": null,
+                "breachDate": "2014-08-07"
+              },
+              {
+                "platformName": "elifeask",
+                "domainName": null,
+                "breachDate": "2017-08-31"
+              },
+              {
+                "platformName": "email",
+                "domainName": null,
+                "breachDate": "2014-01-13"
+              },
+              {
+                "platformName": "Email Dump Ryncoo",
+                "domainName": null,
+                "breachDate": "2018-11-10"
+              },
+              {
+                "platformName": "Email|Password  69PBR72@mail.ru|8888  Braveheart4534@aol.com|pink182  dalerick66 - Pastebin.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "emails.txt",
+                "domainName": null,
+                "breachDate": "2020-01-19"
+              },
+              {
+                "platformName": "empas india",
+                "domainName": null,
+                "breachDate": "2018-11-27"
+              },
+              {
+                "platformName": "empas5k",
+                "domainName": null,
+                "breachDate": "2019-03-24"
+              },
+              {
+                "platformName": "empass",
+                "domainName": null,
+                "breachDate": "2016-09-19"
+              },
+              {
+                "platformName": "ERIKYJEBROAURIX",
+                "domainName": null,
+                "breachDate": "2016-11-15"
+              },
+              {
+                "platformName": "files.miyako.rocks",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Fresh Mail List [Aggregated]",
+                "domainName": null,
+                "breachDate": "2017-04-10"
+              },
+              {
+                "platformName": "Full Database ApkTops.ir",
+                "domainName": null,
+                "breachDate": "2017-02-07"
+              },
+              {
+                "platformName": "Gift ko sayo to",
+                "domainName": null,
+                "breachDate": "2018-07-15"
+              },
+              {
+                "platformName": "HACKED BY : @Cyb3rG0dTeam5",
+                "domainName": null,
+                "breachDate": "2013-05-12"
+              },
+              {
+                "platformName": "HACKED BY MIAN BILAL AHMED(INNOCENT KING H4KAR)",
+                "domainName": null,
+                "breachDate": "2014-12-14"
+              },
+              {
+                "platformName": "Halal Buds is hacked By KelvinSecTeam",
+                "domainName": null,
+                "breachDate": "2018-10-26"
+              },
+              {
+                "platformName": "Halal Buds restaurant is hacked By KelvinSecTeam",
+                "domainName": null,
+                "breachDate": "2018-06-26"
+              },
+              {
+                "platformName": "HOTELOGIX.COM DATABASE",
+                "domainName": null,
+                "breachDate": "2017-05-24"
+              },
+              {
+                "platformName": "http://1394store.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "http://cmp2.drbatras.ae",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "http://elifeask.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "http://www.umoveindia.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "hypixel.party",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "iit-fsu.org - upskilweb.users",
+                "domainName": null,
+                "breachDate": "2019-12-12"
+              },
+              {
+                "platformName": "insurenutrition.com customer emails",
+                "domainName": null,
+                "breachDate": "2017-05-21"
+              },
+              {
+                "platformName": "insurenutrition.com emails1",
+                "domainName": null,
+                "breachDate": "2017-01-31"
+              },
+              {
+                "platformName": "interbet.co.za_customers1.csv",
+                "domainName": null,
+                "breachDate": "2016-04-24"
+              },
+              {
+                "platformName": "is-elani database",
+                "domainName": null,
+                "breachDate": "2015-09-18"
+              },
+              {
+                "platformName": "is-elani.az db hacked",
+                "domainName": null,
+                "breachDate": "2015-09-18"
+              },
+              {
+                "platformName": "ITUNES.COM HACKED Teaser",
+                "domainName": null,
+                "breachDate": "2014-11-04"
+              },
+              {
+                "platformName": "jemsne",
+                "domainName": null,
+                "breachDate": "2017-08-16"
+              },
+              {
+                "platformName": "Karoake Co NZ LEAK",
+                "domainName": null,
+                "breachDate": "2016-12-05"
+              },
+              {
+                "platformName": "LahOre BeaCon House Data Leaked by 8362 HaXor",
+                "domainName": null,
+                "breachDate": "2014-11-14"
+              },
+              {
+                "platformName": "Lea",
+                "domainName": null,
+                "breachDate": "2016-12-05"
+              },
+              {
+                "platformName": "LIST EMAIL HACK 2017",
+                "domainName": null,
+                "breachDate": "2017-12-09"
+              },
+              {
+                "platformName": "list mail TTTT2",
+                "domainName": null,
+                "breachDate": "2016-05-21"
+              },
+              {
+                "platformName": "Lista de login é e-mail",
+                "domainName": null,
+                "breachDate": "2019-01-19"
+              },
+              {
+                "platformName": "lista1",
+                "domainName": null,
+                "breachDate": "2016-11-20"
+              },
+              {
+                "platformName": "maail",
+                "domainName": null,
+                "breachDate": "2014-10-14"
+              },
+              {
+                "platformName": "Mail List",
+                "domainName": null,
+                "breachDate": "2017-02-03"
+              },
+              {
+                "platformName": "Mail List #Adewale",
+                "domainName": null,
+                "breachDate": "2015-07-26"
+              },
+              {
+                "platformName": "Mail list Fresh",
+                "domainName": null,
+                "breachDate": "2019-08-29"
+              },
+              {
+                "platformName": "Mailist",
+                "domainName": null,
+                "breachDate": "2019-01-29"
+              },
+              {
+                "platformName": "Mailist 7k",
+                "domainName": null,
+                "breachDate": "2016-09-16"
+              },
+              {
+                "platformName": "Maillist - YagamiiW3B",
+                "domainName": null,
+                "breachDate": "2019-01-03"
+              },
+              {
+                "platformName": "maillist canada 26k hichem",
+                "domainName": null,
+                "breachDate": "2016-11-24"
+              },
+              {
+                "platformName": "Mails List  |   9/2013",
+                "domainName": null,
+                "breachDate": "2013-09-15"
+              },
+              {
+                "platformName": "Mamata Banerjee leave gov Jagdis Bose Science College Hacked",
+                "domainName": null,
+                "breachDate": "2015-11-01"
+              },
+              {
+                "platformName": "Meghbela PMPL employee list",
+                "domainName": null,
+                "breachDate": "2019-04-13"
+              },
+              {
+                "platformName": "Meow",
+                "domainName": null,
+                "breachDate": "2014-07-04"
+              },
+              {
+                "platformName": "minecon email",
+                "domainName": null,
+                "breachDate": "2017-03-08"
+              },
+              {
+                "platformName": "MM enterprises Whole Data Leaked By KaMi HaXor",
+                "domainName": null,
+                "breachDate": "2014-10-11"
+              },
+              {
+                "platformName": "MyArmTV.com Users Part2",
+                "domainName": null,
+                "breachDate": "2016-08-25"
+              },
+              {
+                "platformName": "mylloyd.com #ILLSeC",
+                "domainName": null,
+                "breachDate": "2017-04-20"
+              },
+              {
+                "platformName": "Mylloyd.com_2016_30k",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "Mylloyd.com_2016_30k",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "New Email And Password LEAK...",
+                "domainName": null,
+                "breachDate": "2017-11-02"
+              },
+              {
+                "platformName": "Nigerian Email leak by sh4rp-3dg3",
+                "domainName": null,
+                "breachDate": "2016-04-13"
+              },
+              {
+                "platformName": "niggas",
+                "domainName": null,
+                "breachDate": "2013-08-01"
+              },
+              {
+                "platformName": "Pakistan Email and Password Leaked by dutchm@n",
+                "domainName": null,
+                "breachDate": "2018-08-15"
+              },
+              {
+                "platformName": "paste.c-net.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pastedir.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pastedir.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pour Dexter",
+                "domainName": null,
+                "breachDate": "2016-01-13"
+              },
+              {
+                "platformName": "pred.me",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "priv",
+                "domainName": null,
+                "breachDate": "2016-10-11"
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "pxahb.xyz",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "quantum booter",
+                "domainName": null,
+                "breachDate": "2014-08-11"
+              },
+              {
+                "platformName": "rp",
+                "domainName": null,
+                "breachDate": "2015-03-10"
+              },
+              {
+                "platformName": "session log",
+                "domainName": null,
+                "breachDate": "2015-12-03"
+              },
+              {
+                "platformName": "Session9",
+                "domainName": null,
+                "breachDate": "2019-12-17"
+              },
+              {
+                "platformName": "siph0n.in",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "siph0n.in",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "siph0n.in",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "siph0n.in",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "skippy playz alt list",
+                "domainName": null,
+                "breachDate": "2017-08-12"
+              },
+              {
+                "platformName": "SkTorrent.eu",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "sneaindia.com dump",
+                "domainName": null,
+                "breachDate": "2018-08-12"
+              },
+              {
+                "platformName": "sssssss",
+                "domainName": null,
+                "breachDate": "2015-12-14"
+              },
+              {
+                "platformName": "Surya World India 500+ Users Data Leaked By KaMi HaXor",
+                "domainName": null,
+                "breachDate": "2014-11-09"
+              },
+              {
+                "platformName": "taik nih",
+                "domainName": null,
+                "breachDate": "2017-08-13"
+              },
+              {
+                "platformName": "Team Power Singapore Official Website Users Database leaked",
+                "domainName": null,
+                "breachDate": "2014-08-26"
+              },
+              {
+                "platformName": "ThamerXX",
+                "domainName": null,
+                "breachDate": "2018-07-09"
+              },
+              {
+                "platformName": "The Plague © - Database DoxHotel - [LEAKED]",
+                "domainName": null,
+                "breachDate": "2016-11-13"
+              },
+              {
+                "platformName": "TNEB Engineers Association India Whole USR Leaked By KaMi",
+                "domainName": null,
+                "breachDate": "2014-10-21"
+              },
+              {
+                "platformName": "tunesoman.com pt1",
+                "domainName": null,
+                "breachDate": "2017-12-15"
+              },
+              {
+                "platformName": "TWOFOLD Singapore Online Shopping Website DB Leaked By KaMi",
+                "domainName": null,
+                "breachDate": "2014-08-26"
+              },
+              {
+                "platformName": "underground-revolution.eu",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "underground-revolution.eu",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "underground-revolution.eu",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "underground-revolution.eu",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "upload.happy-team.org",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "V",
+                "domainName": null,
+                "breachDate": "2017-12-22"
+              },
+              {
+                "platformName": "Vegastripping database",
+                "domainName": null,
+                "breachDate": "2017-06-06"
+              },
+              {
+                "platformName": "WA.LK DATABASE PENETRATED",
+                "domainName": null,
+                "breachDate": "2016-11-26"
+              },
+              {
+                "platformName": "WarZed by NOOB Y",
+                "domainName": null,
+                "breachDate": "2013-09-14"
+              },
+              {
+                "platformName": "wireclass.com leak",
+                "domainName": null,
+                "breachDate": "2017-02-10"
+              },
+              {
+                "platformName": "Wordpress Importing Dummy Data Doesn't Work",
+                "domainName": null,
+                "breachDate": "2015-12-04"
+              },
+              {
+                "platformName": "Wow!",
+                "domainName": null,
+                "breachDate": "2016-11-22"
+              },
+              {
+                "platformName": "www.anonfiles.cc",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "www.pemiblanc.com",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "x5/v2",
+                "domainName": null,
+                "breachDate": "2018-07-08"
+              },
+              {
+                "platformName": "xn--e1alhsoq4c.xn--p1ai",
+                "domainName": null,
+                "breachDate": null
+              },
+              {
+                "platformName": "yetru",
+                "domainName": null,
+                "breachDate": "2016-06-30"
+              },
+              {
+                "platformName": "zxc",
+                "domainName": null,
+                "breachDate": "2016-01-09"
+              }
+            ]
+          },
+          "emailTenure": 15.06
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Inq7qhIPyQ0EPVQ=",
+      "inputEmail": "ABC@gmail.COM",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

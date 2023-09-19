@@ -1,0 +1,64 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "ssam09999329420dsdssdds@xyz.com"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainName": "xyz.com",
+            "tld": ".com",
+            "creationTime": "1994-03-14 05:00:00",
+            "updateTime": "2022-10-26 01:15:18",
+            "expiryTime": "2030-03-15 04:00:00",
+            "registered": true,
+            "companyName": "Domains By Proxy, LLC",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": true,
+            "spfStrict": true,
+            "suspiciousTld": false,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": true
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "InIW1hnxyQ0EJGw=",
+      "inputEmail": "ssam09999329420dsdssdds@xyz.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

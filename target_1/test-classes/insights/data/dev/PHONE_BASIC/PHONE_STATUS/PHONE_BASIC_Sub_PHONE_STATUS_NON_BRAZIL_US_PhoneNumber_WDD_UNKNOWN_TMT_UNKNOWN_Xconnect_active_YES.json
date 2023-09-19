@@ -1,0 +1,126 @@
+{
+  "request":{
+    "phoneNumber": "5511910000000",
+    "phoneDefaultCountryCode": "BR",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "5511910000000",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 24,
+            "max": 48
+          },
+          "country": "BR",
+          "originalCarrier": "VIVO S.A.",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": "2021-09-09",
+            "numberOfPorts": 12,
+            "portedSinceXDays": 707,
+            "currentCarrierCircle": "Vivo Telefônica Brasil S.A.",
+            "originalCarrierCircle": "Vivo Telefônica Brasil S.A.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-09-09"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-09-03"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-08-21"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-07-31"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-07-21"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-06-30"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-06-23"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-06-01"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-03-26"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-02-27"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-02-24"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-02-12"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "724",
+            "mobileNetworkCode": "10",
+            "networkName": "VIVO S.A.",
+            "serviceProfileId": "557793"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "5511910000000",
+      "cleansedPhoneNumber": "+5511910000000",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": [
+      "3342b21d-6ba2-4294-b808-f9612b24fed6",
+      "  ",
+      null,
+      "",
+      null
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
+            "country": "IN",
+            "lastModified": "2023-07-29",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Xiaomi",
+              "model": "2107113SI"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 12.978544235229492,
+                "longitude": 77.58527755737305,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560001"
+              },
+              "nightLocation": {
+                "latitude": 12.93614387512207,
+                "longitude": 77.72294998168945,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560087"
+              },
+              "mostSeenLocation": {
+                "latitude": 12.93614387512207,
+                "longitude": 77.72294998168945,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560087"
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "inputDeviceIds": [
+        "3342b21d-6ba2-4294-b808-f9612b24fed6"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}
