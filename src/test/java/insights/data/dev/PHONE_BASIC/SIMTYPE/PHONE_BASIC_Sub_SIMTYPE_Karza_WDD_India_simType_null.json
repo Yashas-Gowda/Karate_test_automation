@@ -1,13 +1,14 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_BASIC"
     ],
     "phoneNumber": "08192213875",
+    "email":"sdfdsfsd@HDFCBANK.COM",
     "phoneDefaultCountryCode": "IN"
-  },
+  } ,
   "response":{
     "data": {
       "phone": {
