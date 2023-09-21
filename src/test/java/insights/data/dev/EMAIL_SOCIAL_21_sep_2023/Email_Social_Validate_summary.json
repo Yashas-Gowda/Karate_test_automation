@@ -1,10 +1,16 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email":"sanjaytelecom2006@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "consentDetails": {
+      "consentId": "12W4HD",
+      "consentTimestamp": "2022-02-17T16:07:49Z",
+      "consentType": "TOC"
+    }
   },
   "response":{
     "data": {
@@ -12,18 +18,18 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 13,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 17,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
+            "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 5,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 2,
             "registeredTravelProfiles": 1,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 3
           },
           "profiles": {
             "consumerElectronics": {
@@ -31,14 +37,13 @@
                 "registered": true
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": null,
-                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR_n8F0p-N6kK2w7o7GLJmXJAVdDsA_nxx6P3b4EOyWwvM"
               },
               "yahoo": {
                 "registered": false
@@ -52,10 +57,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": null
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": true
@@ -133,21 +138,21 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
-                "handle": null,
+                "name": "Sanjay Yadav",
+                "id": "sanvan2006",
+                "handle": "sanvan2006",
                 "bio": null,
                 "age": null,
-                "city": null,
+                "city": "Delhi",
                 "state": null,
-                "country": null,
-                "photo": null
+                "country": "India",
+                "photo": "https://avatar.skype.com/v1/avatars/sanvan2006/public?returnDefaultImage=true"
               },
               "discord": {
-                "registered": false
+                "registered": null
               },
               "kakao": {
                 "registered": null
@@ -161,25 +166,25 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": true
+                "registered": null
               },
               "linkedin": {
-                "registered": null,
-                "url": null,
-                "name": null,
-                "company": null,
-                "title": null,
-                "location": null,
+                "registered": true,
+                "url": "https://linkedin.com/in/sanjay-yadav-301b0a15",
+                "name": "Sanjay Yadav",
+                "company": "Samsung Electronics",
+                "title": "Operation Manager ll Production Planning ll  System Management ll SCM ll Electrical Maintenance ll Testing",
+                "location": "New Delhi, Delhi, India",
                 "website": null,
                 "twitter": null,
-                "photo": null,
-                "connectionCount": null
+                "photo": "https://media.licdn.com/dms/image/C4D03AQGpBPMMXE4M6Q/profile-displayphoto-shrink_400_400/0/1641350788598?e=1690837200&v=beta&t=7NUUYDKJVvX3mAtGo8Td-dIX7dDP0s0k350RF1e0k8A",
+                "connectionCount": 228
               },
               "evernote": {
                 "registered": false
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": false
@@ -193,7 +198,7 @@
                 "registered": true
               },
               "lastfm": {
-                "registered": null
+                "registered": false
               },
               "vimeo": {
                 "registered": false
@@ -247,13 +252,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "referenceId": "UI-b25c86f1d53c13a46192d97bdc2ab88aa7d601ed",
+      "inputEmail": "sanjaytelecom2006@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

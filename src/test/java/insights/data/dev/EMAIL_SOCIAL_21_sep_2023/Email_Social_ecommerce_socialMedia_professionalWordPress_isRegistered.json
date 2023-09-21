@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "email": "abhisharj@gmail.com"
   },
   "response":{
     "data": {
@@ -15,12 +15,12 @@
             "registeredProfiles": 13,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
+            "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 5,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 1,
+            "registeredTravelProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -28,17 +28,16 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": null,
-                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR14mbdSKJ_Zgkghx2U0gN3NhbM2gwcJdCO_VAi7oW_V4w"
               },
               "yahoo": {
                 "registered": false
@@ -52,10 +51,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": null
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": true
@@ -88,7 +87,7 @@
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -115,11 +114,11 @@
                 "registered": false
               },
               "gravatar": {
-                "registered": false,
+                "registered": true,
                 "location": null,
                 "name": null,
-                "profileUrl": null,
-                "username": null
+                "profileUrl": "https://gravatar.com/abhisharj",
+                "username": "abhisharj"
               },
               "foursquare": {
                 "registered": null,
@@ -135,7 +134,7 @@
               "skype": {
                 "registered": false,
                 "language": null,
-                "gender": null,
+                "gender": "UNKNOWN",
                 "name": null,
                 "id": null,
                 "handle": null,
@@ -147,7 +146,7 @@
                 "photo": null
               },
               "discord": {
-                "registered": false
+                "registered": null
               },
               "kakao": {
                 "registered": null
@@ -158,10 +157,10 @@
                 "registered": false
               },
               "wordpress": {
-                "registered": false
+                "registered": true
               },
               "atlassian": {
-                "registered": true
+                "registered": null
               },
               "linkedin": {
                 "registered": null,
@@ -176,7 +175,7 @@
                 "connectionCount": null
               },
               "evernote": {
-                "registered": false
+                "registered": true
               },
               "microsoft": {
                 "registered": false
@@ -185,7 +184,7 @@
                 "registered": false
               },
               "adobe": {
-                "registered": true
+                "registered": false
               }
             },
             "entertainment": {
@@ -193,7 +192,7 @@
                 "registered": true
               },
               "lastfm": {
-                "registered": null
+                "registered": false
               },
               "vimeo": {
                 "registered": false
@@ -216,7 +215,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -241,19 +240,21 @@
       "identity": null,
       "upi": null,
       "device": null,
-      "employment": null,
-      "income": null,
-      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "inputPhoneNumber": null,
+      "cleansedPhoneNumber": null,
+      "referenceId": "UI-6a6b88b1cdad901d536093f7f6bd05abbd78d7d3",
+      "inputEmail": "abhisharj@gmail.com",
+      "inputIpAddress": null,
+      "inputUpiId": null,
+      "inputDeviceIds": null,
       "requestedPackages": [
         "EMAIL_SOCIAL"
-      ]
+      ],
+      "inputAddress": null
     },
-    "errors": [
-    ]
+    "errors": []
   }
-}
+  }

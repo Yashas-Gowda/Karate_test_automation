@@ -1,10 +1,16 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email":"gupta.vicky619@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "consentDetails": {
+      "consentId": "12W4HD",
+      "consentTimestamp": "2022-02-17T16:07:49Z",
+      "consentType": "TOC"
+    }
   },
   "response":{
     "data": {
@@ -12,15 +18,15 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 13,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 10,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 5,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 1,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 1,
+            "registeredTravelProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -31,14 +37,13 @@
                 "registered": true
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": null,
-                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMSJMSFIqdgL2OWBFXNeKlXy9e2YSFVsdhv9Gi34lzX5DXM"
               },
               "yahoo": {
                 "registered": false
@@ -52,10 +57,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": null
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": true
@@ -75,13 +80,13 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": null,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": false,
@@ -91,7 +96,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": false
@@ -109,7 +114,7 @@
                 "registered": false
               },
               "quora": {
-                "registered": true
+                "registered": false
               },
               "qzone": {
                 "registered": false
@@ -147,7 +152,7 @@
                 "photo": null
               },
               "discord": {
-                "registered": false
+                "registered": null
               },
               "kakao": {
                 "registered": null
@@ -161,7 +166,7 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": true
+                "registered": null
               },
               "linkedin": {
                 "registered": null,
@@ -179,7 +184,7 @@
                 "registered": false
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": false
@@ -193,7 +198,7 @@
                 "registered": true
               },
               "lastfm": {
-                "registered": null
+                "registered": false
               },
               "vimeo": {
                 "registered": false
@@ -216,7 +221,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -247,13 +252,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "referenceId": "UI-b25c86f1d53c13a46192d97bdc2ab88aa7d601ed",
+      "inputEmail": "gupta.vicky619@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
-}
+  }

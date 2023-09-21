@@ -18,12 +18,12 @@
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 3,
+            "registeredProfessionalProfiles": 4,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 2,
-            "ageOnSocial": 1347,
-            "numberOfNamesReturned": 2,
-            "numberOfPhotosReturned": 3
+            "registeredTravelProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
@@ -37,7 +37,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR2LiD_qxW0YO_ibKZ3MIDNLR3NHQbpqrXIpZILhM1ytQ"
+                "name": null,
+                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVuJVknE2iHRPYdTZ6Pg6_q2AWMCFFNf7vpDJOdqCr6sw"
               },
               "yahoo": {
                 "registered": false
@@ -51,10 +52,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": null
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": true
@@ -121,7 +122,7 @@
                 "username": null
               },
               "foursquare": {
-                "registered": false,
+                "registered": null,
                 "bio": null,
                 "photo": null,
                 "profileUrl": null
@@ -135,18 +136,18 @@
                 "registered": true,
                 "language": null,
                 "gender": null,
-                "name": "sameena khnm",
-                "id": "sammy901991",
+                "name": "sameena yasmeen",
+                "id": "live:sammy.khnm",
                 "handle": null,
                 "bio": null,
                 "age": null,
-                "city": "mysore",
-                "state": "Karnataka",
-                "country": "India",
-                "photo": "https://avatar.skype.com/v1/avatars/sammy901991/public?returnDefaultImage=true"
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": "https://avatar.skype.com/v1/avatars/live:sammy.khnm/public?returnDefaultImage=true"
               },
               "discord": {
-                "registered": null
+                "registered": false
               },
               "kakao": {
                 "registered": null
@@ -160,7 +161,7 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": true
               },
               "linkedin": {
                 "registered": null,
@@ -192,7 +193,7 @@
                 "registered": false
               },
               "lastfm": {
-                "registered": false
+                "registered": null
               },
               "vimeo": {
                 "registered": false
@@ -218,16 +219,16 @@
                 "registered": true
               },
               "airbnb": {
-                "registered": true,
-                "about": "",
-                "createdAt": "2019-10-20T13:56:35Z",
-                "name": "Sammy",
-                "identityVerified": "false",
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
                 "location": null,
-                "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
-                "revieweeCount": "0",
+                "photo": null,
+                "revieweeCount": null,
                 "trips": null,
-                "work": ""
+                "work": null
               }
             }
           }
@@ -246,12 +247,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "AMS-test-1",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

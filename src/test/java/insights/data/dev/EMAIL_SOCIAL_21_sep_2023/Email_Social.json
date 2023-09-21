@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "email": "sammy.khnm@gmail.com"
   },
   "response":{
     "data": {
@@ -16,14 +16,14 @@
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 5,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 1,
-            "ageOnSocial": null,
-            "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 1
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 3,
+            "registeredEntertainmentProfiles": 0,
+            "registeredTravelProfiles": 2,
+            "ageOnSocial": 1347,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 3
           },
           "profiles": {
             "consumerElectronics": {
@@ -37,8 +37,7 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": null,
-                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMR2LiD_qxW0YO_ibKZ3MIDNLR3NHQbpqrXIpZILhM1ytQ"
               },
               "yahoo": {
                 "registered": false
@@ -52,10 +51,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": null
+                "registered": false
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": true
@@ -75,7 +74,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
@@ -122,7 +121,7 @@
                 "username": null
               },
               "foursquare": {
-                "registered": null,
+                "registered": false,
                 "bio": null,
                 "photo": null,
                 "profileUrl": null
@@ -133,21 +132,21 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "sameena khnm",
+                "id": "sammy901991",
                 "handle": null,
                 "bio": null,
                 "age": null,
-                "city": null,
-                "state": null,
-                "country": null,
-                "photo": null
+                "city": "mysore",
+                "state": "Karnataka",
+                "country": "India",
+                "photo": "https://avatar.skype.com/v1/avatars/sammy901991/public?returnDefaultImage=true"
               },
               "discord": {
-                "registered": false
+                "registered": null
               },
               "kakao": {
                 "registered": null
@@ -155,13 +154,13 @@
             },
             "professional": {
               "github": {
-                "registered": false
+                "registered": true
               },
               "wordpress": {
                 "registered": false
               },
               "atlassian": {
-                "registered": true
+                "registered": null
               },
               "linkedin": {
                 "registered": null,
@@ -179,7 +178,7 @@
                 "registered": false
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": false
@@ -190,10 +189,10 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
+                "registered": false
               },
               "lastfm": {
-                "registered": null
+                "registered": false
               },
               "vimeo": {
                 "registered": false
@@ -208,7 +207,7 @@
                 "registered": false
               },
               "netflix": {
-                "registered": true
+                "registered": false
               },
               "archiveorg": {
                 "registered": false
@@ -219,16 +218,16 @@
                 "registered": true
               },
               "airbnb": {
-                "registered": null,
-                "about": null,
-                "createdAt": null,
-                "name": null,
-                "identityVerified": null,
+                "registered": true,
+                "about": "",
+                "createdAt": "2019-10-20T13:56:35Z",
+                "name": "Sammy",
+                "identityVerified": "false",
                 "location": null,
-                "photo": null,
-                "revieweeCount": null,
+                "photo": "https://a0.muscache.com/defaults/user_pic-225x225.png?v=3",
+                "revieweeCount": "0",
                 "trips": null,
-                "work": null
+                "work": ""
               }
             }
           }
@@ -247,13 +246,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

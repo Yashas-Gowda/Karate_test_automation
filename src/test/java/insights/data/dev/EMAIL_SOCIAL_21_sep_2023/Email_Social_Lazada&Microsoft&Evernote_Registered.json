@@ -4,23 +4,23 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammykhnm17@gmail.com"
+    "email": "nhubinh6@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 13,
-            "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 1,
+            "registeredProfiles": 16,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 2,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 5,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 4,
             "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 1,
+            "registeredTravelProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -31,17 +31,17 @@
                 "registered": true
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": null,
-                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWxSMD8IMkkTg8bKrE-jgio_QKiYvKeZAo8O5jdmdJBu6nE"
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": false
@@ -58,7 +58,7 @@
                 "registered": false
               },
               "flipkart": {
-                "registered": true
+                "registered": false
               },
               "jdid": {
                 "registered": null
@@ -67,7 +67,7 @@
                 "registered": false
               },
               "lazada": {
-                "registered": false
+                "registered": true
               },
               "tokopedia": {
                 "registered": false
@@ -84,14 +84,14 @@
                 "registered": true
               },
               "flickr": {
-                "registered": false,
-                "username": null
+                "registered": true,
+                "username": "nnhubinh16011992"
               },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": false
@@ -109,7 +109,7 @@
                 "registered": false
               },
               "quora": {
-                "registered": true
+                "registered": false
               },
               "qzone": {
                 "registered": false
@@ -147,7 +147,7 @@
                 "photo": null
               },
               "discord": {
-                "registered": false
+                "registered": true
               },
               "kakao": {
                 "registered": null
@@ -155,13 +155,13 @@
             },
             "professional": {
               "github": {
-                "registered": false
+                "registered": true
               },
               "wordpress": {
                 "registered": false
               },
               "atlassian": {
-                "registered": true
+                "registered": false
               },
               "linkedin": {
                 "registered": null,
@@ -176,10 +176,10 @@
                 "connectionCount": null
               },
               "evernote": {
-                "registered": false
+                "registered": true
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": false
@@ -199,7 +199,7 @@
                 "registered": false
               },
               "envato": {
-                "registered": false
+                "registered": true
               },
               "patreon": {
                 "registered": false
@@ -208,7 +208,7 @@
                 "registered": false
               },
               "netflix": {
-                "registered": true
+                "registered": false
               },
               "archiveorg": {
                 "registered": false
@@ -216,7 +216,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -248,7 +248,7 @@
     },
     "meta": {
       "referenceId": "AMS-test-1",
-      "inputEmail": "sammykhnm17@gmail.com",
+      "inputEmail": "nhubinh6@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
@@ -256,4 +256,4 @@
     "errors": [
     ]
   }
-}
+  }
