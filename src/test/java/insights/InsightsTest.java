@@ -1,30 +1,51 @@
 package insights;
 
+//import com.intuit.karate.FileUtils;
+import com.intuit.karate.Results;
 import com.intuit.karate.junit5.Karate;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
 
-@SuppressWarnings("java:S5960")
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class InsightsTest {
   @Karate.Test
-  Karate testSample() {
-    return Karate.run("classpath:insights/UPI_ADVANCED.feature").tags("test").relativeTo(getClass());
+  Karate testInsights() {
+    return Karate.run("classpath:insights").relativeTo(getClass());
   }
 
   @Karate.Test
-  Karate smokeTest(){
+  Karate smokeTests() {
     return Karate.run("classpath:insights").tags("@smokeTest").relativeTo(getClass());
   }
 
   @Karate.Test
-  Karate testTags() {
-    return Karate.run("classpath:insights").tags("@topUpHistory").relativeTo(getClass());
+  Karate testInsightsWithReport() {
+    Karate karate = Karate.run("classpath:insights/EMPLOYMENT_DETAILS.feature").relativeTo(getClass()).outputCucumberJson(true);
+    /*Results results = karate
+            .outputCucumberJson(true)
+            .tags("")
+            .parallel(0);*/
+    Results results = karate.parallel(0);
+    generateReport(karate.parallel(0).getReportDir());
+    assertEquals(Float.parseFloat(results.getErrorMessages()), 0, results.getFailCount());
+    return karate;
   }
 
-  @Karate.Test
-  Karate testSystemProperty() {
-    return Karate.run("classpath:insights")
-            .tags("@topUpHistory")
-            .outputCucumberJson(true)
-            .karateEnv("dev");
-//            .systemProperty("foo", "bar");
+  public static void generateReport(String karateOutputPath) {
+    Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
+    List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+    jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+    Configuration config = new Configuration(new File("target"), "src/test/java");
+    ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
+    reportBuilder.generateReports();
+
   }
+
 }

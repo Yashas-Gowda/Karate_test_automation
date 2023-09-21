@@ -1,0 +1,71 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "mysite@you.me.net"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainName": "you.me.net",
+            "tld": ".net",
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": false,
+            "companyName": null,
+            "disposable": false,
+            "freeProvider": null,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 1,
+            "firstBreach": "2019-02-25",
+            "lastBreach": "2019-02-25",
+            "breaches": [
+              {
+                "platformName": "VerificationsIO",
+                "domainName": null,
+                "breachDate": "2019-02-25"
+              }
+            ]
+          },
+          "emailTenure": 4.56
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "mysite@you.me.net",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

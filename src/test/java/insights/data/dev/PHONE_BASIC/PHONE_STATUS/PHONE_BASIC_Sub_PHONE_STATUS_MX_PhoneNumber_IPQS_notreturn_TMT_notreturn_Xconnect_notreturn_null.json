@@ -5,42 +5,42 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "18482180082",
-    "phoneDefaultCountryCode": "US"
-  },
+    "phoneNumber": "+522410000000",
+    "phoneDefaultCountryCode": "MX"
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "18482180082",
+          "phoneNumber": "522410000000",
           "phoneValid": true,
-          "phoneType": "MOBILE",
+          "phoneType": null,
           "phoneDisposable": false,
-          "active": "YES",
+          "active": "N",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": null,
-          "country": "US",
-          "originalCarrier": "T-Mobile US-SVR-10X/2",
-          "ported": false,
+          "country": "MX",
+          "originalCarrier": null,
+          "ported": null,
           "portedHistory": {
             "portedDate": null,
-            "numberOfPorts": 0,
+            "numberOfPorts": null,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "T-Mobile T-Mobile US",
-            "originalCarrierCircle": "T-Mobile T-Mobile US",
+            "currentCarrierCircle": null,
+            "originalCarrierCircle": null,
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": null
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "310",
-            "mobileNetworkCode": "260",
-            "networkName": "T-Mobile US-SVR-10X/2",
-            "serviceProfileId": "152049"
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": null,
+            "serviceProfileId": null
           },
           "lastDeactivated": null,
           "isSpam": null,
@@ -62,10 +62,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "8482180082",
-      "cleansedPhoneNumber": "+18482180082",
+      "inputPhoneNumber": "+522410000000",
+      "cleansedPhoneNumber": "+522410000000",
       "referenceId": "dpi_routing_y_5",
-      "inputEmail": "sdfdsfsd@HDFCBANK.COM",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

@@ -4,7 +4,7 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * configure charset = null
     * path '/api/insights/'
 
-    @smokeTest
+    @smokeTest @smokeTest
   Scenario Outline: Validate DPI BLACKLIST_DETAILS positive scenario with single valid input where isBlacklisted is No<Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/BLACKLIST_DETAILS/<Scenario>.json")
@@ -16,14 +16,14 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-    And match $.x.data.blacklist == '#notnull'
+    And match $.data.blacklist == '#notnull'
     And match $.data.blacklist.details.isBlacklisted == '#present'
     Then match $ contains payload.response
 
     Examples:
       | Scenario                                                                              | statusCode |
       | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO                 | 200        |
-      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_YES                | 200        |
+#      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_YES                | 200        |
 #      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NEEDS_VERIFICATION | 200        |
       | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_null                             | 200        |
 

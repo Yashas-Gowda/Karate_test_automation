@@ -1,0 +1,71 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "sammykhnm17@gmail.com"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainName": "gmail.com",
+            "tld": ".com",
+            "creationTime": "1995-09-30 19:08:49",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": "Google LLC",
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 1,
+            "firstBreach": "2023-04-15",
+            "lastBreach": "2023-04-15",
+            "breaches": [
+              {
+                "platformName": "RentoMojo",
+                "domainName": null,
+                "breachDate": "2023-04-15"
+              }
+            ]
+          },
+          "emailTenure": 0.43
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "sammykhnm17@gmail.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

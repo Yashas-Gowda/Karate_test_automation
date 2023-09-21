@@ -4,6 +4,29 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     * configure charset = null
     * path '/api/insights/'
 
+  @PHONE_SOCIAL @seon @smokeTest
+  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.phone.social == '#notnull'
+    And match $.data.phone.social.summary == '#notnull'
+    And match $.data.phone.social.profiles == '#notnull'
+
+    * match  $.data.phone.social contains  payload.response.data.phone.social
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    Examples:
+      | Scenario                | statusCode |
+      | PHONE_SOCIAL_Happy_flow | 200        |
+
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl

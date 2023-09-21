@@ -1,13 +1,14 @@
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
-
+# This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
+ # scenarios names are not updated, which will be picked in the next sprint
   Background:
     * configure charset = null
     * path '/api/insights/'
 
-  @second
+  @second @smokeTest @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -16,22 +17,30 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
+    * print responseHeaders
+    * print responseHeaders["Date"][0]
+    * print responseHeaders["Content-Type"][0]
+    * match header Content-Type == "application/json"
     Then status <statusCode>
     Then match $ contains payload.response
     Examples:
-      | Scenario                                                       | statusCode |
-      | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)              | 200        |
-      | Email_Basic_Possitive_withDomainNet(abc@you.me.net)            | 200        |
-      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com) | 200        |
-      | Email_Basic_Positive_With_BreachData                           | 200        |
-      | Email_Basic_Positive_EmailTenure_Present_in_doubledigit        | 200        |
-      | Email_Basic_emailTenure_in_decimal_value                       | 200        |
-      | Email_Basic_emailTenure_in_single_digit_value                  | 200        |
+      | Scenario                                                                                                        | statusCode |
+      | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)_disposable_false_emailTenure_notnull                          | 200        |
+      | Email_Basic_Positive_disposable_false_deliverable_true_noOfBreaches_14_EmailTenure_Present_in_double_digit      | 200        |
+      | Email_Basic_deliverable_true_disposable_false_noOfBreaches_1_emailTenure_in_decimal_value                       | 200        |
+      | Email_Basic_deliverable_true_registered_true_freeProvider_true_noOfBreaches_7_emailTenure_in_single_digit_value | 200        |
+
 
     #rerun if deliverable is null
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -40,18 +49,24 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
     Then match $ contains payload.response
     Examples:
-      | Scenario                                        | statusCode |
-      | Email_Basic_isBreached_true_emailTenure_notnull | 200        |
-#      | Email_Basic_freeProvider_true                   | 200        |
-#      | Email_Basic_spfStrict_true_acceptAll_false      | 200        |
-#      | Email_Basic_deliverable_true                    | 200        |
+      | Scenario                                                                                                       | statusCode |
+      | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
+      | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                              | 200        |
+      | Email_Basic_registered_true_disposable_false_freeProvider_null_noOfBreaches_378_breached                       | 200        |
+      | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                              | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -61,38 +76,75 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then match $ contains payload.response
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
-      | Email_Basic_freeProvider_false                | 200        |
+      | Email_Basic_freeProvider_null                 | 200        |
       | Email_Basic_deliverable_false                 | 200        |
-      | Email_Basic_disposable_true                   | 200        |
-      | Email_Basic_custom_true                       | 200        |
-      | Email_Basic_suspiciousTld_true                | 200        |
-
+     #data not found for | Email_Basic_disposable_true                   | 200        |
+      #data not found for | Email_Basic_suspiciousTld_true                | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
     When method POST
+    * match $.data.email.basic.domainDetails.creationTime == "#null";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
     Then match $ contains payload.response
     Examples:
-      | Scenario                                                                                                                                                                  | statusCode |
-      | Email_Basic_creationTime_updateTime_expiryTime_companyName_acceptAll_null__registered_disposable_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_websiteExists_false | 200        |
+      | Scenario                                                                                                                                                                                                                | statusCode |
+      | Email_Basic_creationTime_updateTime_expiryTime_companyName_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_false_emailTenure_null | 200        |
 
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+
+    When method POST
+    * match $.data.email.basic.domainDetails.creationTime == "#null";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * match $.data.email.basic.emailTenure == '#number';
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
+    * set payload.response.data.email.basic.emailTenure = "#ignore"
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    Then match $ contains payload.response
+    Examples:
+      | Scenario                                                                                                                                                                                                                | statusCode |
+      | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_false_disposable_false_noOfBreaches_1_emailTenure_notnull                                                                                               | 200        |
+      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_null_disposable_false_acceptAll_false_noOfBreaches_1_emailTenure_notnull                                                                    | 200        |
     # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
+  ## Check this
+  @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -101,19 +153,48 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
     Then match $ contains payload.response
     Examples:
-      | Scenario                               | statusCode |
-      | Email_Basic_EmailDeliverable_False     | 200        |
-      | Email_Basic_EmailTenureIs_NULL         | 200        |
-      | Email_Basic_Positive_0_BreachData      | 200        |
-      | Email_Basic_Positive_CustomDomain_True | 200        |
+      | Scenario                                                   | statusCode |
+      | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
+      | Email_Basic_EmailTenureIs_NULL                             | 200        |
+      | Email_Basic_Positive_isBreached_false_noOfBreaches_0       | 200        |
+      #no data | Email_Basic_Positive_CustomDomain_True | 200        |
+
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.email.basic.emailTenure = "#null"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.email.basic.domainDetails.creationTime == "#null";
+    * match $.data.email.basic.domainDetails.updateTime =="#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
+    Then match $ contains payload.response
+    Examples:
+      | Scenario | statusCode |
+      #data no| Email_Basic_custom_true | 200        |
 
 
   Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -136,7 +217,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -158,7 +239,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -179,13 +260,13 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.errors == []
 
     Examples:
-      | Scenario                                        | statusCode |
-      | Email_Basic_isBreached_true_emailTenure_notnull | 200        |
+      | Scenario                              | statusCode |
+      | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
   @Schema_validation_2
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"

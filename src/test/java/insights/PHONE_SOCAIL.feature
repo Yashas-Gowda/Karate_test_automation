@@ -4,6 +4,10 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     * configure charset = null
     * path '/api/insights/'
 
+
+
+
+
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl

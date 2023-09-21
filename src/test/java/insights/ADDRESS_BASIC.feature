@@ -5,7 +5,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
-  @smokeTest
+  @smokeTest @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-postal code,city,state,country) <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
@@ -57,7 +57,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     Examples:
       | Scenario                                                    | statusCode |
       | Address_BASIC_positive_AllInputFields_Q_input_Adrline1_only | 200        |
-
+  @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with 'Q' input fields(q-addressLine1,2) input <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
@@ -74,7 +74,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     Examples:
       | Scenario                                                 | statusCode |
       | Address_BASIC_positive_AllInputFields_Q_input_Adrline1,2 | 200        |
-
+  @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like postal code) <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")

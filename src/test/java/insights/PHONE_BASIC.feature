@@ -113,7 +113,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
 
-  @smokeTest @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
+  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
@@ -150,8 +150,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_24_48          | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_48_null        | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_returned_portedDate_null_then_phoneTenure_is_returned            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned             | 200        | "#null"        | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned             | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                    | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
 
 
@@ -237,7 +237,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_CARRIER_INFORMATION_US_TMT_networkName_T-Mobile US-SVR-10X2_with_special_localRoutingNumber | 200        | "T-Mobile US-SVR-10X/2" | "9198055337"       | "310"             | "004"             | Verizon Wireless:6006 - SVR/2 | 151971           |
 
     #After discussion with roopa,Suggestion was to add YES,NO,Known for now and Our Automation is not handling fallback check for data partners
-  @PHONE_BASIC @PHONE_STATUS @WDD @TMT @Xconnect @active
+  @PHONE_BASIC @PHONE_STATUS @WDD @IPQS @TMT @Xconnect @active
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_STATUS positive scenario for Indian region with validation of active - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
@@ -252,18 +252,26 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic == '#notnull'
 
     And match $.data.phone.basic.active == "<active>"
-#Brazil = WDD->TMT->Xconnect
-  # non brazil= TMT->Xconnect
+#  for BR : Data partner flow => WDD→ TMT-> X-connect.
+#
+#  for MX : Data partner flow => IPQS→ TMT-> X-connect.
+#
+#  for ID : Data partner flow => Indosat→ TMT-> X-connect.
+#
+#  for Other:  Data partner flow => TMT-> X-connect.
     Examples:
-      | Scenario                                                                                       | statusCode | active  |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                        | 200        | UNKNOWN |
-      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                            | 200        | YES     |
+      | Scenario                                                                                            | statusCode | active  |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                             | 200        | UNKNOWN |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                                 | 200        | YES     |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes         | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN     | 200        | UNKNOWN |
-      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes              | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN          | 200        | UNKNOWN |
+#      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES      | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                  | 200        | YES     |
      # | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                  | 200        | YES     |
+     #  https://monnai.atlassian.net/browse/MB-2865
+     # | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_notreturn_TMT_notreturn_Xconnect_notreturn_null | 200        | YES     |
 
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber, countryCode separately - <Scenario>
@@ -536,7 +544,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                       | statusCode |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true | 200        |
 
-  @Schema_validation_2
+  @Schema_validation_1
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")

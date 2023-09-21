@@ -31,6 +31,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered       | 200        |
 
      ## Check - Can we test scenario with ageonSocial NOT NULL
+  @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
