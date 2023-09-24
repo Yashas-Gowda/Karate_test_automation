@@ -66,16 +66,18 @@
               "telegram": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -135,11 +137,12 @@
     "meta": {
       "inputPhoneNumber": "554730385110",
       "cleansedPhoneNumber": "+554730385110",
-      "referenceId": "01H5N5ADBFB0Y76R8NBPCEKTTH",
+      "referenceId": "AMS-test-1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

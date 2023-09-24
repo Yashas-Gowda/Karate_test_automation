@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "390445000000",
-    "phoneDefaultCountryCode": "IT"
+    "phoneNumber": "6289634525788",
+    "phoneDefaultCountryCode": "ID"
   },
   "response":{
     "data": {
@@ -14,15 +14,15 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 1,
+            "registeredProfiles": 4,
             "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "emailProvider": {
@@ -40,7 +40,7 @@
                 "registered": false
               },
               "bukalapak": {
-                "registered": false
+                "registered": true
               },
               "jdid": {
                 "registered": null
@@ -48,36 +48,34 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": false
               },
               "instagram": {
-                "registered": null
+                "registered": true
               }
             },
             "professional": {
               "microsoft": {
-                "registered": false
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
                 "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -86,18 +84,18 @@
                 "registered": null
               },
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
-                "id": "ilgalloper",
-                "handle": "ilgalloper",
+                "id": null,
+                "handle": null,
                 "bio": null,
-                "name": "Mauro Gallo",
+                "name": null,
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/ilgalloper/public?returnDefaultImage=true",
-                "city": "Thiene",
-                "state": "Vicenza",
-                "country": "Italy"
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
               },
               "ok": {
                 "registered": false,
@@ -135,14 +133,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "390445000000",
-      "cleansedPhoneNumber": "+390445000000",
-      "referenceId": "AMS-test-1",
+      "inputPhoneNumber": "6289634525788",
+      "cleansedPhoneNumber": "+6289634525788",
+      "referenceId": "01H5N5M037H67GT3XXQ6J1VCYQ",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

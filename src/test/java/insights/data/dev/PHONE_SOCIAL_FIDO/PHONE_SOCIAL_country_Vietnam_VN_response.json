@@ -14,14 +14,14 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 8,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 3,
-            "lastActivity": 1,
-            "numberOfNamesReturned": 0,
+            "registeredMessagingProfiles": 4,
+            "lastActivity": 0,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -66,21 +66,19 @@
               "telegram": {
                 "registered": true,
                 "photo": null,
-                "privacyStatus": null,
-                "lastSeen": "2023-09-23T10:48:09Z"
+                "lastSeen": "2023-07-18T08:10:46Z"
               },
               "whatsapp": {
                 "registered": true,
                 "photo": "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",
-                "privacyStatus": null,
                 "lastSeen": null,
                 "about": "Xin chào! Tôi đang sử dụng WhatsApp."
               },
               "viber": {
-                "registered": null,
+                "registered": true,
                 "photo": null,
-                "lastSeen": null,
-                "name": null
+                "lastSeen": "2023-02-26T03:03:08Z",
+                "name": "Ninh Nguyen"
               },
               "kakao": {
                 "registered": null
@@ -137,12 +135,11 @@
     "meta": {
       "inputPhoneNumber": "936983031",
       "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "AMS-test-1",
+      "referenceId": "01H5N5XXPH2PTN2XXJRGH772Z8",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

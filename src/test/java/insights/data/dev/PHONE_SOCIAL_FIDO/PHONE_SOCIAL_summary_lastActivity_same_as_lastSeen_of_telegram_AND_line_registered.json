@@ -20,7 +20,7 @@
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 3,
-            "lastActivity": 53,
+            "lastActivity": 16,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 2
           },
@@ -66,18 +66,16 @@
               "telegram": {
                 "registered": true,
                 "photo": null,
-                "privacyStatus": null,
-                "lastSeen": "2023-07-31T14:18:14Z"
+                "lastSeen": "2023-07-02T08:52:49Z"
               },
               "whatsapp": {
                 "registered": true,
                 "photo": "/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2ZTAxMDAwMDQxMDIwMDAwOWQwMzAwMDAwYzA0MDAwMDZlMDQwMDAwYjAwNTAwMDA3MzA3MDAwMGJhMDcwMDAwMjMwODAwMDA4ODA4MDAwMGE3MGIwMDAwAP/bAEMABgQFBgUEBgYFBgcHBggKEAoKCQkKFA4PDBAXFBgYFxQWFhodJR8aGyMcFhYgLCAjJicpKikZHy0wLSgwJSgpKP/bAEMBBwcHCggKEwoKEygaFhooKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKP/CABEIAGAAYAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBQIEBgEHAP/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/9oADAMBAAIQAxAAAAGIWetB8w76Ovn0ebfa2sGV91ESc1PRR2UsiFM1Po/n+2pz3UznLrZffUt0q2kCb855ikVN0PcMk5U2BV5dR32RfG6Kiiihjz9GmNmiYaMKUJVnK+cBRFvmxSCtOwXqkWWxbmys9VFkzI9MHaxaxRWjsaubsBlT5UZLKdvnrGXRSU2aRvdFPDFzkVsENipsSgzsI9GozKVTzYwecDcgD//EACUQAAICAgEDBQEBAQAAAAAAAAEDAAIEERIFEyEQFBUiMSAjM//aAAgBAQABBQKw0L1PbSDtybOa5PbiK8j2525xmhFDRv4rjPtZ/tVmewTLoopj1qMxMMMybdPtPj2T45s+OdBgvEtitIJvVoPn9mRddrtCjTp4XzP7/NvsEndOXEdSQxTL3q8YqapTuD+NwL4xDDSLv3GE9xS0LSWEi17ikDxA+s71J3aR7q1Ry5ShmIYrzLftgDS+6NDNwXgvOcZ9q1xt0GPesVVyojOsqjOq87XzH2ZbLs5gGoPWxiP+fp1BRqSbMu4BU6aQDUCdpc7CocVUtgrMRca2PTJrzRiJtfOycfvJxUkZK/wfxZ9t8ya1ZYSjWxr/AG7adQPFl+JV1BZnvUbrkptBepm5atRBaG15y/16vqy0K+uSTaq1mFH2qgbA88iJ2674AQ1OuJ5Xobg1AqfE1XR8wb2Z5sP/xAAeEQACAgMAAwEAAAAAAAAAAAAAAQIRAxIhEBMxIP/aAAgBAwEBPwGIpXxFa9ZvE2iZJc4Iw02ZGlH8Qjwnxjk27YoKjRGhu0YlGcqmLHiTpIlJQdUew9iNiMknZkyPfYzO3fnRnwnLZkpN/fFn/8QAHREAAgIDAQEBAAAAAAAAAAAAAAECERAhMRIDIP/aAAgBAgEBPwF2PQpXihdGSWiEb/EmQ2UOWyyyiTcVo9zfTuyijyxpkVo+fM+liKpCVYo//8QAKxAAAQMCBAYBBAMAAAAAAAAAAQACESExAxASQSAiMlFxkWETMEKhUoGi/9oACAEBAAY/AmgBGUahDxUrlKINxxBYbMWIcUb+1+SMVEbqze6o4N5V1tXU1Xb7X4+10/tCWGiaXGQHSM3C8cpTMOICeQeZvKhxsPwoCdjYY1YcguHZRhv8u7JoF7mePSmdgr0bdTrpYo/THtNOwQ+VYrdXXUE9wIoFOWNeTCc2N6ZGu6Id54S07oaSFsn8g1EUrYo4b2a8Ru4Utwf9IaDX+OyOsDlpyq/2NTeg38pobTU7StLRBcndtSsF0N9LoCsfau5GaK4yeI2Wp4oyqIEa9kZloHEQDRNifK6jPwqk6U496KzSvqEbTCqHKr4/pUxWqjh7y7ldMqkBN1HdSNsoaLoDdGuUq6v+lQqgUulaTWUGi+UiipGdF//EACUQAQACAgICAgEFAQAAAAAAAAEAESExQVFhcRCBoSCRsdHh8f/aAAgBAQABPyFGC6zjcZlY7hK6bxmEggUozL2W5rBm9w9ZSiAO4JKCNzK9wrqQuqsZTCVh4afZCe4FaRl6PCIAm6Xm24FAa/D8Xi2w8V44e+jH3Ea7lBgkfcyPML0JSa2dwu6g+wdCxFhpA8c/EIQYMcwjCTywf4h3C8+JhbB+nJ9Qk8v6H98VDBR5trlmu4ofF/C7ZubU6ajhk79Z8QbdEaDce2zzlXglhXmO52rpOXD/AJ0H/wAwSCLStZhUbcEvx5ihoamcSg1soNKCeDyNzPa9L5J3okSaRA2wUxkCOqmQFsAYuR/Mmfe7TZ5iZ3naAmMV3iZHkiWwFAd1Mag3B5gS8fD+BjGOiDOTH2hFYYrkhI3AXl/yFYXZV9cRIW/1LNwP9ZF8HqNAUDcgbSffxjc3owxUFpXOiEPFMmJxvMauCj+kWpnnzK8MOTuYRSnhMGvbN6iFUdhKJPVshWXlExA/q4Y1rypv79zcH18G7KvxLuB4Y9bibqNhfImXxsfzLy2XLLEFN8S6CEIqnPjMrFVIJgz3AWH+8MrWDlEDtsqqJ4OpdOiFY3Ic3uZC7TklFU4Yl2Jp3GqZqV5/EpVK8T//2gAMAwEAAgADAAAAEDwfbBI+REhuhwFuSohXwxmiPXwumls6VIKs9//EABwRAQEBAAIDAQAAAAAAAAAAAAEAESFBEDFRYf/aAAgBAwEBPxDAjsdFcji/SPtAsXgEm85x+/kgfs+fee4bhap2zHdmk9SjCb9k59z7zxMDwLHyJwsA+I2TiS7u/KPVj7EWhIxYn//EABwRAQEBAAMBAQEAAAAAAAAAAAEAERAhQTFRcf/aAAgBAgEBPxBYzII1vgsbUfXBmutbO+eySRZAYSK8h240d27mAVn8gfvbtQVgS2zdMfnOnto+z5MI6jcu1//EACQQAQACAgEDBAMBAAAAAAAAAAEAESExQVFhcYGRocEQsfDR/9oACAEBAAE/EDsQVWyePAR4TrfIHGLhvlauWYTEkrDeDvAXNtKo2e1QTVDQ01g69oo1lfUieFsJnap+45YUw1NUsQgWcumDUfxSU1mKrXEp3PCDpK7wg+1/wi+0QzSr0Ole8FUxw9C795hRGmgEDx+oLMVGKsX9RYaStWufiGEC4/hC5C9jNX5g+5mwgcUy3h8Q2FNwoA0dPEDbZkQrTPiWhAaBRqi91Z70cx24goEzYXt4xqBaNa1KWRdqUdcRX0rX4lEjCpx4nVqMGhl1Mpz073FurvX1wlg+ZL4yQiqVyYpaubFNckNcGwEr4wWvTa3tMU6QpMFXxr0ght4NrH6x4hfWCOYLmIglmn6mApX4IpBcvdrttw2hfiAFqBVYaR+feWrLaZQ+AlQhE6dovpjfvLpfIWylbO04gzxTElqfMkcPKJgj1rI+swGzVERRrQlaIhNcAuBJoJkBd+dTguebF8/H6lAwZjd2ClhoSv79yphOV2p9fqW1oyhtb7ygWh5iqjs7wOaxdklXE0JKZl9TzWUzXiF0ViIHIxe18hMzEQUDLY0l5j0N6PdlwPnccHam33Ea7tPjUVq/MxWXjfpKi5FQi+PfUpMpPOohTBZC2e0qoyry8RFhbtPen8BZFKA7MttOGj1uHDFFIgl123XrKaiitG827p/bnGUdFtT8JTydyxyV+iKNXkn3BGnvV+5m3/I/UqXCiWz4JBHtAV4c4UR+o+oroDgbet+kvHDW11L4vUwc6XQ1AHqBbKH0IofguVtxVA8syvCreHqfEOQnBSLesc4Bl9o53mLgLs3c3FIU3TB/stm3Yqqy6L8wIfmLp9oWyPFESVV28YvzMP28H7iqxbKWhVdstPHtMgalxOHxpzASmhVG+iHEZj4lt8nEIjTkvhpNTnOchZG4csABVJjLAIsgoNhKKx2BUeYc5kwmPeYataw16zEqHIyEuFsgorrzuZsEXTrFarUcCpS1lfHEbEFqhqnV3iAzVgCWNhdXz1gBPVANAoGYR3seA8zPQxZVlcfMqaIGrhgqqF28S3TO65RRU72G/af/2Q==",
-                "privacyStatus": null,
                 "lastSeen": null,
                 "about": "Love is part of life"
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -137,12 +135,11 @@
     "meta": {
       "inputPhoneNumber": "8574165442",
       "cleansedPhoneNumber": "+918574165442",
-      "referenceId": "AMS-test-1",
+      "referenceId": "01H5N2V5A7GJ3QDSCZSMENG23Y",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

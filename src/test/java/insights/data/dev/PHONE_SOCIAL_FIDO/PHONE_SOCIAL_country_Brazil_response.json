@@ -1,28 +1,28 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "390445000000",
-    "phoneDefaultCountryCode": "IT"
-  },
+    "phoneNumber": "554730385110",
+    "phoneDefaultCountryCode": "BR"
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 1,
+            "registeredProfiles": 0,
             "registeredEmailProviderProfiles": 0,
             "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 0,
             "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "emailProvider": {
@@ -54,7 +54,7 @@
                 "registered": false
               },
               "instagram": {
-                "registered": null
+                "registered": false
               }
             },
             "professional": {
@@ -66,18 +66,16 @@
               "telegram": {
                 "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -86,18 +84,18 @@
                 "registered": null
               },
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
-                "id": "ilgalloper",
-                "handle": "ilgalloper",
+                "id": null,
+                "handle": null,
                 "bio": null,
-                "name": "Mauro Gallo",
+                "name": null,
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/ilgalloper/public?returnDefaultImage=true",
-                "city": "Thiene",
-                "state": "Vicenza",
-                "country": "Italy"
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
               },
               "ok": {
                 "registered": false,
@@ -135,14 +133,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "390445000000",
-      "cleansedPhoneNumber": "+390445000000",
-      "referenceId": "AMS-test-1",
+      "inputPhoneNumber": "554730385110",
+      "cleansedPhoneNumber": "+554730385110",
+      "referenceId": "01H5N5ADBFB0Y76R8NBPCEKTTH",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -54,7 +54,7 @@
                 "registered": false
               },
               "instagram": {
-                "registered": null
+                "registered": false
               }
             },
             "professional": {
@@ -66,18 +66,16 @@
               "telegram": {
                 "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -137,12 +135,11 @@
     "meta": {
       "inputPhoneNumber": "390445000000",
       "cleansedPhoneNumber": "+390445000000",
-      "referenceId": "AMS-test-1",
+      "referenceId": "01H5N7CH9BXSPYP7PDHJ5PFK1V",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

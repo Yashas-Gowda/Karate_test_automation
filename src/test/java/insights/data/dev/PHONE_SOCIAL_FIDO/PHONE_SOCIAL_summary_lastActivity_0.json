@@ -1,33 +1,33 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "390445000000",
-    "phoneDefaultCountryCode": "IT"
-  },
+    "phoneNumber": "9917555811",
+    "phoneDefaultCountryCode": "IN"
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 1,
-            "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
-            "lastActivity": null,
+            "registeredProfiles": 8,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 3,
+            "lastActivity": 0,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
             "emailProvider": {
               "google": {
-                "registered": false,
+                "registered": true,
                 "accountId": null,
                 "name": null
               },
@@ -37,7 +37,7 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": false
+                "registered": true
               },
               "bukalapak": {
                 "registered": false
@@ -51,33 +51,31 @@
                 "registered": false
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "instagram": {
-                "registered": null
+                "registered": true
               }
             },
             "professional": {
               "microsoft": {
-                "registered": false
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
-                "registered": false,
+                "registered": true,
                 "photo": null,
-                "privacyStatus": null,
-                "lastSeen": null
+                "lastSeen": "2023-07-18T13:31:55Z"
               },
               "whatsapp": {
-                "registered": null,
+                "registered": true,
                 "photo": null,
-                "privacyStatus": null,
                 "lastSeen": null,
-                "about": null
+                "about": "Available"
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -88,16 +86,16 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "id": "ilgalloper",
-                "handle": "ilgalloper",
+                "id": "live:.cid.40728def97a3b150",
+                "handle": "live:.cid.40728def97a3b150",
                 "bio": null,
-                "name": "Mauro Gallo",
+                "name": "vijay pratap",
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/ilgalloper/public?returnDefaultImage=true",
-                "city": "Thiene",
-                "state": "Vicenza",
-                "country": "Italy"
+                "photo": "https://avatar.skype.com/v1/avatars/live:.cid.40728def97a3b150/public?returnDefaultImage=true",
+                "city": null,
+                "state": null,
+                "country": null
               },
               "ok": {
                 "registered": false,
@@ -135,14 +133,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "390445000000",
-      "cleansedPhoneNumber": "+390445000000",
-      "referenceId": "AMS-test-1",
+      "inputPhoneNumber": "9917555811",
+      "cleansedPhoneNumber": "+919917555811",
+      "referenceId": "01H5N2JDD04HNRHXAD8BR11435",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

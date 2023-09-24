@@ -1,25 +1,25 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "390445000000",
-    "phoneDefaultCountryCode": "IT"
-  },
+    "phoneNumber": "9880685322",
+    "phoneDefaultCountryCode": "IN"
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 1,
-            "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredProfiles": 10,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 4,
             "lastActivity": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -27,7 +27,7 @@
           "profiles": {
             "emailProvider": {
               "google": {
-                "registered": false,
+                "registered": true,
                 "accountId": null,
                 "name": null
               },
@@ -37,7 +37,7 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": false
+                "registered": true
               },
               "bukalapak": {
                 "registered": false
@@ -48,33 +48,33 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "instagram": {
-                "registered": null
+                "registered": true
               }
             },
             "professional": {
               "microsoft": {
-                "registered": false
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
-                "registered": false,
+                "registered": true,
                 "photo": null,
                 "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": null,
+                "registered": true,
                 "photo": null,
                 "privacyStatus": null,
                 "lastSeen": null,
-                "about": null
+                "about": ""
               },
               "viber": {
                 "registered": null,
@@ -88,16 +88,16 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "id": "ilgalloper",
-                "handle": "ilgalloper",
+                "id": "live:manumanojjss",
+                "handle": "live:manumanojjss",
                 "bio": null,
-                "name": "Mauro Gallo",
+                "name": "Manoj M",
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/ilgalloper/public?returnDefaultImage=true",
-                "city": "Thiene",
-                "state": "Vicenza",
-                "country": "Italy"
+                "photo": "https://avatar.skype.com/v1/avatars/live:manumanojjss/public?returnDefaultImage=true",
+                "city": "Mysuru",
+                "state": null,
+                "country": null
               },
               "ok": {
                 "registered": false,
@@ -115,7 +115,7 @@
                 "photo": null
               },
               "snapchat": {
-                "registered": false
+                "registered": true
               }
             }
           }
@@ -135,8 +135,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "390445000000",
-      "cleansedPhoneNumber": "+390445000000",
+      "inputPhoneNumber": "9880685322",
+      "cleansedPhoneNumber": "+919880685322",
       "referenceId": "AMS-test-1",
       "requestedPackages": [
         "PHONE_SOCIAL"
