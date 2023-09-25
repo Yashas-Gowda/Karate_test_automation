@@ -26,7 +26,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     * set payload.response.data.phone.social.summary.lastActivity = "#ignore"
 
 #    * match  $.data.phone.social contains  payload.response.data.phone.social
-
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -60,7 +60,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     * set payload.response.data.phone.social.summary.lastActivity = "#ignore"
 
 #    * match  $.data.phone.social contains  payload.response.data.phone.social
-
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -90,7 +90,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
-
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -121,6 +121,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -153,6 +154,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -184,6 +186,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -211,6 +214,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     * print karate.pretty(response)
     Then status <statusCode>
 
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
     And match $.data.phone.social == '#notnull'
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
