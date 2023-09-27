@@ -1,0 +1,178 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "IDENTITY_ENRICHMENT_PLUS"
+    ],
+    "id": "3514064206870001",
+    "idType": "NIK",
+    "email": "sammy.khnm@gmail.com",
+    "phoneNumber": "+6289643478758",
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "ID"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "WITA AZIZAH"
+                }
+              ],
+              "genders": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "FEMALE"
+                }
+              ],
+              "dateOfBirths": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1987-06-02",
+                    "end": "1987-06-02"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "addressLine1": "TUMPANG                                 ",
+                  "addressLine2": "PACAR KELING KEJAYAN",
+                  "city": "PASURUAN",
+                  "postalCode": null,
+                  "country": "INDONESIA",
+                  "geoLocation": null,
+                  "state": "JAWA TIMUR",
+                  "countryCode": null
+                }
+              ],
+              "phoneNumber": null,
+              "emailAddress": null,
+              "ipAddresses": null,
+              "nationalId": "3514064206870001"
+            }
+          ]
+        },
+        "enrichmentPlus": {
+          "persons": [
+            {
+              "validSince": "2017-11-08T16:16:09Z",
+              "lastSeen": null,
+              "name": "Sri Gita Adelia",
+              "gender": null,
+              "dateOfBirth": {
+                "dateRange": {
+                  "start": "2000-03-28",
+                  "end": "2000-03-28"
+                }
+              },
+              "address": null,
+              "phoneNumber": null,
+              "emailAddress": "adeliasrigita@gmail.com",
+              "ipAddresses": null
+            },
+            {
+              "validSince": "2018-07-04T02:00:11Z",
+              "lastSeen": null,
+              "name": "Sri Gita Adelia",
+              "gender": null,
+              "dateOfBirth": null,
+              "address": null,
+              "phoneNumber": null,
+              "emailAddress": "adeliasrigita@gmail.com",
+              "ipAddresses": null
+            },
+            {
+              "validSince": "2019-03-07T00:00:00Z",
+              "lastSeen": null,
+              "name": null,
+              "gender": null,
+              "dateOfBirth": null,
+              "address": {
+                "addressLine1": "",
+                "addressLine2": "",
+                "city": null,
+                "postalCode": null,
+                "country": "Indonesia",
+                "geoLocation": null
+              },
+              "phoneNumber": null,
+              "emailAddress": "adeliasrigita@gmail.com",
+              "ipAddresses": null
+            },
+            {
+              "validSince": "2019-07-17T09:22:41Z",
+              "lastSeen": null,
+              "name": null,
+              "gender": null,
+              "dateOfBirth": null,
+              "address": null,
+              "phoneNumber": "9148771222",
+              "emailAddress": null,
+              "ipAddresses": null
+            },
+            {
+              "validSince": "2021-07-08T00:00:00Z",
+              "lastSeen": null,
+              "name": "Sameena Yasmeen",
+              "gender": null,
+              "dateOfBirth": null,
+              "address": null,
+              "phoneNumber": "9901335586",
+              "emailAddress": null,
+              "ipAddresses": null
+            },
+            {
+              "validSince": "2023-05-12T00:00:00Z",
+              "lastSeen": null,
+              "name": "Sammy Khnm",
+              "gender": null,
+              "dateOfBirth": null,
+              "address": null,
+              "phoneNumber": "9148771222",
+              "emailAddress": null,
+              "ipAddresses": null
+            }
+          ]
+        }
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "+6289643478758",
+      "cleansedPhoneNumber": "+6289643478758",
+      "referenceId": "UI-9030a6d422ee63b71eb057b101fca8dd501b33dc",
+      "inputEmail": "sammy.khnm@gmail.com",
+      "inputId": "3514064206870001",
+      "inputIdType": "NIK",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT",
+        "IDENTITY_ENRICHMENT_PLUS"
+      ]
+    },
+    "errors": []
+  }
+}

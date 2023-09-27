@@ -1,0 +1,96 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+	"cleansingFlag": true,
+	"packages": [
+		
+		"IDENTITY_ENRICHMENT"
+		
+	],
+	"id": "3514064206870001",
+	"idType": "NIK",
+	"phoneNumber": "+6289643478758",
+	"phoneDefaultCountryCode": "ID",
+	"originalCountryCode": "ID"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "WITA AZIZAH"
+                }
+              ],
+              "genders": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "FEMALE"
+                }
+              ],
+              "dateOfBirths": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1987-06-02",
+                    "end": "1987-06-02"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "addressLine1": "TUMPANG                                 ",
+                  "addressLine2": "PACAR KELING KEJAYAN",
+                  "city": "PASURUAN",
+                  "postalCode": null,
+                  "country": "INDONESIA",
+                  "geoLocation": null,
+                  "state": "JAWA TIMUR",
+                  "countryCode": null
+                }
+              ],
+              "phoneNumber": null,
+              "emailAddress": null,
+              "ipAddresses": null,
+              "nationalId": "3514064206870001"
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "+6289643478758",
+      "cleansedPhoneNumber": "+6289643478758",
+      "referenceId": "UI-9030a6d422ee63b71eb057b101fca8dd501b33dc",
+      "inputId": "3514064206870001",
+      "inputIdType": "NIK",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+
+  }
+}

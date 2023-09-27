@@ -22,12 +22,12 @@ public class InsightsTest {
 
   @Karate.Test
   Karate smokeTests() {
-    return Karate.run("classpath:insights").tags("@smokeTest").relativeTo(getClass());
+    return Karate.run("classpath:insights/IDENTITY_ENRICHMENT.feature").tags("@smokeTest").relativeTo(getClass());
   }
 
   @Karate.Test
   Karate testInsightsWithReport() {
-    Karate karate = Karate.run("classpath:insights/EMPLOYMENT_DETAILS.feature").relativeTo(getClass()).outputCucumberJson(true);
+    Karate karate = Karate.run("classpath:insights/IDENTITY_ENRICHMENT.feature").relativeTo(getClass()).outputCucumberJson(true);
     /*Results results = karate
             .outputCucumberJson(true)
             .tags("")
