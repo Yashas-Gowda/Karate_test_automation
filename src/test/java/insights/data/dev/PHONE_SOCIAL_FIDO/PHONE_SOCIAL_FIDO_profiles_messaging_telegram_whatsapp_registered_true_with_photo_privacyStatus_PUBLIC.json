@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
-    "phoneDefaultCountryCode": "VN"
+    "phoneNumber": "919597384859",
+    "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
     "data": {
@@ -14,15 +14,15 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "emailProvider": {
@@ -46,7 +46,7 @@
                 "registered": null
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -65,19 +65,19 @@
                 "registered": true
               },
               "linkedin": {
-                "registered": false
+                "registered": null
               }
             },
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": "PRIVATE",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/6f1700e0/07fe/420a/ab58/29d11940b696.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8cd28b07/9883/41a9/8a28/b59066b9ee93/b91983f7-5e3c-4a41-a758-a63325753cb1.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/bd52f8e2/245c/419b/94b6/7789658a8ace/03ee31b1-b6f0-465b-99c4-99be3a0139c7.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null
@@ -92,7 +92,7 @@
                 "registered": null
               },
               "skype": {
-                "registered": null,
+                "registered": false,
                 "language": null,
                 "id": null,
                 "handle": null,
@@ -141,8 +141,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
-      "cleansedPhoneNumber": "+84936983031",
+      "inputPhoneNumber": "919597384859",
+      "cleansedPhoneNumber": "+919597384859",
       "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"

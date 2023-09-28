@@ -1,33 +1,33 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "390445000000",
-    "phoneDefaultCountryCode": "IT"
-  },
+    "phoneNumber": "917985610330",
+    "phoneDefaultCountryCode": "IN"
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 1,
-            "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
+            "registeredProfiles": 6,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 2,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
             "emailProvider": {
               "google": {
-                "registered": false,
+                "registered": true,
                 "accountId": null,
                 "name": null
               },
@@ -37,13 +37,16 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": false
+                "registered": null
               },
               "bukalapak": {
-                "registered": false
+                "registered": null
               },
               "jdid": {
                 "registered": null
+              },
+              "amazon": {
+                "registered": true
               }
             },
             "socialMedia": {
@@ -51,31 +54,36 @@
                 "registered": false
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "instagram": {
-                "registered": false
+                "registered": true
               }
             },
             "professional": {
               "microsoft": {
                 "registered": false
+              },
+              "linkedin": {
+                "registered": false
               }
             },
             "messaging": {
               "telegram": {
-                "registered": false,
+                "registered": true,
                 "photo": null,
+                "privacyStatus": "PRIVATE",
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": false,
-                "photo": null,
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/ead7e24e/8a89/4914/8f7d/4d67359ca422/595824f7-0b68-4763-bb92-6b1849c5cdad.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -84,36 +92,36 @@
                 "registered": null
               },
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
-                "id": "ilgalloper",
-                "handle": "ilgalloper",
+                "id": null,
+                "handle": null,
                 "bio": null,
-                "name": "Mauro Gallo",
+                "name": null,
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/ilgalloper/public?returnDefaultImage=true",
-                "city": "Thiene",
-                "state": "Vicenza",
-                "country": "Italy"
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
               },
               "ok": {
-                "registered": false,
+                "registered": null,
                 "age": null
               },
               "zalo": {
-                "registered": false,
+                "registered": null,
                 "uid": null,
                 "name": null,
                 "dateOfBirth": null
               },
               "line": {
-                "registered": false,
+                "registered": null,
                 "name": null,
                 "photo": null
               },
               "snapchat": {
-                "registered": false
+                "registered": null
               }
             }
           }
@@ -133,9 +141,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "390445000000",
-      "cleansedPhoneNumber": "+390445000000",
-      "referenceId": "01H5N7CH9BXSPYP7PDHJ5PFK1V",
+      "inputPhoneNumber": "917985610330",
+      "cleansedPhoneNumber": "+917985610330",
+      "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

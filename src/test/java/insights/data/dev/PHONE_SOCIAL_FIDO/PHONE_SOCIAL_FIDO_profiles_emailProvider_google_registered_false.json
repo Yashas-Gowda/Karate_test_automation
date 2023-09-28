@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
-    "phoneDefaultCountryCode": "VN"
+    "phoneNumber": "919347822419",
+    "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
     "data": {
@@ -14,10 +14,10 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
+            "registeredProfiles": 7,
+            "registeredEmailProviderProfiles": 0,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
             "lastActivity": null,
@@ -27,7 +27,7 @@
           "profiles": {
             "emailProvider": {
               "google": {
-                "registered": true,
+                "registered": false,
                 "accountId": null,
                 "name": null
               },
@@ -46,7 +46,7 @@
                 "registered": null
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -54,7 +54,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "instagram": {
                 "registered": true
@@ -77,7 +77,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8cd28b07/9883/41a9/8a28/b59066b9ee93/b91983f7-5e3c-4a41-a758-a63325753cb1.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/7cd2120b/46f0/4f9d/ae51/54fe2dfda95d/ea71cd52-f7b0-475a-b484-b446d2527a60.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null
@@ -141,8 +141,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
-      "cleansedPhoneNumber": "+84936983031",
+      "inputPhoneNumber": "919347822419",
+      "cleansedPhoneNumber": "+919347822419",
       "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"

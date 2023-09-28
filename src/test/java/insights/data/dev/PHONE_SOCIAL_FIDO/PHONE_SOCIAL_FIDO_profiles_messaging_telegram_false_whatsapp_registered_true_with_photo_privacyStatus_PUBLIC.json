@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
-    "phoneDefaultCountryCode": "VN"
+    "phoneNumber": "919981814775",
+    "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
     "data": {
@@ -16,10 +16,10 @@
           "summary": {
             "registeredProfiles": 6,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 2,
+            "registeredMessagingProfiles": 1,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -46,7 +46,7 @@
                 "registered": null
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -70,14 +70,14 @@
             },
             "messaging": {
               "telegram": {
-                "registered": true,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": "PRIVATE",
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8cd28b07/9883/41a9/8a28/b59066b9ee93/b91983f7-5e3c-4a41-a758-a63325753cb1.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/d7fb5065/5b33/44ec/995a/9dc27b7d72ff/4a0c454b-1f9d-4919-a861-b783de763c4d.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null
@@ -141,8 +141,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
-      "cleansedPhoneNumber": "+84936983031",
+      "inputPhoneNumber": "919981814775",
+      "cleansedPhoneNumber": "+919981814775",
       "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"

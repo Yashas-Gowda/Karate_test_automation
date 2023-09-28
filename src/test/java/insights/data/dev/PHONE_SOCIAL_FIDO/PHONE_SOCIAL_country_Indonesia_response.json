@@ -16,9 +16,9 @@
           "summary": {
             "registeredProfiles": 4,
             "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 1,
+            "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredMessagingProfiles": 0,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
@@ -37,13 +37,16 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": false
+                "registered": null
               },
               "bukalapak": {
-                "registered": true
+                "registered": null
               },
               "jdid": {
                 "registered": null
+              },
+              "amazon": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -60,22 +63,27 @@
             "professional": {
               "microsoft": {
                 "registered": true
+              },
+              "linkedin": {
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -84,7 +92,7 @@
                 "registered": null
               },
               "skype": {
-                "registered": false,
+                "registered": null,
                 "language": null,
                 "id": null,
                 "handle": null,
@@ -98,22 +106,22 @@
                 "country": null
               },
               "ok": {
-                "registered": false,
+                "registered": null,
                 "age": null
               },
               "zalo": {
-                "registered": false,
+                "registered": null,
                 "uid": null,
                 "name": null,
                 "dateOfBirth": null
               },
               "line": {
-                "registered": false,
+                "registered": null,
                 "name": null,
                 "photo": null
               },
               "snapchat": {
-                "registered": false
+                "registered": null
               }
             }
           }
@@ -135,7 +143,7 @@
     "meta": {
       "inputPhoneNumber": "6289634525788",
       "cleansedPhoneNumber": "+6289634525788",
-      "referenceId": "01H5N5M037H67GT3XXQ6J1VCYQ",
+      "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

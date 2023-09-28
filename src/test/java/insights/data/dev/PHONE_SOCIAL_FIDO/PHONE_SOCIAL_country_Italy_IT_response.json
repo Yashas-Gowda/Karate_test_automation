@@ -1,33 +1,33 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
-    "phoneDefaultCountryCode": "VN"
-  } ,
+    "phoneNumber": "393904235286",
+    "phoneDefaultCountryCode": "IT"
+  },
   "response":{
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
-            "registeredEmailProviderProfiles": 1,
+            "registeredProfiles": 0,
+            "registeredEmailProviderProfiles": 0,
             "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 2,
+            "registeredSocialMediaProfiles": 0,
+            "registeredProfessionalProfiles": 0,
+            "registeredMessagingProfiles": 0,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "emailProvider": {
               "google": {
-                "registered": true,
+                "registered": false,
                 "accountId": null,
                 "name": null
               },
@@ -51,34 +51,34 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": false
               },
               "instagram": {
-                "registered": true
+                "registered": false
               }
             },
             "professional": {
               "microsoft": {
-                "registered": true
+                "registered": false
               },
               "linkedin": {
-                "registered": false
+                "registered": null
               }
             },
             "messaging": {
               "telegram": {
-                "registered": true,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": "PRIVATE",
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8cd28b07/9883/41a9/8a28/b59066b9ee93/b91983f7-5e3c-4a41-a758-a63325753cb1.jpg",
-                "privacyStatus": "PUBLIC",
+                "registered": false,
+                "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
@@ -92,7 +92,7 @@
                 "registered": null
               },
               "skype": {
-                "registered": null,
+                "registered": false,
                 "language": null,
                 "id": null,
                 "handle": null,
@@ -141,13 +141,14 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
-      "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "dpi_23_sep25_2",
+      "inputPhoneNumber": "393904235286",
+      "cleansedPhoneNumber": "+393904235286",
+      "referenceId": "AMS-test-1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

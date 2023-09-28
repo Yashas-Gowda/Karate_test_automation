@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
-    "phoneDefaultCountryCode": "VN"
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
     "data": {
@@ -14,12 +14,12 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 8,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 1,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -46,7 +46,7 @@
                 "registered": null
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -54,7 +54,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "instagram": {
                 "registered": true
@@ -65,19 +65,19 @@
                 "registered": true
               },
               "linkedin": {
-                "registered": false
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
-                "registered": true,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": "PRIVATE",
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8cd28b07/9883/41a9/8a28/b59066b9ee93/b91983f7-5e3c-4a41-a758-a63325753cb1.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/efe2e4af/e7aa/48c2/bf67/e33eb63bc79b/bc4e29b2-31d7-4f63-b3fa-82b955f690ab.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null
@@ -141,8 +141,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
-      "cleansedPhoneNumber": "+84936983031",
+      "inputPhoneNumber": "9108510043",
+      "cleansedPhoneNumber": "+919108510043",
       "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"

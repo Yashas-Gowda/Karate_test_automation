@@ -18,11 +18,11 @@
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 3,
-            "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 3,
-            "lastActivity": 20,
+            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 2,
+            "lastActivity": null,
             "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "emailProvider": {
@@ -37,13 +37,16 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": true
+                "registered": null
               },
               "bukalapak": {
-                "registered": false
+                "registered": null
               },
               "jdid": {
                 "registered": null
+              },
+              "amazon": {
+                "registered": true
               }
             },
             "socialMedia": {
@@ -60,21 +63,24 @@
             "professional": {
               "microsoft": {
                 "registered": true
+              },
+              "linkedin": {
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": null,
-                "lastSeen": "2023-09-01T10:31:50Z"
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/ecb9e63d/ddf9/480c/990b/0b8411c1c6f0.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
                 "photo": null,
-                "privacyStatus": null,
+                "privacyStatus": "PRIVATE",
                 "lastSeen": null,
-                "about": "Available"
+                "about": null
               },
               "viber": {
                 "registered": null,
@@ -86,7 +92,7 @@
                 "registered": null
               },
               "skype": {
-                "registered": false,
+                "registered": null,
                 "language": null,
                 "id": null,
                 "handle": null,
@@ -100,22 +106,22 @@
                 "country": null
               },
               "ok": {
-                "registered": false,
+                "registered": null,
                 "age": null
               },
               "zalo": {
-                "registered": false,
+                "registered": null,
                 "uid": null,
                 "name": null,
                 "dateOfBirth": null
               },
               "line": {
-                "registered": false,
+                "registered": null,
                 "name": null,
                 "photo": null
               },
               "snapchat": {
-                "registered": true
+                "registered": null
               }
             }
           }
@@ -137,12 +143,11 @@
     "meta": {
       "inputPhoneNumber": "9148771222",
       "cleansedPhoneNumber": "+919148771222",
-      "referenceId": "AMS-test-1",
+      "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "9880685322",
+    "phoneNumber": "916354392816",
     "phoneDefaultCountryCode": "IN"
   } ,
   "response":{
@@ -14,15 +14,15 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 10,
+            "registeredProfiles": 8,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
-            "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 4,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 2,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "emailProvider": {
@@ -37,13 +37,16 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": true
+                "registered": null
               },
               "bukalapak": {
-                "registered": false
+                "registered": null
               },
               "jdid": {
                 "registered": null
+              },
+              "amazon": {
+                "registered": true
               }
             },
             "socialMedia": {
@@ -51,7 +54,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "instagram": {
                 "registered": true
@@ -60,21 +63,24 @@
             "professional": {
               "microsoft": {
                 "registered": true
+              },
+              "linkedin": {
+                "registered": true
               }
             },
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": null,
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/759a87bb/9ac9/477d/ab6b/18aa9df8568f.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/a2e672e1/25db/4b19/906c/ba1ac33f871a/bc7f68a9-6b2c-4c17-ba81-de76585f597a.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null,
-                "about": ""
+                "about": null
               },
               "viber": {
                 "registered": null,
@@ -86,36 +92,36 @@
                 "registered": null
               },
               "skype": {
-                "registered": true,
+                "registered": null,
                 "language": null,
-                "id": "live:manumanojjss",
-                "handle": "live:manumanojjss",
+                "id": null,
+                "handle": null,
                 "bio": null,
-                "name": "Manoj M",
+                "name": null,
                 "age": null,
                 "gender": null,
-                "photo": "https://avatar.skype.com/v1/avatars/live:manumanojjss/public?returnDefaultImage=true",
-                "city": "Mysuru",
+                "photo": null,
+                "city": null,
                 "state": null,
                 "country": null
               },
               "ok": {
-                "registered": false,
+                "registered": null,
                 "age": null
               },
               "zalo": {
-                "registered": false,
+                "registered": null,
                 "uid": null,
                 "name": null,
                 "dateOfBirth": null
               },
               "line": {
-                "registered": false,
+                "registered": null,
                 "name": null,
                 "photo": null
               },
               "snapchat": {
-                "registered": true
+                "registered": null
               }
             }
           }
@@ -135,14 +141,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9880685322",
-      "cleansedPhoneNumber": "+919880685322",
-      "referenceId": "AMS-test-1",
+      "inputPhoneNumber": "916354392816",
+      "cleansedPhoneNumber": "+916354392816",
+      "referenceId": "dpi_23_sep25_2",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
