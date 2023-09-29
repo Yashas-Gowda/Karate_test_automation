@@ -4,48 +4,254 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * configure charset = null
     * path '/api/insights/'
 
+    # "Monnai to datapartner mapping is not tested/validated while automating, after discussion roopa suggested to take sameena tested DPI test as source of truth
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.email.social.summary.ageOnSocial = "#number"
-    * set payload.response.data.email.social.profiles.professional.linkedin.photo = "##string"
-    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "##string"
     When method POST
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+    And match $.data.email.social == '#notnull'
+    And match $.data.email.social.summary == '#notnull'
+    And match $.data.email.social.profiles == '#notnull'
+
+#    * match $.data.email.social.profiles.professional.linkedin.photo == "##string"
+#    * match $.data.email.social.profiles.emailProvider.google.photo == "##string"
+#    * set payload.response.data.email.social.profiles.professional.linkedin.photo = "#ignore"
+#    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#notnull"
+#    * print payload.response
     Then status <statusCode>
+#    Then match $ contains payload.response
+    * match payload.response.data.email.social.summary == $.data.email.social.summary
+    * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
+    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
+    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
+    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
+    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
+    * match payload.response.data.email.social.profiles.professional == $.data.email.social.profiles.professional
+    * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
+    * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
+    * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
 
-    Then match $ contains payload.response
+    * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+
     Examples:
-      | Scenario                                                                    | statusCode |
-      | Email_Social                                                                | 200        |
-      | Email_Social_EmailProvider_Booking&Spotify&Adobe&Atlassian&Quora_Registered | 200        |
-      | Email_Social_EmailProvider_LinkedIn&Airbnb_Registered                       | 200        |
-#      | Email_Social_EmailProvider_LinkedIn&Email_Social_EmailProvider_Yahoo&Google_Registered | 200        |
-      | Email_Social_Lazada&Tumblr&Skype&Microsoft&Evernote&Amazon_Registered       | 200        |
-      | Email_Social_wordpress&Gravatar&TwitterPinterest&Flipkart&Ebay_Registered   | 200        |
+      | Scenario            | statusCode |
+      | Email_Social_sanity | 200        |
 
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/consumerElectronics/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.email.social.summary.ageOnSocial = "##number"
     When method POST
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredConsumerElectronicsProfiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
+    * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
+
     Examples:
-      | Scenario                                                        | statusCode |
-      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
-      | Email_Social_Messaging_Skype&Discord_Registered                 | 200        |
-      | Email_Social_SocialMedia_Instagram&Pinterest&Twitter_Registered | 200        |
+      | Scenario                                                   | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
+
+      # fido doen't give {mailru,rambler} gives only {google,yahoo}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/emailProvider/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredEmailProviderProfiles == $.data.email.social.summary.registeredEmailProviderProfiles
+    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
+
+    Examples:
+      | Scenario                                                         | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true | 200        |
+
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredEcommerceProfiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
+
+    Examples:
+      | Scenario                                                    | statusCode |
+#NO data found      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_ebay_true       | 200        |
+      # NO data found      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_ebay_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true_ebay_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false_ebay_null | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true_ebay_null  | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredEcommerceProfiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
+
+    Examples:
+      | Scenario                                                    | statusCode |
+#NO data found      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_ebay_true       | 200        |
+      # NO data found  | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_ebay_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true_ebay_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false_ebay_null | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true_ebay_null  | 200        |
+
+    #fido gives socialMedia profiles{facebook,instagram,pinterest,twitter}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/socialMedia/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredSocialMediaProfiles == $.data.email.social.summary.registeredSocialMediaProfiles
+    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
+
+    Examples:
+      | Scenario                                                                                                   | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true                           | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false                          | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false                     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true_instagram_pinterest_false | 200        |
+
+    #fido gives no messaging profiles- always null | registeredMessagingProfiles = 0
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/messaging/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredMessagingProfiles == $.data.email.social.summary.registeredMessagingProfiles
+    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
+
+    Examples:
+      | Scenario                                  | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_messaging_null | 200        |
+
+     #fido gives  professional profiles {linkedin,microsoft,hubspot}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/professional/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
+    * match payload.response.data.email.social.profiles.professional == $.data.email.social.profiles.professional
+
+    Examples:
+      | Scenario                                                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_true                 | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_true_wordpress_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_false                | 200        |
+
+      #fido gives  professional profiles {spotify,disneyplus}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = entertainment - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/entertainment/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredEntertainmentProfiles == $.data.email.social.summary.registeredEntertainmentProfiles
+    * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
+
+    Examples:
+      | Scenario                                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_disneyplus_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_disneyplus_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_true_disneyplus_false | 200        |
+# no data      | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_false_disneyplus_true | 200        |
+
+ #fido gives no financial profiles- always null | registeredTravelProfiles = 0
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/travel/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredTravelProfiles == $.data.email.social.summary.registeredTravelProfiles
+    * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
+
+    Examples:
+      | Scenario                                  | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_travel_null | 200        |
+
+     #fido gives no financial profiles-{paypal}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/financial/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
+    * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+
+    Examples:
+      | Scenario                                   | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_false | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario with invalid input - <Scenario>
     Given url requestUrl

@@ -36,7 +36,6 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
       | Email_Basic_deliverable_true_disposable_false_noOfBreaches_1_emailTenure_in_decimal_value                       | 200        |
       | Email_Basic_deliverable_true_registered_true_freeProvider_true_noOfBreaches_7_emailTenure_in_single_digit_value | 200        |
 
-
     #rerun if deliverable is null
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
     Given url requestUrl
