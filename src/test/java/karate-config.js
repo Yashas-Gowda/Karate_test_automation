@@ -1,13 +1,13 @@
-function(){
+function() {
 
     var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
     karate.log('karate.envData system property was:', env);
 
     if (!env) {
         env = 'dev'; // a custom 'intelligent' default
-      }
+    }
 
-    var config = { // base config JSON
+    var config = {
         env,
         headers: {
             "x-reference-id": "AMS-test-1",
@@ -15,8 +15,8 @@ function(){
             "Content-Type": "application/vnd.monnai.v1.2+json",
             "Accept": "application/json"
         }
-      };
-    switch(env) {
+    };
+    switch (env) {
         case "rel":
             config.requestUrl = "https://test.monnai.com";
             config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiZGMyYjExOWEtODNkNS00OWYyLWFjYTktZmNmOWE2YTM5MGE3IiwiZXZlbnRfaWQiOiJiN2IwZWRhZC1hZWMyLTQ3ZmQtOGI1MS1kMTBkZmNjY2I4ZjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1MTA5OTYwLCJleHAiOjE2OTUxOTYzNjAsImlhdCI6MTY5NTEwOTk2MSwianRpIjoiNDE2Y2RlZDUtOTQ4ZS00ZjQ1LTllYjAtZjcxN2RlODJlMzNlIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.PupLBhLbnBMFqsTRBsU42U4I4KzEKv8hYbg2imrJ7kaOoLfvKA-kF2tlcB4j79D6rRlvwRuoJfEssd2z0H_JdsqpVDEXubXtZ6axWpln3w-yN9F5iVE14Pe9VqYSQMVt5h5a8pdTD34Qa_7q80Bk2Q1gboV_WfL2N3aCKotg530ixVjYZBKp0zErMtreiOesxWB0TYq6-0GWTzZfsQ_wNnjk8sy6H_7sA3v7nEG8v6D7d_XA7es-ud19QVbJDxYw7tOYNLaLO_-UCC-4zjHnHwfpll7X9ygkCs0X6qE0blXCqSB5nGV5eTd5FFZ-qc9uOYMyOEppbXfLybLaEVe9bQ";
@@ -28,11 +28,11 @@ function(){
             break;
         case "dev":
             config.requestUrl = "https://test.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJuYTZnZGw3cmpybnJmNjNrZTd1cjd0cDd1IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJpbnNpZ2h0c1wvcGhvbmVfYmFzaWMgaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgaW5zaWdodHNcL3Bob25lX3NvY2lhbCIsImF1dGhfdGltZSI6MTY5NTE0OTIxNywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX1NQOFc4bm5zUCIsImV4cCI6MTY5NTIzNTYxNywiaWF0IjoxNjk1MTQ5MjE3LCJ2ZXJzaW9uIjoyLCJqdGkiOiI2OTg5MzJhNS03NjViLTQ3OGUtYTM2NC1mOWMyNzA2MDFlODkiLCJjbGllbnRfaWQiOiJuYTZnZGw3cmpybnJmNjNrZTd1cjd0cDd1In0.rTZTO4tQHagUG2SvYC716xjdKR4JKbFxhd19RV2Tv2EoZmPCPnrhqOiUS-WJ4GeYg_nupTHSvqluxusLc67PSRKxE-qjCcEeuc3bb2wNoQslbsTRulxySXE2yUKUy6EsQi2OGcjzXPMvDY0xB6aUdr45izvDPmnPxTrCDhMzHZIBoHvzyRic3e_qblNQwUUJhbJOV4NBISqdzaFycfg2DcDt2EScQMCoo-tGe7FTQQFFW2jw1NUxVJnYu0bEFU88PhXZ8MIdv1dUrjrWB9araphod00PYOROslvbOubNLNS_WnNAZlZty0mNagGprvIINnyBC8o414RZLBYpxYLOOw";
+            config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmI3YzVjNTktNTA1OS00NGJlLTlhOTEtYWE0NmNiNzIxNGExIiwiZXZlbnRfaWQiOiJjOWU1MDJlZS1hMGE4LTQyZTQtYTk4Ni0xMDM5NWNkN2Y5YzgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1ODQyMjE2LCJleHAiOjE2OTU5Mjg2MTYsImlhdCI6MTY5NTg0MjIxNywianRpIjoiYmJmYzRlNzEtMmUzYS00ODA0LWJkMzYtOTVjMDM4ODE5MmQxIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.nS7rUPm98CAyWzOR_w2z-pcn3JP3kLMwNIdL5cJewzjtsamB4obpCFG6KQ2WZU7A58veonBcuPcotwNEYxvO0HQu-HCugsBzrtCpaJiqnxjaAnsQ0B_TdwQFq0mXkQKVfj-eLivc1AZt5XTJ6ey0ZNeylPEwSrq9OKJF6Gu9Nwg_YQo96Bq5pn03PGF0SmX5OLYr_qqn9HPGlv1kkQUdpnxu4W_Ajms7O0V6VLNpEiXF5_AjvffCC-k7wR-oFcdp9JGKD3vk9EX6BxEahbd4DeCf1wCrUTL4d9WLFZnrmkno-OxF9qqjLwd2eI1y_rEWWNTquUkACGgoGUKBEEjTHA";
             break;
         default:
-            config.requestUrl = "https://dev.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJUU2xyaDVMTW03XC9ZYVJCNEdoUnRFQVVIdzNMeWVSV280c1hMeWthU1RKWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmNDliOWM1ZS05YzQ1LTQ4NjAtYTdlMi0wNzBmMmViN2E0ZjkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfMVdiZkJPN3lGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNGpiZGYxNjJiZW40amxwZmFqM3FuNThwdjUiLCJvcmlnaW5fanRpIjoiNzgxMDA5ZWYtMmIzOS00NjJhLWE0ZDctZWQ0ODkzNTI1Zjk0IiwiZXZlbnRfaWQiOiI1MTM0YzlhNy02ZTU5LTQzNjctYWNjYS1jZDdmZDNkZjY1ODciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjgwNTEzODU5LCJleHAiOjE2ODA2MDAyNTksImlhdCI6MTY4MDUxMzg2MCwianRpIjoiMWFhODQxYWItNGEzMC00YzA3LWE0MjItNzIxM2MyYzI2ZjVkIiwidXNlcm5hbWUiOiJmNDliOWM1ZS05YzQ1LTQ4NjAtYTdlMi0wNzBmMmViN2E0ZjkifQ.fHXQHdUh8wwHcG2fAuUhFGUdX86DNsTjifU05G6FLdnmURzgxGcLEqCIklhWcnBM78QSYErJLTk08cTDowFKASvd42RmQgocVGodSuu43-x952babebBzRI0qQs6QTVSvJw1uCKN7gFzQY2zDy4nM2oxuVeRHDY6D5t-ukWwzcymQNmY7Df-eHELz5j9KqF1yW8J9F2cbUwvATx_dUxNrrw-ZBhYzbReYf-aLc7wCVV2256vP6kvMdSGxnnYbWs78OUQ6IrhAlsOVItkyoT9I4oP6fxMnQt-NbBSezUUGzz7tHmp8rX3BgtkFHqyCX1GBde3dqzSoxgjaiv0JqDCpA";
+            config.requestUrl = "https://test.monnai.com";
+            config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmI3YzVjNTktNTA1OS00NGJlLTlhOTEtYWE0NmNiNzIxNGExIiwiZXZlbnRfaWQiOiJjOWU1MDJlZS1hMGE4LTQyZTQtYTk4Ni0xMDM5NWNkN2Y5YzgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1ODQyMjE2LCJleHAiOjE2OTU5Mjg2MTYsImlhdCI6MTY5NTg0MjIxNywianRpIjoiYmJmYzRlNzEtMmUzYS00ODA0LWJkMzYtOTVjMDM4ODE5MmQxIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.nS7rUPm98CAyWzOR_w2z-pcn3JP3kLMwNIdL5cJewzjtsamB4obpCFG6KQ2WZU7A58veonBcuPcotwNEYxvO0HQu-HCugsBzrtCpaJiqnxjaAnsQ0B_TdwQFq0mXkQKVfj-eLivc1AZt5XTJ6ey0ZNeylPEwSrq9OKJF6Gu9Nwg_YQo96Bq5pn03PGF0SmX5OLYr_qqn9HPGlv1kkQUdpnxu4W_Ajms7O0V6VLNpEiXF5_AjvffCC-k7wR-oFcdp9JGKD3vk9EX6BxEahbd4DeCf1wCrUTL4d9WLFZnrmkno-OxF9qqjLwd2eI1y_rEWWNTquUkACGgoGUKBEEjTHA";
             break;
     }
     return config;
