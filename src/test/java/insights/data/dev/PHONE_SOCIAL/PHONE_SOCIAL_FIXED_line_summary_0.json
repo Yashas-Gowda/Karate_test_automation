@@ -66,16 +66,18 @@
               "telegram": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": false,
                 "photo": null,
+                "privacyStatus": null,
                 "lastSeen": null,
                 "about": null
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -135,11 +137,12 @@
     "meta": {
       "inputPhoneNumber": "080 4058 9400",
       "cleansedPhoneNumber": "+918040589400",
-      "referenceId": "01H5N3YQ9B1XQ72HYZ2TYPS0YF",
+      "referenceId": "AMS-test-1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -12,12 +12,12 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 15,
+            "registeredProfiles": 16,
             "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 2,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 4,
-            "registeredMessagingProfiles": 0,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 4,
             "registeredEntertainmentProfiles": 2,
             "registeredTravelProfiles": 0,
@@ -37,7 +37,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMSCTAFcK9oXUIjIO9U-ioUOH5RIYc6AT9EIeTgSJZVWCVy3"
+                "name": null,
+                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWxSMD8IMkkTg8bKrE-jgio_QKiYvKeZAo8O5jdmdJBu6nE"
               },
               "yahoo": {
                 "registered": true
@@ -51,10 +52,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": null
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": false
@@ -134,7 +135,7 @@
               "skype": {
                 "registered": false,
                 "language": null,
-                "gender": "UNKNOWN",
+                "gender": null,
                 "name": null,
                 "id": null,
                 "handle": null,
@@ -146,7 +147,7 @@
                 "photo": null
               },
               "discord": {
-                "registered": null
+                "registered": true
               },
               "kakao": {
                 "registered": null
@@ -160,7 +161,7 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": false
               },
               "linkedin": {
                 "registered": null,
@@ -192,7 +193,7 @@
                 "registered": true
               },
               "lastfm": {
-                "registered": false
+                "registered": null
               },
               "vimeo": {
                 "registered": false
@@ -240,21 +241,19 @@
       "identity": null,
       "upi": null,
       "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": null,
-      "cleansedPhoneNumber": null,
-      "referenceId": "UI-6a6b88b1cdad901d536093f7f6bd05abbd78d7d3",
+      "referenceId": "AMS-test-1",
       "inputEmail": "nhubinh6@gmail.com",
-      "inputIpAddress": null,
-      "inputUpiId": null,
-      "inputDeviceIds": null,
       "requestedPackages": [
         "EMAIL_SOCIAL"
-      ],
-      "inputAddress": null
+      ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
-  }
+}
