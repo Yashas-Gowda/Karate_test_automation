@@ -21,9 +21,9 @@ public class insightsTestParallel {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:insights").tags("@123")
+        Results results = Runner.path("classpath:insights/IDENTITY_ENRICHMENT.feature").tags("@123")
                 //.outputCucumberJson(true)
-                .karateEnv("test")
+                //.karateEnv("test")
                 .parallel(0);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

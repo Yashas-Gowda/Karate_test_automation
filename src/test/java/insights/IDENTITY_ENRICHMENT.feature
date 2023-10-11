@@ -4,7 +4,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     * configure charset = null
     * path '/api/insights/'
 
-  @smokeTest
+  @smokeTest @123
   Scenario Outline:  DPI Identity Enrichment Scenarios for region India - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
