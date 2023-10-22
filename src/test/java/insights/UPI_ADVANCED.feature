@@ -170,7 +170,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.upi.advanced.accounts[*].appName contains only [PhonePe,Google Pay]
+    Then match $.data.upi.advanced.accounts[*].appName contains only [PhonePe]
     Then match $ contains any payload.response
 
     Examples:
@@ -195,7 +195,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | Scenario                                                         | statusCode |
       | UPI_ADVANCED_POSITIVE_Phone&Email_input_output_without_@Phonepay | 200        |
 
-    @smokeTest
+  @smokeTest
   Scenario Outline: Validate the UPI_ADVANCE package with valid input of Phone only - Phonepe, Paytm ids for phone and make a call to SPY CLOUD PHONE API to fetch 3 Gmail ids, which can form 1 valid Gpay UpiId to stop calling. -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
@@ -234,3 +234,43 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Examples:
       | Scenario                                                                                 | statusCode |
       | UPI_ADVANCED_POSITIVE_Phone_input_only_&_get_output_wiyhoutGpayid_with_spycloud_no_email | 200        |
+
+    #Plase see cloud watch for below scenario, for phone and email input - SPY Cloud should not be called.
+  Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input( spycloud not called in cloudwatch)with all 3 appNames like { Paytm,Google Pay,PhonePe} ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
+    Given url requestUrl
+    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay,PhonePe]
+    Then match $ contains  payload.response
+
+    Examples:
+      | Scenario                                                                                   | statusCode |
+      | UPI_ADVANCED_POSITIVE_Phone&Email_input_No_SpyCloud_call_output_phonepay_GooglePay_PhonePe | 200        |
+
+     #Plase see cloud watch for below scenario,for only phone input - SPY Cloud should  be called.
+  Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input( spycloud  called in cloudwatch)with all 3 appNames like { Paytm,Google Pay,PhonePe} ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
+    Given url requestUrl
+    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    * print karate.request.headers
+    * print karate.response.headers
+    Then status <statusCode>
+    * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay,PhonePe]
+    Then match $ contains  payload.response
+
+    Examples:
+      | Scenario                                                                                          | statusCode |
+      | UPI_ADVANCED_POSITIVE_Phone&Email_input_with_must_SpyCloud_call_output_phonepay_GooglePay_PhonePe | 200        |

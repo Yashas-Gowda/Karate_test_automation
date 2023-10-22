@@ -1,8 +1,8 @@
-# Feature: Testing of DPI  - Phone & Email Validations scenarios
+ Feature: Testing of DPI  - Phone & Email Validations scenarios
 
-#   Background:
-#     * configure charset = null
-#     * path '/api/insights/'
+   Background:
+     * configure charset = null
+     * path '/api/insights/'
 
 #   @smokeTest
 #   Scenario Outline:  DPI Identity Enrichment Scenarios of phone validations - <Scenario>

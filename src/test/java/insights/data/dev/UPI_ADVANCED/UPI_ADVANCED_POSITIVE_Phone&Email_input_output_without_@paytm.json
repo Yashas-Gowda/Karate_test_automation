@@ -21,11 +21,6 @@
         "advanced": {
           "accounts": [
             {
-              "appName": "Google Pay",
-              "nameAtBank": "ABHISHEK R YADAV",
-              "upiId": "abhishekyadav86@okaxis"
-            },
-            {
               "appName": "PhonePe",
               "nameAtBank": "SOWMYA Y",
               "upiId": "9025605001@ybl"
@@ -42,12 +37,13 @@
     "meta": {
       "inputPhoneNumber": "9025605001",
       "cleansedPhoneNumber": "+919025605001",
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "referenceId": "AMS-test-1",
       "inputEmail": "abhishekyadav86@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
