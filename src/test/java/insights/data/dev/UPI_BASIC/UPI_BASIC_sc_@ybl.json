@@ -19,7 +19,8 @@
       "upi": {
         "basic": {
           "isUpiValid": true,
-          "name": "YASHAS GOWDA E M"
+          "nameAtBank": "YASHAS GOWDA E M",
+          "upiId": "9108510043@ybl"
         },
         "advanced": null
       },
@@ -27,15 +28,17 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "AMS-test-1",
       "inputUpiId": "9108510043@ybl",
       "requestedPackages": [
         "UPI_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
