@@ -4,30 +4,37 @@
      * configure charset = null
      * path '/api/insights/'
 
-#   @smokeTest
-#   Scenario Outline:  DPI Identity Enrichment Scenarios of phone validations - <Scenario>
-#   Given url requestUrl
-#   And def payload = read("data/" + env + "/PHONE_EMAIL_VALIDATIONS/<Scenario>.json")
-#   And headers headers
-#   And request payload.request
-#   * set payload.response.meta.referenceId = "#ignore"
-#   When method POST
-#   * print payload.request
-#   * print payload.response
-#   * print karate.pretty(response)
-#   Then status <statusCode>
-#   And match $ contains payload.response
-#   Examples:
-#     | Scenario         | statusCode |
-#     | TC001            | 400        |
-#     | TC002            | 400        |
-#     | TC003            | 400        |
-#     | TC004            | 400        |
-#     | TC005            | 400        |
-#     | TC006            | 400        |
-#     | TC007            | 400        |
-#     | TC008            | 400        |
-#     | TC009            | 400        |
-#     | TC010            | 400        |
-#     | TC011            | 400        |
-#     | TC012            | 400        |
+   @smokeTest
+   Scenario Outline:  DPI Identity Enrichment Scenarios of phone validations - <Scenario>
+   Given url requestUrl
+   And def payload = read("data/" + env + "/PHONE_EMAIL_VALIDATIONS/<Scenario>.json")
+   And headers headers
+   And request payload.request
+   * set payload.response.meta.referenceId = "#ignore"
+   When method POST
+   * print payload.request
+   * print payload.response
+   * print karate.pretty(response)
+   Then status <statusCode>
+   And match $ contains payload.response
+     # cloud watch traces -start
+     * print karate.request.headers
+     * print karate.response.headers
+     * print karate.request.headers['x-reference-id']
+     * def reference_id = karate.request.headers['x-reference-id']
+     * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+     * print Cloud_Watch_Traces
+   Examples:
+     | Scenario         | statusCode |
+     | TC001            | 400        |
+     | TC002            | 400        |
+     | TC003            | 400        |
+     | TC004            | 400        |
+     | TC005            | 400        |
+     | TC006            | 400        |
+     | TC007            | 400        |
+     | TC008            | 400        |
+     | TC009            | 400        |
+     | TC010            | 400        |
+     | TC011            | 400        |
+     | TC012            | 400        |

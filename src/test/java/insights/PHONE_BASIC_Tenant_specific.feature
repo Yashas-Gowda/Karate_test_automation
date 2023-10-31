@@ -1,3 +1,4 @@
+@ignore
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:

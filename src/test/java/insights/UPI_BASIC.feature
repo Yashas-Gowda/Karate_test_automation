@@ -1,3 +1,4 @@
+@upi
 Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
   Background:
@@ -47,11 +48,13 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
+#  https://monnai.atlassian.net/browse/MB-3265
     * match $.errors[*].message contains any "Missing UPI address"
     * match $.errors[*].message contains any "Invalid UPI address"
 
     * match $.errors[*].code contains any "MISSING_UPI"
     * match $.errors[*].code contains any "INVALID_UPI"
+
     Then match $ contains any payload.response
     # cloud watch traces -start
     * print karate.request.headers
@@ -65,7 +68,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | Scenario              | statusCode |
       | UPI_BASIC_sc_Ne_noUpi | 400        |
 
-  @smokeTest
+  @smokeTest @123
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")
@@ -91,3 +94,4 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     Examples:
       | Scenario                 | statusCode |
       | UPI_BASIC_sc_Ne_nohandle | 400        |
+

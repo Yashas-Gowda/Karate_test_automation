@@ -19,6 +19,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.phoneValid == true
     And match $.data.phone.basic.phoneDisposable == false
+     # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                                   | statusCode |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true             | 200        |
@@ -38,7 +45,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.isSpam == <isSpam>
-
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                      | statusCode | isSpam |
       | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_India_isSpam_true           | 200        | true   |
@@ -59,7 +72,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.simType == <simType>
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                             | statusCode | simType    |
       | PHONE_BASIC_Sub_SIMTYPE_Karza_India_simType_PREPAID  | 200        | "PREPAID"  |
@@ -91,7 +110,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.portedHistory.portedEvents == <portedEvents>
 
     * match $.data.phone.basic.portedHistory == { portedDate:'##notnull',numberOfPorts:'#number',portedSinceXDays:'##number',currentCarrierCircle:'##string',originalCarrierCircle:'##string',changeInCarrierRegion:'##string',portedEvents:'#array'}
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                                                          | statusCode | ported | portedDate   | numberOfPorts | portedSinceXDays | portedEvents |
       | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_US_ported_portedDate_numberOfPorts_portedSinceXDays_true                       | 200        | true   | "2020-04-12" | 3             | '#number'        | '#[3]'       |
@@ -135,7 +160,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.phoneTenure == <phoneTenure>
     And match $.data.phone.basic.phoneTenure.min == <phoneTenure_min>
     And match $.data.phone.basic.phoneTenure.max == <phoneTenure_max>
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 # Asli.ri is not yet onboarded in DPI so indonesia scenarios are not included.
 
     Examples:
@@ -173,7 +204,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.lastDeactivated == <lastDeactivated>
     And match $.data.phone.basic.lastDeactivated.minimumTenureDays == <lastDeactivated_minimumTenureDays>
     And match $.data.phone.basic.lastDeactivated.minimumTenureDays == <lastDeactivated_maximumTenureDays>
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                                    | statusCode | lastDeactivated | lastDeactivated_minimumTenureDays | lastDeactivated_maximumTenureDays |
       | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_True_deactivated_India_lastDeactivated_notnull   | 200        | "#notnull"      | "#number"                         | "#number"                         |
@@ -196,7 +233,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.portedHistory.currentCarrierCircle == <currentCarrierCircle>
     And match $.data.phone.basic.portedHistory.originalCarrierCircle == <originalCarrierCircle>
     And match $.data.phone.basic.portedHistory.changeInCarrierRegion == <changeInCarrierRegion>
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                       | statusCode | currentCarrierCircle | originalCarrierCircle        | changeInCarrierRegion |
       | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_CHANGED       | 200        | "Jio Maharashtra"    | "Vi India Maharashtra & Goa" | "CHANGED"             |
@@ -225,7 +268,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.currentNetwork.mobileNetworkCode == <mobileNetworkCode>
     And match $.data.phone.basic.currentNetwork.networkName == "<networkName>"
     And match $.data.phone.basic.currentNetwork.serviceProfileId == "<serviceProfileId>"
-
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                                                    | statusCode | originalCarrier         | localRoutingNumber | mobileCountryCode | mobileNetworkCode | networkName                   | serviceProfileId |
@@ -254,6 +303,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic == '#notnull'
 
     And match $.data.phone.basic.active == "<active>"
+     # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 #  for BR : Data partner flow => WDD→ TMT-> X-connect.
 #
 #  for MX : Data partner flow => IPQS→ TMT-> X-connect.
@@ -299,7 +355,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.errors[0].message == <message>
     And match $.errors[0].code == "<code>"
     And match $.errors[0].type == "<type>"
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                            | statusCode | package       | message                              | code                               | type          |
       | PHONE_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER                                 | 400        | "PHONE_BASIC" | "Invalid Phone Number"               | INVALID_PHONE_NUMBER               | INVALID_INPUT |
@@ -330,7 +392,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.errors[0].message == <message>
     And match $.errors[0].code == "<code>"
     And match $.errors[0].type == "<type>"
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                       | statusCode | package | message                   | code                 | type          |
       | PHONE_BASIC_Negative_scenarios_When_Package_empty_Array        | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
@@ -367,7 +435,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.errors[*].message contains any  "Missing phone default country code"
     And match $.errors[*].code contains any "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
     And match $.errors[*].type contains any "INVALID_INPUT"
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                               | statusCode |
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_MISSING_PHONE_DEFAULT_COUNTRY_CODE | 400        |
@@ -400,7 +474,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
     * match $.meta == payload.response.meta
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                        | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_HappyFlow                       | 200        |
@@ -432,7 +512,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
     * match $.meta == payload.response.meta
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                            | statusCode | topUpCount |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1     | 200        | 1          |
@@ -468,7 +554,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
     * match $.meta == payload.response.meta
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                 | statusCode | No_of_array_objects |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        | 10                  |
@@ -488,12 +580,19 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     * print payload.request
+    * print payload.request
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#null'
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                         | statusCode |
@@ -515,7 +614,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#null'
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
@@ -541,7 +646,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.portedHistory contains deep {"portedDate":"#present","numberOfPorts":"#present","portedSinceXDays":"#present","currentCarrierCircle":"#present","originalCarrierCircle":"#present","changeInCarrierRegion":"#present"}
     And match $.data.phone.basic.portedHistory.portedEvents == '#array'
     And match $.data.phone.basic.currentNetwork contains deep {"localRoutingNumber":"#present","mobileCountryCode":"#present","mobileNetworkCode":"#present","networkName":"#present","serviceProfileId":"#present"}
-
+ # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                       | statusCode |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true | 200        |
@@ -558,6 +669,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
+     # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Then match $ contains deep
     """
     {

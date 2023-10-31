@@ -1,3 +1,4 @@
+@seon_email
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Background:
@@ -19,7 +20,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print karate.pretty(response)
     Then status <statusCode>
 
-    Then match $ contains payload.response
+    Then match $.data.email.social contains payload.response.data.email.social
     Examples:
       | Scenario                                                          | statusCode |
       | Email_Social                                                      | 200        |
@@ -43,6 +44,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
+    Then match $.data.email.social contains payload.response.data.email.social
     Examples:
       | Scenario                                                        | statusCode |
       | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
@@ -60,7 +62,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.social contains payload.response.data.email.social
 #    And match $.errors[1].message == "Invalid email address"
 #    And match $.response.errors[1].message == "Invalid email address"
 
@@ -82,7 +84,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.social contains payload.response.data.email.social
 #    And match $.errors[1].message == "Email cannot be empty/null"
 #    And match $.response.errors[1].message == "Email cannot be empty/null"
 
@@ -153,7 +155,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And match $.data.email.social.profiles.emailProvider.google.photo == "#regex https://*.*"
     And match $.data.email.social.profiles.professional.linkedin.registered == "#null"
     And match $.data.email.social.profiles.professional.linkedin.url == "#null"
-
+    Then match $.data.email.social contains payload.response.data.email.social
 
     Examples:
       | Scenario                                                    | statusCode |

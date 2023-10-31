@@ -1,30 +1,35 @@
 package insights;
 
-
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-import net.masterthought.cucumber.Configuration;
-import net.masterthought.cucumber.ReportBuilder;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-// important: do not use @RunWith(Karate.class) !
+/**
+ *
+ * @author pthomas3
+ */
 public class insightsTestParallel {
+
+//    @BeforeAll
+//    static void beforeAll() {
+//        TestBase.beforeAll();
+//    }
 
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:insights").tags("@123")
-                //.outputCucumberJson(true)
-                .karateEnv("test")
-                .parallel(0);
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("~@ignore","@upi")
+                .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }

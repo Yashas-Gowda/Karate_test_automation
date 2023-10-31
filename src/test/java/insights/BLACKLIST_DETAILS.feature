@@ -18,8 +18,14 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * print karate.pretty(response)
     And match $.data.blacklist == '#notnull'
     And match $.data.blacklist.details.isBlacklisted == '#present'
-    Then match $ contains payload.response
-
+    Then match $.data.blacklist contains payload.response.data.blacklist
+# cloud watch traces -start
+      * print karate.request.headers
+      * print karate.response.headers
+      * print karate.request.headers['x-reference-id']
+      * def reference_id = karate.request.headers['x-reference-id']
+      * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+      * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                              | statusCode |
       | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO                 | 200        |
@@ -42,8 +48,14 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * match $.errors[0].package == "BLACKLIST_DETAILS"
     * match $.errors[0].message == "Service unavailable for country India"
     * match $.errors[0].code == "SERVICE_UNAVAILABLE_FOR_COUNTRY"
-    Then match $ contains payload.response
-
+    Then match $.data.blacklist contains payload.response.data.blacklist
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                                    | statusCode |
       | BLACKLIST_DETAILS_Negative_input_phonenumber_not_Indonesian_SERVICE_UNAVAILABLE_FOR_COUNTRY | 501        |

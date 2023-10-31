@@ -17,8 +17,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then print payload.response
-    Then match $ contains payload.response
-
+    Then match $.data.device contains payload.response.data.device
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                              | statusCode |
       | Device_Details_Positive_1_valid_input | 200        |
@@ -36,12 +42,18 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
 
     Then print payload.response
     # [2] - validate the number of deviceRecords
     And match payload.response.data.device.deviceRecords == '#[2]'
-
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | deviceIds                                                                       |
       | ["97867bc8-0cdc-4072-86c4-2cc7e9d05616","1db61125-297f-4544-abad-eae8a56ecd90"] |
@@ -56,12 +68,19 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status 200
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
     Then print payload.response
     Then match payload.response.data.device.deviceRecords == '#[10]'
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                      |
       | ["1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
@@ -96,7 +115,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Number of devices Ids are more than 10"
     And match $.errors[0].code == "NUMBER_OF_DEVICE_IDS_EXCEEDED"
     And match $.errors[0].package == "DEVICE_DETAILS"
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 #    old  | ["3342b21d-6ba2-4294-b808-f9612b24fed6","d498b340-25fc-4cf3-a927-c9a37f885841","8d182c92-781c-441f-a179-4dcdac151bb3","345d1cd3-a754-4556-800f-65fb37ccce66","2dd3825c-22b8-4efb-97f0-f1cfdeda4641","64aa8f98-9d60-4d72-a178-b06034cda47a","7dfdd56e-e795-4cfa-99d6-d548aaf55866","1db61125-297f-4544-abad-eae8a56ecd90","cab22197-414b-4ceb-9517-183774766d00","a439a0c4-343b-41f3-b62b-64b1be2e3a7f","c8ce79ec-dd48-4ad0-8a7b-6637decd91b5"]                                        |
@@ -131,6 +157,13 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Device Ids cannot blank/null"
     And match $.errors[0].code == "MISSING_DEVICE_IDS"
     And match $.errors[0].package == "DEVICE_DETAILS"
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples: # Multiple invalid inputs
       | Scenario                                 | statusCode | deviceIds      |
       | Device_Details_Negitive_withInvalidInput | 400        | null           |
@@ -157,6 +190,13 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Device Ids cannot blank/null"
     And match $.errors[0].code == "MISSING_DEVICE_IDS"
     And match $.errors[0].package == "DEVICE_DETAILS"
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                 | statusCode | deviceIds |
       | Device_Details_Negitive_withInvalidInput | 400        | null      |
@@ -178,11 +218,18 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status 200
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
     Then print payload.request
     Then print payload.response
     And match payload.response.data.device == "#notnull"
     And match payload.response.data.device.errors != '#[0]'
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | deviceIds                                                  |
@@ -205,7 +252,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Missing Country Code"
     And match $.errors[0].code == "MISSING_COUNTRY_CODE"
     And match $.errors[0].package == "DEVICE_DETAILS"
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | countryCode |
       | null        |
@@ -229,7 +283,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Invalid country code"
     And match $.errors[0].code == "INVALID_COUNTRY_CODE"
     And match $.errors[0].package == "DEVICE_DETAILS"
-    Then match $ contains payload.response
+    Then match $.data.device contains payload.response.data.device
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | countryCode |
       | "idd"       |
@@ -258,7 +319,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 #    And match $.errors[*].message == ["Device Id Format is invalid/incorrect"]
 #    And match $.errors[*].code == ["INVALID_DEVICE_ID"]
 #    And match $.errors[*].package == ["DEVICE_DETAILS"]
-    Then match $ contains any payload.response
+    Then match $.data.device contains any payload.response.data.device
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | countryCode | deviceIds  |
       | "idd"       | ["abc" ]   |
@@ -282,6 +350,13 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And match $.errors[0].message == "Device Id Format is invalid/incorrect"
     And match $.errors[0].code == "INVALID_DEVICE_ID"
     And match $.errors[0].package == "DEVICE_DETAILS"
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | deviceIds  |
       | ["abc" ]   |

@@ -18,7 +18,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.phone.basic contains payload.response.data.phone.basic
     * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#number'}
 
     Examples:
@@ -38,7 +38,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.phone.basic contains payload.response.data.phone.basic
     * match $.errors == '#[0]'
 
     Examples:

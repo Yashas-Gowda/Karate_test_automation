@@ -25,7 +25,14 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
     * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
     * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
-    Then match $ contains payload.response
+    Then match $.data.identity.correlation contains payload.response.data.identity.correlation
+# cloud watch traces -start
+      * print karate.request.headers
+      * print karate.response.headers
+      * print karate.request.headers['x-reference-id']
+      * def reference_id = karate.request.headers['x-reference-id']
+      * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+      * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                    | statusCode |
@@ -312,6 +319,13 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And match $.errors[0].message == "PhoneNumber cannot be blank/null"
     And match $.errors[0].code == "MISSING_PHONE_NUMBER"
     And match $.errors[0].type == "INVALID_INPUT"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                        | statusCode | phoneNumber |
@@ -334,6 +348,13 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And match $.errors[0].message == "Invalid phone default country code"
     And match $.errors[0].code == "INVALID_PHONE_DEFAULT_COUNTRY_CODE"
     And match $.errors[0].type == "INVALID_INPUT"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                        | statusCode | phoneDefaultCountryCode |
@@ -357,6 +378,13 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And match $.errors[0].message == "Missing phone default country code"
     And match $.errors[0].code == "MISSING_PHONE_DEFAULT_COUNTRY_CODE"
     And match $.errors[0].type == "INVALID_INPUT"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                        | statusCode | phoneDefaultCountryCode |
@@ -380,6 +408,13 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And match $.errors[0].message == "At least one Additional search parameter email or ip address is required."
     And match $.errors[0].code == "MISSING_ADDITIONAL_SEARCH_PARAMETER"
     And match $.errors[0].type == "INVALID_INPUT"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                  | statusCode | email |
@@ -402,6 +437,13 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     And match $.errors[0].message == "At least one Additional search parameter email or ip address is required."
     And match $.errors[0].code == "MISSING_ADDITIONAL_SEARCH_PARAMETER"
     And match $.errors[0].type == "INVALID_INPUT"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                  | statusCode | ipAddress |

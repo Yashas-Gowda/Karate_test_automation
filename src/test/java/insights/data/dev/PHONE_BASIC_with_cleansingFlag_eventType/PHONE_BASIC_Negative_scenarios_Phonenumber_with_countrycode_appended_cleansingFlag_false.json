@@ -3,7 +3,7 @@
     "phoneNumber": "918054357066",
     "phoneDefaultCountryCode": "IN",
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
+    "cleansingFlag": false,
     "packages": [
       "PHONE_BASIC"
     ]

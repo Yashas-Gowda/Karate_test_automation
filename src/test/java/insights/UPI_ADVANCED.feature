@@ -1,9 +1,11 @@
+@upi
 Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Background:
     * configure charset = null
     * path '/api/insights/'
 
+  @123
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid / null / empty phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
@@ -19,6 +21,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                              | phoneNumber | statusCode | errorCode            | errorMessage                     |
@@ -40,6 +49,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                               | phoneNumber | statusCode | errorCode            | errorMessage                     |
@@ -60,6 +76,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                          | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage                       |
@@ -81,6 +104,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                           | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage                       |
@@ -103,6 +133,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                    | phoneDefaultCountryCode | statusCode | errorCode                          | errorMessage                       |
@@ -128,6 +165,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                        | phoneNumber    | statusCode | errorCode            | errorMessage         |
@@ -152,6 +196,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 #    * print $.data.upi.advanced.accounts[*]
 #    Then match $.data.upi.advanced.accounts[*] contains only [{"appName": "Paytm","nameAtBank": "Krishan Kumar","upiId": "9910872581@paytm"},{"appName": "PhonePe","nameAtBank": "KRISHAN KUMAR","upiId": "9910872581@ybl"},{"appName": "Google Pay","nameAtBank": "KRISHAN KUMAR","upiId": "krishankumar.1765@okhdfcbank"}]
 #    Then match $.data.upi.advanced.accounts[*] contains [{"appName": "Paytm","nameAtBank": "Krishan Kumar","upiId": "9910872581@paytm"},{"appName": "PhonePe","nameAtBank": "KRISHAN KUMAR","upiId": "9910872581@ybl"},{"appName": "Google Pay","nameAtBank": "KRISHAN KUMAR","upiId": "krishankumar.1765@okhdfcbank"}]
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                        | statusCode |
@@ -172,6 +223,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     Then status <statusCode>
     Then match $.data.upi.advanced.accounts[*].appName contains only [PhonePe]
     Then match $ contains any payload.response
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                      | statusCode |
@@ -189,7 +247,14 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print karate.pretty(response)
     Then status <statusCode>
     * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay]
-    Then match $ contains  payload.response
+    Then match $.data.upi contains only  payload.response.data.upi
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                         | statusCode |
@@ -207,9 +272,16 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains any payload.response
+    Then match $.data.upi contains only payload.response.data.upi
     * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
     * match UPI_ID_TYPE  contains only [Paytm,PhonePe,Google Pay]
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                        | statusCode |
@@ -230,6 +302,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
     * match UPI_ID_TYPE contains only [PhonePe,Paytm]
     Then match $ contains any payload.response
+# cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                                 | statusCode |
@@ -248,7 +327,15 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print karate.pretty(response)
     Then status <statusCode>
     * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay,PhonePe]
-    Then match $ contains  payload.response
+#    Then match $.data.upi contains only  payload.response.data.upi
+     #Plase see cloud watch for below scenario, for phone and email input - SPY Cloud should not be called.
+# cloud watch traces -start -
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
 
     Examples:
       | Scenario                                                                                   | statusCode |
@@ -265,12 +352,17 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.request
     * print payload.response
     * print karate.pretty(response)
-    * print karate.request.headers
-    * print karate.response.headers
     Then status <statusCode>
     * match $.data.upi.advanced.accounts[*].appName contains only [Paytm,Google Pay,PhonePe]
-    Then match $ contains  payload.response
-
+#    Then match $.data.upi contains  payload.response.data.upi
+    #Plase see cloud watch for below scenario,for only phone input - SPY Cloud should  be called.
+# cloud watch traces start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
     Examples:
       | Scenario                                                                                          | statusCode |
-      | UPI_ADVANCED_POSITIVE_Phone&Email_input_with_must_SpyCloud_call_output_phonepay_GooglePay_PhonePe | 200        |
+      | UPI_ADVANCED_POSITIVE_Phone_input_only_with_must_SpyCloud_call_output_phonepay_GooglePay_PhonePe | 200        |

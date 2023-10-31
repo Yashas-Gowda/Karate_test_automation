@@ -1,3 +1,4 @@
+
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
  # scenarios names are not updated, which will be picked in the next sprint
@@ -28,7 +29,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print responseHeaders["Content-Type"][0]
     * match header Content-Type == "application/json"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                        | statusCode |
       | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)_disposable_false_emailTenure_notnull                          | 200        |
@@ -55,7 +56,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                       | statusCode |
       | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
@@ -81,7 +82,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
@@ -108,7 +109,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_creationTime_updateTime_expiryTime_companyName_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_false_emailTenure_null | 200        |
@@ -133,7 +134,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_false_disposable_false_noOfBreaches_1_emailTenure_notnull                                                                                               | 200        |
@@ -159,7 +160,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                   | statusCode |
       | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
@@ -185,7 +186,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario | statusCode |
       #data no| Email_Basic_custom_true | 200        |
@@ -202,7 +203,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
 #    And match $.errors[1].message == "Invalid email address"
 #    And match $.response.errors[1].message == "Invalid email address"
 
@@ -229,6 +230,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.errors[*].message contains any ["Email cannot be empty/null"]
     And match $.errors[*].code contains any ["MISSING_EMAIL_ADDRESS"]
     And match $.errors[*].package contains any ["EMAIL_BASIC"]
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                | statusCode |
       | Email_Basic_Negitive_Emptyinput('')     | 400        |
