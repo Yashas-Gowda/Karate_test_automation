@@ -98,6 +98,7 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     * print karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
     * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    # Sanction scaner should not be called in the cloud watch traces
     * print Cloud_Watch_Traces
     # request/response
     * print payload.request
