@@ -3,9 +3,9 @@
     "eventType": "ACCOUNT_CREATION",
     "entityType": "ORGANISATION",
     "userDetails": {
-      "fullGivenName": "RSS"
+      "fullGivenName": "Kim Jong Un"
     },
-    "recordLimit": 20,
+    "recordLimit": -1,
     "matchThreshold": 80,
     "packages": [
       "KYC_AML"
@@ -25,7 +25,7 @@
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "RSS"
+      "inputFullGivenName": "Kim Jong Un"
     },
     "errors": []
   }

@@ -1,0 +1,1342 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "INDIVIDUAL",
+    "userDetails": {
+      "fullGivenName": "ADEM YILMAZ"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": true,
+            "noOfProfiles": 7,
+            "totalRecords": 39
+          },
+          "records": [
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": " ",
+              "type": "SANCTION",
+              "sourceName": "US Department of The Treasury OFAC SDN List",
+              "programName": "SDGT ",
+              "otherInformation": "currently incarcerated at Weiterstadt, Germany",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.ecfr.gov/cgi-bin/text-idx?SID=5eae22affe2e3675b6deaa3fb796eb7a&amp;tpl=/ecfrbrowse/Title31/31cfr594_main_02.tpl"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US - ABC News",
+                  "url": "https://abcnews.go.com/International/wireStory/germany-choice-reject-terrorist-extradition-us-60907308"
+                },
+                {
+                  "title": "German terror plot suspects offer to confess",
+                  "url": "https://www.nbcnews.com/id/wbna31193122"
+                },
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US | Daily Mail",
+                  "url": "https://www.dailymail.co.uk/news/article-6678207/Germany-No-choice-reject-terrorist-extradition-US.html"
+                }
+              ],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "4/11/1978 12:00:00 AM",
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey\r\n",
+              "type": "SANCTION",
+              "sourceName": "United Nations Sanctions (UN)",
+              "programName": "Al-Qaida",
+              "otherInformation": "Associated with the Islamic Jihad Union (IJU), also known as the Islamic\nJihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.  Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [
+                {
+                  "title": "German terror plot suspects offer to confess",
+                  "url": "https://www.nbcnews.com/id/wbna31193122"
+                },
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US - ABC News",
+                  "url": "https://abcnews.go.com/International/wireStory/germany-choice-reject-terrorist-extradition-us-60907308"
+                },
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US | Daily ...",
+                  "url": "https://www.dailymail.co.uk/news/article-6678207/Germany-No-choice-reject-terrorist-extradition-US.html"
+                }
+              ],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": "",
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "UK HM Treasury Office of Financial Sanctions Implementation Sanction List",
+              "programName": "ISIL (Da'esh) and Al-Qaida",
+              "otherInformation": "(UK Sanctions List Ref):AQD0120. (UN Ref):QDi.261. Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals. In prison since Sep. 2007. UK Sanctions List Date Designated: 27/10/2008",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [
+                {
+                  "title": "German terror plot suspects offer to confess",
+                  "url": "https://www.nbcnews.com/id/wbna31193122"
+                },
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US - ABC News",
+                  "url": "https://abcnews.go.com/International/wireStory/germany-choice-reject-terrorist-extradition-us-60907308"
+                },
+                {
+                  "title": "Germany: No choice but to reject terrorist extradition to US | Daily ...",
+                  "url": "https://www.dailymail.co.uk/news/article-6678207/Germany-No-choice-reject-terrorist-extradition-US.html"
+                }
+              ],
+              "otherPossibleNames": [
+                "TALHA",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "",
+                  "city": null,
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "DFAT Australia Consolidated Sanctions List",
+              "programName": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
+              "otherInformation": "Turkish passport number TR-P 614 166 , issued by the Turkish Consulate General in Frankfurt/M. on 22 Mar. 2006, expired on 15 Sep. 2009. Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDE..119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "EEAS Consolidated Sanction List",
+              "programName": "TAQA",
+              "otherInformation": "EU Reference Number: EU.2158.77 \r\nNumber Title: 34/2012 (OJ L15) \r\nEntry Into Force Date: 2012-01-17 \r\nRegulation Organisation Type: commission \r\nRegulation Type: amendment \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:015:0001:0019:EN:PDF"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "GERMANY"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey\r\n",
+              "type": "SANCTION",
+              "sourceName": "Ukraine State Financial Monitoring Black List",
+              "programName": null,
+              "otherInformation": "Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Office of the Superintendent of Financial Institutions Person List ",
+              "programName": null,
+              "otherInformation": "Passport no.: Turkish passport number TR-P 614 166 , issued by the Turkish Consulate General in Frankfurt/M. on 22 Mar. 2006, expired on 15 Sep. 2009.  Address: In prison in Germany (since Sep. 2007); Südliche Ringstrasse 133, 63225 Langen, Germany (previous address); Other information: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group. Associated with Fritz Martin Gelowicz (QI.G.259.08.) and Daniel Martin Schneider (QI.S.260.08.). In detention in Germany as of Jun. 2010.",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "Adem YILMAZ",
+              "nationality": "TURQUIE",
+              "type": "SANCTION",
+              "sourceName": "Trésor Direction Générale Economic Sanctions List",
+              "programName": null,
+              "otherInformation": " Commentaire: délivré par le Consulat général de Turquie à Francfort-sur-le-Main le 22.03.2006, arrivé à expiration le 15/09/2009\r\nReason: associé à l'Union du Djihad islamique (IJU, Islamic Jihad Union), également appelée le groupe du Djihad islamique, au moins depuis le début de 2006, associé à Fritz Martin Gelowicz et Daniel Martin Schneider --  en détention en Allemagne en juin 2010 Legal basis: 663 (CE) 1330/2008 du 22/12/2008 (ONU Al Qaeda Etat - Islamique - règlement (UE) 881/2002)\r\n Legal basis: 590 (UE) 34/2012 du 17/01/2012 (ONU Al Qaeda Etat - Islamique - règlement (UE) 881/2002)\r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "Adem YILMAZ",
+              "nationality": "Turkish \r\n",
+              "type": "SANCTION",
+              "sourceName": "New Zealand Police Designated Terrorists List",
+              "programName": "Al-Qaeda",
+              "otherInformation": "Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259) and Daniel Martin Schneider (QDi.260). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. \r\nDesignation Date: 27.10.2008 00:00:00 \r\nListedOn: 30/10/2008\n\nAmended 6/12/2019 SCA/2/20 (01) \r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Türkiye",
+              "type": "SANCTION",
+              "sourceName": "Turkey Decisions Of Government",
+              "programName": "Real People Connected with Daesh and El-qaid",
+              "otherInformation": "İslami Cihad Grubu (QE.I.119.05.) olarak da bilinen İslami Cihad  Birliği (IJU) ile bağlantıldır.  Fritz Martin Gelowicz (QI.G.259.08.)  ve Daniel Martin Schneider (QI.S.260.08.) ile bağlantılıdır. Haziran  2010 itibariyle Almanya’da tutukludur. \r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "アデム・ユルマズ",
+              "middleName": null,
+              "lastName": null,
+              "fullName": "アデム・ユルマズ",
+              "nationality": "トルコ",
+              "type": "SANCTION",
+              "sourceName": "Japan Ministry of Finance Economic Sanctions List",
+              "programName": null,
+              "otherInformation": "イスラミック・ジハード・ユニオン（ＩＪＵ）、別称イスラミック・ジハード・グループ（４６３．に指定した団体）と関係がある。フリッツ・マルティン・ゲロヴィッチ（５４５．に指定した個人）と関係がある。２０１０年６月時点でドイツにおいて拘留されている。 \nListedOn: ２００８年１０月２７日（２０１１年１２月１３日に改訂） \nLast Update Date: ※2012年9月28日改訂\n※2016年8月5日改訂\r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "タルハ",
+                "ADEM YILMAZ",
+                "Talha",
+                "アデム・ユルマズ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": "",
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey\r\n",
+              "type": "SANCTION",
+              "sourceName": "RePET Argentina Terrorist Acts and Financing",
+              "programName": null,
+              "otherInformation": "Un List Type: Al-Qaida \r\nComments: Associated with the Islamic Jihad Union (IJU), also known as the Islamic\nJihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.  Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals \r\nList Type: UN List \r\nLast Day Updated: 06/12/2019 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turki",
+              "type": "SANCTION",
+              "sourceName": "Indonesia DTTOT Terrorists and Terrorist Organizations",
+              "programName": null,
+              "otherInformation": "Description: Nomor paspor Turkey TR-P 614 166. Alamat tambahan Südliche Ringstrasse 133, Langen, 63225, Jerman. Terkait dengan Jihad Islam (IJU), juga dikenal sebagai Islamic Jihad Group (QDe.119). Terkait dengan Fritz Martin Gelowicz (QDi.259). Dalam tahanan di Jerman mulai Juni 2010 \r\nType: Orang \r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "TALHA",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "アデム・ユルマズ",
+              "middleName": null,
+              "lastName": null,
+              "fullName": "アデム・ユルマズ",
+              "nationality": "トルコ",
+              "type": "SANCTION",
+              "sourceName": "NPSC (Japan) - Terrorist List ",
+              "programName": null,
+              "otherInformation": "指定の有 効期間: 2008年10月27日（2011年12月13日及び2019年12月６日に改訂） \r\nその他参 考となる べき事項: イスラミック・ジハード・ユニオン（IJU）、別称イスラミック・ジハード・グループ（ \r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "タルハ",
+                "Talha",
+                "アデム・ユルマズ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Belgium Federal Public Service Finance National and European Sanctions",
+              "programName": null,
+              "otherInformation": "Embargoes: TAQA\r\nRegulation: 34/2012 (OJ L15)\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:015:0001:0019:EN:PDF"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM",
+                ""
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "Switzerland Sanction List - SECO",
+              "programName": "Ordinance of 2 October 2000 on measures against individuals and entities associated with Usama bin Laden, the group «Al-Qaïda» or the Taliban (SR 946.203), annex 2",
+              "otherInformation": "Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QE.I.119.05.). Associated with Fritz Martin Gelowicz. In detention in Germany as of Jun 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec 2019. INTERPOL-UN Security Council Special Notice web link available.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Germany"
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Адем",
+              "middleName": null,
+              "lastName": "Йилмаз",
+              "fullName": "Адем Йилмаз",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Belarus State Security Agency List of Organizations and Individuals Involved in Terrorist Activities",
+              "programName": null,
+              "otherInformation": "Citizenship: Турция, Паспорт №: Турция № TR-P 614 166 (issued by the Turkish Consulate General in Frankfurt/M. on 22 Mar. 2006, expired on 15 Sep. 2009.)\r\nReference Info: Связан с Союзом исламского джихада (СИД), также известным как Группа исламского джихада (QDe.119). Связан с Фрицем Мартином Геловицем (QDi.259). По состоянию на июнь 2010 года содержится под стражей в Германии. Проведение обзора во исполнение резолюции 2368 (2017) Совета Безопасности было завершено 4 декабря 2019 г. Ссылка на веб-ресурс \"Специальные уведомления Интерпола — Совета Безопасности ООН\":  https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individual\r\nBasis For Listing:Санкционный перечень Комитета Совета Безопасности ООН, учрежденный резолюциями 1267 (1999), 1989 (2011) и 2253 (2015) по ИГИЛ (ДАИШ) и Аль-Каида.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://kgb.gov.by/ru/perechen-inf-ru/"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YİLMAZ",
+                "TALHA",
+                "Адем Йилмаз"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "אדם",
+              "middleName": null,
+              "lastName": "ילמאז",
+              "fullName": "אדם ילמאז",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Israeli Defence Ministry Illegal Organisations List",
+              "programName": null,
+              "otherInformation": "Designation: הכרזה על ארגו ן טרור על פי סעיף 2 לחוק איסור מימון טרור התשסה- 2005\r\nDesignated by - Hebrew: ועדת השרים לענייני ביטחון לאומי\r\nDesignated by - English: The State Security Cabinet (SSC)\r\nForeign Designation: מועבי\"ט - או\"ם\r\nForeign Designation ID: QI.Y.261.08.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "آدم يلماز",
+                "אדם ילמאז"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Mexico Financial Intelligence Unit UN Sanction List",
+              "programName": "UIF - Listas actualizadasof gobierno de Mexico \r\n",
+              "otherInformation": "ANEXO “A” RESOLUCIONES 1267 (1999); 1989 (2011) Y 2253 (2015) relativas a EIIL (Daesh) y Al- Qaida \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.interpol.int/en/How-wework/Notices/View-UN-Notices-Individuals"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "4 de noviembre de 1978"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "WATCHLIST",
+              "sourceName": "Argentina Ministry of Foreign Affairs and UN Sanctions",
+              "programName": null,
+              "otherInformation": "COMMENTS1: Associated with the Islamic Jihad Union (IJU), also known as the Islamic\nJihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.  Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-IndividualsDesignation: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "Adem YILMAZ",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Department of State Nonproliferation Sanctions List",
+              "programName": "SDGT",
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem YILMAZ"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": "YILMAZ",
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "WANTED",
+              "sourceName": "Moldova National Terrorist List",
+              "programName": "Lista persoanelor, grupurilor și entităților implicate în incidentele teroriste și teroriste de către directorul SIS al Republicii Moldova \r\n",
+              "otherInformation": "persoanelor, entităților și a altor grupuri asociate cu „ISIL” („Da’esh”) și „Al-Qaida”, menținută de Comitetul Consiliului de Securitate al Organizației Națiunilor Unite, instituit prin Rezoluțiile 1267 (1999), 1989 (2011), 2253 (2015) \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.legis.md/cautare/getResults?doc_id=133442&lang=ro#"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Luxembourg Liste des Sanctions Financieres Internationales",
+              "programName": "TAQA",
+              "otherInformation": "EU Reference Number: EU.2158.77 \r\nNumber Title: 34/2012 (OJ L15) \r\nEntry Into Force Date: 2012-01-17 \r\nRegulation Organisation Type: commission \r\nRegulation Type: amendment \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:015:0001:0019:EN:PDF"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "GERMANY"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey\r\n",
+              "type": "SANCTION",
+              "sourceName": "Hong Kong Special Administrative Region Sanctions under the UN Sanctions Ordinance",
+              "programName": "Al-Qaida",
+              "otherInformation": "Associated with the Islamic Jihad Union (IJU), also known as the Islamic\nJihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.  Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": "63225",
+                  "city": "Langen",
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey \r\n",
+              "type": "SANCTION",
+              "sourceName": "Argentina Ministry of Foreign Affairs, International Trade and Worship Sanction List",
+              "programName": null,
+              "otherInformation": "ListedOn: 27 Oct. 2008 ( amended on 13 Dec. 2011 )\r\nAssociated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.cancilleria.gob.ar/en/foreign-policy/international-security/sanctions-committee/sanctions-committee-against-eiil-daesh-and"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "Talha"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "Qatar Ministry of Interior NCTC Sanction List",
+              "programName": null,
+              "otherInformation": "Fullname: ADEM YILMAZ \r\nApplicable Sanctions Regime: Security Council Committee established pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) regarding the Islamic State in Iraq and the Levant (ISIS), Al-Qaeda \r\nPermanent Referance Number: QDi.261 \r\nRegistration Number: 2830354 \r\nDate Of Designation: 2008-10-27 \r\nLegal Basis: Security Council Resolutions 1267( 1999) , 1989( 2011) , 2253(2015) \r\nOther: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we- work/Notices/View-UN-Notices-Individuals \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://portal.moi.gov.qa/wps/portal/NCTC/sanctionlist/unifiedsanctionlist/!ut/p/a1/hZDLbsIwEEW_pQtv46ljIHRnLBSnTQhUkQBvKtOGYCmJU9vQ329CQarUB7ObozO6mosl3mDZqpOulNemVfWwy_FLMiWUCErSnFMGq3CWFFmYQRyPemHbCyORzmP6BIt4UsxglRNRjJ8FAbi_db_G8kthWQKEQprPea9MRSF4CBAtJxfhv4izAH8MA_yIZVWb3fmfLWt3YVRhact9aUsbHG2PD9537gEBgs5Yr-qgMTqozCl4Vwg-OnflCBa84Aical-HimrtPIJjq_e6fPsOf0s6mIH_CMBdswG9bNaRY3efJl1kaQ!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "1978-11-04"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Israel Ministry of Defense Sanction List",
+              "programName": null,
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ",
+                "אדם ילמאז",
+                "آدم يلماز"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yilmaz",
+              "fullName": "Adem Yilmaz",
+              "nationality": "TURQUIE",
+              "type": "SANCTION",
+              "sourceName": "Monaco Economic Sanctions",
+              "programName": null,
+              "otherInformation": "Sanction Regime:ONU Al Qaeda Etat - Islamique - règlement (UE) 881/2002 Monaco Sanction Id: 96620 Reason: associé à l'Union du Djihad islamique (IJU, Islamic Jihad Union), également appelée le groupe du Djihad islamique, au moins depuis le début de 2006, associé à Fritz Martin Gelowicz et Daniel Martin Schneider --  en détention en Allemagne en juin 2010 Other Information: Adresse : ALLEMAGNE : Südliche Ringstrasse 133, 63225 Langen (Ancienne adresse),\nN° Passeport : TR-P 614166 : délivré par le Consulat général de Turquie à Francfort-sur-le-Main le 22.03.2006, arrivé à expiration le 15/09/2009 Legal Basis: (CE) 1330/2008 du 22/12/2008,\n(UE) 34/2012 du 17/01/2012 Monaco Legal Basis:DM 2021-01 du 04/06/2021\nDM 2021-10 du 20/07/2021 ",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yilmaz"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "WANTED",
+              "sourceName": "Interpol UN Wanted List",
+              "programName": null,
+              "otherInformation": "Date on which the narrative summary became available on the Committee’s website: 9 March 2009 Date on which the narrative summary was updated: 3 February 2015 Adem Yilmaz was listed on 27 October 2008 pursuant to paragraphs 1 and 2 of resolution 1822 (2008) as being associated with the Islamic Jihad Group (QDe.119), for “participating in the financing, planning, facilitating, preparing or perpetrating of acts or activities by, in conjunction with, under the name of, on behalf or in support of” and “recruiting for” this entity. Additional information: The Islamic Jihad Group, also known as the Islamic Jihad Union (QDe.119) was founded in 2002 as an offshoot of the Islamic Movement of Uzbekistan (QDe.010) whose leaders, Najmiddin Kamolitdinovich Jalolov (deceased) and Suhayl Fatilloevich Buranov (deceased), have contacts with Al-Qaida (QDe.004). Adem Yilmaz attended a training camp of the IJU in South Asia in 2006, where he received theoretical and practical training in explosives. Since the end of 2006, he formed a group with Fritz Martin Gelowicz (QDi.259) and Daniel Martin Schneider (QDi.260) with the objective of carrying out bomb attacks inter alia against institutions of the United States of America in Germany. To this end, the group acquired a considerable quantity of hydrogen peroxide solution, which when mixed with other components could have produced a substance with an explosive power comparable to approximately 550 kilograms of TNT. Furthermore, the group procured the additional means needed for carrying out the attacks - such as, for instance, electrical devices for triggering the detonation - as well as several detonators. The manufactured explosives were to be placed in several vehicles and detonated in Germany in front of discotheques and pubs frequented by citizens of the United States of America and/or at an airport, with the aim of killing or injuring as many people as possible. He was arrested on 4 September 2007 in Medebach, Germany and on 4 March 2010, the Higher Regional Court in Düsseldorf, Germany sentenced him to 11 years imprisonment for membership of a terrorist organization abroad, conspiracy to murder, causing an explosion, coercion of constitu­tional organs and preparation of a serious criminal offence involving an explosion. Related listed individuals and entities: Al-Qaida (QDe.004), listed on 6 October 2001 Islamic Jihad Group (QDe.119), listed on 1 June 2005 Fritz Martin Gelowicz (QDi.259), listed on 27 October 2008 Daniel Martin Schneider (QDi.260), listed on 27 October 2008. Mevlüt Kar (QDi.302), listed on 25 January 2012Purposes: FOA\r\nTRB\r\nARE\r\nAssociates: \r\nFullName Al-QaidaReference NumberQDe.004\r\nAssociates: \r\nFullName Islamic Jihad GroupReference NumberQDe.119\r\nAssociates: \r\nFullName KarMevlütDate of birth1978/12/25\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://ws-public.interpol.int/notices/v1/un/persons/2007-44887"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "TALHA",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "Financial Monitoring Service of the Republic of Azerbaijan ",
+              "programName": null,
+              "otherInformation": "COMMENTS1: Associated with the Islamic Jihad Union (IJU), also known as the Islamic\nJihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010.  Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-IndividualsDesignation: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.hms.gov.az/frq-content/nov_snk_v1/INTERNATIONAL11.xml"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Federal Financial Monitoring Services Russia WMD List ",
+              "programName": null,
+              "otherInformation": "код санкций ООН: QDi.261 \r\nрезолюция ООН: B. Resolution 1989 (2011) \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://fedsfm.ru/documents/omu-or-terrorists-catalog-all"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "South Africa Targeted Financial Sanctions List",
+              "programName": null,
+              "otherInformation": "ID Number: 674\r\nComments: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "17346012794912944225",
+              "matchScore": 100,
+              "firstName": "ADEM",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "ADEM YILMAZ",
+              "nationality": "Turkey",
+              "type": "SANCTION",
+              "sourceName": "UK FCDO Sanctions List",
+              "programName": null,
+              "otherInformation": "Regime Name: Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Arms embargo|Travel Ban \r\nDesignation Source: UN \r\nLast Update Date: 18/12/2021 \r\nInfo: Associated with the Islamic Jihad Union (IJU), also known as the Islamic Jihad Group (QDe.119). Associated with Fritz Martin Gelowicz (QDi.259). In detention in Germany as of Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 4 Dec. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals. In prison since Sep. 2007. \r\nAsset Freeze: YesArms Embargo: YesTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: No",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.gov.uk/government/publications/the-uk-sanctions-list"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Talha",
+                "ADEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "11/4/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Germany"
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Germany"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "7814056771590227066",
+              "matchScore": 100,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "YILMAZ",
+              "fullName": "Adem YILMAZ",
+              "nationality": "Turkish",
+              "type": "WANTED",
+              "sourceName": "Turkish Terror Wanted List",
+              "programName": "PKK/KCK Terör Örgütü",
+              "otherInformation": "List Type: Grey List\r\nStatus: Wanted",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "1988"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "13846614266682770654",
+              "matchScore": 81,
+              "firstName": "",
+              "middleName": "ERDEM",
+              "lastName": "YILMAZ",
+              "fullName": " ERDEM YILMAZ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "The Gazette Insolvency Notices Individual ",
+              "programName": "Bankruptcy Orders",
+              "otherInformation": "Notice category: Personal Insolvency \r\nEdition: The London Gazette \r\nNotice Id: 3391881 \r\nNotice code: 2503 \r\nIssue number: 62780 \r\nPage number: 17357 \r\nOther Information:  \r\nIn the County Court at Central London \r\nNo 1615 of 2018 \r\nDate of Filing Petition: 18 October 2018 \r\nBankruptcy order date: 28 May 2019 \r\nTime of Bankruptcy Order: 13:01 \r\nWhether Debtor's or Creditor's PetitionCreditor's \r\nName and address of petitioner: \r\nL Cook 11th Floor, Southern House, Wellesley Grove, Croydon, CR0 1XN, telephone: 0208 681 5166 \r\nCapacity of office holder(s): Trustee \r\n28 May 2019 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://m.thegazette.co.uk/notice/3391881"
+              ],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                " ERDEM YILMAZ"
+              ],
+              "otherPossibleDob": [
+                "1/11/1972 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "15671003321518498496",
+              "matchScore": 80,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "YILDIZ",
+              "fullName": "Adem YILDIZ",
+              "nationality": "Turkish",
+              "type": "WANTED",
+              "sourceName": "Turkish Terror Wanted List",
+              "programName": "DHKP/C Terör Örgütü",
+              "otherInformation": "List Type: Grey List\r\nStatus: Wanted",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem YILDIZ"
+              ],
+              "otherPossibleDob": [
+                "1989"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "12179369549104492358",
+              "matchScore": 80,
+              "firstName": "Adem",
+              "middleName": null,
+              "lastName": "Yıldız",
+              "fullName": "Adem Yıldız",
+              "nationality": "Turkish",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "20. Dönem Samsun Milletvekili",
+              "links": [
+                "https://tr.wikipedia.org/wiki/Adem_Yıldız",
+                "https://www.tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=f72877c2-f50e-037b-e050-007f01005610&Id=f72877c2-cb2e-037b-e050-007f01005610"
+              ],
+              "summary": "TBMM 20. DÖNEM MİLLETVEKİLİ \r\nConstituency Area: Samsun \r\nOther Previous Info: TBMM 19. DÖNEM MİLLETVEKİLİ \r\nConstituency Area: Samsun",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Adem Yıldız",
+                "Adem YILDIZ"
+              ],
+              "otherPossibleDob": [
+                "1954"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "8156005336967317297",
+              "matchScore": 80,
+              "firstName": "Yılmaz",
+              "middleName": null,
+              "lastName": "Ateş",
+              "fullName": "Yılmaz Ateş",
+              "nationality": "Turkish",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "23. Dönem Ankara Milletvekili",
+              "links": [
+                "https://tr.wikipedia.org/wiki/Yılmaz_Ateş",
+                "https://www.tbmm.gov.tr/milletvekili/milletvekilidetay?DonemId=f72877c2-f50b-037b-e050-007f01005610&Id=f72877c2-ce7f-037b-e050-007f01005610"
+              ],
+              "summary": "TBMM 23. DÖNEM MİLLETVEKİLİ \r\nConstituency Area: Ankara \r\nOther Previous Info: TBMM 22. DÖNEM MİLLETVEKİLİ \r\nConstituency Area: Ankara \r\n \r\nOther Previous Info: TBMM 20. DÖNEM MİLLETVEKİLİ \r\nConstituency Area: Ankara",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Yılmaz Ateş",
+                "Yılmaz ATEŞ"
+              ],
+              "otherPossibleDob": [
+                "1/2/1953 12:00:00 AM",
+                "1953"
+              ],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "3297603888488280233",
+              "matchScore": 80,
+              "firstName": "Asım",
+              "middleName": null,
+              "lastName": "Yılmaz",
+              "fullName": "Asım Yılmaz",
+              "nationality": "",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "",
+              "links": [
+                "https://tr.wikipedia.org/wiki/Asım_Yılmaz"
+              ],
+              "summary": "",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Asım Yılmaz"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "ADEM YILMAZ"
+    },
+    "errors": []
+  }
+}

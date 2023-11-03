@@ -190,6 +190,8 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * print payload.response
     * print karate.pretty(response)
     Then status <statusCode>
+    * def UPI_appNames = get $.data.upi.advanced.accounts[*].appName
+    * print UPI_appNames
     Then match $ contains any payload.response
 #    * def UPI_ID_TYPE = $.data.upi.advanced.accounts[*].appName
 #    Then match UPI_ID_TYPE contains any [Paytm,PhonePe,Google Pay]
