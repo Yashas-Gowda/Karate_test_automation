@@ -1,0 +1,124 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneNumber": "6281518551",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "details": {
+          "pfBasic": {
+            "summary": {
+              "isEmployed": true,
+              "recentEmployerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
+              "noOfPfAccounts": 1,
+              "dateOfJoining": "2023-08-10",
+              "dateOfExit": null,
+              "matchingPfAccountNumber": "101226863051"
+            },
+            "pfDetails": [
+              {
+                "pfAccountNumber": "101226863051",
+                "name": "K PAVAN KALYAN",
+                "gender": "MALE",
+                "dateOfBirth": "1998-03-14",
+                "nationalIdVerificationStatus": true,
+                "employerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
+                "dateOfJoining": "2023-08-10",
+                "dateOfExit": null,
+                "reasonOfExit": ""
+              }
+            ]
+          },
+          "pfAdvanced": {
+            "summary": {
+              "isEmployed": true,
+              "isNameUnique": null,
+              "isNameExact": null,
+              "isPfFiledLastMonth": null,
+              "hasPfFilingDetails": null,
+              "recentEmployerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
+              "noOfPfAccounts": 1,
+              "dateOfJoining": "2023-08-10",
+              "dateOfExit": null,
+              "matchingPfAccountNumber": "101226863051"
+            },
+            "pfDetails": [
+              {
+                "pfAccountNumber": "101226863051",
+                "name": "K PAVAN KALYAN",
+                "gender": "MALE",
+                "dateOfBirth": "1998-03-14",
+                "nationalIdVerificationStatus": true,
+                "employerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
+                "dateOfJoining": "2023-08-10",
+                "dateOfExit": null,
+                "reasonOfExit": "",
+                "additionalDetails": {
+                  "nationalId": "********8928",
+                  "taxId": "EDXPP5195R",
+                  "email": "pavan85512@gmail.com",
+                  "bankAccountNumber": "125610100047327",
+                  "bankBranchCode": "UBIN0812561",
+                  "bankAddress": "UNION BANK OF INDIA,PETAMITTA",
+                  "pfNomineeName": "K DAMODARAM",
+                  "pfNomineeRelation": "FATHER"
+                }
+              }
+            ],
+            "pfFilingDetails": {
+              "employeePfMatches": [],
+              "employerPfFilingDetails": [
+                {
+                  "currency": "INR",
+                  "totalAmount": "22632490",
+                  "employeeCount": 9461,
+                  "wageMonth": "SEP-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "22138551",
+                  "employeeCount": 9158,
+                  "wageMonth": "AUG-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "21735065",
+                  "employeeCount": 9137,
+                  "wageMonth": "JUL-23"
+                }
+              ]
+            }
+          },
+          "social": null
+        }
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6281518551",
+      "cleansedPhoneNumber": "+916281518551",
+      "referenceId": "UI-a630e773e392735bd47b8b4546409b20ffee0970",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

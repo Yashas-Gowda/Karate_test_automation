@@ -125,6 +125,32 @@ Feature: Testing of DPI  - Verification AML Package scenarios
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_negative          | 200        |
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_default           | 200        |
 
+  Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields when KYC is null <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And headers headers
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
+    # request/response
+    * print payload.request
+    * print payload.response
+    * print karate.pretty(response)
+    Then status <statusCode>
+
+    Then match $ contains payload.response
+    Examples:
+      | Scenario                                                                  | statusCode |
+      | AML_Verification_Package_INDIVIDUAL_kyc_is_null                           | 200        |
+      | AML_Verification_Package_ORGANISATION_kyc_is_null                         | 200        |
+
 
   Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields where type PEP  validation <Scenario>
     Given url requestUrl
