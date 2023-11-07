@@ -20,14 +20,14 @@
         "advanced": {
           "accounts": [
             {
-              "appName": "PhonePe",
-              "nameAtBank": "KRISHAN KUMAR",
-              "upiId": "9910872581@ybl"
-            },
-            {
               "appName": "Paytm",
               "nameAtBank": "Krishan Kumar",
               "upiId": "9910872581@paytm"
+            },
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "KRISHAN KUMAR",
+              "upiId": "9910872581@ybl"
             },
             {
               "appName": "Google Pay",
