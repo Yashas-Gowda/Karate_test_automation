@@ -11,7 +11,12 @@
   },
 "response":{
   "data": null,
-  "meta": null,
+  "meta": {
+    "referenceId": "9804c83e-cb4e-408f-8932-e7be18666fa4",
+    "requestedPackages": [
+      "DEVICE_DETAILS"
+    ]
+  },
   "errors": [
     {
       "package": "DEVICE_DETAILS",

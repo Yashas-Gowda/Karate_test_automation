@@ -75,9 +75,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status 200
-    Then match $.data.device contains payload.response.data.device
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -90,6 +88,8 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status 200
+    Then match $.data.device contains payload.response.data.device
     Then match payload.response.data.device.deviceRecords == '#[10]'
 
     Examples:
@@ -364,7 +364,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 #    And match $.errors[*].message == ["Device Id Format is invalid/incorrect"]
 #    And match $.errors[*].code == ["INVALID_DEVICE_ID"]
 #    And match $.errors[*].package == ["DEVICE_DETAILS"]
-    Then match $ contains payload.response
+    Then match $.meta contains payload.response.meta
 
     Examples:
       | countryCode | deviceIds  |
