@@ -1,0 +1,191 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneNumber": "7503941694",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "details": {
+          "pfBasic": {
+            "summary": {
+              "isEmployed": false,
+              "recentEmployerName": "SECURITY SOLUTIONS - MANPOWER SERVICES",
+              "noOfPfAccounts": 3,
+              "dateOfJoining": "2019-11-01",
+              "dateOfExit": "2021-02-28",
+              "matchingPfAccountNumber": "100704942163"
+            },
+            "pfDetails": [
+              {
+                "pfAccountNumber": "100748082298",
+                "name": "Akshay Sam",
+                "gender": "MALE",
+                "dateOfBirth": "1996-07-08",
+                "nationalIdVerificationStatus": true,
+                "employerName": "COMPETENT SOFTWARE PRIVATE LIMITED",
+                "dateOfJoining": "2016-07-21",
+                "dateOfExit": "2017-04-09",
+                "reasonOfExit": ""
+              },
+              {
+                "pfAccountNumber": "100176582830",
+                "name": "Jitender Sharma",
+                "gender": "MALE",
+                "dateOfBirth": "1984-05-01",
+                "nationalIdVerificationStatus": true,
+                "employerName": "ST.MICHAEL SECURITY & PERSONNEL CONSULTANT PVT LTD",
+                "dateOfJoining": "2001-03-29",
+                "dateOfExit": "2014-04-06",
+                "reasonOfExit": ""
+              },
+              {
+                "pfAccountNumber": "100704942163",
+                "name": "NISHA",
+                "gender": "FEMALE",
+                "dateOfBirth": "1994-12-09",
+                "nationalIdVerificationStatus": true,
+                "employerName": "SECURITY SOLUTIONS - MANPOWER SERVICES",
+                "dateOfJoining": "2019-11-01",
+                "dateOfExit": "2021-02-28",
+                "reasonOfExit": ""
+              }
+            ]
+          },
+          "pfAdvanced": {
+            "summary": {
+              "isEmployed": false,
+              "isNameUnique": null,
+              "isNameExact": null,
+              "isPfFiledLastMonth": null,
+              "hasPfFilingDetails": null,
+              "recentEmployerName": "SECURITY SOLUTIONS - MANPOWER SERVICES",
+              "noOfPfAccounts": 3,
+              "dateOfJoining": "2019-11-01",
+              "dateOfExit": "2021-02-28",
+              "matchingPfAccountNumber": "100704942163"
+            },
+            "pfDetails": [
+              {
+                "pfAccountNumber": "100748082298",
+                "name": "Akshay Sam",
+                "gender": "MALE",
+                "dateOfBirth": "1996-07-08",
+                "nationalIdVerificationStatus": true,
+                "employerName": "COMPETENT SOFTWARE PRIVATE LIMITED",
+                "dateOfJoining": "2016-07-21",
+                "dateOfExit": "2017-04-09",
+                "reasonOfExit": "",
+                "additionalDetails": {
+                  "nationalId": "********2499",
+                  "taxId": "GNGPS7282K",
+                  "email": "",
+                  "bankAccountNumber": "34616585885",
+                  "bankBranchCode": "SBIN0001679",
+                  "bankAddress": "STATE BANK OF INDIA,UTTAM NAGAR",
+                  "pfNomineeName": "VINOD KUMAR",
+                  "pfNomineeRelation": "FATHER"
+                }
+              },
+              {
+                "pfAccountNumber": "100704942163",
+                "name": "NISHA",
+                "gender": "FEMALE",
+                "dateOfBirth": "1994-12-09",
+                "nationalIdVerificationStatus": true,
+                "employerName": "SECURITY SOLUTIONS - MANPOWER SERVICES",
+                "dateOfJoining": "2019-11-01",
+                "dateOfExit": "2021-02-28",
+                "reasonOfExit": "",
+                "additionalDetails": {
+                  "nationalId": "********0158",
+                  "taxId": "BADPN4329M",
+                  "email": "akshaysam005@gmail.com",
+                  "bankAccountNumber": "01442041007560",
+                  "bankBranchCode": "PUNB0145010",
+                  "bankAddress": "PUNJAB NATIONAL BANK,UTTAM NAGAR",
+                  "pfNomineeName": "VINOD KUMAR",
+                  "pfNomineeRelation": "FATHER"
+                }
+              },
+              {
+                "pfAccountNumber": "100176582830",
+                "name": "Jitender Sharma",
+                "gender": "MALE",
+                "dateOfBirth": "1984-05-01",
+                "nationalIdVerificationStatus": true,
+                "employerName": "ST.MICHAEL SECURITY & PERSONNEL CONSULTANT PVT LTD",
+                "dateOfJoining": "2001-03-29",
+                "dateOfExit": "2014-04-06",
+                "reasonOfExit": "",
+                "additionalDetails": {
+                  "nationalId": null,
+                  "taxId": null,
+                  "email": null,
+                  "bankAccountNumber": null,
+                  "bankBranchCode": null,
+                  "bankAddress": null,
+                  "pfNomineeName": null,
+                  "pfNomineeRelation": null
+                }
+              }
+            ],
+            "pfFilingDetails": {
+              "employeePfMatches": [
+              ],
+              "employerPfFilingDetails": [
+                {
+                  "currency": "INR",
+                  "totalAmount": "1018183",
+                  "employeeCount": 310,
+                  "wageMonth": "SEP-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "1039847",
+                  "employeeCount": 323,
+                  "wageMonth": "AUG-23"
+                },
+                {
+                  "currency": "INR",
+                  "totalAmount": "1023136",
+                  "employeeCount": 321,
+                  "wageMonth": "JUL-23"
+                }
+              ]
+            }
+          },
+          "social": null
+        }
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "7503941694",
+      "cleansedPhoneNumber": "+917503941694",
+      "referenceId": "df8ab56b-cce0-46bb-a4a4-39664359d17f",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

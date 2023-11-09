@@ -19,7 +19,8 @@
       "upi": {
         "basic": {
           "isUpiValid": true,
-          "name": "Yashasgowda E M . ."
+          "nameAtBank": "Yashasgowda E M . .",
+          "upiId": "9108510043@paytm"
         },
         "advanced": null
       },
@@ -27,15 +28,17 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "referenceId": "AMS-test-1",
       "inputUpiId": "9108510043@paytm",
       "requestedPackages": [
         "UPI_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

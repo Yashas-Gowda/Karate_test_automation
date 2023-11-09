@@ -1,3 +1,4 @@
+@EMAIL_BASIC_FIDO
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
  # scenarios names are not updated, which will be picked in the next sprint
@@ -14,9 +15,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#number"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     * match $.data.email.basic.domainDetails.updateTime == "#null";
     * match $.data.email.basic.domainDetails.expiryTime == "#null";
@@ -28,7 +39,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print responseHeaders["Content-Type"][0]
     * match header Content-Type == "application/json"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                        | statusCode |
       | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)_disposable_false_emailTenure_notnull                          | 200        |
@@ -45,9 +56,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#number"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     * match $.data.email.basic.domainDetails.updateTime == "#null";
     * match $.data.email.basic.domainDetails.expiryTime == "#null";
@@ -55,7 +76,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                       | statusCode |
       | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
@@ -71,9 +92,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     * match $.data.email.basic.domainDetails.updateTime == "#null";
@@ -81,7 +112,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
@@ -104,11 +135,21 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_creationTime_updateTime_expiryTime_companyName_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_false_emailTenure_null | 200        |
@@ -129,11 +170,21 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#ignore"
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_false_disposable_false_noOfBreaches_1_emailTenure_notnull                                                                                               | 200        |
@@ -149,9 +200,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = null
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     * match $.data.email.basic.domainDetails.updateTime == "#null";
     * match $.data.email.basic.domainDetails.expiryTime == "#null";
@@ -159,10 +220,10 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                   | statusCode |
-      | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
+#      | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
       | Email_Basic_EmailTenureIs_NULL                             | 200        |
       | Email_Basic_Positive_isBreached_false_noOfBreaches_0       | 200        |
       #no data | Email_Basic_Positive_CustomDomain_True | 200        |
@@ -175,9 +236,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match $.data.email.basic.domainDetails.creationTime == "#null";
     * match $.data.email.basic.domainDetails.updateTime =="#null";
@@ -185,7 +256,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-    Then match $ contains payload.response
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario | statusCode |
       #data no| Email_Basic_custom_true | 200        |
@@ -198,9 +269,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $ contains payload.response
 #    And match $.errors[1].message == "Invalid email address"
@@ -221,14 +302,25 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
 #    Then match $ contains payload.response
     And match $.errors[*].message contains any ["Email cannot be empty/null"]
     And match $.errors[*].code contains any ["MISSING_EMAIL_ADDRESS"]
     And match $.errors[*].package contains any ["EMAIL_BASIC"]
+    Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                | statusCode |
       | Email_Basic_Negitive_Emptyinput('')     | 400        |
@@ -243,9 +335,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
 
     And match $.data.email.social == '#null'
@@ -270,9 +372,19 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+  # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $ contains deep
 

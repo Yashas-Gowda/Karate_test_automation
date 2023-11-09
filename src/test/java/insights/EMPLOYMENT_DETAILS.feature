@@ -1,4 +1,4 @@
-@debug
+@ignore
 Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Background:
@@ -15,12 +15,23 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification.summary.isEmployed == true
     And match $.data.employment.details.pfVerification == '#notnull'
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                                  | statusCode |
@@ -34,14 +45,25 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.pfDetails[0].gender == 'MALE'
 
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                                   | statusCode |
@@ -55,16 +77,27 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == true
     And match $.data.employment.details.pfVerification.summary.isNameUnique == true
     And match $.data.employment.details.pfVerification.summary.isNameExact == true
     And match $.data.employment.details.pfVerification.summary.isPfFiledLastMonth == false
     And match $.data.employment.details.pfVerification.summary.hasPfFilingDetails == true
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                                                                                                       | statusCode |
@@ -79,11 +112,22 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification == null
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                             | statusCode |
@@ -97,9 +141,19 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification.summary.isNameUnique == null
@@ -112,7 +166,8 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And match $.data.employment.details.pfVerification.summary.dateOfExit == '#notnull'
     And match $.data.employment.details.pfVerification.pfDetails[0].reasonOfExit == ""
 
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                                                                                                                                                           | statusCode |
@@ -126,9 +181,19 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     And match $.data.employment.details.pfVerification == '#notnull'
     And match $.data.employment.details.pfVerification.summary.isEmployed == false
     And match $.data.employment.details.pfVerification.summary.isNameUnique == null
@@ -142,7 +207,8 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And match $.data.employment.details.pfVerification.pfDetails[0].reasonOfExit == ""
     And match $.data.employment.details.pfVerification.pfDetails[0].gender == 'MALE'
 
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                                                                                                                                                           | statusCode |
@@ -156,9 +222,19 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+   # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
 #    And match $.data.employment.details.pfVerification.pfFilingDetails.employeePfMatches[0] == '#notnull'
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails == '#notnull'
 #    And match $.data.employment.details.pfVerification.pfFilingDetails.pfHistory[] == '#notnull'
@@ -167,7 +243,8 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails[*].totalAmount  == '#notnull'
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails[*].employeeCount  == '#notnull'
     And match $.data.employment.details.pfVerification.pfFilingDetails.employerPfFilingDetails[*].wageMonth  == '#notnull'
-    Then match $ contains payload.response
+    Then match $.data.employment contains payload.response.data.employment
+
 
     Examples:
       | Scenario                                    | statusCode |

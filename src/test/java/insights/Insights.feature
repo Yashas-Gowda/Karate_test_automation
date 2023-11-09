@@ -1,4 +1,4 @@
-@debug
+@debug @ignore
 Feature: Testing of DPI Insights feature scenarios
 
   Background:

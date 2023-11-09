@@ -1,0 +1,32 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "ORGANISATION",
+    "userDetails": {
+      "fullGivenName": "Kim Jong Un"
+    },
+    "recordLimit": 20,
+    "matchThreshold": -1,
+    "packages": [
+      "KYC_AML"
+    ]
+  },
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      }
+    },
+    "meta": {
+      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "Kim Jong Un"
+    },
+    "errors": []
+  }
+}

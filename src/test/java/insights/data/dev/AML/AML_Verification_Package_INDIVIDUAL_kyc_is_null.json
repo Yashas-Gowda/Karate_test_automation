@@ -1,0 +1,41 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "INDIVIDUAL",
+    "userDetails": {
+      "fullGivenName": "Basuki Tjahaja Purnama"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": false,
+            "noOfProfiles": 0,
+            "totalRecords": 0
+          },
+          "records": [
+          ]
+        }
+      }
+    },
+    "meta": {
+      "referenceId": "3eb68c38-a234-434f-bd85-787060616404",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "Basuki Tjahaja Purnama"
+    },
+    "errors": [
+    ]
+  }
+}
