@@ -19,14 +19,16 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-   # Request - Response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.details.pfBasic.summary contains payload.response.data.employment.details.pfBasic.summary
     Then match $.data.employment.details.pfBasic.pfDetails contains only payload.response.data.employment.details.pfBasic.pfDetails
     Then match $.meta contains only payload.response.meta
@@ -51,14 +53,16 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-   # Request - Response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.details contains payload.response.data.employment.details
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
@@ -77,17 +81,19 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+  # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-   # Request - Response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.details.pfAdvanced.summary contains payload.response.data.employment.details.pfAdvanced.summary
     Then match $.data.employment.details.pfAdvanced.pfDetails contains only payload.response.data.employment.details.pfAdvanced.pfDetails
     Then match $.data.employment.details.pfAdvanced.pfFilingDetails.employeePfMatches contains only payload.response.data.employment.details.pfAdvanced.pfFilingDetails.employeePfMatches
@@ -114,14 +120,16 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-# Request - Response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.details contains payload.response.data.employment.details
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
@@ -139,17 +147,19 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+  # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-# Request - Response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then match $.data == null
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors

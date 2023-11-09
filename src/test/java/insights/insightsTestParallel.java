@@ -13,22 +13,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author pthomas3
- */
 public class insightsTestParallel {
-
-//    @BeforeAll
-//    static void beforeAll() {
-//        TestBase.beforeAll();
-//    }
 
 
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("~@ignore","@upi")
+                .tags("~@ignore")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

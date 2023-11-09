@@ -41,17 +41,19 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    # cloud watch traces -start
+     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-    # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match payload.response.data.kyc.aml contains only $.data.kyc.aml
     Then match $.meta contains payload.response.meta
@@ -66,17 +68,19 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    # cloud watch traces -start
+     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-    # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.meta contains payload.response.meta
     Then match payload.response.data.kyc.aml.summary contains only $.data.kyc.aml.summary
@@ -92,18 +96,19 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    # cloud watch traces -start
+     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    # Sanction scaner should not be called in the cloud watch traces
-    * print Cloud_Watch_Traces
-    # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
 
     Then match $ contains payload.response
@@ -132,17 +137,19 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    # cloud watch traces -start
+     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-    # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
 
     Then match $ contains payload.response
@@ -159,17 +166,19 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    # cloud watch traces -start
+     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
-    * print karate.request.headers['x-reference-id']
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
     * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
-    * print Cloud_Watch_Traces
-    # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * def Actual_type = get $.data.kyc.aml.records[*].type
     * print Actual_type
