@@ -4,13 +4,16 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
-  @123
+  @123 @demonov103pm
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid / null / empty phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneNumber = <phoneNumber>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -38,11 +41,13 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | UPI_ADVANCED_NEGATIVE_phonenumber_empty_or_null_input | ""          | 400        | MISSING_PHONE_NUMBER | PhoneNumber cannot be blank/null |
       | UPI_ADVANCED_NEGATIVE_phonenumber_empty_or_null_input | null        | 400        | MISSING_PHONE_NUMBER | PhoneNumber cannot be blank/null |
 
+
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid / null / empty phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneNumber = <phoneNumber>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -71,9 +76,10 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an  null / empty phoneDefaultCountryCode input -> <Scenario> | InputIP -> <phoneDefaultCountryCode>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -103,9 +109,10 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an  null / empty phoneDefaultCountryCode input -> <Scenario> | InputIP -> <phoneDefaultCountryCode>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -134,9 +141,10 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an input is INVALID phoneDefaultCountryCode  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.meta.inputPhoneNumber = "#ignore"
@@ -170,9 +178,10 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 #  https://monnai.atlassian.net/browse/MB-1548
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an input is invalid phoneNumber https://monnai.atlassian.net/browse/MB-1548-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And request payload.request.phoneNumber = <phoneNumber>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.meta.inputPhoneNumber = "#ignore"
@@ -205,8 +214,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -241,8 +251,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input without PAYTM ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -270,8 +281,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input without PHONEPE ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -306,8 +318,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
   @smokeTest
   Scenario Outline: Validate the UPI_ADVANCE package with valid input of Phone only - Phonepe, Paytm ids for phone and make a call to SPY CLOUD PHONE API to fetch 3 Gmail ids, which can form 1 valid Gpay UpiId to stop calling. -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -337,8 +350,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Scenario Outline: Validate the UPI_ADVANCE package with valid input of Phone only - Phonepe, Paytm ids for phone and make a call to SPY CLOUD PHONE API to fetch 3 Gmail ids, which can not form gapy wiyhoutGpayid_with_spycloud_no_email . -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -367,10 +381,12 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | UPI_ADVANCED_POSITIVE_Phone_input_only_&_get_output_wiyhoutGpayid_with_spycloud_no_email | 200        |
 
     #Plase see cloud watch for below scenario, for phone and email input - SPY Cloud should not be called.
+  @demonov10
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input( spycloud not called in cloudwatch)with all 3 appNames like { Paytm,Google Pay,PhonePe} ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -398,8 +414,9 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
      #Plase see cloud watch for below scenario,for only phone input - SPY Cloud should  be called.
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input( spycloud  called in cloudwatch)with all 3 appNames like { Paytm,Google Pay,PhonePe} ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/UPI_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

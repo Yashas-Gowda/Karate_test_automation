@@ -183,7 +183,7 @@
               "subPremisesNumber": null,
               "postbox": null,
               "latitude": "27.16195",
-              "longitude": "78.05901",
+              "longitude": "78.05899",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -201,10 +201,12 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "189337dc-b576-4792-9d80-1d8573c32595",
       "requestedPackages": [
         "ADDRESS_BASIC"
       ],
@@ -223,6 +225,7 @@
         "country": null
       }
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

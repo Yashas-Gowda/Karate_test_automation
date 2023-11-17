@@ -2,15 +2,17 @@
 Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Background:
-
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @second
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where isEmployed is true <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -39,8 +41,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where isEmployed is false | pfDetails[0].gender is 'MALE' <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -71,8 +74,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where isEmployed_isNameUnique_isNameExact_hasPfFilingDetails is true and hasPfFilingDetails is false<Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -106,8 +110,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario where employment response is full null<Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -135,8 +140,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where isNameUnique,isNameExact,isPfFiledLastMonth,hasPfFilingDetails is null | isEmployed is false | dateOfJoining & dateOfExit is not null(2023-02-11)| reasonOfExit:""(empty)<Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -175,8 +181,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where all data-points under additionalDetails is null /pfDetails[0].additionalDetails->(nationalId,taxId,email,bankAccountNumber,bankBranchCode,bankAddress,pfNomineeName,pfNomineeRelation) is null | pfDetails[0] is notnull |pfDetails[0].gender is 'FEMALE' <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -216,8 +223,9 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
 
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Positive scenario where pfFilingDetails is validated <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMPLOYMENT_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

@@ -4,12 +4,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
     # "Monnai to datapartner mapping is not tested/validated while automating, after discussion roopa suggested to take sameena tested DPI test as source of truth
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -56,8 +59,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/consumerElectronics/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/consumerElectronics/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -87,8 +91,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       # fido doen't give {mailru,rambler} gives only {google,yahoo}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/emailProvider/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/emailProvider/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -119,8 +124,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -151,8 +157,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/ecommerce/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -184,8 +191,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     #fido gives socialMedia profiles{facebook,instagram,pinterest,twitter}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/socialMedia/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/socialMedia/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -216,8 +224,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     #fido gives no messaging profiles- always null | registeredMessagingProfiles = 0
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/messaging/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/messaging/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -245,8 +254,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
      #fido gives  professional profiles {linkedin,microsoft,hubspot}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/professional/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/professional/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -276,8 +286,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       #fido gives  professional profiles {spotify,disneyplus}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = entertainment - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/entertainment/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/entertainment/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -308,8 +319,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
  #fido gives no financial profiles- always null | registeredTravelProfiles = 0
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/travel/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/travel/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -337,8 +349,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
      #fido gives no financial profiles-{paypal}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL_FIDO/financial/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO/financial/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -366,8 +379,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario with invalid input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -397,8 +411,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario with null/empty input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerTokens
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -428,8 +443,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -472,8 +488,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @Schema_validation_2
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

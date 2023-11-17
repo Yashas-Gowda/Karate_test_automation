@@ -7,7 +7,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   @smokeTest
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
@@ -39,7 +39,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     #CHECK - Looks same as the above sceanrio
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
@@ -71,7 +71,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
 
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
@@ -105,7 +105,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   @smokeTest
   Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request
@@ -135,7 +135,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
 
   Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IP_address with "High Abuse velocity","recent abuse", "bot status","VPN" -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + env + "/IP_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And request payload.request

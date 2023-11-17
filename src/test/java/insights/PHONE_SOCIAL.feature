@@ -9,7 +9,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -55,7 +55,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -99,7 +99,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -140,7 +140,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -182,7 +182,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -224,7 +224,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -266,7 +266,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -317,7 +317,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for SEON - Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -358,7 +358,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @Schema_validation_2
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for SEON - Schema_validation_2 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"

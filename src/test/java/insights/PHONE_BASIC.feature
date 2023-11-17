@@ -8,7 +8,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @PHONE_INFORMATION @phoneValid @phoneDisposable @no_data_partner
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_INFORMATION positive scenario for Indian region with validation of phoneValid,phoneDisposable - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -39,7 +39,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @smokeTest @PHONE_BASIC @SPAM_CHECK @isSpam  @Eyecon
   Scenario Outline:  DPI PHONE_BASIC_Sub_SPAM_CHECK positive scenario for Indian region with validation of isSpam - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -70,7 +70,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @SIMTYPE @simType @Karza @WDD
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -105,7 +105,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays @portedEvents
   Scenario Outline:  DPI PHONE_BASIC_Sub_PORTED_DETAILS positive scenario for Indian region with validation of ported  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -158,7 +158,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -212,7 +212,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
   Scenario Outline:  DPI PHONE_BASIC_Sub_LAST_DEACTIVATED positive scenario for Indian region with validation of LAST_DEACTIVATED - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/LAST_DEACTIVATED/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/LAST_DEACTIVATED/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -245,7 +245,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @CARRIER_INFORMATION @TMT @currentCarrierCircle @originalCarrierCircle @changeInCarrierRegion
   Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of changeInCarrierRegion - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -278,7 +278,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @CARRIER_INFORMATION @TMT @originalCarrier @localRoutingNumber @mobileCountryCode @mobileNetworkCode @networkName @serviceProfileId
   Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of networkName - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -324,7 +324,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @PHONE_STATUS @WDD @IPQS @TMT @Xconnect @active
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_STATUS positive scenario for Indian region with validation of active - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -371,7 +371,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber, countryCode separately - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -417,7 +417,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of PHONE_BASIC when package name is not specified  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -455,7 +455,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of both PhoneNumber and countrycode togather- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -499,7 +499,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @smokeTest @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -542,7 +542,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -585,7 +585,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -635,7 +635,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -667,7 +667,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -696,7 +696,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -732,7 +732,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"

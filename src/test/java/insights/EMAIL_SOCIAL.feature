@@ -4,12 +4,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - Email_Social_Schema validation,Booking&Spotify&Adobe&Quora_Registered,LinkedIn&Airbnb_Registered,Lazada&Microsoft&Evernote_Registered, wordpress&Gravatar&Twitter&Flipkart_Registered   - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.social.profiles.professional.linkedin.photo = "##string"
@@ -44,8 +47,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.social.summary.ageOnSocial = "##number"
@@ -73,8 +77,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with invalid input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -105,8 +110,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with null/empty/invalid input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -124,7 +130,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.email.social contains payload.response.data.email.social
+    Then match $ contains payload.response
 #    And match $.errors[1].message == "Email cannot be empty/null"
 #    And match $.response.errors[1].message == "Email cannot be empty/null"
 
@@ -138,8 +144,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL validate Summary section - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -191,8 +198,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Scenario Outline:  DPI EMAIL_SOCIAL Test Google_registered, LinkedIn_IsNull,  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -225,8 +233,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -268,8 +277,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
   @Schema_validation_2
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

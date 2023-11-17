@@ -4,28 +4,31 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
-    @smokeTest
+  @smokeTest
   Scenario Outline: Validate SAMPLE DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     # cloud watch traces -start
-      * print karate.request.headers
-      * print karate.response.headers
-      * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-      * def reference_id = karate.request.headers['x-reference-id']
-      * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-      * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
     # ResponseTime
-      * print 'responseTime----->',responseTime
+    * print 'responseTime----->',responseTime
     # Request-response
-      * print 'API Request----->',payload.request
-      * print 'Expected Response---->',payload.response
-      * print 'Actual Response---->',karate.pretty(response)
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndEmailMatched
     * match phoneAndIpAddressMatched != 'NO_INPUT'
@@ -288,8 +291,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios with phonenumber input is validated <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.phoneNumber=<phoneNumber>
     And request payload.request
     When method POST
@@ -320,8 +324,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for phonenumber with Empty/NULL input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.phoneNumber=<phoneNumber>
     And request payload.request
     When method POST
@@ -359,8 +364,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for phoneDefaultCountryCode with invalid input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.phoneDefaultCountryCode="<phoneDefaultCountryCode>"
     And request payload.request
     When method POST
@@ -399,8 +405,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for phoneDefaultCountryCode with EMPTY/NULL input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.phoneDefaultCountryCode=<phoneDefaultCountryCode>
     And request payload.request
     When method POST
@@ -432,8 +439,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for email with EMPTY/NULL input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.email=<email>
     And request payload.request
     When method POST
@@ -465,8 +473,9 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Scenario Outline: Validate DPI IDENTITY_CORRELATION Negative scenarios for IP with EMPTY/NULL input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_CORRELATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.ipAddress=<ipAddress>
     And request payload.request
     When method POST

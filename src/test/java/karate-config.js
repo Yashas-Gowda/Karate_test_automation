@@ -1,15 +1,18 @@
 function() {
 
-    var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
+   // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
+    var env = 'app-us'
+    var source = 'source'
     karate.log('karate.envData system property was:', env);
 
     if (!env) {
-        env = 'dev'; // a custom 'intelligent' default
+        env = 'release'; // a custom 'intelligent' default
     }
 
    var uuid = function(){ return java.util.UUID.randomUUID() + '' }
 
     var config = {
+        source,
         env,
         headers: {
             "x-reference-id": uuid(),
@@ -20,28 +23,56 @@ function() {
 
         }
     };
-    switch (env) {
-        case "rel":
-            config.requestUrl = "https://app-id.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJqRExHXC9pTHBLOWtwQUdNUWZoRUV5VXBwQ3pZMnlKTUN3aXRjXC9sNlB2QlE9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI3ZjY3aGxsNGJtNzdkY3BxcGgxbjAwdDBmdSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL3VwaV9hZHZhbmNlZCB2ZXJpZmljYXRpb25cL2t5Y19hbWwiLCJhdXRoX3RpbWUiOjE2OTk0NjgyMDYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9FdjlYS2hQeVMiLCJleHAiOjE2OTk1NTQ2MDYsImlhdCI6MTY5OTQ2ODIwNiwidmVyc2lvbiI6MiwianRpIjoiNTE5MDJkMWEtMDMxMS00NjBmLTk5ZGUtZDUwOGI0ODE3OTE4IiwiY2xpZW50X2lkIjoiN2Y2N2hsbDRibTc3ZGNwcXBoMW4wMHQwZnUifQ.SOok91sMywJZHfnoZ-u4WgZ03CpuWYZ_A8AVeLXIQmIoUotHhJHjzzwYX2f31gvYffsTA2L6q2Scz2IGSmMwbfN5i9Wemuso8FPwHwC8G4BJpQy4aCK3yEX0iUS8h6XKZ_1NTVF2uPrbOH2jvRf3bCo-KUEdhcmdgYi0n8jr6T7hOcdpHii3LCIV8G1SgN_yu3ZqgJaAD9WeBfrBhR1e4fSp9RXbORMrKzRoIGcdNJbbG5RXXGGFtd331EOJgsuMEMozU9_jP6wdqjImUbQ_9SPwdQoDY1p8dupOyGdPvFL7Vevey7ArSaFnzjZf0FsfOkM_Xf-_dYa5DGL69ixjqw";
-            break;
-        case "dev":
-            config.requestUrl = "https://release.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI1ODM3ZjIzZS1kNGUwLTRiOTktOTU0Ni05OTUyYjYwMDllMmIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfdFhFUlFkZTdGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMmhscDRndTRlYTRrMG9qczhoaHFxc28xZmQiLCJvcmlnaW5fanRpIjoiY2U4Y2EzNDAtNGJjMS00YjhlLTgzZjEtYWVjYTI3Y2JiODliIiwiZXZlbnRfaWQiOiI5NDcwZTdjYi1lYThhLTQ2ZjktOGYzMi0yOGRlODdiYmFhYjkiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk5NTA5MzI1LCJleHAiOjE2OTk1OTU3MjUsImlhdCI6MTY5OTUwOTMyNiwianRpIjoiODU4YmU5NTktMjA0Ni00Mzc2LTljZGQtZTg5YTQ1MDgzMmE1IiwidXNlcm5hbWUiOiI1ODM3ZjIzZS1kNGUwLTRiOTktOTU0Ni05OTUyYjYwMDllMmIifQ.utjUVsnnS0SSzgPEZ4n7sj3-IT6M-CA7FHOTtJXjqoI_zeXJm6KhBkdozfT3I_MD2tRjZin0tY9i4_rEpNFf32OL-z7PXh9T8QJBu4fueWCE4tdoKWgSfsJTkF7VcIX4YnuzAh60jCNMpvLA0n4hXfA7T_JDdFcivgnSuhXtxkXj6FVLmbm2bC5LVK0HuUpCpJ_-Hpf8sI_A91StKxFg-mGqG4apMo-a4TaEmTocvVXMD-YepLwGTRtwGl_IWfsJEBHZg-QlES3MFpIMfdFWEfnf9Du-Gu4P5ApuDpcmpLepI-jXOEg5Zw1m4UFmgkPvARlx-A15kQnds2bGFCeIOQ";
-            break;
-        case "app-us":
-            config.requestUrl = "https://app-us.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJkMUx1U0NPazFjQjliUFp5NVZJSEVScitqS2NoNURYU0FQM3BxN2FnampRPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJmMzRhZWE3Mi1kNjVjLTQ0ZWUtYmFhYi1kM2ZhOWJmNzQ5YTciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV95dlZPeGo0RXkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiIzZjB1Y2YydTlrc3VwbGIyZnVuZzRnc284YyIsIm9yaWdpbl9qdGkiOiI0NTJiY2ZkOC05ZjVkLTQyMDUtYWJkMi1jOWM0N2M0YTQ0ZDUiLCJldmVudF9pZCI6IjNkNmRjYmRmLWVhMGMtNDJmMC1hN2UxLWYzOTcyMTgwYzZmMSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2OTk0Mjg1NzcsImV4cCI6MTY5OTUxNDk3NywiaWF0IjoxNjk5NDI4NTc4LCJqdGkiOiJmNjYwYzQ0NC1iOTE5LTRmZTMtYTI3MS02ZjU0ZDhhY2ZhNGIiLCJ1c2VybmFtZSI6ImYzNGFlYTcyLWQ2NWMtNDRlZS1iYWFiLWQzZmE5YmY3NDlhNyJ9.GcFymcvrIDs7U54PEdQyeTrV468wHHImzno2eNtWacD8pCh13lXAuGshZB2uVEYQ5J9dBeoVw8PmvDpdT2P6ZNDV_oGGTDyuigwb1iPzuHcZZyr03H6pqcjAlaZERjhUFo8WXjRnqZyeggjoYmyAnH4U4k2P6Bde4nUL56potSBGiE5nqD-VzRZnP3moC5EJfSH1YcFs2MwK2z84fH_IcwDZC-BMQDdvCI69Ug785LHYyEnN4vbznS19ifCCHedK4BOaUFea246FE2WASWyy8lPKnkPBtbSz4ofR4pL6p-ukj3ao_Y8Yv84oFFuUqwf3Dy_16woLqlKvYTCk3zv14g";
-            config.headers.id_token ="eyJraWQiOiJlSEk4MGRCVCtRSHVjcUdFMVpqYzBYVFVPcmREZGVNUDJ1WFpuZnZua0pBPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiM1ZUMVluNzI0MkVDOUMtMkx6WWladyIsInN1YiI6ImYzNGFlYTcyLWQ2NWMtNDRlZS1iYWFiLWQzZmE5YmY3NDlhNyIsInJvbGVzIjoiTU9OTkFJX0FETUlOIiwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfeXZWT3hqNEV5IiwiY29nbml0bzp1c2VybmFtZSI6ImYzNGFlYTcyLWQ2NWMtNDRlZS1iYWFiLWQzZmE5YmY3NDlhNyIsImdpdmVuX25hbWUiOiJTaGFpayIsIm9yaWdpbl9qdGkiOiI0NTJiY2ZkOC05ZjVkLTQyMDUtYWJkMi1jOWM0N2M0YTQ0ZDUiLCJhdWQiOiIzZjB1Y2YydTlrc3VwbGIyZnVuZzRnc284YyIsImV2ZW50X2lkIjoiM2Q2ZGNiZGYtZWEwYy00MmYwLWE3ZTEtZjM5NzIxODBjNmYxIiwidGVuYW50TmFtZSI6Ik1PTk5BSSIsInRva2VuX3VzZSI6ImlkIiwiZG9tYWluIjoibW9ubmFpLmNvbSIsImF1dGhfdGltZSI6MTY5OTQyODU3NywidGVuYW50SWQiOiJ0ZW5hbnRfMDFHS0taOEhNSDJGUUhCSEUwOFlITUhKS1oiLCJleHAiOjE2OTk1MTQ5NzcsImlhdCI6MTY5OTQyODU3OCwiZmFtaWx5X25hbWUiOiJNdWplZWIiLCJqdGkiOiI3NzVhZjU1OS01MDIzLTRhYWQtYmFkNC0xNjNmNDk0MmM2NjciLCJlbWFpbCI6InNoYWlrLm11amVlYkBtb25uYWkuY29tIn0.M1ge5Ba2z30nwN_su3n3HEPU87SUgik1TRf6Ol6dT4XUbS1MkVlLziLy2Gr1ClQ7vEiZuU0AQ_qhe5NK3CLD8jMV56f9rFjHRro1DKFrjnFpTe8j8-0LxMi87hIZVqDKFlCIN44vqIcEan8ZLKc-57RlzMO3hOm345LHajB6sTs3LzLZi5XCk31kjyHypHKhnItXeEobMxtS1VJD5lCNPXfqAGEM5UEKobwF1et5wJedKc9Qh1XpkS2bONdCNb6KJx_62OWBVFmpYGz3Fs5LnC6Z7LIzpAwYSfnL0UmH6tQGIgi1nhTxVkAqbt9_Fg626HyRThtL7T8oHhMjkSqkxA";
-            break;
-       case "test":
-             config.requestUrl = "https://test.monnai.com";
-             config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiZGM3YjY4ZTUtYzBiNy00NjhhLTg2NzUtYjFiYWRiN2U0NWFjIiwiZXZlbnRfaWQiOiJmMDA4YTdlZi05ZWYwLTQ1MDctYjcxMy0wOTZkZjM2ZWQwMmEiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk4OTkyNTE2LCJleHAiOjE2OTkwNzg5MTYsImlhdCI6MTY5ODk5MjUxNiwianRpIjoiYzgzNDNlZDItMDg4ZS00ODdjLTgwYjQtNzc4NGY1YzI1ZGQwIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.dJuHovLUCC5QZdzk8JC_K5NZUGOEOmZnaxB0gQNIiJ5-tNnwMaMDHRLoCeuhouTyTvcHZvkRw_1iCjIkiOhysgfgo93gdUYuXCjfkZKlRXIA6hD4kdmeRmFYWQIVid-j6N77gSXMMZfq5pzPwDpZV43MCwjh43oZRgKb8mbPuHMkwVt69pusqUIv6P6H3gUThXydubuzlhIDSJtRWDuYxnzn7euFG1L3TyxoJKiMRcDi6YD-zVfNY4izP7sQWb64jAfg1TN10XGwbIxIp_OvvX1odBQ8J3mx__HQsXR2dMJf5XLYXu_At0VD9nccztZ_xgirRZSrrndloKAaaGilIw";
-             break;
-        default:
-            config.requestUrl = "https://test.monnai.com";
-            config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmI3YzVjNTktNTA1OS00NGJlLTlhOTEtYWE0NmNiNzIxNGExIiwiZXZlbnRfaWQiOiJjOWU1MDJlZS1hMGE4LTQyZTQtYTk4Ni0xMDM5NWNkN2Y5YzgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1ODQyMjE2LCJleHAiOjE2OTU5Mjg2MTYsImlhdCI6MTY5NTg0MjIxNywianRpIjoiYmJmYzRlNzEtMmUzYS00ODA0LWJkMzYtOTVjMDM4ODE5MmQxIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.nS7rUPm98CAyWzOR_w2z-pcn3JP3kLMwNIdL5cJewzjtsamB4obpCFG6KQ2WZU7A58veonBcuPcotwNEYxvO0HQu-HCugsBzrtCpaJiqnxjaAnsQ0B_TdwQFq0mXkQKVfj-eLivc1AZt5XTJ6ey0ZNeylPEwSrq9OKJF6Gu9Nwg_YQo96Bq5pn03PGF0SmX5OLYr_qqn9HPGlv1kkQUdpnxu4W_Ajms7O0V6VLNpEiXF5_AjvffCC-k7wR-oFcdp9JGKD3vk9EX6BxEahbd4DeCf1wCrUTL4d9WLFZnrmkno-OxF9qqjLwd2eI1y_rEWWNTquUkACGgoGUKBEEjTHA";
-            break;
-    }
+     switch (env) {
+            case "dev":
+                config.requestUrl = "https://dev.monnai.com";
+                config.authUrl ="https://dev-auth.monnai.com";
+    //            config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI2NXBtNGQ0bGZ2N2lwaW1nYzk4bHIwcTllYyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL3Bob25lX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2lkZW50aXR5X2NvcnJlbGF0aW9uIGluc2lnaHRzXC9pbmNvbWVfZXN0aW1hdGlvbiBpbnNpZ2h0c1wvbmFtZV9iYXNpYyBpbnNpZ2h0c1wvcGhvbmVfaWRlbnRpdHkgdmVyaWZpY2F0aW9uXC9reWNfY29uc3VtZXIgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyB2ZXJpZmljYXRpb25cL2t5Y19nb3Zlcm5tZW50IGluc2lnaHRzXC9lbXBsb3ltZW50X2RldGFpbHMgaW5zaWdodHNcL3Bob25lX3NvY2lhbCIsImF1dGhfdGltZSI6MTY5OTM0NTkwMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX1NQOFc4bm5zUCIsImV4cCI6MTY5OTQzMjMwMSwiaWF0IjoxNjk5MzQ1OTAxLCJ2ZXJzaW9uIjoyLCJqdGkiOiJlNTU5NDY2OC1mNWM2LTQ2OGYtYjBhZS04Yzc2NzIwYjdmYmUiLCJjbGllbnRfaWQiOiI2NXBtNGQ0bGZ2N2lwaW1nYzk4bHIwcTllYyJ9.KYeqOiN-dW6YomZ4o3mTyfFyFsemgajz7MXY1PpjMwHwTfvA4xa-zp5boFVhnMpHEYXkWtSVCk-E_shwGqvClFrJsQxKBAH9fBlZgYU7SBIsQh-W-u9_P7oSJb5gPs3ATZOWsf-jf_7eAULLoMxPr-flKZzS_bnB1pnfdC3PXcBExVXQYtywKnVgJCJ6LIOcu7SrCDQhPjoBkakLKP8hQHLFYDWCizDWw68-dd_kXcX2TEO2pJMPW4FJpqCRRX5K_k8HN_GTxq5sSeItF9v1AU7rP6s4ERGxylo0_IT72mtoFxQwMXH_GwbYuLAc3wvbh1Hv8SwodgKy55CRgdkiEQ";
+                //            config.headers.id_token = "eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiOGpzMk9oNGtBcjlxbGt6bnk5NV9pZyIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiIzMzA4YTg4Mi03YjVkLTRjYWQtYTkxOC05ZWVjMzQxNzczMzgiLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsInRlbmFudE5hbWUiOiJNT05OQUkiLCJ0b2tlbl91c2UiOiJpZCIsImRvbWFpbiI6Im1vbm5haS5jb20iLCJhdXRoX3RpbWUiOjE2OTkyNjcyMzEsInRlbmFudElkIjoidGVuYW50XzAxR0tLWjhITUgyRlFIQkhFMDhZSE1ISktaIiwiZXhwIjoxNjk5MzUzNjMxLCJpYXQiOjE2OTkyNjcyMzIsImZhbWlseV9uYW1lIjoiR293ZGFyIFMiLCJqdGkiOiIwZjgwMjQ2MS01NzU0LTQyZTYtYWYwNy01MjhkYWIxMmM2MzEiLCJlbWFpbCI6InNhbmpheWFAbW9ubmFpLmNvbSJ9.pSnZgw666MyDhkG2GKG-Odx6_isK8gsOOrodgtpIFHR9TDtZ0_h-AkhLyMekZzqIdke5uCbq5y_1wySHjKtvnBldnQ5Jj1a0aLhBzYnZYEFUAmaWnBu5KyJMIfVSIHOL6b9R3o2_uN7-4-RSSNzUGcXSL1zRZwSdzju7JanrHND5DuNzz3WqBNWe0XznKrTlTSqVhuotEXg2lkTrbf7-KN57cso5IjXdJdAh6dkxvlnVqO1iSkXiifmxvsCKyICEbjWazVaLiYPrhmqsjizNLWG2QFucqrxNNFpcDQHTt1ZMJYP9NPZay6155CJ7rVY0nQVZ8r1bToOaNSiJddkJXQ";
+                break;
+
+            case "release":
+                 config.requestUrl = "https://release.monnai.com";
+                 config.authUrl ="https://release-auth.monnai.com";
+                 break;
+            case "release-m":
+                  config.requestUrl = "https://release.monnai.com";
+                  config.authUrl ="https://release-auth.monnai.com";
+                  break;
+
+            case "test":
+                config.requestUrl = "https://test.monnai.com";
+                config.authUrl ="https://test-auth.monnai.com";
+                break;
+            case "test-m":
+                config.requestUrl = "https://test.monnai.com";
+                config.authUrl ="https://test-auth.monnai.com";
+                break;
+
+            case "app":
+                config.requestUrl = "https://app.monnai.com";
+                config.authUrl ="https://auth.monnai.com";
+                break;
+            case "app-sg":
+                config.requestUrl = "https://app-sg.monnai.com";
+                config.authUrl ="https://auth-sg.monnai.com";
+                break;
+            case "app-id":
+                config.requestUrl = "https://app-id.monnai.com";
+                config.authUrl ="https://auth-sg.monnai.com";
+                break;
+            case "app-us":
+                config.requestUrl = "https://app-us.monnai.com";
+                config.authUrl ="https://auth-us.monnai.com";
+                break;
+
+            default:
+                config.requestUrl = "https://test.monnai.com";
+                config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmI3YzVjNTktNTA1OS00NGJlLTlhOTEtYWE0NmNiNzIxNGExIiwiZXZlbnRfaWQiOiJjOWU1MDJlZS1hMGE4LTQyZTQtYTk4Ni0xMDM5NWNkN2Y5YzgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1ODQyMjE2LCJleHAiOjE2OTU5Mjg2MTYsImlhdCI6MTY5NTg0MjIxNywianRpIjoiYmJmYzRlNzEtMmUzYS00ODA0LWJkMzYtOTVjMDM4ODE5MmQxIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.nS7rUPm98CAyWzOR_w2z-pcn3JP3kLMwNIdL5cJewzjtsamB4obpCFG6KQ2WZU7A58veonBcuPcotwNEYxvO0HQu-HCugsBzrtCpaJiqnxjaAnsQ0B_TdwQFq0mXkQKVfj-eLivc1AZt5XTJ6ey0ZNeylPEwSrq9OKJF6Gu9Nwg_YQo96Bq5pn03PGF0SmX5OLYr_qqn9HPGlv1kkQUdpnxu4W_Ajms7O0V6VLNpEiXF5_AjvffCC-k7wR-oFcdp9JGKD3vk9EX6BxEahbd4DeCf1wCrUTL4d9WLFZnrmkno-OxF9qqjLwd2eI1y_rEWWNTquUkACGgoGUKBEEjTHA";
+                break;
+        }
+//      karate.configure('connectTimeout', 5000);
+//      karate.configure('readTimeout', 5000);
     return config;
+
 }

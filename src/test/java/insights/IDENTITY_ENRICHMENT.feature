@@ -3,12 +3,15 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios for region India - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -43,8 +46,9 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
   @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios for region Brazil - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -75,8 +79,9 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
   @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios for region Indonesia - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -107,8 +112,9 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
           #| TC022            | 200        |
   Scenario Outline:  DPI Identity Enrichment Scenarios for region Indonesia - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -143,8 +149,9 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
   @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios for other Regions (US,MX, TH, PH, MY) - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -178,8 +185,9 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
   @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios for null responses - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
