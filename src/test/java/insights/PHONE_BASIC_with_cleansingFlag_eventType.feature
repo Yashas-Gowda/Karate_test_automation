@@ -8,7 +8,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @phoneNumber
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario Validation for cleansingFlag_false and PhoneNumber added along with +91- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -38,7 +38,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @eventType
   Scenario Outline:  DPI PHONE_BASIC package positive scenario Validation for cleansingFlag_false and eventType { ACCOUNT_CREATION,ACCOUNT_TRANSACTION,ACCOUNT_LOGIN,ACCOUNT_UPDATE,ACCOUNT_DELETE } <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -72,7 +72,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual eventType  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -107,7 +107,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"

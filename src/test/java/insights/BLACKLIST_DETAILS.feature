@@ -3,13 +3,16 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
     @smokeTest @smokeTest
   Scenario Outline: Validate DPI BLACKLIST_DETAILS positive scenario with single valid input where isBlacklisted is No<Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/BLACKLIST_DETAILS/<Scenario>.json")
-    And headers headers
-    And request payload.request
+      And def payload = read("data/" + source + "/BLACKLIST_DETAILS/<Scenario>.json")
+      And headers headers
+      And header Authorization = BearerToken
+      And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
@@ -39,8 +42,9 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
 
   Scenario Outline: Validate DPI BLACKLIST_DETAILS Negative scenario where input is not an Indonesian number <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/BLACKLIST_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/BLACKLIST_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

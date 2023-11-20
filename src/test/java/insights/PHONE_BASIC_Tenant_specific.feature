@@ -10,7 +10,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
     And headers headers
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"

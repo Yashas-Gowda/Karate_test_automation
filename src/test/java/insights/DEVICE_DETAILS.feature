@@ -4,11 +4,14 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   Scenario Outline: Validate DPI DEVICE_DETAILS positive scenario with single valid input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
@@ -36,9 +39,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Positive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple(TWO)_valid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/"+ Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -69,9 +73,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS positive scenario with Multiple valid input(10 devices) - Device_Details_Possitive_Multiple_MAX(10)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple_MAX(10)_valid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -112,9 +117,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Negitive scenario with Multiple valid input(11 devices) - Device_Details_Negitive_Multiple_(MAX+1)_11_valid_input.json - <deviceIds>
     Given url requestUrl
     * def Scenario = 'Device_Details_Negitive_Multiple_(MAX+1)_11_valid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -159,9 +165,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/<Scenario>.json")
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -196,9 +203,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/<Scenario>.json")
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/<Scenario>.json")
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -231,9 +239,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validation of DEVICE_DETAILS Package Positive with at least one valid deviceId attribute in request -Bug-MB 1314 - Device_Details_Positive_atleast_one_valid_input_with invalid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Positive_atleast_one_valid_input_with invalid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -266,9 +275,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with null/empty countryCode inputs - Device_Details_Negative_CountryCode_Empty&null_input.json - <countryCode>
     Given url requestUrl
     * def Scenario = 'Device_Details_Negative_CountryCode_Empty&null_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -300,9 +310,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with Invalid countryCode inputs - Device_Details_Negative_CountryCode_invalid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Negative_CountryCode_invalid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -336,10 +347,11 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with INVALID Device_id & CountryCode inputs - Device_Details_Negative_CountryCode_invalid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Negative_InvalidCountryCode_InvalidDeviceid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.countryCode = <countryCode>
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -375,9 +387,10 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   Scenario Outline: Validate DPI DEVICE_DETAILS Validation of DEVICE_DETAILS Package with INVALID Device_id & CountryCode inputs - Device_Details_Negitive_InvalidDeviceid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Negitive_InvalidDeviceid_input.json'
-    And def payload = read("data/" + env + "/DEVICE_DETAILS/" + Scenario)
+    And def payload = read("data/" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

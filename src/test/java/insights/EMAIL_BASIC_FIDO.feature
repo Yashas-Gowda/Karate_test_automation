@@ -5,12 +5,15 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @second @smokeTest @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#number"
@@ -50,8 +53,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     #rerun if deliverable is null
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#number"
@@ -86,8 +90,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
@@ -123,8 +128,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
@@ -156,8 +162,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
 
@@ -194,8 +201,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
   @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = null
@@ -230,8 +238,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
@@ -264,8 +273,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -297,8 +307,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -320,7 +331,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.errors[*].message contains any ["Email cannot be empty/null"]
     And match $.errors[*].code contains any ["MISSING_EMAIL_ADDRESS"]
     And match $.errors[*].package contains any ["EMAIL_BASIC"]
-    Then match $.data.email.basic contains payload.response.data.email.basic
+    Then match $ contains payload.response
     Examples:
       | Scenario                                | statusCode |
       | Email_Basic_Negitive_Emptyinput('')     | 400        |
@@ -330,8 +341,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -367,8 +379,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
   @Schema_validation_2
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

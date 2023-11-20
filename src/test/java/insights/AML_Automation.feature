@@ -4,13 +4,16 @@ Feature: Testing of DPI  - Verification AML Package scenarios
   Background:
     * configure charset = null
     * path '/api/verification/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
 
-  @smokeTest @smokeTest
+  @smokeTest
   Scenario Outline: Validate DPI AML positive scenarios with all input fields <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -21,6 +24,8 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     * def reference_id = karate.request.headers['x-reference-id']
     * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22"+reference_id+"*22)~context~(timeRange~(delta~21600000)))"
     * print Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
       # request/response
     * print payload.request
     * print payload.response
@@ -36,8 +41,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
 
   Scenario Outline: Validate DPI AML positive scenarios with input fields where there is no record found for input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -63,8 +69,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
 
   Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields where  "noOfProfiles": 472,"totalRecords": 974   <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -91,8 +98,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
 
   Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields where recordLimit,matchThreshold values for max and min from monnai validation <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -130,10 +138,12 @@ Feature: Testing of DPI  - Verification AML Package scenarios
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_negative          | 200        |
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_default           | 200        |
 
+
   Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields when KYC is null <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -161,8 +171,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
 
   Scenario Outline: Validate DPI AML INDIVIDUAL positive scenarios with input fields where type PEP  validation <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/AML/<Scenario>.json")
+    And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -187,7 +198,7 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     * match Actual_type contains Expected_type
 #    * assert Actual_type.contains('<expected_type>')
 #    * match ("<expected_type>") contains any Actual_type
-    Then match payload.response.data.kyc.aml contains only $.data.kyc.aml
+    Then match payload.response.data.kyc.aml contains only deep $.data.kyc.aml
     Then match $.meta contains payload.response.meta
 
 

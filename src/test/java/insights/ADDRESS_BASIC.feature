@@ -4,12 +4,15 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @smokeTest @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-postal code,city,state,country) <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -53,8 +56,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with 'Q' input fields(q-addressLine1 only) input and optional fields keys are missing <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -77,11 +81,13 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     Examples:
       | Scenario                                                    | statusCode |
       | Address_BASIC_positive_AllInputFields_Q_input_Adrline1_only | 200        |
+
   @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with 'Q' input fields(q-addressLine1,2) input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -107,8 +113,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
   @smokeTest
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like postal code) <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -141,8 +148,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like city) <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -175,8 +183,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like state) <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -231,8 +240,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where mandatory field "addressLine1" is missing in request <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -262,8 +272,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     #this same as above sceanrio?? CHECK
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where mandatory field "addressLine1" is with invalid input <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -295,8 +306,9 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+    And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request.address.addressLine1 = <addressLine1>
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
