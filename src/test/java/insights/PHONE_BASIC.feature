@@ -1,15 +1,18 @@
-
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
+#    * def BearerToken = "Bearer eyJraWQiOiJUU2xyaDVMTW03XC9ZYVJCNEdoUnRFQVVIdzNMeWVSV280c1hMeWthU1RKWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmNDliOWM1ZS05YzQ1LTQ4NjAtYTdlMi0wNzBmMmViN2E0ZjkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfMVdiZkJPN3lGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNGpiZGYxNjJiZW40amxwZmFqM3FuNThwdjUiLCJvcmlnaW5fanRpIjoiOWFiOTQ4NzItNWY3ZC00OTZkLWE0YjItZWVkOTM0N2Y4MTBmIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJwaG9uZSBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTcwMDcyMDU0MywiZXhwIjoxNzAwODA2OTQzLCJpYXQiOjE3MDA3MjA1NDQsImp0aSI6IjMwN2YyOWRjLTVlZDgtNGU4ZC04ODFkLWJiYjc1NTc5NjBmNSIsInVzZXJuYW1lIjoiZjQ5YjljNWUtOWM0NS00ODYwLWE3ZTItMDcwZjJlYjdhNGY5In0.E5XjO7rc7g1H5djWPxxUu4J9G39W1Yi3kMKefsBNd2omCjN2g_ArVR0FxT9iIKeOfHIkNTPgrLRnETANoq9u2xnoAoHW0IKzb_gncoFQdEkKgqsADUZKy--1TtpXFGk90r---aMV15ubJvCIBmSpkR14864X2d3DJKLwd2qaGT_x5dMH04BYo3_O-dEEKdrtdi9W7zuqdoGJWkAiBvJ5roMTtc_uCo3BXaRfk7u3MipdgL2dikbn52Qy0uRJFQvLL11VtidXrnw5Pg2VYqtsYT5kzzkqQXC_CKip1JlxR445FZlgncxCbNQgleJxYA6kF_IeYMZXrnwg2LFBKFEnRg"
 
   @PHONE_BASIC @PHONE_INFORMATION @phoneValid @phoneDisposable @no_data_partner
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_INFORMATION positive scenario for Indian region with validation of phoneValid,phoneDisposable - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -41,6 +44,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -72,6 +76,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -107,6 +112,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -156,10 +162,11 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
   @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
-  Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -188,7 +195,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.phoneTenure.min == <phoneTenure_min>
     And match $.data.phone.basic.phoneTenure.max == <phoneTenure_max>
 
-# Asli.ri is not yet onboarded in DPI so indonesia scenarios are not included.
+# INDOSAT sceanrios are automated based on high level understanding as manual sign off was given by Sameena.
 
     Examples:
       | Scenario                                                                                                                             | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
@@ -206,6 +213,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                    | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_called_INDOSAT_Data_partner                                | 200        | "#null"        | "#null"          | 5              | "Above 24 months"         | "#notnull"  | 24              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_IAM_NUMBER_called_INDOSAT_Data_partner                            | 200        | "#null"        | "#null"          | 1              | "Below 3 months"          | "#notnull"  | 0               | 3               |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_TMT_Data_partner                                | 200        | "#null"        | "#null"          | 4              | "Above 12 Months"         | "#notnull"  | 12              | null            |
 
 
@@ -214,6 +222,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/LAST_DEACTIVATED/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -247,6 +256,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -280,6 +290,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -326,6 +337,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -355,16 +367,16 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #
 #  for Other:  Data partner flow => TMT-> X-connect.
     Examples:
-      | Scenario                                                                                            | statusCode | active  |
+      | Scenario                                                                                   | statusCode | active  |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                             | 200        | UNKNOWN |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                                 | 200        | YES     |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes              | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN          | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes     | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN | 200        | UNKNOWN |
 #      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES      | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                  | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called         | 200        | YES     |
      # | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                  | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                         | 200        | YES     |
      #  https://monnai.atlassian.net/browse/MB-2865
      # | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_notreturn_TMT_notreturn_Xconnect_notreturn_null | 200        | YES     |
 
@@ -373,6 +385,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -419,6 +432,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -457,6 +471,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -501,6 +516,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -544,6 +560,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -587,6 +604,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -637,6 +655,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -669,6 +688,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -698,6 +718,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -734,6 +755,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

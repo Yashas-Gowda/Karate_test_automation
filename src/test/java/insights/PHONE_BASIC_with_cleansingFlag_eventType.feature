@@ -3,6 +3,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
 
   @PHONE_BASIC @phoneNumber
@@ -10,6 +12,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
@@ -40,6 +43,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
@@ -74,6 +78,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -109,6 +114,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
