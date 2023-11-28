@@ -3,6 +3,8 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @smokeTest
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
@@ -10,6 +12,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -42,6 +45,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -74,6 +78,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.meta.inputIpAddress = "#ignore"
@@ -108,6 +113,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -138,6 +144,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

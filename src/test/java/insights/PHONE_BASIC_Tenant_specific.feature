@@ -4,6 +4,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
 #    phoneDisposable by default it is always false, but after configuration for particular tenant it will picked from data partner SEON
   @PHONE_BASIC @smoke @CTOS Tenant
@@ -12,6 +14,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

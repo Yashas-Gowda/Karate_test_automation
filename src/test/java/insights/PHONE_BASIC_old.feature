@@ -4,6 +4,8 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
 #  Scenario Outline:  DPI PHONE_BASIC positive scenario with different regions - <Scenario>
 #    Given url requestUrl

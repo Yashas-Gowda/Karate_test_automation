@@ -4,13 +4,15 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
-
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
   @PHONE_SOCIAL @FIDO @smokeTest
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -53,6 +55,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -101,6 +104,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -147,6 +151,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -192,6 +197,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -242,6 +248,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -298,6 +305,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
@@ -339,6 +347,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
