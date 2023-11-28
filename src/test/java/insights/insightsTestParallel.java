@@ -2,25 +2,29 @@ package insights;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import net.masterthought.cucumber.Configuration;
-import net.masterthought.cucumber.ReportBuilder;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class insightsTestParallel {
 
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+        /*Results results = Runner.path("classpath:insights").outputCucumberJson(true)
                 .tags("@demonov103pm")
-                .parallel(5);
+                .parallel(5); */
+
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .parallel(0);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }

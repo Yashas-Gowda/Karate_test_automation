@@ -76,7 +76,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | Scenario              | statusCode |
       | UPI_BASIC_sc_Ne_noUpi | 400        |
 
-  @smokeTest @123
+  @smokeTest
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
     Given url requestUrl
     And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")

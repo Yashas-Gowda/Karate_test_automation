@@ -7,7 +7,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @123 @demonov103pm
+
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an invalid / null / empty phoneNumber input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_ADVANCED/<Scenario>.json")
