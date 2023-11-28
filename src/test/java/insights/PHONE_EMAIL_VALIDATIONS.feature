@@ -3,12 +3,15 @@
    Background:
      * configure charset = null
      * path '/api/insights/'
+     * def authFeature = call read('Auth_Token_Generation.feature')
+     * def BearerToken = authFeature.authToken
 
    @smokeTest
    Scenario Outline:  DPI Identity Enrichment Scenarios of phone validations - <Scenario>
    Given url requestUrl
    And def payload = read("data/" + source + "/PHONE_EMAIL_VALIDATIONS/<Scenario>.json")
    And headers headers
+     And header Authorization = BearerToken
    And request payload.request
    * set payload.response.meta.referenceId = "#ignore"
    When method POST

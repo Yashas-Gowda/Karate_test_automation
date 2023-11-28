@@ -4,6 +4,8 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
+    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def BearerToken = authFeature.authToken
 
     #Note - PHONE_SOCAIL with Seon data partner response is highly unstable so some test cases will fail always.
   @PHONE_SOCIAL @seon
