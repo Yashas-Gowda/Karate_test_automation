@@ -49,6 +49,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
+    * set payload.request.phoneNumber = <phoneNumber>
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     # cloud watch traces -start
