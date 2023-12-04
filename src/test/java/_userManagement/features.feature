@@ -3,7 +3,8 @@ Feature: features API of User Management automation from roles to getting featur
   Background:
     * configure charset = null
 #    * def authFeature = call read('classpath:insights/Auth_Token_Generation.feature')
-    * def BearerToken = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiMTIxODAzZmQtODQxOC00NmJmLTk4MjYtMDYyZWU4ZjQ4YTczIiwiZXZlbnRfaWQiOiIzZjY5ZDUyYy0zYzdlLTQzMzAtYjFhNi1iOTVkNTY0OWZjZjMiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzAxMTc2Njg1LCJleHAiOjE3MDEyNjMwODUsImlhdCI6MTcwMTE3NjY4NiwianRpIjoiMTU2NTIyODItYTU4NS00MGQ2LTkwOWMtMWYwOWZkY2E1NWNkIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.In_mx8_h0NB9jybQQaTcbxravdRjWTcqgTIeHTD55ofXFrdmtyFf3gr5CPDW1Q4GELvINIA5wUhXMo-sCS0iJ5dgM100GGRkQ4cp6ZKV9NMSW_uYsfxFXz4htra9ZMmehdnnE5aShFRh46eZJrL700D5CKa2GYiVZU2wOPUr6Q_j46difm9hJnLlj8rxNX40nor7HYZHln6hbkaaF9JzuclTlRHHib3dvGxbTgusSWxFDD_Ia_c3STOu8W04AxOi7FPuwYcbBLxUmn9RwT2wYPNNZb0RBC3sz8B1h6TFSkjHldrijDvfGxg5Alnw_3xo3cXHKp0vEq-FZnF-8q-EDA"
+    * def BearerToken = "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI1ODM3ZjIzZS1kNGUwLTRiOTktOTU0Ni05OTUyYjYwMDllMmIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfdFhFUlFkZTdGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMmhscDRndTRlYTRrMG9qczhoaHFxc28xZmQiLCJvcmlnaW5fanRpIjoiZWEzNTM1ZDAtZDg3NS00NzgxLThlMTQtMDI2OGMzMzgyODA1IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJwaG9uZSBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTcwMTI0NzQyNiwiZXhwIjoxNzAxMzMzODI2LCJpYXQiOjE3MDEyNDc0MjcsImp0aSI6ImI3NTNmN2QwLWMyNDMtNGM3OC05YWI4LThjOTUxZmRmNTAxYiIsInVzZXJuYW1lIjoiNTgzN2YyM2UtZDRlMC00Yjk5LTk1NDYtOTk1MmI2MDA5ZTJiIn0.RAfwRnO0tSZtlES2n4NuQdEF3OdcQG_nhEK0inuwIlS3TGfN724oTd59FKv4l2OgWWAMW6gmUWL9pOmSwNNpnzFhNovmOcJiWyLmWU62pQtvtmSImrfkxYe7RtKn8UBxbVNDe_wFkzJ9dEYyvLa-kI_S2Hw5snxze_roLH6MG0ahWEGlVMJGVVvUWcbocknEvtUWRS942WYNMS9yh76oqHziHV6Eje1VazrASlc3sRjw8SqqQ7X41uoxRORq8ZBIiZE5SEIOHE-n2g2_7vCpJ4qtFYYkMaiDk1Ga4OwzUjYPK3FuRd1qQ8CwkKilcfhp_sOSdZ-cyk7-2xrVk0d3sw"
+
 
   Scenario:GET ROLES of the tenants by tenant_id
     * def umUrl = requestUrl + '/api/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ/roles'
@@ -28,7 +29,7 @@ Feature: features API of User Management automation from roles to getting featur
     * print all_features_list
 
   Scenario:GET FEATURES of the tenants by tenant_id
-    * def umUrl = requestUrl + '/api/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ/features'
+    * def umUrl = requestUrl + '/api/tenants/01GFJCPPHBAWE6SBY28VGJV84Y/features'
     Given url umUrl
     And header Content-Typ = 'application/json'
     And header Authorization = BearerToken
@@ -42,7 +43,7 @@ Feature: features API of User Management automation from roles to getting featur
 
 
   Scenario:PUT FEATURES of the tenants by tenant_id
-    * def umUrl = requestUrl + '/api/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ/features'
+    * def umUrl = requestUrl + '/api/tenants/01GFJCPPHBAWE6SBY28VGJV84Y/features'
     Given url umUrl
     And header Content-Type = 'application/json'
     And header Authorization = BearerToken
@@ -50,17 +51,19 @@ Feature: features API of User Management automation from roles to getting featur
 """
   {
   "featureIds":[
-  "feature_01GKKS7GTG3PD0DJ49VT1DWAWP",
   "feature_01GKKS7GTG4PJ7QF7M34YW0WN2",
-  "feature_01GKKS7GTGESNH9FM8T3N4N1A6",
   "feature_01GKKS7GTGFBXBDK8PTNJB43QA",
   "feature_01GKKS7GTGK7V4QC3QTCMSV58R",
   "feature_01GKKS7GTGP3J7BFEK278TFEB8",
   "feature_01GKKS7GTGR7WTXZXXPGREHY92",
   "feature_01GKKS7GTGVJNG3WN9BH6GVK56",
   "feature_01GKKS7GTGXXMFEAHSP6XSMH52",
-  "feature_01GTKJXHFB0BFGN01X70HTCHYV"
-  ]
+  "feature_01GSYH4B4X2QMDPS5E03SZVE62",
+  "feature_01H07GA45JR7M55M64MJXTBNNE",
+  "feature_01HFY9H4R35GPGZ897HF45GEN0",
+  "feature_01HFY9SPPFNB3XW0WSKZ4E077J",
+  "feature_01HG0MR7S8HZB2YG588E18WXXK"
+]
   }
 """
     And request requestPayload

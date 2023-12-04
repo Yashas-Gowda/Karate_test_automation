@@ -1,0 +1,55 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "916380803145",
+    "email": "ashupgdim@gmail.com",
+    "upiApplicationName": "PRIMARY",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "Slice",
+              "nameAtBank": "SANGEETHRAJAN R",
+              "upiId": "sangeethrajan@sliceaxis",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "916380803145",
+      "cleansedPhoneNumber": "+916380803145",
+      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "inputEmail": "ashupgdim@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}
