@@ -413,7 +413,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
-    And header Authorization = BearerTokens
+    And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST

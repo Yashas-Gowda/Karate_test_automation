@@ -1,0 +1,33 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "INCOME_ESTIMATION"
+    ],
+    "id": "3175031407830020",
+    "idType":"",
+    "phoneNumber": "6285310060783",
+    "phoneDefaultCountryCode": "ID"
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "6285310060783",
+      "cleansedPhoneNumber": "+6285310060783",
+      "referenceId": "UI-419b2d26d4d935284712ad1b0ffb4f732444ab53",
+      "inputId": "3175031407830020",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ]
+    },
+    "errors": [
+      {
+        "package": "INCOME_ESTIMATION",
+        "message": "Id type is missing",
+        "code": "MISSING_ID_TYPE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

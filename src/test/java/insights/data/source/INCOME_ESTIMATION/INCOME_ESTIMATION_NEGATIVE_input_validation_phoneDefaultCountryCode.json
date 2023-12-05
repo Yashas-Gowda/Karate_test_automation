@@ -1,0 +1,14 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "id": "3175031407830020",
+    "idType": "NIK",
+    "phoneNumber": "6285310060783",
+    "phoneDefaultCountryCode": ""
+  } ,
+  "response":
+}
