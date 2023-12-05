@@ -24,9 +24,11 @@ public class insightsTestParallel {
                 .parallel(5); */
 
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .parallel(0);
+                .tags("~@ignore")
+                .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+
     }
 
     public static void generateReport(String karateOutputPath) {

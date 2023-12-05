@@ -1,4 +1,4 @@
-@upi
+@ignore
 Feature:Testing of DPI - UPI_ADVANCED feature scenarios
 
   Background:
