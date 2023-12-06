@@ -19,10 +19,9 @@ Feature: INCOME_ESTIMATION - Digiscore - Salary Handle Data Partner for INDONESI
 	"packages": [
 		"INCOME_ESTIMATION"
 	],
-
-	"id": "6281293769290",
-	"idType": "NIK",
-	"phoneNumber": "+628129376929",
+	"id": "1401011402730001",
+	"idType":"NIK",
+	"phoneNumber": "6281277803808",
 	"phoneDefaultCountryCode": "ID"
 }
     """
