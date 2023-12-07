@@ -1,4 +1,4 @@
-Feature: PHONE_BASIC PHONE_STATUS SUBPACKAGE indosat_active_phoneBasic Data Partner automation via DPI DEX call
+Feature: PHONE_BASIC PHONE_STATUS SUBPACKAGE IPQS_MX_active_phoneBasic Data Partner automation via DPI DEX call
 
   Background:
     * configure charset = null
@@ -6,22 +6,23 @@ Feature: PHONE_BASIC PHONE_STATUS SUBPACKAGE indosat_active_phoneBasic Data Part
     * def BearerToken = authFeature.authToken
 
 
-  Scenario:PHONE_BASIC PHONE_STATUS SUBPACKAGE indosat_active_phoneBasic Data Partner automation via DPI DEX call
-    * def dexUrl = requestUrl + '/api/exchange/01H5SHKJWTEASSH4Z0GQDGX6Y9'
+  Scenario:PHONE_BASIC PHONE_STATUS SUBPACKAGE IPQS_MX_active_phoneBasic Data Partner automation via DPI DEX call
+    * def dexUrl = requestUrl + '/api/exchange/01H9N0HYX0XVN6TD3PPQBVEXD6'
     Given url dexUrl
     And header Content-Typ = 'application/json'
     And header Authorization = BearerToken
     And def requestPayload =
     """
-  {
- "phoneNumber":"6281327434948",
-  "phoneDefaultCountryCode": "ID",
-	"eventType": "ACCOUNT_CREATION",
-	"cleansingFlag": true,
-	"packages": [
-		"PHONE_BASIC"
-	]
-}
+   {
+    "phoneNumber":"6289676719319",
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  }
     """
     And request requestPayload
     When method POST
