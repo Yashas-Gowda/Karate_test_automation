@@ -7,7 +7,7 @@ Feature: GET TENANT CUSTOM CONFIG
 
 
   Scenario: FILTER_PARTNER_CURL automation
-    * def AUrl = 'https://release.monnai.com/api/registry/tenants/tenant_01HD0VFTJRE5C4VWB6CPWMPGWF'
+    * def AUrl = requestUrl + '/api/registry/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ'
     Given url AUrl
     And header Content-Type = 'application/json'
     And header Authorization = BearerToken
