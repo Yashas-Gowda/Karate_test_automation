@@ -1,12 +1,12 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'test'
+    var env = 'release-a'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
     if (!env) {
-        env = 'release'; // a custom 'intelligent' default
+        env = 'release-m'; // a custom 'intelligent' default
     }
 
    var uuid = function(){ return java.util.UUID.randomUUID() + '' }
@@ -31,7 +31,7 @@ function() {
                 //            config.headers.id_token = "eyJraWQiOiJCN2NiMHRuNFF2M3ZHOUxPcXV2RXhEZysxb0F3SHVZUjdDQmdIU1ZBOUZZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiOGpzMk9oNGtBcjlxbGt6bnk5NV9pZyIsInN1YiI6IjUwODI0MmU1LTZiMTYtNGY5Ni1hZTQ1LTVlMzU2ZjgwMjgxZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJyb2xlcyI6Ik1PTk5BSV9BRE1JTiIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJjb2duaXRvOnVzZXJuYW1lIjoiNTA4MjQyZTUtNmIxNi00Zjk2LWFlNDUtNWUzNTZmODAyODFlIiwiZ2l2ZW5fbmFtZSI6IlNhbmpheSIsIm9yaWdpbl9qdGkiOiIzMzA4YTg4Mi03YjVkLTRjYWQtYTkxOC05ZWVjMzQxNzczMzgiLCJhdWQiOiI1cDd1a25oZ2EwamZvYWhpOThsMDZpYzhhbSIsInRlbmFudE5hbWUiOiJNT05OQUkiLCJ0b2tlbl91c2UiOiJpZCIsImRvbWFpbiI6Im1vbm5haS5jb20iLCJhdXRoX3RpbWUiOjE2OTkyNjcyMzEsInRlbmFudElkIjoidGVuYW50XzAxR0tLWjhITUgyRlFIQkhFMDhZSE1ISktaIiwiZXhwIjoxNjk5MzUzNjMxLCJpYXQiOjE2OTkyNjcyMzIsImZhbWlseV9uYW1lIjoiR293ZGFyIFMiLCJqdGkiOiIwZjgwMjQ2MS01NzU0LTQyZTYtYWYwNy01MjhkYWIxMmM2MzEiLCJlbWFpbCI6InNhbmpheWFAbW9ubmFpLmNvbSJ9.pSnZgw666MyDhkG2GKG-Odx6_isK8gsOOrodgtpIFHR9TDtZ0_h-AkhLyMekZzqIdke5uCbq5y_1wySHjKtvnBldnQ5Jj1a0aLhBzYnZYEFUAmaWnBu5KyJMIfVSIHOL6b9R3o2_uN7-4-RSSNzUGcXSL1zRZwSdzju7JanrHND5DuNzz3WqBNWe0XznKrTlTSqVhuotEXg2lkTrbf7-KN57cso5IjXdJdAh6dkxvlnVqO1iSkXiifmxvsCKyICEbjWazVaLiYPrhmqsjizNLWG2QFucqrxNNFpcDQHTt1ZMJYP9NPZay6155CJ7rVY0nQVZ8r1bToOaNSiJddkJXQ";
                 break;
 
-            case "release":
+            case "release-a":
                  config.requestUrl = "https://release.monnai.com";
                  config.authUrl ="https://release-auth.monnai.com";
                  break;
@@ -40,7 +40,7 @@ function() {
                   config.authUrl ="https://release-auth.monnai.com";
                   break;
 
-            case "test":
+            case "test-a":
                 config.requestUrl = "https://test.monnai.com";
                 config.authUrl ="https://test-auth.monnai.com";
                 break;

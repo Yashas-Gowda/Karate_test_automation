@@ -1,4 +1,4 @@
-Feature: INCOME_ESTIMATION - Digiscore - Salary Handle Data Partner for INDONESIA region automation via DPI DEX call
+Feature: PHONE_BASIC PHONE_STATUS SUBPACKAGE Xconnect_active_phoneBasic Data Partner automation via DPI DEX call
 
   Background:
     * configure charset = null
@@ -6,23 +6,21 @@ Feature: INCOME_ESTIMATION - Digiscore - Salary Handle Data Partner for INDONESI
     * def BearerToken = authFeature.authToken
 
 
-  Scenario: INCOME_ESTIMATION MOBILE WALLA Data Partner automation via DPI DEX call
-    * def dexUrl = requestUrl + '/api/exchange/01HEADGYMB7XYDFMWQG9RT2A40'
+  Scenario:PHONE_BASIC PHONE_STATUS SUBPACKAGE Xconnect_active_phoneBasic Data Partner automation via DPI DEX call
+    * def dexUrl = requestUrl + '/api/exchange/01H080GAQ57DJ58CF5R3BYHKDN'
     Given url dexUrl
     And header Content-Typ = 'application/json'
     And header Authorization = BearerToken
     And def requestPayload =
     """
-    {
+  {
+"phoneNumber":"6285733407859",
+  "phoneDefaultCountryCode": "ID",
 	"eventType": "ACCOUNT_CREATION",
 	"cleansingFlag": true,
 	"packages": [
-		"INCOME_ESTIMATION"
-	],
-	"id": "1401011402730001",
-	"idType":"NIK",
-	"phoneNumber": "6281277803808",
-	"phoneDefaultCountryCode": "ID"
+		"PHONE_BASIC"
+	]
 }
     """
     And request requestPayload
@@ -32,5 +30,6 @@ Feature: INCOME_ESTIMATION - Digiscore - Salary Handle Data Partner for INDONESI
     * print dpResponse
     * match dpResponse.source == "partner"
     * match dpResponse.status == 200
-    * print dpResponse.response.device_list
+    * print 'status-->', dpResponse.response.status
+
 

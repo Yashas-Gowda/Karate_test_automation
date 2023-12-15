@@ -71,7 +71,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_India_isSpam_false          | 200        | false  |
       | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_OtherCountry_UK_isSpam_null | 200        | null   |
 
-  @PHONE_BASIC @SIMTYPE @simType @Karza @WDD
+  @PHONE_BASIC @SIMTYPE @simType @Karza @WDD @INDOSAT
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
@@ -98,13 +98,19 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.simType == <simType>
 
     Examples:
-      | Scenario                                             | statusCode | simType    |
-      | PHONE_BASIC_Sub_SIMTYPE_Karza_India_simType_PREPAID  | 200        | "PREPAID"  |
-      | PHONE_BASIC_Sub_SIMTYPE_Karza_WDD_India_simType_null | 200        | null       |
-      | PHONE_BASIC_Sub_SIMTYPE_Karza_India_simType_POSTPAID | 200        | "POSTPAID" |
+      | Scenario                                                      | statusCode | simType    |
+      | PHONE_BASIC_Sub_SIMTYPE_Karza_India_simType_PREPAID           | 200        | "PREPAID"  |
+      | PHONE_BASIC_Sub_SIMTYPE_Karza_WDD_India_simType_null          | 200        | null       |
+      | PHONE_BASIC_Sub_SIMTYPE_Karza_India_simType_POSTPAID          | 200        | "POSTPAID" |
 
-      | PHONE_BASIC_Sub_SIMTYPE_WDD_Brazil_simType_POSTPAID  | 200        | "POSTPAID" |
-      | PHONE_BASIC_Sub_SIMTYPE_WDD_Brazil_simType_PREPAID   | 200        | "PREPAID"  |
+      | PHONE_BASIC_Sub_SIMTYPE_WDD_Brazil_simType_POSTPAID           | 200        | "POSTPAID" |
+      | PHONE_BASIC_Sub_SIMTYPE_WDD_Brazil_simType_PREPAID            | 200        | "PREPAID"  |
+
+      | PHONE_BASIC_Sub_SIMTYPE_ID_INDOSAT_NUMBER_simType_POSTPAID    | 200        | "POSTPAID" |
+      | PHONE_BASIC_Sub_SIMTYPE_ID_INDOSAT_NUMBER_simType_PREPAID     | 200        | "PREPAID"  |
+
+      | PHONE_BASIC_Sub_SIMTYPE_ID_NON_INDOSAT_NUMBER_simType_null    | 200        | null       |
+      | PHONE_BASIC_Sub_SIMTYPE_NON_ID_NON_BR__US_NUMBER_simType_null | 200        | null       |
 
 
   @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays @portedEvents
@@ -212,6 +218,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned             | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                    | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
+
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_called_INDOSAT_Data_partner                                | 200        | "#null"        | "#null"          | 5              | "Above 24 months"         | "#notnull"  | 24              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_IAM_NUMBER_called_INDOSAT_Data_partner                            | 200        | "#null"        | "#null"          | 1              | "Below 3 months"          | "#notnull"  | 0               | 3               |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_TMT_Data_partner                                | 200        | "#null"        | "#null"          | 4              | "Above 12 Months"         | "#notnull"  | 12              | null            |
@@ -363,22 +370,36 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #
 #  for MX : Data partner flow => IPQS→ TMT-> X-connect.
 #
-#  for ID : Data partner flow => Indosat→ TMT-> X-connect.
+#  for ID : Data partner flow => Indosat number then => INDOSAT DP→ TMT-> X-connect.
+#                              => NON_Indosat number then => TMT-> X-connect.
 #
 #  for Other:  Data partner flow => TMT-> X-connect.
+
     Examples:
-      | Scenario                                                                                   | statusCode | active  |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_UNKNOWN                                             | 200        | UNKNOWN |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_yes                                                 | 200        | YES     |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_Xconnect_US_active_no      | 200        | NO      |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes     | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN | 200        | UNKNOWN |
-#      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_YES      | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called         | 200        | YES     |
-     # | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called             | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                         | 200        | YES     |
+      | Scenario                                                                                                 | statusCode | active  |
+
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes_TC_68             | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC69_TC70     | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_71 | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_YES_Xconnect_active_not_called_TC_72                     | 200        | YES     |
+
+      | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_67                    | 200        | UNKNOWN |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                       | 200        | YES     |
+
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_YES_TC74                              | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC75                               | 200        | NO      |
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC78                               | 200        | NO      |
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_NON_INDOSAT_PhoneNumber_returns_active_YES_TC76                          | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_NON_INDOSAT_PhoneNumber_TMT_UNKNOWN_XConnect_returns_active_YES_TC77     | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC75                               | 200        | NO      |
+
+
+
      #  https://monnai.atlassian.net/browse/MB-2865
      # | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_notreturn_TMT_notreturn_Xconnect_notreturn_null | 200        | YES     |
+
 
   @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber, countryCode separately - <Scenario>

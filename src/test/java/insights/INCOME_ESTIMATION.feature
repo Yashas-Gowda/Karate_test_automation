@@ -38,21 +38,18 @@ Feature: INCOME_ESTIMATION Package full Automation
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_2500000_3500000   | 200        |
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_3500000_4500000   | 200        |
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_4500000_5500000   | 200        |
-   #data not found   | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_5500000_7500000   | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_5500000_7500000   | 200        |
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_7500000_10000000  | 200        |
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_10000000_12500000 | 200        |
-      #data not found   | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_7500000_15000000   | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_12500000_15000000 | 200        |
       | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_15000000_17500000 | 200        |
-#data not found
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_17500000_20000000 | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_20000000_22500000 | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_22500000_25000000 | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_25000000_30000000 | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_30000000_17500000 | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_30000000_40000000  | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_17500000_20000000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_20000000_25000000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_25000000_30000000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_30000000_40000000 | 200        |
 #      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_40000000_50000000  | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_50000000_75000000  | 200        |
-#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_75000000_100000000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_50000000_75000000 | 200        |
+#      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_750000000_100000000 | 200        |
 #      | INCOME_ESTIMATION_POSITIVE_input_phoneNumber_NIK_output_salaryRange_100000000_null     | 200        |
 
   Scenario Outline: Validation of INCOME_ESTIMATION Positive scenario for valid phoneNumber & NIK id as input where are data partner doesn't return data  -> <Scenario> |
