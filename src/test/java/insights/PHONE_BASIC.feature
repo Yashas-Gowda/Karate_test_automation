@@ -376,7 +376,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #  for Other:  Data partner flow => TMT-> X-connect.
 
     Examples:
-      | Scenario                                                                                                 | statusCode | active  |
+      | Scenario                                                           | statusCode | active |
 
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes_TC_68             | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC69_TC70     | 200        | UNKNOWN |
@@ -386,7 +386,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_67                    | 200        | UNKNOWN |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
-      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                       | 200        | YES     |
+
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES | 200        | YES    |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_NO  | 200        | NO     |
 
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_YES_TC74                              | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC75                               | 200        | NO      |
