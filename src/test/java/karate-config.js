@@ -1,12 +1,12 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'release-a'
+    var env = 'test-m'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
     if (!env) {
-        env = 'release-m'; // a custom 'intelligent' default
+        env = 'release-a'; // a custom 'intelligent' default
     }
 
    var uuid = function(){ return java.util.UUID.randomUUID() + '' }
@@ -39,32 +39,37 @@ function() {
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl ="https://release-auth.monnai.com";
                   break;
-
             case "test-a":
-                config.requestUrl = "https://test.monnai.com";
-                config.authUrl ="https://test-auth.monnai.com";
-                break;
-            case "test-m":
-                config.requestUrl = "https://test.monnai.com";
-                config.authUrl ="https://test-auth.monnai.com";
-                break;
+                 config.requestUrl = "https://test.monnai.com";
+                 config.authUrl ="https://test-auth.monnai.com";
+                 break;
+            case "test-a":
+                 config.requestUrl = "https://test.monnai.com";
+                 config.authUrl ="https://test-auth.monnai.com";
+                 break;
 
-            case "app":
-                config.requestUrl = "https://app.monnai.com";
-                config.authUrl ="https://auth.monnai.com";
-                break;
-            case "app-sg":
-                config.requestUrl = "https://app-sg.monnai.com";
-                config.authUrl ="https://auth-sg.monnai.com";
-                break;
-            case "app-id":
-                config.requestUrl = "https://app-id.monnai.com";
-                config.authUrl ="https://auth-sg.monnai.com";
-                break;
-            case "app-us":
-                config.requestUrl = "https://app-us.monnai.com";
-                config.authUrl ="https://auth-us.monnai.com";
-                break;
+            case "test-m":
+                 config.requestUrl = "https://test.monnai.com";
+                 config.authUrl ="https://test-auth.monnai.com";
+                 break;
+
+// 14-dec-2023 -> Disabled Production regression.
+//            case "app":
+//                config.requestUrl = "https://app.monnai.com";
+//                config.authUrl ="https://auth.monnai.com";
+//                break;
+//            case "app-sg":
+//                config.requestUrl = "https://app-sg.monnai.com";
+//                config.authUrl ="https://auth-sg.monnai.com";
+//                break;
+//            case "app-id":
+//                config.requestUrl = "https://app-id.monnai.com";
+//                config.authUrl ="https://auth-sg.monnai.com";
+//                break;
+//            case "app-us":
+//                config.requestUrl = "https://app-us.monnai.com";
+//                config.authUrl ="https://auth-us.monnai.com";
+//                break;
 
             default:
                 config.requestUrl = "https://test.monnai.com";
