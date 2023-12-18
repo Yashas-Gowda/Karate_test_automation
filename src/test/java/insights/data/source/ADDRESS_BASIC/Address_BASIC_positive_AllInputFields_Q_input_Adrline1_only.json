@@ -15,7 +15,7 @@
       "addressLine8": ""
     }
   },
-  "response": {
+  "response":{
     "data": {
       "phone": null,
       "email": null,
@@ -65,7 +65,7 @@
               "district": null
             },
             {
-              "cleansedAddress": "Jalan Tajmahal, Serang Kota 42116, Indonesia",
+              "cleansedAddress": "Jalan Tajmahal, Serang Kel., Serang, Serang Kota, 42116, Indonesia",
               "city": "Serang Kota",
               "state": null,
               "postalCode": "42116",
@@ -203,10 +203,11 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "189337dc-b576-4792-9d80-1d8573c32595",
+      "referenceId": "841195df-a6b2-4ed0-a9e8-78d21ed7a7e5",
       "requestedPackages": [
         "ADDRESS_BASIC"
       ],

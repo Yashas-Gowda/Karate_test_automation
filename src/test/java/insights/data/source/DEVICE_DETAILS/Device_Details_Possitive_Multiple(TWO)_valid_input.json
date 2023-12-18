@@ -22,12 +22,12 @@
           {
             "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "M2101K7AI"
+              "type": null,
+              "manufacturer": null,
+              "model": null
             },
             "location": {
               "dayLocation": {
@@ -56,7 +56,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -92,10 +92,13 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "referenceId": "74095a82-6d5d-4b8b-9be7-76b88dc18963",
       "inputDeviceIds": [
         "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
         "1db61125-297f-4544-abad-eae8a56ecd90"
@@ -104,6 +107,7 @@
         "DEVICE_DETAILS"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

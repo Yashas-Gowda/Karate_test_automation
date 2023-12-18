@@ -22,7 +22,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -54,43 +54,9 @@
             }
           },
           {
-            "deviceId": "880ff4be-1bcb-453c-a823-5a35c8cd9642",
-            "country": "IN",
-            "lastModified": "2023-07-29",
-            "deviceDetails": {
-              "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Realme",
-              "model": "RMX2185"
-            },
-            "location": {
-              "dayLocation": {
-                "latitude": 24.10752296447754,
-                "longitude": 74.80436325073242,
-                "city": "Mandsaur",
-                "state": "RJ",
-                "zipCode": "312623"
-              },
-              "nightLocation": {
-                "latitude": 24.10752296447754,
-                "longitude": 74.80436325073242,
-                "city": "Mandsaur",
-                "state": "RJ",
-                "zipCode": "312623"
-              },
-              "mostSeenLocation": {
-                "latitude": 24.10752296447754,
-                "longitude": 74.80436325073242,
-                "city": "Mandsaur",
-                "state": "RJ",
-                "zipCode": "312623"
-              }
-            }
-          },
-          {
             "deviceId": "e84d8f43-d986-45bc-a529-ed9d494dac01",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": null,
@@ -124,7 +90,7 @@
           {
             "deviceId": "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -158,7 +124,7 @@
           {
             "deviceId": "bc42981d-6231-4834-a076-83a83478dbe8",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -192,7 +158,7 @@
           {
             "deviceId": "702f643d-8c6f-4150-8d6a-6851ab58be09",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -226,7 +192,7 @@
           {
             "deviceId": "de2aa48d-7654-46b3-957d-11bb1b206c59",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -260,7 +226,7 @@
           {
             "deviceId": "9cb44865-1d74-4744-b056-d7e71070da3c",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -294,7 +260,7 @@
           {
             "deviceId": "0b45e826-d875-4d7f-8b8d-30388ebf40d2",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -303,11 +269,11 @@
             },
             "location": {
               "dayLocation": {
-                "latitude": 26.841745376586914,
-                "longitude": 75.77287673950195,
-                "city": "Jaipur",
-                "state": "RJ",
-                "zipCode": "302020"
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
               },
               "nightLocation": {
                 "latitude": null,
@@ -328,7 +294,7 @@
           {
             "deviceId": "0bb3f398-184d-43a1-aea6-637521dcf368",
             "country": "IN",
-            "lastModified": "2023-07-29",
+            "lastModified": "2023-11-30",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -364,10 +330,13 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "referenceId": "ccc308bc-7be9-44aa-80bd-f506f8a90fae",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90",
         "880ff4be-1bcb-453c-a823-5a35c8cd9642",
@@ -384,6 +353,7 @@
         "DEVICE_DETAILS"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
   }
