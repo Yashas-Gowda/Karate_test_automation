@@ -135,9 +135,10 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
 
 
     Examples:
-      | Scenario                     | ipAddress                                | statusCode |
-      | IP_BASIC_POSITIVE_IPV4_Input | "206.84.238.175"                         | 200        |
-      | IP_BASIC_POSITIVE_IPV6_Input | "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF" | 200        |
+      | Scenario                           | ipAddress                                 | statusCode |
+      | IP_BASIC_POSITIVE_IPV4_Input       | "206.84.238.175"                          | 200        |
+      | IP_BASIC_POSITIVE_IPV6_Input       | "2401:4900:1c97:e58e:54b0:f124:d434:76c8" | 200        |
+      | IP_BASIC_POSITIVE_IPV6_Input_dummy | "2001:db8:3333:4444:CCCC:DDDD:EEEE:FFFF"  | 200        |
 
   Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IP_address with "High Abuse velocity","recent abuse", "bot status","VPN" -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
