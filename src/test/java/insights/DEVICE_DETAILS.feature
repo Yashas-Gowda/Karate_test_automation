@@ -94,13 +94,23 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status 200
-    Then match $.data.device contains payload.response.data.device
+    Then match $.data.device contains only deep payload.response.data.device
     Then match payload.response.data.device.deviceRecords == '#[10]'
 
     Examples:
-      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-      | ["1db61125-297f-4544-abad-eae8a56ecd90","1db61125-297f-4544-abad-eae8a56ecd90","880ff4be-1bcb-453c-a823-5a35c8cd9642","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
+      | deviceIds                                                                                                                                                                                                                                                                                                                                                                                               |
+      | ["1db61125-297f-4544-abad-eae8a56ecd90","5c185ecc-8c24-4803-a60c-a26f52908d28","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
 
+#  "1db61125-297f-4544-abad-eae8a56ecd90",
+#  "5c185ecc-8c24-4803-a60c-a26f52908d28",
+#  "e84d8f43-d986-45bc-a529-ed9d494dac01",
+#  "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
+#  "bc42981d-6231-4834-a076-83a83478dbe8",
+#  "702f643d-8c6f-4150-8d6a-6851ab58be09",
+#  "de2aa48d-7654-46b3-957d-11bb1b206c59",
+#  "9cb44865-1d74-4744-b056-d7e71070da3c",
+#  "0b45e826-d875-4d7f-8b8d-30388ebf40d2",
+#  "0bb3f398-184d-43a1-aea6-637521dcf368",
 
 #      | "3342b21d-6ba2-4294-b808-f9612b24fed6" |
 #      | "d498b340-25fc-4cf3-a927-c9a37f885841" |
@@ -162,6 +172,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 #      | "cab22197-414b-4ceb-9517-183774766d00" |
 #      | "a439a0c4-343b-41f3-b62b-64b1be2e3a7f" |
 #      | "c8ce79ec-dd48-4ad0-8a7b-6637decd91b5" |
+
+
+
 
   Scenario Outline: Validation of DEVICE_DETAILS Package Negative scenarios with Invalid inputs - <Scenario>
     Given url requestUrl
