@@ -1,4 +1,4 @@
-
+@FIDO
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios
 
   Background:

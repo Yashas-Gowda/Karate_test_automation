@@ -1,0 +1,26 @@
+{
+  "app_client_name":"Autamation-release-fido@tenant_01HHYFP9W32AXS63J954J6ZJRV",
+  "client_id" : "6p9lh0ckr8c508hk88mvb8dkj1",
+  "client_secret" : "rt19ga30h9hmiv2rtv8ofl5htl6vuk9ftosj98rq2265be5llcn",
+  "grant_type" : "client_credentials",
+  "scope": "batch/insights insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/name_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_aml verification/kyc_consumer verification/kyc_government verification/kyc_mobile",
+  "issue-description": " Autamation-release-fido -> New dynamic structure of fido for new customer",
+  "tenant_config":{
+    "tenant": "tenant_01HHYFP9W32AXS63J954J6ZJRV",
+    "exclude": {
+      "PHONE_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2"
+        }
+      }
+    },
+    "include": {
+      "PHONE_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social",
+          "order": 0
+        }
+      }
+    }
+  }
+}
