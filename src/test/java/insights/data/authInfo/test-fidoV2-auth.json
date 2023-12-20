@@ -1,0 +1,42 @@
+{
+  "app_client_name":"Automation Tenant - Test env - test-fidoV2(test-a) - test_tenant001@tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS",
+  "client_id" : "29j416oo22mc4gulkre57mj6s7",
+  "client_secret" : "1j59i5vusos825eolc39rb1ujq8nfdbhgcoj3r21g8ltf4mul9jd",
+  "grant_type" : "client_credentials",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml",
+  "issue": "non",
+  "tenant_config":{
+    "tenant": "tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS",
+    "exclude": {
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone",
+          "order": 0
+        }
+      },
+      "IDENTITY_ENRICHMENT": {
+        "01H7CT8GX9XJ8G3K146TGTDK1G": {
+          "name": "Eyecon Lookup Enrichment"
+        }
+      }
+    },
+    "include": {
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "IDENTITY_ENRICHMENT": {
+        "01H9QFJJVMTR3A486A08YPX61T": {
+          "name": "Cashfree_India",
+          "order": 0
+        },
+        "01GTXH0R1JZBM3JMBSSCJ78J9T": {
+          "name": "Spycloud Phone",
+          "order": 1
+        }
+      }
+    }
+  }
+}

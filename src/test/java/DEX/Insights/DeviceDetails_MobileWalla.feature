@@ -20,7 +20,7 @@ Feature: DEVICE_DETAILS MOBILE WALLA Data Partner automation via DPI DEX call
       "DEVICE_DETAILS"
     ],
     "countryCode": "IN",
-    "deviceIds": ["97867bc8-0cdc-4072-86c4-2cc7e9d05616","1db61125-297f-4544-abad-eae8a56ecd90"]
+    "deviceIds": ["5c185ecc-8c24-4803-a60c-a26f52908d28"]
   }
     """
     And request requestPayload
