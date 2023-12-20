@@ -1,6 +1,6 @@
 {
   "request": {
-    "phoneNumber": "087809453668",
+    "phoneNumber": "628988402355",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
@@ -12,35 +12,38 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6287809453668",
+          "phoneNumber": "628988402355",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
-          "phoneNumberAge": null,
-          "phoneNumberAgeDescription": null,
-          "phoneTenure": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": 5,
+          "phoneNumberAgeDescription": "Above 24 months",
+          "phoneTenure": {
+            "min": 24,
+            "max": null
+          },
           "country": "ID",
-          "originalCarrier": "XL (PT XL Axiata Tbk)",
+          "originalCarrier": "H3G (PT. Hutchison 3 Indonesia)",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "XL PT XL Axiata Tbk",
-            "originalCarrierCircle": "XL PT XL Axiata Tbk",
+            "currentCarrierCircle": "3 PT Hutchison 3 Indonesia",
+            "originalCarrierCircle": "3 PT Hutchison 3 Indonesia",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "510",
-            "mobileNetworkCode": "11",
-            "networkName": "XL (PT XL Axiata Tbk)",
-            "serviceProfileId": "62502"
+            "mobileNetworkCode": "89",
+            "networkName": "H3G (PT. Hutchison 3 Indonesia)",
+            "serviceProfileId": "62501"
           },
           "lastDeactivated": null,
           "isSpam": null,
@@ -51,10 +54,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
+              "topUpCount": 11,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 6000
             },
             {
               "topUpTenure": {
@@ -62,10 +65,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
+              "topUpCount": 11,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 6000
             }
           ]
         },
@@ -82,12 +85,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "087809453668",
-      "cleansedPhoneNumber": "+6287809453668",
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "inputPhoneNumber": "628988402355",
+      "cleansedPhoneNumber": "+628988402355",
+      "referenceId": "dpi_dec_19_1st_call_fail",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

@@ -1,6 +1,6 @@
 {
   "request":{
-    "phoneNumber": "6285771034863",
+    "phoneNumber": "6281248186207",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
@@ -12,38 +12,38 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6285771034863",
+          "phoneNumber": "6281248186207",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": "PREPAID",
-          "phoneNumberAge": 5,
-          "phoneNumberAgeDescription": "Above 24 months",
+          "simType": null,
+          "phoneNumberAge": 2,
+          "phoneNumberAgeDescription": "3 to 6 Months",
           "phoneTenure": {
-            "min": 24,
-            "max": null
+            "min": 3,
+            "max": 4
           },
           "country": "ID",
-          "originalCarrier": "Indosat Ooredoo Hutchison",
+          "originalCarrier": "TELKOMSEL (PT Telekomunikasi Selular)",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
-            "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "currentCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
+            "originalCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "510",
-            "mobileNetworkCode": "01",
-            "networkName": "Indosat Ooredoo Hutchison",
-            "serviceProfileId": "62500"
+            "mobileNetworkCode": "10",
+            "networkName": "TELKOMSEL (PT Telekomunikasi Selular)",
+            "serviceProfileId": "62504"
           },
           "lastDeactivated": null,
           "isSpam": null,
@@ -51,24 +51,35 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 360
+                "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 17,
-              "minimumTopUpAmount": 5000,
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
               "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 10000
+              "averageTopUpAmount": 20000
             },
             {
               "topUpTenure": {
-                "min": 180,
+                "min": 0,
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 17,
-              "minimumTopUpAmount": 5000,
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
               "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 10000
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 90,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
             },
             {
               "topUpTenure": {
@@ -76,10 +87,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 6,
-              "minimumTopUpAmount": 5000,
+              "topUpCount": 2,
+              "minimumTopUpAmount": 20000,
               "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 13000
+              "averageTopUpAmount": 20000
             }
           ]
         },
@@ -102,8 +113,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6285771034863",
-      "cleansedPhoneNumber": "+6285771034863",
+      "inputPhoneNumber": "6281248186207",
+      "cleansedPhoneNumber": "+6281248186207",
       "referenceId": "dpi_dec_19_1st_call_fail",
       "requestedPackages": [
         "PHONE_BASIC"

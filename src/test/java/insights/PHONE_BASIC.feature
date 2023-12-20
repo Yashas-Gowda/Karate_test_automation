@@ -376,7 +376,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #  for Other:  Data partner flow => TMT-> X-connect.
 
     Examples:
-      | Scenario                                                           | statusCode | active |
+      | Scenario                                                                                                 | statusCode | active  |
 
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_yes_TC_68             | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC69_TC70     | 200        | UNKNOWN |
@@ -387,8 +387,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
 
-      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES | 200        | YES    |
-      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_NO  | 200        | NO     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_YES                                       | 200        | YES     |
+      | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_return_active_NO                                        | 200        | NO      |
 
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_YES_TC74                              | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC75                               | 200        | NO      |
@@ -574,9 +574,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.meta == payload.response.meta
 
     Examples:
-      | Scenario                                                        | statusCode |
-      | PHONE_BASIC_Sub_topUpHistory_ID_HappyFlow                       | 200        |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1 | 200        |
+      | Scenario                                  | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_HappyFlow | 200        |
 
   @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
@@ -617,10 +616,12 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.meta == payload.response.meta
 
     Examples:
-      | Scenario                                                            | statusCode | topUpCount |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1     | 200        | 1          |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9 | 200        | 8          |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_48 | 200        | 48         |
+      | Scenario                                                              | statusCode | topUpCount |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1       | 200        | 1          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9   | 200        | 9          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128 | 200        | 128        |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197 | 200        | 197        |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_295 | 200        | 295        |
 
   @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
@@ -651,7 +652,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     * def topUpArray = <No_of_array_objects>
     * print topUpArray
-#    * match $.data.phone.basic.topUpHistory  == "#[topUpArray]"
+    * match $.data.phone.basic.topUpHistory  == "#[topUpArray]"
 
     * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
     * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
@@ -668,8 +669,10 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        | 10                  |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_7  | 200        | 7                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_4  | 200        | 4                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
 
 
@@ -705,9 +708,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
 
-  #CHECK - same as above scenario
   @PHONE_BASIC @topUpHistory @izidata @Negative
-  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where  response is given by data partner as all response array    - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for region other then Indonesia(india) with validation of data-points in topUpHistory where  response is "topUpHistory": null   - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
     And headers headers
@@ -733,8 +735,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.topUpHistory == '#null'
 
     Examples:
-      | Scenario                                                                         | statusCode |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
+      | Scenario                                                                                           | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_When_phoneDefaultCountryCode_other_then_ID_response_topUpHistory_null | 200        |
+
 
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>

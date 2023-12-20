@@ -1,49 +1,49 @@
 {
   "request":{
-    "phoneNumber": "6281903989737",
+    "phoneNumber": "6281320544316",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_BASIC"
     ]
-  },
+  } ,
   "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6281903989737",
+          "phoneNumber": "6281320544316",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "NO",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
-          "phoneNumberAge": 2,
-          "phoneNumberAgeDescription": "3 to 6 Months",
+          "phoneNumberAge": 3,
+          "phoneNumberAgeDescription": "6 to 12 Months",
           "phoneTenure": {
-            "min": 5,
-            "max": 6
+            "min": 6,
+            "max": 8
           },
           "country": "ID",
-          "originalCarrier": "XL (PT XL Axiata Tbk)",
+          "originalCarrier": "TELKOMSEL (PT Telekomunikasi Selular)",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "XL PT XL Axiata Tbk",
-            "originalCarrierCircle": "XL PT XL Axiata Tbk",
+            "currentCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
+            "originalCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "510",
-            "mobileNetworkCode": "11",
-            "networkName": "XL (PT XL Axiata Tbk)",
-            "serviceProfileId": "62502"
+            "mobileNetworkCode": "10",
+            "networkName": "TELKOMSEL (PT Telekomunikasi Selular)",
+            "serviceProfileId": "62504"
           },
           "lastDeactivated": null,
           "isSpam": null,
@@ -51,24 +51,13 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 30
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 60
               },
               "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "minimumTopUpAmount": 75000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 75000
             },
             {
               "topUpTenure": {
@@ -76,10 +65,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 2,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "topUpCount": 1,
+              "minimumTopUpAmount": 75000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 75000
             },
             {
               "topUpTenure": {
@@ -87,10 +76,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "topUpCount": 1,
+              "minimumTopUpAmount": 75000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 75000
             },
             {
               "topUpTenure": {
@@ -100,30 +89,30 @@
               "currency": "IDR",
               "topUpCount": 4,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 200000,
+              "averageTopUpAmount": 121000
             },
             {
               "topUpTenure": {
-                "min": 60,
-                "max": 90
+                "min": 30,
+                "max": 60
               },
               "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "minimumTopUpAmount": 75000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 75000
             },
             {
               "topUpTenure": {
-                "min": 90,
-                "max": 180
+                "min": 180,
+                "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 3,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 200000,
+              "averageTopUpAmount": 136000
             },
             {
               "topUpTenure": {
@@ -131,10 +120,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 3,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 40000
+              "topUpCount": 2,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 50000
             }
           ]
         },
@@ -157,8 +146,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6281903989737",
-      "cleansedPhoneNumber": "+6281903989737",
+      "inputPhoneNumber": "6281320544316",
+      "cleansedPhoneNumber": "+6281320544316",
       "referenceId": "dpi_dec_19_1st_call_fail",
       "requestedPackages": [
         "PHONE_BASIC"
