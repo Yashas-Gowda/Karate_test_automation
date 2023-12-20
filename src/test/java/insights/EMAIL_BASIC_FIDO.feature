@@ -1,4 +1,4 @@
-@EMAIL_BASIC_FIDO
+@FIDO
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
  # scenarios names are not updated, which will be picked in the next sprint

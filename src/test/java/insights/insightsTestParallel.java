@@ -25,6 +25,7 @@ public class insightsTestParallel {
 
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
                 .tags("~@ignore")
+//                .tags("@FIDO")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
