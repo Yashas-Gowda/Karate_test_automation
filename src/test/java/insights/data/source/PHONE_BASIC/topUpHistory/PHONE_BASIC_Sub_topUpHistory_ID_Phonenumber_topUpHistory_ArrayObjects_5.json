@@ -52,39 +52,6 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 30
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
-                "max": 60
-              },
-              "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 13000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 5,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 13000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 180
               },
               "currency": "IDR",
@@ -106,25 +73,14 @@
             },
             {
               "topUpTenure": {
-                "min": 30,
-                "max": 60
+                "min": 90,
+                "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 3,
+              "topUpCount": 5,
               "minimumTopUpAmount": 10000,
               "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 15000
-            },
-            {
-              "topUpTenure": {
-                "min": 60,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "averageTopUpAmount": 13000
             },
             {
               "topUpTenure": {
@@ -163,12 +119,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "87873989591",
       "cleansedPhoneNumber": "+6287873989591",
-      "referenceId": "AMS-test-1",
+      "referenceId": "f380bb6e-efe8-4487-8636-f8bbffd896b3",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

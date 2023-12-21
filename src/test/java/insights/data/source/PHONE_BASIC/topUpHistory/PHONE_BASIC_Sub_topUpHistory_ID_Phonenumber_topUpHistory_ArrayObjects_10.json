@@ -16,14 +16,14 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
-          "phoneNumberAge": 4,
-          "phoneNumberAgeDescription": "Above 12 Months",
+          "simType": "PREPAID",
+          "phoneNumberAge": 5,
+          "phoneNumberAgeDescription": "Above 24 months",
           "phoneTenure": {
-            "min": 12,
+            "min": 24,
             "max": null
           },
           "country": "ID",
@@ -55,10 +55,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 3,
+              "topUpCount": 12,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 21000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 43000
             },
             {
               "topUpTenure": {
@@ -66,15 +66,70 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 13,
+              "topUpCount": 18,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 35000
+              "averageTopUpAmount": 34000
             },
             {
               "topUpTenure": {
                 "min": 0,
                 "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 22,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 32000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 43,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 33000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 103,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 32000
+            },
+            {
+              "topUpTenure": {
+                "min": 30,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 6,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 16000
+            },
+            {
+              "topUpTenure": {
+                "min": 60,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 4,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 90,
+                "max": 180
               },
               "currency": "IDR",
               "topUpCount": 21,
@@ -84,69 +139,14 @@
             },
             {
               "topUpTenure": {
-                "min": 0,
-                "max": 180
-              },
-              "currency": "IDR",
-              "topUpCount": 64,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 31000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
-                "max": 360
-              },
-              "currency": "IDR",
-              "topUpCount": 90,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 31000
-            },
-            {
-              "topUpTenure": {
-                "min": 30,
-                "max": 60
-              },
-              "currency": "IDR",
-              "topUpCount": 10,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 39000
-            },
-            {
-              "topUpTenure": {
-                "min": 60,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 8,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 36000
-            },
-            {
-              "topUpTenure": {
-                "min": 90,
-                "max": 180
-              },
-              "currency": "IDR",
-              "topUpCount": 43,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 29000
-            },
-            {
-              "topUpTenure": {
                 "min": 180,
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 26,
+              "topUpCount": 60,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 30000
+              "averageTopUpAmount": 31000
             },
             {
               "topUpTenure": {
@@ -154,10 +154,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 69,
+              "topUpCount": 52,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 28000
+              "averageTopUpAmount": 24000
             }
           ]
         },
@@ -174,12 +174,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "81586348349",
       "cleansedPhoneNumber": "+6281586348349",
-      "referenceId": "AMS-test-1",
+      "referenceId": "e0b815e8-9016-4d14-bbd9-3444cc543e19",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

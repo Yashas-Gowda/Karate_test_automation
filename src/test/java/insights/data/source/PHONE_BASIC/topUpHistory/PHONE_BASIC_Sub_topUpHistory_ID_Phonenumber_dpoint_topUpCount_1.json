@@ -20,9 +20,12 @@
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
-          "phoneNumberAge": null,
-          "phoneNumberAgeDescription": null,
-          "phoneTenure": null,
+          "phoneNumberAge": 1,
+          "phoneNumberAgeDescription": "Below 3 Months",
+          "phoneTenure": {
+            "min": 2,
+            "max": 3
+          },
           "country": "ID",
           "originalCarrier": "XL (PT XL Axiata Tbk)",
           "ported": false,
@@ -33,7 +36,8 @@
             "currentCarrierCircle": "XL PT XL Axiata Tbk",
             "originalCarrierCircle": "XL PT XL Axiata Tbk",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": [
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
@@ -48,6 +52,28 @@
             {
               "topUpTenure": {
                 "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
                 "max": 360
               },
               "currency": "IDR",
@@ -58,8 +84,19 @@
             },
             {
               "topUpTenure": {
-                "min": 180,
-                "max": 360
+                "min": 60,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
               },
               "currency": "IDR",
               "topUpCount": 1,
@@ -82,16 +119,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "087809453668",
       "cleansedPhoneNumber": "+6287809453668",
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "referenceId": "cae48d69-8424-4fdd-a407-cc81819cacff",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
