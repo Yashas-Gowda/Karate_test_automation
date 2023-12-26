@@ -1,0 +1,62 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "918554847091",
+    "email": "shinderashmi07@gmail.com",
+    "upiApplicationName": "ALL",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 2,
+          "accounts": [
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "RASHMI VINAYAK SHINDE",
+              "upiId": "shinderashmi07@okhdfcbank",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "MobiKwik",
+              "nameAtBank": "RASHMI VINAYAK SHINDE",
+              "upiId": "8554847091@ikwik",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "918554847091",
+      "cleansedPhoneNumber": "+918554847091",
+      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "inputEmail": "shinderashmi07@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}

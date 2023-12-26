@@ -24,6 +24,12 @@ target*/
 target/
 dist/
 
+#_dpi_gen_call --> Insights and verification general automation
+_dpi_gen_call
+_userManagement
+DPI_Partner_registry
+
+
 # JetBrains IDE
 .idea/
 

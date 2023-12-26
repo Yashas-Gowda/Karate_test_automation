@@ -1,4 +1,4 @@
-@upi
+@UPI_ADVANCED
 Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
 
   Background:
@@ -304,12 +304,49 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Examples:
       | Scenario                                                                                                                 | statusCode |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response               | 200        |
-#Data not found - Hypothetical scenario  | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_ALTERNATE_response               | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_2_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_2_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
+
+# when phone number with country code appended in the request
+  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = ALL with combination of phone number with 91-cleansingFlag combination and email input  -> <Scenario> | InputIP -> <phoneNumber>.
+    Given url requestUrl
+    And def payload = read("data/" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    Then status <statusCode>
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
+    # https://monnai.atlassian.net/browse/MB-3738
+    Then match $.meta contains payload.response.meta
+    Then match $.errors contains payload.response.errors
+
+    Examples:
+      | Scenario                                                                                                                                                      | statusCode |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_0_all_other_handles_should_call_with_null_response               | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_2_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_2_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
+
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = ALL with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
