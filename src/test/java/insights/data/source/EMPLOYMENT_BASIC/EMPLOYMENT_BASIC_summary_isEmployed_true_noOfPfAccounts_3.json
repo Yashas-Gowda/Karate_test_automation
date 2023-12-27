@@ -1,0 +1,88 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneNumber": "8106068222",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": true,
+            "recentEmployerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
+            "noOfPfAccounts": 3,
+            "dateOfJoining": "2023-02-01",
+            "dateOfExit": null,
+            "matchingPfAccountNumber": "101287760910"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "100460881293",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
+              "dateOfJoining": "2014-08-01",
+              "dateOfExit": "2015-03-18",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100586880851",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
+              "dateOfJoining": "2015-11-15",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101287760910",
+              "name": "PALLOLI KARTHIK",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
+              "dateOfJoining": "2023-02-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "8106068222",
+      "cleansedPhoneNumber": "+918106068222",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
