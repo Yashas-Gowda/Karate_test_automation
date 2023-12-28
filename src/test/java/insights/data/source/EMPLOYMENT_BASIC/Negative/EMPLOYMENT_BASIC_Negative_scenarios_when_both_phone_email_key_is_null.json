@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneNumber": null,
+    "phoneDefaultCountryCode": "IN",
+    "email":null
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "dpi_nov_6_11",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_EMAIL_AND_PHONE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
