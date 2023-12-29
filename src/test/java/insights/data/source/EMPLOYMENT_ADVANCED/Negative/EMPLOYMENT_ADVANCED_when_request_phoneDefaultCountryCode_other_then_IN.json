@@ -1,0 +1,30 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "",
+    "phoneDefaultCountryCode": "ID"
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "+918097591550",
+      "cleansedPhoneNumber": "+918097591550",
+      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_BASIC",
+        "message": "Service unavailable for country India",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9566018297",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": true,
+            "recentEmployerName": "SUMEET URBAN SERVICES (CHENNAI) V PRIVATE LIMITED",
+            "noOfPfAccounts": 4,
+            "dateOfJoining": "2021-11-18",
+            "dateOfExit": null,
+            "matchingPfAccountNumber": "101061084975"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "100043246009",
+              "name": "Praveen Kumar P",
+              "gender": "MALE",
+              "dateOfBirth": "1991-09-18",
+              "nationalIdVerificationStatus": true,
+              "employerName": "ADECCO INDIA PVT. LTD.",
+              "dateOfJoining": "2014-01-01",
+              "dateOfExit": "2015-12-31",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100739408626",
+              "name": "P PRAVEEN KUMAR",
+              "gender": "MALE",
+              "dateOfBirth": "1991-09-18",
+              "nationalIdVerificationStatus": true,
+              "employerName": "CONCRETE OEM PRIVATE LIMITED",
+              "dateOfJoining": "2018-07-26",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100003855035",
+              "name": "Asaithambi O A",
+              "gender": "MALE",
+              "dateOfBirth": "1973-06-05",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RDC CONCRETE (I) PVT LTD",
+              "dateOfJoining": "2013-12-03",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101061084975",
+              "name": "RAVI T N",
+              "gender": "MALE",
+              "dateOfBirth": "1968-06-05",
+              "nationalIdVerificationStatus": true,
+              "employerName": "SUMEET URBAN SERVICES (CHENNAI) V PRIVATE LIMITED",
+              "dateOfJoining": "2021-11-18",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9566018297",
+      "cleansedPhoneNumber": "+919566018297",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
