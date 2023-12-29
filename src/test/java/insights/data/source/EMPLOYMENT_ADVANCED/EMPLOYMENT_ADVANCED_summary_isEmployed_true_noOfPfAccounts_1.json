@@ -1,0 +1,87 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "918310038265",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": false,
+            "isNameUnique": null,
+            "isNameExact": null,
+            "isPfFiledLastMonth": null,
+            "hasPfFilingDetails": null,
+            "recentEmployerName": "KERI PREETHA",
+            "noOfPfAccounts": 1,
+            "dateOfJoining": "2019-08-06",
+            "dateOfExit": "2020-12-30",
+            "matchingPfAccountNumber": "101508691318"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101508691318",
+              "name": "Basavaraju K S",
+              "gender": "MALE",
+              "dateOfBirth": "1988-12-20",
+              "nationalIdVerificationStatus": true,
+              "employerName": "KERI PREETHA",
+              "dateOfJoining": "2019-08-06",
+              "dateOfExit": "2020-12-30",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": null,
+                "taxId": null,
+                "email": null,
+                "bankAccountNumber": null,
+                "bankBranchCode": null,
+                "bankAddress": null,
+                "pfNomineeName": null,
+                "pfNomineeRelation": null
+              }
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+            ],
+            "employerPfFilingDetails": [
+            ]
+          }
+        },
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "918310038265",
+      "cleansedPhoneNumber": "+918310038265",
+      "referenceId": "ebd28087-1d48-48d6-9619-7ff4c409f24c",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

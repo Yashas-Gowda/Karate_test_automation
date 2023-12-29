@@ -1,0 +1,77 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "919163238236",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": true,
+            "recentEmployerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
+            "noOfPfAccounts": 2,
+            "dateOfJoining": "2022-02-24",
+            "dateOfExit": null,
+            "matchingPfAccountNumber": "101658587636"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "100327821218",
+              "name": "Saikat Das",
+              "gender": "MALE",
+              "dateOfBirth": "1988-06-16",
+              "nationalIdVerificationStatus": true,
+              "employerName": "PACE SETTERS BUSINESS SOLUTIONS PVT LTD",
+              "dateOfJoining": "2013-09-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101658587636",
+              "name": "Saikat Das",
+              "gender": "MALE",
+              "dateOfBirth": "1982-10-12",
+              "nationalIdVerificationStatus": true,
+              "employerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
+              "dateOfJoining": "2022-02-24",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919163238236",
+      "cleansedPhoneNumber": "+919163238236",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
