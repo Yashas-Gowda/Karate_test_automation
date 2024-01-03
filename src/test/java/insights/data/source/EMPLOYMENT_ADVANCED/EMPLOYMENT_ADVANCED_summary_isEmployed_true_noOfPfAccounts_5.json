@@ -1,0 +1,110 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9426597869",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": true,
+            "recentEmployerName": "RUI CHUANG TECHNOLOGIES PRIVATE LIMITED",
+            "noOfPfAccounts": 5,
+            "dateOfJoining": "2018-04-06",
+            "dateOfExit": null,
+            "matchingPfAccountNumber": "101291581445"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101291581445",
+              "name": "Irfanhusen Ikabalhusen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RUI CHUANG TECHNOLOGIES PRIVATE LIMITED",
+              "dateOfJoining": "2018-04-06",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100732354289",
+              "name": "Irfanhusen Ikabalhusen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "HARIOM COMMUNICATION LLP",
+              "dateOfJoining": "2016-04-01",
+              "dateOfExit": "2018-03-31",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100563078362",
+              "name": "Irfan Iqbalhussen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1984-06-26",
+              "nationalIdVerificationStatus": true,
+              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
+              "dateOfJoining": "2015-07-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100472465662",
+              "name": "Irfan Iqbalhussen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1984-06-26",
+              "nationalIdVerificationStatus": true,
+              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
+              "dateOfJoining": "2015-01-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100575653371",
+              "name": "Irfan Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "TECH SMART",
+              "dateOfJoining": "2015-09-05",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9426597869",
+      "cleansedPhoneNumber": "+919426597869",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "525555088314",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "525555088314",
+      "cleansedPhoneNumber": "+91525555088314",
+      "referenceId": "dpi_nov_6_5",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

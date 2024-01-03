@@ -1,25 +1,23 @@
 {
-  "app_client_name":"Monnai Tenant - Test env - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
-  "client_id" : "79f4iuqbnu4vjjf874c50tr4mf",
-  "client_secret" : "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "app_client_name":"Monnai Tenant - Test env - release_tenant001@01GFJCPPHBAWE6SBY28VGJV84Y",
+  "client_id" : "7didnmj55vt7b7jjmj4h25k90b",
+  "client_secret" : "v2euo6p7kit362pq6pvpvm7bmt7tob81fuh5lnl0m8d5f57s7ru",
   "grant_type" : "client_credentials",
-  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml",
-  "issue-description": "Monnai Main Release UI Tenant",
-//  Below details are custom tenant config of tenant ->tenant_01HD0VFTJRE5C4VWB6CPWMPGWF
-  "tenant_config": {
-    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml",
+  "issue-description": " release-fido -> NON-Dynamic structure of fido for Existing customer",
+  "tenant_config":{
+    "tenant": "01GFJCPPHBAWE6SBY28VGJV84Y",
     "exclude": {
       "PHONE_SOCIAL": {
         "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
-          "name": "FIDO Phone",
-          "order": 0
+          "name": "FIDO Phone"
         }
       }
     },
     "include": {
       "PHONE_SOCIAL": {
-        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
-          "name": "Seon Phone",
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
           "order": 0
         }
       }

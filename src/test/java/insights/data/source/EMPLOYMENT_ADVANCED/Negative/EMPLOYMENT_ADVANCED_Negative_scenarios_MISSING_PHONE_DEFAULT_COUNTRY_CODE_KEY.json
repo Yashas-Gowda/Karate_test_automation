@@ -1,0 +1,27 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9108510043"
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "dpi_nov_6_11",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
