@@ -8,33 +8,34 @@
   "tenant_config":{
     "tenant": "tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS",
     "exclude": {
-      "PHONE_SOCIAL": {
-        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
-          "name": "FIDO Phone",
-          "order": 0
+      "EMAIL_SOCAIL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
         }
       },
-      "IDENTITY_ENRICHMENT": {
-        "01H7CT8GX9XJ8G3K146TGTDK1G": {
-          "name": "Eyecon Lookup Enrichment"
+      "PHONE_SOCAIL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
         }
       }
     },
     "include": {
-      "PHONE_SOCIAL": {
-        "01H72XCMJ3A08W8MREYD8T1EBS": {
-          "name": "FIDO phone_social_v2",
+      "EMAIL_SOCAIL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
           "order": 0
         }
       },
-      "IDENTITY_ENRICHMENT": {
-        "01H9QFJJVMTR3A486A08YPX61T": {
-          "name": "Cashfree_India",
+      "PHONE_SOCAIL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
           "order": 0
-        },
-        "01GTXH0R1JZBM3JMBSSCJ78J9T": {
-          "name": "Spycloud Phone",
-          "order": 1
         }
       }
     }
