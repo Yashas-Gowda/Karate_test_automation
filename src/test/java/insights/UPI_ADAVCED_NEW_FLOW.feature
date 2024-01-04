@@ -307,7 +307,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_2_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_2_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
 
 # when phone number with country code appended in the request
@@ -344,7 +344,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_2_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_2_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
 
 
@@ -412,7 +412,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Examples:
       | Scenario                                                             | statusCode |
       | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_0 | 200        |
-    # Data not found  | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_1 | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_1 | 200        |
       | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_2 | 200        |
       | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_3 | 200        |
 

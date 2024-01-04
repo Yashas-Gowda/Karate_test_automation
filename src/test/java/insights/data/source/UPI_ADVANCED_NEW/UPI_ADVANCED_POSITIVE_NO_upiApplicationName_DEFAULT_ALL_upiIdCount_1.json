@@ -1,15 +1,14 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "918310346897",
-    "email": "gauthamsky6@gmail.com",
-    "upiApplicationName": "PRIMARY",
+    "phoneNumber": "6367009528",
+    "email": "manishbishnoiosian99@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
+  },
   "response":{
     "data": {
       "phone": null,
@@ -24,9 +23,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "Google Pay",
-              "nameAtBank": "SUHAIL  ",
-              "upiId": "suhailchinna16@oksbi",
+              "appName": "MobiKwik",
+              "nameAtBank": "MANISH",
+              "upiId": "6367009528@ikwik",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -44,16 +43,14 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "918310346897",
-      "cleansedPhoneNumber": "+918310346897",
-      "referenceId": "05a8fbd1-5919-4e69-b743-4335ffe57fad",
-      "inputEmail": "gauthamsky6@gmail.com",
+      "inputPhoneNumber": "6367009528",
+      "cleansedPhoneNumber": "+916367009528",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "inputEmail": "manishbishnoiosian99@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ],
-      "inputUpiApplicationName": "PRIMARY"
+      ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
