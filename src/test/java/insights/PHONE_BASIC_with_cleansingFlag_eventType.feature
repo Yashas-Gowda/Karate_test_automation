@@ -1,3 +1,4 @@
+@PORTED_DETAILS @PHONE_BASIC_FULL
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:
