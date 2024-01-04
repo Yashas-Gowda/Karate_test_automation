@@ -1,0 +1,78 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "390297000000",
+    "phoneDefaultCountryCode": "IT"
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "390297000000",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": null,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "IT",
+          "originalCarrier": "Telecom Italia (TIM) (landline)",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Telecom Italia (TIM) (landline)",
+            "originalCarrierCircle": "Telecom Italia (TIM) (landline)",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "Telecom Italia (TIM) (landline)",
+            "serviceProfileId": "39961"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "390297000000",
+      "cleansedPhoneNumber": "+390297000000",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

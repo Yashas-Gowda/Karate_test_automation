@@ -1,3 +1,4 @@
+@PHONE_BASIC_FULL
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:
@@ -35,9 +36,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
     Examples:
-      | Scenario                                     | statusCode |
-      | PHONE_BASIC_response_region_India_IN         | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US  | 200        |
+      | Scenario                                    | statusCode |
+      | PHONE_BASIC_response_region_India_IN        | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US | 200        |
 
   @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
@@ -67,12 +68,26 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#null'}
 
     Examples:
-      | Scenario                                     | statusCode |
-      | PHONE_BASIC_response_region_Thailand_TH      | 200        |
-      | PHONE_BASIC_response_region_Vietnam_VN       | 200        |
-      | PHONE_BASIC_response_region_Indonesia_ID     | 200        |
-      | PHONE_BASIC_response_region_Malaysia_MY      | 200        |
-      | PHONE_BASIC_response_region_Singapore_SG     | 200        |
-      | PHONE_BASIC_response_region_UnitedKingdom_GB | 200        |
-      | PHONE_BASIC_response_region_Italy_IT         | 200        |
-      | PHONE_BASIC_response_region_Philippines_PH   | 200        |
+      | Scenario                                                   | statusCode |
+      | PHONE_BASIC_response_region_Thailand_TH_with_ported        | 200        |
+      | PHONE_BASIC_response_region_Thailand_TH_without_ported     | 200        |
+      | PHONE_BASIC_response_region_Vietnam_VN                     | 200        |
+      | PHONE_BASIC_response_region_Indonesia_ID                   | 200        |
+      | PHONE_BASIC_response_region_Malaysia_MY                    | 200        |
+      | PHONE_BASIC_response_region_Cyprus_CY                      | 200        |
+      | PHONE_BASIC_response_region_Singapore_SG                   | 200        |
+      | PHONE_BASIC_response_region_UnitedKingdom_GB               | 200        |
+      | PHONE_BASIC_response_region_Italy_IT_with_ported           | 200        |
+      | PHONE_BASIC_response_region_Italy_IT_without_ported        | 200        |
+      | PHONE_BASIC_response_region_Philippines_PH                 | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_with_ported          | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
+      | PHONE_BASIC_response_region_BRAZIL_BR_with_ported          | 200        |
+      | PHONE_BASIC_response_region_BRAZIL_BR_without_ported       | 200        |
+      | PHONE_BASIC_response_region_FRANCE_FR_with_ported          | 200        |
+      | PHONE_BASIC_response_region_FRANCE_FR_without_ported       | 200        |
+      | PHONE_BASIC_response_region_Netherlands_NL_with_ported     | 200        |
+      | PHONE_BASIC_response_region_Netherlands_NL_without_ported  | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_with_ported    | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_without_ported | 200        |
+

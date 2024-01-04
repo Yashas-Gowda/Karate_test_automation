@@ -1,0 +1,94 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "393925000000",
+    "phoneDefaultCountryCode": "IT"
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "393925000000",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": null,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 24,
+            "max": 48
+          },
+          "country": "IT",
+          "originalCarrier": "H3G - Hutchinson 3G (WINDTRE)",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-06-04",
+            "numberOfPorts": 3,
+            "portedSinceXDays": 578,
+            "currentCarrierCircle": "WINDTRE Wind Tre",
+            "originalCarrierCircle": "WINDTRE Wind Tre",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2022-06-04"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2021-11-01"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2020-09-29"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "222",
+            "mobileNetworkCode": "88",
+            "networkName": "WIND Telecomunicazioni (WINDTRE)",
+            "serviceProfileId": "39322"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "393925000000",
+      "cleansedPhoneNumber": "+393925000000",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

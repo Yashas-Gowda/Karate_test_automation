@@ -1,0 +1,86 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "31703923875",
+    "phoneDefaultCountryCode": "NL"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "31703923875",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": null,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "NL",
+          "originalCarrier": "KPN BV",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2018-05-11",
+            "numberOfPorts": 1,
+            "portedSinceXDays": 2064,
+            "currentCarrierCircle": "Routit BV",
+            "originalCarrierCircle": "KPN BV",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2018-05-11"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "Routit BV",
+            "serviceProfileId": "31594"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "31703923875",
+      "cleansedPhoneNumber": "+31703923875",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

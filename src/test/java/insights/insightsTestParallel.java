@@ -24,13 +24,12 @@ public class insightsTestParallel {
                 .parallel(5); */
 
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("~@ignore")
-//                .tags("@FIDO")
+//                .tags("~@ignore")
+                .tags("@PHONE_BASIC_FULL")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
-
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());

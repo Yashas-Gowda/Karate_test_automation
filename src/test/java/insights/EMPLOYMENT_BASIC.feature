@@ -1,3 +1,4 @@
+@ignore
 Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
 # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
 # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED

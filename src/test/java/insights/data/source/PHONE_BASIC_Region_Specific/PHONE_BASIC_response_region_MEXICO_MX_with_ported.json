@@ -1,0 +1,86 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "526144160457",
+    "phoneDefaultCountryCode": "MX"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "526144160457",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": null,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 12,
+            "max": 24
+          },
+          "country": "MX",
+          "originalCarrier": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-11-04",
+            "numberOfPorts": 1,
+            "portedSinceXDays": 425,
+            "currentCarrierCircle": "TOTAL PLAY TELECOM",
+            "originalCarrierCircle": "TELEFONOS DE MEXICO s.a.b. de c.v.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2022-11-04"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "TOTAL PLAY TELECOM",
+            "serviceProfileId": "52521"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "526144160457",
+      "cleansedPhoneNumber": "+526144160457",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}
