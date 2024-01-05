@@ -1,0 +1,32 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "ID",
+
+    "email": "njrane29@gmail.com",
+    "upiApplicationName": "GOOGLE_PAY",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "inputEmail": "njrane29@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "GOOGLE_PAY"
+    },
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "Service unavailable for country Indonesia",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

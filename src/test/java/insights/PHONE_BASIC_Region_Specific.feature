@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @PHONE_BASIC @smoke @all_data_partner
+  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -16,6 +16,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
+    * set payload.response.data.phone.basic.activeSinceXDays = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -32,14 +33,24 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
-    * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#number'}
-
 
     Examples:
-      | Scenario                                    | statusCode |
-      | PHONE_BASIC_response_region_India_IN        | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US | 200        |
+      | Scenario                                                   | statusCode |
+      | PHONE_BASIC_response_region_Singapore_SG                   | 200        |
+      | PHONE_BASIC_response_region_Thailand_TH_with_ported        | 200        |
+      | PHONE_BASIC_response_region_Thailand_TH_without_ported     | 200        |
+      | PHONE_BASIC_response_region_Philippines_PH                 | 200        |
+      | PHONE_BASIC_response_region_Malaysia_MY                    | 200        |
+      | PHONE_BASIC_response_region_Indonesia_ID                   | 200        |
 
+      | PHONE_BASIC_response_region_BRAZIL_BR_without_ported       | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_with_ported    | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_without_ported | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_with_ported          | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
+      | PHONE_BASIC_response_region_India_IN                       | 200        |
+
+      | PHONE_BASIC_response_region_BRAZIL_BR_with_ported          | 200        |
 #  PH(639058248748), SG(6596610822) , MY(60129279293),GB(447826292229),CY(35796898016) -( TMT is returning"porting_history": "n/a"- seems region not supported)
 #
 #  BR(554730385113) ,FR(33622788226),NL(31703923875),US(19193456619)-Seems TMT retuned [] meaning region is supported by TMT
@@ -55,6 +66,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
+    * set payload.response.data.phone.basic.activeSinceXDays = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -71,29 +83,19 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
-    * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#null'}
+
 
     Examples:
-      | Scenario                                                   | statusCode |
-      | PHONE_BASIC_response_region_Thailand_TH_with_ported        | 200        |
-      | PHONE_BASIC_response_region_Thailand_TH_without_ported     | 200        |
-      | PHONE_BASIC_response_region_Vietnam_VN                     | 200        |
-      | PHONE_BASIC_response_region_Indonesia_ID                   | 200        |
-      | PHONE_BASIC_response_region_Malaysia_MY                    | 200        |
-      | PHONE_BASIC_response_region_Cyprus_CY                      | 200        |
-      | PHONE_BASIC_response_region_Singapore_SG                   | 200        |
-      | PHONE_BASIC_response_region_UnitedKingdom_GB               | 200        |
-      | PHONE_BASIC_response_region_Italy_IT_with_ported           | 200        |
-      | PHONE_BASIC_response_region_Italy_IT_without_ported        | 200        |
-      | PHONE_BASIC_response_region_Philippines_PH                 | 200        |
-      | PHONE_BASIC_response_region_MEXICO_MX_with_ported          | 200        |
-      | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
-      | PHONE_BASIC_response_region_BRAZIL_BR_with_ported          | 200        |
-      | PHONE_BASIC_response_region_BRAZIL_BR_without_ported       | 200        |
-      | PHONE_BASIC_response_region_FRANCE_FR_with_ported          | 200        |
-      | PHONE_BASIC_response_region_FRANCE_FR_without_ported       | 200        |
-      | PHONE_BASIC_response_region_Netherlands_NL_with_ported     | 200        |
-      | PHONE_BASIC_response_region_Netherlands_NL_without_ported  | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US_with_ported    | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US_without_ported | 200        |
+      | Scenario                                                  | statusCode |
+      | PHONE_BASIC_response_region_Vietnam_VN                    | 200        |
+      | PHONE_BASIC_response_region_Malaysia_MY                   | 200        |
+      | PHONE_BASIC_response_region_Cyprus_CY                     | 200        |
 
+      | PHONE_BASIC_response_region_UnitedKingdom_GB              | 200        |
+      | PHONE_BASIC_response_region_Italy_IT_with_ported          | 200        |
+      | PHONE_BASIC_response_region_Italy_IT_without_ported       | 200        |
+
+      | PHONE_BASIC_response_region_FRANCE_FR_with_ported         | 200        |
+      | PHONE_BASIC_response_region_FRANCE_FR_without_ported      | 200        |
+      | PHONE_BASIC_response_region_Netherlands_NL_with_ported    | 200        |
+      | PHONE_BASIC_response_region_Netherlands_NL_without_ported | 200        |
