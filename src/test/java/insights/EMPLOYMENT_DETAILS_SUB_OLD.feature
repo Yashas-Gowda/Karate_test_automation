@@ -1,3 +1,4 @@
+@ignore
 Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package UAN_BASIC
 # UAN_BASIC and UAN_ADVANCED are given manual sign off by Sameena, Automation is done by taking manual sign off as Source.
 #SOCIAL_LINKS is given manual sign off by Yashas, Automation is done by taking manual sign off as Source.

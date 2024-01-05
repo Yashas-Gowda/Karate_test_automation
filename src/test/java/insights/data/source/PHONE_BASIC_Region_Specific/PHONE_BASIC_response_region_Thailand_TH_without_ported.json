@@ -15,7 +15,7 @@
           "phoneNumber": "6623038905",
           "phoneValid": true,
           "phoneType": "FIXED",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,

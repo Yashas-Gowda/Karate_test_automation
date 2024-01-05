@@ -398,8 +398,6 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_NON_INDOSAT_PhoneNumber_TMT_UNKNOWN_XConnect_returns_active_YES_TC77     | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_ID_INDOSAT_PhoneNumber_returns_active_NO_TC75                               | 200        | NO      |
 
-
-
      #  https://monnai.atlassian.net/browse/MB-2865
      # | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_notreturn_TMT_notreturn_Xconnect_notreturn_null | 200        | YES     |
 

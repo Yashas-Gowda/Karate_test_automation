@@ -40,6 +40,12 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_India_IN        | 200        |
       | PHONE_BASIC_response_region_UnitedStates_US | 200        |
 
+#  PH(639058248748), SG(6596610822) , MY(60129279293),GB(447826292229),CY(35796898016) -( TMT is returning"porting_history": "n/a"- seems region not supported)
+#
+#  BR(554730385113) ,FR(33622788226),NL(31703923875),US(19193456619)-Seems TMT retuned [] meaning region is supported by TMT
+#
+#  VN(84389879520) ,ID(6282220000000) - Seems TMT retuned [] meaning region is supported by TMT (we have not got data)
+
   @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl

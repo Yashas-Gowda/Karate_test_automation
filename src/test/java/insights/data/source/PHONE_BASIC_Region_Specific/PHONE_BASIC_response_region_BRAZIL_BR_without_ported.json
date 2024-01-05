@@ -15,7 +15,7 @@
           "phoneNumber": "551121000000",
           "phoneValid": true,
           "phoneType": "FIXED",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "YES",
           "activationDate": "2021-03-18",
           "activeSinceXDays": 1022,

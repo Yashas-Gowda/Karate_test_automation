@@ -21,12 +21,19 @@
       "upi": {
         "basic": null,
         "advanced": {
-          "upiIdCount": 2,
+          "upiIdCount": 3,
           "accounts": [
             {
               "appName": "Google Pay",
               "nameAtBank": "RASHMI VINAYAK SHINDE",
               "upiId": "shinderashmi07@okhdfcbank",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "RASHMI VINAYAK SHINDE",
+              "upiId": "8554847091@ybl",
               "accountType": "ALTERNATE",
               "accountStatus": "VALID"
             },
@@ -46,16 +53,19 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "918554847091",
       "cleansedPhoneNumber": "+918554847091",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "inputEmail": "shinderashmi07@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "ALL"
     },
     "errors": []
   }

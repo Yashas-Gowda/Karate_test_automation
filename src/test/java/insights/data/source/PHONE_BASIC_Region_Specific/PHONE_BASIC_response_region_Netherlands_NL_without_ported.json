@@ -15,7 +15,7 @@
           "phoneNumber": "31774000000",
           "phoneValid": true,
           "phoneType": "FIXED",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,

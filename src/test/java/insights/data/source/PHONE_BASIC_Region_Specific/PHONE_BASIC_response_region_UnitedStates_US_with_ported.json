@@ -15,7 +15,7 @@
           "phoneNumber": "19193456619",
           "phoneValid": true,
           "phoneType": "MOBILE",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,
