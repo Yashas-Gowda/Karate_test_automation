@@ -15,7 +15,7 @@
           "phoneNumber": "35796898016",
           "phoneValid": true,
           "phoneType": "MOBILE",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,

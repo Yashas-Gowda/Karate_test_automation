@@ -15,7 +15,7 @@
           "phoneNumber": "525555088314",
           "phoneValid": true,
           "phoneType": "MOBILE",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,

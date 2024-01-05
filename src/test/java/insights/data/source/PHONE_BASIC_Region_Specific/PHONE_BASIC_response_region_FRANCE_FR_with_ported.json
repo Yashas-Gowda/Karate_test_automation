@@ -15,7 +15,7 @@
           "phoneNumber": "33622788226",
           "phoneValid": true,
           "phoneType": "MOBILE",
-          "phoneDisposable": null,
+          "phoneDisposable": false,
           "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,
