@@ -8,7 +8,7 @@
       "PHONE_BASIC"
     ]
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -55,10 +55,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 12,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 43000
+              "topUpCount": 4,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 13000
             },
             {
               "topUpTenure": {
@@ -66,10 +66,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 18,
+              "topUpCount": 16,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 34000
+              "averageTopUpAmount": 36000
             },
             {
               "topUpTenure": {
@@ -80,7 +80,7 @@
               "topUpCount": 22,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 32000
+              "averageTopUpAmount": 30000
             },
             {
               "topUpTenure": {
@@ -88,10 +88,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 43,
+              "topUpCount": 39,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 33000
+              "averageTopUpAmount": 31000
             },
             {
               "topUpTenure": {
@@ -99,15 +99,26 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 103,
+              "topUpCount": 106,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 32000
+              "averageTopUpAmount": 31000
             },
             {
               "topUpTenure": {
                 "min": 30,
                 "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 12,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 43000
+            },
+            {
+              "topUpTenure": {
+                "min": 60,
+                "max": 90
               },
               "currency": "IDR",
               "topUpCount": 6,
@@ -117,25 +128,14 @@
             },
             {
               "topUpTenure": {
-                "min": 60,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 20000
-            },
-            {
-              "topUpTenure": {
                 "min": 90,
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 21,
+              "topUpCount": 17,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 35000
+              "averageTopUpAmount": 31000
             },
             {
               "topUpTenure": {
@@ -143,7 +143,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 60,
+              "topUpCount": 67,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
               "averageTopUpAmount": 31000
@@ -154,10 +154,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 52,
+              "topUpCount": 45,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 24000
+              "averageTopUpAmount": 25000
             }
           ]
         },
@@ -177,12 +177,13 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "81586348349",
       "cleansedPhoneNumber": "+6281586348349",
-      "referenceId": "e0b815e8-9016-4d14-bbd9-3444cc543e19",
+      "referenceId": "dc84e954-a3cc-4758-b041-7794f38ab3a5",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

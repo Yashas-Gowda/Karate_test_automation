@@ -36,7 +36,8 @@
             "currentCarrierCircle": "3 PT Hutchison 3 Indonesia",
             "originalCarrierCircle": "3 PT Hutchison 3 Indonesia",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": [
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
@@ -88,16 +89,18 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "628988402355",
       "cleansedPhoneNumber": "+628988402355",
-      "referenceId": "dpi_dec_19_1st_call_fail",
+      "referenceId": "6a3f5184-55c0-4e5a-af33-f76587e245d8",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

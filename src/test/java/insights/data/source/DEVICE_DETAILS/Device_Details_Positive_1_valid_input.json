@@ -24,7 +24,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -47,11 +47,11 @@
                 "zipCode": "401101"
               },
               "mostSeenLocation": {
-                "latitude": 19.27199363708496,
-                "longitude": 72.84330368041992,
-                "city": "Mira Bhayandar",
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
                 "state": "MH",
-                "zipCode": "401101"
+                "zipCode": "400092"
               }
             }
           }
@@ -60,10 +60,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "referenceId": "dpi_jan_5_1",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],

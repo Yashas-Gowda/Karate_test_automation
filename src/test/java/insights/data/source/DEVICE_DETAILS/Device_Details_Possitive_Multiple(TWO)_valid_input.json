@@ -22,7 +22,7 @@
           {
             "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": null,
@@ -56,7 +56,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -79,11 +79,11 @@
                 "zipCode": "401101"
               },
               "mostSeenLocation": {
-                "latitude": 19.27199363708496,
-                "longitude": 72.84330368041992,
-                "city": "Mira Bhayandar",
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
                 "state": "MH",
-                "zipCode": "401101"
+                "zipCode": "400092"
               }
             }
           }
@@ -95,10 +95,11 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "74095a82-6d5d-4b8b-9be7-76b88dc18963",
+      "referenceId": "dpi_jan_5_1",
       "inputDeviceIds": [
         "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
         "1db61125-297f-4544-abad-eae8a56ecd90"
@@ -107,7 +108,6 @@
         "DEVICE_DETAILS"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
