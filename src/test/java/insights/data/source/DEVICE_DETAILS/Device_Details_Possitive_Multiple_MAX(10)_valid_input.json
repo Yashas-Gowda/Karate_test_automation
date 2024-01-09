@@ -22,7 +22,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -45,18 +45,52 @@
                 "zipCode": "401101"
               },
               "mostSeenLocation": {
-                "latitude": 19.27199363708496,
-                "longitude": 72.84330368041992,
-                "city": "Mira Bhayandar",
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
                 "state": "MH",
-                "zipCode": "401101"
+                "zipCode": "400092"
+              }
+            }
+          },
+          {
+            "deviceId": "5c185ecc-8c24-4803-a60c-a26f52908d28",
+            "country": "IN",
+            "lastModified": "2024-01-05",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": null,
+              "manufacturer": null,
+              "model": null
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 12.992105484008789,
+                "longitude": 77.60690689086914,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560051"
+              },
+              "nightLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "mostSeenLocation": {
+                "latitude": 12.987642288208008,
+                "longitude": 77.60622024536133,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560051"
               }
             }
           },
           {
             "deviceId": "e84d8f43-d986-45bc-a529-ed9d494dac01",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": null,
@@ -90,7 +124,7 @@
           {
             "deviceId": "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -124,7 +158,7 @@
           {
             "deviceId": "bc42981d-6231-4834-a076-83a83478dbe8",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -158,7 +192,7 @@
           {
             "deviceId": "702f643d-8c6f-4150-8d6a-6851ab58be09",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -192,7 +226,7 @@
           {
             "deviceId": "de2aa48d-7654-46b3-957d-11bb1b206c59",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -226,7 +260,7 @@
           {
             "deviceId": "9cb44865-1d74-4744-b056-d7e71070da3c",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -260,7 +294,7 @@
           {
             "deviceId": "0b45e826-d875-4d7f-8b8d-30388ebf40d2",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -294,7 +328,7 @@
           {
             "deviceId": "0bb3f398-184d-43a1-aea6-637521dcf368",
             "country": "IN",
-            "lastModified": "2023-11-30",
+            "lastModified": "2024-01-05",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -333,13 +367,14 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "ccc308bc-7be9-44aa-80bd-f506f8a90fae",
+      "referenceId": "dpi_jan_5_1",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90",
-        "880ff4be-1bcb-453c-a823-5a35c8cd9642",
+        "5c185ecc-8c24-4803-a60c-a26f52908d28",
         "e84d8f43-d986-45bc-a529-ed9d494dac01",
         "9723ec2b-17e2-43da-86c6-76f30a4c4f39",
         "bc42981d-6231-4834-a076-83a83478dbe8",
@@ -353,7 +388,6 @@
         "DEVICE_DETAILS"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
-  }
+}
