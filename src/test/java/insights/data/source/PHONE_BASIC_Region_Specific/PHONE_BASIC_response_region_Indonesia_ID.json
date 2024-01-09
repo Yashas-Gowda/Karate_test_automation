@@ -1,7 +1,8 @@
 {
   "request":{
-    "phoneNumber": "6285100205510",
+    "phoneNumber": "628571116541",
     "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -12,38 +13,38 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6285100205510",
+          "phoneNumber": "628571116541",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": null,
-          "phoneNumberAge": 3,
-          "phoneNumberAgeDescription": "6 to 12 Months",
+          "simType": "PREPAID",
+          "phoneNumberAge": 1,
+          "phoneNumberAgeDescription": "Below 3 months",
           "phoneTenure": {
-            "min": 6,
-            "max": 8
+            "min": 0,
+            "max": 3
           },
           "country": "ID",
-          "originalCarrier": "TELKOMSEL (PT Telekomunikasi Selular)",
+          "originalCarrier": "Indosat Ooredoo Hutchison",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
-            "originalCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
+            "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "510",
-            "mobileNetworkCode": "10",
-            "networkName": "TELKOMSEL (PT Telekomunikasi Selular)",
-            "serviceProfileId": "62504"
+            "mobileNetworkCode": "01",
+            "networkName": "Indosat Ooredoo Hutchison",
+            "serviceProfileId": "62500"
           },
           "lastDeactivated": null,
           "isSpam": null,
@@ -51,35 +52,13 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 180
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 2,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 17000
-            },
-            {
-              "topUpTenure": {
-                "min": 90,
-                "max": 180
-              },
-              "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
             },
             {
               "topUpTenure": {
@@ -88,9 +67,9 @@
               },
               "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
             }
           ]
         },
@@ -107,12 +86,16 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6285100205510",
-      "cleansedPhoneNumber": "+6285100205510",
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "inputPhoneNumber": "628571116541",
+      "cleansedPhoneNumber": "+628571116541",
+      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
