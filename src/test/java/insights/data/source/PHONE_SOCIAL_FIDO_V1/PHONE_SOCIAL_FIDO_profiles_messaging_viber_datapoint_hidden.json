@@ -1,0 +1,121 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "919000000000",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 5,
+            "registeredEmailProviderProfiles": 0,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 0,
+            "lastActivity": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": null,
+                "accountId": null,
+                "name": null
+              }
+            },
+            "ecommerce": {
+              "flipkart": {
+                "registered": true
+              },
+              "amazon": {
+                "registered": true
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "instagram": {
+                "registered": true
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": false,
+                "photo": null,
+                "privacyStatus": null,
+                "lastSeen": null
+              },
+              "whatsapp": {
+                "registered": false,
+                "photo": null,
+                "privacyStatus": null,
+                "lastSeen": null,
+                "about": null
+              },
+              "skype": {
+                "registered": null,
+                "language": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "name": null,
+                "age": null,
+                "gender": null,
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919000000000",
+      "cleansedPhoneNumber": "+919000000000",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

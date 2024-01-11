@@ -1,5 +1,5 @@
 @PHONE_BASIC_FULL
-Feature: Testing of DPI  - Phone_basic scenarios
+Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for ID Region
 
   Background:
     * configure charset = null
