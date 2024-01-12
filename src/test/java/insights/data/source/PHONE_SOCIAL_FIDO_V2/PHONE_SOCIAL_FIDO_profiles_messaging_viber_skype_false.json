@@ -30,11 +30,20 @@
                 "registered": true,
                 "accountId": null,
                 "name": null
+              },
+              "yahoo": {
+                "registered": null
               }
             },
             "ecommerce": {
               "flipkart": {
                 "registered": true
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
               },
               "amazon": {
                 "registered": true
@@ -80,6 +89,9 @@
                 "lastSeen": null,
                 "name": null
               },
+              "kakao": {
+                "registered": null
+              },
               "skype": {
                 "registered": false,
                 "language": null,
@@ -93,6 +105,24 @@
                 "city": null,
                 "state": null,
                 "country": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null
+              },
+              "zalo": {
+                "registered": null,
+                "uid": null,
+                "name": null,
+                "dateOfBirth": null
+              },
+              "line": {
+                "registered": null,
+                "name": null,
+                "photo": null
+              },
+              "snapchat": {
+                "registered": null
               }
             }
           }
@@ -118,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "919980850300",
       "cleansedPhoneNumber": "+919980850300",
-      "referenceId": "7d211c55-2c87-4b17-bc69-45c6e6517754",
+      "referenceId": "ad187cae-215a-4f39-9dfa-a94dab76adfc",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

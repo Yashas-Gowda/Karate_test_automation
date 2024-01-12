@@ -23,6 +23,7 @@ Feature: Generating auth token
           return   'Bearer '+accessToken
         }
       """
+    * print authLoad
     * print 'Environment AuthGen--->',env
     * def authToken = Token()
     * print 'Bearer Token --->',authToken
