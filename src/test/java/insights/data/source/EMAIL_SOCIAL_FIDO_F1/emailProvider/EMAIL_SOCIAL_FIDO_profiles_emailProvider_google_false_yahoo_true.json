@@ -1,30 +1,30 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
-  },
+    "email": "tanaji4242@yahoo.com"
+  } ,
   "response":{
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 7,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
@@ -37,12 +37,12 @@
             },
             "emailProvider": {
               "google": {
-                "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "registered": false,
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -53,10 +53,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -76,7 +76,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
@@ -89,7 +89,7 @@
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -134,7 +134,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -237,7 +237,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
               }
             }
           }
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "tanaji4242@yahoo.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

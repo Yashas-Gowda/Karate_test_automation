@@ -5,13 +5,12 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "abc@"
+    "email": null
   },
-  "response": {
+  "response":{
     "data": null,
     "meta": {
       "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
-      "inputEmail": "abc@",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
@@ -19,8 +18,8 @@
     "errors": [
       {
         "package": "EMAIL_SOCIAL",
-        "message": "Invalid email address",
-        "code": "INVALID_EMAIL_ADDRESS",
+        "message": "Email cannot be empty/null",
+        "code": "MISSING_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"
       }
     ]

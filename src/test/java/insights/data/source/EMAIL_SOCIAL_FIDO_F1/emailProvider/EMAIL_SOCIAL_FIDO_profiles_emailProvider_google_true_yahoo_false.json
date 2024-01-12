@@ -1,27 +1,27 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
-  },
+    "email": "yashasgowda2510@gmail.com"
+  } ,
   "response":{
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 9,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -38,8 +38,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "name": "YASHAS MODEGOWDRU",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/373a5fd6/ae81/43eb/8105/6fa6be304156/02f8794c-d820-4c53-b64a-fa147fde6076.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -53,7 +53,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -76,13 +76,13 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
@@ -134,7 +134,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": null,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -237,7 +237,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
               }
             }
           }
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

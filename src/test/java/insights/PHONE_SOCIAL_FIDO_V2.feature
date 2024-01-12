@@ -1,5 +1,5 @@
-@FIDO_V1 @ignore
-Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
+@FIDO_V2 @ignore
+Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
 
   Background:
     * configure charset = null
@@ -10,7 +10,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   @PHONE_SOCIAL @FIDO @smokeTest
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -57,7 +57,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   @PHONE_SOCIAL @FIDO
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -105,7 +105,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   @PHONE_SOCIAL @FIDO
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -152,7 +152,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of emailProvider -fido gives only {google} [google,yahoo] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -200,7 +200,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of ecommerce -fido gives only {Flipkart,Amazon} out off [flipkart,bukalapak,jdid,amazon] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -241,18 +241,18 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     # Test data for for amazon false - 919723596143,919439387913,919834538317,919830908019,919493590625
 
     Examples:
-      | Scenario                                                            | statusCode |
-      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_true         | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_false        | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_null         | 200        |
+      | Scenario                                                      | statusCode |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_true   | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_false  | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_null   | 200        |
 
-      | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_true       | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_true | 200        |
 #  data not found    | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_false      | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_Datapoint_not_present | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_null | 200        |
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of socialMedia - [facebook,twitter,instagram] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -307,7 +307,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of professional - [microsoft,linkedin] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -358,7 +358,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -414,12 +414,12 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_with_photo_privacyStatus_PUBLIC     | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_without_photo_privacyStatus_PRIVATE | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_skype_false                                                           | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_viber_datapoint_hidden                                                      | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_photo_lastSeen_name_null                                   | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_true_with_name                                             | 200        |
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging when where messaging.viber.lastSeen is notnull - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -466,57 +466,15 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 #      | PHONE_SOCIAL_FIDO_profiles_messaging_skype_registered_true_with_all_null                                             | 200        |
 #      | PHONE_SOCIAL_FIDO_profiles_messaging_skype_registered_true_with_language_id_handle_bio_name_age_gender_photo_city_state_country | 200        |
 
-#  @Schema_validation_1
-#  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
-#    Given url requestUrl
-#    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
-#    And headers headers
-#    And header Authorization = BearerToken
-#    And request payload.request
-#    * set payload.response.meta.referenceId = "#ignore"
-#    * set payload.response.viber.lastSeen = "#ignore"
-#    When method POST
-#    # cloud watch traces -start
-#    * print karate.request.headers
-#    * print karate.response.headers
-#    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-#    * def reference_id = karate.request.headers['x-reference-id']
-#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-#    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-#    # ResponseTime
-#    * print 'responseTime----->',responseTime
-#    # Request-response
-#    * print 'API Request----->',payload.request
-#    * print 'Expected Response---->',payload.response
-#    * print 'Actual Response---->',karate.pretty(response)
-#    Then status <statusCode>
-#
-#    And match $.data.phone.social == '#notnull'
-#    And match $.data.phone.basic == '#null'
-#    And match $.data.phone.social.summary contains deep {"registeredProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredProfessionalProfiles":"#present","registeredMessagingProfiles":"#present","lastActivity":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
-#    And match $.data.phone.social.profiles.emailProvider contains deep {"google":{"registered":"#present","accountId":"#present","name":"#present"},"yahoo":{"registered":"#present"}}
-#    And match $.data.phone.social.profiles.ecommerce contains deep {"flipkart":{"registered":"#present"},"bukalapak":{"registered":"#present"},"jdid":{"registered":"#present"},"amazon":{"registered":"#present"}}x`
-#    And match $.data.phone.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present"},"twitter":{"registered":"#present"},"instagram":{"registered":"#present"}}
-#    And match $.data.phone.social.profiles.professional contains deep {"microsoft":{"registered":"#present"},"linkedin":{"registered":"#present"}}
-#    And match $.data.phone.social.profiles.messaging contains deep {"telegram":{"registered":"#present","photo":"#present","privacyStatus":"#present","lastSeen":"#present"},"whatsapp":{"registered":"#present","photo":"#present","privacyStatus":"#present","lastSeen":"#present","about":"#present"},"viber":{"registered":"#present","photo":"#present","lastSeen":"#present","name":"#present"},"kakao":{"registered":"#present"},"skype":{"registered":"#present","language":"#present","id":"#present","handle":"#present","bio":"#present","name":"#present","age":"#present","gender":"#present","photo":"#present","city":"#present","state":"#present","country":"#present"},"ok":{"registered":"#present","age":"#present"},"zalo":{"registered":"#present","uid":"#present","name":"#present","dateOfBirth":"#present"},"line":{"registered":"#present","name":"#present","photo":"#present"},"snapchat":{"registered":"#present"}}
-#
-#    And match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
-#    And match $.meta contains deep {"inputPhoneNumber":"#present","cleansedPhoneNumber":"#present","referenceId":"#present","requestedPackages":["PHONE_SOCIAL"]}
-#    And match $.errors == []
-#
-#    Examples:
-#      | Scenario | statusCode |
-##      | PHONE_SOCIAL_country_Malaysia_response | 200        |
-
-
   @Schema_validation_1
-  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.viber.lastSeen = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -535,7 +493,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
     * def Schema =
     """
-    {
+{
   "data": {
     "phone": {
       "basic": null,
@@ -557,10 +515,19 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
               "registered": "#present",
               "accountId": "#present",
               "name": "#present"
+            },
+            "yahoo": {
+              "registered": "#present"
             }
           },
           "ecommerce": {
             "flipkart": {
+              "registered": "#present"
+            },
+            "bukalapak": {
+              "registered": "#present"
+            },
+            "jdid": {
               "registered": "#present"
             },
             "amazon": {
@@ -607,6 +574,9 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
               "lastSeen": "#present",
               "name": "#present"
             },
+            "kakao": {
+              "registered": "#present"
+            },
             "skype": {
               "registered": "#present",
               "language": "#present",
@@ -620,6 +590,24 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
               "city": "#present",
               "state": "#present",
               "country": "#present"
+            },
+            "ok": {
+              "registered": "#present",
+              "age": "#present"
+            },
+            "zalo": {
+              "registered": "#present",
+              "uid": "#present",
+              "name": "#present",
+              "dateOfBirth": "#present"
+            },
+            "line": {
+              "registered": "#present",
+              "name": "#present",
+              "photo": "#present"
+            },
+            "snapchat": {
+              "registered": "#present"
             }
           }
         }
@@ -650,10 +638,11 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       "PHONE_SOCIAL"
     ]
   },
-  "errors": []
+  "errors": [
+
+  ]
 }
     """
-
     * match payload.response.data.phone.social.summary contains Schema.data.phone.social.summary
 
     * match payload.response.data.phone.social.profiles.emailProvider contains Schema.data.phone.social.profiles.emailProvider
@@ -667,5 +656,231 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
     Examples:
       | Scenario                                               | statusCode |
-      | PHONE_SOCIAL_FIDO_V1_all_data_points_Schema_Validation | 200        |
+      | PHONE_SOCIAL_FIDO_V2_all_data_points_Schema_Validation | 200        |
+
+#  @Schema_validation_1
+#  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
+#    And headers headers
+#    And header Authorization = BearerToken
+#    And request payload.request
+#    * set payload.response.meta.referenceId = "#ignore"
+#    * set payload.response.viber.lastSeen = "#ignore"
+#    When method POST
+#    # cloud watch traces -start
+#    * print karate.request.headers
+#    * print karate.response.headers
+#    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+#    * def reference_id = karate.request.headers['x-reference-id']
+#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+#    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+#    # ResponseTime
+#    * print 'responseTime----->',responseTime
+#    # Request-response
+#    * print 'API Request----->',payload.request
+#    * print 'Expected Response---->',payload.response
+#    * print 'Actual Response---->',karate.pretty(response)
+#    Then status <statusCode>
+#
+#    And match $.data.phone.social == '#notnull'
+#    And match $.data.phone.basic == '#null'
+#    And match $.data.phone.social.summary contains deep {"registeredProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredProfessionalProfiles":"#present","registeredMessagingProfiles":"#present","lastActivity":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
+#    And match $.data.phone.social.profiles.emailProvider contains deep {"google":{"registered":"#present","accountId":"#present","name":"#present"},"yahoo":{"registered":"#present"}}
+#    And match $.data.phone.social.profiles.ecommerce contains deep {"flipkart":{"registered":"#present"},"bukalapak":{"registered":"#present"},"jdid":{"registered":"#present"},"amazon":{"registered":"#present"}}x`
+#    And match $.data.phone.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present"},"twitter":{"registered":"#present"},"instagram":{"registered":"#present"}}
+#    And match $.data.phone.social.profiles.professional contains deep {"microsoft":{"registered":"#present"},"linkedin":{"registered":"#present"}}
+#    And match $.data.phone.social.profiles.messaging contains deep {"telegram":{"registered":"#present","photo":"#present","privacyStatus":"#present","lastSeen":"#present"},"whatsapp":{"registered":"#present","photo":"#present","privacyStatus":"#present","lastSeen":"#present","about":"#present"},"viber":{"registered":"#present","photo":"#present","lastSeen":"#present","name":"#present"},"kakao":{"registered":"#present"},"skype":{"registered":"#present","language":"#present","id":"#present","handle":"#present","bio":"#present","name":"#present","age":"#present","gender":"#present","photo":"#present","city":"#present","state":"#present","country":"#present"},"ok":{"registered":"#present","age":"#present"},"zalo":{"registered":"#present","uid":"#present","name":"#present","dateOfBirth":"#present"},"line":{"registered":"#present","name":"#present","photo":"#present"},"snapchat":{"registered":"#present"}}
+#
+#    And match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+#    And match $.meta contains deep {"inputPhoneNumber":"#present","cleansedPhoneNumber":"#present","referenceId":"#present","requestedPackages":["PHONE_SOCIAL"]}
+#    And match $.errors == []
+#
+#    Examples:
+#      | Scenario | statusCode |
+##      | PHONE_SOCIAL_country_Malaysia_response | 200        |
+
+
+#  @Schema_validation_1
+#  Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_2 - <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
+#    And headers headers
+#    And header Authorization = BearerToken
+#    And request payload.request
+#    * set payload.response.meta.referenceId = "#ignore"
+#    * set payload.response.viber.lastSeen = "#ignore"
+#    When method POST
+#    # cloud watch traces -start
+#    * print karate.request.headers
+#    * print karate.response.headers
+#    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+#    * def reference_id = karate.request.headers['x-reference-id']
+#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+#    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+#    # ResponseTime
+#    * print 'responseTime----->',responseTime
+#    # Request-response
+#    * print 'API Request----->',payload.request
+#    * print 'Expected Response---->',payload.response
+#    * print 'Actual Response---->',karate.pretty(response)
+#    Then status <statusCode>
+#
+#    * def Schema =
+#    """
+#{
+#  "data": {
+#    "phone": {
+#      "basic": null,
+#      "social": {
+#        "summary": {
+#          "registeredProfiles": "#number",
+#          "registeredEmailProviderProfiles": "#number",
+#          "registeredEcommerceProfiles": "#number",
+#          "registeredSocialMediaProfiles": "#number",
+#          "registeredProfessionalProfiles": "#number",
+#          "registeredMessagingProfiles": "#number",
+#          "lastActivity": "#null",
+#          "numberOfNamesReturned": "#number",
+#          "numberOfPhotosReturned": "#number"
+#        },
+#        "profiles": {
+#          "emailProvider": {
+#            "google": {
+#              "registered": "#present",
+#              "accountId": "#present",
+#              "name": "#present"
+#            },
+#            "yahoo": {
+#              "registered": "#present"
+#            }
+#          },
+#          "ecommerce": {
+#            "flipkart": {
+#              "registered": "#present"
+#            },
+#            "bukalapak": {
+#              "registered": "#present"
+#            },
+#            "jdid": {
+#              "registered": "#present"
+#            },
+#            "amazon": {
+#              "registered": "#present"
+#            }
+#          },
+#          "socialMedia": {
+#            "facebook": {
+#              "registered": "#present"
+#            },
+#            "twitter": {
+#              "registered": "#present"
+#            },
+#            "instagram": {
+#              "registered": "#present"
+#            }
+#          },
+#          "professional": {
+#            "microsoft": {
+#              "registered": "#present"
+#            },
+#            "linkedin": {
+#              "registered": "#present"
+#            }
+#          },
+#          "messaging": {
+#            "telegram": {
+#              "registered": "#present",
+#              "photo": "#present",
+#              "privacyStatus": "#present",
+#              "lastSeen": "#present"
+#            },
+#            "whatsapp": {
+#              "registered": "#present",
+#              "photo": "#present",
+#              "privacyStatus": "#present",
+#              "lastSeen": "#present",
+#              "about": "#present",
+#              "businessAccount": "#present"
+#            },
+#            "viber": {
+#              "registered": "#present",
+#              "photo": "#present",
+#              "lastSeen": "#present",
+#              "name": "#present"
+#            },
+#            "kakao": {
+#              "registered": "#present"
+#            },
+#            "skype": {
+#              "registered": "#present",
+#              "language": "#present",
+#              "id": "#present",
+#              "handle": "#present",
+#              "bio": "#present",
+#              "name": "#present",
+#              "age": "#present",
+#              "gender": "#present",
+#              "photo": "#present",
+#              "city": "#present",
+#              "state": "#present",
+#              "country": "#present"
+#            },
+#            "ok": {
+#              "registered": "#present",
+#              "age": "#present"
+#            },
+#            "zalo": {
+#              "registered": "#present",
+#              "uid": "#present",
+#              "name": "#present",
+#              "dateOfBirth": "#present"
+#            },
+#            "line": {
+#              "registered": "#present",
+#              "name": "#present",
+#              "photo": "#present"
+#            },
+#            "snapchat": {
+#              "registered": "#present"
+#            }
+#          }
+#        }
+#      },
+#      "identity": "#null"
+#    },
+#    "email": "#null",
+#    "address": "#null",
+#    "name": "#null",
+#    "ip": "#null",
+#    "identity": "#null",
+#    "upi": "#null",
+#    "device": "#null",
+#    "employment": "#null",
+#    "income": "#null",
+#    "blacklist": "#null",
+#    "domain": "#null",
+#    "kyc": "#null",
+#    "bank": "#null",
+#    "aadhaar": "#null",
+#    "bre": "#null"
+#  },
+#  "meta": {
+#    "inputPhoneNumber": "#present",
+#    "cleansedPhoneNumber": "#present",
+#    "referenceId": "#present",
+#    "requestedPackages": [
+#      "PHONE_SOCIAL"
+#    ]
+#  },
+#  "errors": [
+#
+#  ]
+#}
+#    """
+#    * match $ contains deep Schema
+#    Examples:
+#      | Scenario                                               | statusCode |
+#      | PHONE_SOCIAL_FIDO_V2_all_data_points_Schema_Validation | 200        |
+
 

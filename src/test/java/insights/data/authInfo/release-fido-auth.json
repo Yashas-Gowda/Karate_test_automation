@@ -8,7 +8,7 @@
   "tenant_config":{
     "tenant": "tenant_01HHYFP9W32AXS63J954J6ZJRV",
     "exclude": {
-      "EMAIL_SOCAIL": {
+      "EMAIL_SOCIAL": {
         "01H72X88KKK3R5013F54H5P09T": {
           "name": "FIDO email_social_v2"
         },
@@ -16,7 +16,7 @@
           "name": "Seon Email Social"
         }
       },
-      "PHONE_SOCAIL": {
+      "PHONE_SOCIAL": {
         "01H72XCMJ3A08W8MREYD8T1EBS": {
           "name": "FIDO phone_social_v2"
         },
@@ -26,13 +26,13 @@
       }
     },
     "include": {
-      "EMAIL_SOCAIL": {
+      "EMAIL_SOCIAL": {
         "01H6S1E1Y35A6R65086W7T5Z97": {
           "name": "FIDO email_social",
           "order": 0
         }
       },
-      "PHONE_SOCAIL": {
+      "PHONE_SOCIAL": {
         "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
           "name": "FIDO Phone",
           "order": 0

@@ -3,22 +3,22 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMAIL_SOCIAL"
+      "EMAIL_BASIC"
     ],
-    "email": "abc@"
+    "email": "@gmail.com"
   },
   "response": {
     "data": null,
     "meta": {
       "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
-      "inputEmail": "abc@",
+      "inputEmail": "@gmail.com",
       "requestedPackages": [
-        "EMAIL_SOCIAL"
+        "EMAIL_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "EMAIL_SOCIAL",
+        "package": "EMAIL_BASIC",
         "message": "Invalid email address",
         "code": "INVALID_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"

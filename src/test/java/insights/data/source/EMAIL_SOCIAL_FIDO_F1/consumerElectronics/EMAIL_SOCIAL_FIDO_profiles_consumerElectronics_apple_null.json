@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
+    "email": "thousifabdul96@gmail.com"
   },
   "response":{
     "data": {
@@ -12,14 +12,14 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 9,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 0,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 1,
             "ageOnSocial": null,
@@ -29,7 +29,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": null
               },
               "samsung": {
                 "registered": null
@@ -38,8 +38,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "name": "ABDUL THOUSIF",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/2abce79d/3979/422f/9ace/d00b9496ba09/e8113398-f7e4-4979-8d45-d8bff7732a6f.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -53,10 +53,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -76,20 +76,20 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -134,7 +134,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -194,7 +194,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "lastfm": {
                 "registered": null
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "thousifabdul96@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

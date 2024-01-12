@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
+    "email": "Sheekca13@gmail.com"
   },
   "response":{
     "data": {
@@ -12,14 +12,14 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 9,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 0,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 1,
             "ageOnSocial": null,
@@ -29,7 +29,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": null
@@ -38,8 +38,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "name": "Shikha Chauhan",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/034a4e00/4912/4662/9adc/1d27cab10831/c74cbfdc-cc70-47cd-b486-909e0a6baac4.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -53,10 +53,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -76,7 +76,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
@@ -92,7 +92,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -194,7 +194,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "lastfm": {
                 "registered": null
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "Sheekca13@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

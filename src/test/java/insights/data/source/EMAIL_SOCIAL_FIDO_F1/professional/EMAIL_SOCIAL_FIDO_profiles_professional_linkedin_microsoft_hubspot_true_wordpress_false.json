@@ -1,11 +1,11 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
-  },
+    "email": "sreekuttank46@gmail.com"
+  } ,
   "response":{
     "data": {
       "phone": null,
@@ -13,15 +13,15 @@
         "social": {
           "summary": {
             "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 1,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 0,
+            "registeredProfessionalProfiles": 3,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -29,7 +29,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": null
@@ -38,8 +38,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "name": "sree kuttan",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/eb645e40/c555/4f94/9ed9/3bc572d9afef/32a0d070-629c-45b8-a568-c3e94e1a9930.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -53,10 +53,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -89,7 +89,7 @@
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -189,12 +189,12 @@
                 "registered": null
               },
               "hubspot": {
-                "registered": false
+                "registered": true
               }
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "lastfm": {
                 "registered": null
@@ -237,7 +237,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
               }
             }
           }
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "sreekuttank46@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

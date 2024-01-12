@@ -5,13 +5,13 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "abc@"
+    "email": "1234"
   },
-  "response": {
+  "response":{
     "data": null,
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
-      "inputEmail": "abc@",
+      "referenceId": "AMS-test-1",
+      "inputEmail": "1234",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

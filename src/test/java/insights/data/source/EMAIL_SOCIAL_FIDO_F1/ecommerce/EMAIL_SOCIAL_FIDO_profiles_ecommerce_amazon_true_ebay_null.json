@@ -1,27 +1,27 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
-  },
+    "email": "sutharvishal9680@gmail.com"
+  } ,
   "response":{
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 5,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 0,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -29,7 +29,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": null
@@ -38,8 +38,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/67dd25e6/3c42/4171/9159/f5df81c39b5f/211dda5a-98bd-43c4-b61e-2447525883ca.jpg"
+                "name": "vish sharma",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/30499867/1fe9/4bd2/bce5/a7e05d0bc14f/08f3be4b-2427-4a7e-9777-dcf74e7b0cdb.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -53,10 +53,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -76,13 +76,13 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
@@ -92,7 +92,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -134,7 +134,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": null,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -165,7 +165,7 @@
                 "registered": null
               },
               "linkedin": {
-                "registered": true,
+                "registered": null,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -180,7 +180,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": true
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -237,7 +237,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
               }
             }
           }
@@ -257,7 +257,7 @@
     },
     "meta": {
       "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "inputEmail": "sutharvishal9680@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
