@@ -1,5 +1,5 @@
 @FIDO_V1 @ignore
-Feature: Testing of DPI  - PHONE_SOCIAL scenarios
+Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
   Background:
     * configure charset = null
