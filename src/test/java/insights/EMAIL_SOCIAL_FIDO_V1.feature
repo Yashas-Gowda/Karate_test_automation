@@ -1,6 +1,6 @@
-@FIDO @ignore
+ @FidoV1 @ignore
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
-
+#@FIDO @ignore
   Background:
     * configure charset = null
     * path '/api/insights/'

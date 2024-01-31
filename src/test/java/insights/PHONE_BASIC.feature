@@ -170,7 +170,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
   @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
-  Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of simType - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of PHONE_TENURE - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
     And headers headers
@@ -224,7 +224,6 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_called_INDOSAT_Data_partner                                | 200        | "#null"        | "#null"          | 5              | "Above 24 months"         | "#notnull"  | 24              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_IAM_NUMBER_called_INDOSAT_Data_partner                            | 200        | "#null"        | "#null"          | 1              | "Below 3 months"          | "#notnull"  | 0               | 3               |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_TMT_Data_partner                                | 200        | "#null"        | "#null"          | 4              | "Above 12 Months"         | "#notnull"  | 12              | null            |
-
 
   @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
   Scenario Outline:  DPI PHONE_BASIC_Sub_LAST_DEACTIVATED positive scenario for Indian region with validation of LAST_DEACTIVATED - <Scenario>
