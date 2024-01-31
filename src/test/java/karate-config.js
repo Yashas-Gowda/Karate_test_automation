@@ -1,7 +1,7 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'env-test'
+    var env = 'release-m'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 

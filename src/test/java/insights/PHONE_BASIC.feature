@@ -67,7 +67,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.isSpam == <isSpam>
 
     Examples:
-      | Scenario                                                      | statusCode | isSpam |
+      | Scenario | statusCode | isSpam |
     # tcs are commented as Eyecon data partner is disabled in DPI config
 #      | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_India_isSpam_true           | 200        | true   |
 #      | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_India_isSpam_false          | 200        | false  |
@@ -252,12 +252,19 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.lastDeactivated == <lastDeactivated>
     And match $.data.phone.basic.lastDeactivated.minimumTenureDays == <lastDeactivated_minimumTenureDays>
     And match $.data.phone.basic.lastDeactivated.minimumTenureDays == <lastDeactivated_maximumTenureDays>
+    And match $.data.phone.basic.numberRecycled == <numberRecycled>
 
     Examples:
-      | Scenario                                                                                    | statusCode | lastDeactivated | lastDeactivated_minimumTenureDays | lastDeactivated_maximumTenureDays |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_True_deactivated_India_lastDeactivated_notnull   | 200        | "#notnull"      | "#number"                         | "#number"                         |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_false_deactivated_India_lastDeactivated_null     | 200        | null            | "##null"                          | "##null"                          |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_null_for_other_region_expect_india_BR_lastDeactivated_null | 200        | null            | "##null"                          | "##null"                          |
+      | Scenario                                                                                                                                  | statusCode | lastDeactivated | lastDeactivated_minimumTenureDays | lastDeactivated_maximumTenureDays | numberRecycled |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_True_deactivated_India_lastDeactivated_notnull                                                 | 200        | "#notnull"      | "#number"                         | "#number"                         | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_false_deactivated_India_lastDeactivated_null                                                   | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_null_for_other_region_expect_IN_ID_lastDeactivated_null                                                  | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_no_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null  | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_true     | 200        | null            | "##null"                          | "##null"                          | true           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_false    | 200        | null            | "##null"                          | "##null"                          | false          |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_NON_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_NON_INDOSAT_NUMBER_when_no_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null | 200        | null            | "##null"                          | "##null"                          | null           |
+
 
   @PHONE_BASIC @CARRIER_INFORMATION @TMT @currentCarrierCircle @originalCarrierCircle @changeInCarrierRegion
   Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of changeInCarrierRegion - <Scenario>
