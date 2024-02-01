@@ -204,7 +204,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | Scenario                                                                     | statusCode |
       | UPI_ADVANCED_NEGATIVE_with_only_email_input_account_upiApplicationName_PAYTM | 400        |
 
-# SC005 - Validate the UPI_ADVANCE package when upiApplicationName = ALL
+# SC005 - Validate the UPI_ADVANCE package when upiApplicationName = PRIMARY
 
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = PRIMARY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -308,6 +308,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_4_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_2_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
 
 # when phone number with country code appended in the request

@@ -1,7 +1,7 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'test-fido'
+    var env = 'release-m'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
@@ -35,6 +35,7 @@ function() {
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
+
            case "release-fido":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
@@ -53,6 +54,15 @@ function() {
                  config.authUrl = "https://test-auth.monnai.com";
                  break;
            case "test-fidoV2":
+                 config.requestUrl = "https://test.monnai.com";
+                 config.authUrl = "https://test-auth.monnai.com";
+                 break;
+//  General auth gen curl for any env with general credentials
+            case "env-release-gen":
+                 config.requestUrl = "https://release.monnai.com";
+                 config.authUrl = "https://release-auth.monnai.com";
+                 break;
+            case "env-test-gen":
                  config.requestUrl = "https://test.monnai.com";
                  config.authUrl = "https://test-auth.monnai.com";
                  break;

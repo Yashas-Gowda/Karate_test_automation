@@ -1,6 +1,6 @@
-@seon_email @ignore
+ @FidoV1  @ignore @seon_email
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
-
+#@seon_email @ignore
   Background:
     * configure charset = null
     * path '/api/insights/'

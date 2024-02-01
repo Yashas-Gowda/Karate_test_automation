@@ -1,0 +1,109 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "919719061192",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "919719061192",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "IN",
+          "originalCarrier": "Vodafone - Uttar Pradesh West",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2023-07-04",
+            "numberOfPorts": 6,
+            "portedSinceXDays": 211,
+            "currentCarrierCircle": "Vi India Haryana",
+            "originalCarrierCircle": "Vi India Uttar Pradesh (West)",
+            "changeInCarrierRegion": "CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "Vodafone Haryana",
+                "portedDate": "2023-07-04"
+              },
+              {
+                "carrierCircle": "JIO Haryana",
+                "portedDate": "2022-12-24"
+              },
+              {
+                "carrierCircle": "Airtel Haryana",
+                "portedDate": "2022-08-18"
+              },
+              {
+                "carrierCircle": "Vodafone Haryana",
+                "portedDate": "2021-10-05"
+              },
+              {
+                "carrierCircle": "Airtel Uttar Pradesh (West)",
+                "portedDate": "2021-03-26"
+              },
+              {
+                "carrierCircle": "BSNL Uttar Pradesh (West)",
+                "portedDate": "2019-08-29"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "01",
+            "networkName": "Vodafone - Haryana",
+            "serviceProfileId": "91229"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": {
+            "minimumTenureDays": 1035,
+            "maximumTenureDays": 1066
+          },
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919719061192",
+      "cleansedPhoneNumber": "+919719061192",
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,6 +1,6 @@
-@FIDO_V1 @ignore
+ @FidoV1 @ignore
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
-
+#  @FIDO_V1 @ignore
   Background:
     * configure charset = null
     * path '/api/insights/'
