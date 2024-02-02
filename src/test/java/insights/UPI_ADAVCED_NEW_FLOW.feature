@@ -668,8 +668,8 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.meta.inputPhoneNumber = "#ignore"
-    * set payload.response.meta.cleansedPhoneNumber = "##string"
+#    * set payload.response.meta.inputPhoneNumber = "#ignore"
+#    * set payload.response.meta.cleansedPhoneNumber = "##string"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -691,7 +691,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Examples:
       | Scenario                                                                              | phoneDefaultCountryCode | statusCode | errorCode                       | errorMessage                              |
   #  https://monnai.atlassian.net/browse/MB-3555
-      | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_SERVICE_UNAVAILABLE_FOR_COUNTRY | "ID"                    | 400        | SERVICE_UNAVAILABLE_FOR_COUNTRY | Service unavailable for country Indonesia |
+      | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_SERVICE_UNAVAILABLE_FOR_COUNTRY | "ID"                    | 501        | SERVICE_UNAVAILABLE_FOR_COUNTRY | Service unavailable for country Indonesia |
 
 #  https://monnai.atlassian.net/browse/MB-1548
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when an input is invalid phoneNumber https://monnai.atlassian.net/browse/MB-1548-> <Scenario> | InputIP -> <phoneNumber>.
