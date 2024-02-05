@@ -1,0 +1,1001 @@
+{
+	"info": {
+		"_postman_id": "43b122c3-ba14-4bf2-b7ed-76af21548a6f",
+		"name": "PARTNER_HEALTH_CHECK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "697569"
+	},
+	"item": [
+		{
+			"name": "EYECON - SPAM",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: EYECON\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        ",
+							"        const statusCode = pm.response.code;",
+							"        const myFunction = eval(pm.globals.get('myGlobalFunction'));",
+							"",
+							"        if(statusCode === 200) {",
+							"            const requestBody = pm.request.body;",
+							"            //if(pm.expect(responseJson.result.uan).to.be.not.null) {",
+							"            ",
+							"            //if(responseJson.spam === \"NOT A SPAM\") {",
+							"            if(responseJson.err === \"No credits remaining (empty)\") {",
+							"                pm.test(\"Eyecon Fail : Credit check. \" + responseJson.err, () => {throw new Error(\"Eyecon Fail : Credit Check.\" + responseJson.err + \"\\n\" + \"Check partner API credit.\")}); ",
+							"                //pm.test(\"Eyecon Pass - Credit check\" , () => {console.log(\"Eyecon Pass - Credit Check.\")});",
+							"            }",
+							"            else {",
+							"                pm.test(\"Eyecon Pass - Credit check\" , () => {console.log(\"Eyecon Pass - Credit Check.\")});",
+							"               //pm.test(\"Eyecon Fail : Credit check. \" + responseJson.message, () => {throw new Error(\"Eyecon Fail : Credit Check.\" + responseJson.message + \"\\n\" + \"Check partner API credit.\")}); ",
+							"            }",
+							"        } else {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"Eyecon Fail - API call failed . Error code : \" + pm.response.body.toString, () => {throw new Error(\"Eyecon Fail - API call failed . Error code : \" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"Eyecon Fail - Response or response text is undefined\");",
+							"        console.error(\"Eyecon Fail - Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"Eyecon Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Eyecon Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        ",
+							"        console.error(\"Eyecon Fail : Eyecon API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"Eyecon API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Eyecon API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.anycomplete.com/api20/lookup?token=2542d9fc-dc8a-4d91-841a-cfda6a3833de&phone=918527805566",
+					"protocol": "https",
+					"host": [
+						"api",
+						"anycomplete",
+						"com"
+					],
+					"path": [
+						"api20",
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "2542d9fc-dc8a-4d91-841a-cfda6a3833de"
+						},
+						{
+							"key": "phone",
+							"value": "918527805566"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EYECON - ENHANCED NAMES",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: EYECON - ENHANCED NAMES\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        ",
+							"        const statusCode = pm.response.code;",
+							"        const myFunction = eval(pm.globals.get('myGlobalFunction'));",
+							"",
+							"        if(statusCode === 200) {",
+							"            const requestBody = pm.request.body;",
+							"            //if(pm.expect(responseJson.result.uan).to.be.not.null) {",
+							"            ",
+							"            //if(responseJson.spam === \"NOT A SPAM\") {",
+							"            if(responseJson.err === \"No credits remaining (empty)\") {",
+							"                pm.test(\"Eyecon ENHANCED NAMES Fail : Credit check. \" + responseJson.err, () => {throw new Error(\"Eyecon ENHANCED NAMES Fail : Credit Check.\" + responseJson.err + \"\\n\" + \"Check partner API credit.\")}); ",
+							"                //pm.test(\"Eyecon ENHANCED Pass - Credit check\" , () => {console.log(\"Eyecon ENHANCED Pass - Credit Check.\")});",
+							"            }",
+							"            else {",
+							"                pm.test(\"Eyecon ENHANCED NAMES Pass - Credit check\" , () => {console.log(\"Eyecon ENHANCED NAMES Pass - Credit Check.\")});",
+							"               //pm.test(\"Eyecon Fail : Credit check. \" + responseJson.message, () => {throw new Error(\"Eyecon Fail : Credit Check.\" + responseJson.message + \"\\n\" + \"Check partner API credit.\")}); ",
+							"            }",
+							"        } else {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"Eyecon ENHANCED NAMES Fail - API call failed . Error code : \" + pm.response.body.toString, () => {throw new Error(\"Eyecon ENHANCED NAMES Fail - API call failed . Error code : \" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"Eyecon ENHANCED NAMES Fail - Response or response text is undefined\");",
+							"        console.error(\"Eyecon ENHANCED NAMES Fail - Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"Eyecon ENHANCED NAMES Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Eyecon ENHANCED NAMES Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        ",
+							"        console.error(\"Eyecon ENHANCED NAMES Fail : Eyecon ENHANCED NAMES API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"Eyecon ENHANCED NAMES API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Eyecon ENHANCED NAMES API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.anycomplete.com/api20/lookup?token=ff037df5-f4ab-11ed-9c99-0ab36b328129&phone=919448128410",
+					"protocol": "https",
+					"host": [
+						"api",
+						"anycomplete",
+						"com"
+					],
+					"path": [
+						"api20",
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "ff037df5-f4ab-11ed-9c99-0ab36b328129"
+						},
+						{
+							"key": "phone",
+							"value": "919448128410"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EYECON - ENHANCED PHONE NUMBERS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: EYECON - ENHANCED PHONE NUMBERS\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        ",
+							"        const statusCode = pm.response.code;",
+							"        const myFunction = eval(pm.globals.get('myGlobalFunction'));",
+							"",
+							"        if(statusCode === 200) {",
+							"            const requestBody = pm.request.body;",
+							"            //if(pm.expect(responseJson.result.uan).to.be.not.null) {",
+							"            ",
+							"            //if(responseJson.spam === \"NOT A SPAM\") {",
+							"            if(responseJson.err === \"No credits remaining (empty)\") {",
+							"                pm.test(\"Eyecon ENHANCED PHONE NUMBERS Fail : Credit check. \" + responseJson.err, () => {throw new Error(\"Eyecon ENHANCED PHONE NUMBERS Fail : Credit Check.\" + responseJson.err + \"\\n\" + \"Check partner API credit.\")}); ",
+							"                //pm.test(\"Eyecon ENHANCED Pass - Credit check\" , () => {console.log(\"Eyecon ENHANCED Pass - Credit Check.\")});",
+							"            }",
+							"            else {",
+							"                pm.test(\"Eyecon ENHANCED PHONE NUMBERS Pass - Credit check\" , () => {console.log(\"Eyecon ENHANCED PHONE NUMBERS Pass - Credit Check.\")});",
+							"               //pm.test(\"Eyecon Fail : Credit check. \" + responseJson.message, () => {throw new Error(\"Eyecon Fail : Credit Check.\" + responseJson.message + \"\\n\" + \"Check partner API credit.\")}); ",
+							"            }",
+							"        } else {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"Eyecon ENHANCED PHONE NUMBERS Fail - API call failed . Error code : \" + pm.response.body.toString, () => {throw new Error(\"Eyecon ENHANCED PHONE NUMBERS Fail - API call failed . Error code : \" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"Eyecon ENHANCED PHONE NUMBERS Fail - Response or response text is undefined\");",
+							"        console.error(\"Eyecon ENHANCED PHONE NUMBERS Fail - Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"Eyecon ENHANCED PHONE NUMBERS Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Eyecon ENHANCED PHONE NUMBERS Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        ",
+							"        console.error(\"Eyecon ENHANCED PHONE NUMBERS Fail : Eyecon ENHANCED PHONE NUMBERS API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"Eyecon ENHANCED PHONE NUMBERS API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Eyecon ENHANCED PHONE NUMBERS API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.anycomplete.com/api20/lookup?token=ff037df5-f4ab-11ed-9c99-0ab36b328129&phone=919448128410",
+					"protocol": "https",
+					"host": [
+						"api",
+						"anycomplete",
+						"com"
+					],
+					"path": [
+						"api20",
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "ff037df5-f4ab-11ed-9c99-0ab36b328129"
+						},
+						{
+							"key": "phone",
+							"value": "919448128410"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TMT-VERIFY",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: TMT-VERIFY\", () => {",
+							"    try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"       /* const requestBody = pm.request.body;",
+							"        console.log(\"API request : \" + pm.request.body);",
+							"        console.log(\"API number : \" + requestBody.number); */",
+							"       ",
+							"        const statusCode = pm.response.code;",
+							"        //var status_message = responseJson.918763201528.status_message;",
+							"        if(statusCode === 200) {",
+							"            //if(status_message === \"Success\") {",
+							"                console.log(\"iff\");",
+							"                /*pm.test(\"TMT-VERIFY - status_message : \" + responseJson.status_message , () => {console.log(\"TMT-VERIFY - status_message : \" + responseJson.status_message )}); */",
+							"                pm.test(\"TMT-VERIFY - Success. Status Code : \" + pm.response.code , () => {console.log(\"TMT-VERIFY - Success. Status Code : \" + pm.response.code )});",
+							"           /* }",
+							"            else {",
+							"                pm.test(\"TMT-VERIFY Fail - status_message : \" + responseJson.status_message, () => {throw new Error(\"TMT-VERIFY Fail - - status_message : \" + responseJson.status_message + \"\\n\" + \"Check partner API input.\")}); ",
+							"            } */",
+							"        } else {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"TMT-VERIFY - Fail \", () => {throw new Error(\"TMT-VERIFY - Fail\" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"TMT-VERIFY Fail - Response or response text is undefined\");",
+							"        console.error(\"TMT-VERIFY Fail - Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"TMT-VERIFY Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"TMT-VERIFY Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        console.error(\"TMT-VERIFY API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"TMT-VERIFY API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"TMT-VERIFY API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "4XFHtDgxKHj2F"
+					},
+					{
+						"key": "X-Api-Secret",
+						"value": "cs46USA88RX9Qr6"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   //\"number\": \"6281573008453\",\n    \"number\": \"918763201528\",\n    \"dpoints\": \"porteddate,porting_history,network,originnetwork,type,subscriberstatus\"\n}"
+				},
+				"url": {
+					"raw": "https://api.tmtverify.com/v2/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tmtverify",
+						"com"
+					],
+					"path": [
+						"v2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IZIDATA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: Izidata\", () => {",
+							" try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        ",
+							"        const statusCode = pm.response.code;",
+							"",
+							"        if(statusCode === 200) {",
+							"            const requestBody = pm.request.body;",
+							"            //if(pm.expect(responseJson.result.uan).to.be.not.null) {",
+							"            if(responseJson.status === \"OK\") {",
+							"                console.log(\"iff\");",
+							"                pm.test(\"Izidata Pass - Phone : \" + responseJson.message.phone + \" Age : \" + responseJson.message.age , () => {console.log(\"Izidata Pass - Phone : \" + responseJson.message.phone + \" Age : \" + responseJson.message.age )});",
+							"            }",
+							"            else {",
+							"                pm.test(\"Izidata Fail : Message - \" + responseJson.message, () => {throw new Error(\"Izidata Fail : Message - \" + responseJson.message + \"\\n\" + \"Check partner API input.\")}); ",
+							"            }",
+							"        } else if(statusCode === 500) {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"Izidata Fail - Internal Server Error. Error code : \" + pm.response.code, () => {throw new Error(\"Izidata Fail - Internal Server Error. Error code : \" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"Izidata Fail - Response or response text is undefined\");",
+							"        console.error(\"Izidata Fail - Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"Izidata Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Izidata Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        console.error(\"Izidata API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"Izidata API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Izidata API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phone",
+							"value": "6287809453668",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://idapi.izi.credit/v3/phoneage?token=OGxrqgXvbyNabLfQfZBtekBxqmuUwGrWqOuEPnXAZSxeNdYoFomOpOwkeInH",
+					"protocol": "https",
+					"host": [
+						"idapi",
+						"izi",
+						"credit"
+					],
+					"path": [
+						"v3",
+						"phoneage"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "OGxrqgXvbyNabLfQfZBtekBxqmuUwGrWqOuEPnXAZSxeNdYoFomOpOwkeInH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DIGITAP",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: Digitap\", () => {",
+							" try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        ",
+							"        const statusCode = pm.response.code;",
+							"        if(statusCode === 200) {",
+							"            pm.expect(responseJson.http_response_code).to.eql(200);",
+							"            var resultCode = responseJson.result_code;",
+							"            //if(pm.expect(responseJson.result.uan).to.be.not.null) {",
+							"            if(resultCode === 101) {",
+							"                console.log(\"responseJson.result.uan : \" + responseJson.result.uan);",
+							"                pm.test(\"Digitap Pass - Get UAN details : \" + responseJson.result.uan , () => {console.log(\"Digitap Pass - Get UAN details : \" + responseJson.result.uan)});",
+							"            }",
+							"            else {",
+							"                pm.test(\"Digitap Fail - Get UAN details\", () => {throw new Error(\"Digitap Fail - Get UAN details.\" + \"\\n\" + \"Digitap Fail - result_code : \" + resultCode + \"\\n\" + \"Check partner API input : \" + responseJson.input_data.mobile)}); ",
+							"            }",
+							"        } else if(statusCode === 400) {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"One or more parameters format is wrong or missing. Error code : \" + pm.response.code);",
+							"            pm.test(\"Digitap Fail - One or more parameters format is wrong or missing. Error code : \" + pm.response.code, () => {throw new Error(\"Digitap Fail - One or more parameters format is wrong or missing. Error code : \" + pm.response.code)}); ",
+							"        } else if(statusCode === 500) {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Internal Server Error. Error code : \" + pm.response.code);",
+							"            pm.test(\"Digitap Fail - Internal Server Error. Error code : \" + pm.response.code, () => {throw new Error(\"Digitap Fail - Internal Server Error. Error code : \" + pm.response.code)}); ",
+							"        } else if(statusCode === 505) {",
+							"            console.error(\"Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"Source is busy or unavailable. Try again later. Error code : \" + pm.response.code);",
+							"            pm.test(\"Digitap Fail - Source is busy or unavailable. Try again later. Error code : \" + pm.response.code, () => {throw new Error(\"Digitap Fail - Source is busy or unavailable. Try again later. Error code : \" + pm.response.code)}); ",
+							"        } ",
+							"    } else {",
+							"        console.error(\"Response or response text is undefined\");",
+							"        console.error(\"Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"Digitap Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Digitap Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        } ",
+							"    }catch (e) {",
+							"        console.error(\"Digitap API call FAILED. Check the partner API\" + e.message);",
+							"        //pm.expect.fail(\"Error parsing JSON response\");",
+							"        pm.test(\"Digitap API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Digitap API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NjU4MTQyMTM6eEdTZlQ3N0dLNHJkV3B5UExrNGtvcTk1eDFVVmtEbzY="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client_ref_num\": \"2143dwe2324r4\",\n    \"mobile\": \"8238082888\"\n    //\"mobile\": \"9686472444\"\n    //\"mobile\": \"8597599955\"\n}"
+				},
+				"url": {
+					"raw": "https://svcdemo.digitap.work/cv/uan_advanced",
+					"protocol": "https",
+					"host": [
+						"svcdemo",
+						"digitap",
+						"work"
+					],
+					"path": [
+						"cv",
+						"uan_advanced"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IPQS Credit check ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: IPQS\", () => {",
+							"    try {",
+							"        if (pm.response && pm.response.text) {",
+							"            const responseJson = pm.response.json();",
+							"            console.log(\"API Response : \" + pm.response.text());",
+							"            const statusCode = pm.response.code;",
+							"",
+							"            if (statusCode === 200) {",
+							"                pm.expect(responseJson.message).to.eql(\"Success\");",
+							"                var credits = responseJson.credits",
+							"                if (credits > 0) {",
+							"                    console.log(\"in iff\");",
+							"                    //pm.expect(responseJson.credits, \"credits should be greater than 0.\").to.equals(0);",
+							"                    pm.test(\"IPQS Pass - Credit available. Credits : \" + credits , () => {console.log(\"IPQS Pass - Credit available. Credits : \" + credits)});",
+							"                } else {",
+							"                    console.log(\"in else\");",
+							"                    pm.test(\"IPQS Fail - Credit unavailable\", () => {throw new Error(\"IPQS Fail - Credit unavailable :-(\")}); ",
+							"                }",
+							"              ",
+							"            } else {",
+							"                console.log(\"outer else\")",
+							"                console.error(\"IPQS Fail - Response code other than 200\");",
+							"                console.error(\"IPQS Fail - Response Status Code: \" +  pm.response.code);",
+							"                pm.test(\"IPQS Fail - Expected status code 200 got Status code : \" + pm.response.code, () => {throw new Error(\"IPQS Fail - Expected status code 200 got Status code : \" + pm.response.code)}); ",
+							"            }",
+							"        } else {",
+							"            console.error(\"IPQS Fail - Response or response text is undefined\");",
+							"            console.error(\"IPQS Fail - Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"IPQS Fail - No response or response text available\");",
+							"            pm.test(\"IPQS Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"IPQS Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        }",
+							"    } catch (e) {",
+							"        console.error(\"IPQS API call FAILED. Check the partner API\" + e.message);",
+							"        pm.test(\"IPQS API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"IPQS API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ipqualityscore.com/api/json/account/JDWHVRyePOXkzvnNviqqZncjbZKjAMt7",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ipqualityscore",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"account",
+						"JDWHVRyePOXkzvnNviqqZncjbZKjAMt7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WDD Score API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: WDD Score API\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        console.log(\"API Response : \" + pm.response.text());",
+							"        const statusCode = pm.response.code;",
+							"",
+							"        if (statusCode === 200) {",
+							"            pm.expect(statusCode).to.eql(200);",
+							"            pm.expect(responseJson.firstNameScore).to.eql(\"1.0\");",
+							"            pm.expect(responseJson.lastNameScore).to.eql(\"1.0\");",
+							"            pm.expect(responseJson.addressScore).to.eql(\"0.0\");",
+							"            pm.expect(responseJson.nationalIdScore).to.eql(\"1.0\");",
+							"            pm.expect(responseJson.dateOfBirthScore).to.eql(\"Y\");",
+							"        } else {",
+							"            console.error(\"Response or response text is undefined\");",
+							"            console.error(\"Response Status Code: \" + statusCode);",
+							"            pm.expect.fail(\"No response or response text available\");",
+							"        }",
+							"    } else {",
+							"        console.error(\"Response or response text is undefined\");",
+							"        console.error(\"Response Status Code: \" + pm.response.code);",
+							"        pm.expect.fail(\"No response or response text available\");",
+							"    }",
+							"}catch (e) {",
+							"        console.error(\"Error parsing JSON response: \" + e.message);",
+							"        pm.expect.fail(\"Error parsing JSON response\");",
+							"}",
+							"}); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic dXNlck1vbm5haTphanMtUksyMXk="
+					}
+				],
+				"url": {
+					"raw": "http://13.59.159.206:8080/bureau/rest/monnai/score?nationalId=35084403890&number=%2B5519988535971&firstName=GUILHERME&lastName=ALIGHIERI%20PEREIRA&dateOfBirth=1990-07-26&token=etz89opygh",
+					"protocol": "http",
+					"host": [
+						"13",
+						"59",
+						"159",
+						"206"
+					],
+					"port": "8080",
+					"path": [
+						"bureau",
+						"rest",
+						"monnai",
+						"score"
+					],
+					"query": [
+						{
+							"key": "nationalId",
+							"value": "35084403890"
+						},
+						{
+							"key": "number",
+							"value": "%2B5519988535971"
+						},
+						{
+							"key": "firstName",
+							"value": "GUILHERME"
+						},
+						{
+							"key": "lastName",
+							"value": "ALIGHIERI%20PEREIRA"
+						},
+						{
+							"key": "dateOfBirth",
+							"value": "1990-07-26"
+						},
+						{
+							"key": "token",
+							"value": "etz89opygh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KARZA - Mobile Authentication API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: KARZA Mobile Authentication API\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        //console.log(\"API Response : \" + pm.response.text());",
+							"        const statusCode = pm.response.code;",
+							"",
+							"        if (statusCode === 200) {",
+							"            pm.expect(statusCode).to.eql(200);",
+							"            pm.expect(responseJson.result.connectionType).exist;",
+							"        } else {",
+							"            console.error(\"Response or response text is undefined\");",
+							"            console.error(\"Response Status Code: \" + statusCode);",
+							"            pm.expect.fail(\"connectionType not present\");",
+							"        }",
+							"    } else {",
+							"        console.error(\"Response or response text is undefined\");",
+							"        console.error(\"Response Status Code: \" + pm.response.code);",
+							"        pm.expect.fail(\"No response or response text available\");",
+							"    }",
+							"}catch (e) {",
+							"        console.error(\"Error parsing JSON response: \" + e.message);",
+							"        pm.expect.fail(\"Error parsing JSON response\");",
+							"}",
+							"}); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-karza-key",
+						"value": "jNnMIM0ol9M7Hs3"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mobile\": \"8128448584\",\n    \"countryCode\": \"91\",\n    \"consent\": \"Y\"\n}"
+				},
+				"url": {
+					"raw": "https://api.karza.in/v3/mobile-auth",
+					"protocol": "https",
+					"host": [
+						"api",
+						"karza",
+						"in"
+					],
+					"path": [
+						"v3",
+						"mobile-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CASHFREE - VPA using phone",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: CASHFREE - VPA using phone\", () => {",
+							"try{",
+							"    if (pm.response && pm.response.text) {",
+							"        const responseJson = pm.response.json();",
+							"        //console.log(\"API Response : \" + pm.response.text());",
+							"        const statusCode = pm.response.code;",
+							"",
+							"        if (statusCode === 200) {",
+							"            /*pm.expect(statusCode).to.eql(200);",
+							"            pm.expect(responseJson.status).exist;",
+							"            pm.expect(responseJson.account_status).exist;",
+							"            pm.expect(responseJson.mobile_number).exist;",
+							"            pm.expect(responseJson.vpa).exist;",
+							"            pm.expect(responseJson.name_at_bank1).exist; */",
+							"             pm.test(\"CASHFREE Pass - Account status : \" + responseJson.account_status , () => {console.log(\"CASHFREE Pass - Account Status : \" + responseJson.account_status)});",
+							"",
+							"        } else if (statusCode === 403) {",
+							"            console.error(\"Response Status Code: \" + statusCode);",
+							"            //pm.expect.fail(\"IP not whitelisted\");",
+							"            pm.test(\"CASHFREE Fail - \" + responseJson.message + \". Status code : \" + statusCode, () => {throw new Error(\"CASHFREE Fail - \" + responseJson.message + \". Status code : \" + statusCode)}); ",
+							"",
+							"        } else {",
+							"            console.error(\"CASHFREE Fail - Response code other than 200\");",
+							"            console.error(\"CASHFREE Fail - Response Status Code: \" +  pm.response.code);",
+							"                pm.test(\"CASHFREE Fail - Expected status code 200 or 403  got Status code : \" + pm.response.code, () => {throw new Error(\"CASHFREE Fail - Expected status code 200 or 403 got Status code : \" + pm.response.code)}); ",
+							"        }",
+							"    } else {",
+							"        console.error(\"Response or response text is undefined\");",
+							"        console.error(\"Response Status Code: \" + pm.response.code);",
+							"        //pm.expect.fail(\"No response or response text available\");",
+							"        pm.test(\"CASHFREE Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"CASHFREE Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"    } ",
+							"}catch (e) {",
+							"        console.error(\"CASHFREE API call FAILED. Check the partner API\" + e.message);",
+							"        pm.test(\"CASHFREE API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"CASHFREE API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"}",
+							"}); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Function to generate a random integer between min (inclusive) and max (inclusive)",
+							"function getRandomInt(min, max) {",
+							"    return Math.floor(Math.random() * (max - min + 1)) + min;",
+							"}",
+							"",
+							"// Example: Generate a random integer between 1 and 100 (inclusive)",
+							"const randomInteger = getRandomInt(1, 9999);",
+							"",
+							"// Log the generated random integer to the console",
+							"console.log(\"Random Integer: \" + randomInteger);",
+							"",
+							"//set the request body",
+							"var requestBody = ",
+							"{",
+							"    \"verification_id\": \"GammaTest\" + randomInteger,",
+							"    \"mobile_number\": \"+918879364922\"",
+							"};",
+							"console.log(\"requestBody : \" + JSON.stringify(requestBody));",
+							"",
+							"pm.collectionVariables.set('requestBody', JSON.stringify(requestBody));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Request-Id",
+						"value": "kajsfdhanskfjhadnfkaakjnf"
+					},
+					{
+						"key": "x-client-id",
+						"value": "CF520555CJNCT1QKD7LKG41EID7G"
+					},
+					{
+						"key": "x-client-secret",
+						"value": "34bdd527b098a8ceb6474cce68e453b392919668"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{{requestBody}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.cashfree.com/verification/upi/mobile",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cashfree",
+						"com"
+					],
+					"path": [
+						"verification",
+						"upi",
+						"mobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visum",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Health check: Visum\", () => {",
+							"    try {",
+							"        if (pm.response && pm.response.text) {",
+							"            const responseJson = pm.response.json();",
+							"            console.log(\"API Response : \" + pm.response.text());",
+							"            const statusCode = pm.response.code;",
+							"",
+							"            if (statusCode === 200) {",
+							"                var credits = responseJson.credits_left;",
+							"                if (credits > 0) {",
+							"                    console.log(\"in iff\");",
+							"                    //pm.expect(responseJson.credits, \"credits should be greater than 0.\").to.equals(0);",
+							"                    pm.test(\"Visum Pass - Credit available. Credits : \" + credits , () => {console.log(\"Visum Pass - Credit available. Credits : \" + credits)});",
+							"                } else {",
+							"                    console.log(\"in else\");",
+							"                    pm.test(\"Visum Fail - Credit unavailable\", () => {throw new Error(\"Visum Fail - Credit unavailable :-(. Message : \" + responseJson.title )}); ",
+							"                }",
+							"              ",
+							"            } else {",
+							"                console.log(\"outer else\")",
+							"                console.error(\"Visum Fail - Response code other than 200\");",
+							"                console.error(\"Visum Fail - Response Status Code: \" +  pm.response.code);",
+							"                pm.test(\"Visum Fail - Expected status code 200 got Status code : \" + pm.response.code, () => {throw new Error(\"Visum Fail - Expected status code 200 got Status code : \" + pm.response.code) + \". Message : \" + responseJson.title}); ",
+							"            }",
+							"        } else {",
+							"            console.error(\"Visum Fail - Response or response text is undefined\");",
+							"            console.error(\"Visum Fail - Response Status Code: \" + pm.response.code);",
+							"            //pm.expect.fail(\"IPQS Fail - No response or response text available\");",
+							"            pm.test(\"Visum Fail - No response or response text available. Status code : \" + pm.response.code, () => {throw new Error(\"Visum Fail - No response or response text available. Status code : \" + pm.response.code)}); ",
+							"        }",
+							"    } catch (e) {",
+							"        console.error(\"Visum API call FAILED. Check the partner API. \" + e.message);",
+							"        pm.test(\"Visum API call FAILED. Check the partner API. Status code :\" + pm.response.code, () => {throw new Error(\"Visum API call FAILED. Check the partner API. Status code : \" + pm.response.code)}); ",
+							"    }",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.reversecontact.com/enrichment?apikey=sk_live_655b4e227bb73507b300f6a8_key_rm78eppaujn",
+					"protocol": "https",
+					"host": [
+						"api",
+						"reversecontact",
+						"com"
+					],
+					"path": [
+						"enrichment"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "sk_live_655b4e227bb73507b300f6a8_key_rm78eppaujn"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"//const APIFailError = function(partnerName, statusCode) {",
+					"",
+					"pm.globals.set('myGlobalFunction', function(partnerName) {",
+					"    // Your custom logic here",
+					"    console.log(\"in api error\");",
+					"     return partnerName + \"API call FAILED. Check the partner API. Status code : \"; // + statusCode;",
+					"});",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "req_body",
+			"value": ""
+		},
+		{
+			"key": "requestBody",
+			"value": ""
+		}
+	]
+}
