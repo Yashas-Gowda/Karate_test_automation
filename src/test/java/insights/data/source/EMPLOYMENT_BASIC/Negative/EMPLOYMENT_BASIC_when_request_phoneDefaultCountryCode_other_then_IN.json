@@ -5,15 +5,15 @@
     "packages": [
       "EMPLOYMENT_BASIC"
     ],
-    "phoneNumber": "",
-    "phoneDefaultCountryCode": "ID"
-  } ,
+    "phoneNumber": "526144160457",
+    "phoneDefaultCountryCode": "MX"
+  },
   "response":{
     "data": null,
     "meta": {
-      "inputPhoneNumber": "+918097591550",
-      "cleansedPhoneNumber": "+918097591550",
-      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "inputPhoneNumber": "526144160457",
+      "cleansedPhoneNumber": "+526144160457",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
@@ -21,7 +21,7 @@
     "errors": [
       {
         "package": "EMPLOYMENT_BASIC",
-        "message": "Service unavailable for country India",
+        "message": "Service unavailable for country Mexico",
         "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
         "type": "INVALID_INPUT"
       }

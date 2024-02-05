@@ -21,11 +21,11 @@
       "employment": {
         "basic": {
           "summary": {
-            "isEmployed": true,
+            "isEmployed": false,
             "recentEmployerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
             "noOfPfAccounts": 1,
             "dateOfJoining": "2023-08-10",
-            "dateOfExit": null,
+            "dateOfExit": "2023-08-31",
             "matchingPfAccountNumber": "101226863051"
           },
           "employmentHistory": [
@@ -37,7 +37,7 @@
               "nationalIdVerificationStatus": true,
               "employerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
               "dateOfJoining": "2023-08-10",
-              "dateOfExit": null,
+              "dateOfExit": "2023-08-31",
               "reasonOfExit": ""
             }
           ]
@@ -56,11 +56,12 @@
     "meta": {
       "inputPhoneNumber": "916281518551",
       "cleansedPhoneNumber": "+916281518551",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "87fabd1a-a432-46ed-bf33-1d8adca625ba",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

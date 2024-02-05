@@ -1,4 +1,4 @@
-@ignore
+#@ignore
 Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
 # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
 # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
@@ -34,8 +34,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data.employment.details.pfBasic.summary contains payload.response.data.employment.details.pfBasic.summary
-    Then match $.data.employment.details.pfBasic.pfDetails contains only payload.response.data.employment.details.pfBasic.pfDetails
+    Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
+    Then match $.data.employment.basic.employmentHistory contains deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
@@ -66,8 +66,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data.employment.details.pfBasic.summary contains payload.response.data.employment.details.pfBasic.summary
-    Then match $.data.employment.details.pfBasic.pfDetails contains only payload.response.data.employment.details.pfBasic.pfDetails
+    Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
+    Then match $.data.employment.basic.employmentHistory contains deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
@@ -83,7 +83,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_summary_isEmployed_false_noOfPfAccounts_4 | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_5  | 200        |
 
-  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN <Scenario>
+  @positive
+  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS scenario when data partner gives 200 with response  <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")
     And headers headers
@@ -92,7 +93,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+  # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -105,21 +106,18 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data.employment.details.pfBasic.summary contains payload.response.data.employment.details.pfBasic.summary
-    Then match $.data.employment.details.pfBasic.pfDetails contains only payload.response.data.employment.details.pfBasic.pfDetails
+    Then match $.data.employment.basic contains payload.response.data.employment.basic
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
     Examples:
-      | Scenario                                                            | statusCode |
-#CR      | EMPLOYMENT_BASIC_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
+      | Scenario                                                                   | statusCode |
+      | EMPLOYMENT_BASIC_returns_M50_1001_when_dp_returns_message_no_records_found | 200        |
 
-
-
-   @Negative
-  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_ADVANCED Negative scenario  <Scenario>
+    @Negative
+  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
+    And def payload = read("data/" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -139,13 +137,14 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data.employment.details contains payload.response.data.employment.details
+    Then match $.data == null
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
     Examples:
-      | Scenario                                                                       | statusCode |
-      | EMPLOYMENT_DETAILS_Sub_UAN_ADVANCED_pfBasic_is_null_when_no_record_found_in_dp | 200        |
+      | Scenario                                                            | statusCode |
+      | EMPLOYMENT_BASIC_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
+
 
   @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
@@ -187,7 +186,5 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_null                    | 400        |
       | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_empty_string            | 400        |
       | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_single_space_string     | 400        |
-
-
 
 

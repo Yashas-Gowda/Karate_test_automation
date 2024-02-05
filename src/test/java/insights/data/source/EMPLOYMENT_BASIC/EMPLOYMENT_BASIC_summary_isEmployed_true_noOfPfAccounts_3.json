@@ -25,10 +25,20 @@
             "recentEmployerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
             "noOfPfAccounts": 3,
             "dateOfJoining": "2023-02-01",
-            "dateOfExit": null,
             "matchingPfAccountNumber": "101287760910"
           },
           "employmentHistory": [
+            {
+              "pfAccountNumber": "100586880851",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
+              "dateOfJoining": "2015-11-15",
+              "dateOfExit": "2016-03-31",
+              "reasonOfExit": ""
+            },
             {
               "pfAccountNumber": "100460881293",
               "name": "Palloli Karthik",
@@ -38,17 +48,6 @@
               "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
               "dateOfJoining": "2014-08-01",
               "dateOfExit": "2015-03-18",
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "100586880851",
-              "name": "Palloli Karthik",
-              "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
-              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
-              "dateOfJoining": "2015-11-15",
-              "dateOfExit": null,
               "reasonOfExit": ""
             },
             {
@@ -78,11 +77,12 @@
     "meta": {
       "inputPhoneNumber": "8106068222",
       "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "fce9cac8-4459-4c8e-9ffd-e8952c10de33",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
