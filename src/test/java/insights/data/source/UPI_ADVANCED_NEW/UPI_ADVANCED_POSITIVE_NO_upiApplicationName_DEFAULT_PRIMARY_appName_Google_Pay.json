@@ -4,7 +4,6 @@
     "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
     "phoneNumber": "+918879364922",
-    "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
     ]
@@ -45,12 +44,12 @@
     "meta": {
       "inputPhoneNumber": "+918879364922",
       "cleansedPhoneNumber": "+918879364922",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "d1636e23-50ee-45d8-ae13-d9c289119f14",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ],
-      "inputUpiApplicationName": "PRIMARY"
+      ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

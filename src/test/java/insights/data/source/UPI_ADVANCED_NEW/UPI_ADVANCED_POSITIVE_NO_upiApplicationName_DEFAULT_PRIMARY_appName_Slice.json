@@ -1,14 +1,14 @@
 {
   "request":{
     "eventType": "ACCOUNT_CREATION",
-    "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "+918879364922",
-    "upiApplicationName": "PRIMARY",
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "916380803145",
+    "email": "ashupgdim@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
+  }  ,
   "response":{
     "data": {
       "phone": null,
@@ -23,9 +23,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "Google Pay",
-              "nameAtBank": "VIJAY SECURITY SERVICES  ",
-              "upiId": "njrane29-3@oksbi",
+              "appName": "Slice",
+              "nameAtBank": "SANGEETHRAJAN R",
+              "upiId": "sangeethrajan@sliceaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -43,14 +43,15 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "+918879364922",
-      "cleansedPhoneNumber": "+918879364922",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputPhoneNumber": "916380803145",
+      "cleansedPhoneNumber": "+916380803145",
+      "referenceId": "17f44a6d-bd4b-40c2-be56-68ae4c874586",
+      "inputEmail": "ashupgdim@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ],
-      "inputUpiApplicationName": "PRIMARY"
+      ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
