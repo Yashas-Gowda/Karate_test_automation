@@ -1,14 +1,15 @@
 {
   "request":{
     "eventType": "ACCOUNT_CREATION",
-    "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "+918879364922",
-    "upiApplicationName": "PRIMARY",
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9980570646",
+    "email": "ravindrais53@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
+  }
+,
   "response":{
     "data": {
       "phone": null,
@@ -23,9 +24,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "Google Pay",
-              "nameAtBank": "VIJAY SECURITY SERVICES  ",
-              "upiId": "njrane29-3@oksbi",
+              "appName": "PhonePe",
+              "nameAtBank": "RAVINDRA NEELAKANTA KULKARNI",
+              "upiId": "9980570646@ybl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -43,14 +44,15 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "+918879364922",
-      "cleansedPhoneNumber": "+918879364922",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputPhoneNumber": "9980570646",
+      "cleansedPhoneNumber": "+919980570646",
+      "referenceId": "fe18a038-3b5d-4716-89b7-892c31e5298e",
+      "inputEmail": "ravindrais53@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ],
-      "inputUpiApplicationName": "PRIMARY"
+      ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
