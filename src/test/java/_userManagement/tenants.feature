@@ -3,7 +3,8 @@ Feature: features API of User Management automation from roles to getting featur
   Background:
     * configure charset = null
 #    * def authFeature = call read('classpath:insights/Auth_Token_Generation.feature')
-    * def BearerToken = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiNzZiNTcyNTUtN2UxNi00NDI3LThjM2QtZjMzMzRhODcxMmYzIiwiZXZlbnRfaWQiOiI4MzY1ZmM1Zi1iNzhlLTQzZWYtYjkzNi04MmE0NTMxZDEwMmYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzAxMDY0NzE2LCJleHAiOjE3MDExNTExMTYsImlhdCI6MTcwMTA2NDcxNywianRpIjoiMzcwZTQ0MzItMTdhNy00Y2M2LTgwNTMtMTE2M2FiMmU3NWY5IiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.isQ3ogPsdGk5ho0YWFFn7WlnU-6p7LiU6XTHcH05wL34GbUb687p0yvxf8kTTQcCYjt607jXbHTG5wHL0xfAt_l8n_15BF10ibHqippLVdyLt5BW7rFI6aXiQfub_l4JXkEzczbHQFJPPVjf_uPCQkjjI3nRsohfwWGhwDYNBGzubKk6YL8WMpKhgYs51YuT1e1H9wEoKMeiuy-_4GhNQga0MtIX3JlJ2aQQJsBMM0CJ1vKyOmj9SP-j9-va9EubFctSDu8p_l4AeC7zoT7-XX9nxYzn6T2SKfUhzzwQag8JuL66upjU_mtEk7lANqshuU4TRMMhKbilDNk774cVsw"
+    * def BearerToken = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmUwNWJiYjEtYTg1MS00YWRlLWI3YWMtODFkYWUwMDA0ZGRmIiwiZXZlbnRfaWQiOiI4MTMxMzUzOC1lYjhiLTQwOTktOWVmNy0zZDhhZTUzZDY2MTciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNzA3MzE0MDI5LCJleHAiOjE3MDc0MDA0MjksImlhdCI6MTcwNzMxNDAzMCwianRpIjoiN2YyMTMxYzAtYjFjOC00N2ZlLWE1Y2MtM2UzZThjMzY3NzczIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.QN-5mAftipZ3fOTkpTImcjobU8iHoP-gHutf5EU81O-Va0qdFvIQNE20B5KypX0h1hF_GsX3DX2n0iobzDwzp_aSHtxJ9FZQdPpUhpmPomqYx1dEcr_9HzLoNCk0d4zd3y7xr5MeZFqz0aSh3-BvJ49B81kH_ZMlSQVMEKLg1ZWaRkASI0SxHUDDCHZRkqyiJ8D0-p2I1qz2IVyivMJWmNRVXu7FaHoFtt--CMjnWvJFgMod6mujK45HVVMes-58__6SahXHotu5mBGbld_D7_GWxWTSBCFFa2Shjahbump5h9CmrE6N_d__S2KDf90FiVKimsZV309tis2dQCrJeg"
+
 
   Scenario:GET ALL TENANTS of the ENVIRONMENT
     * def umUrl = requestUrl + '/api/tenants/tenant/subscriptions/all'
@@ -40,37 +41,42 @@ Feature: features API of User Management automation from roles to getting featur
     * print 'packages of tenant--->',packages
 
   Scenario:PUT subscriptions of the TENANTS
-    * def umUrl = requestUrl + '/api/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ/subscriptions'
+    * def umUrl = requestUrl + '/api/tenants/tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS/subscriptions'
     Given url umUrl
     And header Content-Type = 'application/json'
     And header Authorization = BearerToken
     And def requestPayload =
 """
   {
-    "subscriptions": [
-        "PHONE_BASIC",
-        "PHONE_SOCIAL",
-        "PHONE_IDENTITY",
-        "EMAIL_SOCIAL",
-        "EMAIL_BASIC",
-        "ADDRESS_BASIC",
-        "NAME_BASIC",
-        "IP_BASIC",
-        "UPI_BASIC",
-        "IDENTITY_CORRELATION",
-        "IDENTITY_ENRICHMENT",
-        "IDENTITY_ENRICHMENT_PLUS",
-        "DEVICE_DETAILS",
-        "KYC_MOBILE",
-        "KYC_CONSUMER",
-        "KYC_GOVERNMENT",
-        "UPI_ADVANCED",
-        "BLACKLIST_DETAILS",
-        "INCOME_ESTIMATION",
-        "EMPLOYMENT_DETAILS",
-        "DOMAIN_BREACH",
-        "KYC_AML"
-    ]
+    "subscriptions":  [
+  "EMAIL_SOCIAL",
+  "PHONE_IDENTITY",
+  "PHONE_BASIC",
+  "PHONE_SOCIAL",
+  "EMAIL_BASIC",
+  "ADDRESS_BASIC",
+  "NAME_BASIC",
+  "IP_BASIC",
+  "IDENTITY_CORRELATION",
+  "IDENTITY_ENRICHMENT_PLUS",
+  "IDENTITY_ENRICHMENT",
+  "BATCH_INSIGHTS",
+  "UPI_BASIC",
+  "DEVICE_DETAILS",
+  "EMPLOYMENT_DETAILS",
+  "KYC_GOVERNMENT",
+  "KYC_CONSUMER",
+  "KYC_MOBILE",
+  "INCOME_ESTIMATION",
+  "BLACKLIST_DETAILS",
+  "UPI_ADVANCED",
+  "KYC_AML",
+  "EMPLOYMENT_BASIC",
+  "EMPLOYMENT_ADVANCED",
+  "KYC_PAN",
+  "KYC_GSTIN",
+  "ADDRESS_VERIFICATION"
+]
 }
 """
     And request requestPayload
@@ -90,5 +96,3 @@ Feature: features API of User Management automation from roles to getting featur
     Then status 200
     * print 'subpackages_info of tenant--->',response
 
-
-    
