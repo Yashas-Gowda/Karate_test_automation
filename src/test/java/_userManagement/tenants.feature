@@ -87,6 +87,28 @@ Feature: features API of User Management automation from roles to getting featur
     * def packages = get $[*].subscription.packageName
     * print 'packages of tenant--->',packages
 
+  Scenario:DELETE subscriptions of the TENANTS
+    * def umUrl = requestUrl + '/api/tenants/tenant_01HMG93TYHFTYD66BWSS935SQE/subscriptions'
+    Given url umUrl
+    And header Content-Type = 'application/json'
+    And header Authorization = BearerToken
+    And def requestPayload =
+"""
+  {
+    "subscriptions":
+     [
+  "EMPLOYMENT_DETAILS"
+]
+}
+"""
+    And request requestPayload
+    When method DELETE
+    Then status 200
+    * def subscriptions = response
+    * print ' subscriptions of tenant--->',subscriptions
+    * def packages = get $[*].subscription.packageName
+    * print 'packages of tenant--->',packages
+
   Scenario:GET subtenants of the tenants by tenant_id
     * def umUrl = requestUrl + 'api/tenants/tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ/subtenants'
     Given url umUrl
