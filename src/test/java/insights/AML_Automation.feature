@@ -27,9 +27,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     # ResponseTime
     * print 'responseTime----->',responseTime
       # request/response
-    * print payload.request
-    * print payload.response
-    * print karate.pretty(response)
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match payload.response.data.kyc.aml contains only $.data.kyc.aml
     Then match $.meta contains payload.response.meta
