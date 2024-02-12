@@ -1,0 +1,77 @@
+{
+  "request":{
+    "email": "spoorthimudegowdru1609@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "details": {
+          "pfBasic": null,
+          "pfAdvanced": null,
+          "social": {
+            "summary": {
+              "name": "Spoorthi mudegowdru",
+              "linkedinHeadline": "Attended PES University",
+              "location": "Bengaluru, Karnataka, India",
+              "employerName": null,
+              "linkedinUrl": "https://linkedin.com/in/spoorthi-mudegowdru-2a9355293",
+              "photoUrl": null,
+              "employmentHistoryCount": 0,
+              "educationHistoryCount": 2
+            },
+            "employmentHistory": [],
+            "educationHistory": [
+              {
+                "fieldOfStudy": "Bachelor of Technology - BTech, Computer Science",
+                "degreeName": "Bachelor of Technology - BTech, Computer Science",
+                "schoolName": "PES University",
+                "schoolLocation": null,
+                "startYear": null,
+                "endYear": null
+              },
+              {
+                "fieldOfStudy": null,
+                "degreeName": null,
+                "schoolName": "Shree jain vidyalaya davangere",
+                "schoolLocation": null,
+                "startYear": null,
+                "endYear": null
+              }
+            ],
+            "recentActivity": null
+          }
+        }
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputEmail": "spoorthimudegowdru1609@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

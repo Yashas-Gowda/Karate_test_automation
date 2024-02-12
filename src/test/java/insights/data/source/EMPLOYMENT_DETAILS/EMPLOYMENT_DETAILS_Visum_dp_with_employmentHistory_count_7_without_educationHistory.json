@@ -1,0 +1,124 @@
+{
+  "request":{
+    "email": "cwarsuraj@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "details": {
+          "pfBasic": null,
+          "pfAdvanced": null,
+          "social": {
+            "summary": {
+              "name": "Suraj Chepurwar",
+              "linkedinHeadline": "Highways, Bridges, Marine Projects",
+              "location": "Mumbai, Maharashtra, India",
+              "employerName": "STRABAG",
+              "linkedinUrl": "https://linkedin.com/in/suraj-chepurwar-a54593136",
+              "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1712793600&v=beta&t=pI3U8ymetfb0Y8a76NXzLN7Op_M62qwH8vIToeNi4ic",
+              "employmentHistoryCount": 7,
+              "educationHistoryCount": 0
+            },
+            "employmentHistory": [
+              {
+                "employeeDesignation": "Resident Engineer",
+                "employerName": "STRABAG ",
+                "employerLocation": "Mumbai, Maharashtra, India · On-site",
+                "dateOfJoining": "2022-09-01",
+                "dateOfExit": null,
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1715212800&v=beta&t=uobMvtTBt0VwHPIEI93hdGgUZipH26xiPPFPjD1vuK8",
+                "employerLinkedinUrl": "https://www.linkedin.com/company/16035/"
+              },
+              {
+                "employeeDesignation": "Project Engineer",
+                "employerName": "Yooshin Engineering Corporation ",
+                "employerLocation": "Mumbai",
+                "dateOfJoining": "2018-12-01",
+                "dateOfExit": "2022-09-15",
+                "employerLogo": null,
+                "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Yooshin+Engineering+Corporation"
+              },
+              {
+                "employeeDesignation": "Highway Maintenance Engineer",
+                "employerName": "L&T Infrastructure Development Projects Limited ",
+                "employerLocation": "Ahmedabad, Gujarat, India",
+                "dateOfJoining": "2018-08-01",
+                "dateOfExit": "2018-12-15",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1715212800&v=beta&t=t-Oo18GXCAu3Jsz08h9jHkG9FnhHpclDQ7qrioIKFAk",
+                "employerLinkedinUrl": "https://www.linkedin.com/company/2277430/"
+              },
+              {
+                "employeeDesignation": "Assistant Highway Engineer",
+                "employerName": "Artefact Projects Limited ",
+                "employerLocation": "Nagpur Area, India",
+                "dateOfJoining": "2017-02-01",
+                "dateOfExit": "2018-08-15",
+                "employerLogo": null,
+                "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Artefact+Projects+Limited"
+              },
+              {
+                "employeeDesignation": "Site Engineer",
+                "employerName": "Tapi Prestressed Products LTD - India",
+                "employerLocation": "Maharashtra, India",
+                "dateOfJoining": "2015-12-01",
+                "dateOfExit": "2017-02-15",
+                "employerLogo": null,
+                "employerLinkedinUrl": "https://www.linkedin.com/company/7855217/"
+              },
+              {
+                "employeeDesignation": "Site Engineer- Highway ",
+                "employerName": "H.G. Infra Engineering Limited ",
+                "employerLocation": "Maharashtra, India",
+                "dateOfJoining": "2013-07-01",
+                "dateOfExit": "2015-11-15",
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1715212800&v=beta&t=gCFLxGkb4AaVZeSIv6zsg3p94fkkTfcKVqxYOtPiIJM",
+                "employerLinkedinUrl": "https://www.linkedin.com/company/2135375/"
+              },
+              {
+                "employeeDesignation": "Highway Engineer",
+                "employerName": "Aarvee Associates ",
+                "employerLocation": "Hyderabad, Telangana, India",
+                "dateOfJoining": "2011-08-01",
+                "dateOfExit": "2013-06-15",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1715212800&v=beta&t=85sLsxRusvkiyQFJS9X7gEGOgqVv-yqJkm7d_CDiSCQ",
+                "employerLinkedinUrl": "https://www.linkedin.com/company/1853420/"
+              }
+            ],
+            "educationHistory": [],
+            "recentActivity": null
+          }
+        }
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputEmail": "cwarsuraj@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}
