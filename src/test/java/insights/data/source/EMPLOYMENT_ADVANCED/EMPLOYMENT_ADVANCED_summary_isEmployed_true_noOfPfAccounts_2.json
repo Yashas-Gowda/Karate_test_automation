@@ -19,13 +19,17 @@
       "upi": null,
       "device": null,
       "employment": {
-        "basic": {
+        "basic": null,
+        "advanced": {
           "summary": {
             "isEmployed": true,
+            "isNameUnique": false,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
             "recentEmployerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
             "noOfPfAccounts": 2,
             "dateOfJoining": "2022-02-24",
-            "dateOfExit": null,
             "matchingPfAccountNumber": "101658587636"
           },
           "employmentHistory": [
@@ -37,7 +41,6 @@
               "nationalIdVerificationStatus": true,
               "employerName": "PACE SETTERS BUSINESS SOLUTIONS PVT LTD",
               "dateOfJoining": "2013-09-01",
-              "dateOfExit": null,
               "reasonOfExit": ""
             },
             {
@@ -48,12 +51,52 @@
               "nationalIdVerificationStatus": true,
               "employerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
               "dateOfJoining": "2022-02-24",
-              "dateOfExit": null,
               "reasonOfExit": ""
             }
-          ]
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "SAIKAT DAS",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "DEC-23": true,
+                  "NOV-23": true,
+                  "OCT-23": true
+                }
+              },
+              {
+                "name": "SAIKAT DAS",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "DEC-23": true,
+                  "NOV-23": true,
+                  "OCT-23": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "10366783",
+                "employeeCount": 2884,
+                "wageMonth": "DEC-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "10139349",
+                "employeeCount": 2779,
+                "wageMonth": "NOV-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "10193162",
+                "employeeCount": 2777,
+                "wageMonth": "OCT-23"
+              }
+            ]
+          }
         },
-        "advanced": null,
         "details": null
       },
       "income": null,
@@ -67,11 +110,12 @@
     "meta": {
       "inputPhoneNumber": "919163238236",
       "cleansedPhoneNumber": "+919163238236",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "693d4a66-2f8f-4440-9276-90421e1a22f0",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_BASIC"
     ],
     "phoneNumber": "525555088314",
     "phoneDefaultCountryCode": "IN"
@@ -13,14 +13,14 @@
     "meta": {
       "inputPhoneNumber": "525555088314",
       "cleansedPhoneNumber": "+91525555088314",
-      "referenceId": "dpi_nov_6_5",
+      "referenceId": "f5b1104a-b365-4656-804c-682d5a209b7e",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_BASIC",
         "message": "Invalid Phone Number",
         "code": "INVALID_PHONE_NUMBER",
         "type": "INVALID_INPUT"

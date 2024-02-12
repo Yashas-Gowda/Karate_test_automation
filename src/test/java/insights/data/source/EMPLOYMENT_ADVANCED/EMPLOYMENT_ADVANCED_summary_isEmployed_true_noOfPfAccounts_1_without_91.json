@@ -19,13 +19,16 @@
       "upi": null,
       "device": null,
       "employment": {
-        "basic": {
+        "basic": null,
+        "advanced": {
           "summary": {
-            "isEmployed": true,
+            "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": true,
             "recentEmployerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
             "noOfPfAccounts": 1,
             "dateOfJoining": "2023-08-10",
-            "dateOfExit": null,
+            "dateOfExit": "2023-08-31",
             "matchingPfAccountNumber": "101226863051"
           },
           "employmentHistory": [
@@ -37,12 +40,43 @@
               "nationalIdVerificationStatus": true,
               "employerName": "STALWART PEOPLE SERVICES INDIA LIMITED",
               "dateOfJoining": "2023-08-10",
-              "dateOfExit": null,
-              "reasonOfExit": ""
+              "dateOfExit": "2023-08-31",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********8928",
+                "taxId": "EDXPP5195R",
+                "email": "pavan85512@gmail.com",
+                "bankAccountNumber": "125610100047327",
+                "bankBranchCode": "UBIN0812561",
+                "bankAddress": "UNION BANK OF INDIA,PETAMITTA",
+                "pfNomineeName": "K DAMODARAM",
+                "pfNomineeRelation": "FATHER"
+              }
             }
-          ]
+          ],
+          "pfFilingDetails": {
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "24194507",
+                "employeeCount": 9963,
+                "wageMonth": "DEC-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "23700042",
+                "employeeCount": 9817,
+                "wageMonth": "NOV-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "23513130",
+                "employeeCount": 9618,
+                "wageMonth": "OCT-23"
+              }
+            ]
+          }
         },
-        "advanced": null,
         "details": null
       },
       "income": null,
@@ -56,11 +90,12 @@
     "meta": {
       "inputPhoneNumber": "6281518551",
       "cleansedPhoneNumber": "+916281518551",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "7c57881a-71f7-4f16-8472-2804661939a8",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

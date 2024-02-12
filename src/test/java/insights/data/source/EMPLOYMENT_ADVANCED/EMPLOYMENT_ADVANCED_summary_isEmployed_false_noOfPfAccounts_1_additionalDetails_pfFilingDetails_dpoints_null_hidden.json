@@ -19,9 +19,12 @@
       "upi": null,
       "device": null,
       "employment": {
-        "basic": {
+        "basic": null,
+        "advanced": {
           "summary": {
             "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": false,
             "recentEmployerName": "KERI PREETHA",
             "noOfPfAccounts": 1,
             "dateOfJoining": "2019-08-06",
@@ -42,7 +45,6 @@
             }
           ]
         },
-        "advanced": null,
         "details": null
       },
       "income": null,
@@ -56,11 +58,12 @@
     "meta": {
       "inputPhoneNumber": "918310038265",
       "cleansedPhoneNumber": "+918310038265",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "685971da-ab53-46fa-9eb7-9deb796250d2",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

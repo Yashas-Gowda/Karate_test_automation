@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_BASIC"
     ],
     "phoneNumber": "9108510043",
     "phoneDefaultCountryCode": "INN"
@@ -12,14 +12,14 @@
     "data": null,
     "meta": {
       "inputPhoneNumber": "9108510043",
-      "referenceId": "dpi_nov_6_11",
+      "referenceId": "b980ca64-4d1f-4f56-a16a-417c9482f586",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_BASIC",
         "message": "Invalid phone default country code",
         "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"

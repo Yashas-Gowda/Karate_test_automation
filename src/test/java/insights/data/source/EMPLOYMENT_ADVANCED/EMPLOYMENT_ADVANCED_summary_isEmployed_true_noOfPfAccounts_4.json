@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMPLOYMENT_ADVANCED"
     ],
-    "phoneNumber": "9566018297",
+    "phoneNumber": "8237646022",
     "phoneDefaultCountryCode": "IN"
-  } ,
+  },
   "response":{
     "data": {
       "phone": null,
@@ -19,63 +19,114 @@
       "upi": null,
       "device": null,
       "employment": {
-        "basic": {
+        "basic": null,
+        "advanced": {
           "summary": {
             "isEmployed": true,
-            "recentEmployerName": "SUMEET URBAN SERVICES (CHENNAI) V PRIVATE LIMITED",
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
             "noOfPfAccounts": 4,
-            "dateOfJoining": "2021-11-18",
-            "dateOfExit": null,
-            "matchingPfAccountNumber": "101061084975"
+            "dateOfJoining": "2018-07-10",
+            "matchingPfAccountNumber": "101334830183"
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100043246009",
-              "name": "Praveen Kumar P",
+              "pfAccountNumber": "100416843178",
+              "name": "Sanjay Uttam Zagade",
               "gender": "MALE",
-              "dateOfBirth": "1991-09-18",
+              "dateOfBirth": "1981-12-01",
               "nationalIdVerificationStatus": true,
-              "employerName": "ADECCO INDIA PVT. LTD.",
-              "dateOfJoining": "2014-01-01",
-              "dateOfExit": "2015-12-31",
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "100739408626",
-              "name": "P PRAVEEN KUMAR",
+              "pfAccountNumber": "100820144571",
+              "name": "PANDURANG SHREERANG GHODAKE",
               "gender": "MALE",
-              "dateOfBirth": "1991-09-18",
+              "dateOfBirth": "1989-03-10",
               "nationalIdVerificationStatus": true,
-              "employerName": "CONCRETE OEM PRIVATE LIMITED",
-              "dateOfJoining": "2018-07-26",
-              "dateOfExit": null,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2014-09-01",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********2717",
+                "taxId": "BVTPG9558E",
+                "email": "",
+                "bankAccountNumber": "50100053734549",
+                "bankBranchCode": "HDFC0000181",
+                "bankAddress": "HDFC BANK,AHMEDNAGAR",
+                "pfNomineeName": "SHRIRANG",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100909297671",
+              "name": "Shelke Sunil Ashok",
+              "gender": "MALE",
+              "dateOfBirth": "1986-05-11",
+              "nationalIdVerificationStatus": true,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2008-04-16",
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "100003855035",
-              "name": "Asaithambi O A",
+              "pfAccountNumber": "101334830183",
+              "name": "JAYESH DILIP SONAWANE",
               "gender": "MALE",
-              "dateOfBirth": "1973-06-05",
+              "dateOfBirth": "1983-10-23",
               "nationalIdVerificationStatus": true,
-              "employerName": "RDC CONCRETE (I) PVT LTD",
-              "dateOfJoining": "2013-12-03",
-              "dateOfExit": null,
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "101061084975",
-              "name": "RAVI T N",
-              "gender": "MALE",
-              "dateOfBirth": "1968-06-05",
-              "nationalIdVerificationStatus": true,
-              "employerName": "SUMEET URBAN SERVICES (CHENNAI) V PRIVATE LIMITED",
-              "dateOfJoining": "2021-11-18",
-              "dateOfExit": null,
-              "reasonOfExit": ""
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2018-07-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********5172",
+                "taxId": "BRDPS7936Q",
+                "email": "SONAWANE.JAYESH85@GMAIL.COM",
+                "bankAccountNumber": "580602010003854",
+                "bankBranchCode": "UBIN0558061",
+                "bankAddress": "UNION BANK OF INDIA,SAVEDI, AHMED NAGAR",
+                "pfNomineeName": "DILIP",
+                "pfNomineeRelation": "FATHER"
+              }
             }
-          ]
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "JAYESH DILIP SONAWANE",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "DEC-23": true,
+                  "NOV-23": true,
+                  "OCT-23": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "2214937",
+                "employeeCount": 281,
+                "wageMonth": "DEC-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "2259521",
+                "employeeCount": 281,
+                "wageMonth": "NOV-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "2262002",
+                "employeeCount": 283,
+                "wageMonth": "OCT-23"
+              }
+            ]
+          }
         },
-        "advanced": null,
         "details": null
       },
       "income": null,
@@ -87,11 +138,11 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9566018297",
-      "cleansedPhoneNumber": "+919566018297",
+      "inputPhoneNumber": "8237646022",
+      "cleansedPhoneNumber": "+918237646022",
       "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": []

@@ -12,14 +12,14 @@
     "data": null,
     "meta": {
       "inputPhoneNumber": "9108510043",
-      "referenceId": "dpi_nov_6_11",
+      "referenceId": "7c163c77-7f19-43a0-a888-356445f37497",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_ADVANCED",
         "message": "Invalid phone default country code",
         "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"

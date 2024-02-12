@@ -3,23 +3,28 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMPLOYMENT_BASIC"
-    ],
-    "phoneNumber": "9108510043"
+      "EMPLOYMENT_ADVANCED"
+    ]
   } ,
   "response":{
     "data": null,
     "meta": {
-      "referenceId": "ae1a6c53-07b6-40ff-b3a6-e373ba16a8d4",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_BASIC",
+        "package": "EMPLOYMENT_ADVANCED",
         "message": "Missing phone default country code",
         "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMPLOYMENT_ADVANCED",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
         "type": "INVALID_INPUT"
       }
     ]

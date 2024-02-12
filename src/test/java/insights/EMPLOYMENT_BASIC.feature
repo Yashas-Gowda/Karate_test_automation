@@ -1,4 +1,4 @@
-#@ignore
+
 Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
 # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
 # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
@@ -114,7 +114,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                                   | statusCode |
       | EMPLOYMENT_BASIC_returns_M50_1001_when_dp_returns_message_no_records_found | 200        |
 
-    @Negative
+  @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")
@@ -145,7 +145,6 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                            | statusCode |
       | EMPLOYMENT_BASIC_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
 
-
   @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
     Given url requestUrl
@@ -174,17 +173,15 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     Then match $.errors contains only payload.response.errors
 
     Examples:
-      | Scenario                                                                                 | statusCode |
-      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER                                 | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER_as_junk_value                   | 400        |
+      | Scenario                                                                                                      | statusCode |
+      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER                                                      | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_NUMBER_as_junk_value                                        | 400        |
 
-      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE                   | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY               | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE                                        | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME                      | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY                                    | 400        |
 
-      | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_missing                 | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_null                    | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_empty_string            | 400        |
-      | EMPLOYMENT_BASIC_Negative_scenarios_when_both_phone_email_key_is_single_space_string     | 400        |
-
-
+      | EMPLOYMENT_BASIC_Negative_scenarios_when_PHONE_NUMBER_and_PHONE_DEFAULT_COUNTRY_CODE_key_is_missing           | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_when_PHONE_NUMBER_and_PHONE_DEFAULT_COUNTRY_CODE_key_Value_is_null        | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_when_PHONE_NUMBER_and_PHONE_DEFAULT_COUNTRY_CODE_key_Value_is_emptyString | 400        |
+      | EMPLOYMENT_BASIC_Negative_scenarios_when_PHONE_NUMBER_and_PHONE_DEFAULT_COUNTRY_CODE_key_Value_is_singleSpace | 400        |

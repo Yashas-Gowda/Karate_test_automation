@@ -13,14 +13,14 @@
     "meta": {
       "inputPhoneNumber": "525555088314",
       "cleansedPhoneNumber": "+91525555088314",
-      "referenceId": "dpi_nov_6_5",
+      "referenceId": "6051cd20-36ae-4721-a934-6ead3001245d",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_ADVANCED",
         "message": "Invalid Phone Number",
         "code": "INVALID_PHONE_NUMBER",
         "type": "INVALID_INPUT"
