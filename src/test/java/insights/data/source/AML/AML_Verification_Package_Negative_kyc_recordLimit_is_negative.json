@@ -11,22 +11,26 @@
       "KYC_AML"
     ]
   } ,
-  "response":{
+  "response": {
     "data": {
       "kyc": {
         "government": null,
         "consumer": null,
         "mobile": null,
         "aml": null
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "referenceId": "76a7f3fe-0ba4-4289-862e-430673f09624",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Kim Jong Un"
+      "inputFullGivenName": "Kim Jong Un",
+      "inputRecordLimit": "-1",
+      "inputMatchThreshold": "80"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

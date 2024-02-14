@@ -18,15 +18,19 @@
         "consumer": null,
         "mobile": null,
         "aml": null
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "referenceId": "3792e3d0-de47-4d38-9e3c-2a00c99c7fb0",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Kim Jong Un"
+      "inputFullGivenName": "Kim Jong Un",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "101"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -43,24 +43,31 @@
                 "http://kabil.be.mfa.gov.tr/"
               ],
               "summary": "Place of Duty: Afganistan \r\nThe Turkey mission abroad",
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Cihad Erginay"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             }
           ]
         }
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "referenceId": "e91fdc33-e483-45aa-895c-7310b5ee2357",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Cihad Erginay"
+      "inputFullGivenName": "Cihad Erginay",
+      "inputRecordLimit": "50",
+      "inputMatchThreshold": "60"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
