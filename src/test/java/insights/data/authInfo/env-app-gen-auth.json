@@ -1,0 +1,44 @@
+{
+  "app_client_name":"Automation_Enrichment_ClearTax_APP@tenant_01HPM1SC1QW4WZA5J85XFV9R81",
+  "client_id" : "719j240sih3uc1uqol8go9pfo5",
+  "client_secret" : "1tkdtsm6mkrf1icnipigoald0cmvljpaai1sq247gokfq3mj7spl",
+  "grant_type" : "client_credentials",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml",
+  "issue-description": " Automation_Enrichment_ClearTax_APP -> tenant for configuring the Automation_Enrichment_ClearTax_APP in tenant config ",
+  "tenant_config":{
+    "tenant": "tenant_01HPM1SC1QW4WZA5J85XFV9R81",
+    "exclude": {
+      "IDENTITY_ENRICHMENT": {
+        "01GX69KEEFW8Z55DETTECKFAA5": {
+          "name": "WDD Contact-API"
+        },
+        "01H2D5XTWA3NP0HB07XZ678N9Z": {
+          "name": "izidata_identity_verification_v2"
+        },
+        "01H7CT8GX9XJ8G3K146TGTDK1G": {
+          "name": "Eyecon Lookup Enrichment"
+        },
+        "01GVKNXVZRZT12MAPNRNAE1WZ8": {
+          "name": "Spycloud Email"
+        },
+        "01H9QFJJVMTR3A486A08YPX61T": {
+          "name": "Cashfree_India"
+        },
+        "01GVNS0QEBG3P0NABGFPHW8MFM": {
+          "name": "PIPL Search"
+        },
+        "01GTXH0R1JZBM3JMBSSCJ78J9T": {
+          "name": "Spycloud Phone"
+        }
+      }
+    },
+    "include": {
+      "IDENTITY_ENRICHMENT": {
+        "01HJT39AEFV3BS9F3769861A1B": {
+          "name": "cleartax_customer_onboarding_v1",
+          "order": 0
+        }
+      }
+    }
+  }
+}

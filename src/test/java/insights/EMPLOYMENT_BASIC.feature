@@ -35,7 +35,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
-    Then match $.data.employment.basic.employmentHistory contains deep payload.response.data.employment.basic.employmentHistory
+    Then match $.data.employment.basic.employmentHistory contains only deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
@@ -67,7 +67,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
-    Then match $.data.employment.basic.employmentHistory contains deep payload.response.data.employment.basic.employmentHistory
+    Then match $.data.employment.basic.employmentHistory contains only deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
