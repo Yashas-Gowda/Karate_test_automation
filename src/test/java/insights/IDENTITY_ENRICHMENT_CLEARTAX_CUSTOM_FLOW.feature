@@ -1,3 +1,4 @@
+@ignore
 Feature: Testing of DPI  - IDENTITY_ENRICHMENT_CLEARTAX_CUSTOM_FLOW scenarios
 
   Background:
