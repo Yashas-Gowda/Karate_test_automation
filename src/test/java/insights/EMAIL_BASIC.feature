@@ -140,9 +140,6 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = "#null"
     When method POST
-    * match $.data.email.basic.domainDetails.creationTime == "#null";
-    * match $.data.email.basic.domainDetails.updateTime == "#null";
-    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -160,6 +157,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * match $.data.email.basic.domainDetails.creationTime == "#null";
+    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                  | statusCode |
@@ -177,9 +177,6 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.data.email.basic.emailTenure = null
     When method POST
-    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
-    * match $.data.email.basic.domainDetails.updateTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
-    * match $.data.email.basic.domainDetails.expiryTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -188,6 +185,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print karate.pretty(response)
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.expiryTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
     Examples:
       | Scenario                               | statusCode |
       | Email_Basic_EmailDeliverable_False     | 200        |
@@ -218,13 +218,13 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.email.basic.domainDetails.creationTime == "#null";
-    * match $.data.email.basic.domainDetails.updateTime =="#null";
-    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match $.data.email.basic.domainDetails.creationTime == "#null";
+    * match $.data.email.basic.domainDetails.updateTime =="#null";
+    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_custom_true                       | 200        |
@@ -318,14 +318,11 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
-    * match $.data.email.basic.domainDetails.updateTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
-    * match $.data.email.basic.domainDetails.expiryTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
-
     And match $.data.email.social == '#null'
     And match $.data.email.basic == '#notnull'
     And match $.data.email.basic == '#object'
@@ -335,6 +332,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.data contains deep {"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
     And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_BASIC"]}
     And match $.errors == []
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.updateTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
+    * match $.data.email.basic.domainDetails.expiryTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}";
 
     Examples:
       | Scenario                                        | statusCode |
