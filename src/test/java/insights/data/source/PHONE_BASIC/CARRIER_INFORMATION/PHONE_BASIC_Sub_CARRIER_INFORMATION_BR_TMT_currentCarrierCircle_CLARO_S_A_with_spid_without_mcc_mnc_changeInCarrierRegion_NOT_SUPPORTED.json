@@ -5,51 +5,48 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "917506122902",
-    "phoneDefaultCountryCode": "IN"
+    "phoneNumber": "551121323003",
+    "phoneDefaultCountryCode": "BR"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "917506122902",
+          "phoneNumber": "551121323003",
           "phoneValid": true,
-          "phoneType": "MOBILE",
+          "phoneType": "FIXED",
           "phoneDisposable": false,
           "active": "YES",
-          "activationDate": null,
-          "activeSinceXDays": null,
+          "activationDate": "2014-03-06",
+          "activeSinceXDays": 3640,
           "simType": "POSTPAID",
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": {
-            "min": 0,
-            "max": 6
+            "min": 48,
+            "max": null
           },
-          "country": "IN",
-          "originalCarrier": "Vodafone - Mumbai",
+          "country": "BR",
+          "originalCarrier": "CLARO S.A.",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "Vi India Mumbai",
-            "originalCarrierCircle": "Vi India Mumbai",
-            "changeInCarrierRegion": "NOT_CHANGED",
+            "currentCarrierCircle": "CLARO S.A.",
+            "originalCarrierCircle": "CLARO S.A.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "404",
-            "mobileNetworkCode": "20",
-            "networkName": "Vodafone - Mumbai",
-            "serviceProfileId": "91234"
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "CLARO S.A.",
+            "serviceProfileId": "55321"
           },
           "numberRecycled": null,
-          "lastDeactivated": {
-            "minimumTenureDays": 82,
-            "maximumTenureDays": 112
-          },
+          "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": null
         },
@@ -73,8 +70,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "917506122902",
-      "cleansedPhoneNumber": "+917506122902",
+      "inputPhoneNumber": "551121323003",
+      "cleansedPhoneNumber": "+551121323003",
       "referenceId": "Dpi_feb_12_1",
       "requestedPackages": [
         "PHONE_BASIC"
