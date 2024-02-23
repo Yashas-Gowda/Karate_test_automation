@@ -21,7 +21,7 @@
           "activeSinceXDays": null,
           "simType": "PREPAID",
           "phoneNumberAge": 5,
-          "phoneNumberAgeDescription": "Above 24 months",
+          "phoneNumberAgeDescription": "Above 24 Months",
           "phoneTenure": {
             "min": 24,
             "max": null
@@ -46,19 +46,64 @@
             "networkName": "H3G (PT. Hutchison 3 Indonesia)",
             "serviceProfileId": "62501"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
             {
               "topUpTenure": {
                 "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 11,
-              "minimumTopUpAmount": 5000,
+              "topUpCount": 15,
+              "minimumTopUpAmount": 1000,
               "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 6000
+              "averageTopUpAmount": 5000
             },
             {
               "topUpTenure": {
@@ -66,10 +111,21 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 11,
+              "topUpCount": 8,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 6000
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 3,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 8000
             }
           ]
         },
@@ -95,7 +151,7 @@
     "meta": {
       "inputPhoneNumber": "628988402355",
       "cleansedPhoneNumber": "+628988402355",
-      "referenceId": "6a3f5184-55c0-4e5a-af33-f76587e245d8",
+      "referenceId": "79ef2571-7653-45e5-8342-30bbcfcadf83",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

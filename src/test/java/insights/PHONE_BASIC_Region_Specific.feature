@@ -1,4 +1,6 @@
 @PHONE_BASIC_FULL
+
+  # $.data.phone.basic.active is ignored as it is highly dynamic(TMT response) after discussion with roopa
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:
@@ -14,6 +16,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.phone.basic.active = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -30,6 +33,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
+    Then match $.data.phone.basic.active == "#notnull"
+    Then match $.meta contains payload.response.meta
 
     Examples:
       | Scenario                                                               | statusCode |
@@ -67,6 +72,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
+    Then match $.meta contains payload.response.meta
+    Then match $.data.phone.basic.portedHistory.portedSinceXDays == "#number"
 
     Examples:
       | Scenario                                                               | statusCode |
@@ -104,6 +111,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.data.phone.basic.lastDeactivated.minimumTenureDays  ==  "#number"
     * match $.data.phone.basic.lastDeactivated.maximumTenureDays  ==  "#number"
     Then match $.data.phone.basic contains payload.response.data.phone.basic
+    Then match $.meta contains payload.response.meta
 
     Examples:
       | Scenario                                                               | statusCode |
@@ -186,9 +194,10 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
-#    * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.meta.referenceId = "#ignore"
 #    * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
     * set payload.response.data.phone.basic.activeSinceXDays = "#ignore"
+    * set payload.response.data.phone.basic.active = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -207,6 +216,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #    *  match $.data.phone.basic.activeSinceXDays == "#number"
 #    *  match $.data.phone.basic.portedHistory.portedSinceXDays == "#number"
     Then match $.data.phone.basic contains payload.response.data.phone.basic
+    Then match $.data.phone.basic.active == "#notnull"
+    Then match $.meta contains payload.response.meta
 
 
     Examples:
@@ -245,7 +256,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then status <statusCode>
     * match $.data.phone.basic.portedHistory.portedSinceXDays ==  "#number"
     Then match $.data.phone.basic contains payload.response.data.phone.basic
-
+    Then match $.data.phone.basic.active == "#notnull"
+    Then match $.meta contains payload.response.meta
     Examples:
       | Scenario                                                                       | statusCode |
       | PHONE_BASIC_response_region_India_IN_with_portedEvents_without_lastDeactivated | 200        |
@@ -281,7 +293,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * match $.data.phone.basic.lastDeactivated.minimumTenureDays  ==  "#number"
     * match $.data.phone.basic.lastDeactivated.maximumTenureDays  ==  "#number"
     Then match $.data.phone.basic contains payload.response.data.phone.basic
-
+    Then match $.meta contains payload.response.meta
     Examples:
       | Scenario                                                                       | statusCode |
       | PHONE_BASIC_response_region_India_IN_without_portedEvents_with_lastDeactivated | 200        |

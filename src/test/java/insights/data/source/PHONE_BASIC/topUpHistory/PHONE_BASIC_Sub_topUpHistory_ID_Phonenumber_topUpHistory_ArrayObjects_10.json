@@ -21,7 +21,7 @@
           "activeSinceXDays": null,
           "simType": "PREPAID",
           "phoneNumberAge": 5,
-          "phoneNumberAgeDescription": "Above 24 months",
+          "phoneNumberAgeDescription": "Above 24 Months",
           "phoneTenure": {
             "min": 24,
             "max": null
@@ -46,6 +46,7 @@
             "networkName": "Indosat Ooredoo Hutchison",
             "serviceProfileId": "62500"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
@@ -55,10 +56,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 10000,
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
               "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 13000
+              "averageTopUpAmount": 25000
             },
             {
               "topUpTenure": {
@@ -66,10 +67,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 16,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 36000
+              "topUpCount": 5,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 16000
             },
             {
               "topUpTenure": {
@@ -77,10 +78,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 22,
+              "topUpCount": 17,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 30000
+              "averageTopUpAmount": 35000
             },
             {
               "topUpTenure": {
@@ -88,10 +89,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 39,
+              "topUpCount": 30,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 31000
+              "averageTopUpAmount": 28000
             },
             {
               "topUpTenure": {
@@ -99,15 +100,26 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 106,
+              "topUpCount": 95,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 31000
+              "averageTopUpAmount": 30000
             },
             {
               "topUpTenure": {
                 "min": 30,
                 "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 4,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 13000
+            },
+            {
+              "topUpTenure": {
+                "min": 60,
+                "max": 90
               },
               "currency": "IDR",
               "topUpCount": 12,
@@ -117,25 +129,14 @@
             },
             {
               "topUpTenure": {
-                "min": 60,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 6,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 16000
-            },
-            {
-              "topUpTenure": {
                 "min": 90,
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 17,
+              "topUpCount": 13,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 31000
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 18000
             },
             {
               "topUpTenure": {
@@ -143,7 +144,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 67,
+              "topUpCount": 65,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
               "averageTopUpAmount": 31000
@@ -154,10 +155,10 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 45,
+              "topUpCount": 55,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 100000,
-              "averageTopUpAmount": 25000
+              "averageTopUpAmount": 28000
             }
           ]
         },
@@ -183,7 +184,7 @@
     "meta": {
       "inputPhoneNumber": "81586348349",
       "cleansedPhoneNumber": "+6281586348349",
-      "referenceId": "dc84e954-a3cc-4758-b041-7794f38ab3a5",
+      "referenceId": "e287579d-abaf-4bf2-92dd-23bb6c809f41",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

@@ -1,8 +1,7 @@
 {
   "request":{
-    "phoneNumber": "628571116541",
+    "phoneNumber": "6285771034863",
     "phoneDefaultCountryCode": "ID",
-    "originalCountryCode": "",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -13,19 +12,19 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "628571116541",
+          "phoneNumber": "6285771034863",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "NO",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": "PREPAID",
-          "phoneNumberAge": 1,
-          "phoneNumberAgeDescription": "Below 3 Months",
+          "phoneNumberAge": 5,
+          "phoneNumberAgeDescription": "Above 24 Months",
           "phoneTenure": {
-            "min": 0,
-            "max": 3
+            "min": 24,
+            "max": null
           },
           "country": "ID",
           "originalCarrier": "Indosat Ooredoo Hutchison",
@@ -46,30 +45,20 @@
             "networkName": "Indosat Ooredoo Hutchison",
             "serviceProfileId": "62500"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
             {
               "topUpTenure": {
-                "min": 0,
-                "max": 360
+                "min": 360,
+                "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 23,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            },
-            {
-              "topUpTenure": {
-                "min": 180,
-                "max": 360
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 11000
             }
           ]
         },
@@ -93,9 +82,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "628571116541",
-      "cleansedPhoneNumber": "+628571116541",
-      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "inputPhoneNumber": "6285771034863",
+      "cleansedPhoneNumber": "+6285771034863",
+      "referenceId": "Dpi_feb_12_1",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

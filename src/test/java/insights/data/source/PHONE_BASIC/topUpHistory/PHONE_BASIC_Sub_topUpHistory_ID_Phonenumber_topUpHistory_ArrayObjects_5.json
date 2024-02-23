@@ -20,10 +20,10 @@
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
-          "phoneNumberAge": 4,
-          "phoneNumberAgeDescription": "Above 12 Months",
+          "phoneNumberAge": 6,
+          "phoneNumberAgeDescription": "Above 36 Months",
           "phoneTenure": {
-            "min": 12,
+            "min": 36,
             "max": null
           },
           "country": "ID",
@@ -46,6 +46,7 @@
             "networkName": "XL (PT XL Axiata Tbk)",
             "serviceProfileId": "62502"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
@@ -55,10 +56,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 4,
+              "topUpCount": 1,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 13000
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 10000
             },
             {
               "topUpTenure": {
@@ -77,10 +78,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 4,
+              "topUpCount": 1,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 13000
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 10000
             },
             {
               "topUpTenure": {
@@ -88,10 +89,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 4,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 13000
             },
             {
               "topUpTenure": {
@@ -128,7 +129,7 @@
     "meta": {
       "inputPhoneNumber": "87873989591",
       "cleansedPhoneNumber": "+6287873989591",
-      "referenceId": "da0747ed-af36-4435-a0e6-7929cab5e604",
+      "referenceId": "7517bc49-d1ac-4cae-897f-164f5f095827",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
