@@ -125,9 +125,6 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     Examples:
       | Scenario                                                                  | statusCode |
 
-      | AML_Verification_Package_INDIVIDUAL_kyc_is_null                           | 200        |
-      | AML_Verification_Package_ORGANISATION_kyc_is_null                         | 200        |
-
       | AML_Verification_Package_Negative_kyc_recordLimit_is_more_then_max_51     | 200        |
 # Data partner not honouring limit     | AML_Verification_Package_Negative_kyc_recordLimit_is_less_then_min_0      | 200        |
       | AML_Verification_Package_Negative_kyc_recordLimit_is_negative             | 200        |
@@ -174,8 +171,11 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     And def payload = read("data/" + source + "/AML/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
+
     And request payload.request
+    * set payload.response.data.kyc.aml.records[*].profileId = "#ignore"
     * set payload.response.meta.referenceId = "#ignore"
+
     When method POST
      # cloud watch traces -start
     * print karate.request.headers
@@ -198,8 +198,9 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     * match Actual_type contains Expected_type
 #    * assert Actual_type.contains('<expected_type>')
 #    * match ("<expected_type>") contains any Actual_type
-    Then match payload.response.data.kyc.aml contains only deep $.data.kyc.aml
-    Then match $.meta contains payload.response.meta
+#    Then match payload.response.data.kyc.aml contains only deep $.data.kyc.aml
+    Then match $.data == payload.response.data
+    Then match $.meta == payload.response.meta
 
 
     Examples:

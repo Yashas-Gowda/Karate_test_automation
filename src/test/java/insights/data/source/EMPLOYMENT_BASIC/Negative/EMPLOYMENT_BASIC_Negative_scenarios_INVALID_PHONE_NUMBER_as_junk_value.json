@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_BASIC"
     ],
     "phoneNumber": "sdfsdffdsf3efds#@@",
     "phoneDefaultCountryCode": "IN"
@@ -12,14 +12,14 @@
     "data": null,
     "meta": {
       "inputPhoneNumber": "sdfsdffdsf3efds#@@",
-      "referenceId": "dpi_nov_6_5",
+      "referenceId": "8576e8b1-896d-4676-b1c5-5ff7fe7d9fa1",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_BASIC",
         "message": "Invalid Phone Number",
         "code": "INVALID_PHONE_NUMBER",
         "type": "INVALID_INPUT"

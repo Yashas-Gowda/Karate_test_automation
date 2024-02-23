@@ -1,0 +1,216 @@
+{
+  "request":{
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "phoneNumber": "9967950078",
+    "fullName": "Amit Gaurollu",
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "AMIT SANJAY GAUROLLU"
+                }
+              ],
+              "genders": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "MALE"
+                }
+              ],
+              "dateOfBirths": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1990-09-06",
+                    "end": "1990-09-06"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "validSince": "2024-01-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Permanent",
+                  "addressLine1": "A/201 SHEETAL RAJ APARTMENT SHEETAL NAGAR  NEAR MTNL ROAD  MIRA ROAD  EAST",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "401107",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2024-01-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Primary",
+                  "addressLine1": "FLAT NO 401 RIDDHIS TEMPLE TREE APT  SREE PRABHUPADA TOWNSHIP  NEAR MASJID BANDA CIRCLE KONDAPUR",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "500084",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2024-01-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Office",
+                  "addressLine1": "TOWER A 1ST FLOOR  ROAD NUMBER 2 FINANCIAL  DISTRICT NANAKRAMGUDA HYDERABAD",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "500032",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2023-07-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Permanent",
+                  "addressLine1": "A 201 SHEETAL RAJ APARTMENT SHEETAL NAGAR  NEAR MTNL ROAD  MIRA ROAD  EAST THANE THANE THANE",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "401107",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2021-10-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Permanent",
+                  "addressLine1": "000 A/201 SHEETAL RAJ APARTMENT SHEETAL 000 NAGAR  MIRA ROAD  EAST  NEAR MTNL ROAD",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "401107",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                }
+              ],
+              "phoneNumber": null,
+              "emailAddress": null,
+              "phoneDetails": [
+                {
+                  "validSince": "2023-12-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "8169408633",
+                  "phoneType": "Home"
+                },
+                {
+                  "validSince": "2023-07-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "02228554065",
+                  "phoneType": "Home"
+                },
+                {
+                  "validSince": "2024-01-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "9967950078",
+                  "phoneType": "Mobile"
+                },
+                {
+                  "validSince": "2018-02-28T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "09967950078",
+                  "phoneType": "Mobile"
+                },
+                {
+                  "validSince": "2023-07-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "67375000",
+                  "phoneType": "Work Telephone"
+                },
+                {
+                  "validSince": "2019-12-29T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "02267148888",
+                  "phoneType": "Work Telephone"
+                }
+              ],
+              "emailDetails": [
+                {
+                  "validSince": "2021-11-30T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "AMYTH.GAUROLLU@GMAIL.COM"
+                }
+              ],
+              "ipAddresses": null,
+              "nationalId": null,
+              "identityDetails": {
+                "passport": [
+                  {
+                    "value": "M8219329"
+                  }
+                ],
+                "aadhaar": [
+                  {
+                    "value": "XXXXXXXXXXXX"
+                  }
+                ],
+                "pan": [
+                  {
+                    "value": "BENPG6502F"
+                  }
+                ],
+                "voterId": [
+                  {
+                    "value": "YJE8032286"
+                  }
+                ]
+              },
+              "additionalDetails": {
+                "incomeCurrency": "INR"
+              }
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9967950078",
+      "cleansedPhoneNumber": "+919967950078",
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ],
+      "inputFullName": "Amit Gaurollu"
+    },
+    "errors": []
+  }
+}

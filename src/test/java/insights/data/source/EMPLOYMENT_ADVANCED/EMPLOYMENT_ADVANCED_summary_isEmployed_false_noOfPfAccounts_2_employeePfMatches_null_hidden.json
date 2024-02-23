@@ -19,9 +19,12 @@
       "upi": null,
       "device": null,
       "employment": {
-        "basic": {
+        "basic": null,
+        "advanced": {
           "summary": {
             "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": true,
             "recentEmployerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
             "noOfPfAccounts": 2,
             "dateOfJoining": "2018-12-07",
@@ -49,11 +52,42 @@
               "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
               "dateOfJoining": "2018-12-07",
               "dateOfExit": "2023-07-12",
-              "reasonOfExit": ""
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********3266",
+                "taxId": "GBMPS5977K",
+                "email": "mahipalkumarsingh@gmail.com",
+                "bankAccountNumber": "006991800020659",
+                "bankBranchCode": "YESB0000069",
+                "bankAddress": "YES BANK,NEW FRIENDS COLONY, NEW DELHI",
+                "pfNomineeName": "RAVINDRA SINGH",
+                "pfNomineeRelation": "FATHER"
+              }
             }
-          ]
+          ],
+          "pfFilingDetails": {
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "5718831",
+                "employeeCount": 1571,
+                "wageMonth": "DEC-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "7923178",
+                "employeeCount": 2174,
+                "wageMonth": "NOV-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "8607715",
+                "employeeCount": 2368,
+                "wageMonth": "OCT-23"
+              }
+            ]
+          }
         },
-        "advanced": null,
         "details": null
       },
       "income": null,
@@ -67,11 +101,12 @@
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "71c8caf0-ff1c-4565-8f9c-e980b34a591c",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

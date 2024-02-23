@@ -26,14 +26,17 @@
           "records": [
           ]
         }
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "3eb68c38-a234-434f-bd85-787060616404",
+      "referenceId": "96e1b9aa-252a-4cde-b30e-36f88ef22a87",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Basuki Tjahaja Purnama"
+      "inputFullGivenName": "Basuki Tjahaja Purnama",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
     },
     "errors": [
     ]

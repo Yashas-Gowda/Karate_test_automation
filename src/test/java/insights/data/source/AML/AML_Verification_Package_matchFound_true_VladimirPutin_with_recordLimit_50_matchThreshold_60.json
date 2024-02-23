@@ -5,7 +5,6 @@
     "userDetails": {
       "fullGivenName": "Vladimir Putin"
     },
-
     "recordLimit": 50,
     "matchThreshold": 60,
     "packages": [
@@ -21,7 +20,7 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 475,
+            "noOfProfiles": 477,
             "totalRecords": 148
           },
           "records": [
@@ -947,7 +946,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "4212be7b-9c0c-4300-b1a2-e745a69c36f0",
+              "profileId": "b4dc0652-c42d-41c2-9a2f-719a620b284c",
               "matchScore": 84,
               "firstName": "RUKIN",
               "middleName": "Vladimir",
@@ -980,7 +979,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "b466fc8d-9c44-4898-82a6-6853ea9ef339",
+              "profileId": "fa56fcad-60ff-4ae6-aa92-bd9777623fae",
               "matchScore": 84,
               "firstName": "LUKIN",
               "middleName": "Vladimir",
@@ -1013,7 +1012,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "6af5c18a-f737-494a-9065-ff3305ae79fb",
+              "profileId": "e9d5af47-b154-4227-b9ee-b425d515d91a",
               "matchScore": 84,
               "firstName": "DUDIN",
               "middleName": "Vladimir",
@@ -1123,7 +1122,7 @@
               "type": "SANCTION",
               "sourceName": "UK HM Treasury Office of Financial Sanctions Implementation Sanction List",
               "programName": "Russia",
-              "otherInformation": "(UK Sanctions List Ref):RUS1466. Financial sanctions imposed in addition to an asset freeze: Trust services. Date trust services sanctions imposed: 21/03/2023. (UK Statement of Reasons):Vladimir Olegovich POTANIN is an involved person as he is obtaining a benefit from or supporting the Government of Russia by owning or controlling Rosbank. Rosbank is carrying on business in the Russian financial services sector, which is a sector of strategic significance to the Government of Russia. \n (Gender):Male UK Sanctions List Date Designated: 29/06/2022",
+              "otherInformation": "(UK Sanctions List Ref):RUS1466. Financial sanctions imposed in addition to an asset freeze: Trust services. Date trust services sanctions imposed: 21/03/2023. (UK Statement of Reasons):Vladimir Olegovich POTANIN is an \u201Cinvolved person\u201D under the Russia (Sanctions) (EU Exit) Regulations 2019 on the basis of the following grounds: (1) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by owning or controlling, directly or indirectly, Interros, an entity carrying on business in sectors of strategic significance to the Government of Russia, namely the Russian financial services and extractives sectors; (2) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by holding the right, directly or indirectly, to nominate at least one director (whether executive or non-executive) of PJSC Rosbank, an entity carrying on business in a sector of strategic significance to the Government of Russia, namely the Russian financial services sector; (3) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by working as a director (whether executive of non-executive) or equivalent or other manager of PJSC Norilsk Nickel, an entity carrying on business in a sector of strategic significance to the Government of Russia, namely the Russian extractives sector. (Gender):Male UK Sanctions List Date Designated: 29/06/2022",
               "group": null,
               "classification": null,
               "links": [
@@ -1318,7 +1317,7 @@
               "type": "SANCTION",
               "sourceName": "UK FCDO Sanctions List",
               "programName": null,
-              "otherInformation": "Regime Name: The Russia (Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Travel Ban|Technical assistance related to aircraft|Trust Services Sanctions|Transport sanctions: see \"Other information\" \r\nDesignation Source: UK \r\nLast Update Date: 28/06/2022 \r\nUK Statement of Reasons: \r\nVladimir Olegovich POTANIN is an involved person as he is obtaining a benefit from or supporting the Government of Russia by owning or controlling Rosbank. Rosbank is carrying on business in the Russian financial services sector, which is a sector of strategic significance to the Government of Russia. \r\n The trust services sanctions were imposed on 21/03/2023. \r\nInfo: Transport sanction: where transport sanctions apply, a ship owned, controlled, chartered or operated by a designated person is prohibited from entering a port in the UK, may be given a movement or a port entry direction, can be detained, and will be refused permission to register on the UK Ship Register or have its existing registration terminated. Similarly, an aircraft owned, chartered or operated by a designated person is prohibited from overflying or landing in the UK, may be given a movement direction, can be detained or moved to a specified airport, and will be refused permission to register on the CAA Aircraft Register or have its existing registration terminated. In addition, there is a prohibition of the provision of technical assistance relating to aircraft or ships which will prevent a person from directly or indirectly providing technical assistance to, or for the benefit of, the designated person, where that technical assistance relates to an aircraft or ship. \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: Yes",
+              "otherInformation": "Regime Name: The Russia (Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Travel Ban|Trust Services Sanctions|Technical assistance related to aircraft|Transport sanctions: see \"Other information\" \r\nDesignation Source: UK \r\nLast Update Date: 12/02/2024 \r\nUK Statement of Reasons: \r\nVladimir Olegovich POTANIN is an \u201Cinvolved person\u201D under the Russia (Sanctions) (EU Exit) Regulations 2019 on the basis of the following grounds: (1) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by owning or controlling, directly or indirectly, Interros, an entity carrying on business in sectors of strategic significance to the Government of Russia, namely the Russian financial services and extractives sectors; (2) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by holding the right, directly or indirectly, to nominate at least one director (whether executive or non-executive) of PJSC Rosbank, an entity carrying on business in a sector of strategic significance to the Government of Russia, namely the Russian financial services sector; (3) POTANIN is or has been involved in obtaining a benefit from or supporting the Government of Russia by working as a director (whether executive of non-executive) or equivalent or other manager of PJSC Norilsk Nickel, an entity carrying on business in a sector of strategic significance to the Government of Russia, namely the Russian extractives sector.\r\nThe trust services sanctions were imposed on 21/03/2023.\r\n \r\nInfo: Transport sanction: where transport sanctions apply, a ship owned, controlled, chartered or operated by a designated person is prohibited from entering a port in the UK, may be given a movement or a port entry direction, can be detained, and will be refused permission to register on the UK Ship Register or have its existing registration terminated. Similarly, an aircraft owned, chartered or operated by a designated person is prohibited from overflying or landing in the UK, may be given a movement direction, can be detained or moved to a specified airport, and will be refused permission to register on the CAA Aircraft Register or have its existing registration terminated. In addition, there is a prohibition of the provision of technical assistance relating to aircraft or ships which will prevent a person from directly or indirectly providing technical assistance to, or for the benefit of, the designated person, where that technical assistance relates to an aircraft or ship. \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: Yes",
               "group": null,
               "classification": null,
               "links": [
@@ -2307,10 +2306,10 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/7262022-44481",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-08-31/html/sor-dors189-eng.html",
+                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1138500/Notice_Russia_240223.pdf",
                 "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220628",
-                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1138500/Notice_Russia_240223.pdf"
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-08-31/html/sor-dors189-eng.html",
+                "https://www.president.gov.ua/documents/7262022-44481"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -2427,7 +2426,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "cac01e30-693b-4340-a79f-86b56f1e6685",
+              "profileId": "ee45d964-d507-4334-8271-72556b226bbb",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -2456,7 +2455,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "c7265436-ac1c-4a81-be1b-1ea9f7b4e8e2",
+              "profileId": "b54e7c26-8ba6-416b-83a1-125038924361",
               "matchScore": 78,
               "firstName": "PRONIN",
               "middleName": "Vladimir",
@@ -2521,7 +2520,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "b1c6c529-7111-4107-b38e-b72c8468134e",
+              "profileId": "7da32d1c-b069-47ff-8f67-df095aca69d7",
               "matchScore": 78,
               "firstName": "MUKHIN",
               "middleName": "Vladimir",
@@ -2624,7 +2623,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "5bca0ebb-fa3c-4186-b5cd-517b2ce57f1e",
+              "profileId": "9f25f037-7c78-4921-8c7a-edc3b3f9749d",
               "matchScore": 78,
               "firstName": "VLADİMİR",
               "middleName": "VLADİMİROVİCH",
@@ -2696,7 +2695,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "0b90f9d4-f808-4050-95e2-c5e253ddfe11",
+              "profileId": "cd414601-27a2-4a86-b3d9-fc20eab387b2",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -2823,14 +2822,14 @@
               "profileId": "1203036239870316038",
               "matchScore": 76,
               "firstName": "Vladimir",
-              "middleName": null,
-              "lastName": "Resin",
-              "fullName": "Vladimir Resin",
+              "middleName": "Resin",
+              "lastName": "Iosifovich",
+              "fullName": "Vladimir Resin Iosifovich",
               "nationality": null,
               "type": "SANCTION",
               "sourceName": "Switzerland Sanction List - SECO",
               "programName": "Ordinance of 4 March 2022 on measures related to the situation in Ukraine (RS 946.231.176.72), annexes 2, 8, 9, 10, 11, 12,13, 14, 15 and 25",
-              "otherInformation": null,
+              "otherInformation": "Father Name: Iosifovich\r\n",
               "group": null,
               "classification": null,
               "links": [
@@ -2839,8 +2838,8 @@
               "mediaAdversary": [
               ],
               "otherPossibleNames": [
-                "Vladimir Resin",
-                "Владимир Иосифович Ресин"
+                "Vladimir Resin Iosifovich",
+                "Владимир Ресин"
               ],
               "otherPossibleDob": [
                 "2/21/1936 12:00:00 AM"
@@ -3139,13 +3138,13 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/6372022-43921",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.president.gov.ua/documents/6372022-43921"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -3538,15 +3537,15 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.president.gov.ua/documents/6372022-43921",
-                "https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/downloadCrimea/20220412press_russia.pdf",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/downloadCrimea/20220412press_russia.pdf",
+                "https://www.president.gov.ua/documents/6372022-43921",
+                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -3963,13 +3962,13 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.president.gov.ua/documents/7262022-44481",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-gegenueber-belarus.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-05-11/html/sor-dors84-eng.html",
+                "https://eur-lex.europa.eu/eli/dec/2012/642/",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1079304/Belarus.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2012/642/"
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-05-11/html/sor-dors84-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-gegenueber-belarus.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.president.gov.ua/documents/7262022-44481",
+                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -4197,9 +4196,9 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/storage/j-files-storage/01/17/97/623846514a5770c2a3839ae27f028d5f_1680342471.pdf",
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023D0432&qid=1677402654680",
                 "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023D0432&qid=1677402654680"
+                "https://www.president.gov.ua/storage/j-files-storage/01/17/97/623846514a5770c2a3839ae27f028d5f_1680342471.pdf"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -4771,7 +4770,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "479f97ee-d64a-4914-8843-fdb4edabe2ee",
+              "profileId": "256263f7-2ce3-44e0-af8f-47da9f86f223",
               "matchScore": 76,
               "firstName": "FOMIN",
               "middleName": "Vladimir",
@@ -4803,7 +4802,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "2ed5d05d-df5a-44ff-8495-b273ea0882d2",
+              "profileId": "de52eee9-143f-4bcf-9c42-c6ed9e7f4d99",
               "matchScore": 76,
               "firstName": "REPIN",
               "middleName": "Vladimir",
@@ -4836,7 +4835,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "4cf63774-1e91-40ab-bee4-2e9487742fd2",
+              "profileId": "13ea2cc0-f718-46b6-99e9-6057101971e3",
               "matchScore": 76,
               "firstName": "KOVIN",
               "middleName": "Vladimir",
@@ -4902,7 +4901,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "8373ca14-a7d9-424b-9994-c88959d99e12",
+              "profileId": "e09080c5-4afd-4140-aafb-c1f3dbd7b5d2",
               "matchScore": 76,
               "firstName": "SAVIN",
               "middleName": "Vladimir",
@@ -4966,7 +4965,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "ff8a56c3-1e48-4221-a718-003d035f9d35",
+              "profileId": "96ca5e53-7def-4a62-9b21-25c3f4ea4cd4",
               "matchScore": 76,
               "firstName": "CURIC",
               "middleName": null,
@@ -5065,14 +5064,17 @@
             }
           ]
         }
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "5a9281d5-cb9d-4221-a489-c8a2cae64e04",
+      "referenceId": "f41a03db-e731-4e13-8b46-45db08f8288b",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Vladimir Putin"
+      "inputFullGivenName": "Vladimir Putin",
+      "inputRecordLimit": "50",
+      "inputMatchThreshold": "60"
     },
     "errors": [
     ]

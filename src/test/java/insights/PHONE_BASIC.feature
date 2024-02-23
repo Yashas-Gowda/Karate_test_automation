@@ -167,7 +167,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
 #      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_true  | 200        | true   | "2022-05-07" | 1             | '#number'        | "Claro Claro"                   | "TIM Telecom Italia Mobile"     | "NOT_SUPPORTED"       |
 #      | PHONE_BASIC_Sub_PORTED_DETAILS_TMT_BR_ported_portedDate_numberOfPorts_portedSinceXDays_false | 200        | false  | null         | 0             | null             | "CLARO S.A."                    | "CLARO S.A."                    | "NOT_SUPPORTED"       |
 
-
+#  After discussion with Anjan, we found Asliri is not giving a response due to less credit so we considered Indosat as primary and izidata as secondary data partner
+#  phoneNumberAge and  phoneNumberAgeDescription ( Product team needs to confirm , do we need to disable Asliri or not )
+#  cc: @Roopa
 
   @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of PHONE_TENURE - <Scenario>
@@ -204,26 +206,63 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.phoneTenure.max == <phoneTenure_max>
 
 # INDOSAT sceanrios are automated based on high level understanding as manual sign off was given by Sameena.
+#
+#  Partner Name	Carrier Name	phoneNumber	phoneNumberAge	phoneNumberAgeDescription	phoneTenure.min	phoneTenure.max	Comments
+#  Primary - Indosat	Indosat	6281573008453	5	Above 24 Months	24	null
+#  Primary - Indosat	Indosat	6285608302331	5	Above 24 Months	24	null
+#  Primary - Indosat	Indosat	6285752731651	1	Below 3 Months	0	3
+#  Primary - Indosat	Indosat	6285890539962	1	Below 3 Months	0	3
+#  Primary - Indosat	Indosat	622153660710	-	-	-	-	No Data Found.
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281376193604	1	Below 3 Months	1	2
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281230222224	2	3 to 6 Months	4	5
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281279303067	3	6 to 12 Months	8	10
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6282234618840	3	6 to 12 Months	10	12
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281364081333	4	12 to 24 Months	12	24
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281222610559	4	12 to 24 Months	12	24
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	-	5	24 to 36 Months	24	36
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281393355776	6	Above 36 Months	36	null
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	628119102320	-	-	-	-	PHONENUMBER_NOT_FOUND
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6287700099178	-	-	-	-	PHONENUMBER_NOT_FOUND
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6285229357718	-	-	-	-	PHONENUMBER_NOT_FOUND
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6287809247515	-	-	-	-	PHONENUMBER_NOT_FOUND
+#  Secondary - izidata	TELKOMSEL (PT Telekomunikasi Selular)	6281214881617	-	-	-	-	PHONENUMBER_NOT_FOUND
+
+#as per Anjan, Possible values that data partner indosat is giving 2 possible values phoneNumberAge {5,1} | phoneNumberAgeDescription { Above 24 Months, Below 3 Months} | phoneTenure { (24,null),(0,3) }
+  # as per Anjan, Possible values that data partner izadata is giving 6 possible values phoneNumberAge {1,2,3,4,5,6} | phoneNumberAgeDescription { Below 3 Months,3 to 6 Months,6 to 12 Months,12 to 24 Months,24 to 36 MonthsAbove 36 Months} | phoneTenure { (24,null),(0,3) }
+
 
     Examples:
-      | Scenario                                                                                                                             | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
-      | PHONE_BASIC_Sub_PHONE_TENURE_WDD_BR_ported_activationDate_activeSinceXDays_phoneNumberAge_phoneNumberAgeDescription_phoneTenure_null | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
-      | PHONE_BASIC_Sub_PHONE_TENURE_WDD_BR_activeSinceXDays_phoneNumberAge_null_ported_activationDate_phoneTenure_48_null                   | 200        | "2014-03-06"   | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | Scenario                                                                                                                                                                                                        | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
+      | PHONE_BASIC_Sub_PHONE_TENURE_WDD_BR_ported_activationDate_activeSinceXDays_phoneNumberAge_phoneNumberAgeDescription_phoneTenure_null                                                                            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
+      | PHONE_BASIC_Sub_PHONE_TENURE_WDD_BR_activeSinceXDays_phoneNumberAge_null_ported_activationDate_phoneTenure_48_null                                                                                              | 200        | "2014-03-06"   | "#number"        | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
 #      | PHONE_BASIC_Sub_PHONE_TENURE_WDD_BR_activeSinceXDays_phoneNumberAge_null_ported_activationDate_phoneTenure_24_48                     | 200        | "2021-03-31"   | null             | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
 
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_0_6            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 0               | 6               |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_6_12           | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_12_24          | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_24_48          | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_48_null        | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_returned_portedDate_null_then_phoneTenure_is_returned            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned             | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                  | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                    | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_0_6                                                                                       | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 0               | 6               |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_6_12                                                                                      | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_12_24                                                                                     | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_24_48                                                                                     | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_activeSinceXDays_phoneNumberAge_ported_activationDate_null_phoneTenure_48_null                                                                                   | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_returned_portedDate_null_then_phoneTenure_is_returned                                                                                       | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | 48              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_null_portedDate_notnull_then_phoneTenure_is_returned                                                                                        | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_IN_when_lastDeactivated_portedDate_notnull_then_phoneTenure_is_returned                                                                                             | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 48              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_other_then_ID_IN_BR_then_phoneTenure_null                                                                                                               | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#null"     | "##null"        | "##null"        |
 
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_called_INDOSAT_Data_partner                                | 200        | "#null"        | "#null"          | 5              | "Above 24 months"         | "#notnull"  | 24              | null            |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_IAM_NUMBER_called_INDOSAT_Data_partner                            | 200        | "#null"        | "#null"          | 1              | "Below 3 months"          | "#notnull"  | 0               | 3               |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_TMT_Data_partner                                | 200        | "#null"        | "#null"          | 4              | "Above 12 Months"         | "#notnull"  | 12              | null            |
+# as per Anjan, Possible values that data partner indosat is giving 2 possible values phoneNumberAge {5,1} | phoneNumberAgeDescription { Above 24 Months, Below 3 Months} | phoneTenure { (24,null),(0,3) }
+      # as per Anjan, Possible values that data partner izadata is giving 6 possible values phoneNumberAge {1,2,3,4,5,6} | phoneNumberAgeDescription { Below 3 Months,3 to 6 Months,6 to 12 Months,12 to 24 Months,24 to 36 MonthsAbove 36 Months} | phoneTenure { (24,null),(0,3) }
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_called_INDOSAT_Data_partner_phoneNumberAge_5_phoneNumberAgeDescription_Above_24_Months_phoneTenure_24_null                            | 200        | "#null"        | "#null"          | 5              | "Above 24 Months"         | "#notnull"  | 24              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_IAM_NUMBER_called_INDOSAT_Data_partner_phoneNumberAge_1_phoneNumberAgeDescription_Below_3_Months_phoneTenure_0_3                             | 200        | "#null"        | "#null"          | 1              | "Below 3 Months"          | "#notnull"  | 0               | 3               |
+
+
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_1_phoneNumberAgeDescription_Below_3_Months_phoneTenure_1_2                             | 200        | "#null"        | "#null"          | 1              | "Below 3 Months"          | "#notnull"  | 1               | 2               |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_2_phoneNumberAgeDescription_3_to_6_Months_phoneTenure_4_5                              | 200        | "#null"        | "#null"          | 2              | "3 to 6 Months"           | "#notnull"  | 4               | 5               |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_8_10                            | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 8               | 10              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_10_12                           | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 10              | 12              |
+
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_4_phoneNumberAgeDescription_12_to_24_Months_phoneTenure_12_24                          | 200        | "#null"        | "#null"          | 4              | "12 to 24 Months"         | "#notnull"  | 12              | 24              |
+
+# Data not found    | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_5_phoneNumberAgeDescription_24_to_36_Months_phoneTenure_24_36 | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_6_phoneNumberAgeDescription_Above_36_Months_phoneTenure_36_null                        | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_gives_error_PHONENUMBER_NOT_FOUND_phoneNumberAge_null_phoneNumberAgeDescription_null_phoneTenure_null | 200        | "#null"        | "#null"          | null           | null                      | "#null"     | "#notpresent"   | "#notpresent"   |
 
   @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
   Scenario Outline:  DPI PHONE_BASIC_Sub_LAST_DEACTIVATED positive scenario for Indian region with validation of LAST_DEACTIVATED - <Scenario>
@@ -255,50 +294,50 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And match $.data.phone.basic.numberRecycled == <numberRecycled>
 
     Examples:
-      | Scenario                                                                                                                                  | statusCode | lastDeactivated | lastDeactivated_minimumTenureDays | lastDeactivated_maximumTenureDays | numberRecycled |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_True_deactivated_India_lastDeactivated_notnull                                                 | 200        | "#notnull"      | "#number"                         | "#number"                         | null           |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_false_deactivated_India_lastDeactivated_null                                                   | 200        | null            | "##null"                          | "##null"                          | null           |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_null_for_other_region_expect_IN_ID_lastDeactivated_null                                                  | 200        | null            | "##null"                          | "##null"                          | null           |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_no_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null  | 200        | null            | "##null"                          | "##null"                          | null           |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_true     | 200        | null            | "##null"                          | "##null"                          | true           |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_false    | 200        | null            | "##null"                          | "##null"                          | false          |
-      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_NON_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null | 200        | null            | "##null"                          | "##null"                          | null           |
+      | Scenario                                                                                                                                     | statusCode | lastDeactivated | lastDeactivated_minimumTenureDays | lastDeactivated_maximumTenureDays | numberRecycled |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_True_deactivated_India_lastDeactivated_notnull                                                    | 200        | "#notnull"      | "#number"                         | "#number"                         | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_IN_Zumigo_false_deactivated_India_lastDeactivated_null                                                      | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_null_for_other_region_expect_IN_ID_lastDeactivated_null                                                     | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_no_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null     | 200        | null            | "##null"                          | "##null"                          | null           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_true        | 200        | null            | "##null"                          | "##null"                          | true           |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_false       | 200        | null            | "##null"                          | "##null"                          | false          |
+      | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_NON_INDOSAT_NUMBER_when_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null    | 200        | null            | "##null"                          | "##null"                          | null           |
       | PHONE_BASIC_Sub_LAST_DEACTIVATED_ID_NON_INDOSAT_NUMBER_when_no_optional_parameter_referenceDate_in_request_then_response_numberRecycled_null | 200        | null            | "##null"                          | "##null"                          | null           |
 
-
-  @PHONE_BASIC @CARRIER_INFORMATION @TMT @currentCarrierCircle @originalCarrierCircle @changeInCarrierRegion
-  Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of changeInCarrierRegion - <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    And match $.data.phone.basic == '#notnull'
-    And match $.data.phone.basic.portedHistory.currentCarrierCircle == <currentCarrierCircle>
-    And match $.data.phone.basic.portedHistory.originalCarrierCircle == <originalCarrierCircle>
-    And match $.data.phone.basic.portedHistory.changeInCarrierRegion == <changeInCarrierRegion>
-
-    Examples:
-      | Scenario                                                                       | statusCode | currentCarrierCircle | originalCarrierCircle        | changeInCarrierRegion |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_CHANGED       | 200        | "Jio Maharashtra"    | "Vi India Maharashtra & Goa" | "CHANGED"             |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_NOT_CHANGED   | 200        | "Jio Karnataka"      | "Airtel Karnataka"           | "NOT_CHANGED"         |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_BR_TMT_changeInCarrierRegion_NOT_SUPPORTED | 200        | "CLARO S.A."         | "CLARO S.A."                 | "NOT_SUPPORTED"       |
+#Below scenrios are covered in other scenarios so commented
+#  @PHONE_BASIC @CARRIER_INFORMATION @TMT @currentCarrierCircle @originalCarrierCircle @changeInCarrierRegion
+#  Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of changeInCarrierRegion - <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
+#    And headers headers
+#    And header Authorization = BearerToken
+#    And request payload.request
+#    * set payload.response.meta.referenceId = "#ignore"
+#    When method POST
+#    # cloud watch traces -start
+#    * print karate.request.headers
+#    * print karate.response.headers
+#    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+#    * def reference_id = karate.request.headers['x-reference-id']
+#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+#    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+#    # ResponseTime
+#    * print 'responseTime----->',responseTime
+#    # Request-response
+#    * print 'API Request----->',payload.request
+#    * print 'Expected Response---->',payload.response
+#    * print 'Actual Response---->',karate.pretty(response)
+#    Then status <statusCode>
+#    And match $.data.phone.basic == '#notnull'
+#    And match $.data.phone.basic.portedHistory.currentCarrierCircle == <currentCarrierCircle>
+#    And match $.data.phone.basic.portedHistory.originalCarrierCircle == <originalCarrierCircle>
+#    And match $.data.phone.basic.portedHistory.changeInCarrierRegion == <changeInCarrierRegion>
+#
+#    Examples:
+#      | Scenario                                                                       | statusCode | currentCarrierCircle | originalCarrierCircle        | changeInCarrierRegion |
+#      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_CHANGED       | 200        | "Jio Maharashtra"    | "Vi India Maharashtra & Goa" | "CHANGED"             |
+#      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_NOT_CHANGED   | 200        | "Jio Karnataka"      | "Airtel Karnataka"           | "NOT_CHANGED"         |
+#      | PHONE_BASIC_Sub_CARRIER_INFORMATION_BR_TMT_changeInCarrierRegion_NOT_SUPPORTED | 200        | "CLARO S.A."         | "CLARO S.A."                 | "NOT_SUPPORTED"       |
 
   @PHONE_BASIC @CARRIER_INFORMATION @TMT @originalCarrier @localRoutingNumber @mobileCountryCode @mobileNetworkCode @networkName @serviceProfileId
   Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of networkName - <Scenario>
@@ -327,24 +366,28 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     And match $.data.phone.basic.originalCarrier == <originalCarrier>
 
+    And match $.data.phone.basic.portedHistory.currentCarrierCircle == <currentCarrierCircle>
+    And match $.data.phone.basic.portedHistory.originalCarrierCircle == <originalCarrierCircle>
+    And match $.data.phone.basic.portedHistory.changeInCarrierRegion == <changeInCarrierRegion>
+
     And match $.data.phone.basic.currentNetwork == "#notnull"
     And match $.data.phone.basic.currentNetwork.localRoutingNumber == <localRoutingNumber>
     And match $.data.phone.basic.currentNetwork.mobileCountryCode == <mobileCountryCode>
     And match $.data.phone.basic.currentNetwork.mobileNetworkCode == <mobileNetworkCode>
-    And match $.data.phone.basic.currentNetwork.networkName == "<networkName>"
-    And match $.data.phone.basic.currentNetwork.serviceProfileId == "<serviceProfileId>"
+    And match $.data.phone.basic.currentNetwork.networkName == <networkName>
+    And match $.data.phone.basic.currentNetwork.serviceProfileId == <serviceProfileId>
 
 
     Examples:
-      | Scenario                                                                                                    | statusCode | originalCarrier         | localRoutingNumber | mobileCountryCode | mobileNetworkCode | networkName                   | serviceProfileId |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_networkName_JIO - Karnataka_with_max_7_ports                     | 200        | "Aircel - Karnataka"    | null               | "405"             | "861"             | JIO - Karnataka               | 91106            |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_networkName_TATA - Karnataka_with_max_2_ports                    | 200        | "Airtel - Karnataka"    | null               | "405"             | "034"             | TATA - Karnataka              | 91191            |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_networkName_Airtel_Karnataka_with_max_1_ports                    | 200        | "Vodafone - Karnataka"  | null               | "404"             | "45"              | Airtel - Karnataka            | 91031            |
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_networkName_Vodafone - Karnataka_with_max_1_ports                | 200        | "JIO - North East"      | null               | "404"             | "86"              | Vodafone - Karnataka          | 91241            |
-
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_BR_TMT_networkName_CLARO S.A._with_max_0_ports                          | 200        | "CLARO S.A."            | null               | null              | null              | CLARO S.A.                    | 55321            |
-
-      | PHONE_BASIC_Sub_CARRIER_INFORMATION_US_TMT_networkName_T-Mobile US-SVR-10X2_with_special_localRoutingNumber | 200        | "T-Mobile US-SVR-10X/2" | "9198055337"       | "310"             | "004"             | Verizon Wireless:6006 - SVR/2 | 151971           |
+      | Scenario                                                                                                                                                          | statusCode | originalCarrier                         | currentCarrierCircle                       | originalCarrierCircle                      | changeInCarrierRegion | localRoutingNumber | mobileCountryCode | mobileNetworkCode | networkName                             | serviceProfileId |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_currentCarrierCircle_JIO_Karnataka_with_mcc_mnc_spid                                                                   | 200        | "Aircel - Karnataka"                    | "Jio Karnataka"                            | "AIRCEL Karnataka"                         | "NOT_CHANGED"         | null               | "405"             | "861"             | "JIO - Karnataka"                       | "91106"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_currentCarrierCircle_Airtel_Karnataka_with_mcc_mnc_spid                                                                | 200        | "Vodafone - Karnataka"                  | "Airtel Karnataka"                         | "Vi India Karnataka"                       | "NOT_CHANGED"         | null               | "404"             | "45"              | "Airtel - Karnataka"                    | "91031"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_currentCarrierCircle_Jio_North_East_with_mcc_mnc_spid                                                                  | 200        | "JIO - North East"                      | "Jio North East"                           | "Jio North East"                           | "NOT_CHANGED"         | null               | "405"             | "865"             | "JIO - North East"                      | "91110"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_currentCarrierCircle_Jio_Maharashtra_with_mcc_mnc_spid_changeInCarrierRegion_CHANGED                                   | 200        | "Vodafone - Maharashtra & Goa"          | "Jio Maharashtra"                          | "Vi India Maharashtra & Goa"               | "CHANGED"             | null               | "405"             | "864"             | "JIO - Maharashtra & Goa"               | "91109"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_BR_TMT_currentCarrierCircle_CLARO_S_A_with_spid_without_mcc_mnc_changeInCarrierRegion_NOT_SUPPORTED                           | 200        | "CLARO S.A."                            | "CLARO S.A."                               | "CLARO S.A."                               | "NOT_SUPPORTED"       | null               | null              | null              | "CLARO S.A."                            | "55321"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_US_TMT_currentCarrierCircle_Verizon_Verizon_Wireless_with_localRoutingNumber_mcc_mnc_spid_changeInCarrierRegion_NOT_SUPPORTED | 200        | "T-Mobile US-SVR-10X/2"                 | "Verizon Verizon Wireless"                 | "T-Mobile T-Mobile US"                     | "NOT_SUPPORTED"       | "9198055337"       | "310"             | "004"             | "Verizon Wireless:6006 - SVR/2"         | "151971"         |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_ID_TMT_currentCarrierCircle_Indosat_Ooredoo_Hutchison_PT_Indosat_Tbk_with_mcc_mnc_spid_changeInCarrierRegion_NOT_SUPPORTED    | 200        | "Indosat Ooredoo Hutchison"             | "Indosat Ooredoo Hutchison PT Indosat Tbk" | "Indosat Ooredoo Hutchison PT Indosat Tbk" | "NOT_SUPPORTED"       | null               | "510"             | "01"              | "Indosat Ooredoo Hutchison"             | "62500"          |
+      | PHONE_BASIC_Sub_CARRIER_INFORMATION_ID_TMT_currentCarrierCircle_Telkomsel_PT_Telekomunikasi_Selular_with_mcc_mnc_spid_changeInCarrierRegion_NOT_SUPPORTED         | 200        | "TELKOMSEL (PT Telekomunikasi Selular)" | "Telkomsel PT Telekomunikasi Selular"      | "Telkomsel PT Telekomunikasi Selular"      | "NOT_SUPPORTED"       | null               | "510"             | "10"              | "TELKOMSEL (PT Telekomunikasi Selular)" | "62504"          |
 
     #After discussion with roopa,Suggestion was to add YES,NO,Known for now and Our Automation is not handling fallback check for data partners
   @PHONE_BASIC @PHONE_STATUS @WDD @IPQS @TMT @Xconnect @active
@@ -492,7 +535,38 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_When_Package_empty_Array        | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
       | PHONE_BASIC_Negative_scenarios_When_Package_name_null          | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
       | PHONE_BASIC_Negative_scenarios_When_Package_Key_is_not_present | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
-      | PHONE_BASIC_Negative_scenarios_When_Package_name_random        | 400        | null    | "invalid package name"    | INVALID_PACKAGE_NAME | INVALID_INPUT |
+#  Covered in below scenarios    | PHONE_BASIC_Negative_scenarios_When_Package_name_random        | 400        | null    | "invalid package name"    | INVALID_PACKAGE_NAME | INVALID_INPUT |
+
+  @PHONE_BASIC @Negative
+  Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of PHONE_BASIC when package name is random  - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    And match $.data == '#notpresent'
+    And match $.meta == '#notpresent'
+    And match $.error == <message>
+
+    Examples:
+      | Scenario                                                | statusCode | message                  |
+      | PHONE_BASIC_Negative_scenarios_When_Package_name_random | 403        | "Package not subscribed" |
 
 
   @PHONE_BASIC @Negative

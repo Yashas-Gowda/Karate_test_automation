@@ -10,14 +10,14 @@
   "response":{
     "data": null,
     "meta": {
-      "referenceId": "dpi_nov_6_11",
+      "referenceId": "7d61c551-0385-4bc4-97c9-b73436388c72",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_ADVANCED",
         "message": "Missing phone default country code",
         "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"

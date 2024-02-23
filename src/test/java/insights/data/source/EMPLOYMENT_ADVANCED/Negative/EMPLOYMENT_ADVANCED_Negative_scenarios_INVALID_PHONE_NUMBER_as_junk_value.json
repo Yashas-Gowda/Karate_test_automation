@@ -12,14 +12,14 @@
     "data": null,
     "meta": {
       "inputPhoneNumber": "sdfsdffdsf3efds#@@",
-      "referenceId": "dpi_nov_6_5",
+      "referenceId": "4936e6ab-6b67-4e29-a739-03ac622b1666",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_ADVANCED",
         "message": "Invalid Phone Number",
         "code": "INVALID_PHONE_NUMBER",
         "type": "INVALID_INPUT"

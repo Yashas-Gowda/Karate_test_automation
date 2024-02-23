@@ -1,0 +1,153 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9892340894",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "CHANNEL PLAY LIMITED",
+            "noOfPfAccounts": 4,
+            "dateOfJoining": "2019-10-01",
+            "dateOfExit": "2020-07-10",
+            "matchingPfAccountNumber": "101281942125"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "100740741243",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RELIANCE PROJECTS & PROPERTY MANAGEMENT SERVICES LIMITED",
+              "dateOfJoining": "2015-11-16",
+              "dateOfExit": "2016-09-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "ALTPV9559R",
+                "email": "NOT AVAILABLE",
+                "bankAccountNumber": "34086158330",
+                "bankBranchCode": "SBIN0002184",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "MAHENDRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "101281942125",
+              "name": "Jitesh Mahendra Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "CHANNEL PLAY LIMITED",
+              "dateOfJoining": "2019-10-01",
+              "dateOfExit": "2020-07-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "ALTPV9559R",
+                "email": "JITESH.VALANTRA1991@GMAIL.COM",
+                "bankAccountNumber": "000401781912",
+                "bankBranchCode": "ICIC0000004",
+                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
+                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100956281807",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
+              "dateOfJoining": "2016-10-01",
+              "dateOfExit": "2018-02-28",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "ALTPV9559R",
+                "email": "JITESH.VALANTRA1991@GMAIL.COM",
+                "bankAccountNumber": "34086158330",
+                "bankBranchCode": "SBIN0002184",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "Mahendra Valantra",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100029970350",
+              "name": "Jitesh M Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "XYLEM RESOURCE MANAGEMENT PVT LTD",
+              "dateOfJoining": "2014-04-23",
+              "dateOfExit": "2015-09-30",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "25734019",
+                "employeeCount": 8383,
+                "wageMonth": "DEC-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "25008082",
+                "employeeCount": 8073,
+                "wageMonth": "NOV-23"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "24622368",
+                "employeeCount": 7973,
+                "wageMonth": "OCT-23"
+              }
+            ]
+          }
+        },
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9892340894",
+      "cleansedPhoneNumber": "+919892340894",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}

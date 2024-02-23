@@ -5,21 +5,21 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "919036789996",
+    "phoneNumber": "917506122902",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919036789996",
+          "phoneNumber": "917506122902",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": "PREPAID",
+          "simType": "POSTPAID",
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": {
@@ -27,31 +27,31 @@
             "max": 6
           },
           "country": "IN",
-          "originalCarrier": "Airtel - Karnataka",
-          "ported": true,
+          "originalCarrier": "Vodafone - Mumbai",
+          "ported": false,
           "portedHistory": {
-            "portedDate": "2023-04-05",
-            "numberOfPorts": 1,
-            "portedSinceXDays": 82,
-            "currentCarrierCircle": "Jio Karnataka",
-            "originalCarrierCircle": "Airtel Karnataka",
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Vi India Mumbai",
+            "originalCarrierCircle": "Vi India Mumbai",
             "changeInCarrierRegion": "NOT_CHANGED",
-            "portedEvents": [
-              {
-                "carrierCircle": "JIO Karnataka",
-                "portedDate": "2023-04-05"
-              }
-            ]
+            "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "405",
-            "mobileNetworkCode": "861",
-            "networkName": "JIO - Karnataka",
-            "serviceProfileId": "91106"
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "20",
+            "networkName": "Vodafone - Mumbai",
+            "serviceProfileId": "91234"
           },
-          "lastDeactivated": null,
-          "isSpam": false
+          "numberRecycled": null,
+          "lastDeactivated": {
+            "minimumTenureDays": 82,
+            "maximumTenureDays": 112
+          },
+          "isSpam": null,
+          "topUpHistory": null
         },
         "social": null,
         "identity": null
@@ -66,12 +66,16 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919036789996",
-      "cleansedPhoneNumber": "+919036789996",
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "inputPhoneNumber": "917506122902",
+      "cleansedPhoneNumber": "+917506122902",
+      "referenceId": "Dpi_feb_12_1",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

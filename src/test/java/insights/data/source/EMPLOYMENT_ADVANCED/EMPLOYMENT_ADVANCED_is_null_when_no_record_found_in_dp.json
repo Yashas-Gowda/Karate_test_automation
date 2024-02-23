@@ -20,7 +20,11 @@
       "device": null,
       "employment": {
         "basic": null,
-        "advanced": null,
+        "advanced": {
+          "packageDetails": [
+            "M50-1001"
+          ]
+        },
         "details": null
       },
       "income": null,
@@ -36,7 +40,7 @@
       "cleansedPhoneNumber": "+916006251517",
       "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
-        "EMPLOYMENT_BASIC"
+        "EMPLOYMENT_ADVANCED"
       ]
     },
     "errors": []

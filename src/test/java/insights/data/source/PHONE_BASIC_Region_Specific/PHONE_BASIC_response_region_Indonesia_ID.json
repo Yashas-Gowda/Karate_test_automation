@@ -22,7 +22,7 @@
           "activeSinceXDays": null,
           "simType": "PREPAID",
           "phoneNumberAge": 1,
-          "phoneNumberAgeDescription": "Below 3 months",
+          "phoneNumberAgeDescription": "Below 3 Months",
           "phoneTenure": {
             "min": 0,
             "max": 3

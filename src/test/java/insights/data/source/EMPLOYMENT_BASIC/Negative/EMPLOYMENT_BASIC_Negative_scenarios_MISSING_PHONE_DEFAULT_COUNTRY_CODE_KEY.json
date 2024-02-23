@@ -3,21 +3,21 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_BASIC"
     ],
     "phoneNumber": "9108510043"
   } ,
   "response":{
     "data": null,
     "meta": {
-      "referenceId": "dpi_nov_6_11",
+      "referenceId": "ae1a6c53-07b6-40ff-b3a6-e373ba16a8d4",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_BASIC"
       ]
     },
     "errors": [
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_BASIC",
         "message": "Missing phone default country code",
         "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"

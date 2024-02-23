@@ -9,7 +9,7 @@
       "PHONE_BASIC"
     ]
   }  ,
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -22,7 +22,7 @@
           "activeSinceXDays": null,
           "simType": "PREPAID",
           "phoneNumberAge": 1,
-          "phoneNumberAgeDescription": "Below 3 months",
+          "phoneNumberAgeDescription": "Below 3 Months",
           "phoneTenure": {
             "min": 0,
             "max": 3
@@ -37,7 +37,8 @@
             "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
             "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": [
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
@@ -46,6 +47,7 @@
             "networkName": "Indosat Ooredoo Hutchison",
             "serviceProfileId": "62500"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
@@ -88,16 +90,19 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "628571116541",
       "cleansedPhoneNumber": "+628571116541",
-      "referenceId": "dpi-nov22-1",
+      "referenceId": "9c2b5b29-a854-4daa-9608-fb8d821e0af7",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
