@@ -1,17 +1,17 @@
 {
-  "request": {
+  "request":{
     "eventType": "ACCOUNT_CREATION",
-    "entityType": "ORGANISATION",
+    "entityType": "INDIVIDUAL",
     "userDetails": {
       "fullGivenName": "Kim Jong Un"
     },
-    "recordLimit": 20,
-    "matchThreshold": -1,
+    "recordLimit": -1,
+    "matchThreshold": 80,
     "packages": [
       "KYC_AML"
     ]
-  },
-  "response":{
+  } ,
+  "response": {
     "data": {
       "kyc": {
         "government": null,
@@ -22,15 +22,21 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "676f9bd2-0b4f-4627-ae98-4ae10d860419",
+      "referenceId": "Dpi_feb_21_1",
       "requestedPackages": [
         "KYC_AML"
       ],
       "inputFullGivenName": "Kim Jong Un",
-      "inputRecordLimit": "20",
-      "inputMatchThreshold": "-1"
+      "inputRecordLimit": "-1",
+      "inputMatchThreshold": "80"
     },
     "errors": [
+      {
+        "package": "KYC_AML",
+        "message": "Invalid RecordLimit ",
+        "code": "INVALID_RECORD_LIMIT",
+        "type": "INVALID_INPUT"
+      }
     ]
   }
 }

@@ -1,0 +1,26 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "ORGANISATION",
+    "userDetails": {
+      "fullGivenName": "A123B"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Cannot invoke \"com.monnai.exception.VerificationErrorCode.getMessage()\" because \"errorCode\" is null",
+        "code": "SERVER_ERROR",
+        "type": "SERVER"
+      }
+    ]
+  }
+}

@@ -21,7 +21,7 @@
           "summary": {
             "matchFound": true,
             "noOfProfiles": 3,
-            "totalRecords": 43
+            "totalRecords": 42
           },
           "records": [
             {
@@ -1531,40 +1531,6 @@
               "matchScore": 100,
               "firstName": null,
               "middleName": null,
-              "lastName": "Al-Shabab",
-              "fullName": "Al-Shabab",
-              "nationality": null,
-              "type": "SANCTION",
-              "sourceName": "Malaysia Ministry Of Home Affairs Sanction List",
-              "programName": null,
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Al-Shabab",
-                "Ḥarakat ash-Shabāb al-Mujāhidīn",
-                "Xarakada Mujaahidiinta Alshabaab",
-                "Harakat al-Shabaab al-Mujahideen ",
-                "HSM"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Corporate",
-              "profileId": "5160328903846423538",
-              "matchScore": 100,
-              "firstName": null,
-              "middleName": null,
               "lastName": "AL-SHABAAB",
               "fullName": "AL-SHABAAB",
               "nationality": null,
@@ -1905,14 +1871,17 @@
             }
           ]
         }
-      }
+      },
+      "kyb": null
     },
     "meta": {
-      "referenceId": "dpi_oct_19_1",
+      "referenceId": "Dpi_feb_21_1",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "THE UNITY OF ISLAMIC YOUTH"
+      "inputFullGivenName": "THE UNITY OF ISLAMIC YOUTH",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
     },
     "errors": []
   }

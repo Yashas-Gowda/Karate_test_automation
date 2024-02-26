@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "entityType": "ORGANISATION",
     "userDetails": {
-      "fullGivenName": "ABCDEF123"
+      "fullGivenName": null
     },
     "recordLimit": 20,
     "matchThreshold": 80,
@@ -17,14 +17,7 @@
         "government": null,
         "consumer": null,
         "mobile": null,
-        "aml": {
-          "summary": {
-            "matchFound": false,
-            "noOfProfiles": 0,
-            "totalRecords": 0
-          },
-          "records": []
-        }
+        "aml": null
       },
       "kyb": null
     },
@@ -33,10 +26,16 @@
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "ABCDEF123",
       "inputRecordLimit": "20",
       "inputMatchThreshold": "80"
     },
-    "errors": []
+    "errors": [
+      {
+        "package": "KYC_AML",
+        "message": "Invalid FullName ",
+        "code": "INVALID_FULL_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
   }
 }
