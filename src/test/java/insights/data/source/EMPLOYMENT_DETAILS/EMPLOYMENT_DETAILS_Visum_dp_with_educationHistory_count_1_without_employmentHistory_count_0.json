@@ -25,32 +25,25 @@
           "pfAdvanced": null,
           "social": {
             "summary": {
-              "name": "Spoorthi mudegowdru",
+              "name": "Spoorthi E M",
               "linkedinHeadline": "Attended PES University",
               "location": "Bengaluru, Karnataka, India",
               "employerName": null,
-              "linkedinUrl": "https://linkedin.com/in/spoorthi-mudegowdru-2a9355293",
-              "photoUrl": null,
+              "linkedinUrl": "https://linkedin.com/in/spoorthi-e-m-2a9355293",
+              "photoUrl": "https://media.licdn.com/dms/image/D5603AQENjAsAcwXf4Q/profile-displayphoto-shrink_800_800/0/1708537525316?e=1714608000&v=beta&t=UvwPoc0ZDg3aiTaFN_uRgScsSK1iLzCXALvBPDddwo8",
               "employmentHistoryCount": 0,
-              "educationHistoryCount": 2
+              "educationHistoryCount": 1
             },
-            "employmentHistory": [],
+            "employmentHistory": [
+            ],
             "educationHistory": [
               {
                 "fieldOfStudy": "Bachelor of Technology - BTech, Computer Science",
                 "degreeName": "Bachelor of Technology - BTech, Computer Science",
                 "schoolName": "PES University",
                 "schoolLocation": null,
-                "startYear": null,
-                "endYear": null
-              },
-              {
-                "fieldOfStudy": null,
-                "degreeName": null,
-                "schoolName": "Shree jain vidyalaya davangere",
-                "schoolLocation": null,
-                "startYear": null,
-                "endYear": null
+                "startYear": 2023,
+                "endYear": 2027
               }
             ],
             "recentActivity": null
@@ -66,12 +59,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "9f41a7ad-c617-44ff-b5c5-1679105eb02e",
       "inputEmail": "spoorthimudegowdru1609@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_DETAILS"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
