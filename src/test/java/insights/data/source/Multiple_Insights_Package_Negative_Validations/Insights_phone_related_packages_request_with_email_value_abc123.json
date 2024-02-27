@@ -1,0 +1,60 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "EMAIL_BASIC",
+      "EMAIL_SOCIAL",
+      "IDENTITY_ENRICHMENT_PLUS",
+      "EMPLOYMENT_DETAILS"
+    ],
+    "email": "abc123"
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputEmail": "abc123",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT",
+        "EMAIL_BASIC",
+        "EMAIL_SOCIAL",
+        "IDENTITY_ENRICHMENT_PLUS",
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "IDENTITY_ENRICHMENT",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMAIL_BASIC",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMAIL_SOCIAL",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "IDENTITY_ENRICHMENT_PLUS",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
