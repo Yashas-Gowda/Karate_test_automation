@@ -21,7 +21,7 @@
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 4,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 2,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -77,15 +77,16 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/5b978019/56df/477b/96a9/109d4370bfcf/94ca22bd-1d7c-4656-811c-b81603a47b52.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/cf1d8bae/cb47/42fa/9a14/95998028217e/d0677899-b59c-468a-8498-83b02e6fde7c.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
-                "about": null
+                "about": null,
+                "businessAccount": false
               },
               "viber": {
                 "registered": true,
                 "photo": null,
-                "lastSeen": "2024-01-02T10:23:42Z",
+                "lastSeen": "2024-02-17T07:18:13Z",
                 "name": "Em"
               },
               "kakao": {
@@ -94,10 +95,10 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "id": null,
+                "id": "live:atulp123",
                 "handle": null,
                 "bio": null,
-                "name": null,
+                "name": "ATUL PAREKH",
                 "age": null,
                 "gender": null,
                 "photo": null,
@@ -147,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "12017234014",
       "cleansedPhoneNumber": "+12017234014",
-      "referenceId": "19380a44-71bb-4215-a41f-abd07afe4b3a",
+      "referenceId": "7e74ce31-b9e6-48ea-9eb6-52b7afcf90ed",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

@@ -8,7 +8,7 @@
     "phoneNumber": "5547991986334",
     "phoneDefaultCountryCode": "BR"
   } ,
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -21,7 +21,7 @@
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 3,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 2,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -95,16 +95,16 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "id": null,
+                "id": "claudiomarim",
                 "handle": null,
                 "bio": null,
-                "name": null,
+                "name": "Claudio Marin",
                 "age": null,
                 "gender": null,
                 "photo": null,
-                "city": null,
-                "state": null,
-                "country": null
+                "city": "Blumenau",
+                "state": "Santa Catarina",
+                "country": "Brazil"
               },
               "ok": {
                 "registered": null,
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "5547991986334",
       "cleansedPhoneNumber": "+5547991986334",
-      "referenceId": "942d058e-b166-4baa-b7fd-d6a7345c021a",
+      "referenceId": "64c97a6b-95d0-46a7-9da2-cd31a8a8f271",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
