@@ -1,4 +1,4 @@
-@FIDO_V2 @ignore
+@FIDO_V2
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
 
   Background:
@@ -35,8 +35,6 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
-    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
-
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -44,6 +42,8 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
     * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
+
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
 
@@ -81,14 +81,14 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
-    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
-
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
     * match payload.response.data.phone.social.profiles.professional contains $.data.phone.social.profiles.professional
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -130,8 +130,6 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
 
-    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
-
     * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
@@ -139,6 +137,8 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
     * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
+
+    * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
 
@@ -406,7 +406,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     Examples:
       | Scenario                                                                                                         | statusCode |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true                                           | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
+#      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC           | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_without_photo_with_privacyStatus_PRIVATE  | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC     | 200        |

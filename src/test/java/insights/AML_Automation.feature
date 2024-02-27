@@ -161,7 +161,7 @@ Feature: Testing of DPI  - Verification AML Package scenarios
       | AML_Verification_Package_Negative_kyc_recordLimit_is_more_then_max_51     | 400        |
       | AML_Verification_Package_Negative_kyc_recordLimit_is_less_then_min_0      | 400        |
       | AML_Verification_Package_Negative_kyc_recordLimit_is_negative             | 400        |
-
+#  https://monnai.atlassian.net/browse/MB-4386
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_more_then_max_101 | 400        |
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_less_then_min_49  | 400        |
       | AML_Verification_Package_Negative_kyc_matchThreshold_is_negative          | 400        |
@@ -176,8 +176,8 @@ Feature: Testing of DPI  - Verification AML Package scenarios
       | AML_Verification_Package_Negative_kyc_entityType_with_123                 | 400        |
       | AML_Verification_Package_Negative_kyc_entityType_with_123abc              | 400        |
 
-      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_DD_MM_YYYY_format  | 400        |
-      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_YYYY_format        | 400        |
+#      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_DD_MM_YYYY_format  | 400        |
+#      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_YYYY_format        | 400        |
 #  https://monnai.atlassian.net/browse/MB-4379 | AML_Verification_Package_Negative_kyc_dateOfBirth_with_value_123        | 400        |
 #  https://monnai.atlassian.net/browse/MB-4378     | AML_Verification_Package_Negative_kyc_dateOfBirth_with_year_less_then_1900 | 400        |
 

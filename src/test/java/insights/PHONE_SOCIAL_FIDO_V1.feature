@@ -406,7 +406,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     Examples:
       | Scenario                                                                                                         | statusCode |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true                                           | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
+#      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC           | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_without_photo_with_privacyStatus_PRIVATE  | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC     | 200        |

@@ -21,7 +21,7 @@
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 3,
             "lastActivity": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 2,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -80,16 +80,16 @@
               "skype": {
                 "registered": true,
                 "language": null,
-                "id": null,
+                "id": "claudiomarim",
                 "handle": null,
                 "bio": null,
-                "name": null,
+                "name": "Claudio Marin",
                 "age": null,
                 "gender": null,
                 "photo": null,
-                "city": null,
-                "state": null,
-                "country": null
+                "city": "Blumenau",
+                "state": "Santa Catarina",
+                "country": "Brazil"
               }
             }
           }
@@ -115,11 +115,12 @@
     "meta": {
       "inputPhoneNumber": "5547991986334",
       "cleansedPhoneNumber": "+5547991986334",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "eca33250-dc24-4a97-9b28-9f4aac3ff285",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
