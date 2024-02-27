@@ -67,12 +67,6 @@
                 "totalAmount": "23700042",
                 "employeeCount": 9817,
                 "wageMonth": "NOV-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "23513130",
-                "employeeCount": 9618,
-                "wageMonth": "OCT-23"
               }
             ]
           }
@@ -90,7 +84,7 @@
     "meta": {
       "inputPhoneNumber": "6281518551",
       "cleansedPhoneNumber": "+916281518551",
-      "referenceId": "7c57881a-71f7-4f16-8472-2804661939a8",
+      "referenceId": "84c9e456-ae9e-4a59-bdc9-4e3f5215d77f",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]

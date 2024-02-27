@@ -8,7 +8,7 @@
     "phoneNumber": "9892340894",
     "phoneDefaultCountryCode": "IN"
   } ,
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -54,27 +54,6 @@
               }
             },
             {
-              "pfAccountNumber": "101281942125",
-              "name": "Jitesh Mahendra Valantra",
-              "gender": "MALE",
-              "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "CHANNEL PLAY LIMITED",
-              "dateOfJoining": "2019-10-01",
-              "dateOfExit": "2020-07-10",
-              "reasonOfExit": "",
-              "additionalDetails": {
-                "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "JITESH.VALANTRA1991@GMAIL.COM",
-                "bankAccountNumber": "000401781912",
-                "bankBranchCode": "ICIC0000004",
-                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
-                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
-                "pfNomineeRelation": "FATHER"
-              }
-            },
-            {
               "pfAccountNumber": "100956281807",
               "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
@@ -105,6 +84,27 @@
               "dateOfJoining": "2014-04-23",
               "dateOfExit": "2015-09-30",
               "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101281942125",
+              "name": "Jitesh Mahendra Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "CHANNEL PLAY LIMITED",
+              "dateOfJoining": "2019-10-01",
+              "dateOfExit": "2020-07-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "ALTPV9559R",
+                "email": "JITESH.VALANTRA1991@GMAIL.COM",
+                "bankAccountNumber": "000401781912",
+                "bankBranchCode": "ICIC0000004",
+                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
+                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
+                "pfNomineeRelation": "FATHER"
+              }
             }
           ],
           "pfFilingDetails": {
@@ -117,15 +117,9 @@
               },
               {
                 "currency": "INR",
-                "totalAmount": "25008082",
-                "employeeCount": 8073,
+                "totalAmount": "25013707",
+                "employeeCount": 8076,
                 "wageMonth": "NOV-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "24622368",
-                "employeeCount": 7973,
-                "wageMonth": "OCT-23"
               }
             ]
           }
@@ -143,11 +137,12 @@
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "1487551e-f263-4539-a876-f8554adc90e5",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

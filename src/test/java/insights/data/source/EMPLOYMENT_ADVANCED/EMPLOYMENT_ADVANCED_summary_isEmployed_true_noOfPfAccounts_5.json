@@ -34,6 +34,16 @@
           },
           "employmentHistory": [
             {
+              "pfAccountNumber": "100563078362",
+              "name": "Irfan Iqbalhussen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1984-06-26",
+              "nationalIdVerificationStatus": true,
+              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
+              "dateOfJoining": "2015-07-01",
+              "reasonOfExit": ""
+            },
+            {
               "pfAccountNumber": "101291581445",
               "name": "Irfanhusen Ikabalhusen Pathan",
               "gender": "MALE",
@@ -52,16 +62,6 @@
                 "pfNomineeName": "IKABALHUSEN ABDULRAHIM PATHAN",
                 "pfNomineeRelation": "FATHER"
               }
-            },
-            {
-              "pfAccountNumber": "100575653371",
-              "name": "Irfan Pathan",
-              "gender": "MALE",
-              "dateOfBirth": "1983-06-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "TECH SMART",
-              "dateOfJoining": "2015-09-05",
-              "reasonOfExit": ""
             },
             {
               "pfAccountNumber": "100732354289",
@@ -85,16 +85,6 @@
               }
             },
             {
-              "pfAccountNumber": "100563078362",
-              "name": "Irfan Iqbalhussen Pathan",
-              "gender": "MALE",
-              "dateOfBirth": "1984-06-26",
-              "nationalIdVerificationStatus": true,
-              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
-              "dateOfJoining": "2015-07-01",
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "100472465662",
               "name": "Irfan Iqbalhussen Pathan",
               "gender": "MALE",
@@ -102,6 +92,16 @@
               "nationalIdVerificationStatus": true,
               "employerName": "DELTA MOBILITY PRIVATE LIMITED",
               "dateOfJoining": "2015-01-01",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100575653371",
+              "name": "Irfan Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "TECH SMART",
+              "dateOfJoining": "2015-09-05",
               "reasonOfExit": ""
             }
           ],
@@ -111,13 +111,19 @@
                 "name": "IRFANHUSEN IKABALHUSEN PATHAN",
                 "confidence": 1.0,
                 "pfHistory": {
+                  "JAN-24": true,
                   "DEC-23": true,
-                  "NOV-23": true,
-                  "OCT-23": true
+                  "NOV-23": true
                 }
               }
             ],
             "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "6162179",
+                "employeeCount": 2861,
+                "wageMonth": "JAN-24"
+              },
               {
                 "currency": "INR",
                 "totalAmount": "5697019",
@@ -129,12 +135,6 @@
                 "totalAmount": "6133989",
                 "employeeCount": 2815,
                 "wageMonth": "NOV-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "6059515",
-                "employeeCount": 2853,
-                "wageMonth": "OCT-23"
               }
             ]
           }
@@ -152,7 +152,7 @@
     "meta": {
       "inputPhoneNumber": "9426597869",
       "cleansedPhoneNumber": "+919426597869",
-      "referenceId": "bfc090ae-4a09-4d84-b8f3-cca11aa4cde7",
+      "referenceId": "98adeb83-f851-4b5f-bc5e-472bc276427f",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
