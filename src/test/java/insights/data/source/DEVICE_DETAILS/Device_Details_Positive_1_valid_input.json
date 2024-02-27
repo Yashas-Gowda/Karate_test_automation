@@ -24,7 +24,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2024-01-05",
+            "lastModified": "2024-02-02",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -67,7 +67,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_jan_5_1",
+      "referenceId": "252f58a2-2b99-4f10-ac72-312093b496a2",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],
@@ -75,6 +75,7 @@
         "DEVICE_DETAILS"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
