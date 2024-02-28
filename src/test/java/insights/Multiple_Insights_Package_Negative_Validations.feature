@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Multiple_Insights_Package_Negative_Validations scenar
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+  @smokeTest @Negative
   Scenario Outline:  DPI Identity Multiple_Insights_Package_Negative_Validations Scenarios of phone validations - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/Multiple_Insights_Package_Negative_Validations/<Scenario>.json")
