@@ -34,7 +34,7 @@ public class insightsTestParallel {
 
     @Test
     void auth_Token() {
-        Results results = Runner.path("classpath:test/java/DEX/Insights/Phone_social_dp").outputCucumberJson(true)
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
                 .tags("@auth_Token")
                 .parallel(5);
         generateReport(results.getReportDir());
@@ -51,7 +51,7 @@ public class insightsTestParallel {
     @Test
     void single() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("@12")
+                .tags("@s")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

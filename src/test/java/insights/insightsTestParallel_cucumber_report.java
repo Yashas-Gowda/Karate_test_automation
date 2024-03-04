@@ -1,13 +1,17 @@
 package insights;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import java.io.File;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
+import net.minidev.json.parser.JSONParser;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,15 +21,20 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author pthomas3
  */
 public class insightsTestParallel_cucumber_report {
-
+//    private static String ENV = "";
+//    static {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//
+//        objectMapper.readValue(Paths.get("../karate-config.json"))
+//    }
 
 
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:insights")
                 .outputCucumberJson(true)
-                .tags("@Negative")
-                .karateEnv("demo")
+                .tags("~@ignore")
+                .karateEnv("dev")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
