@@ -1,0 +1,59 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC",
+      "EMAIL_SOCIAL",
+      "IDENTITY_ENRICHMENT",
+      "IDENTITY_ENRICHMENT_PLUS",
+      "EMPLOYMENT_DETAILS"
+    ],
+    "email": " "
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "requestedPackages": [
+        "EMAIL_BASIC",
+        "EMAIL_SOCIAL",
+        "IDENTITY_ENRICHMENT",
+        "IDENTITY_ENRICHMENT_PLUS",
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMAIL_BASIC",
+        "message": "Email cannot be empty/null",
+        "code": "MISSING_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMAIL_SOCIAL",
+        "message": "Email cannot be empty/null",
+        "code": "MISSING_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "IDENTITY_ENRICHMENT",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_SEARCH_PARAMETER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "IDENTITY_ENRICHMENT_PLUS",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_EMAIL_AND_PHONE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_EMAIL_AND_PHONE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

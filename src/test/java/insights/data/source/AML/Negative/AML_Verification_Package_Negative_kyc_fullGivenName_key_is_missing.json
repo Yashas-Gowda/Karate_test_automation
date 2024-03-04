@@ -3,10 +3,10 @@
     "eventType": "ACCOUNT_CREATION",
     "entityType": "ORGANISATION",
     "userDetails": {
-      "fullGivenName": "Kim Jong Un"
+
     },
     "recordLimit": 20,
-    "matchThreshold": 49,
+    "matchThreshold": 80,
     "packages": [
       "KYC_AML"
     ]
@@ -22,15 +22,20 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "ddb47229-80ad-4922-91e3-26823312f93d",
+      "referenceId": "Dpi_feb_21_1",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "Kim Jong Un",
       "inputRecordLimit": "20",
-      "inputMatchThreshold": "49"
+      "inputMatchThreshold": "80"
     },
     "errors": [
+      {
+        "package": "KYC_AML",
+        "message": "Invalid FullName ",
+        "code": "INVALID_FULL_NAME",
+        "type": "INVALID_INPUT"
+      }
     ]
   }
 }

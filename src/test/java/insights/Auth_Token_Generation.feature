@@ -1,9 +1,11 @@
+@auth_Token
 Feature: Generating auth token
 
   Background:
     * configure charset = null
     * path '/oauth2/token'
     * configure headers = { Content-Type: 'application/x-www-form-urlencoded' }
+
 
   Scenario: generating auth token for env specific
     Given url authUrl

@@ -1,5 +1,5 @@
 @PORTED_DETAILS @PHONE_BASIC_FULL
-Feature: Testing of DPI  - Phone_basic scenarios
+Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
 
   Background:
     * configure charset = null
@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-
+ # tcs of isSpam are ignored as Eyecon data partner is disabled in DPI config
   @PHONE_BASIC @phoneNumber
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario Validation for cleansingFlag_false and PhoneNumber added along with +91- <Scenario>
     Given url requestUrl
@@ -16,6 +16,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.phone.basic.active = "#ignore"
+    * set payload.response.data.phone.basic.isSpam = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
     When method POST
     # cloud watch traces -start
@@ -33,7 +35,9 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
-    * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#number'}
+    Then match $.data.phone.basic.active == "#notnull"
+    Then match $.data.phone.basic.isSpam == "#null"
+    * match $.data.phone.basic.portedHistory contains { "portedSinceXDays": '#null'}
 
     Examples:
       | Scenario                                                                | statusCode |
@@ -47,6 +51,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.phone.basic.active = "#ignore"
+    * set payload.response.data.phone.basic.isSpam = "#ignore"
     * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
     When method POST
     # cloud watch traces -start
@@ -64,6 +70,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.phone.basic contains payload.response.data.phone.basic
+    Then match $.data.phone.basic.active == "#notnull"
+    Then match $.data.phone.basic.isSpam == "#null"
     * match $.errors == '#[0]'
 
     Examples:

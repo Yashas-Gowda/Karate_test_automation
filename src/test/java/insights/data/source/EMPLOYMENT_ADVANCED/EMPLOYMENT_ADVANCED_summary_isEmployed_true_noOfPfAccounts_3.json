@@ -82,13 +82,19 @@
                 "name": "PALLOLI KARTHIK",
                 "confidence": 1.0,
                 "pfHistory": {
+                  "JAN-24": true,
                   "DEC-23": true,
-                  "NOV-23": true,
-                  "OCT-23": true
+                  "NOV-23": true
                 }
               }
             ],
             "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "560519",
+                "employeeCount": 118,
+                "wageMonth": "JAN-24"
+              },
               {
                 "currency": "INR",
                 "totalAmount": "607213",
@@ -100,12 +106,6 @@
                 "totalAmount": "606483",
                 "employeeCount": 120,
                 "wageMonth": "NOV-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "614283",
-                "employeeCount": 122,
-                "wageMonth": "OCT-23"
               }
             ]
           }
@@ -123,7 +123,7 @@
     "meta": {
       "inputPhoneNumber": "8106068222",
       "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "4679d914-e46c-4baa-a4a6-b7725d22cb25",
+      "referenceId": "5c7cac3d-c6ae-4e10-b959-f7db7cc104a2",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]

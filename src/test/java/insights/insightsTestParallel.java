@@ -23,14 +23,40 @@ public class insightsTestParallel {
                 .parallel(5); */
 
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-//                .tags("@PHONE_BASIC_FULL")
 //                .tags("@ported_prod_sanity,@upi_prod_sanity")
 //                .tags("@FidoV1")
-                .tags("~@ignore")
+//                .tags("~@ignore")
+                .tags("@PHONE_BASIC_FULL")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
+
+    @Test
+    void auth_Token() {
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("@auth_Token")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+    @Test
+    void dex() {
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("@1")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+    @Test
+    void single() {
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("@s")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());

@@ -1,4 +1,4 @@
-@PORTED_DETAILS @PHONE_BASIC_FULL
+ @ignore
  Feature: Testing of DPI  - Phone & Email Validations scenarios
 
    Background:

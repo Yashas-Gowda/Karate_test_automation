@@ -80,6 +80,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     # Bug https://monnai.atlassian.net/browse/MB-3786,MB-3805
       | EMPLOYMENT_ADVANCED_is_null_when_no_record_found_in_dp | 200        |
 
+    # After dicusion with Roopa, not validating the values of data point inside the "employeePfMatches" as it is highly dynamic
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario  <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
@@ -87,6 +88,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.employment.advanced.pfFilingDetails.employerPfFilingDetails = "#ignore"
     When method POST
     Then status <statusCode>
    # cloud watch traces -start
@@ -104,7 +106,14 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.advanced.summary contains only payload.response.data.employment.advanced.summary
     Then match $.data.employment.advanced.employmentHistory contains only deep payload.response.data.employment.advanced.employmentHistory
-    Then match $.data.employment.advanced.pfFilingDetails contains only deep payload.response.data.employment.advanced.pfFilingDetails
+
+    Then match $.data.employment.advanced.pfFilingDetails == payload.response.data.employment.advanced.pfFilingDetails
+
+    * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "currency": "INR"}
+    * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "totalAmount":'#? _ >=1'}
+    * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "employeeCount":'#? _ >=1'}
+    * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "wageMonth":"#regex[A-Z]{3}-[0-9]{2}"}
+
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
 
@@ -121,7 +130,9 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_4                                     | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_4                                    | 200        |
         # Bug https://monnai.atlassian.net/browse/MB-4198
-      | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_5_dateOfExit_reasonOfExit_null_hidden | 200        |
+      | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_5 | 200        |
+
+
 # bug https://monnai.atlassian.net/browse/MB-4209 - "reasonOfExit"  mapping issue
 #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_RETIREMENT | 200        | --> 8144651776
 #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_SUPERNNUATION | 200        | --> 9585306554

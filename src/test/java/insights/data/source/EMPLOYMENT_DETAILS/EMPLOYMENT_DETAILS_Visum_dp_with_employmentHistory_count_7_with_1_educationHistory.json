@@ -30,9 +30,9 @@
               "location": "Mumbai, Maharashtra, India",
               "employerName": "STRABAG",
               "linkedinUrl": "https://linkedin.com/in/suraj-chepurwar-a54593136",
-              "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1712793600&v=beta&t=pI3U8ymetfb0Y8a76NXzLN7Op_M62qwH8vIToeNi4ic",
+              "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1714608000&v=beta&t=qpbRSPGmEforau5bq7CVsL-RmrUv6FTjlNcIl3Cd3xI",
               "employmentHistoryCount": 7,
-              "educationHistoryCount": 0
+              "educationHistoryCount": 1
             },
             "employmentHistory": [
               {
@@ -41,7 +41,7 @@
                 "employerLocation": "Mumbai, Maharashtra, India · On-site",
                 "dateOfJoining": "2022-09-01",
                 "dateOfExit": null,
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1715212800&v=beta&t=uobMvtTBt0VwHPIEI93hdGgUZipH26xiPPFPjD1vuK8",
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1717027200&v=beta&t=i8Hf8ACT4bJsaWOVfUgBD0eb1pn4Dr3hcvQSf3OiRew",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/16035/"
               },
               {
@@ -59,7 +59,7 @@
                 "employerLocation": "Ahmedabad, Gujarat, India",
                 "dateOfJoining": "2018-08-01",
                 "dateOfExit": "2018-12-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1715212800&v=beta&t=t-Oo18GXCAu3Jsz08h9jHkG9FnhHpclDQ7qrioIKFAk",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1717027200&v=beta&t=3Qj98Nav9Mvv6YRMRo9ZCssiFJGkfMj4XGK9jgVtzW8",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/2277430/"
               },
               {
@@ -86,7 +86,7 @@
                 "employerLocation": "Maharashtra, India",
                 "dateOfJoining": "2013-07-01",
                 "dateOfExit": "2015-11-15",
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1715212800&v=beta&t=gCFLxGkb4AaVZeSIv6zsg3p94fkkTfcKVqxYOtPiIJM",
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1717027200&v=beta&t=aynq680duIb4hz1_lTy6MR3_UFfFiiy7MSIolXOBcsc",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/2135375/"
               },
               {
@@ -95,11 +95,20 @@
                 "employerLocation": "Hyderabad, Telangana, India",
                 "dateOfJoining": "2011-08-01",
                 "dateOfExit": "2013-06-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1715212800&v=beta&t=85sLsxRusvkiyQFJS9X7gEGOgqVv-yqJkm7d_CDiSCQ",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1717027200&v=beta&t=OaTuqNB1NmkhLuTsheKFMtF043vF6bdDOK_i3MvjK7o",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/1853420/"
               }
             ],
-            "educationHistory": [],
+            "educationHistory": [
+              {
+                "fieldOfStudy": "Bachelor of Engineering - BE, Civil Engineering",
+                "degreeName": "Bachelor of Engineering - BE, Civil Engineering",
+                "schoolName": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur",
+                "schoolLocation": null,
+                "startYear": null,
+                "endYear": null
+              }
+            ],
             "recentActivity": null
           }
         }
@@ -113,12 +122,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "8ccb1281-95fb-4b03-b597-0235f0e32e67",
       "inputEmail": "cwarsuraj@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_DETAILS"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

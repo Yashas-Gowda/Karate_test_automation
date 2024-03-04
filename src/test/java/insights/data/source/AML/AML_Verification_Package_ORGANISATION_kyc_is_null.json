@@ -3,7 +3,7 @@
     "eventType": "ACCOUNT_CREATION",
     "entityType": "ORGANISATION",
     "userDetails": {
-      "fullGivenName": "RSS"
+      "fullGivenName": "ABCDEF123"
     },
     "recordLimit": 20,
     "matchThreshold": 80,
@@ -17,20 +17,26 @@
         "government": null,
         "consumer": null,
         "mobile": null,
-        "aml": null
+        "aml": {
+          "summary": {
+            "matchFound": false,
+            "noOfProfiles": 0,
+            "totalRecords": 0
+          },
+          "records": []
+        }
       },
       "kyb": null
     },
     "meta": {
-      "referenceId": "8f585bec-613b-46a9-b722-01160e107200",
+      "referenceId": "Dpi_feb_21_1",
       "requestedPackages": [
         "KYC_AML"
       ],
-      "inputFullGivenName": "RSS",
+      "inputFullGivenName": "ABCDEF123",
       "inputRecordLimit": "20",
       "inputMatchThreshold": "80"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
