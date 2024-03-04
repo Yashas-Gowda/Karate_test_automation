@@ -1,3 +1,4 @@
+@IP_BASIC
 Feature: Testing of DPI  - IP_BASIC feature scenarios
 
   Background:

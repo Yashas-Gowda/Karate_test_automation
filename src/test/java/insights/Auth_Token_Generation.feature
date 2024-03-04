@@ -1,3 +1,4 @@
+@auth_Token
 Feature: Generating auth token
 
   Background:
@@ -5,7 +6,7 @@ Feature: Generating auth token
     * path '/oauth2/token'
     * configure headers = { Content-Type: 'application/x-www-form-urlencoded' }
 
-    @auth_Token
+
   Scenario: generating auth token for env specific
     Given url authUrl
     * def authLoad = read("classpath:insights/data/authInfo/" + env+ "-auth.json");

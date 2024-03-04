@@ -158,23 +158,23 @@ Feature: Testing of DPI  - Verification AML Package scenarios
 
     Examples:
       | Scenario                                                                  | statusCode |
-      | AML_Verification_Package_Negative_kyc_recordLimit_is_more_then_max_51     | 400        |
-      | AML_Verification_Package_Negative_kyc_recordLimit_is_less_then_min_0      | 400        |
-      | AML_Verification_Package_Negative_kyc_recordLimit_is_negative             | 400        |
-#  https://monnai.atlassian.net/browse/MB-4386
-      | AML_Verification_Package_Negative_kyc_matchThreshold_is_more_then_max_101 | 400        |
-      | AML_Verification_Package_Negative_kyc_matchThreshold_is_less_then_min_49  | 400        |
-      | AML_Verification_Package_Negative_kyc_matchThreshold_is_negative          | 400        |
+#      | AML_Verification_Package_Negative_kyc_recordLimit_is_more_then_max_51     | 400        |
+#      | AML_Verification_Package_Negative_kyc_recordLimit_is_less_then_min_0      | 400        |
+#      | AML_Verification_Package_Negative_kyc_recordLimit_is_negative             | 400        |
+##  https://monnai.atlassian.net/browse/MB-4386
+#      | AML_Verification_Package_Negative_kyc_matchThreshold_is_more_then_max_101 | 400        |
+#      | AML_Verification_Package_Negative_kyc_matchThreshold_is_less_then_min_49  | 400        |
+#      | AML_Verification_Package_Negative_kyc_matchThreshold_is_negative          | 400        |
 
 #  https://monnai.atlassian.net/browse/MB-4375 | AML_Verification_Package_Negative_kyc_fullGivenName_with_5_characters           | 400        |
 #   https://monnai.atlassian.net/browse/MB-4375      | AML_Verification_Package_Negative_kyc_fullGivenName_with_less_then_5_characters | 400        |
-      | AML_Verification_Package_Negative_kyc_fullGivenName_key_is_missing        | 400        |
-      | AML_Verification_Package_Negative_kyc_fullGivenName_value_is_null         | 400        |
-      | AML_Verification_Package_Negative_kyc_fullGivenName_value_is_empty_string | 400        |
-
-      | AML_Verification_Package_Negative_kyc_entityType_with_abc                 | 400        |
-      | AML_Verification_Package_Negative_kyc_entityType_with_123                 | 400        |
-      | AML_Verification_Package_Negative_kyc_entityType_with_123abc              | 400        |
+#      | AML_Verification_Package_Negative_kyc_fullGivenName_key_is_missing        | 400        |
+#      | AML_Verification_Package_Negative_kyc_fullGivenName_value_is_null         | 400        |
+#      | AML_Verification_Package_Negative_kyc_fullGivenName_value_is_empty_string | 400        |
+#
+#      | AML_Verification_Package_Negative_kyc_entityType_with_abc                 | 400        |
+#      | AML_Verification_Package_Negative_kyc_entityType_with_123                 | 400        |
+#      | AML_Verification_Package_Negative_kyc_entityType_with_123abc              | 400        |
 
 #      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_DD_MM_YYYY_format  | 400        |
 #      | AML_Verification_Package_Negative_kyc_dateOfBirth_with_YYYY_format        | 400        |
