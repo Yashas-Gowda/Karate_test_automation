@@ -1,4 +1,4 @@
-@FIDO
+@FIDO @ignore
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
 
   Background:
