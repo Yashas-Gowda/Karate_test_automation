@@ -15,7 +15,6 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    Then status <statusCode>
      # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -29,6 +28,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then print payload.response
     Then match $.data.device contains payload.response.data.device
 
@@ -46,7 +46,6 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status 200
      # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -60,6 +59,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status 200
     Then match $.data.device contains payload.response.data.device
 
     Then print payload.response
