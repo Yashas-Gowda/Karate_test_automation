@@ -229,6 +229,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                   | statusCode |
 #      | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
@@ -266,6 +269,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario | statusCode |
       #data no| Email_Basic_custom_true | 200        |
@@ -296,7 +302,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     Then match $ contains payload.response
 #    And match $.errors[1].message == "Invalid email address"
 #    And match $.response.errors[1].message == "Invalid email address"
-
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                       | statusCode |
       | Email_Basic_Negitive_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
@@ -332,6 +340,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.errors[*].code contains any ["MISSING_EMAIL_ADDRESS"]
     And match $.errors[*].package contains any ["EMAIL_BASIC"]
     Then match $ contains payload.response
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                | statusCode |
       | Email_Basic_Negitive_Emptyinput('')     | 400        |
