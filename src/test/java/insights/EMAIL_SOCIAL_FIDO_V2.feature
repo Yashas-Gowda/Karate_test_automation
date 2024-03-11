@@ -10,7 +10,6 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 # Monnai to datapartner mapping is not tested/validated while automating, after discussion roopa suggested to take sameena tested DPI test as source of truth
 
 # automation ticket - https://monnai.atlassian.net/browse/MB-3908
-
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -59,6 +58,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario               | statusCode |
@@ -92,7 +92,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                   | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
@@ -128,7 +128,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                         | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true       | 200        |
@@ -166,7 +166,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                    | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true      | 200        |
@@ -240,7 +240,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                   | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true                           | 200        |
@@ -278,7 +278,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                | statusCode |
     # data not found     | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_without_other_skype_data_points | 200        |
@@ -319,7 +319,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true                 | 200        |
@@ -353,7 +353,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                | statusCode |
     # Data Not found     | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_true                 | 200        |
@@ -387,7 +387,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_true                 | 200        |
@@ -421,7 +421,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_true                 | 200        |
@@ -458,7 +458,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                               | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_disneyplus_true       | 200        |
@@ -495,7 +495,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                  | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
@@ -527,7 +527,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                  | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_travel_booking_true_airbnb_null | 200        |
@@ -560,7 +560,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                   | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_financial_true  | 200        |
@@ -594,7 +594,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                        | statusCode |
       | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
@@ -629,7 +629,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                             | statusCode |
       | Email_Social_Negative_Emptyinput('') | 400        |
