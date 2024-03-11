@@ -6,20 +6,20 @@
     ],
     "email": "tejashreekarmokar2812@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 8,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 2,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 0,
-            "registeredEntertainmentProfiles": 0,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 1,
             "ageOnSocial": null,
@@ -39,7 +39,8 @@
               "google": {
                 "registered": true,
                 "name": "Tejashree Karmokar",
-                "photo": null
+                "photo": null,
+                "gender": "F"
               },
               "yahoo": {
                 "registered": true
@@ -72,6 +73,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -116,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -165,7 +169,7 @@
                 "registered": null
               },
               "linkedin": {
-                "registered": false,
+                "registered": null,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -194,7 +198,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "lastfm": {
                 "registered": null
@@ -220,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -253,15 +257,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
+      "referenceId": "4d3e2ddf-a182-4b47-a1b2-1bd9a652b186",
       "inputEmail": "tejashreekarmokar2812@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

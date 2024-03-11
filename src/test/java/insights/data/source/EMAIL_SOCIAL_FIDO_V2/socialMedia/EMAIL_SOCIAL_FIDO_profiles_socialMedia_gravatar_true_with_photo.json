@@ -1,10 +1,11 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email": "mdhussain1999@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ],
-    "email": "sammy.khnm@gmail.com"
+    ]
   },
   "response": {
     "data": {
@@ -13,23 +14,23 @@
         "social": {
           "summary": {
             "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 5,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 0,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 1,
+            "registeredTravelProfiles": 0,
+            "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": null
@@ -38,12 +39,11 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5b4cd189/8b4d/4174/8d37/75e5f3a460c1/429aaebb-4d32-43c5-af20-9a45bda3cc00.jpg",
-                "gender": "M"
+                "name": "Hussain Hp",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/213c1711/d42e/41ec/a793/2f9e7ded96a5/e23c1bc1-a2e7-470e-8680-fbb2cd4f2de1.jpg"
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -54,7 +54,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -80,13 +80,13 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
@@ -120,11 +120,12 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": false,
+                "registered": true,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
-                "username": null
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/75bf8995/5584/4817/a1d2/3ced66f8575f/44ade521-c9b4-48cb-b64a-9d44931a6dbd.jpg"
               },
               "foursquare": {
                 "registered": null,
@@ -138,10 +139,10 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
-                "name": "sameena yasmeen",
+                "name": null,
                 "id": null,
                 "handle": null,
                 "bio": null,
@@ -163,7 +164,7 @@
                 "registered": null
               },
               "wordpress": {
-                "registered": false
+                "registered": null
               },
               "atlassian": {
                 "registered": null
@@ -184,7 +185,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": true
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -224,7 +225,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -241,7 +242,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
               }
             }
           }
@@ -264,8 +265,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "c9954407-1392-4b4b-ae82-2733b30d2a4f",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "referenceId": "e740bc1f-aca5-479c-be55-987a2b02c66f",
+      "inputEmail": "mdhussain1999@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

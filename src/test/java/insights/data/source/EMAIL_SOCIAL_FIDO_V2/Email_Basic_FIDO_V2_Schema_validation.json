@@ -1,35 +1,35 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "Tmvt.yenanh@gmail.com"
-  } ,
-  "response":{
+    "email": "yashasgowda2510@gmail.com"
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 2,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 1,
+            "registeredProfiles": 9,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 0,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": null
+                "registered": true
               },
               "samsung": {
                 "registered": null
@@ -37,11 +37,13 @@
             },
             "emailProvider": {
               "google": {
-                "registered": null,
-                "photo": null
+                "registered": true,
+                "name": "YASHAS MODEGOWDRU",
+                "photo": null,
+                "gender": "M"
               },
               "yahoo": {
-                "registered": null
+                "registered": false
               },
               "mailru": {
                 "registered": null
@@ -52,7 +54,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -71,6 +73,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -81,17 +86,17 @@
                 "url": null
               },
               "instagram": {
-                "registered": null
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": null
+                "registered": true
               },
               "twitter": {
-                "registered": null
+                "registered": true
               },
               "tumblr": {
                 "registered": null
@@ -101,7 +106,7 @@
               },
               "ok": {
                 "registered": null,
-                "age": 0,
+                "age": null,
                 "city": null,
                 "dateJoined": null
               },
@@ -115,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -133,14 +138,14 @@
             },
             "messaging": {
               "skype": {
-                "registered": null,
+                "registered": false,
                 "language": null,
                 "gender": null,
                 "name": null,
                 "id": null,
                 "handle": null,
                 "bio": null,
-                "age": 0,
+                "age": null,
                 "city": null,
                 "state": null,
                 "country": null,
@@ -158,13 +163,13 @@
                 "registered": null
               },
               "wordpress": {
-                "registered": null
+                "registered": false
               },
               "atlassian": {
                 "registered": null
               },
               "linkedin": {
-                "registered": false,
+                "registered": null,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -173,7 +178,7 @@
                 "website": null,
                 "twitter": null,
                 "photo": null,
-                "connectionCount": 0
+                "connectionCount": null
               },
               "evernote": {
                 "registered": null
@@ -219,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -230,7 +235,7 @@
                 "location": null,
                 "photo": null,
                 "revieweeCount": null,
-                "trips": 0,
+                "trips": null,
                 "work": null
               }
             },
@@ -252,15 +257,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
-      "inputEmail": "Tmvt.yenanh@gmail.com",
+      "referenceId": "f90cdd55-d330-4ef5-9911-364539002cdb",
+      "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

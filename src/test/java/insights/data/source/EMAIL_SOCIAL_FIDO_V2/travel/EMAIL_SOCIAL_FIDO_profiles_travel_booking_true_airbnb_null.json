@@ -21,11 +21,11 @@
             "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 2,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
             "ageOnSocial": null,
             "numberOfNamesReturned": 2,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
@@ -40,8 +40,7 @@
               "google": {
                 "registered": true,
                 "name": "Maykol Baron",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/62457bf2/d147/4ff6/b057/0afb58b677e0/65a74f2c-cd04-47f4-a940-50bf0bb54eb6.jpg",
-                "gender": "M"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/62457bf2/d147/4ff6/b057/0afb58b677e0/65a74f2c-cd04-47f4-a940-50bf0bb54eb6.jpg"
               },
               "yahoo": {
                 "registered": true
@@ -125,7 +124,8 @@
                 "location": null,
                 "name": null,
                 "profileUrl": null,
-                "username": null
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/4678ad35/4773/42bb/bc94/752d45c31599/b2235ef9-b109-4b48-9df5-a383a557b9d8.jpg"
               },
               "foursquare": {
                 "registered": null,
@@ -265,12 +265,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UQc3ygOkyQ0EPtw=",
+      "referenceId": "176b0b76-ab05-499b-a869-dde0dcdc3fb2",
       "inputEmail": "MAYKOLJAJA@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

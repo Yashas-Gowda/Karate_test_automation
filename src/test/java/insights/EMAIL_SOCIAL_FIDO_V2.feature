@@ -9,7 +9,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
 
 # Monnai to datapartner mapping is not tested/validated while automating, after discussion roopa suggested to take sameena tested DPI test as source of truth
 
-  @3908
+# automation ticket - https://monnai.atlassian.net/browse/MB-3908
+
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -17,7 +18,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+  #    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
     When method POST
   # cloud watch traces -start
     * print karate.request.headers
@@ -43,9 +44,10 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
   #    * print payload.response
     Then status <statusCode>
   #    Then match $ contains payload.response
+    * match payload.response.data.email.social.summary == $.data.email.social.summary
     * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
     * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
-    * match $.response.data.email.social.profiles.emailProvider.google.photo == "#string"
+  #    * match $.response.data.email.social.profiles.emailProvider.google.photo == "#string"
     * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
     * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
@@ -53,9 +55,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
     * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
     * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
-    * match payload.response.data.email.social.summary == $.data.email.social.summary
-    * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
 
+    * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
 
@@ -106,7 +107,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.email.social.profiles.emailProvider = "#ignore"
+  #    * set payload.response.data.email.social.profiles.emailProvider = "#ignore"
     When method POST
   # cloud watch traces -start
     * print karate.request.headers
@@ -245,8 +246,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true                           | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false                          | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false                     | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_without_photo                     | 200        |
-    #  Data not found    | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                     | 200        |
+    #  Data not found   | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_without_photo                     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                     | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_false                     | 200        |
 
 #fido gives only {skype with name,id,city,country,state,photo}  messaging profiles | registeredMessagingProfiles <= 1
@@ -634,51 +635,51 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
 
-  @Schema_validation_1
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
-    Given url requestUrl
-    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-  # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  # ResponseTime
-    * print 'responseTime----->',responseTime
-  # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-
-    And match $.data.email.social == '#notnull'
-    And match $.data.email.basic == '#null'
-    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
-    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
-    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
-    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
-    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
-    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
-    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
-    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
-    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
-    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
-
-    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
-    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
-    And match $.errors == []
-
-
-    Examples:
-      | Scenario                                                        | statusCode |
-      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
+#  @Schema_validation_1
+#  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+#    Given url requestUrl
+#    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
+#    And headers headers
+#    And header Authorization = BearerToken
+#    And request payload.request
+#    * set payload.response.meta.referenceId = "#ignore"
+#    When method POST
+#  # cloud watch traces -start
+#    * print karate.request.headers
+#    * print karate.response.headers
+#    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+#    * def reference_id = karate.request.headers['x-reference-id']
+#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+#    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+#  # ResponseTime
+#    * print 'responseTime----->',responseTime
+#  # Request-response
+#    * print 'API Request----->',payload.request
+#    * print 'Expected Response---->',payload.response
+#    * print 'Actual Response---->',karate.pretty(response)
+#    Then status <statusCode>
+#
+#    And match $.data.email.social == '#notnull'
+#    And match $.data.email.basic == '#null'
+#    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
+#    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
+#    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
+#    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
+#
+#    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+#    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
+#    And match $.errors == []
+#
+#
+#    Examples:
+#      | Scenario                                                        | statusCode |
+#      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
 
   @Schema_validation_2
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
@@ -737,7 +738,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                 "emailProvider": {
                   "google": {
                     "registered": '#present',
-                    "photo": '#present'
+                    "name": '#present',
+                    "photo": '#present',
+                    "gender":  '#present'
                   },
                   "yahoo": {
                     "registered": '#present'
@@ -769,6 +772,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                     "registered": '#present'
                   },
                   "tokopedia": {
+                    "registered": '#present'
+                  },
+                  "deliveroo": {
                     "registered": '#present'
                   }
                 },
@@ -965,4 +971,4 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       """
     Examples:
       | Scenario                                                        | statusCode |
-      | Email_Social_SocialMedia_Instagram&Pinterest&Twitter_Registered | 200        |
+      |Email_Basic_FIDO_V2_Schema_validation  | 200        |

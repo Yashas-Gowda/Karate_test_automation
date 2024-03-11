@@ -16,6 +16,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class insightsTestParallel {
 
+    public static void generateReport(String karateOutputPath) {
+        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
+        List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+        Configuration config = new Configuration(new File("target"), "demo");
+        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
+        reportBuilder.generateReports();
+    }
+
     @Test
     void testParallel() {
         /*Results results = Runner.path("classpath:insights").outputCucumberJson(true)
@@ -26,7 +35,7 @@ public class insightsTestParallel {
 //                .tags("@ported_prod_sanity,@upi_prod_sanity")
 //                .tags("@FidoV1")
 //                .tags("~@ignore")
-                .tags("@PHONE_BASIC_FULL")
+                .tags("@EMAIL_SOCIAL_FIDOV2")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -40,6 +49,7 @@ public class insightsTestParallel {
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
+
     @Test
     void dex() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
@@ -48,21 +58,13 @@ public class insightsTestParallel {
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
+
     @Test
     void single() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("@s")
+                .tags("@3908")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
-    }
-
-    public static void generateReport(String karateOutputPath) {
-        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
-        List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
-        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"), "demo");
-        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
-        reportBuilder.generateReports();
     }
 }

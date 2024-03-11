@@ -20,7 +20,7 @@
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
@@ -39,7 +39,8 @@
               "google": {
                 "registered": true,
                 "name": "YASHAS MODEGOWDRU",
-                "photo": null
+                "photo": null,
+                "gender": "M"
               },
               "yahoo": {
                 "registered": false
@@ -263,7 +264,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "2fbe32ff-4562-44f4-9b09-f729b56b674e",
+      "referenceId": "9e079831-0ba7-4309-bddf-e0d84de404f0",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
