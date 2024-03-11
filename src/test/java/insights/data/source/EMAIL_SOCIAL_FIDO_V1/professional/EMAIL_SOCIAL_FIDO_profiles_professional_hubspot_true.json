@@ -1,0 +1,186 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "MAYKOLJAJA@GMAIL.COM"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 16,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 5,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 2,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 2
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": null
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": "Maykol Baron",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/62457bf2/d147/4ff6/b057/0afb58b677e0/65a74f2c-cd04-47f4-a940-50bf0bb54eb6.jpg",
+                "gender": "M"
+              },
+              "yahoo": {
+                "registered": true
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "gravatar": {
+                "registered": true,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/4678ad35/4773/42bb/bc94/752d45c31599/b2235ef9-b109-4b48-9df5-a383a557b9d8.jpg"
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "Maykol Baron",
+                "id": "maykolbaron",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "Bogota",
+                "state": null,
+                "country": "Colombia",
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "hubspot": {
+                "registered": true
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "disneyplus": {
+                "registered": true
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": true
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "2f324ca3-2754-4dfd-a85b-f1e1f041d6e0",
+      "inputEmail": "MAYKOLJAJA@GMAIL.COM",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}
