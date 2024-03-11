@@ -7,7 +7,7 @@
     ],
     "email": "azlin@moa.gov.in"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -23,7 +23,7 @@
             "registered": false,
             "companyName": null,
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -51,10 +51,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "befedb0e-baf2-406c-9eb3-3975464194a3",
       "inputEmail": "azlin@moa.gov.in",
       "requestedPackages": [
         "EMAIL_BASIC"

@@ -17,11 +17,11 @@
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-05-22 09:27:25",
+            "creationTime": "1997-07-17 05:18:19",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "",
+            "companyName": "HDFC Bank Limited",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -51,10 +51,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "11abf496-27c8-4f73-bcef-b5dcbb1c915d",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

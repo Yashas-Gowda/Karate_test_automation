@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "ssam09999329420dsdssdds@xyz.com"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,13 +17,13 @@
           "domainDetails": {
             "domainName": "xyz.com",
             "tld": ".com",
-            "creationTime": "1994-04-15 19:09:14",
+            "creationTime": "1994-06-13 05:18:18",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "",
+            "companyName": "XYZ.com LLC",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -51,10 +51,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "ae2c3247-9d21-4d31-8801-659a3664e1ec",
       "inputEmail": "ssam09999329420dsdssdds@xyz.com",
       "requestedPackages": [
         "EMAIL_BASIC"

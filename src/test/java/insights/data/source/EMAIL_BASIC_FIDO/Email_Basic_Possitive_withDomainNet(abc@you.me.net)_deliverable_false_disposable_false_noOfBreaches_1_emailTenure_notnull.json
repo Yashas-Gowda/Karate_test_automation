@@ -23,7 +23,7 @@
             "registered": false,
             "companyName": null,
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -44,7 +44,7 @@
               }
             ]
           },
-          "emailTenure": 4.56
+          "emailTenure": 5.04
         }
       },
       "address": null,
@@ -56,10 +56,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "ccc4c1c5-30e6-4cfe-967f-283b30a9eabb",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"

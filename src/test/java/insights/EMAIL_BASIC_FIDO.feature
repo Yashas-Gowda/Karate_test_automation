@@ -85,10 +85,10 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
       | Scenario                                                                                                       | statusCode |
       | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
       | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                              | 200        |
-      | Email_Basic_registered_true_disposable_false_freeProvider_null_noOfBreaches_378_breached                       | 200        |
+      | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
       | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                              | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -121,7 +121,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
-      | Email_Basic_freeProvider_null                 | 200        |
+      | Email_Basic_freeProvider_false                 | 200        |
       | Email_Basic_deliverable_false                 | 200        |
      #data not found for | Email_Basic_disposable_true                   | 200        |
       #data not found for | Email_Basic_suspiciousTld_true                | 200        |
@@ -158,7 +158,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     Then match $.data.email.basic contains payload.response.data.email.basic
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
-      | Email_Basic_creationTime_updateTime_expiryTime_companyName_freeProvider_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_false_emailTenure_null | 200        |
+      | Email_Basic_creationTime_updateTime_expiryTime_companyName_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_freeProvider_false_emailTenure_null | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
     Given url requestUrl
@@ -232,11 +232,11 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     Examples:
       | Scenario                                                   | statusCode |
 #      | Email_Basic_EmailDeliverable_False_companyName_emptyString | 200        |
-      | Email_Basic_EmailTenureIs_NULL                             | 200        |
+      | Email_Basic_EmailTenure_Is_NULL                             | 200        |
       | Email_Basic_Positive_isBreached_false_noOfBreaches_0       | 200        |
       #no data | Email_Basic_Positive_CustomDomain_True | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
