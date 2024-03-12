@@ -1,0 +1,185 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "gpjismon@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 11,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 0,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": false
+              },
+              "samsung": null
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": "JISMON GEORGE",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/11a7c2ef/4d26/4124/8e06/8934966320c9/21de0891-fee5-4e41-92a2-13db0d1d6827.jpg",
+                "gender": "M"
+              },
+              "yahoo": {
+                "registered": true
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "Jizmon George :-)",
+                "id": "jismon.george2",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "trichur",
+                "state": "kerala",
+                "country": "India",
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": true
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "af46e926-ff45-44df-8dff-4641557c60e0",
+      "inputEmail": "gpjismon@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

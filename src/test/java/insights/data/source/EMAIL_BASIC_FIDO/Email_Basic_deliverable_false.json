@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "sdfdsfsd@HDFCBANK.COM"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,13 +17,13 @@
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-05-12 19:09:19",
+            "creationTime": "1997-07-10 05:18:18",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "",
+            "companyName": "HDFC Bank Limited",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -51,10 +51,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "f83ba603-6b7a-41c2-ab08-16f12babf9da",
       "inputEmail": "sdfdsfsd@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

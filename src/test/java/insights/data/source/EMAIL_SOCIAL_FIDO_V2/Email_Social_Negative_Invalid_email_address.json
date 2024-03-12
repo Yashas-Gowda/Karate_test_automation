@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "1234"
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "1234",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMAIL_SOCIAL",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

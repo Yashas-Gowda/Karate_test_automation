@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,7 +7,7 @@
     ],
     "email": "mysite@ourearth.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -21,9 +21,9 @@
             "updateTime": null,
             "expiryTime": null,
             "registered": null,
-            "companyName": "Domains By Proxy, LLC",
+            "companyName": "",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -44,7 +44,7 @@
               }
             ]
           },
-          "emailTenure": 4.56
+          "emailTenure": 5.04
         }
       },
       "address": null,
@@ -56,10 +56,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "8c85dd43-251b-4293-9b04-80b626d591b0",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"

@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "gopi_9621@yahoo.co.in"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,13 +17,13 @@
           "domainDetails": {
             "domainName": "yahoo.co.in",
             "tld": ".in",
-            "creationTime": "2003-08-10 19:08:53",
+            "creationTime": "2003-10-06 05:18:16",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Yahoo Assets LLC",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": true,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -74,7 +74,7 @@
               }
             ]
           },
-          "emailTenure": 10.88
+          "emailTenure": 11.36
         }
       },
       "address": null,
@@ -86,10 +86,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "0792f963-95ce-4dd3-b818-1a4b65aa9bea",
       "inputEmail": "gopi_9621@yahoo.co.in",
       "requestedPackages": [
         "EMAIL_BASIC"

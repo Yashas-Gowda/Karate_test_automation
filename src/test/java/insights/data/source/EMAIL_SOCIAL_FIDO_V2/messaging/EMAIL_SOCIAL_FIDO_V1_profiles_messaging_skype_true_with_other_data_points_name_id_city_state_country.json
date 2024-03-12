@@ -1,0 +1,275 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "gpjismon@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 11,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 0,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 0,
+            "registeredFinancialProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": false
+              },
+              "samsung": {
+                "registered": null
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": "JISMON GEORGE",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/11a7c2ef/4d26/4124/8e06/8934966320c9/21de0891-fee5-4e41-92a2-13db0d1d6827.jpg"
+              },
+              "yahoo": {
+                "registered": true
+              },
+              "mailru": {
+                "registered": null
+              },
+              "rambler": {
+                "registered": null
+              }
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": false
+              },
+              "flipkart": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "lazada": {
+                "registered": null
+              },
+              "tokopedia": {
+                "registered": null
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "flickr": {
+                "registered": null,
+                "username": null
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "tumblr": {
+                "registered": null
+              },
+              "weibo": {
+                "registered": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": null
+              },
+              "quora": {
+                "registered": null
+              },
+              "qzone": {
+                "registered": null
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              },
+              "foursquare": {
+                "registered": null,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "Jizmon George :-)",
+                "id": "jismon.george2",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "trichur",
+                "state": "kerala",
+                "country": "India",
+                "photo": null
+              },
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
+            },
+            "professional": {
+              "github": {
+                "registered": null
+              },
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "evernote": {
+                "registered": null
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "zoho": {
+                "registered": null
+              },
+              "adobe": {
+                "registered": null
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "lastfm": {
+                "registered": null
+              },
+              "vimeo": {
+                "registered": null
+              },
+              "envato": {
+                "registered": null
+              },
+              "patreon": {
+                "registered": null
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": null
+              },
+              "archiveorg": {
+                "registered": null
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": true
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UQT3HjZ5SQ0EP3w=",
+      "inputEmail": "gpjismon@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -42,6 +42,7 @@
             "networkName": null,
             "serviceProfileId": null
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": null
@@ -59,16 +60,21 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "60 323456789",
       "cleansedPhoneNumber": "+60323456789",
-      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "referenceId": "c0ce875a-c598-4d63-8fca-5e58f30800af",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

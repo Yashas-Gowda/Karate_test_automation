@@ -7,7 +7,7 @@
     ],
     "email": "ABC@gmail.COM"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,13 +17,13 @@
           "domainDetails": {
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-08-12 19:09:03",
+            "creationTime": "1995-10-11 05:18:18",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Google LLC",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": true,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -33,9 +33,9 @@
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 387,
+            "noOfBreaches": 406,
             "firstBreach": "2008-07-01",
-            "lastBreach": "2023-08-09",
+            "lastBreach": "2023-11-14",
             "breaches": [
               {
                 "platformName": "MySpace",
@@ -89,7 +89,7 @@
               }
             ]
           },
-          "emailTenure": 15.22
+          "emailTenure": 15.69
         }
       },
       "address": null,
@@ -101,10 +101,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "199ea5bd-5881-49df-b2c3-b21a3c30210f",
       "inputEmail": "ABC@gmail.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

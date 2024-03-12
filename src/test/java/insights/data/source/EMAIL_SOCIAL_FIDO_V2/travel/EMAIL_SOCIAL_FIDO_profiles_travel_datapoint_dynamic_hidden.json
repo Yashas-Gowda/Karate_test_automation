@@ -1,0 +1,165 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "manish1580singh@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 3,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 0,
+            "registeredEntertainmentProfiles": 0,
+            "registeredFinancialProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 0
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": false
+              },
+              "samsung": null
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": "Manish Singh",
+                "photo": null,
+                "gender": "M"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "pinterest": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": false,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UQhepgwWyQ0EJgQ=",
+      "inputEmail": "manish1580singh@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

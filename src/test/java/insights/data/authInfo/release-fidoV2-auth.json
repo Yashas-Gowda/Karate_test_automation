@@ -8,6 +8,26 @@
   "tenant_config": {
     "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
     "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
       "EMAIL_SOCIAL": {
         "01H6S1E1Y35A6R65086W7T5Z97": {
           "name": "FIDO email_social"
@@ -26,6 +46,12 @@
       }
     },
     "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
       "EMAIL_SOCIAL": {
         "01H72X88KKK3R5013F54H5P09T": {
           "name": "FIDO email_social_v2",

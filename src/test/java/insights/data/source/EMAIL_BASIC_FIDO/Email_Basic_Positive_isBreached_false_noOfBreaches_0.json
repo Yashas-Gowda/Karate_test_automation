@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,7 +7,7 @@
     ],
     "email": "PARAS.SHARMA2@HDFCBANK.COM"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,11 +17,11 @@
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-05-22 09:27:27",
+            "creationTime": "1997-07-17 05:18:19",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "",
+            "companyName": "HDFC Bank Limited",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -51,10 +51,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "3412ab55-ceb1-4d31-b792-531ffb728969",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

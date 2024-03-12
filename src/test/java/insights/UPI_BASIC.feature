@@ -16,7 +16,6 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -30,6 +29,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.basic contains payload.response.data.upi.basic
     Then match $.meta contains payload.response.meta
 
@@ -53,7 +53,6 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -67,6 +66,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
 #  https://monnai.atlassian.net/browse/MB-3265 - resolved
     Then match $.data.upi.basic contains payload.response.data.upi.basic
     Then match $.meta contains payload.response.meta
@@ -85,7 +85,6 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -99,6 +98,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
 #  https://monnai.atlassian.net/browse/MB-2788 - resolved
     * match $.errors[*].message contains any "Missing UPI address"
     * match $.errors[*].code contains any "MISSING_UPI"
