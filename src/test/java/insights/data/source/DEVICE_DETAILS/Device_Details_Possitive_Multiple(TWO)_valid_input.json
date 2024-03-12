@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -22,12 +22,12 @@
           {
             "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
             "country": "IN",
-            "lastModified": "2024-02-02",
+            "lastModified": "2024-02-26",
             "deviceDetails": {
               "platform": "ANDROID",
-              "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "M2101K7AI"
+              "type": null,
+              "manufacturer": null,
+              "model": null
             },
             "location": {
               "dayLocation": {
@@ -56,7 +56,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2024-02-02",
+            "lastModified": "2024-02-26",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -65,11 +65,11 @@
             },
             "location": {
               "dayLocation": {
-                "latitude": 19.169340133666992,
-                "longitude": 72.9741096496582,
-                "city": "Mumbai",
-                "state": "MH",
-                "zipCode": "400081"
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
               },
               "nightLocation": {
                 "latitude": 19.27199363708496,
@@ -99,7 +99,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e97e1525-9bb9-4ed1-b0e5-f0f57e69e700",
+      "referenceId": "4c924c24-e30a-4fe9-9b40-85420db8c348",
       "inputDeviceIds": [
         "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
         "1db61125-297f-4544-abad-eae8a56ecd90"

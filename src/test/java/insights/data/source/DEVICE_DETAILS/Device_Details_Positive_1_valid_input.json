@@ -24,7 +24,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2024-02-02",
+            "lastModified": "2024-02-26",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -33,11 +33,11 @@
             },
             "location": {
               "dayLocation": {
-                "latitude": 19.169340133666992,
-                "longitude": 72.9741096496582,
-                "city": "Mumbai",
-                "state": "MH",
-                "zipCode": "400081"
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
               },
               "nightLocation": {
                 "latitude": 19.27199363708496,
@@ -67,7 +67,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "252f58a2-2b99-4f10-ac72-312093b496a2",
+      "referenceId": "8c01cde9-e65a-4b86-8f9c-4fd710945565",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],

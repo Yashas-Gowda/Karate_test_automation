@@ -1,5 +1,5 @@
 @FIDO_EMAIL_BASIC
-Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
+Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
  # scenarios names are not updated, which will be picked in the next sprint
   Background:
@@ -43,6 +43,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * match header Content-Type == "application/json"
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                        | statusCode |
       | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)_disposable_false_emailTenure_notnull                          | 200        |
@@ -81,6 +84,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                       | statusCode |
       | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
@@ -118,6 +124,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                      | statusCode |
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
@@ -156,6 +165,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_creationTime_updateTime_expiryTime_companyName_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_freeProvider_false_emailTenure_null | 200        |
@@ -192,6 +204,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_false_disposable_false_noOfBreaches_1_emailTenure_notnull                                                                                               | 200        |
@@ -302,9 +317,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     Then match $ contains payload.response
 #    And match $.errors[1].message == "Invalid email address"
 #    And match $.response.errors[1].message == "Invalid email address"
-    * match  $.meta contains  payload.response.meta
-    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-    * match  $.errors contains only deep  payload.response.errors
+
     Examples:
       | Scenario                                                       | statusCode |
       | Email_Basic_Negitive_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
@@ -340,9 +353,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
     And match $.errors[*].code contains any ["MISSING_EMAIL_ADDRESS"]
     And match $.errors[*].package contains any ["EMAIL_BASIC"]
     Then match $ contains payload.response
-    * match  $.meta contains  payload.response.meta
-    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-    * match  $.errors contains only deep  payload.response.errors
+
     Examples:
       | Scenario                                | statusCode |
       | Email_Basic_Negitive_Emptyinput('')     | 400        |
