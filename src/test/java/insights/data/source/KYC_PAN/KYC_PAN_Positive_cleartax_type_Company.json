@@ -1,0 +1,47 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "AAPCM2882E",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": {
+          "pan": "AAPCM2882E",
+          "type": "Company",
+          "valid": true,
+          "status": "VALID",
+          "panCardName": "MONNAI TECHNOLOGY INDIA PRIVATE LIMITED"
+        },
+        "gstin": null
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Uj5pLh28yQ0EMdw=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "AAPCM2882E"
+    },
+    "errors": []
+  }
+}

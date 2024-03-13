@@ -1,0 +1,50 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "HYEPM3845Q",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": {
+          "pan": "HYEPM3845Q",
+          "type": "Individual",
+          "valid": true,
+          "status": "VALID",
+          "panCardName": "SUDHA RANI CHAMARAHALLI MARKONDAPPA",
+          "lastUpdated": "2022-12-21",
+          "aadhaarLinkStatus": "Y",
+          "aadhaarLinkStatusDesc": "Aadhaar is linked to PAN"
+        },
+        "gstin": null
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Uj5O8jokSQ0EMCw=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "HYEPM3845Q"
+    },
+    "errors": []
+  }
+}
