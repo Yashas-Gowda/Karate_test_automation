@@ -1,0 +1,49 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "RWJPS8170M",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": {
+          "pan": "RWJPS8170M",
+          "type": "Individual",
+          "valid": true,
+          "status": "VALID",
+          "panCardName": "GOLKONDA  SWAMY",
+          "aadhaarLinkStatus": "Y",
+          "aadhaarLinkStatusDesc": "Aadhaar is linked to PAN"
+        },
+        "gstin": null
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UkCJRhEVyQ0EJRw=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "RWJPS8170M"
+    },
+    "errors": []
+  }
+}

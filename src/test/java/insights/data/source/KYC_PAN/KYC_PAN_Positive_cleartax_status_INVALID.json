@@ -1,0 +1,45 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "ABCDC1234C",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": {
+          "pan": "ABCDC1234C",
+          "valid": false,
+          "status": "INVALID"
+        },
+        "gstin": null
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Uj20EgitSQ0EJPQ=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "ABCDC1234C"
+    },
+    "errors": []
+  }
+}

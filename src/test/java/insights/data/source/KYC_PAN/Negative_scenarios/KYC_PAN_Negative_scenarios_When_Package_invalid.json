@@ -1,0 +1,13 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "ATWPY7073N",
+    "packages": [
+      "abc"
+    ]
+  },
+  "response": {
+    "error": "Package not subscribed"
+  }
+}
