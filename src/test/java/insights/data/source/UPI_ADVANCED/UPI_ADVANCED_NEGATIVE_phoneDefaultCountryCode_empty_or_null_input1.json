@@ -11,7 +11,8 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "AMS-test-1",
+      "inputPhoneNumber": "9108510043",
+      "referenceId": "bfde01d7-b8a1-444b-a8e3-b18be62f0459",
       "requestedPackages": [
         "UPI_ADVANCED"
       ]
