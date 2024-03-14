@@ -1,4 +1,4 @@
-@upi
+@UPI_BASIC
 Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
   Background:
@@ -8,7 +8,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * def BearerToken = authFeature.authToken
 
   @smokeTest
-  Scenario Outline:  UPI BASIC POSITIVE SC's Insights <Scenario>
+  Scenario Outline:  UPI BASIC POSITIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -45,7 +45,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | UPI_BASIC_sc_@okicici    | 200        |
       | UPI_BASIC_sc_@okhdfcbank | 200        |
 
-  Scenario Outline:  UPI BASIC when "isUpiValid": false then NEGATIVE SC's Insights <Scenario>
+  Scenario Outline:  UPI BASIC when "isUpiValid": false then NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -67,7 +67,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#  https://monnai.atlassian.net/browse/MB-3265 - resolved
+    #  https://monnai.atlassian.net/browse/MB-3265 - resolved
     Then match $.data.upi.basic contains payload.response.data.upi.basic
     Then match $.meta contains payload.response.meta
 
@@ -77,7 +77,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | UPI_BASIC_sc_Ne_isUpiValid_false | 200        |
 
 
-  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
+  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights - validation of upiId:- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -99,20 +99,22 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#  https://monnai.atlassian.net/browse/MB-2788 - resolved
-    * match $.errors[*].message contains any "Missing UPI address"
-    * match $.errors[*].code contains any "MISSING_UPI"
-
-
-    Then match $ contains any payload.response
-
+    #  https://monnai.atlassian.net/browse/MB-2788 - resolved
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
     Examples:
       | Scenario              | statusCode |
-      | UPI_BASIC_sc_Ne_noUpi | 400        |
+      | UPI_BASIC_sc_Ne_upiId_value_noUpi | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_nohandle | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_randam_value| 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_123| 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_true| 400        |
 
   @smokeTest
-  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
+  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -134,12 +136,25 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.errors[0].message contains any "Invalid UPI address"
-    * match $.errors[0].code contains any "INVALID_UPI"
-    Then match $ contains  payload.response
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
 
     Examples:
       | Scenario                 | statusCode |
-      | UPI_BASIC_sc_Ne_nohandle | 400        |
+      | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_other_then_IN | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_null | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_emptyString | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_space | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_upi_with_no_handle | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_no_upi | 400        |
+
+  # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_number  | 400        |
+  # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_bollean |  400        |
+
+
 

@@ -8,7 +8,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * def BearerToken = authFeature.authToken
 
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - sanity
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - sanity :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -45,7 +45,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | KYC_PAN_Positive_cleartax_sanity                         | 200        |
 
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -82,7 +82,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | KYC_PAN_Positive_cleartax_valid_false                    | 200        |
       | KYC_PAN_Positive_cleartax_valid_true                  | 200        |
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -127,7 +127,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #      | KYC_PAN_Positive_cleartax_type_Trust            | 200        |
 
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -167,7 +167,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #      | KYC_PAN_Positive_cleartax_status_DEACTIVATED               | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DELETED               | 200        |
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "aadhaar_seeding_status" data point
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "aadhaar_seeding_status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -206,7 +206,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #      | KYC_PAN_Positive_cleartax_aadhaar_seeding_status_T                    | 200        |
   #      | KYC_PAN_Positive_cleartax_aadhaar_seeding_status_NA               | 200        |
 
-  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "last_updated_at" data point
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "last_updated_at" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
     And headers headers
@@ -244,7 +244,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | KYC_PAN_Positive_cleartax_last_updated_at_data_point_null_hidden               | 200        |
 
 
-  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "phoneDefaultCountryCode" data point
+  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "phoneDefaultCountryCode" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/Negative_scenarios/<Scenario>.json")
     And headers headers
@@ -289,7 +289,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #  https://monnai.atlassian.net/browse/MB-4539    | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_bollen             | 400        |
 
 
-  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "pan" data point
+  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "pan" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/Negative_scenarios/<Scenario>.json")
     And headers headers
@@ -333,7 +333,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       |  KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_boolean               | 400        |
 
 
-  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point
+  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/Negative_scenarios/<Scenario>.json")
     And headers headers
@@ -368,7 +368,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       |  KYC_PAN_Negative_scenarios_When_Package_Key_is_not_present               | 400        |
 
   @3191
-  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point
+  Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/Negative_scenarios/<Scenario>.json")
     And headers headers

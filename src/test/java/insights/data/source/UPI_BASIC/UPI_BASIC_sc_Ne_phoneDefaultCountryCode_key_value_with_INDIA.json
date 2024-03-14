@@ -5,14 +5,14 @@
     "packages": [
       "UPI_BASIC"
     ],
-    "upiId": "9108510043@",
-    "countryCode": "IN"
+    "upiId": "9108510043@ybl",
+    "phoneDefaultCountryCode": "INDIA"
   },
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
-      "inputUpiId": "9108510043@",
+      "referenceId": "Dpi_march_14_1",
+      "inputUpiId": "9108510043@ybl",
       "requestedPackages": [
         "UPI_BASIC"
       ]
@@ -20,8 +20,8 @@
     "errors": [
       {
         "package": "UPI_BASIC",
-        "message": "Invalid UPI address",
-        "code": "INVALID_UPI",
+        "message": "Service unavailable for country INDIA",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
         "type": "INVALID_INPUT"
       }
     ]

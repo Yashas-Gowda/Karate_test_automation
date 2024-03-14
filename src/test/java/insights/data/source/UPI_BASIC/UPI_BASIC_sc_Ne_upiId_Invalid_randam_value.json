@@ -1,0 +1,30 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "upiId": "@abc@d.com",
+    "countryCode": "IN"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_march_14_1",
+      "inputUpiId": "@abc@d.com",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_BASIC",
+        "message": "Invalid UPI address",
+        "code": "INVALID_UPI",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

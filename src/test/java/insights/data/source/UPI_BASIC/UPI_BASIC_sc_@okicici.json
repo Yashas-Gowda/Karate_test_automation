@@ -5,6 +5,7 @@
     "packages": [
       "UPI_BASIC"
     ],
+    "phoneDefaultCountryCode": "IN",
     "upiId": "yashasgowda2510@okicici",
     "countryCode": "IN"
   },

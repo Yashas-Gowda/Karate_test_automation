@@ -5,6 +5,7 @@
     "packages": [
       "UPI_BASIC"
     ],
+    "phoneDefaultCountryCode": "IN",
     "upiId": "9108510043@ybl",
     "countryCode": "IN"
   },
