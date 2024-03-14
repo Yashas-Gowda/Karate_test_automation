@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "6281574928730",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
@@ -7,8 +7,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -56,10 +56,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 5,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 13000
+              "topUpCount": 17,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 19000
             },
             {
               "topUpTenure": {
@@ -67,10 +67,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 20,
+              "topUpCount": 22,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 12000
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 18000
             },
             {
               "topUpTenure": {
@@ -78,10 +78,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 23,
+              "topUpCount": 37,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 12000
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 15000
             },
             {
               "topUpTenure": {
@@ -89,10 +89,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 67,
+              "topUpCount": 73,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 9000
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 11000
             },
             {
               "topUpTenure": {
@@ -100,15 +100,26 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 124,
+              "topUpCount": 133,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 11000
             },
             {
               "topUpTenure": {
                 "min": 30,
                 "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 5,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 13000
+            },
+            {
+              "topUpTenure": {
+                "min": 60,
+                "max": 90
               },
               "currency": "IDR",
               "topUpCount": 15,
@@ -118,25 +129,14 @@
             },
             {
               "topUpTenure": {
-                "min": 60,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 3,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 10000
-            },
-            {
-              "topUpTenure": {
                 "min": 90,
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 44,
+              "topUpCount": 36,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 8000
+              "averageTopUpAmount": 7000
             },
             {
               "topUpTenure": {
@@ -144,7 +144,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 57,
+              "topUpCount": 60,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 50000,
               "averageTopUpAmount": 11000
@@ -155,7 +155,7 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 297,
+              "topUpCount": 294,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 14000
@@ -184,7 +184,7 @@
     "meta": {
       "inputPhoneNumber": "6281574928730",
       "cleansedPhoneNumber": "+6281574928730",
-      "referenceId": "a56909ad-3722-4528-8636-c2af99c41d6d",
+      "referenceId": "3ca109e9-8419-4b0b-a6e6-dca0a96db8a6",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

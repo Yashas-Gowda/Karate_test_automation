@@ -16,7 +16,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -57,7 +57,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -74,7 +74,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#notnull'
     And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
-   And match $.data.phone.basic.topUpHistory[*].topUpCount contains any <topUpCount>
+    And match $.data.phone.basic.topUpHistory[*].topUpCount contains any <topUpCount>
 
 
     * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
@@ -90,9 +90,9 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     Examples:
       | Scenario                                                              | statusCode | topUpCount |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1       | 200        | 1          |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9   | 200        | 9          |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128 | 200        | 128        |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197 | 200        | 197        |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9   | 200        | 9          |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128 | 200        | 128        |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197 | 200        | 197        |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_more_then_max_290 | 200        | 297        |
 
   @PHONE_BASIC @topUpHistory @izidata
@@ -125,14 +125,14 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     * def Expected_topUpArray_count = <No_of_array_objects>
     # Expected_topUpArray_count is count of array objects expected
     * print Expected_topUpArray_count
-    * def Actual_topUpArray =  $.data.phone.basic.topUpHistory
+    * def Actual_topUpArray = $.data.phone.basic.topUpHistory
     * print Actual_topUpArray
-    * def Actual_topUpArray_count =  Actual_topUpArray.length
-     # Actual_topUpArray_count is count of array objects come up in actual response
+    * def Actual_topUpArray_count = Actual_topUpArray.length
+    # Actual_topUpArray_count is count of array objects come up in actual response
     * print Actual_topUpArray_count
     * match Expected_topUpArray_count  == Actual_topUpArray_count
 
-#    _$ --> The 'parent' of 'self' or 'current' item in the list, relevant when using match each
+    #    _$ --> The 'parent' of 'self' or 'current' item in the list, relevant when using match each
 
 
     * match each $.data.phone.basic.topUpHistory contains  { "currency": "IDR"}
@@ -148,13 +148,13 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     Examples:
       | Scenario                                                                 | statusCode | No_of_array_objects |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        | 10                  |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_7  | 200        | 7                   |
-     | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_4  | 200        | 4                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
-#      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_7  | 200        | 7                   |
+      #     | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_4  | 200        | 4                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_1  | 200        | 1                   |
 
   @PHONE_BASIC @topUpHistory @izidata @Negative
@@ -188,7 +188,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
       | Scenario                                                                         | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_with_null_response_from_data_partner | 200        |
 
-#PHONE_BASIC_Sub_topUpHistory_ID_region_Phonenumber_with_null_response_from_data_partner
+  #PHONE_BASIC_Sub_topUpHistory_ID_region_Phonenumber_with_null_response_from_data_partner
 
 
   @PHONE_BASIC @topUpHistory @izidata @Negative

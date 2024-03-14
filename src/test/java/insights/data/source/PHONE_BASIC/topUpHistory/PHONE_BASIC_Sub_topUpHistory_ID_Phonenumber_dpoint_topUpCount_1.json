@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "087809453668",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
@@ -7,8 +7,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -20,11 +20,11 @@
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
-          "phoneNumberAge": 1,
-          "phoneNumberAgeDescription": "Below 3 Months",
+          "phoneNumberAge": 2,
+          "phoneNumberAgeDescription": "3 to 6 Months",
           "phoneTenure": {
-            "min": 2,
-            "max": 3
+            "min": 5,
+            "max": 6
           },
           "country": "ID",
           "originalCarrier": "XL (PT XL Axiata Tbk)",
@@ -46,13 +46,14 @@
             "networkName": "XL (PT XL Axiata Tbk)",
             "serviceProfileId": "62502"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 180
+                "max": 30
               },
               "currency": "IDR",
               "topUpCount": 1,
@@ -63,10 +64,43 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 360
+                "max": 60
               },
               "currency": "IDR",
               "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 2,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 2,
               "minimumTopUpAmount": 25000,
               "maximumTopUpAmount": 25000,
               "averageTopUpAmount": 25000
@@ -111,12 +145,13 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "087809453668",
       "cleansedPhoneNumber": "+6287809453668",
-      "referenceId": "cae48d69-8424-4fdd-a407-cc81819cacff",
+      "referenceId": "5b92780f-0a71-4a5d-b932-4a5c6b3902f0",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
