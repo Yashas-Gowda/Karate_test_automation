@@ -17,11 +17,12 @@
           "domainDetails": {
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-10-11 05:18:18",
+            "creationTime": "1995-10-14 06:41:04",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Google LLC",
+            "registrarName": "MarkMonitor, Inc.",
             "disposable": false,
             "freeProvider": true,
             "dmarcCompliance": null,
@@ -89,7 +90,7 @@
               }
             ]
           },
-          "emailTenure": 15.69
+          "emailTenure": 15.7
         }
       },
       "address": null,
@@ -108,7 +109,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "199ea5bd-5881-49df-b2c3-b21a3c30210f",
+      "referenceId": "9f4c6b98-c147-4142-a3a5-2d96b210db8c",
       "inputEmail": "ABC@gmail.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "EMAIL_BASIC"
     ],
     "email": "yashasgowda2510@gmail.com"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,11 +17,12 @@
           "domainDetails": {
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-09-29 19:08:55",
+            "creationTime": "1995-11-29 06:40:59",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Google LLC",
+            "registrarName": "MarkMonitor, Inc.",
             "disposable": false,
             "freeProvider": true,
             "dmarcCompliance": null,
@@ -49,7 +50,7 @@
               }
             ]
           },
-          "emailTenure": 4.8
+          "emailTenure": 5.28
         }
       },
       "address": null,
@@ -61,10 +62,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "c52975cf-55a1-458c-9710-33251f6605e4",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"

@@ -17,11 +17,12 @@
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-07-17 05:18:19",
+            "creationTime": "1997-07-20 06:41:02",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "HDFC Bank Limited",
+            "registrarName": "PDR Ltd. d/b/a PublicDomainRegistry.com",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -58,7 +59,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "11abf496-27c8-4f73-bcef-b5dcbb1c915d",
+      "referenceId": "eae03b88-6b1d-4d0b-be7f-d92001380997",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

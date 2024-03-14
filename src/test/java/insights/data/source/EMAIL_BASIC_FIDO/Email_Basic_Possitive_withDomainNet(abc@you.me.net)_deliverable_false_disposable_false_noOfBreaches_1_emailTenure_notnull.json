@@ -22,6 +22,7 @@
             "expiryTime": null,
             "registered": false,
             "companyName": null,
+            "registrarName": null,
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -44,7 +45,7 @@
               }
             ]
           },
-          "emailTenure": 5.04
+          "emailTenure": 5.05
         }
       },
       "address": null,
@@ -63,7 +64,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ccc4c1c5-30e6-4cfe-967f-283b30a9eabb",
+      "referenceId": "ee813c16-886a-47ff-996e-88ff61cc242b",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"

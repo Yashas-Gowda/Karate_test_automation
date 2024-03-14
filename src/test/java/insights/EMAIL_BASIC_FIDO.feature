@@ -9,7 +9,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * def BearerToken = authFeature.authToken
 
   @second @smokeTest @smokeTest
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -54,7 +54,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_deliverable_true_registered_true_freeProvider_true_noOfBreaches_7_emailTenure_in_single_digit_value | 200        |
 
     #rerun if deliverable is null
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -94,7 +94,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
       | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                              | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -135,7 +135,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
      #data not found for | Email_Basic_disposable_true                   | 200        |
       #data not found for | Email_Basic_suspiciousTld_true                | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -172,7 +172,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_creationTime_updateTime_expiryTime_companyName_dmarcCompliance_spfStrict_suspiciousTld_custom_null_deliverable_registered_disposable_websiteExists_acceptAll_isBreached_freeProvider_false_emailTenure_null | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -214,7 +214,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
   ## Check this
   @smokeTest
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null - <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -254,7 +254,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_Positive_isBreached_false_noOfBreaches_0       | 200        |
       #no data | Email_Basic_Positive_CustomDomain_True | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -292,7 +292,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       #data no| Email_Basic_custom_true | 200        |
 
 
-  Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input - <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -326,7 +326,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_Negitive_with_2_different_multiple_email_input     | 400        |
       | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)     | 400        |
 
-  Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input - <Scenario>
+  Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -361,7 +361,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_Negitive_Nullinput(null)    | 400        |
       | Email_Basic_Negitive_No_input_Email_key | 400        |
 
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
@@ -399,7 +399,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
   @Schema_validation_2
-  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
     And headers headers
