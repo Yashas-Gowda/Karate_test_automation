@@ -1,3 +1,4 @@
+@gen_verification
 Feature: DEVICE_DETAILS MOBILE WALLA Data Partner automation via DPI DEX call
 
   Background:
@@ -9,27 +10,27 @@ Feature: DEVICE_DETAILS MOBILE WALLA Data Partner automation via DPI DEX call
   Scenario: Verification DPI general call
     Given url requestUrl
     And def requestPayload =
-    """
-    {
-	"eventType": "ACCOUNT_CREATION",
-	"entityType": "INDIVIDUAL",
-	"userDetails": {
-		"fullGivenName": "Vladimir Putin",
-		"dateOfBirth": null
-	},
-	"recordLimit": null,
-	"matchThreshold": null,
-	"packages": [
-		"KYC_AML"
-	]
-}
-    """
+      """
+      {
+        "eventType": "ACCOUNT_CREATION",
+        "entityType": "INDIVIDUAL",
+        "userDetails": {
+          "fullGivenName": "Vladimir Putin",
+          "dateOfBirth": null
+        },
+        "recordLimit": null,
+        "matchThreshold": null,
+        "packages": [
+          "KYC_AML"
+        ]
+      }
+      """
     And headers headers
     And header Authorization = BearerToken
     And request requestPayload
-#    * set payload.response.meta.referenceId = "#ignore"
+    #    * set payload.response.meta.referenceId = "#ignore"
     When method POST
-# cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']

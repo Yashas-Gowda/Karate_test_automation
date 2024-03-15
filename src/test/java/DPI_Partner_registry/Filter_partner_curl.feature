@@ -1,3 +1,4 @@
+@Partner_Filter
 Feature: FILTER_PARTNER_CURL
 
   Background:
@@ -11,14 +12,14 @@ Feature: FILTER_PARTNER_CURL
     And header Content-Type = 'application/json'
     And header Authorization = BearerToken
     And def requestPayload =
-    """
-    {
-  "region": "",
-  "tenant": "tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ",
-  "product": "INSIGHTS",
-  "packages": [""]
-  }
-    """
+      """
+      {
+        "region": "",
+        "tenant": "tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ",
+        "product": "INSIGHTS",
+        "packages": [""]
+      }
+      """
     And request requestPayload
     When method POST
     Then status 200

@@ -1,3 +1,4 @@
+@gen_insights
 Feature: DEVICE_DETAILS MOBILE WALLA Data Partner automation via DPI DEX call
 
   Background:
@@ -7,29 +8,28 @@ Feature: DEVICE_DETAILS MOBILE WALLA Data Partner automation via DPI DEX call
     * def BearerToken = authFeature.authToken
 
 
-
   Scenario: Insights DPI general call
     Given url requestUrl
     And def requestPayload =
-    """
-    {
-	"eventType": "ACCOUNT_CREATION",
-	"cleansingFlag": true,
-	"packages": [
-		"INCOME_ESTIMATION"
-	],
-	"idType": "NIK",
-	"id": "3174074503960001",
-	"phoneDefaultCountryCode": "ID",
-	"phoneNumber": "81213179896"
-}
-    """
+      """
+      {
+        "eventType": "ACCOUNT_CREATION",
+        "cleansingFlag": true,
+        "packages": [
+          "INCOME_ESTIMATION"
+        ],
+        "idType": "NIK",
+        "id": "3174074503960001",
+        "phoneDefaultCountryCode": "ID",
+        "phoneNumber": "81213179896"
+      }
+      """
     And headers headers
     And header Authorization = BearerToken
     And request requestPayload
-#    * set payload.response.meta.referenceId = "#ignore"
+    #    * set payload.response.meta.referenceId = "#ignore"
     When method POST
-# cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']

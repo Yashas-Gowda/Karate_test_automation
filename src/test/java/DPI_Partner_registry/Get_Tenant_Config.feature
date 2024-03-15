@@ -1,3 +1,4 @@
+@Get_Tenant_config
 Feature: GET TENANT CUSTOM CONFIG
 
   Background:

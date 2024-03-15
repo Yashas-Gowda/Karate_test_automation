@@ -14,7 +14,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class insightsTestParallel {
+public class insightsTestParallelRunner {
 
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
@@ -31,11 +31,12 @@ public class insightsTestParallel {
                 .tags("@demonov103pm")
                 .parallel(5); */
 
-        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+        Results results = Runner.path("classpath:insights")
+                .outputCucumberJson(true)
 //                .tags("@ported_prod_sanity,@upi_prod_sanity")
 //                .tags("@FidoV1")
 //                .tags("~@ignore")
-                .tags("@EMAIL_SOCIAL_FIDOV2")
+                .tags("@FIDO_EMAIL_BASIC")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -43,17 +44,37 @@ public class insightsTestParallel {
 
     @Test
     void auth_Token() {
-        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+        Results results = Runner.path("classpath:insights")
+                .outputCucumberJson(true)
                 .tags("@auth_Token")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
 
+//    @Test
+//    void dex() {
+//        Results results = Runner.path("/Users/yashas/IdeaProjects/test-automation/src/test/java/DEX")
+//                .outputCucumberJson(true)
+//                .tags("@fido_email_basic")
+//                .parallel(5);
+//        generateReport(results.getReportDir());
+//        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+//    }
+//
+//    @Test
+//    void _userManagement() {
+//        Results results = Runner.path("/Users/yashas/IdeaProjects/test-automation/src/test/java/_userManagement").outputCucumberJson(true)
+//                .tags("@fido_email_basic")
+//                .parallel(5);
+//        generateReport(results.getReportDir());
+//        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+//    }
+
     @Test
-    void dex() {
+    void deployment() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("@1")
+                .tags("@SMOKE_UPI_BASIC, @Mutliple_package_negative_scenarios")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -62,7 +83,7 @@ public class insightsTestParallel {
     @Test
     void single() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("@3908")
+                .tags("@SMOKE_UPI_BASIC, @Mutliple_package_negative_scenarios")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

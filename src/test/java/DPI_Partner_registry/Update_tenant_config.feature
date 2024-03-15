@@ -1,3 +1,4 @@
+@Update_Tenant_config
 Feature: FILTER_PARTNER_CURL
 
   Background:

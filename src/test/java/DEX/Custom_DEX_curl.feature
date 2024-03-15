@@ -1,24 +1,26 @@
-@fido_email_basic
-Feature: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
+@custom_dex_call
+Feature: CUSTOM DPI DEX call
+
   Background:
     * configure charset = null
     * def authFeature = call read('classpath:insights/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  Scenario:EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
+
+  Scenario: CUSTOM DPI DEX call
     * def dexUrl = requestUrl + '/api/exchange/01H785HGK5PSKMST8QZSEDCAQY'
     Given url dexUrl
     And header Content-Typ = 'application/json'
     And header Authorization = BearerToken
+    #  meenalokesh10109@gmail.com
     And def requestPayload =
       """
       {
         "eventType": "ACCOUNT_CREATION",
-        "cleansingFlag": true,
         "packages": [
-          "EMAIL_BASIC"
+          "EMAIL_SOCIAL"
         ],
-        "email": "yashasgowda2510@gmail.com"
+        "email": "meenalokesh10109@gmail.com"
       }
       """
     And request requestPayload
@@ -28,4 +30,7 @@ Feature: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
     * print dpResponse
     * match dpResponse.source == "partner"
     * match dpResponse.status == 200
-    * print 'status-->', dpResponse.response.status
+    * print 'DEX Data partner response',dpResponse.response
+
+
+  #  meenalokesh10109@gmail.com

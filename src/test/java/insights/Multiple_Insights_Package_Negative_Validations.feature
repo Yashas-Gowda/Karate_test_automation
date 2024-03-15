@@ -1,4 +1,4 @@
-@PORTED_DETAILS @PHONE_BASIC_FULL
+@PORTED_DETAILS @PHONE_BASIC_FULL @Mutliple_package_negative_scenarios
 Feature: Testing of DPI  - Multiple_Insights_Package_Negative_Validations scenarios
 
   Background:
