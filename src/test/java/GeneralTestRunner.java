@@ -81,7 +81,7 @@ public class GeneralTestRunner {
     void DPI_Partner_registry() {
         Results results = Runner.path("classpath:DPI_Partner_registry")
                 .outputCucumberJson(true)
-                .tags("@Partner_Filter")
+                .tags("@Filter_Partner")
 //                .tags("@Get_Tenant_config")
 //                .tags("@Update_Tenant_config")
                 .parallel(5);

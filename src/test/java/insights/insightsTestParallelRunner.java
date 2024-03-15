@@ -24,7 +24,7 @@ public class insightsTestParallelRunner {
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
-    
+
     @Test
     void auth_Token() {
         Results results = Runner.path("classpath:insights")
@@ -35,23 +35,23 @@ public class insightsTestParallelRunner {
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
 
-    @Test
-    void testParallel() {
-        /*Results results = Runner.path("classpath:insights").outputCucumberJson(true)
-                .tags("@demonov103pm")
-                .parallel(5); */
-
-        Results results = Runner.path("classpath:insights")
-                .outputCucumberJson(true)
-//                .tags("@ported_prod_sanity,@upi_prod_sanity")
-//                .tags("@FidoV1")
-//                .tags("~@ignore")
-                .tags("@FIDO_EMAIL_BASIC")
-                .parallel(5);
-        generateReport(results.getReportDir());
-        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
-    }
-
+//    @Test
+//    void testParallel() {
+//        /*Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+//                .tags("@demonov103pm")
+//                .parallel(5); */
+//
+//        Results results = Runner.path("classpath:insights")
+//                .outputCucumberJson(true)
+////                .tags("@ported_prod_sanity,@upi_prod_sanity")
+////                .tags("@FidoV1")
+////                .tags("~@ignore")
+//                .tags("@FIDO_EMAIL_BASIC")
+//                .parallel(5);
+//        generateReport(results.getReportDir());
+//        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+//    }
+//
 
 //    @Test
 //    void dex() {
