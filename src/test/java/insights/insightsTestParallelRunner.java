@@ -24,6 +24,16 @@ public class insightsTestParallelRunner {
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
+    
+    @Test
+    void auth_Token() {
+        Results results = Runner.path("classpath:insights")
+                .outputCucumberJson(true)
+                .tags("@auth_Token")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
 
     @Test
     void testParallel() {
@@ -42,15 +52,6 @@ public class insightsTestParallelRunner {
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
 
-    @Test
-    void auth_Token() {
-        Results results = Runner.path("classpath:insights")
-                .outputCucumberJson(true)
-                .tags("@auth_Token")
-                .parallel(5);
-        generateReport(results.getReportDir());
-        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
-    }
 
 //    @Test
 //    void dex() {
