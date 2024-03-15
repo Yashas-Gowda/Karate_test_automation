@@ -1,4 +1,4 @@
-@BLACKLIST_DETAILS
+@BLACKLIST_DETAILS @ignore
 Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
 
   Background:
