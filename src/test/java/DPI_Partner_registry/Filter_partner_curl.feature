@@ -1,4 +1,4 @@
-@Partner_Filter
+@Filter_Partner
 Feature: FILTER_PARTNER_CURL
 
   Background:
@@ -17,7 +17,7 @@ Feature: FILTER_PARTNER_CURL
         "region": "",
         "tenant": "tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ",
         "product": "INSIGHTS",
-        "packages": [""]
+        "packages": ["UPI_BASIC"]
       }
       """
     And request requestPayload
