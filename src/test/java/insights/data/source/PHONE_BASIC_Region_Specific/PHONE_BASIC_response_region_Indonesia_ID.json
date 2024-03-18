@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "628571116541",
     "phoneDefaultCountryCode": "ID",
     "originalCountryCode": "",
@@ -8,8 +8,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -37,7 +37,8 @@
             "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
             "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": [
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
@@ -46,24 +47,14 @@
             "networkName": "Indosat Ooredoo Hutchison",
             "serviceProfileId": "62500"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
           "topUpHistory": [
             {
               "topUpTenure": {
-                "min": 0,
-                "max": 360
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 5000,
-              "averageTopUpAmount": 5000
-            },
-            {
-              "topUpTenure": {
-                "min": 180,
-                "max": 360
+                "min": 360,
+                "max": 720
               },
               "currency": "IDR",
               "topUpCount": 1,
@@ -95,11 +86,12 @@
     "meta": {
       "inputPhoneNumber": "628571116541",
       "cleansedPhoneNumber": "+628571116541",
-      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "referenceId": "c5361a3b-d8de-40c0-9bbb-635273af1725",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

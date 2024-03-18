@@ -28,6 +28,7 @@
           "valid": true,
           "status": "VALID",
           "panCardName": "GOLKONDA  SWAMY",
+          "lastUpdated": "2023-10-21",
           "aadhaarLinkStatus": "Y",
           "aadhaarLinkStatusDesc": "Aadhaar is linked to PAN"
         },
@@ -38,12 +39,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UkCJRhEVyQ0EJRw=",
+      "referenceId": "a6a18661-5a86-4500-ab8a-58f5cbc011f5",
       "requestedPackages": [
         "KYC_PAN"
       ],
       "inputPan": "RWJPS8170M"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

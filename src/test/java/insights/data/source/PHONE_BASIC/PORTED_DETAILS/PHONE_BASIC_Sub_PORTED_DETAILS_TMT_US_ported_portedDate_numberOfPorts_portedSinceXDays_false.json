@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "13475785486",
     "phoneDefaultCountryCode": "US"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -30,22 +30,13 @@
           "originalCarrier": "Verizon Wireless:6006 - SVR/2",
           "ported": false,
           "portedHistory": {
-            "portedDate": "2022-08-10",
-            "numberOfPorts": 2,
-            "portedSinceXDays": 318,
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
             "currentCarrierCircle": "Verizon Verizon Wireless",
             "originalCarrierCircle": "Verizon Verizon Wireless",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": [
-              {
-                "carrierCircle": null,
-                "portedDate": "2022-08-10"
-              },
-              {
-                "carrierCircle": null,
-                "portedDate": "2022-08-09"
-              }
-            ]
+            "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,

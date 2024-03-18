@@ -44,7 +44,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | Scenario                                                                                                        | statusCode |
       | KYC_PAN_Positive_cleartax_sanity                         | 200        |
 
-
+  @march_15
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")

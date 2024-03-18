@@ -93,7 +93,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9   | 200        | 9          |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128 | 200        | 128        |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197 | 200        | 197        |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_more_then_max_290 | 200        | 297        |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_more_then_max_290 | 200        | 294        |
 
   @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>

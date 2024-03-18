@@ -8,7 +8,7 @@
     "phoneNumber": "9671055127",
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -101,12 +101,11 @@
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "ab3eb94d-ae43-44b9-a74a-db63431a643c",
+      "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

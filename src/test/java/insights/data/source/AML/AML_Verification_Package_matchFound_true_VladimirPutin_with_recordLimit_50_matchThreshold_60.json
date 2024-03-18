@@ -20,7 +20,7 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 491,
+            "noOfProfiles": 490,
             "totalRecords": 148
           },
           "records": [
@@ -106,6 +106,11 @@
               "possibleAddresses": [
                 {
                   "zipCode": null,
+                  "city": "Moscow",
+                  "country": "Russia"
+                },
+                {
+                  "zipCode": null,
                   "city": null,
                   "country": "Russia"
                 },
@@ -117,11 +122,6 @@
                 {
                   "zipCode": null,
                   "city": null,
-                  "country": "Russia"
-                },
-                {
-                  "zipCode": null,
-                  "city": "Moscow",
                   "country": "Russia"
                 }
               ]
@@ -560,15 +560,15 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/4002022-42813",
-                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/downloadCrimea/20220301press_russia.pdf",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors32-eng.html",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220225_33",
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220225_33",
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors32-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/downloadCrimea/20220301press_russia.pdf",
+                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
+                "https://www.president.gov.ua/documents/4002022-42813"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -946,7 +946,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "123c7675-b19d-415f-871b-d69e15336a9d",
+              "profileId": "467f2232-8545-4180-8da4-7786286bacf0",
               "matchScore": 84,
               "firstName": "RUKIN",
               "middleName": "Vladimir",
@@ -979,7 +979,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "a41231bf-c519-43e1-aa94-e5df2dc98ab1",
+              "profileId": "527dd0c6-5f0b-42fd-ab92-418504d975e3",
               "matchScore": 84,
               "firstName": "LUKIN",
               "middleName": "Vladimir",
@@ -1012,7 +1012,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "0ac7b103-cd1c-434a-b552-ad9cf742107f",
+              "profileId": "eb96f021-22ad-4fd8-a729-556787a0b034",
               "matchScore": 84,
               "firstName": "DUDIN",
               "middleName": "Vladimir",
@@ -1390,12 +1390,12 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/7262022-44481",
-                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-04-27/html/sor-dors74-eng.html",
+                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088187/Russia.pdf",
                 "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20221215",
-                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1088187/Russia.pdf"
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-04-27/html/sor-dors74-eng.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
+                "https://www.president.gov.ua/documents/7262022-44481"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -1915,12 +1915,12 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/1762018-24362",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://gazette.gc.ca/rp-pr/p2/2014/2014-04-09/html/sor-dors65-eng.html",
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://gazette.gc.ca/rp-pr/p2/2014/2014-04-09/html/sor-dors65-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.president.gov.ua/documents/1762018-24362"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -2141,9 +2141,9 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/232023-45589",
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022D2477&qid=1671624321150",
                 "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022D2477&qid=1671624321150"
+                "https://www.president.gov.ua/documents/232023-45589"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -2345,10 +2345,10 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/7262022-44481",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-08-31/html/sor-dors189-eng.html",
+                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1138500/Notice_Russia_240223.pdf",
                 "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220628",
-                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1138500/Notice_Russia_240223.pdf"
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-08-31/html/sor-dors189-eng.html",
+                "https://www.president.gov.ua/documents/7262022-44481"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -2430,7 +2430,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "b89eeb7b-17fd-4ab5-aa71-8222ceffcba0",
+              "profileId": "35badbef-1e80-43bb-8fef-04d9d6e8a99b",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -2459,7 +2459,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "f8567dae-e56a-494a-9fff-8e71131cc926",
+              "profileId": "b5741edb-9a66-44f3-9188-19aaa29f739a",
               "matchScore": 78,
               "firstName": "PRONIN",
               "middleName": "Vladimir",
@@ -2524,7 +2524,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "d9388d89-3fe7-403b-b339-6723a8a35f06",
+              "profileId": "2b5a7bf5-235c-4593-aebc-6e3faad55ff9",
               "matchScore": 78,
               "firstName": "MUKHIN",
               "middleName": "Vladimir",
@@ -2627,7 +2627,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "77eba51e-6ad4-4000-b7b9-7daafaa972fa",
+              "profileId": "836d7b49-7da7-4c71-93ad-0a14133899b2",
               "matchScore": 78,
               "firstName": "VLADİMİR",
               "middleName": "VLADİMİROVİCH",
@@ -2663,7 +2663,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "1598e83f-6e5c-4ddc-a052-0d8704c731b3",
+              "profileId": "e26e3dd6-5ffc-4a97-8ea7-a35837f39c49",
               "matchScore": 78,
               "firstName": "Владимир",
               "middleName": "Иванович",
@@ -2695,7 +2695,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "69d07899-f0a8-4429-bf77-1c071ec7bd65",
+              "profileId": "ecc1b700-d07e-4d7f-a2d7-fb7a3a0b309c",
               "matchScore": 78,
               "firstName": "Владимир",
               "middleName": "Иванович",
@@ -2763,7 +2763,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "3e8612f2-ea3c-4f84-8883-1436fbebac19",
+              "profileId": "5999ee4b-4fa1-4b6d-9ede-070ac5fc5d4d",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -3244,13 +3244,13 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/6372022-43921",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.president.gov.ua/documents/6372022-43921"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -3647,15 +3647,15 @@
               "group": null,
               "classification": null,
               "links": [
+                "https://eur-lex.europa.eu/eli/dec/2014/145",
+                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
                 "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
                 "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
                 "https://www.meti.go.jp/policy/external_economy/trade_control/01_seido/04_seisai/downloadCrimea/20220412press_russia.pdf",
                 "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.president.gov.ua/documents/6372022-43921",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-03-16/html/sor-dors29-eng.html",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/recent-actions/20220324",
-                "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1085379/Russia.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2014/145"
+                "https://www.president.gov.ua/documents/6372022-43921"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -4070,13 +4070,13 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/documents/7262022-44481",
-                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
-                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
-                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-gegenueber-belarus.html",
-                "https://gazette.gc.ca/rp-pr/p2/2022/2022-05-11/html/sor-dors84-eng.html",
+                "https://eur-lex.europa.eu/eli/dec/2012/642/",
                 "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1079304/Belarus.pdf",
-                "https://eur-lex.europa.eu/eli/dec/2012/642/"
+                "https://gazette.gc.ca/rp-pr/p2/2022/2022-05-11/html/sor-dors84-eng.html",
+                "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-gegenueber-belarus.html",
+                "https://www.dfat.gov.au/international-relations/security/sanctions/consolidated-list",
+                "https://www.mfat.govt.nz/en/countries-and-regions/europe/ukraine/russian-invasion-of-ukraine/sanctions",
+                "https://www.president.gov.ua/documents/7262022-44481"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -4300,9 +4300,9 @@
               "group": null,
               "classification": null,
               "links": [
-                "https://www.president.gov.ua/storage/j-files-storage/01/17/97/623846514a5770c2a3839ae27f028d5f_1680342471.pdf",
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023D0432&qid=1677402654680",
                 "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen/sanktionen-embargos/sanktionsmassnahmen/massnahmen-zur-vermeidung-der-umgehung-internationaler-sanktione.html",
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023D0432&qid=1677402654680"
+                "https://www.president.gov.ua/storage/j-files-storage/01/17/97/623846514a5770c2a3839ae27f028d5f_1680342471.pdf"
               ],
               "summary": null,
               "mediaAdversary": [
@@ -4840,7 +4840,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "4911b80a-76b4-4e6d-afef-75b54b5c5ff2",
+              "profileId": "7e54f284-bae6-4ae0-a0b8-742b5376bd0c",
               "matchScore": 76,
               "firstName": "FOMIN",
               "middleName": "Vladimir",
@@ -4872,7 +4872,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "0970b8dc-8247-4e29-b47f-e0035d79f367",
+              "profileId": "4423b8b1-7db5-4e21-8eec-853648c92964",
               "matchScore": 76,
               "firstName": "REPIN",
               "middleName": "Vladimir",
@@ -4905,7 +4905,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "ac8a09a5-2b37-4f35-8112-77243a85f182",
+              "profileId": "a9ad9d13-0b99-479b-88f2-597fc244990a",
               "matchScore": 76,
               "firstName": "KOVIN",
               "middleName": "Vladimir",
@@ -4971,7 +4971,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "03db8788-2732-462f-ac0b-b3e9508d9038",
+              "profileId": "1ad87147-3464-424d-a894-60c8fc659e02",
               "matchScore": 76,
               "firstName": "SAVIN",
               "middleName": "Vladimir",
@@ -5035,7 +5035,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "ee6680ea-6930-4bdc-88ef-e19a2d73a1d9",
+              "profileId": "bace1923-48b1-4891-bda3-d694e0fc9bc0",
               "matchScore": 76,
               "firstName": "CURIC",
               "middleName": null,
@@ -5068,7 +5068,7 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "cae6d244-507e-41d2-aa02-bb2177e8b32b",
+      "referenceId": "df2c5fd3-8051-49f8-88eb-dab98921a1f3",
       "requestedPackages": [
         "KYC_AML"
       ],
