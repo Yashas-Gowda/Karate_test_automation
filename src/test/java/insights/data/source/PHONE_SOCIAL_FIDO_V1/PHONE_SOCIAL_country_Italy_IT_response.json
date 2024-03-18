@@ -8,7 +8,7 @@
     "phoneNumber": "393925000000",
     "phoneDefaultCountryCode": "IT"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": false
               }
@@ -114,11 +117,12 @@
     "meta": {
       "inputPhoneNumber": "393925000000",
       "cleansedPhoneNumber": "+393925000000",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "64d2962d-4000-433b-8b56-6fd7dfe6e33b",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

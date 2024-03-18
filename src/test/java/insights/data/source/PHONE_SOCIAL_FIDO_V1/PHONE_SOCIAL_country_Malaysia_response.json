@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -8,7 +8,7 @@
     "phoneNumber": "60149926728",
     "phoneDefaultCountryCode": "MY"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": false
               }
@@ -115,11 +118,12 @@
     "meta": {
       "inputPhoneNumber": "60149926728",
       "cleansedPhoneNumber": "+60149926728",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "4b7ad20a-1906-4f19-b078-7ac31571df8f",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

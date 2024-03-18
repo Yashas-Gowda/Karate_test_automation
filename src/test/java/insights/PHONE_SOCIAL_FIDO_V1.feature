@@ -55,7 +55,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_Happy_flow | 200        |
 
   @PHONE_SOCIAL @FIDO
-  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull - <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions specific country where messaging.viber.lastSeen is null- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
     And headers headers
@@ -95,15 +95,14 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
     Examples:
       | Scenario                                       | statusCode |
-      | PHONE_SOCIAL_country_Brazil_response           | 200        |
       | PHONE_SOCIAL_country_Indonesia_response        | 200        |
       | PHONE_SOCIAL_country_Italy_IT_response         | 200        |
       | PHONE_SOCIAL_country_Malaysia_response         | 200        |
       | PHONE_SOCIAL_country_UnitedKingdom_GB_response | 200        |
-      | PHONE_SOCIAL_country_Vietnam_VN_response       | 200        |
+
 
   @PHONE_SOCIAL @FIDO
-  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull- <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
     And headers headers
@@ -147,8 +146,10 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 
     Examples:
       | Scenario                                      | statusCode |
+      | PHONE_SOCIAL_country_Brazil_response           | 200        |
       | PHONE_SOCIAL_country_Philippines_response     | 200        |
       | PHONE_SOCIAL_country_UnitedStates_US_response | 200        |
+      | PHONE_SOCIAL_country_Vietnam_VN_response       | 200        |
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of emailProvider -fido gives only {google} [google,yahoo] - <Scenario>
     Given url requestUrl
@@ -249,6 +250,10 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_true       | 200        |
 #  data not found    | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_false      | 200        |
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_Datapoint_not_present | 200        |
+
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_true | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_false   | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_null   | 200        |
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of socialMedia - [facebook,twitter,instagram] - <Scenario>
     Given url requestUrl

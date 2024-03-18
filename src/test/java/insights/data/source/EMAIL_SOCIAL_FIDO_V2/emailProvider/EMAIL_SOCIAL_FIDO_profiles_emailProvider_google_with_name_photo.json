@@ -39,7 +39,7 @@
               "google": {
                 "registered": true,
                 "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5b4cd189/8b4d/4174/8d37/75e5f3a460c1/429aaebb-4d32-43c5-af20-9a45bda3cc00.jpg",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/2a9b4aa7/afb0/4a79/9bf3/3c1e3215ff48/ed0bfba5-c2ca-4390-8d85-777a79e5d448.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -264,7 +264,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "4509993e-1292-4939-be99-da2ec656be3b",
+      "referenceId": "0de76f24-8a69-4400-9aaf-362b17835b04",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

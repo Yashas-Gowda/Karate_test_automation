@@ -5,8 +5,8 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "639176000000",
-    "phoneDefaultCountryCode": "PH"
+    "phoneNumber": "79083009807",
+    "phoneDefaultCountryCode": "RU"
   },
   "response": {
     "data": {
@@ -14,10 +14,10 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 5,
             "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 0,
             "registeredMessagingProfiles": 3,
             "lastActivity": null,
@@ -37,7 +37,7 @@
                 "registered": null
               },
               "amazon": {
-                "registered": true
+                "registered": false
               }
             },
             "socialMedia": {
@@ -45,7 +45,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "instagram": {
                 "registered": true
@@ -77,8 +77,8 @@
               "viber": {
                 "registered": true,
                 "photo": null,
-                "lastSeen": "2024-03-18T09:34:51Z",
-                "name": "+639176000000"
+                "lastSeen": "2024-03-18T09:50:18Z",
+                "name": "Анатолий Федоров"
               },
               "skype": {
                 "registered": false,
@@ -116,14 +116,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "639176000000",
-      "cleansedPhoneNumber": "+639176000000",
-      "referenceId": "524b7b5a-a923-47e3-9a88-c07404539b02",
+      "inputPhoneNumber": "79083009807",
+      "cleansedPhoneNumber": "+79083009807",
+      "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
