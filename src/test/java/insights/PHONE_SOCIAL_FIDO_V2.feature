@@ -39,8 +39,6 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
     * match payload.response.data.phone.social.profiles.professional contains $.data.phone.social.profiles.professional
-    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
-    * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
 
     * match payload.response.data.phone.social.summary contains $.data.phone.social.summary
@@ -249,6 +247,11 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_true | 200        |
 #  data not found    | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_false      | 200        |
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_null | 200        |
+
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_true | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_false   | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_null   | 200        |
+
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of socialMedia - [facebook,twitter,instagram] - <Scenario>
     Given url requestUrl

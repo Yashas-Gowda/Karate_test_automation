@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -8,7 +8,7 @@
     "phoneNumber": "447958000000",
     "phoneDefaultCountryCode": "GB"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": true
               }
@@ -115,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "447958000000",
       "cleansedPhoneNumber": "+447958000000",
-      "referenceId": "8b9a9ed2-98d8-435b-b642-df905995899e",
+      "referenceId": "95c91443-d15b-4c17-b53f-7074c3d6abc8",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

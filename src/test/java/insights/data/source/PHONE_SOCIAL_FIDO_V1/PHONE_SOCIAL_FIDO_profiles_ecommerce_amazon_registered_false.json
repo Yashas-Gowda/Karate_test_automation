@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,7 +7,7 @@
     ],
     "phoneNumber": "919723596143",
     "phoneDefaultCountryCode": "IN"
-  } ,
+  },
   "response": {
     "data": {
       "phone": {
@@ -36,6 +36,9 @@
               "flipkart": {
                 "registered": true
               },
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": false
               }
@@ -56,7 +59,7 @@
                 "registered": false
               },
               "linkedin": {
-                "registered": false
+                "registered": null
               }
             },
             "messaging": {
@@ -118,7 +121,7 @@
     "meta": {
       "inputPhoneNumber": "919723596143",
       "cleansedPhoneNumber": "+919723596143",
-      "referenceId": "a7b82b86-f56c-404d-9172-ecd596a5c22e",
+      "referenceId": "b1dab926-5da4-47bf-acbf-03ba0fa547eb",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

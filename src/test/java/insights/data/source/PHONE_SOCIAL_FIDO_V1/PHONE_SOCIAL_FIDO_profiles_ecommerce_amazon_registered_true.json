@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "916354392816",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -35,6 +35,9 @@
             "ecommerce": {
               "flipkart": {
                 "registered": true
+              },
+              "bukalapak": {
+                "registered": null
               },
               "amazon": {
                 "registered": true
@@ -118,7 +121,7 @@
     "meta": {
       "inputPhoneNumber": "916354392816",
       "cleansedPhoneNumber": "+916354392816",
-      "referenceId": "0ae288e0-324a-402a-ad1e-149e02c6885b",
+      "referenceId": "06b10909-222b-4ef1-8526-078388e37ade",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

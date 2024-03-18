@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "5547991986334",
     "phoneDefaultCountryCode": "BR"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": true
               }
@@ -115,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "5547991986334",
       "cleansedPhoneNumber": "+5547991986334",
-      "referenceId": "eca33250-dc24-4a97-9b28-9f4aac3ff285",
+      "referenceId": "0b658986-b9b4-4002-8c3b-7df27702d1a3",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

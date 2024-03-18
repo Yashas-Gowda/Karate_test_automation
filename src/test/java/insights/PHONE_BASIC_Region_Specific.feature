@@ -9,7 +9,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response where active= notnull- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
     And headers headers
@@ -41,10 +41,10 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_Singapore_SG                               | 200        |
       | PHONE_BASIC_response_region_Thailand_TH_without_ported                 | 200        |
       | PHONE_BASIC_response_region_Philippines_PH                             | 200        |
-      | PHONE_BASIC_response_region_Malaysia_MY                                | 200        |
       | PHONE_BASIC_response_region_Indonesia_ID                               | 200        |
       | PHONE_BASIC_response_region_UnitedStates_US_without_ported             | 200        |
       | PHONE_BASIC_response_region_MEXICO_MX_without_ported                   | 200        |
+      
 
   @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
@@ -181,11 +181,11 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                               | statusCode |
       | PHONE_BASIC_response_region_BRAZIL_BR_with_ported                      | 200        |
 
-#  PH(639058248748), SG(6596610822) , MY(60129279293),GB(447826292229),CY(35796898016) -( TMT is returning "porting_history": "n/a"- seems region not supported)
-#
-#  BR(554730385113) ,FR(33622788226),NL(31703923875),US(19193456619)-Seems TMT retuned [] meaning region is supported by TMT
-#
-#  VN(84389879520) ,ID(6282220000000) - Seems TMT retuned [] meaning region is supported by TMT (we have not got data)
+  #  PH(639058248748), SG(6596610822) , MY(60129279293),GB(447826292229),CY(35796898016) -( TMT is returning "porting_history": "n/a"- seems region not supported)
+  #
+  #  BR(554730385113) ,FR(33622788226),NL(31703923875),US(19193456619)-Seems TMT retuned [] meaning region is supported by TMT
+  #
+  #  VN(84389879520) ,ID(6282220000000) - Seems TMT retuned [] meaning region is supported by TMT (we have not got data)
 
   @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
@@ -195,7 +195,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-#    * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
+    #    * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#ignore"
     * set payload.response.data.phone.basic.activeSinceXDays = "#ignore"
     * set payload.response.data.phone.basic.active = "#ignore"
     When method POST
@@ -213,8 +213,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#    *  match $.data.phone.basic.activeSinceXDays == "#number"
-#    *  match $.data.phone.basic.portedHistory.portedSinceXDays == "#number"
+    #    *  match $.data.phone.basic.activeSinceXDays == "#number"
+    #    *  match $.data.phone.basic.portedHistory.portedSinceXDays == "#number"
     Then match $.data.phone.basic contains payload.response.data.phone.basic
     Then match $.data.phone.basic.active == "#notnull"
     Then match $.meta contains payload.response.meta
@@ -222,13 +222,15 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
     Examples:
       | Scenario                                                                       | statusCode |
+      | PHONE_BASIC_response_region_Malaysia_MY                                         | 200        |
       | PHONE_BASIC_response_region_Vietnam_VN                                         | 200        |
-      | PHONE_BASIC_response_region_Malaysia_MY                                        | 200        |
       | PHONE_BASIC_response_region_Cyprus_CY                                          | 200        |
       | PHONE_BASIC_response_region_Italy_IT_without_ported                            | 200        |
       | PHONE_BASIC_response_region_UnitedKingdom_GB                                   | 200        |
       | PHONE_BASIC_response_region_FRANCE_FR_without_ported                           | 200        |
       | PHONE_BASIC_response_region_Netherlands_NL_without_ported                      | 200        |
+
+
 
   @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>

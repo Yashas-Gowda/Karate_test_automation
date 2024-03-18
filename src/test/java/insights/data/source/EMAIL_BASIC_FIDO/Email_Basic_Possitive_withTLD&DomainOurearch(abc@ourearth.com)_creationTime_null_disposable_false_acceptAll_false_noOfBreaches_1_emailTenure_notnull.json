@@ -22,6 +22,7 @@
             "expiryTime": null,
             "registered": null,
             "companyName": "",
+            "registrarName": "GoDaddy.com, LLC",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -44,7 +45,7 @@
               }
             ]
           },
-          "emailTenure": 5.04
+          "emailTenure": 5.05
         }
       },
       "address": null,
@@ -63,7 +64,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "8c85dd43-251b-4293-9b04-80b626d591b0",
+      "referenceId": "0b1185ff-a7c5-48e9-8f79-24fb25acb119",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"

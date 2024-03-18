@@ -1,0 +1,34 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "upiId": "9108510043@"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_march_14_1",
+      "inputUpiId": "9108510043@",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_BASIC",
+        "message": "Invalid UPI address",
+        "code": "INVALID_UPI",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "UPI_BASIC",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

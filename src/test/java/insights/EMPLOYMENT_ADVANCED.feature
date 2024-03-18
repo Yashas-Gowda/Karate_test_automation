@@ -1,14 +1,13 @@
-
 Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
-# UAN_BASIC -> Converted into EMPLOYMENT_BASIC
-# UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
-# EMPLOYMENT_BASIC and EMPLOYMENT_ADVANCED package manual sign off was given by Anjan and AUTOMATION is done by Yashas.
-#SOCIAL_LINKS will be there in the subpackage of EMPLOYMENT_DETAILS package where UAN_BASIC and UAN_ADVANCED are disabled.
-#  (Manual sign off given by Anjan)
-# open issues :
-# https://monnai.atlassian.net/browse/MB-4198,
-# https://monnai.atlassian.net/browse/MB-3802,
-# https://monnai.atlassian.net/browse/MB-4209
+  # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
+  # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
+  # EMPLOYMENT_BASIC and EMPLOYMENT_ADVANCED package manual sign off was given by Anjan and AUTOMATION is done by Yashas.
+  #SOCIAL_LINKS will be there in the subpackage of EMPLOYMENT_DETAILS package where UAN_BASIC and UAN_ADVANCED are disabled.
+  #  (Manual sign off given by Anjan)
+  # open issues :
+  # https://monnai.atlassian.net/browse/MB-4198,
+  # https://monnai.atlassian.net/browse/MB-3802,
+  # https://monnai.atlassian.net/browse/MB-4209
 
   Background:
     * configure charset = null
@@ -26,7 +25,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -58,7 +57,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -77,10 +76,10 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
 
     Examples:
       | Scenario                                               | statusCode |
-    # Bug https://monnai.atlassian.net/browse/MB-3786,MB-3805
+      # Bug https://monnai.atlassian.net/browse/MB-3786,MB-3805
       | EMPLOYMENT_ADVANCED_is_null_when_no_record_found_in_dp | 200        |
 
-    # After dicusion with Roopa, not validating the values of data point inside the "employeePfMatches" as it is highly dynamic
+  # After dicusion with Roopa, not validating the values of data point inside the "employeePfMatches" as it is highly dynamic
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario  <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
@@ -91,7 +90,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.data.employment.advanced.pfFilingDetails.employerPfFilingDetails = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -121,7 +120,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | Scenario                                                                                         | statusCode |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_1                                     | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_1_without_91                          | 200        |
-# Bug https://monnai.atlassian.net/browse/MB-3800,MB-3001
+      # Bug https://monnai.atlassian.net/browse/MB-3800,MB-3001
       | EMPLOYMENT_ADVANCED_summary_isEmployed_isNameUnique_false_hasPfFilingDetails_true                | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_2                                     | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_2_employeePfMatches_null_hidden      | 200        |
@@ -129,14 +128,14 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_3                                    | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_4                                     | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_4                                    | 200        |
-        # Bug https://monnai.atlassian.net/browse/MB-4198
+      # Bug https://monnai.atlassian.net/browse/MB-4198
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_5 | 200        |
 
 
-# bug https://monnai.atlassian.net/browse/MB-4209 - "reasonOfExit"  mapping issue
-#      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_RETIREMENT | 200        | --> 8144651776
-#      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_SUPERNNUATION | 200        | --> 9585306554
-#      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_DEATH_AWAY_FROM_SERVICE | 200        | --> 9963109163
+  # bug https://monnai.atlassian.net/browse/MB-4209 - "reasonOfExit"  mapping issue
+  #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_RETIREMENT | 200        | --> 8144651776
+  #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_SUPERNNUATION | 200        | --> 9585306554
+  #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_DEATH_AWAY_FROM_SERVICE | 200        | --> 9963109163
 
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN <Scenario>
     Given url requestUrl
@@ -147,7 +146,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -160,9 +159,10 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data == null
-    Then match $.meta contains only payload.response.meta
-    Then match $.errors contains only payload.response.errors
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
     Examples:
       | Scenario                                                               | statusCode |
@@ -178,7 +178,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
     Then status <statusCode>
-  # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -191,9 +191,10 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
-    Then match $.data == null
-    Then match $.meta contains only payload.response.meta
-    Then match $.errors contains only payload.response.errors
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
     Examples:
       | Scenario                                                                                                         | statusCode |

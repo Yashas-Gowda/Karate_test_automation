@@ -1,8 +1,8 @@
 {
   "app_client_name": "Monnai@tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ@tenant_01GKKZ8HMH2FQHBHE08YHMHJKZ",
-  "client_id" : "33f5msu62rkmn0rr3onec1t1m2",
-  "client_secret" : "74hucobdjugjid969didj8uc7t202cuvghrqp3ltf9m8a5oib5n",
-  "grant_type" : "client_credentials",
-  "scope": "batch/insights insights/address_basic insights/blacklist_details insights/device_details insights/domain_breach insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_aml verification/kyc_consumer verification/kyc_government verification/kyc_mobile",
+  "client_id": "33f5msu62rkmn0rr3onec1t1m2",
+  "client_secret": "74hucobdjugjid969didj8uc7t202cuvghrqp3ltf9m8a5oib5n",
+  "grant_type": "client_credentials",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml ",
   "issue": "non"
 }

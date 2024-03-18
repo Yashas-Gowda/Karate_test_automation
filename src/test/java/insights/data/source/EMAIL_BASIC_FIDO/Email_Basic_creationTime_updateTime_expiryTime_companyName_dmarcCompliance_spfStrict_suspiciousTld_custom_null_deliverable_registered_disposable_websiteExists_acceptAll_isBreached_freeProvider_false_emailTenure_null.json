@@ -22,6 +22,7 @@
             "expiryTime": null,
             "registered": false,
             "companyName": null,
+            "registrarName": null,
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -58,7 +59,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "befedb0e-baf2-406c-9eb3-3975464194a3",
+      "referenceId": "bbd76718-d730-4919-9217-2e774257b938",
       "inputEmail": "azlin@moa.gov.in",
       "requestedPackages": [
         "EMAIL_BASIC"

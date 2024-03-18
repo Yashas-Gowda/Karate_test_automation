@@ -1,4 +1,4 @@
-@upi
+@UPI_BASIC
 Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
   Background:
@@ -7,8 +7,8 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * def authFeature = call read('Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
-  Scenario Outline:  UPI BASIC POSITIVE SC's Insights <Scenario>
+  @SMOKE_UPI_BASIC
+  Scenario Outline:  UPI BASIC POSITIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -37,6 +37,34 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     Examples:
       | Scenario                 | statusCode |
       | UPI_BASIC_sc_@ybl        | 200        |
+
+
+  Scenario Outline:  UPI BASIC POSITIVE SC's Insights :- <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    Then match $.data.upi.basic contains payload.response.data.upi.basic
+    Then match $.meta contains payload.response.meta
+    Examples:
+      | Scenario                 | statusCode |
       | UPI_BASIC_sc_@ibl        | 200        |
       | UPI_BASIC_sc_@axl        | 200        |
       | UPI_BASIC_sc_@paytm      | 200        |
@@ -45,7 +73,8 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | UPI_BASIC_sc_@okicici    | 200        |
       | UPI_BASIC_sc_@okhdfcbank | 200        |
 
-  Scenario Outline:  UPI BASIC when "isUpiValid": false then NEGATIVE SC's Insights <Scenario>
+  @SMOKE_UPI_BASIC
+  Scenario Outline:  UPI BASIC when "isUpiValid": false then NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -67,7 +96,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#  https://monnai.atlassian.net/browse/MB-3265 - resolved
+    #  https://monnai.atlassian.net/browse/MB-3265 - resolved
     Then match $.data.upi.basic contains payload.response.data.upi.basic
     Then match $.meta contains payload.response.meta
 
@@ -76,8 +105,8 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | Scenario                         | statusCode |
       | UPI_BASIC_sc_Ne_isUpiValid_false | 200        |
 
-
-  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
+  @SMOKE_UPI_BASIC
+  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights - validation of upiId:- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -99,20 +128,23 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#  https://monnai.atlassian.net/browse/MB-2788 - resolved
-    * match $.errors[*].message contains any "Missing UPI address"
-    * match $.errors[*].code contains any "MISSING_UPI"
-
-
-    Then match $ contains any payload.response
+    #  https://monnai.atlassian.net/browse/MB-2788 - resolved
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
 
     Examples:
       | Scenario              | statusCode |
-      | UPI_BASIC_sc_Ne_noUpi | 400        |
+      | UPI_BASIC_sc_Ne_upiId_value_noUpi | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_nohandle | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_randam_value| 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_123| 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_true| 400        |
 
-  @smokeTest
-  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
+  @SMOKE_UPI_BASIC
+  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
     And headers headers
@@ -134,12 +166,25 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.errors[0].message contains any "Invalid UPI address"
-    * match $.errors[0].code contains any "INVALID_UPI"
-    Then match $ contains  payload.response
+    * match $.data == "#null"
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
 
 
     Examples:
       | Scenario                 | statusCode |
-      | UPI_BASIC_sc_Ne_nohandle | 400        |
+      | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_other_then_IN | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_null | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_emptyString | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_space | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_upi_with_no_handle | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_no_upi | 400        |
+
+  # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_number  | 400        |
+  # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_bollean |  400        |
+
+
 

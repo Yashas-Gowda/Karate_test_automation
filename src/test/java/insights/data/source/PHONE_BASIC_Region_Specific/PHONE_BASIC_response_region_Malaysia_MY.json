@@ -1,6 +1,6 @@
 {
   "request": {
-    "phoneNumber": "60 323456789",
+    "phoneNumber": "60125159123",
     "phoneDefaultCountryCode": "MY",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
@@ -8,15 +8,15 @@
       "PHONE_BASIC"
     ]
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "60323456789",
+          "phoneNumber": "60125159123",
           "phoneValid": true,
-          "phoneType": null,
+          "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": null,
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -24,23 +24,23 @@
           "phoneNumberAgeDescription": null,
           "phoneTenure": null,
           "country": "MY",
-          "originalCarrier": null,
-          "ported": null,
+          "originalCarrier": "MAXIS BROADBAND SDN BHD",
+          "ported": false,
           "portedHistory": {
             "portedDate": null,
-            "numberOfPorts": null,
+            "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": null,
-            "originalCarrierCircle": null,
+            "currentCarrierCircle": "Maxis Maxis Communications Berhad",
+            "originalCarrierCircle": "Maxis Maxis Communications Berhad",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": null
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": null,
-            "mobileNetworkCode": null,
-            "networkName": null,
-            "serviceProfileId": null
+            "mobileCountryCode": "502",
+            "mobileNetworkCode": "12",
+            "networkName": "MAXIS BROADBAND SDN BHD",
+            "serviceProfileId": "60503"
           },
           "numberRecycled": null,
           "lastDeactivated": null,
@@ -67,14 +67,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "60 323456789",
-      "cleansedPhoneNumber": "+60323456789",
-      "referenceId": "c0ce875a-c598-4d63-8fca-5e58f30800af",
+      "inputPhoneNumber": "60125159123",
+      "cleansedPhoneNumber": "+60125159123",
+      "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

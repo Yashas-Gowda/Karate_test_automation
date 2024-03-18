@@ -8,7 +8,7 @@
     "phoneNumber": "6282226265640",
     "phoneDefaultCountryCode": "ID"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": false
+              },
               "amazon": {
                 "registered": false
               }
@@ -115,11 +118,12 @@
     "meta": {
       "inputPhoneNumber": "6282226265640",
       "cleansedPhoneNumber": "+6282226265640",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "47149245-7448-4b19-adda-17723cf61afb",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

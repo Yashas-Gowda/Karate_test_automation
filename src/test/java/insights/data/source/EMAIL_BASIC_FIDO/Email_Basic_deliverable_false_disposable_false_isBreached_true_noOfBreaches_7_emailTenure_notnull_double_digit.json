@@ -17,11 +17,12 @@
           "domainDetails": {
             "domainName": "yahoo.co.in",
             "tld": ".in",
-            "creationTime": "2003-10-06 05:18:16",
+            "creationTime": "2003-10-09 06:40:59",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Yahoo Assets LLC",
+            "registrarName": "MarkMonitor Inc.",
             "disposable": false,
             "freeProvider": true,
             "dmarcCompliance": null,
@@ -74,7 +75,7 @@
               }
             ]
           },
-          "emailTenure": 11.36
+          "emailTenure": 11.37
         }
       },
       "address": null,
@@ -93,7 +94,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "0792f963-95ce-4dd3-b818-1a4b65aa9bea",
+      "referenceId": "204dfb81-5371-40bf-a786-dfd479a95b5b",
       "inputEmail": "gopi_9621@yahoo.co.in",
       "requestedPackages": [
         "EMAIL_BASIC"

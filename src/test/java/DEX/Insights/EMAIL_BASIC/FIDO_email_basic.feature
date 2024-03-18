@@ -1,3 +1,4 @@
+@fido_email_basic
 Feature: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
   Background:
     * configure charset = null
@@ -10,16 +11,16 @@ Feature: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
     And header Content-Typ = 'application/json'
     And header Authorization = BearerToken
     And def requestPayload =
-    """
-{
-  "eventType": "ACCOUNT_CREATION",
-  "cleansingFlag": true,
-  "packages": [
-    "EMAIL_BASIC"
-  ],
-  "email": "yashasgowda2510@gmail.com"
-}
-    """
+      """
+      {
+        "eventType": "ACCOUNT_CREATION",
+        "cleansingFlag": true,
+        "packages": [
+          "EMAIL_BASIC"
+        ],
+        "email": "yashasgowda2510@gmail.com"
+      }
+      """
     And request requestPayload
     When method POST
     Then status 200

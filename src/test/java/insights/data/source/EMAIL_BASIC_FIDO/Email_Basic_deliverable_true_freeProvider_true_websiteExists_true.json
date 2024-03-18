@@ -7,7 +7,7 @@
     ],
     "email": "koulvishesh1@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,11 +17,12 @@
           "domainDetails": {
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-09-23 19:09:08",
+            "creationTime": "1995-11-22 06:40:59",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
             "companyName": "Google LLC",
+            "registrarName": "MarkMonitor, Inc.",
             "disposable": false,
             "freeProvider": true,
             "dmarcCompliance": null,
@@ -74,7 +75,7 @@
               }
             ]
           },
-          "emailTenure": 6.34
+          "emailTenure": 6.83
         }
       },
       "address": null,
@@ -86,10 +87,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "50f3c29c-41a5-4dd1-a1de-f3cb61013fa9",
       "inputEmail": "koulvishesh1@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"

@@ -8,7 +8,7 @@
     "phoneNumber": "9148771222",
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -36,6 +36,9 @@
               "flipkart": {
                 "registered": true
               },
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": true
               }
@@ -62,7 +65,7 @@
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/2162893a/8217/4261/ad37/8b0cefb1c6ee.jpg",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/6a105946/4f97/467a/ace1/c504b6a4c231.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
@@ -71,13 +74,14 @@
                 "photo": null,
                 "privacyStatus": "PRIVATE",
                 "lastSeen": null,
-                "about": null
+                "about": null,
+                "businessAccount": false
               },
               "viber": {
                 "registered": true,
                 "photo": null,
-                "lastSeen": "2023-12-14T09:58:33Z",
-                "name": "Sameena"
+                "lastSeen": null,
+                "name": "Sameena Yasmeen"
               },
               "skype": {
                 "registered": false,
@@ -117,7 +121,7 @@
     "meta": {
       "inputPhoneNumber": "9148771222",
       "cleansedPhoneNumber": "+919148771222",
-      "referenceId": "fcfcf587-bd00-4f74-825b-682dad0400db",
+      "referenceId": "8324d09e-0157-4eba-8228-78eba101929c",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

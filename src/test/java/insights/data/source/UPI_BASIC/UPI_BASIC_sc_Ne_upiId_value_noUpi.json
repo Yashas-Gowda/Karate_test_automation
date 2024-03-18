@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "upiId": ""
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_march_14_1",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_BASIC",
+        "message": "Missing UPI address",
+        "code": "MISSING_UPI",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "entityType": "INDIVIDUAL",
     "userDetails": {
@@ -10,8 +10,8 @@
     "packages": [
       "KYC_AML"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "kyc": {
         "government": null,
@@ -677,6 +677,7 @@
               "otherPossibleNames": [
                 "صدام حسين التكريتي",
                 "Abu Ali",
+                "SADDAM HUSSEIN",
                 "SADDAM HUSSEIN AL-TIKRITI"
               ],
               "otherPossibleDob": [
@@ -1163,11 +1164,11 @@
               "otherPossibleNames": [
                 "علي صدام حسين التكريتي",
                 "Hassan",
+                "ALI SADDAM",
                 "ALI SADDAM HUSSEIN"
               ],
               "otherPossibleDob": [
-                "1980",
-                "1983"
+                "1980"
               ],
               "possibleAddresses": [
               ]
@@ -1178,7 +1179,7 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "8dfdf6bf-a6dd-479f-8770-aae1ae463929",
+      "referenceId": "04ada6d5-2b4d-4eea-b184-f1e98cba68e0",
       "requestedPackages": [
         "KYC_AML"
       ],

@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "936983031",
     "phoneDefaultCountryCode": "VN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -33,6 +33,9 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
                 "registered": false
               }
@@ -115,11 +118,12 @@
     "meta": {
       "inputPhoneNumber": "936983031",
       "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "8ad8e288-9a72-4774-a3ac-a70329813a93",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
