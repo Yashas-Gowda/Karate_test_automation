@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
@@ -9,8 +9,8 @@
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,8 +21,12 @@
       "upi": {
         "basic": null,
         "advanced": {
+          "packageDetails": [
+            "S2101"
+          ],
           "upiIdCount": 0,
-          "accounts": []
+          "accounts": [
+          ]
         }
       },
       "device": null,
@@ -31,17 +35,21 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "9844785668",
       "cleansedPhoneNumber": "+919844785668",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "referenceId": "3c56584d-6dda-4293-b493-0635220c8e7c",
       "inputEmail": "eswarappam5929@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "ALL"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
