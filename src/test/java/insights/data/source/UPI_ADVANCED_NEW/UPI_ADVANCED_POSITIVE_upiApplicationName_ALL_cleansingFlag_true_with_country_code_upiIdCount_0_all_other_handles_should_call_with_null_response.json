@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
@@ -9,8 +9,8 @@
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,6 +21,9 @@
       "upi": {
         "basic": null,
         "advanced": {
+          "packageDetails": [
+            "S2101"
+          ],
           "upiIdCount": 0,
           "accounts": [
           ]
@@ -39,7 +42,7 @@
     "meta": {
       "inputPhoneNumber": "919844785668",
       "cleansedPhoneNumber": "+919844785668",
-      "referenceId": "ca919d94-69a4-4cf6-a9b8-e1deefb0b9ce",
+      "referenceId": "7643336a-c142-4189-aa18-0cbd0ebccfd7",
       "inputEmail": "eswarappam5929@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
