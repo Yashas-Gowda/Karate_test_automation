@@ -21,8 +21,6 @@
         "basic": null,
         "advanced": null,
         "details": {
-          "pfBasic": null,
-          "pfAdvanced": null,
           "social": {
             "summary": {
               "name": "Suraj Chepurwar",
@@ -30,7 +28,7 @@
               "location": "Mumbai, Maharashtra, India",
               "employerName": "STRABAG",
               "linkedinUrl": "https://linkedin.com/in/suraj-chepurwar-a54593136",
-              "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1716422400&v=beta&t=nMxAQBEkx0UMBMoEth5_vFPrfVN9WUFKKaSDJ4uB6oE",
+              "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1717632000&v=beta&t=W4u-ixGZ5fvJMzlR78UqypjzsjVbLnEtN9G6HINzkEU",
               "employmentHistoryCount": 7,
               "educationHistoryCount": 1
             },
@@ -41,7 +39,7 @@
                 "employerLocation": "Mumbai, Maharashtra, India · On-site",
                 "dateOfJoining": "2022-09-01",
                 "dateOfExit": null,
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1718841600&v=beta&t=xtRXK8qfUWT6SIBd0QakdeFMCUt6ky3xahOioolzGwA",
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1720051200&v=beta&t=Bli2vqnjo1ok0NoHKraAU747sBnL9A8mmq5AYHRrGOc",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/16035/"
               },
               {
@@ -59,7 +57,7 @@
                 "employerLocation": "Ahmedabad, Gujarat, India",
                 "dateOfJoining": "2018-08-01",
                 "dateOfExit": "2018-12-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1718841600&v=beta&t=RxUdrdk09rZMMbSvKHbUjzi2gcjiyiYsz1CYOhggeps",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1720051200&v=beta&t=fZPbvQXenAg8jAq-DXh5CWrG8-cdWU7g_QRaR5oBLtM",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/2277430/"
               },
               {
@@ -86,7 +84,7 @@
                 "employerLocation": "Maharashtra, India",
                 "dateOfJoining": "2013-07-01",
                 "dateOfExit": "2015-11-15",
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1718841600&v=beta&t=peXi7ctV9eZVuTOXWUwYMDTW3BudR8Whep-N0Ovos1Y",
+                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1720051200&v=beta&t=G9KzZ8MHf9SLj3NPohHI6ih6Ui4I65Cjaqp1PgdUALw",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/2135375/"
               },
               {
@@ -95,7 +93,7 @@
                 "employerLocation": "Hyderabad, Telangana, India",
                 "dateOfJoining": "2011-08-01",
                 "dateOfExit": "2013-06-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1718841600&v=beta&t=BcTKSAdn4h7qV58VjoXNRoZVFYkOR5vImRwNvzYYaOw",
+                "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1720051200&v=beta&t=QJLACDIIeXT9eTxIuEcxceFKXYnZQtLhoKQ8ZzZ88M8",
                 "employerLinkedinUrl": "https://www.linkedin.com/company/1853420/"
               }
             ],
@@ -122,7 +120,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e88f1991-1963-4eac-ba04-5a30f6012463",
+      "referenceId": "06242d7a-f8b8-43b4-b373-3fb5d00904b9",
       "inputEmail": "cwarsuraj@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_DETAILS"
