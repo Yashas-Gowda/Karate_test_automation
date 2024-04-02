@@ -143,7 +143,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | UPI_BASIC_sc_Ne_upiId_Invalid_123| 400        |
       | UPI_BASIC_sc_Ne_upiId_Invalid_true| 400        |
 
-  @SMOKE_UPI_BASIC
+  @SMOKE_UPI_BASIC @Negative_UPI
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/UPI_BASIC/<Scenario>.json")
@@ -175,7 +175,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     Examples:
       | Scenario                 | statusCode |
       | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_other_then_IN | 501        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA_invalid | 400        |
       | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_null | 400        |
       | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_emptyString | 400        |
       | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_space | 400        |
