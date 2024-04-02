@@ -15,7 +15,7 @@
       "addressLine8": ""
     }
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -35,8 +35,8 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "23.76325",
-              "longitude": "90.36207",
+              "latitude": "23.76326",
+              "longitude": "90.36211",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -56,8 +56,8 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "42.90867",
-              "longitude": "-77.70261",
+              "latitude": "42.90883",
+              "longitude": "-77.70236",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -140,8 +140,8 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "23.74496",
-              "longitude": "90.571",
+              "latitude": "23.74502",
+              "longitude": "90.57089",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -161,8 +161,8 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "27.16966",
-              "longitude": "78.03759",
+              "latitude": "27.16841",
+              "longitude": "78.03688",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -182,8 +182,8 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "27.16195",
-              "longitude": "78.05899",
+              "latitude": "27.16142",
+              "longitude": "78.05964",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
@@ -191,7 +191,8 @@
               "district": null
             }
           ]
-        }
+        },
+        "verification": null
       },
       "name": null,
       "ip": null,
@@ -204,10 +205,11 @@
       "domain": null,
       "kyc": null,
       "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "841195df-a6b2-4ed0-a9e8-78d21ed7a7e5",
+      "referenceId": "95109f66-2c4a-4b37-b2a8-0bd92bffac74",
       "requestedPackages": [
         "ADDRESS_BASIC"
       ],
