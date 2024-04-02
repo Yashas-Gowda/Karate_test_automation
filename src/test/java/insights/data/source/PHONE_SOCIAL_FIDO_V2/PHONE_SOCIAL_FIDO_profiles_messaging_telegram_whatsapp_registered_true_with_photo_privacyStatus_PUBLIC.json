@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,16 +7,16 @@
     ],
     "phoneNumber": "919597384859",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 2,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
@@ -37,7 +37,7 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": true
+                "registered": null
               },
               "bukalapak": {
                 "registered": null
@@ -71,13 +71,13 @@
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/8a4db104/1433/42ba/8edc/71dc36821601.jpg",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/35e36330/803b/444f/b50b/a176c1d889e5.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/f253c2f0/2540/4eb2/a045/7a1bafb914b4/fecae1a0-719f-4f5a-924d-d3084cdd2e0b.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/8ecb7fe6/4228/4956/8675/562fd5549788/8f8d44e4-408b-4168-ba3d-118fcc543141.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "919597384859",
       "cleansedPhoneNumber": "+919597384859",
-      "referenceId": "941ab844-aa62-4417-995e-c369a9da4e44",
+      "referenceId": "953c54c8-ebc9-4ebd-9cd9-0bde09121811",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

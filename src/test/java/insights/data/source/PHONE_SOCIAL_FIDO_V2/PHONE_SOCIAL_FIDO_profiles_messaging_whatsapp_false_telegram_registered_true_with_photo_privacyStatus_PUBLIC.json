@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "916350312482",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -71,7 +71,7 @@
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/eda18bc6/974b/490f/bb1c/d53be3f05502.jpg",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/75191686/95e2/45a1/9d0b/f8516779d948.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
@@ -147,7 +147,7 @@
     "meta": {
       "inputPhoneNumber": "916350312482",
       "cleansedPhoneNumber": "+916350312482",
-      "referenceId": "126e2b77-1960-4b96-80aa-2eede151d1be",
+      "referenceId": "1d9d87f6-2120-46c1-a173-7acd91e04fe4",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
