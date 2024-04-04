@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "916380803145",
-    "email": "ashupgdim@gmail.com",
+    "phoneNumber": "9538877692",
+    "email": "divsmaria03@gmail.com",
     "upiApplicationName": "ALL",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,19 +21,26 @@
       "upi": {
         "basic": null,
         "advanced": {
-          "upiIdCount": 2,
+          "upiIdCount": 3,
           "accounts": [
             {
+              "appName": "PhonePe",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "9538877692@ybl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
               "appName": "Google Pay",
-              "nameAtBank": "ASHISH GUPTA",
-              "upiId": "ashupgdim@okhdfcbank",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "divsmaria03@oksbi",
               "accountType": "ALTERNATE",
               "accountStatus": "VALID"
             },
             {
               "appName": "Slice",
-              "nameAtBank": "SANGEETHRAJAN R",
-              "upiId": "sangeethrajan@sliceaxis",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "divyanimaria@sliceaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -46,16 +53,19 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "916380803145",
-      "cleansedPhoneNumber": "+916380803145",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
-      "inputEmail": "ashupgdim@gmail.com",
+      "inputPhoneNumber": "+919538877692",
+      "cleansedPhoneNumber": "+919538877692",
+      "referenceId": "Dpi_upi_apr_3_3",
+      "inputEmail": "divsmaria03@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "ALL"
     },
     "errors": []
   }

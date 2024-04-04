@@ -1,0 +1,72 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "+919538877692",
+    "email": "divsmaria03@gmail.com",
+    "upiApplicationName": "ALL",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 3,
+          "accounts": [
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "9538877692@ybl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "divsmaria03@oksbi",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Slice",
+              "nameAtBank": "DIVYANI M ALBUQUERQUE PAI",
+              "upiId": "divyanimaria@sliceaxis",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "+919538877692",
+      "cleansedPhoneNumber": "+919538877692",
+      "referenceId": "Dpi_upi_apr_3_3",
+      "inputEmail": "divsmaria03@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "ALL"
+    },
+    "errors": []
+  }
+}

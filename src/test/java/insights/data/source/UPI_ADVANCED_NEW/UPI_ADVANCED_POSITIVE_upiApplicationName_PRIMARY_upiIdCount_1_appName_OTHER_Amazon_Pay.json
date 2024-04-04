@@ -3,8 +3,8 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9066834500",
-    "email": "acxsadf@gmail.com",
+    "phoneNumber": "9609451590",
+    "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
     ]
@@ -23,9 +23,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "Slice",
-              "nameAtBank": "SRINIVAS  K R",
-              "upiId": "kr9066834@sliceaxis",
+              "appName": "Amazon Pay",
+              "nameAtBank": "PALASH PATRA",
+              "upiId": "9609451590@apl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -43,13 +43,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9066834500",
-      "cleansedPhoneNumber": "+919066834500",
+      "inputPhoneNumber": "9609451590",
+      "cleansedPhoneNumber": "+919609451590",
       "referenceId": "Dpi_march_6_upi_1",
-      "inputEmail": "acxsadf@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "PRIMARY"
     },
     "errors": []
   }
