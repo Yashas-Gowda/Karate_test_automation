@@ -11,7 +11,7 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "Dpi_march_14_1",
+      "referenceId": "69b1a57c-3e61-45c2-87cd-47fe0eaf063b",
       "inputUpiId": "9108510043@ybl",
       "requestedPackages": [
         "UPI_BASIC"
@@ -20,8 +20,8 @@
     "errors": [
       {
         "package": "UPI_BASIC",
-        "message": "Service unavailable for country INDIA",
-        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "message": "Invalid phone default country code",
+        "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"
       }
     ]

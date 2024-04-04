@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -9,11 +9,11 @@
       "IDENTITY_ENRICHMENT_PLUS",
       "EMPLOYMENT_DETAILS"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "059f27ba-2126-4f65-b7b3-d5e48bbec84f",
       "requestedPackages": [
         "EMAIL_BASIC",
         "EMAIL_SOCIAL",
@@ -49,8 +49,8 @@
       },
       {
         "package": "EMPLOYMENT_DETAILS",
-        "message": "At least one search parameter Email or Phone Number is required",
-        "code": "MISSING_EMAIL_AND_PHONE",
+        "message": "Email cannot be empty/null",
+        "code": "MISSING_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"
       }
     ]

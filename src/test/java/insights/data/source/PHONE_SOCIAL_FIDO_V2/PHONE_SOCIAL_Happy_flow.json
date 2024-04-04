@@ -71,7 +71,7 @@
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/2162893a/8217/4261/ad37/8b0cefb1c6ee.jpg",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/6a105946/4f97/467a/ace1/c504b6a4c231.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
@@ -80,13 +80,14 @@
                 "photo": null,
                 "privacyStatus": "PRIVATE",
                 "lastSeen": null,
-                "about": null
+                "about": null,
+                "businessAccount": false
               },
               "viber": {
                 "registered": true,
                 "photo": null,
-                "lastSeen": "2023-12-15T10:23:21Z",
-                "name": "Sameena"
+                "lastSeen": null,
+                "name": "Sameena Yasmeen"
               },
               "kakao": {
                 "registered": null
@@ -147,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "9148771222",
       "cleansedPhoneNumber": "+919148771222",
-      "referenceId": "411d41e2-0084-4368-82d3-238040ea35ff",
+      "referenceId": "22f646df-6d68-4773-b14a-d14b87e99b3d",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

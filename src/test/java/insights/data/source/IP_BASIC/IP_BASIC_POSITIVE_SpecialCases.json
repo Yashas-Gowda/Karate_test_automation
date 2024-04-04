@@ -7,7 +7,7 @@
     ],
     "ipAddress": "192.168.1.1"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -26,17 +26,17 @@
             "geoNameId": null
           },
           "internetServiceProvider": "Private IP Address",
-          "connectionType": "data center",
+          "connectionType": "residential",
           "autonomousSystemNumber": 0,
           "organization": "N/A",
           "isCrawler": false,
-          "host": "N/A",
+          "host": "192.168.1.1",
           "proxy": true,
-          "vpn": true,
+          "vpn": false,
           "tor": false,
           "activeVpn": false,
           "activeTor": false,
-          "recentAbuse": true,
+          "recentAbuse": false,
           "botStatus": true,
           "abuseVelocity": "high"
         }
@@ -47,15 +47,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "referenceId": "d4ae2748-ad26-41a1-80f4-23cdaf6de7d9",
       "inputIpAddress": "192.168.1.1",
       "requestedPackages": [
         "IP_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

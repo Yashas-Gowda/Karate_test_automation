@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "936983031",
     "phoneDefaultCountryCode": "VN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -77,7 +77,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/c2e51189/bf21/4bce/925a/a7ac0bcb14e9/a6b3f2e1-2cca-4ac5-afad-875d86c63044.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/f4af27b8/5275/4ade/85ac/52008b720a9c/5744bfd2-e2e8-445b-8398-38b8476bcd0f.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "936983031",
       "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "81435909-6302-4e2a-a837-670f09dd8ac0",
+      "referenceId": "61833d41-865d-4a53-9b70-6e2e67aacb2f",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

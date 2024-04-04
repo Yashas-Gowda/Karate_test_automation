@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,16 +7,16 @@
     ],
     "phoneNumber": "919981814775",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 6,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 2,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 1,
@@ -37,7 +37,7 @@
             },
             "ecommerce": {
               "flipkart": {
-                "registered": true
+                "registered": null
               },
               "bukalapak": {
                 "registered": null
@@ -77,7 +77,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/af4afa56/5f9e/41be/95dd/56b82c361460/c662b241-7955-4e0c-a4a2-5260b153fbac.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/bb47f4c1/ab96/4fee/a9e6/74b7766b87ae/6ee6da54-d1cc-4598-8f32-95c7d9e6e888.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "919981814775",
       "cleansedPhoneNumber": "+919981814775",
-      "referenceId": "957f884b-6389-4b13-976c-81e104008493",
+      "referenceId": "f96ae9b0-1a2d-421a-85eb-7e7b63e0ee68",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
