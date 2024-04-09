@@ -5,6 +5,7 @@
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "9066834500",
     "email": "acxsadf@gmail.com",
+    "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
     ]
@@ -45,11 +46,12 @@
     "meta": {
       "inputPhoneNumber": "9066834500",
       "cleansedPhoneNumber": "+919066834500",
-      "referenceId": "Dpi_march_6_upi_1",
+      "referenceId": "Dpi_march_29_2",
       "inputEmail": "acxsadf@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "PRIMARY"
     },
     "errors": []
   }
