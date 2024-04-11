@@ -41,7 +41,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                                                        | statusCode |
+      | Scenario                                                 | statusCode |
       | KYC_PAN_Positive_cleartax_sanity                         | 200        |
 
   @march_15
