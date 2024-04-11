@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "7780027572",
-    "email": "darshangowdadg456@gmail.com",
+    "phoneNumber": "9037453604",
+    "email": "eswarappam5929@gmail.com",
     "upiApplicationName": "PHONEPE",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -25,8 +25,8 @@
           "accounts": [
             {
               "appName": "PhonePe",
-              "nameAtBank": "RAJ KISHOR DAS",
-              "upiId": "7780027572@axl",
+              "nameAtBank": "MR SHANFAR T A",
+              "upiId": "9037453604@axl",
               "accountType": "ALTERNATE",
               "accountStatus": "VALID"
             }
@@ -39,16 +39,19 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "7780027572",
-      "cleansedPhoneNumber": "+917780027572",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
-      "inputEmail": "darshangowdadg456@gmail.com",
+      "inputPhoneNumber": "9037453604",
+      "cleansedPhoneNumber": "+919037453604",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "eswarappam5929@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "PHONEPE"
     },
     "errors": []
   }

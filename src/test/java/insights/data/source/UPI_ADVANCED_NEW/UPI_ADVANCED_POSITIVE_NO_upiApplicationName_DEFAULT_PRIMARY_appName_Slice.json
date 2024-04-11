@@ -1,15 +1,15 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "916380803145",
-    "email": "ashupgdim@gmail.com",
+    "phoneNumber": "9066834500",
+    "email": "acxsadf@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
-  }  ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -24,8 +24,8 @@
           "accounts": [
             {
               "appName": "Slice",
-              "nameAtBank": "SANGEETHRAJAN R",
-              "upiId": "sangeethrajan@sliceaxis",
+              "nameAtBank": "SRINIVAS  K R",
+              "upiId": "kr9066834@sliceaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -43,15 +43,14 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "916380803145",
-      "cleansedPhoneNumber": "+916380803145",
-      "referenceId": "17f44a6d-bd4b-40c2-be56-68ae4c874586",
-      "inputEmail": "ashupgdim@gmail.com",
+      "inputPhoneNumber": "9066834500",
+      "cleansedPhoneNumber": "+919066834500",
+      "referenceId": "Dpi_march_29_2",
+      "inputEmail": "acxsadf@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

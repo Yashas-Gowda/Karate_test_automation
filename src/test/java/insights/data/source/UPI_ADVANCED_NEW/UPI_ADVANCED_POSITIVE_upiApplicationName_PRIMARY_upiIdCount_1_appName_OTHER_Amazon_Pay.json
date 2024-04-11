@@ -1,16 +1,15 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "916380803145",
-    "email": "ashupgdim@gmail.com",
-    "upiApplicationName": "ALL",
+    "phoneNumber": "9609451590",
+    "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,19 +20,12 @@
       "upi": {
         "basic": null,
         "advanced": {
-          "upiIdCount": 2,
+          "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "Google Pay",
-              "nameAtBank": "ASHISH GUPTA",
-              "upiId": "ashupgdim@okhdfcbank",
-              "accountType": "ALTERNATE",
-              "accountStatus": "VALID"
-            },
-            {
-              "appName": "Slice",
-              "nameAtBank": "SANGEETHRAJAN R",
-              "upiId": "sangeethrajan@sliceaxis",
+              "appName": "Amazon Pay",
+              "nameAtBank": "PALASH PATRA",
+              "upiId": "9609451590@apl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -46,16 +38,18 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "916380803145",
-      "cleansedPhoneNumber": "+916380803145",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
-      "inputEmail": "ashupgdim@gmail.com",
+      "inputPhoneNumber": "9609451590",
+      "cleansedPhoneNumber": "+919609451590",
+      "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "PRIMARY"
     },
     "errors": []
   }
