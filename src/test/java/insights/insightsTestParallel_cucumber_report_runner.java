@@ -46,5 +46,4 @@ public class insightsTestParallel_cucumber_report_runner {
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
-
 }

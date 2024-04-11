@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "936983031",
+    "phoneNumber": "84936983031",
     "phoneDefaultCountryCode": "VN"
   },
   "response": {
@@ -146,14 +146,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "936983031",
+      "inputPhoneNumber": "84936983031",
       "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "61833d41-865d-4a53-9b70-6e2e67aacb2f",
+      "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
