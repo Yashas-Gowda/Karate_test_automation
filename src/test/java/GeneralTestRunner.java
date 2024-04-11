@@ -76,7 +76,7 @@ public class GeneralTestRunner {
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
-
+    
     @Test
     void DPI_Partner_registry() {
         Results results = Runner.path("classpath:DPI_Partner_registry")
@@ -84,6 +84,15 @@ public class GeneralTestRunner {
                 .tags("@Filter_Partner")
 //                .tags("@Get_Tenant_config")
 //                .tags("@Update_Tenant_config")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void mockDex() {
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("@data_partner_res_phone_social")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

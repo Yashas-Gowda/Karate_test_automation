@@ -7,7 +7,7 @@ Feature: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
     * def BearerToken = authFeature.authToken
 
 
-  Scenario Outline: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call
+  Scenario Outline: EMAIL_BASIC FIDO_email_basic Data Partner automation via DPI DEX call - <Scenario>
     * def dexUrl = requestUrl + '/api/exchange/01H785HGK5PSKMST8QZSEDCAQY'
     Given url dexUrl
     And def payload = read("data/" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")

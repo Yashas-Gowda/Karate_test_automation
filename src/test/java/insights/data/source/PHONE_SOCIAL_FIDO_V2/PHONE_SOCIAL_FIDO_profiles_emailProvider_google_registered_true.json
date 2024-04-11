@@ -1,14 +1,14 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "9108510043",
+    "phoneNumber": "919108510043",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -145,7 +145,7 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9108510043",
+      "inputPhoneNumber": "919108510043",
       "cleansedPhoneNumber": "+919108510043",
       "referenceId": "5df789ca-3e41-4dc2-a7c8-a6ec27f97bca",
       "requestedPackages": [

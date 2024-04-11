@@ -82,6 +82,15 @@ public class insightsTestParallelRunner {
     }
 
     @Test
+    void mockDex() {
+        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+                .tags("@data_partner_res_phone_social")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
     void single() {
         Results results = Runner.path("classpath:insights").outputCucumberJson(true)
                 .tags("@SMOKE_UPI_BASIC, @Mutliple_package_negative_scenarios")

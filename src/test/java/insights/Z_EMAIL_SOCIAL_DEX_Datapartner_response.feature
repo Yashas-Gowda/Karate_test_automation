@@ -7,7 +7,7 @@ Feature: EMAIL_SOCAIL FIDO_email_social Data Partner automation via DPI DEX call
     * def BearerToken = authFeature.authToken
 
 
-  Scenario Outline: EMAIL_SOCIAL FIDO_email_social Data Partner automation via DPI DEX call
+  Scenario Outline: EMAIL_SOCIAL FIDO_email_social Data Partner automation via DPI DEX call - <Scenario>
     * def dexUrl = requestUrl + '/api/exchange/01H72X88KKK3R5013F54H5P09T'
     Given url dexUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")

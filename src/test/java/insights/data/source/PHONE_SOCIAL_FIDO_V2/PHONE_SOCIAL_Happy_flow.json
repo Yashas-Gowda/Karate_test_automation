@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "9148771222",
+    "phoneNumber": "919148771222",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
@@ -146,7 +146,7 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9148771222",
+      "inputPhoneNumber": "919148771222",
       "cleansedPhoneNumber": "+919148771222",
       "referenceId": "22f646df-6d68-4773-b14a-d14b87e99b3d",
       "requestedPackages": [

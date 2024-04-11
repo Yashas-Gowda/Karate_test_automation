@@ -1,14 +1,14 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "62818507188",
+    "phoneNumber": "6262818507188",
     "phoneDefaultCountryCode": "ID"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -145,7 +145,7 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "62818507188",
+      "inputPhoneNumber": "6262818507188",
       "cleansedPhoneNumber": "+6262818507188",
       "referenceId": "8880ff76-85ec-40a8-b457-e828406abe5b",
       "requestedPackages": [
