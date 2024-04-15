@@ -27,7 +27,7 @@
         "basic": {
           "records": [
             {
-              "cleansedAddress": "Police Chowki-Tajmahal, Forest Colony, Agra 282001, India",
+              "cleansedAddress": "Taj Mahal, Shilpgram Road, Paktola, Taj Ganj, Agra 282001, India",
               "city": "Agra",
               "state": "Uttar Pradesh",
               "postalCode": "282001",
@@ -39,16 +39,17 @@
               "subPremisesType": null,
               "subPremisesNumber": null,
               "postbox": null,
-              "latitude": "27.17222",
-              "longitude": "78.03855",
+              "latitude": "27.16407",
+              "longitude": "78.05363",
               "addressType": null,
               "utcOffset": null,
               "observesDst": null,
               "resultType": "place",
-              "district": "Forest Colony"
+              "district": "Taj Ganj"
             }
           ]
-        }
+        },
+        "verification": null
       },
       "name": null,
       "ip": null,
@@ -58,10 +59,14 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "c4707d8f-1554-4b9a-b035-3638e870b159",
       "requestedPackages": [
         "ADDRESS_BASIC"
       ],
@@ -80,6 +85,7 @@
         "country": null
       }
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
