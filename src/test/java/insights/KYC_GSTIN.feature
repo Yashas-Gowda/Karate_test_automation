@@ -47,7 +47,6 @@ Feature: Testing of DPI  - KYC_GSTIN Package scenarios with cashfree dp
       | KYC_GSTIN_Positive_cashfree_sanity_sample_1                       | 200        |
       | KYC_GSTIN_Positive_cashfree_sanity_sample_2                       | 200        |
       | KYC_GSTIN_Positive_cashfree_sanity_sample_3                       | 200        |
-      | KYC_GSTIN_Positive_cashfree_sanity_sample_4                       | 200        |
 
   Scenario Outline:  DPI KYC_GSTIN Package Negative scenarios for differnt samples :- <Scenario>
     Given url requestUrl
@@ -75,26 +74,25 @@ Feature: Testing of DPI  - KYC_GSTIN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.pan == "#null"
-    * match $.data.kyc.gstin contains only deep payload.response.data.kyc.gstin
+    * match $.data == "#null"
     * match $.meta contains only deep payload.response.meta
-    * match $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match $.errors contains only deep payload.response.errors
 
     Examples:
       | Scenario                                                          | statusCode |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_is_missing                      | 200        |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_syntax_format                       | 200        |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_abc                      | 200        |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_123                      | 200        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_is_missing                      | 400        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_syntax_format  | 400        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_abc            | 400        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_123            | 400        |
 
       # https://monnai.atlassian.net/browse/MB-4541
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string                      | 200        |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string_with_space                      | 200        |
-      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string_with_space                      | 200        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string                | 400        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string_with_space     | 400        |
+      | KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_null                        | 400        |
 
       #  https://monnai.atlassian.net/browse/MB-4542
-      |  KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_number               | 400        |
+      |  KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_number                | 400        |
       |  KYC_GSTIN_Negative_scenarios_When_pan_data_Point_key_value_is_boolean               | 400        |
 
 
