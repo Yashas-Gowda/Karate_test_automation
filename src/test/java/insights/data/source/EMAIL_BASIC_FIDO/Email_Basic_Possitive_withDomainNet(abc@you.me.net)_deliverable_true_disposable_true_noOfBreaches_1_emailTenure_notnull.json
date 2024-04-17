@@ -64,13 +64,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "057bb0af-ccf2-443a-9d7d-ce43ed756ef4",
+      "referenceId": "Dpi_April_17_1",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

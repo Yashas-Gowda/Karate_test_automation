@@ -13,7 +13,7 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": null,
           "domainDetails": {
             "domainName": "ourearth.com",
             "tld": ".com",
@@ -29,23 +29,28 @@
             "spfStrict": null,
             "suspiciousTld": null,
             "websiteExists": false,
-            "acceptAll": false,
+            "acceptAll": null,
             "custom": null
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 1,
+            "noOfBreaches": 2,
             "firstBreach": "2019-02-25",
-            "lastBreach": "2019-02-25",
+            "lastBreach": "2023-09-20",
             "breaches": [
               {
                 "platformName": "VerificationsIO",
                 "domainName": null,
                 "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "NazApi",
+                "domainName": null,
+                "breachDate": "2023-09-20"
               }
             ]
           },
-          "emailTenure": 5.05
+          "emailTenure": 5.14
         }
       },
       "address": null,
@@ -64,13 +69,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "0b1185ff-a7c5-48e9-8f79-24fb25acb119",
+      "referenceId": "Dpi_April_17_1",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
