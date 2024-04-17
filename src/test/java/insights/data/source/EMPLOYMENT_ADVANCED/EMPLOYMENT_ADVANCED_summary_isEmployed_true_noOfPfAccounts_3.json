@@ -45,17 +45,6 @@
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "100460881293",
-              "name": "Palloli Karthik",
-              "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
-              "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
-              "dateOfJoining": "2014-08-01",
-              "dateOfExit": "2015-03-18",
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "101287760910",
               "name": "PALLOLI KARTHIK",
               "gender": "MALE",
@@ -66,14 +55,25 @@
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********3218",
-                "taxId": "BLOPP6921P",
-                "email": "PALLOLIKARTHIK@GMAIL.COM",
-                "bankAccountNumber": "31526934295",
-                "bankBranchCode": "SBIN0013236",
+                "taxId": "BL******1P",
+                "email": "P************K@GMAIL.COM",
+                "bankAccountNumber": "*******4295",
+                "bankBranchCode": "SBIN*****36",
                 "bankAddress": "STATE BANK OF INDIA,KOLIMIGUNDLA",
                 "pfNomineeName": "PALLOLI SEKHARA BABU",
                 "pfNomineeRelation": "FATHER"
               }
+            },
+            {
+              "pfAccountNumber": "100460881293",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
+              "dateOfJoining": "2014-08-01",
+              "dateOfExit": "2015-03-18",
+              "reasonOfExit": ""
             }
           ],
           "pfFilingDetails": {
@@ -123,7 +123,7 @@
     "meta": {
       "inputPhoneNumber": "8106068222",
       "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "3c4346f1-60cb-457a-82a0-8790586c97b3",
+      "referenceId": "356a07f1-60fc-4627-8701-039dda3c7328",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]

@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,7 +7,7 @@
     ],
     "phoneNumber": "9892340894",
     "phoneDefaultCountryCode": "IN"
-  } ,
+  },
   "response": {
     "data": {
       "phone": null,
@@ -33,6 +33,27 @@
           },
           "employmentHistory": [
             {
+              "pfAccountNumber": "101281942125",
+              "name": "Jitesh Mahendra Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "CHANNEL PLAY LIMITED",
+              "dateOfJoining": "2019-10-01",
+              "dateOfExit": "2020-07-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "********1912",
+                "bankBranchCode": "ICIC*****04",
+                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
+                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
               "pfAccountNumber": "100740741243",
               "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
@@ -44,33 +65,12 @@
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "NOT AVAILABLE",
-                "bankAccountNumber": "34086158330",
-                "bankBranchCode": "SBIN0002184",
+                "taxId": "AL******9R",
+                "email": "",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
                 "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
                 "pfNomineeName": "MAHENDRA",
-                "pfNomineeRelation": "FATHER"
-              }
-            },
-            {
-              "pfAccountNumber": "100956281807",
-              "name": "JITESH MAHENDRA VALANTRA",
-              "gender": "MALE",
-              "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
-              "dateOfJoining": "2016-10-01",
-              "dateOfExit": "2018-02-28",
-              "reasonOfExit": "",
-              "additionalDetails": {
-                "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "JITESH.VALANTRA1991@GMAIL.COM",
-                "bankAccountNumber": "34086158330",
-                "bankBranchCode": "SBIN0002184",
-                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
-                "pfNomineeName": "Mahendra Valantra",
                 "pfNomineeRelation": "FATHER"
               }
             },
@@ -86,23 +86,23 @@
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "101281942125",
-              "name": "Jitesh Mahendra Valantra",
+              "pfAccountNumber": "100956281807",
+              "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
               "nationalIdVerificationStatus": true,
-              "employerName": "CHANNEL PLAY LIMITED",
-              "dateOfJoining": "2019-10-01",
-              "dateOfExit": "2020-07-10",
+              "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
+              "dateOfJoining": "2016-10-01",
+              "dateOfExit": "2018-02-28",
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "JITESH.VALANTRA1991@GMAIL.COM",
-                "bankAccountNumber": "000401781912",
-                "bankBranchCode": "ICIC0000004",
-                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
-                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "Mahendra Valantra",
                 "pfNomineeRelation": "FATHER"
               }
             }
@@ -111,15 +111,21 @@
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "25734019",
-                "employeeCount": 8383,
-                "wageMonth": "DEC-23"
+                "totalAmount": "28760612",
+                "employeeCount": 9493,
+                "wageMonth": "FEB-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "25013707",
-                "employeeCount": 8076,
-                "wageMonth": "NOV-23"
+                "totalAmount": "27398614",
+                "employeeCount": 8985,
+                "wageMonth": "JAN-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "25734019",
+                "employeeCount": 8383,
+                "wageMonth": "DEC-23"
               }
             ]
           }
@@ -137,7 +143,7 @@
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "1487551e-f263-4539-a876-f8554adc90e5",
+      "referenceId": "fb734fc3-6d42-4871-9b04-fe860059ecd7",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
