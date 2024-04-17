@@ -48,7 +48,7 @@
               "employerName": "SHREE BALAJI INDUSTRIAL SERVICES",
               "dateOfJoining": "2013-09-18",
               "dateOfExit": "2014-06-30",
-              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+              "reasonOfExit": ""
             },
             {
               "pfAccountNumber": "100897556662",
@@ -70,7 +70,7 @@
               "employerName": "A K AUTOMATICS UNIT-III",
               "dateOfJoining": "2014-06-02",
               "dateOfExit": "2016-07-09",
-              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+              "reasonOfExit": ""
             }
           ]
         },
@@ -88,7 +88,7 @@
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "7fd29f9d-2e9c-4b80-8acf-b514094ac204",
+      "referenceId": "39f35658-380c-4d06-802c-85ba3a2ef30a",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
