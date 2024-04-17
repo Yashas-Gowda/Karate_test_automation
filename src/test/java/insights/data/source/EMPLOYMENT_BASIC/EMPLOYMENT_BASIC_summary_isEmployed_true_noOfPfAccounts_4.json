@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "9466760550",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -29,6 +29,17 @@
           },
           "employmentHistory": [
             {
+              "pfAccountNumber": "101157962288",
+              "name": "Sansaar",
+              "gender": "MALE",
+              "dateOfBirth": "1996-09-04",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RANA ENTERPRISES",
+              "dateOfJoining": "2022-07-04",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
               "pfAccountNumber": "100080237365",
               "name": "Amit Kumar",
               "gender": "MALE",
@@ -37,7 +48,7 @@
               "employerName": "SHREE BALAJI INDUSTRIAL SERVICES",
               "dateOfJoining": "2013-09-18",
               "dateOfExit": "2014-06-30",
-              "reasonOfExit": ""
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
               "pfAccountNumber": "100897556662",
@@ -51,17 +62,6 @@
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "101157962288",
-              "name": "Sansaar",
-              "gender": "MALE",
-              "dateOfBirth": "1996-09-04",
-              "nationalIdVerificationStatus": true,
-              "employerName": "RANA ENTERPRISES",
-              "dateOfJoining": "2022-07-04",
-              "dateOfExit": null,
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "100511577626",
               "name": "AMIT",
               "gender": "MALE",
@@ -70,7 +70,7 @@
               "employerName": "A K AUTOMATICS UNIT-III",
               "dateOfJoining": "2014-06-02",
               "dateOfExit": "2016-07-09",
-              "reasonOfExit": ""
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             }
           ]
         },
@@ -88,7 +88,7 @@
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "c9c471e2-e8ad-4455-91be-901902cdabb0",
+      "referenceId": "7fd29f9d-2e9c-4b80-8acf-b514094ac204",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
