@@ -15,7 +15,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
+#    * set payload.response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     When method POST
    # cloud watch traces -start
     * print karate.request.headers
