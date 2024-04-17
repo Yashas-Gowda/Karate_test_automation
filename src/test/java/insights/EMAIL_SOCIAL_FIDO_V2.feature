@@ -958,6 +958,10 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
           "employment":  '#null',
           "income":  '#null',
           "blacklist":  '#null',
+          "domain":'#null',
+          "kyc": '#null',
+          "bank":'#null',
+          "aadhaar":'#null',
           "bre":  '#null'
         },
         "meta": {
