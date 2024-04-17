@@ -13,23 +13,23 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": false,
+          "deliverable": true,
           "domainDetails": {
             "domainName": "you.me.net",
             "tld": ".net",
             "creationTime": null,
             "updateTime": null,
             "expiryTime": null,
-            "registered": false,
+            "registered": true,
             "companyName": null,
             "registrarName": null,
-            "disposable": false,
+            "disposable": true,
             "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": false,
-            "acceptAll": false,
+            "websiteExists": true,
+            "acceptAll": null,
             "custom": null
           },
           "breach": {
@@ -45,7 +45,7 @@
               }
             ]
           },
-          "emailTenure": 5.05
+          "emailTenure": 5.14
         }
       },
       "address": null,
@@ -64,7 +64,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ee813c16-886a-47ff-996e-88ff61cc242b",
+      "referenceId": "057bb0af-ccf2-443a-9d7d-ce43ed756ef4",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"
