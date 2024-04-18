@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "mysite@you.me.net"
+    "email": "mysite@ourearth.com"
   },
   "response": {
     "data": {
@@ -13,39 +13,44 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": false,
+          "deliverable": null,
           "domainDetails": {
-            "domainName": "you.me.net",
-            "tld": ".net",
+            "domainName": "ourearth.com",
+            "tld": ".com",
             "creationTime": null,
             "updateTime": null,
             "expiryTime": null,
-            "registered": false,
-            "companyName": null,
-            "registrarName": null,
+            "registered": null,
+            "companyName": "",
+            "registrarName": "GoDaddy.com, LLC",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
             "websiteExists": false,
-            "acceptAll": false,
+            "acceptAll": null,
             "custom": null
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 1,
+            "noOfBreaches": 2,
             "firstBreach": "2019-02-25",
-            "lastBreach": "2019-02-25",
+            "lastBreach": "2023-09-20",
             "breaches": [
               {
                 "platformName": "VerificationsIO",
                 "domainName": null,
                 "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "NazApi",
+                "domainName": null,
+                "breachDate": "2023-09-20"
               }
             ]
           },
-          "emailTenure": 5.05
+          "emailTenure": 5.14
         }
       },
       "address": null,
@@ -64,13 +69,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ee813c16-886a-47ff-996e-88ff61cc242b",
-      "inputEmail": "mysite@you.me.net",
+      "referenceId": "Dpi_April_17_1",
+      "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

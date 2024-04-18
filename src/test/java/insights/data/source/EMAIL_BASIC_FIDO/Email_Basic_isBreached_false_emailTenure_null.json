@@ -13,11 +13,11 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": false,
           "domainDetails": {
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-07-20 06:41:01",
+            "creationTime": "1997-05-01 08:18:37",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -59,7 +59,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "09005f3e-7982-45c5-9171-2a8f59601eec",
+      "referenceId": "3ae4a075-3419-48a5-b70b-78386b4e04f9",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

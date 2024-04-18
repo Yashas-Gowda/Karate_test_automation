@@ -1,0 +1,53 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "gstin": "27AAHFJ2001P1ZC",
+    "packages": [
+      "KYC_GSTIN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": null,
+        "gstin": {
+          "valid": true,
+          "status": "Active",
+          "registeredName": "J R C SERVICES",
+          "registeredDate": "2017-07-01",
+          "lastUpdated": "2019-09-07",
+          "businessConstitution": "Partnership",
+          "taxpayerType": "Regular",
+          "natureOfBusiness": [
+            "Service Provision"
+          ],
+          "gstinAddress": "ORCHID PLAZA LOTUS COURT, A-2 / 101 - 102, DAHISAR EAST, R T ROAD, Maharashtra, 400068"
+        }
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_march_6_upi_1",
+      "requestedPackages": [
+        "KYC_GSTIN"
+      ],
+      "inputGstin": "27AAHFJ2001P1ZC"
+    },
+    "errors": []
+  }
+}

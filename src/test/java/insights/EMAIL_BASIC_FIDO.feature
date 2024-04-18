@@ -89,7 +89,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                       | statusCode |
-      | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_7_emailTenure_notnull_double_digit | 200        |
+      | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_more_than_7_emailTenure_notnull_double_digit | 200        |
       | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                              | 200        |
       | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
       | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                              | 200        |
@@ -209,8 +209,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
-      | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_false_disposable_false_noOfBreaches_1_emailTenure_notnull                                                                                               | 200        |
-      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_null_disposable_false_acceptAll_false_noOfBreaches_1_emailTenure_notnull                                                                    | 200        |
+      | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_true_disposable_true_noOfBreaches_1_emailTenure_notnull                                                                                              | 200        |
+      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_null_disposable_false_noOfBreaches_2_emailTenure_notnull                                                                    | 200        |
     # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
   ## Check this
   @smokeTest

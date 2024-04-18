@@ -40,7 +40,7 @@
               "google": {
                 "registered": true,
                 "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b9319cbb/1b6a/48d5/8934/f0af6c6eef5a/fa36f874-705a-4960-9f40-8c47072c581e.jpg",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -265,12 +265,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_feb_29_Am_5",
+      "referenceId": "6fdcb880-3e68-431a-af1c-a58aff2c7d8b",
       "inputEmail": "rraghavendra523@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

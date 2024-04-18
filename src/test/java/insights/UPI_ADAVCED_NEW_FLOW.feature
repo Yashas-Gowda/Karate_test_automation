@@ -309,7 +309,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_4_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+      # Data changed so haven't find number with 4 ids     | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_4_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_Slice_all_other_handles_should_call             | 200        |
 
   # when phone number with country code appended in the request

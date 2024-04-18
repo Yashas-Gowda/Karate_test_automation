@@ -2,7 +2,7 @@
   "request": {
     "eventType": "ACCOUNT_CREATION",
     "phoneDefaultCountryCode": "IN",
-    "pan": "ABCDC1234C",
+    "pan": "DBTPP3898A",
     "packages": [
       "KYC_PAN"
     ]
@@ -23,9 +23,13 @@
       "domain": null,
       "kyc": {
         "pan": {
-          "pan": "ABCDC1234C",
-          "valid": false,
-          "status": "INVALID"
+          "pan": "DBTPP3898A",
+          "type": "Individual",
+          "valid": true,
+          "status": "VALID",
+          "panCardName": "PRAMILA",
+          "aadhaarLinkStatus": "U",
+          "aadhaarLinkStatusDesc": "Unable to fetch Aadhaar Seeding status"
         },
         "gstin": null
       },
@@ -34,11 +38,11 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "2df6227a-d30c-4212-814d-658d8a739080",
+      "referenceId": "330c8d9b-3c58-43fb-9f6d-630ba340e1e3",
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "ABCDC1234C"
+      "inputPan": "DBTPP3898A"
     },
     "errors": [
     ]

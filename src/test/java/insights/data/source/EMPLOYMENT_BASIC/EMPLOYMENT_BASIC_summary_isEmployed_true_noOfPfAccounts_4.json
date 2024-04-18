@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "9466760550",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -29,6 +29,17 @@
           },
           "employmentHistory": [
             {
+              "pfAccountNumber": "101157962288",
+              "name": "Sansaar",
+              "gender": "MALE",
+              "dateOfBirth": "1996-09-04",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RANA ENTERPRISES",
+              "dateOfJoining": "2022-07-04",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
               "pfAccountNumber": "100080237365",
               "name": "Amit Kumar",
               "gender": "MALE",
@@ -47,17 +58,6 @@
               "nationalIdVerificationStatus": true,
               "employerName": "TIGHT WELL FASTNERS",
               "dateOfJoining": "2016-07-13",
-              "dateOfExit": null,
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "101157962288",
-              "name": "Sansaar",
-              "gender": "MALE",
-              "dateOfBirth": "1996-09-04",
-              "nationalIdVerificationStatus": true,
-              "employerName": "RANA ENTERPRISES",
-              "dateOfJoining": "2022-07-04",
               "dateOfExit": null,
               "reasonOfExit": ""
             },
@@ -88,7 +88,7 @@
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "c9c471e2-e8ad-4455-91be-901902cdabb0",
+      "referenceId": "39f35658-380c-4d06-802c-85ba3a2ef30a",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]

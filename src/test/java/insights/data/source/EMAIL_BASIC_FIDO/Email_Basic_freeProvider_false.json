@@ -17,11 +17,11 @@
           "domainDetails": {
             "domainName": "xyz.com",
             "tld": ".com",
-            "creationTime": "1994-06-16 06:41:01",
+            "creationTime": "1994-03-29 08:18:37",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "XYZ.com LLC",
+            "companyName": "",
             "registrarName": "GoDaddy.com, LLC",
             "disposable": false,
             "freeProvider": false,
@@ -59,7 +59,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "bda55b40-0d32-4b98-974f-9261e91a9920",
+      "referenceId": "5ad60030-3445-41ef-a1d6-2b454aea529e",
       "inputEmail": "ssam09999329420dsdssdds@xyz.com",
       "requestedPackages": [
         "EMAIL_BASIC"

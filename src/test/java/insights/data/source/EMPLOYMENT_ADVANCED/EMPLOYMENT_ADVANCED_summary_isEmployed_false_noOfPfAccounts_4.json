@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "9892340894",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -33,38 +33,6 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100956281807",
-              "name": "JITESH MAHENDRA VALANTRA",
-              "gender": "MALE",
-              "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
-              "dateOfJoining": "2016-10-01",
-              "dateOfExit": "2018-02-28",
-              "reasonOfExit": "",
-              "additionalDetails": {
-                "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "JITESH.VALANTRA1991@GMAIL.COM",
-                "bankAccountNumber": "34086158330",
-                "bankBranchCode": "SBIN0002184",
-                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
-                "pfNomineeName": "Mahendra Valantra",
-                "pfNomineeRelation": "FATHER"
-              }
-            },
-            {
-              "pfAccountNumber": "100029970350",
-              "name": "Jitesh M Valantra",
-              "gender": "MALE",
-              "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "XYLEM RESOURCE MANAGEMENT PVT LTD",
-              "dateOfJoining": "2014-04-23",
-              "dateOfExit": "2015-09-30",
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "100740741243",
               "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
@@ -76,12 +44,33 @@
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "NOT AVAILABLE",
-                "bankAccountNumber": "34086158330",
-                "bankBranchCode": "SBIN0002184",
+                "taxId": "AL******9R",
+                "email": "",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
                 "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
                 "pfNomineeName": "MAHENDRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100956281807",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
+              "dateOfJoining": "2016-10-01",
+              "dateOfExit": "2018-02-28",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "Mahendra Valantra",
                 "pfNomineeRelation": "FATHER"
               }
             },
@@ -97,35 +86,46 @@
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********4086",
-                "taxId": "ALTPV9559R",
-                "email": "JITESH.VALANTRA1991@GMAIL.COM",
-                "bankAccountNumber": "000401781912",
-                "bankBranchCode": "ICIC0000004",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "********1912",
+                "bankBranchCode": "ICIC*****04",
                 "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
                 "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
                 "pfNomineeRelation": "FATHER"
               }
+            },
+            {
+              "pfAccountNumber": "100029970350",
+              "name": "Jitesh M Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "XYLEM RESOURCE MANAGEMENT PVT LTD",
+              "dateOfJoining": "2014-04-23",
+              "dateOfExit": "2015-09-30",
+              "reasonOfExit": ""
             }
           ],
           "pfFilingDetails": {
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
+                "totalAmount": "28760612",
+                "employeeCount": 9493,
+                "wageMonth": "FEB-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "27398614",
+                "employeeCount": 8985,
+                "wageMonth": "JAN-24"
+              },
+              {
+                "currency": "INR",
                 "totalAmount": "25734019",
                 "employeeCount": 8383,
                 "wageMonth": "DEC-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "25008082",
-                "employeeCount": 8073,
-                "wageMonth": "NOV-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "24622368",
-                "employeeCount": 7973,
-                "wageMonth": "OCT-23"
               }
             ]
           }
@@ -143,7 +143,7 @@
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "5a80d15c-dad7-496d-a997-8afb4d141413",
+      "referenceId": "dcfde14f-9f90-4649-b934-a4d7736c9d60",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]

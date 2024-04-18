@@ -55,10 +55,10 @@
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********3266",
-                "taxId": "GBMPS5977K",
-                "email": "mahipalkumarsingh@gmail.com",
-                "bankAccountNumber": "006991800020659",
-                "bankBranchCode": "YESB0000069",
+                "taxId": "GB******7K",
+                "email": "m***************h@gmail.com",
+                "bankAccountNumber": "***********0659",
+                "bankBranchCode": "YESB*****69",
                 "bankAddress": "YES BANK,NEW FRIENDS COLONY, NEW DELHI",
                 "pfNomineeName": "RAVINDRA SINGH",
                 "pfNomineeRelation": "FATHER"
@@ -69,8 +69,14 @@
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "4602572",
-                "employeeCount": 1260,
+                "totalAmount": "4334040",
+                "employeeCount": 1182,
+                "wageMonth": "FEB-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "4678565",
+                "employeeCount": 1300,
                 "wageMonth": "JAN-24"
               },
               {
@@ -78,12 +84,6 @@
                 "totalAmount": "5771199",
                 "employeeCount": 1588,
                 "wageMonth": "DEC-23"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "7923178",
-                "employeeCount": 2174,
-                "wageMonth": "NOV-23"
               }
             ]
           }
@@ -101,11 +101,12 @@
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "Dpi_march_6_upi_1",
+      "referenceId": "924ced4e-3427-4c9d-b6d1-ab579748820b",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

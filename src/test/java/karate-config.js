@@ -1,7 +1,7 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'release-fidoV2'
+    var env = 'test-fidoV2'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
@@ -16,7 +16,7 @@ function() {
         env,
         headers: {
             "x-reference-id": uuid(),
-            "x-request-id": "Via_Automation_"+uuid(),
+            "x-request-id": "Via_Automation_" + uuid(),
             "Content-Type": "application/vnd.monnai.v1.2+json",
             "x-timeout":60000,
             "Accept": "application/json"

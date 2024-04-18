@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "mysite@ourearth.com"
+    "email": "mysite@you.me.net"
   },
   "response": {
     "data": {
@@ -15,21 +15,21 @@
         "basic": {
           "deliverable": true,
           "domainDetails": {
-            "domainName": "ourearth.com",
-            "tld": ".com",
+            "domainName": "you.me.net",
+            "tld": ".net",
             "creationTime": null,
             "updateTime": null,
             "expiryTime": null,
-            "registered": null,
-            "companyName": "",
-            "registrarName": "GoDaddy.com, LLC",
-            "disposable": false,
+            "registered": true,
+            "companyName": null,
+            "registrarName": null,
+            "disposable": true,
             "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": false,
-            "acceptAll": false,
+            "websiteExists": true,
+            "acceptAll": null,
             "custom": null
           },
           "breach": {
@@ -45,7 +45,7 @@
               }
             ]
           },
-          "emailTenure": 5.05
+          "emailTenure": 5.14
         }
       },
       "address": null,
@@ -64,13 +64,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "0b1185ff-a7c5-48e9-8f79-24fb25acb119",
-      "inputEmail": "mysite@ourearth.com",
+      "referenceId": "Dpi_April_17_1",
+      "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
