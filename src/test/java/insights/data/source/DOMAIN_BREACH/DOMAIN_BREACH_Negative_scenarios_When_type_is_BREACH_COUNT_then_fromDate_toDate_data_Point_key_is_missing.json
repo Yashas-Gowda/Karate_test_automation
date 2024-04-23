@@ -1,0 +1,22 @@
+{
+  "request": {
+    "type": "BREACH_COUNT",
+    "domainName": "example.org",
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Specify date ranges in the request",
+        "code": "INVALID_DATE_RANGE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
