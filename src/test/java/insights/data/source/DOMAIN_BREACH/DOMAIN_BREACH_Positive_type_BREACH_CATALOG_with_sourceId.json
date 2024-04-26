@@ -1,0 +1,69 @@
+{
+  "request": {
+    "type": "BREACH_CATALOG",
+    "sourceId": "46975",
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": {
+        "breach": {
+          "catalog": {
+            "uuid": "f7171a45-ae91-4be2-ace7-b3e261dd011a",
+            "title": "MetaStealer Stealer",
+            "description": "MetaStealer is a Windows-targeted stealer designed to grab form data such as IP addresses, browsing history, saved passwords, cryptocurrency, private messages and/or screenshots from affected users.",
+            "sourceId": 46975,
+            "type": "PRIVATE",
+            "numRecords": 4,
+            "site": "n/a",
+            "siteDescription": "MetaStealer is a Windows-targeted stealer designed to grab form data such as IP addresses, browsing history, saved passwords, cryptocurrency, private messages and/or screenshots from affected users.",
+            "assets": {
+              "country": 4,
+              "userOs": 4,
+              "displayResolution": 4,
+              "avSoftwares": 4,
+              "infectedTime": 4,
+              "infectedMachineId": 4,
+              "password": 4,
+              "userSysRegisteredOwner": 4,
+              "infectedPath": 4,
+              "countryCode": 4,
+              "logId": 4,
+              "ipAddresses": 4,
+              "userBrowser": 4,
+              "targetUrl": 4,
+              "username": 4
+            }
+          }
+        }
+      },
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_CATALOG",
+      "inputSourceId": "46975"
+    },
+    "errors": []
+  }
+}
