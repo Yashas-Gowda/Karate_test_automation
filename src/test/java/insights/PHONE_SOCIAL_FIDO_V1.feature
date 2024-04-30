@@ -1,4 +1,5 @@
- @FidoV1 @ignore
+ @PHONE_SOCIAL_FidoV1
+# @ignore
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
 #  @FIDO_V1 @ignore
   Background:
