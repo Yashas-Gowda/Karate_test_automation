@@ -1,7 +1,7 @@
 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_COUNT
 
 @parallel=false
-Feature: Testing of DPI  - DOMAIN_BREACH Package scenarios
+Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_COUNT Package scenarios
 
   Background:
     * configure charset = null

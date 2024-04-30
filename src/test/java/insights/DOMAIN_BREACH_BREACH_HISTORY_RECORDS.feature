@@ -1,7 +1,7 @@
 @DOMAIN_BREACH  @DOMAIN_BREACH_BREACH_HISTORY_RECORDS
 
 @parallel=false
-Feature: Testing of DPI  - DOMAIN_BREACH Package scenarios
+Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_HISTORY_RECORDS Package scenarios
 
   Background:
     * configure charset = null
