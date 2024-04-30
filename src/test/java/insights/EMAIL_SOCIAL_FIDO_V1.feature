@@ -1,5 +1,4 @@
-@EMAIL_SOCIAL_FIDOV1
-  #@ignore
+@EMAIL_SOCIAL_FIDOV1 @ignore
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   Background:
     * configure charset = null

@@ -1,4 +1,4 @@
- @FidoV1  @ignore @seon_email
+@seon_email @EMAIL_BASIC_SEON @ignore
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
 #@seon_email @ignore
   Background:
