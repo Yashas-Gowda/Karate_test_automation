@@ -1,0 +1,68 @@
+{
+  "app_client_name": "Automation Tenant - Automation_release_seon  - Automation_release_seon@tenant_01HWPKVGNR78QYBFZX8NJTX3XP ",
+  "client_id": "18f1834dlir3j8dtep89p85i5s",
+  "client_secret": "117g5lcbukd355934jqai7h1hf33j03bsf8a89vg8pu3e127d2me",
+  "grant_type": "client_credentials",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach",
+  "issue-description": "Automation_release_seon tenant configured for seon",
+  "tenant_config": {
+    "tenant": "tenant_01HWPKVGNR78QYBFZX8NJTX3XP",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone",
+          "order": 0
+        }
+      }
+    }
+  }
+}
