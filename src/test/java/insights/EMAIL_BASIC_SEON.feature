@@ -1,5 +1,5 @@
 @seon_email @EMAIL_BASIC_SEON @ignore
-Feature: Testing of DPI  - EMAIL_BASIC feature scenarios
+Feature: Testing of DPI  - EMAIL_BASIC_SEON feature scenarios
 #@seon_email @ignore
   Background:
     * configure charset = null

@@ -1,5 +1,5 @@
 @PHONE_SOCIAL_SEON @ignore
-Feature: Testing of DPI  - PHONE_SOCIAL scenarios
+Feature: Testing of DPI  - PHONE_SOCIAL_SEON scenarios
 
   Background:
     * configure charset = null
