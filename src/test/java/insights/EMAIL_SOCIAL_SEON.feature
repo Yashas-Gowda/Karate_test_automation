@@ -1,5 +1,5 @@
 @seon_email  @EMAIL_SOCIAL_SEON @ignore
-Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
+Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
 
   Background:
     * configure charset = null
