@@ -1,4 +1,4 @@
-@FIDO_V2
+@FIDO_V2 @PHONE_SOCIAL_FIDOV2
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
 
   Background:
