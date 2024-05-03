@@ -54,7 +54,8 @@
       },
       "EMAIL_SOCIAL": {
         "01H8C58BBSVB67MHSPPN1D8XYR": {
-          "name": "Seon Email Social"
+          "name": "Seon Email Social",
+          "order": 0
         }
       },
       "PHONE_SOCIAL": {
