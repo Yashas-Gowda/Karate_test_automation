@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "yashasgowda2510@gmail.com"
+    "email": "vsupritha1804@gmail.com"
   },
   "response": {
     "data": {
@@ -12,25 +12,25 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 7,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 3,
-            "registeredMessagingProfiles": 0,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 1,
+            "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": null
               },
               "samsung": {
                 "registered": null
@@ -39,9 +39,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "YASHAS MODEGOWDRU",
-                "photo": null,
-                "gender": "M"
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/60f883ce/3362/44c1/b3c5/c2c8ae04e106/15908c27-4a45-4abc-91c6-a1c14f7935ac.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -87,7 +86,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
@@ -97,7 +96,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -139,11 +138,11 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "Supritha V",
+                "id": "live:.cid.b84a673fd732cd2a",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -225,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -273,13 +272,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "7fed127d-64ee-4076-82ed-0441351bbba0",
-      "inputEmail": "yashasgowda2510@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "vsupritha1804@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

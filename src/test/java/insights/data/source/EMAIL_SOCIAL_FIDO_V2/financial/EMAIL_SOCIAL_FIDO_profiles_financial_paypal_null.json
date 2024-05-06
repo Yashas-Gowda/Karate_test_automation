@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "yashasgowda2510@gmail.com"
+    "email": "listing@binance.com"
   },
   "response": {
     "data": {
@@ -12,25 +12,25 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredProfiles": 2,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 0,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 0,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 1,
+            "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": null
@@ -39,12 +39,11 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "YASHAS MODEGOWDRU",
-                "photo": null,
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -55,7 +54,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -81,7 +80,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
@@ -94,10 +93,10 @@
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -185,7 +184,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": true
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -225,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -242,7 +241,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": false
+                "registered": null
               },
               "binance": {
                 "registered": false
@@ -273,13 +272,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "7fed127d-64ee-4076-82ed-0441351bbba0",
-      "inputEmail": "yashasgowda2510@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "listing@binance.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

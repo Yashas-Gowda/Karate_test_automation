@@ -12,18 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 7,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -39,8 +40,8 @@
               "google": {
                 "registered": true,
                 "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/2a9b4aa7/afb0/4a79/9bf3/3c1e3215ff48/ed0bfba5-c2ca-4390-8d85-777a79e5d448.jpg",
-                "gender": "M"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/4d179bbf/ca39/4114/83de/fe3d94402e92/eed507e8-b2d7-4a9f-aa0e-d70d7a99fb30.jpg",
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -138,10 +139,10 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
-                "name": "sameena yasmeen",
+                "name": null,
                 "id": null,
                 "handle": null,
                 "bio": null,
@@ -242,6 +243,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -264,7 +273,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e28d8020-8986-468e-bd0c-8997606c9304",
+      "referenceId": "ac950870-e002-4c0d-8c96-01ba04292ece",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

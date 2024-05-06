@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "yashasgowda2510@gmail.com"
+    "email": "rishabhjain2409@gmail.com"
   },
   "response": {
     "data": {
@@ -12,16 +12,16 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 9,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
-            "registeredMessagingProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 0,
+            "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
@@ -39,9 +39,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "YASHAS MODEGOWDRU",
-                "photo": null,
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
@@ -55,7 +54,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -76,25 +75,25 @@
                 "registered": null
               },
               "deliveroo": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -139,11 +138,11 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "rishabh",
+                "id": "rishabh88886",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -245,7 +244,7 @@
                 "registered": false
               },
               "binance": {
-                "registered": false
+                "registered": true
               }
             },
             "education": {
@@ -273,13 +272,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "7fed127d-64ee-4076-82ed-0441351bbba0",
-      "inputEmail": "yashasgowda2510@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "rishabhjain2409@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
