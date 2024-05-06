@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "526144160457",
     "phoneDefaultCountryCode": "MX"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": "FIXED",
           "phoneDisposable": false,
-          "active": "YES",
+          "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -32,7 +32,7 @@
           "portedHistory": {
             "portedDate": "2022-11-04",
             "numberOfPorts": 1,
-            "portedSinceXDays": 425,
+            "portedSinceXDays": 549,
             "currentCarrierCircle": "TOTAL PLAY TELECOM",
             "originalCarrierCircle": "TELEFONOS DE MEXICO s.a.b. de c.v.",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -50,9 +50,11 @@
             "networkName": "TOTAL PLAY TELECOM",
             "serviceProfileId": "52521"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
         "identity": null
@@ -76,11 +78,12 @@
     "meta": {
       "inputPhoneNumber": "526144160457",
       "cleansedPhoneNumber": "+526144160457",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "873dfeeb-42c2-46b0-93a7-7c467dccb5b8",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

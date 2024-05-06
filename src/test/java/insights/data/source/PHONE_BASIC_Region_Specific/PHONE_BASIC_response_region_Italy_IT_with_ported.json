@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -8,7 +8,7 @@
     "phoneNumber": "393925000000",
     "phoneDefaultCountryCode": "IT"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -27,16 +27,20 @@
             "max": 48
           },
           "country": "IT",
-          "originalCarrier": "H3G - Hutchinson 3G (WINDTRE)",
+          "originalCarrier": "WIND Telecomunicazioni (WINDTRE)",
           "ported": true,
           "portedHistory": {
-            "portedDate": "2022-06-04",
-            "numberOfPorts": 3,
-            "portedSinceXDays": 578,
+            "portedDate": "2024-03-15",
+            "numberOfPorts": 4,
+            "portedSinceXDays": 52,
             "currentCarrierCircle": "WINDTRE Wind Tre",
             "originalCarrierCircle": "WINDTRE Wind Tre",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2024-03-15"
+              },
               {
                 "carrierCircle": null,
                 "portedDate": "2022-06-04"
@@ -58,9 +62,11 @@
             "networkName": "WIND Telecomunicazioni (WINDTRE)",
             "serviceProfileId": "39322"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
         "identity": null
@@ -84,11 +90,12 @@
     "meta": {
       "inputPhoneNumber": "393925000000",
       "cleansedPhoneNumber": "+393925000000",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "3ca30296-0af1-4a91-9c37-3d6d21682d2d",
       "requestedPackages": [
         "PHONE_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
