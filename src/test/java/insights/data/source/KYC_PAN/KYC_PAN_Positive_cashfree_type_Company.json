@@ -27,8 +27,7 @@
           "type": "Company",
           "valid": true,
           "status": "VALID",
-          "panCardName": "  MONNAI TECHNOLOGY INDIA PRIVATE LIMITED",
-          "lastUpdated": "2021-12-17"
+          "panCardName": "MONNAI TECHNOLOGY INDIA PRIVATE LIMITED"
         },
         "gstin": null
       },
@@ -37,7 +36,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "bf6a09a3-4be8-420c-8ebf-4498f36cd8ba",
+      "referenceId": "d508b655-1096-4cb3-98b9-1af5db0c1646",
       "requestedPackages": [
         "KYC_PAN"
       ],

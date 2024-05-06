@@ -1,3 +1,5 @@
+@ignore
+  # this package is changed to employmnet-Socail so diabled temporarily
 Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios on Social sub package for dp Visam
   # we have 2 data partners(Visum,SocialLinks), on suggestion of Product team we picked Visam dp for automation.
   # as socialinks dp price is high so it is not decided to use as priamry data partner yet as per Anjan

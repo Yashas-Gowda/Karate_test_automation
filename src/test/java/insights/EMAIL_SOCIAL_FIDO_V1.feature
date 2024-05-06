@@ -56,7 +56,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
 
     Examples:
       | Scenario               | statusCode |
-      | Email_Social_sanity_V2 | 200        |
+      | Email_Social_sanity_V1 | 200        |
 
   #      in consumerElectronics , fido gives only apple and not samsung
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics   - <Scenario>
