@@ -602,13 +602,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     Examples:
       | Scenario                                                        | statusCode |
       #    Test cases depricated
-      #      | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
-      #      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)     | 400        |
-      #      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)       | 400        |
-
-      | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com)_domainType_invalid_email | 200        |
-      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)_domainType_invalid_email     | 400        |
-      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)_domainType_invalid_domain       | 400        |
+      | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
+      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)     | 400        |
+      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)       | 400        |
+  #    Test cases craeted but changes not yet deployed depricated
+  #      | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com)_domainType_invalid_email | 200        |
+  #      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)_domainType_invalid_email     | 400        |
+  #      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)_domainType_invalid_domain       | 400        |
 
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario with null/empty input - <Scenario>
     Given url requestUrl
