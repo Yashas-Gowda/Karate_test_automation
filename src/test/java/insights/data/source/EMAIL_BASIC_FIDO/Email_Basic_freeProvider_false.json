@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "xyz.com",
             "tld": ".com",
-            "creationTime": "1994-03-29 08:18:37",
+            "creationTime": "1994-04-17 06:47:56",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -59,7 +60,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "5ad60030-3445-41ef-a1d6-2b454aea529e",
+      "referenceId": "eb97861c-d573-44a3-87e6-3daf811a6e35",
       "inputEmail": "ssam09999329420dsdssdds@xyz.com",
       "requestedPackages": [
         "EMAIL_BASIC"

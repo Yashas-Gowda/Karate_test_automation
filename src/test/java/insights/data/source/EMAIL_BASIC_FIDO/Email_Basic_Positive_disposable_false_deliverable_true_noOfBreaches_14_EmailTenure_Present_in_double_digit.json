@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": true,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "yahoo.co.in",
             "tld": ".in",
-            "creationTime": "2003-10-09 06:40:58",
+            "creationTime": "2003-08-09 06:47:51",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -90,7 +91,7 @@
               }
             ]
           },
-          "emailTenure": 11.86
+          "emailTenure": 12.0
         }
       },
       "address": null,
@@ -109,7 +110,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "c4126f78-5b86-4aad-896d-89df317a62fd",
+      "referenceId": "ee52e4f6-2697-47da-b009-7e26e0e9c83a",
       "inputEmail": "deepakjain_878@yahoo.co.in",
       "requestedPackages": [
         "EMAIL_BASIC"

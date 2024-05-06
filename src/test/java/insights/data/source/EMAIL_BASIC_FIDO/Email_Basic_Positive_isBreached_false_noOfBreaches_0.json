@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-05-01 09:00:11",
+            "creationTime": "1997-05-20 06:47:57",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -37,7 +38,8 @@
             "noOfBreaches": 0,
             "firstBreach": null,
             "lastBreach": null,
-            "breaches": []
+            "breaches": [
+            ]
           },
           "emailTenure": null
         }
@@ -58,12 +60,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_April_17_1",
+      "referenceId": "5b1dfd08-7b30-4808-a557-412940f32821",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

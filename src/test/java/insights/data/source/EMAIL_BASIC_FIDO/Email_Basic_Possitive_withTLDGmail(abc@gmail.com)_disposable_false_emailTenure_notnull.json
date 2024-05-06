@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": true,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-11-29 06:40:59",
+            "creationTime": "1995-09-30 06:47:50",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -50,7 +51,7 @@
               }
             ]
           },
-          "emailTenure": 5.28
+          "emailTenure": 5.43
         }
       },
       "address": null,
@@ -69,7 +70,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "1f764443-a6bf-498f-b4c6-81cd716ee3d1",
+      "referenceId": "7af62677-c206-4c2b-8b37-85cba4396730",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"

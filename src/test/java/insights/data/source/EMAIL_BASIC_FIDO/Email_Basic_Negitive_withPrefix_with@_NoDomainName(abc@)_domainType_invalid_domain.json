@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "mysite@you.me.net"
+    "email": "abc@"
   },
   "response": {
     "data": {
@@ -13,40 +13,28 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": false,
           "domainDetails": {
-            "domainType": "valid",
-            "domainName": "you.me.net",
-            "tld": ".net",
+            "domainType": "invalid-domain",
+            "domainName": "",
+            "tld": null,
             "creationTime": null,
             "updateTime": null,
             "expiryTime": null,
-            "registered": true,
+            "registered": null,
             "companyName": null,
             "registrarName": null,
-            "disposable": true,
-            "freeProvider": false,
+            "disposable": null,
+            "freeProvider": null,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": true,
+            "websiteExists": null,
             "acceptAll": null,
             "custom": null
           },
-          "breach": {
-            "isBreached": true,
-            "noOfBreaches": 1,
-            "firstBreach": "2019-02-25",
-            "lastBreach": "2019-02-25",
-            "breaches": [
-              {
-                "platformName": "VerificationsIO",
-                "domainName": null,
-                "breachDate": "2019-02-25"
-              }
-            ]
-          },
-          "emailTenure": 5.19
+          "breach": null,
+          "emailTenure": null
         }
       },
       "address": null,
@@ -65,8 +53,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "a42cbb4c-9ae1-43ea-9036-b0b0454e26a1",
-      "inputEmail": "mysite@you.me.net",
+      "referenceId": "1fda9c8f-e687-482f-a6ea-91e94d361ada",
+      "inputEmail": "abc@",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]

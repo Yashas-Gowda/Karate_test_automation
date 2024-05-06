@@ -1,4 +1,4 @@
-@EMAIL_BASIC_FIDO 
+@EMAIL_BASIC_FIDO
 Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
  # scenarios names are not updated, which will be picked in the next sprint
@@ -320,11 +320,18 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
     Examples:
       | Scenario                                                       | statusCode |
-      | Email_Basic_Negitive_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
-      | Email_Basic_Negitive_withPrefix_with@_NoDomainName(abc@)       | 400        |
-      | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)     | 400        |
-      | Email_Basic_Negitive_with_2_different_multiple_email_input     | 400        |
-      | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)     | 400        |
+#    Test cases depricated
+#      | Email_Basic_Negitive_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
+#      | Email_Basic_Negitive_withPrefix_with@_NoDomainName(abc@)       | 400        |
+#      | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)     | 400        |
+#      | Email_Basic_Negitive_with_2_different_multiple_email_input     | 400        |
+#      | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)     | 400        |
+
+      | Email_Basic_Negitive_NoPrefix_with@_withDomainName(@gmail.com)_domainType_invalid_email | 200        |
+      | Email_Basic_Negitive_withPrefix_with@_NoDomainName(abc@)_domainType_invalid_domain      | 200        |
+      | Email_Basic_Negitive_Onlyprefix_without@_NoDomainName(abc)_domainType_invalid_email     | 200        |
+      | Email_Basic_Negitive_with_2_different_multiple_email_input_domainType_invalid_domain    | 200        |
+
 
   Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input :- <Scenario>
     Given url requestUrl

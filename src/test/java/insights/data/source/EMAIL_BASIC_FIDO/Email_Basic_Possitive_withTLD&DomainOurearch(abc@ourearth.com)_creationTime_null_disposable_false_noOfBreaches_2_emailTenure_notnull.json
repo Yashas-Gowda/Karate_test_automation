@@ -15,6 +15,7 @@
         "basic": {
           "deliverable": null,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "ourearth.com",
             "tld": ".com",
             "creationTime": null,
@@ -24,7 +25,7 @@
             "companyName": "",
             "registrarName": "GoDaddy.com, LLC",
             "disposable": false,
-            "freeProvider": false,
+            "freeProvider": null,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -50,7 +51,7 @@
               }
             ]
           },
-          "emailTenure": 5.14
+          "emailTenure": 5.19
         }
       },
       "address": null,
@@ -69,12 +70,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_April_17_1",
+      "referenceId": "782d2ef1-6860-41b3-8e0e-733604a9553f",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

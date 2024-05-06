@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-10-14 06:41:04",
+            "creationTime": "1995-08-13 06:48:00",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -34,9 +35,9 @@
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 406,
+            "noOfBreaches": 425,
             "firstBreach": "2008-07-01",
-            "lastBreach": "2023-11-14",
+            "lastBreach": "2024-04-24",
             "breaches": [
               {
                 "platformName": "MySpace",
@@ -90,7 +91,7 @@
               }
             ]
           },
-          "emailTenure": 15.7
+          "emailTenure": 15.85
         }
       },
       "address": null,
@@ -109,7 +110,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "9f4c6b98-c147-4142-a3a5-2d96b210db8c",
+      "referenceId": "d551912d-1568-48dd-a90e-7f1628af180f",
       "inputEmail": "ABC@gmail.COM",
       "requestedPackages": [
         "EMAIL_BASIC"
