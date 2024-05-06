@@ -28,7 +28,6 @@
           "valid": true,
           "status": "VALID",
           "panCardName": "ESHWARAPPA MUDEGOWDRA YASHAS GOWDA",
-          "lastUpdated": "2021-10-31",
           "aadhaarLinkStatus": "Y",
           "aadhaarLinkStatusDesc": "Aadhaar is linked to PAN"
         },
@@ -39,13 +38,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "3466c645-de56-4af0-9ebc-3ad92ce90627",
+      "referenceId": "Ujn9OjTbSQ0EM4A=",
       "requestedPackages": [
         "KYC_PAN"
       ],
       "inputPan": "ATWPY7073N"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
