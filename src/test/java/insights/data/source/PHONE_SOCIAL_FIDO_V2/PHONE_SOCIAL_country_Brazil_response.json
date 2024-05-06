@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,7 +7,7 @@
     ],
     "phoneNumber": "5547991986334",
     "phoneDefaultCountryCode": "BR"
-  } ,
+  },
   "response": {
     "data": {
       "phone": {
@@ -17,11 +17,11 @@
             "registeredProfiles": 8,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 2,
+            "registeredSocialMediaProfiles": 3,
             "registeredProfessionalProfiles": 1,
-            "registeredMessagingProfiles": 3,
+            "registeredMessagingProfiles": 2,
             "lastActivity": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -51,7 +51,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": true
@@ -84,10 +84,10 @@
                 "businessAccount": false
               },
               "viber": {
-                "registered": true,
+                "registered": null,
                 "photo": null,
-                "lastSeen": "1970-01-01T00:00:00Z",
-                "name": "Claudio"
+                "lastSeen": null,
+                "name": null
               },
               "kakao": {
                 "registered": null
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "5547991986334",
       "cleansedPhoneNumber": "+5547991986334",
-      "referenceId": "64c97a6b-95d0-46a7-9da2-cd31a8a8f271",
+      "referenceId": "32e52677-24a3-45a7-8df1-8b8c1ca2cea2",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

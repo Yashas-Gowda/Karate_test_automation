@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -8,16 +8,16 @@
     "phoneNumber": "447958000000",
     "phoneDefaultCountryCode": "GB"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 6,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 2,
+            "registeredSocialMediaProfiles": 1,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
             "lastActivity": null,
@@ -54,7 +54,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": null
               },
               "instagram": {
                 "registered": false
@@ -84,7 +84,7 @@
                 "businessAccount": false
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "447958000000",
       "cleansedPhoneNumber": "+447958000000",
-      "referenceId": "61860b5a-ae20-438d-8b6a-f151f7a83d0d",
+      "referenceId": "c2ab0625-d726-447d-92e9-1fa12d603706",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
