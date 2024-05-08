@@ -94,14 +94,15 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_COUNT Package scenarios
       | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_data_Point_key_is_missing                      | 400        |
       | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_toDate_data_Point_key_is_missing                      | 400        |
 
-      # https://monnai.atlassian.net/browse/MB-4995     | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_is_missing                      | 400        |
       | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_invalid_syntax_format  | 400        |
       | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_invalid_abc            | 400        |
       | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_invalid_123            | 400        |
 
-      # https://monnai.atlassian.net/browse/MB-4995     | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_empty_string                | 400        |
-      # https://monnai.atlassian.net/browse/MB-4995     | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_empty_string_with_space     | 400        |
-      # https://monnai.atlassian.net/browse/MB-4995     | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_null                        | 400        |
+      # https://monnai.atlassian.net/browse/MB-4995
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_is_missing                      | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_empty_string                | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_empty_string_with_space     | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_null                        | 400        |
 
       |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_number                | 400        |
       |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_COUNT_then_fromDate_toDate_data_Point_key_value_is_boolean               | 400        |
