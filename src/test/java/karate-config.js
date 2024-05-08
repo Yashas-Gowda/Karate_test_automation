@@ -1,7 +1,7 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'release-fidoV2'
+    var env = 'test-fido'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
@@ -62,6 +62,10 @@ function() {
                  config.requestUrl = "https://test.monnai.com";
                  config.authUrl = "https://test-auth.monnai.com";
                  break;
+           case "test-seon":
+                config.requestUrl = "https://test.monnai.com";
+                config.authUrl = "https://test-auth.monnai.com";
+                break;
 //  General auth gen curl for any env with general credentials
             case "env-release-gen":
                  config.requestUrl = "https://release.monnai.com";
@@ -87,6 +91,25 @@ function() {
                   config.requestUrl = "https://app-us.monnai.com";
                   config.authUrl ="https://auth-us.monnai.com";
                   break;
+//  Yashas manual testing tenant auth gen curl for any env with general credentials
+
+            case "app-us-y":
+                  config.requestUrl = "https://app-us.monnai.com";
+                  config.authUrl ="https://auth-us.monnai.com";
+                  break;
+            case "app-y":
+                  config.requestUrl = "https://app.monnai.com";
+                  config.authUrl ="https://auth.monnai.com";
+                  break;
+            case "app-sg-y":
+                config.requestUrl = "https://app-sg.monnai.com";
+                config.authUrl ="https://auth-sg.monnai.com";
+                break;
+            case "app-id-y":
+                config.requestUrl = "https://app-sg.monnai.com";
+                config.authUrl ="https://auth-sg.monnai.com";
+                break;
+
 
 // 14-dec-2023 -> Disabled Production regression.
             case "app":
