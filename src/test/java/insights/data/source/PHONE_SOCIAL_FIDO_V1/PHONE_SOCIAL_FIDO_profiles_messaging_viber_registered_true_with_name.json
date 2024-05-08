@@ -8,7 +8,7 @@
     "phoneNumber": "48724609806",
     "phoneDefaultCountryCode": "PL"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -16,10 +16,10 @@
           "summary": {
             "registeredProfiles": 5,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 2,
+            "registeredMessagingProfiles": 1,
             "lastActivity": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
@@ -33,8 +33,11 @@
               }
             },
             "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -64,12 +67,11 @@
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": true,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": "PRIVATE",
+                "privacyStatus": null,
                 "lastSeen": null,
-                "about": null,
-                "businessAccount": false
+                "about": null
               },
               "viber": {
                 "registered": true,
@@ -115,11 +117,12 @@
     "meta": {
       "inputPhoneNumber": "48724609806",
       "cleansedPhoneNumber": "+48724609806",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "a4f48862-63e8-487c-85b6-b3617f66fd37",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

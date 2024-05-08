@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "628978888005",
+    "phoneNumber": "6287804072221",
     "phoneDefaultCountryCode": "ID"
   },
   "response": {
@@ -14,11 +14,11 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 8,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 2,
-            "registeredProfessionalProfiles": 0,
+            "registeredSocialMediaProfiles": 3,
+            "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
@@ -34,7 +34,8 @@
             },
             "ecommerce": {
               "bukalapak": {
-                "registered": true
+                "registered": true,
+                "hasWhatsappOtp": true
               },
               "amazon": {
                 "registered": false
@@ -42,7 +43,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": true
@@ -53,7 +54,7 @@
             },
             "professional": {
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "linkedin": {
                 "registered": null
@@ -62,14 +63,14 @@
             "messaging": {
               "telegram": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": "PRIVATE",
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/3076ab9f/7947/487a/b580/f4593a353f12.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/d4a354ff/69ed/4178/bb09/c098f4a40b4a/2700f379-6c6f-4824-97cd-4dd225528dd8.jpg",
-                "privacyStatus": "PUBLIC",
+                "photo": null,
+                "privacyStatus": "PRIVATE",
                 "lastSeen": null,
                 "about": null,
                 "businessAccount": false
@@ -116,8 +117,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "628978888005",
-      "cleansedPhoneNumber": "+628978888005",
+      "inputPhoneNumber": "6287804072221",
+      "cleansedPhoneNumber": "+6287804072221",
       "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "PHONE_SOCIAL"

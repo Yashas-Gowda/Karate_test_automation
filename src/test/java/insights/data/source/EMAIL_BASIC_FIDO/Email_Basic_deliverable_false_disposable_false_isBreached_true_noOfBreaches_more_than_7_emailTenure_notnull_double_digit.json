@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "yahoo.co.in",
             "tld": ".in",
-            "creationTime": "2003-07-21 08:44:22",
+            "creationTime": "2003-08-09 06:47:54",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -80,7 +81,7 @@
               }
             ]
           },
-          "emailTenure": 11.46
+          "emailTenure": 11.51
         }
       },
       "address": null,
@@ -99,12 +100,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_April_17_1",
+      "referenceId": "7036bd79-2d53-48fa-a3c1-16858490e920",
       "inputEmail": "gopi_9621@yahoo.co.in",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

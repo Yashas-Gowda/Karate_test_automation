@@ -89,6 +89,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.kyc.pan.lastUpdated = "#ignore"
     When method POST
     # Request-response headers
     * print 'ENV ---->', karate.prevRequest.headers.Host
@@ -134,6 +135,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.kyc.pan.lastUpdated = "#ignore"
     When method POST
     # Request-response headers
     * print 'ENV ---->', karate.prevRequest.headers.Host
@@ -166,7 +168,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #      | KYC_PAN_Positive_cleartax_status_FAKE                    | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DEACTIVATED               | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DELETED               | 200        |
-
+  
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "aadhaar_seeding_status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
@@ -174,6 +176,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.kyc.pan.lastUpdated = "#ignore"
     When method POST
     # Request-response headers
     * print 'ENV ---->', karate.prevRequest.headers.Host

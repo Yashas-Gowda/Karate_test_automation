@@ -564,10 +564,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_true  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario with invalid input - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with invalid input - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -598,11 +601,16 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                        | statusCode |
+      #    Test cases depricated
       | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com) | 400        |
       | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)     | 400        |
       | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)       | 400        |
+  #    Test cases craeted but changes not yet deployed depricated
+  #      | Email_Social_Negative_NoPrefix_with@_withDomainName(@gmail.com)_domainType_invalid_email | 200        |
+  #      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)_domainType_invalid_email     | 400        |
+  #      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)_domainType_invalid_domain       | 400        |
 
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario with null/empty input - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with null/empty input - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -637,7 +645,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Email_Social_Negative_NullInput(' ') | 400        |
 
   #  @Schema_validation_1
-  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+  #  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_1 - <Scenario>
   #    Given url requestUrl
   #    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
   #    And headers headers
@@ -683,7 +691,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
   #      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
 
   @Schema_validation_2
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -723,6 +731,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                 "registeredEntertainmentProfiles": '#present',
                 "registeredTravelProfiles": '#present',
                 "registeredFinancialProfiles": '#present',
+                "registeredEducationProfiles":'#present',
                 "ageOnSocial": '#present',
                 "numberOfNamesReturned": '#present',
                 "numberOfPhotosReturned": '#present'
@@ -943,6 +952,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                 "financial": {
                   "paypal": {
                     "registered": '#present'
+                  },
+                  "binance": {
+                    "registered": '#present'
+                  }
+                },
+                "education": {
+                  "duolingo": {
+                    "registered":'#present'
                   }
                 }
               }

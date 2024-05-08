@@ -1,27 +1,28 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sabarishwaran185@gmail.com"
-  } ,
-  "response":{
+    "email": "vsupritha1804@gmail.com"
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
+            "registeredProfiles": 7,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
-            "registeredMessagingProfiles": 0,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 1,
-            "registeredEntertainmentProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -31,47 +32,29 @@
               "apple": {
                 "registered": false
               },
-              "samsung": {
-                "registered": null
-              }
+              "samsung": null
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Sabarish Art",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/0522a8a4/3e1d/4329/a6ed/409071199a7c/a74ed8a9-16e0-4de2-b855-9fd2be58dd15.jpg"
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/60f883ce/3362/44c1/b3c5/c2c8ae04e106/15908c27-4a45-4abc-91c6-a1c14f7935ac.jpg"
               },
               "yahoo": {
                 "registered": false
               },
-              "mailru": {
-                "registered": null
-              },
-              "rambler": {
-                "registered": null
-              }
+              "mailru": null,
+              "rambler": null
             },
             "ecommerce": {
               "amazon": {
                 "registered": true
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
-              "flipkart": {
-                "registered": null
-              },
-              "jdid": {
-                "registered": null
-              },
-              "bukalapak": {
-                "registered": null
-              },
-              "lazada": {
-                "registered": null
-              },
-              "tokopedia": {
-                "registered": null
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -84,61 +67,27 @@
               "instagram": {
                 "registered": true
               },
-              "flickr": {
-                "registered": null,
-                "username": null
-              },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
-                "registered": true
-              },
-              "tumblr": {
-                "registered": null
-              },
-              "weibo": {
-                "registered": null
-              },
-              "ok": {
-                "registered": null,
-                "age": null,
-                "city": null,
-                "dateJoined": null
-              },
-              "imgur": {
-                "registered": null
-              },
-              "quora": {
-                "registered": null
-              },
-              "qzone": {
-                "registered": null
+                "registered": false
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
                 "username": null
-              },
-              "foursquare": {
-                "registered": null,
-                "bio": null,
-                "photo": null,
-                "profileUrl": null
-              },
-              "myspace": {
-                "registered": null
               }
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "Supritha V",
+                "id": "live:.cid.b84a673fd732cd2a",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -147,22 +96,12 @@
                 "country": null,
                 "photo": null
               },
-              "discord": {
-                "registered": null
-              },
-              "kakao": {
-                "registered": null
-              }
+              "discord": null,
+              "kakao": null
             },
             "professional": {
-              "github": {
-                "registered": null
-              },
               "wordpress": {
                 "registered": false
-              },
-              "atlassian": {
-                "registered": null
               },
               "linkedin": {
                 "registered": null,
@@ -176,17 +115,8 @@
                 "photo": null,
                 "connectionCount": null
               },
-              "evernote": {
-                "registered": null
-              },
               "microsoft": {
                 "registered": true
-              },
-              "zoho": {
-                "registered": null
-              },
-              "adobe": {
-                "registered": null
               },
               "hubspot": {
                 "registered": false
@@ -194,33 +124,15 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
-              },
-              "lastfm": {
-                "registered": null
-              },
-              "vimeo": {
-                "registered": null
-              },
-              "envato": {
-                "registered": null
-              },
-              "patreon": {
-                "registered": null
+                "registered": false
               },
               "disneyplus": {
                 "registered": false
-              },
-              "netflix": {
-                "registered": null
-              },
-              "archiveorg": {
-                "registered": null
               }
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -237,7 +149,15 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -253,11 +173,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sabarishwaran185@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "vsupritha1804@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

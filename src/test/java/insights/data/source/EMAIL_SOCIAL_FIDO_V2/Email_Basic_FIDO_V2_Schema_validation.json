@@ -12,16 +12,17 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
+            "registeredProfiles": 8,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
@@ -86,7 +87,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": null,
@@ -242,6 +243,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -264,7 +273,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "f90cdd55-d330-4ef5-9911-364539002cdb",
+      "referenceId": "7fed127d-64ee-4076-82ed-0441351bbba0",
       "inputEmail": "yashasgowda2510@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

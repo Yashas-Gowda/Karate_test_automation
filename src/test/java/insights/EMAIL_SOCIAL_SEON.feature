@@ -1,5 +1,5 @@
-@seon_email @ignore
-Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
+@seon_email  @EMAIL_SOCIAL_SEON @ignore
+Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
 
   Background:
     * configure charset = null
@@ -39,11 +39,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       | Email_Social                                                      | 200        |
       | Email_Social_EmailProvider_Booking&Spotify&Adobe&Quora_Registered | 200        |
       | Email_Social_EmailProvider_LinkedIn&Airbnb_Registered             | 200        |
-#      | Email_Social_EmailProvider_LinkedIn&Email_Social_EmailProvider_Yahoo&Google_Registered | 200        |
+      #      | Email_Social_EmailProvider_LinkedIn&Email_Social_EmailProvider_Yahoo&Google_Registered | 200        |
       | Email_Social_Lazada&Microsoft&Evernote_Registered                 | 200        |
-#      | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered       | 200        |
+  #      | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered       | 200        |
 
-     ## Check - Can we test scenario with ageonSocial NOT NULL
+  ## Check - Can we test scenario with ageonSocial NOT NULL
   @smokeTest
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
     Given url requestUrl
@@ -72,7 +72,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     Examples:
       | Scenario                                                        | statusCode |
       | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
-    # | Email_Social_Messaging_Skype&Discord_Registered                 | 200        |
+      # | Email_Social_Messaging_Skype&Discord_Registered                 | 200        |
       | Email_Social_SocialMedia_Instagram&Pinterest&Twitter_Registered | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with invalid input - <Scenario>
@@ -83,7 +83,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -98,8 +98,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $.data.email.social contains payload.response.data.email.social
-#    And match $.errors[1].message == "Invalid email address"
-#    And match $.response.errors[1].message == "Invalid email address"
+    #    And match $.errors[1].message == "Invalid email address"
+    #    And match $.response.errors[1].message == "Invalid email address"
 
     Examples:
       | Scenario                                                        | statusCode |
@@ -116,7 +116,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -131,8 +131,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $ contains payload.response
-#    And match $.errors[1].message == "Email cannot be empty/null"
-#    And match $.response.errors[1].message == "Email cannot be empty/null"
+    #    And match $.errors[1].message == "Email cannot be empty/null"
+    #    And match $.response.errors[1].message == "Email cannot be empty/null"
 
     Examples:
       | Scenario                                    | statusCode |
@@ -204,7 +204,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -229,7 +229,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       | Scenario                                                    | statusCode |
       | Email_Social_Google_With_Photo_IsRegistered_LinkedIn_IsNull | 200        |
 
-    # website used for json to oneline converter: https://jsonformatter.org/json-to-one-line
+  # website used for json to oneline converter: https://jsonformatter.org/json-to-one-line
   @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
@@ -298,257 +298,257 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     Then match $ contains deep
-    """
-   {
-  "data": {
-    "phone": '#null',
-    "email": {
-      "social": {
-        "summary": {
-          "registeredProfiles":"#present",
-          "registeredConsumerElectronicsProfiles":  "#present",
-          "registeredEmailProviderProfiles":  "#present",
-          "registeredEcommerceProfiles":  "#present",
-          "registeredSocialMediaProfiles":  "#present",
-          "registeredMessagingProfiles":  "#present",
-          "registeredProfessionalProfiles": "#present",
-          "registeredEntertainmentProfiles":  "#present",
-          "registeredTravelProfiles":  "#present",
-          "ageOnSocial":  "#present",
-          "numberOfNamesReturned": "#present",
-          "numberOfPhotosReturned":  "#present",
-        },
-        "profiles": {
-          "consumerElectronics": {
-            "apple": {
-              "registered": "#present"
-            },
-            "samsung": {
-              "registered":  "#present"
-            }
-          },
-          "emailProvider": {
-            "google": {
-              "registered":  "#present",
-              "name":  "#present",
-              "photo":  "#present"
+      """
+      {
+        "data": {
+          "phone": '#null',
+          "email": {
+            "social": {
+              "summary": {
+                "registeredProfiles":"#present",
+                "registeredConsumerElectronicsProfiles":  "#present",
+                "registeredEmailProviderProfiles":  "#present",
+                "registeredEcommerceProfiles":  "#present",
+                "registeredSocialMediaProfiles":  "#present",
+                "registeredMessagingProfiles":  "#present",
+                "registeredProfessionalProfiles": "#present",
+                "registeredEntertainmentProfiles":  "#present",
+                "registeredTravelProfiles":  "#present",
+                "ageOnSocial":  "#present",
+                "numberOfNamesReturned": "#present",
+                "numberOfPhotosReturned":  "#present",
               },
-            "yahoo": {
-              "registered":  "#present"
+              "profiles": {
+                "consumerElectronics": {
+                  "apple": {
+                    "registered": "#present"
+                  },
+                  "samsung": {
+                    "registered":  "#present"
+                  }
+                },
+                "emailProvider": {
+                  "google": {
+                    "registered":  "#present",
+                    "name":  "#present",
+                    "photo":  "#present"
+                  },
+                  "yahoo": {
+                    "registered":  "#present"
+                  },
+                  "mailru": {
+                    "registered": "#present"
+                  },
+                  "rambler": {
+                    "registered":  "#present"
+                  }
+                },
+                "ecommerce": {
+                  "amazon": {
+                    "registered":  "#present"
+                  },
+                  "ebay": {
+                    "registered":  "#present"
+                  },
+                  "flipkart": {
+                    "registered":  "#present"
+                  },
+                  "jdid": {
+                    "registered":  "#present"
+                  },
+                  "bukalapak": {
+                    "registered":  "#present"
+                  },
+                  "lazada": {
+                    "registered":  "#present"
+                  },
+                  "tokopedia": {
+                    "registered":  "#present"
+                  }
+                },
+                "socialMedia": {
+                  "facebook": {
+                    "registered":  "#present",
+                    "name":  "#present",
+                    "photo":  "#present",
+                    "url":  "#present"
+                  },
+                  "instagram": {
+                    "registered":  "#present"
+                  },
+                  "flickr": {
+                    "registered":  "#present",
+                    "username": "#present"
+                  },
+                  "pinterest": {
+                    "registered":  "#present"
+                  },
+                  "twitter": {
+                    "registered":  "#present"
+                  },
+                  "tumblr": {
+                    "registered": "#present"
+                  },
+                  "weibo": {
+                    "registered": "#present"
+                  },
+                  "ok": {
+                    "registered":  "#present",
+                    "age":  "#present",
+                    "city":  "#present",
+                    "dateJoined":  "#present"
+                  },
+                  "imgur": {
+                    "registered":  "#present"
+                  },
+                  "quora": {
+                    "registered":  "#present"
+                  },
+                  "qzone": {
+                    "registered":  "#present"
+                  },
+                  "gravatar": {
+                    "registered":  "#present",
+                    "location":  "#present",
+                    "name":  "#present",
+                    "profileUrl":  "#present",
+                    "username": "#present"
+                  },
+                  "foursquare": {
+                    "registered": "#present",
+                    "bio": "#present",
+                    "photo": "#present",
+                    "profileUrl": "#present"
+                  },
+                  "myspace": {
+                    "registered": "#present"
+                  }
+                },
+                "messaging": {
+                  "skype": {
+                    "registered":"#present",
+                    "language":"#present",
+                    "gender": "#present",
+                    "name": "#present",
+                    "id": "#present",
+                    "handle": "#present",
+                    "bio": "#present",
+                    "age": "#present",
+                    "city": "#present",
+                    "state": "#present",
+                    "country": "#present",
+                    "photo": "#present"
+                  },
+                  "discord": {
+                    "registered": "#present"
+                  },
+                  "kakao": {
+                    "registered": "#present"
+                  }
+                },
+                "professional": {
+                  "github": {
+                    "registered": "#present"
+                  },
+                  "wordpress": {
+                    "registered": "#present"
+                  },
+                  "atlassian": {
+                    "registered": "#present"
+                  },
+                  "linkedin": {
+                    "registered": "#present",
+                    "url": "#present",
+                    "name": "#present",
+                    "company": "#present",
+                    "title": "#present",
+                    "location": "#present",
+                    "website": "#present",
+                    "twitter": "#present",
+                    "photo": "#present",
+                    "connectionCount": "#present"
+                  },
+                  "evernote": {
+                    "registered": "#present"
+                  },
+                  "microsoft": {
+                    "registered": "#present"
+                  },
+                  "zoho": {
+                    "registered": "#present"
+                  },
+                  "adobe": {
+                    "registered": "#present"
+                  }
+                },
+                "entertainment": {
+                  "spotify": {
+                    "registered": "#present"
+                  },
+                  "lastfm": {
+                    "registered": "#present"
+                  },
+                  "vimeo": {
+                    "registered": "#present"
+                  },
+                  "envato": {
+                    "registered": "#present"
+                  },
+                  "patreon": {
+                    "registered": "#present"
+                  },
+                  "disneyplus": {
+                    "registered": "#present"
+                  },
+                  "netflix": {
+                    "registered": "#present"
+                  },
+                  "archiveorg": {
+                    "registered": "#present"
+                  }
+                },
+                "travel": {
+                  "booking": {
+                    "registered":"#present"
+                  },
+                  "airbnb": {
+                    "registered": "#present",
+                    "about": "#present",
+                    "createdAt": "#present",
+                    "name": "#present",
+                    "identityVerified": "#present",
+                    "location": "#present",
+                    "photo": "#present",
+                    "revieweeCount": "#present",
+                    "trips": "#present",
+                    "work": "#present"
+                  }
+                }
+              }
             },
-            "mailru": {
-              "registered": "#present"
-            },
-            "rambler": {
-              "registered":  "#present"
-            }
+            "basic": "#null"
           },
-          "ecommerce": {
-            "amazon": {
-              "registered":  "#present"
-            },
-            "ebay": {
-              "registered":  "#present"
-            },
-            "flipkart": {
-              "registered":  "#present"
-            },
-            "jdid": {
-              "registered":  "#present"
-            },
-            "bukalapak": {
-              "registered":  "#present"
-            },
-            "lazada": {
-              "registered":  "#present"
-            },
-            "tokopedia": {
-              "registered":  "#present"
-            }
-          },
-          "socialMedia": {
-            "facebook": {
-              "registered":  "#present",
-              "name":  "#present",
-              "photo":  "#present",
-              "url":  "#present"
-            },
-            "instagram": {
-              "registered":  "#present"
-            },
-            "flickr": {
-              "registered":  "#present",
-              "username": "#present"
-            },
-            "pinterest": {
-              "registered":  "#present"
-            },
-            "twitter": {
-              "registered":  "#present"
-            },
-            "tumblr": {
-              "registered": "#present"
-            },
-            "weibo": {
-              "registered": "#present"
-            },
-            "ok": {
-              "registered":  "#present",
-              "age":  "#present",
-              "city":  "#present",
-              "dateJoined":  "#present"
-            },
-            "imgur": {
-              "registered":  "#present"
-            },
-            "quora": {
-              "registered":  "#present"
-            },
-            "qzone": {
-              "registered":  "#present"
-            },
-            "gravatar": {
-              "registered":  "#present",
-              "location":  "#present",
-              "name":  "#present",
-              "profileUrl":  "#present",
-              "username": "#present"
-            },
-            "foursquare": {
-              "registered": "#present",
-              "bio": "#present",
-              "photo": "#present",
-              "profileUrl": "#present"
-            },
-            "myspace": {
-              "registered": "#present"
-            }
-          },
-          "messaging": {
-            "skype": {
-              "registered":"#present",
-              "language":"#present",
-              "gender": "#present",
-              "name": "#present",
-              "id": "#present",
-              "handle": "#present",
-              "bio": "#present",
-              "age": "#present",
-              "city": "#present",
-              "state": "#present",
-              "country": "#present",
-              "photo": "#present"
-            },
-            "discord": {
-              "registered": "#present"
-            },
-            "kakao": {
-              "registered": "#present"
-            }
-          },
-          "professional": {
-            "github": {
-              "registered": "#present"
-            },
-            "wordpress": {
-              "registered": "#present"
-            },
-            "atlassian": {
-              "registered": "#present"
-            },
-            "linkedin": {
-              "registered": "#present",
-              "url": "#present",
-              "name": "#present",
-              "company": "#present",
-              "title": "#present",
-              "location": "#present",
-              "website": "#present",
-              "twitter": "#present",
-              "photo": "#present",
-              "connectionCount": "#present"
-            },
-            "evernote": {
-              "registered": "#present"
-            },
-            "microsoft": {
-              "registered": "#present"
-            },
-            "zoho": {
-              "registered": "#present"
-            },
-            "adobe": {
-              "registered": "#present"
-            }
-          },
-          "entertainment": {
-            "spotify": {
-              "registered": "#present"
-            },
-            "lastfm": {
-              "registered": "#present"
-            },
-            "vimeo": {
-              "registered": "#present"
-            },
-            "envato": {
-              "registered": "#present"
-            },
-            "patreon": {
-              "registered": "#present"
-            },
-            "disneyplus": {
-              "registered": "#present"
-            },
-            "netflix": {
-              "registered": "#present"
-            },
-            "archiveorg": {
-              "registered": "#present"
-            }
-          },
-          "travel": {
-            "booking": {
-              "registered":"#present"
-            },
-            "airbnb": {
-              "registered": "#present",
-              "about": "#present",
-              "createdAt": "#present",
-              "name": "#present",
-              "identityVerified": "#present",
-              "location": "#present",
-              "photo": "#present",
-              "revieweeCount": "#present",
-              "trips": "#present",
-              "work": "#present"
-            }
-          }
-        }
-      },
-      "basic": "#null"
-    },
-    "address":"#null",
-    "name": "#null",
-    "ip": "#null",
-    "identity": "#null",
-    "upi": "#null",
-    "device": "#null",
-    "employment": "#null",
-    "income": "#null",
-    "blacklist": "#null",
-    "bre": "#null"
-  },
-  "meta": {
-    "referenceId": "#present",
-    "inputEmail": "#present",
-    "requestedPackages": [
-      "EMAIL_SOCIAL"
-    ]
-  },
-  "errors": "#array"
-}
-    """
+          "address":"#null",
+          "name": "#null",
+          "ip": "#null",
+          "identity": "#null",
+          "upi": "#null",
+          "device": "#null",
+          "employment": "#null",
+          "income": "#null",
+          "blacklist": "#null",
+          "bre": "#null"
+        },
+        "meta": {
+          "referenceId": "#present",
+          "inputEmail": "#present",
+          "requestedPackages": [
+            "EMAIL_SOCIAL"
+          ]
+        },
+        "errors": "#array"
+      }
+      """
     Examples:
       | Scenario                                                        | statusCode |
       | Email_Social_SocialMedia_Instagram&Pinterest&Twitter_Registered | 200        |

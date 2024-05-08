@@ -56,10 +56,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 12,
-              "minimumTopUpAmount": 4000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 16000
+              "topUpCount": 20,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 12000
             },
             {
               "topUpTenure": {
@@ -67,10 +67,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 29,
+              "topUpCount": 32,
               "minimumTopUpAmount": 4000,
-              "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 18000
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 14000
             },
             {
               "topUpTenure": {
@@ -78,10 +78,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 34,
+              "topUpCount": 49,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 17000
+              "averageTopUpAmount": 16000
             },
             {
               "topUpTenure": {
@@ -89,10 +89,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 57,
+              "topUpCount": 72,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 15000
+              "averageTopUpAmount": 14000
             },
             {
               "topUpTenure": {
@@ -100,7 +100,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 144,
+              "topUpCount": 151,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 12000
@@ -111,10 +111,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 17,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 19000
+              "topUpCount": 12,
+              "minimumTopUpAmount": 4000,
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 16000
             },
             {
               "topUpTenure": {
@@ -122,10 +122,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 5,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 13000
+              "topUpCount": 17,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 19000
             },
             {
               "topUpTenure": {
@@ -136,7 +136,7 @@
               "topUpCount": 23,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 11000
+              "averageTopUpAmount": 12000
             },
             {
               "topUpTenure": {
@@ -144,7 +144,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 87,
+              "topUpCount": 79,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 50000,
               "averageTopUpAmount": 10000
@@ -155,7 +155,7 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 248,
+              "topUpCount": 226,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 15000
@@ -185,7 +185,7 @@
     "meta": {
       "inputPhoneNumber": "6281574928730",
       "cleansedPhoneNumber": "+6281574928730",
-      "referenceId": "96de6a7a-f09d-468d-ae61-4b08dbc0291c",
+      "referenceId": "b137148f-3f5d-490a-85d8-19960db4e5d8",
       "requestedPackages": [
         "PHONE_BASIC"
       ]

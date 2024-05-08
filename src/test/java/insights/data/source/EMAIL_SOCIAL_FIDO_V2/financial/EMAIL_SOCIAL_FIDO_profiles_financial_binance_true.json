@@ -4,24 +4,25 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "kalyani001989@gmail.com"
+    "email": "rishabhjain2409@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 3,
-            "registeredConsumerElectronicsProfiles": 0,
+            "registeredProfiles": 9,
+            "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
@@ -29,7 +30,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": {
                 "registered": null
@@ -38,7 +39,7 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Kalyani Sharma",
+                "name": null,
                 "photo": null
               },
               "yahoo": {
@@ -56,7 +57,7 @@
                 "registered": false
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": null
@@ -72,27 +73,30 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": true
               }
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "tumblr": {
                 "registered": null
@@ -116,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -134,11 +138,11 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "rishabh",
+                "id": "rishabh88886",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -180,7 +184,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "zoho": {
                 "registered": null
@@ -220,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -238,6 +242,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": true
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -253,11 +265,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "kalyani001989@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "rishabhjain2409@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

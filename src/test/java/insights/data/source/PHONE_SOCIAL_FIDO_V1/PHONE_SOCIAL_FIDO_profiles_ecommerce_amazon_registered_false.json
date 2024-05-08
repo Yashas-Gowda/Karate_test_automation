@@ -16,10 +16,10 @@
           "summary": {
             "registeredProfiles": 5,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
+            "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 2,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 1
@@ -33,9 +33,6 @@
               }
             },
             "ecommerce": {
-              "flipkart": {
-                "registered": true
-              },
               "bukalapak": {
                 "registered": null
               },
@@ -64,14 +61,14 @@
             },
             "messaging": {
               "telegram": {
-                "registered": false,
+                "registered": true,
                 "photo": null,
-                "privacyStatus": null,
+                "privacyStatus": "PRIVATE",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/e25b14fd/9eae/4526/9e0d/225a4f1a3ea5/056a2df1-51f9-44de-bbc3-d6f29d427abf.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/9451fc39/868a/4feb/b8b2/b9a21e0addd7/884ad3c8-bb5d-4d29-a621-a9aed00227c7.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -121,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "919723596143",
       "cleansedPhoneNumber": "+919723596143",
-      "referenceId": "b1dab926-5da4-47bf-acbf-03ba0fa547eb",
+      "referenceId": "9885ea27-0e7f-423f-aea3-c7480952c7b1",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

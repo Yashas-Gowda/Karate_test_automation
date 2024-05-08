@@ -15,6 +15,7 @@
         "basic": {
           "deliverable": true,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "you.me.net",
             "tld": ".net",
             "creationTime": null,
@@ -45,7 +46,7 @@
               }
             ]
           },
-          "emailTenure": 5.14
+          "emailTenure": 5.19
         }
       },
       "address": null,
@@ -64,12 +65,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_April_17_1",
+      "referenceId": "a42cbb4c-9ae1-43ea-9036-b0b0454e26a1",
       "inputEmail": "mysite@you.me.net",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

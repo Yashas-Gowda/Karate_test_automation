@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": true,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1995-12-02 06:40:59",
+            "creationTime": "1995-10-01 06:47:51",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -45,7 +46,7 @@
               }
             ]
           },
-          "emailTenure": 0.91
+          "emailTenure": 1.06
         }
       },
       "address": null,
@@ -64,7 +65,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "3176337c-e735-4717-a4a5-a6071a1aa37f",
+      "referenceId": "3252c2e5-8af8-466b-bb5c-257181e8892d",
       "inputEmail": "sammykhnm17@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"

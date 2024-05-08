@@ -14,9 +14,9 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
@@ -37,7 +37,7 @@
                 "registered": false
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -118,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "6282226265640",
       "cleansedPhoneNumber": "+6282226265640",
-      "referenceId": "47149245-7448-4b19-adda-17723cf61afb",
+      "referenceId": "6c67a365-ce09-4301-aea7-4d8b3975a417",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

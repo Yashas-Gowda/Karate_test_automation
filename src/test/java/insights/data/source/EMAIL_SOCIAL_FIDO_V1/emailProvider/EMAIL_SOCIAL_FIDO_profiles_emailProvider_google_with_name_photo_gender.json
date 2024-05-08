@@ -23,6 +23,7 @@
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -38,7 +39,7 @@
               "google": {
                 "registered": true,
                 "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b9319cbb/1b6a/48d5/8934/f0af6c6eef5a/fa36f874-705a-4960-9f40-8c47072c581e.jpg",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -151,6 +152,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -173,7 +182,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "33d6c3e3-f950-4698-ad63-4e8d43b484ef",
+      "referenceId": "e667b9d5-1bc6-4e13-b234-297272af87e8",
       "inputEmail": "rraghavendra523@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

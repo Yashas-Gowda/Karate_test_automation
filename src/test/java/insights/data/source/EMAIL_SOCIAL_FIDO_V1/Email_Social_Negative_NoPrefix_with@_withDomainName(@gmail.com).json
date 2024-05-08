@@ -3,22 +3,22 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
-      "EMAIL_BASIC"
+      "EMAIL_SOCIAL"
     ],
     "email": "@gmail.com"
   },
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "@gmail.com",
       "requestedPackages": [
-        "EMAIL_BASIC"
+        "EMAIL_SOCIAL"
       ]
     },
     "errors": [
       {
-        "package": "EMAIL_BASIC",
+        "package": "EMAIL_SOCIAL",
         "message": "Invalid email address",
         "code": "INVALID_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"

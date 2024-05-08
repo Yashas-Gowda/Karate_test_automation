@@ -15,9 +15,10 @@
         "basic": {
           "deliverable": false,
           "domainDetails": {
+            "domainType": "valid",
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-07-13 06:41:01",
+            "creationTime": "1997-05-14 06:47:56",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -59,7 +60,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ca861529-4fb7-4161-a9ef-a77a3e79ac78",
+      "referenceId": "ae806797-eae4-431b-9aa1-5f6e5b8f8399",
       "inputEmail": "sdfdsfsd@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"

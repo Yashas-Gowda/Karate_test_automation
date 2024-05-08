@@ -1,7 +1,7 @@
 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_SUBSCRIPTION_RECORDS
 
 @parallel=false
-Feature: Testing of DPI  - DOMAIN_BREACH Package scenarios
+Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_SUBSCRIPTION_RECORDS Package scenarios
 
   Background:
     * configure charset = null
