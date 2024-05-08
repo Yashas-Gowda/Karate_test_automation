@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
-    "email": "rraghavendra523@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ]
+    ],
+    "email": "rishabhjain2409@gmail.com"
   },
   "response": {
     "data": {
@@ -13,34 +12,33 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
-            "registeredConsumerElectronicsProfiles": 0,
+            "registeredProfiles": 9,
+            "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": null
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
@@ -50,18 +48,18 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
               },
               "deliveroo": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
@@ -70,10 +68,10 @@
                 "registered": true
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "gravatar": {
                 "registered": false,
@@ -85,11 +83,11 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "rishabh",
+                "id": "rishabh88886",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -118,7 +116,7 @@
                 "connectionCount": null
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "hubspot": {
                 "registered": false
@@ -134,7 +132,7 @@
             },
             "travel": {
               "booking": {
-                "registered": false
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -154,7 +152,7 @@
                 "registered": false
               },
               "binance": {
-                "registered": false
+                "registered": true
               }
             },
             "education": {
@@ -182,13 +180,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e667b9d5-1bc6-4e13-b234-297272af87e8",
-      "inputEmail": "rraghavendra523@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "rishabhjain2409@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

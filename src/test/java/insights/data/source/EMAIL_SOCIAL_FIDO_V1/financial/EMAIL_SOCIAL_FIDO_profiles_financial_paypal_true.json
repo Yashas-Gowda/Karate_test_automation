@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
-    "email": "rraghavendra523@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ]
+    ],
+    "email": "sabarishwaran185@gmail.com"
   },
   "response": {
     "data": {
@@ -13,16 +12,16 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
+            "registeredProfiles": 9,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredEntertainmentProfiles": 0,
+            "registeredProfessionalProfiles": 1,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
@@ -38,8 +37,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
+                "name": "Sabarish Art",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b5648f4d/97d6/45ac/bb52/bfbf7fc80e8f/37113c88-f2df-4c16-9fe6-3bc7bc5ecbee.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -73,7 +72,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "gravatar": {
                 "registered": false,
@@ -118,7 +117,7 @@
                 "connectionCount": null
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "hubspot": {
                 "registered": false
@@ -126,7 +125,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "disneyplus": {
                 "registered": false
@@ -151,7 +150,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": false
+                "registered": true
               },
               "binance": {
                 "registered": false
@@ -182,13 +181,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e667b9d5-1bc6-4e13-b234-297272af87e8",
-      "inputEmail": "rraghavendra523@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "sabarishwaran185@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

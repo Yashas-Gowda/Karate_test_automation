@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
-    "email": "rraghavendra523@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ]
+    ],
+    "email": "sammy.khnm@gmail.com"
   },
   "response": {
     "data": {
@@ -13,16 +12,16 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
-            "registeredConsumerElectronicsProfiles": 0,
+            "registeredProfiles": 7,
+            "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
+            "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
@@ -31,16 +30,16 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": null
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
-                "gender": "M"
+                "name": "sammy khnm",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/4d179bbf/ca39/4114/83de/fe3d94402e92/eed507e8-b2d7-4a9f-aa0e-d70d7a99fb30.jpg",
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -50,7 +49,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -61,19 +60,19 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "gravatar": {
                 "registered": false,
@@ -118,7 +117,7 @@
                 "connectionCount": null
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "hubspot": {
                 "registered": false
@@ -134,7 +133,7 @@
             },
             "travel": {
               "booking": {
-                "registered": false
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -151,7 +150,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": false
+                "registered": true
               },
               "binance": {
                 "registered": false
@@ -182,8 +181,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "e667b9d5-1bc6-4e13-b234-297272af87e8",
-      "inputEmail": "rraghavendra523@gmail.com",
+      "referenceId": "9d59c8a0-0b4f-4dde-a830-79e6c6403495",
+      "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

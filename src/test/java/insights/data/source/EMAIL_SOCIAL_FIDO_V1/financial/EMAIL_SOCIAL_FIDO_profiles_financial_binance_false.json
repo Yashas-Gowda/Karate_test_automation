@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
+    "email": "vsupritha1804@gmail.com"
   },
   "response": {
     "data": {
@@ -12,33 +12,33 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 7,
+            "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 1,
+            "registeredTravelProfiles": 0,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": null
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5b4cd189/8b4d/4174/8d37/75e5f3a460c1/429aaebb-4d32-43c5-af20-9a45bda3cc00.jpg",
-                "gender": "M"
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/60f883ce/3362/44c1/b3c5/c2c8ae04e106/15908c27-4a45-4abc-91c6-a1c14f7935ac.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -48,7 +48,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -59,19 +59,19 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "gravatar": {
                 "registered": false,
@@ -86,8 +86,8 @@
                 "registered": true,
                 "language": null,
                 "gender": null,
-                "name": "sameena yasmeen",
-                "id": null,
+                "name": "Supritha V",
+                "id": "live:.cid.b84a673fd732cd2a",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -132,7 +132,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -149,7 +149,15 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -172,13 +180,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "892073ca-d5bd-43e4-aed9-4f448336c40b",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "vsupritha1804@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

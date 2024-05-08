@@ -13,19 +13,20 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 11,
+            "registeredProfiles": 14,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 2,
-            "registeredEcommerceProfiles": 1,
+            "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 0,
+            "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 2,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 2,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
@@ -38,7 +39,7 @@
               "google": {
                 "registered": true,
                 "name": "JISMON GEORGE",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/11a7c2ef/4d26/4124/8e06/8934966320c9/21de0891-fee5-4e41-92a2-13db0d1d6827.jpg",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/98b3caca/8dfa/4524/b399/ff6e4787dde1/b4958078-c7d6-478f-9d77-6803c27f2e21.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -52,7 +53,7 @@
                 "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": true
               },
               "deliveroo": {
                 "registered": false
@@ -95,7 +96,7 @@
                 "city": "trichur",
                 "state": "kerala",
                 "country": "India",
-                "photo": null
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/a9e01de2/9df2/4f4c/8622/d6c3d6fae0f1/2e3f3b96-5bc5-4eb6-bc61-c1c36c38c4a3.jpg"
               },
               "discord": null,
               "kakao": null
@@ -105,7 +106,7 @@
                 "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -151,6 +152,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": true
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -173,7 +182,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "af46e926-ff45-44df-8dff-4641557c60e0",
+      "referenceId": "c5d68753-f8f4-43bd-a674-b72c67729dec",
       "inputEmail": "gpjismon@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

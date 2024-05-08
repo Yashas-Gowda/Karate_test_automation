@@ -1,30 +1,31 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sabarishwaran185@gmail.com"
-  } ,
-  "response":{
+    "email": "listing@binance.com"
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
+            "registeredProfiles": 2,
             "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 0,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 1,
-            "registeredEntertainmentProfiles": 1,
+            "registeredProfessionalProfiles": 0,
+            "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
@@ -38,11 +39,11 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Sabarish Art",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/0522a8a4/3e1d/4329/a6ed/409071199a7c/a74ed8a9-16e0-4de2-b855-9fd2be58dd15.jpg"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -53,10 +54,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": null
@@ -72,27 +73,30 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -116,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -180,7 +184,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": true
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -194,7 +198,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
+                "registered": false
               },
               "lastfm": {
                 "registered": null
@@ -220,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -237,7 +241,15 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": null
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -253,11 +265,15 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
-      "inputEmail": "sabarishwaran185@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "listing@binance.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

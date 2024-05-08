@@ -12,18 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 7,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -37,8 +38,8 @@
               "google": {
                 "registered": true,
                 "name": "sammy khnm",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5b4cd189/8b4d/4174/8d37/75e5f3a460c1/429aaebb-4d32-43c5-af20-9a45bda3cc00.jpg",
-                "gender": "M"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/4d179bbf/ca39/4114/83de/fe3d94402e92/eed507e8-b2d7-4a9f-aa0e-d70d7a99fb30.jpg",
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -83,10 +84,10 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
-                "name": "sameena yasmeen",
+                "name": null,
                 "id": null,
                 "handle": null,
                 "bio": null,
@@ -150,6 +151,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -172,7 +181,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "40df33ff-1f8d-45b0-8c28-daaff816f9e8",
+      "referenceId": "50f8b267-ca1e-4baa-bc8c-fe6d715e8f55",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
