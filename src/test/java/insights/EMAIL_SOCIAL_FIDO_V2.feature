@@ -570,7 +570,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario with invalid input - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with invalid input - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -610,7 +610,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
   #      | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)_domainType_invalid_email     | 400        |
   #      | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)_domainType_invalid_domain       | 400        |
 
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario with null/empty input - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with null/empty input - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -645,7 +645,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Email_Social_Negative_NullInput(' ') | 400        |
 
   #  @Schema_validation_1
-  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+  #  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_1 - <Scenario>
   #    Given url requestUrl
   #    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
   #    And headers headers
@@ -691,7 +691,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
   #      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
 
   @Schema_validation_2
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
