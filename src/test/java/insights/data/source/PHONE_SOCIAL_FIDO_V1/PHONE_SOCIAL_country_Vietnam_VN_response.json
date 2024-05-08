@@ -68,7 +68,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/c2e51189/bf21/4bce/925a/a7ac0bcb14e9/a6b3f2e1-2cca-4ac5-afad-875d86c63044.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/f4af27b8/5275/4ade/85ac/52008b720a9c/5744bfd2-e2e8-445b-8398-38b8476bcd0f.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -118,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "936983031",
       "cleansedPhoneNumber": "+84936983031",
-      "referenceId": "8ad8e288-9a72-4774-a3ac-a70329813a93",
+      "referenceId": "6cee1fba-cc0a-4510-a7f3-2ce828c9fb50",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

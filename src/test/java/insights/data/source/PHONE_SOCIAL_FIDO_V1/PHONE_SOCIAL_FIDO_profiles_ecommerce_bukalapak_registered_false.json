@@ -14,9 +14,9 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
@@ -37,7 +37,7 @@
                 "registered": false
               },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -118,11 +118,12 @@
     "meta": {
       "inputPhoneNumber": "6282226265640",
       "cleansedPhoneNumber": "+6282226265640",
-      "referenceId": "Dpi_march_6_upi_1",
+      "referenceId": "84ecd69d-d6e3-4bf9-8be1-106d6a4f3cbc",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

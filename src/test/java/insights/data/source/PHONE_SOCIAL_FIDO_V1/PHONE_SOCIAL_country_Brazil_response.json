@@ -14,10 +14,10 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 9,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 2,
+            "registeredSocialMediaProfiles": 3,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 3,
             "lastActivity": null,
@@ -42,7 +42,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": true
@@ -78,7 +78,7 @@
                 "registered": true,
                 "photo": null,
                 "lastSeen": "1970-01-01T00:00:00Z",
-                "name": "Claudio"
+                "name": "+5547991986334"
               },
               "skype": {
                 "registered": true,
@@ -118,7 +118,7 @@
     "meta": {
       "inputPhoneNumber": "5547991986334",
       "cleansedPhoneNumber": "+5547991986334",
-      "referenceId": "0b658986-b9b4-4002-8c3b-7df27702d1a3",
+      "referenceId": "b7594e71-9d30-452a-ac8b-f6cd3c0b5a80",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

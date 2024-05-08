@@ -1,4 +1,4 @@
-@PHONE_SOCIAL_SEON @ignore
+@seon_phone @PHONE_SOCIAL_SEON @ignore
 Feature: Testing of DPI  - PHONE_SOCIAL_SEON scenarios
 
   Background:

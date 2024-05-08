@@ -8,7 +8,7 @@
     "phoneNumber": "919721553497",
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -22,7 +22,7 @@
             "registeredMessagingProfiles": 1,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "emailProvider": {
@@ -35,6 +35,9 @@
             "ecommerce": {
               "flipkart": {
                 "registered": true
+              },
+              "bukalapak": {
+                "registered": null
               },
               "amazon": {
                 "registered": true
@@ -56,7 +59,7 @@
                 "registered": false
               },
               "linkedin": {
-                "registered": false
+                "registered": null
               }
             },
             "messaging": {
@@ -68,7 +71,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/ddd4996d/cc4c/466d/ad26/4b90bfd9f3a9/61a68244-3c88-4a13-aeeb-0840f362e1e7.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -118,7 +121,7 @@
     "meta": {
       "inputPhoneNumber": "919721553497",
       "cleansedPhoneNumber": "+919721553497",
-      "referenceId": "d9364762-4dbf-4deb-9b5d-a8d95fd29407",
+      "referenceId": "df31e2e6-dd28-40ce-8198-8a7f046fdfdb",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]
