@@ -6,7 +6,7 @@
     ],
     "email": "kalyani001989@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -22,8 +22,9 @@
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -38,8 +39,9 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Kalyani Sharma",
-                "photo": null
+                "name": null,
+                "photo": null,
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -56,7 +58,7 @@
                 "registered": false
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": null
@@ -72,6 +74,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -116,7 +121,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -220,7 +225,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -238,6 +243,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -253,15 +266,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
+      "referenceId": "702bb20c-c1ac-4d98-8998-4ae9a23b7732",
       "inputEmail": "kalyani001989@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

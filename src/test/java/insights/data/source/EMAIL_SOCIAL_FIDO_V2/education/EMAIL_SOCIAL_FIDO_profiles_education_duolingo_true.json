@@ -1,10 +1,11 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email": "Fernando76@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ],
-    "email": "sabarishwaran185@gmail.com"
+    ]
   },
   "response": {
     "data": {
@@ -12,25 +13,25 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
+            "registeredProfiles": 14,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
-            "registeredEntertainmentProfiles": 1,
+            "registeredEntertainmentProfiles": 2,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 1,
-            "registeredEducationProfiles": 0,
+            "registeredEducationProfiles": 1,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": {
                 "registered": null
@@ -39,12 +40,12 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Sabarish Art",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b5648f4d/97d6/45ac/bb52/bfbf7fc80e8f/37113c88-f2df-4c16-9fe6-3bc7bc5ecbee.jpg",
+                "name": null,
+                "photo": null,
                 "gender": "M"
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -58,7 +59,7 @@
                 "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": true
               },
               "flipkart": {
                 "registered": null
@@ -214,7 +215,7 @@
                 "registered": null
               },
               "disneyplus": {
-                "registered": false
+                "registered": true
               },
               "netflix": {
                 "registered": null
@@ -250,7 +251,7 @@
             },
             "education": {
               "duolingo": {
-                "registered": false
+                "registered": true
               }
             }
           }
@@ -273,13 +274,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ca1ccaf3-1d4c-4a57-a970-2a55dd125180",
-      "inputEmail": "sabarishwaran185@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "Fernando76@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

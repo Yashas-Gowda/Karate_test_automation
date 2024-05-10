@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sabarishwaran185@gmail.com"
+    "email": "sammy.khnm@gmail.com"
   },
   "response": {
     "data": {
@@ -12,15 +12,15 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
-            "registeredConsumerElectronicsProfiles": 0,
+            "registeredProfiles": 7,
+            "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
-            "registeredEntertainmentProfiles": 1,
-            "registeredTravelProfiles": 0,
+            "registeredEntertainmentProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
@@ -30,7 +30,7 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": {
                 "registered": null
@@ -39,9 +39,9 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Sabarish Art",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b5648f4d/97d6/45ac/bb52/bfbf7fc80e8f/37113c88-f2df-4c16-9fe6-3bc7bc5ecbee.jpg",
-                "gender": "M"
+                "name": "sammy khnm",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/4d179bbf/ca39/4114/83de/fe3d94402e92/eed507e8-b2d7-4a9f-aa0e-d70d7a99fb30.jpg",
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -55,7 +55,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -81,13 +81,13 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": null,
@@ -199,7 +199,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
+                "registered": false
               },
               "lastfm": {
                 "registered": null
@@ -225,7 +225,7 @@
             },
             "travel": {
               "booking": {
-                "registered": false
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -273,13 +273,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ca1ccaf3-1d4c-4a57-a970-2a55dd125180",
-      "inputEmail": "sabarishwaran185@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
