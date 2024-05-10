@@ -533,7 +533,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_travel_booking_true_airbnb_null | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_travel_booking_false_airbnb_null | 200        |
 
-  #fido gives only {paypal} as financial profiles | registeredTravelProfiles <= 1
+  #fido gives only {paypal,binance} as financial profiles | registeredTravelProfiles <= 2
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/financial/<Scenario>.json")
@@ -566,9 +566,44 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Scenario                                   | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
+      # Data changed     | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
+
+  #fido gives only {duolingo} as education profiles | registeredEducationProfiles <= 1
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = education   - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V2/education/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredEducationProfiles == $.data.email.social.summary.registeredEducationProfiles
+    * match payload.response.data.email.social.profiles.education == $.data.email.social.profiles.education
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                   | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_false | 200        |
+  #  Data not found    | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with invalid input - <Scenario>
     Given url requestUrl
