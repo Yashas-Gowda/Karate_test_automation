@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "918554847091",
+    "phoneNumber": "8207277594",
     "email": "shinderashmi07@gmail.com",
     "upiApplicationName": "ALL",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -24,6 +24,13 @@
           "upiIdCount": 3,
           "accounts": [
             {
+              "appName": "PhonePe",
+              "nameAtBank": "ARIF IKBAL",
+              "upiId": "8207277594@ybl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
               "appName": "Google Pay",
               "nameAtBank": "RASHMI VINAYAK SHINDE",
               "upiId": "shinderashmi07@okhdfcbank",
@@ -31,16 +38,9 @@
               "accountStatus": "VALID"
             },
             {
-              "appName": "PhonePe",
-              "nameAtBank": "RASHMI VINAYAK SHINDE",
-              "upiId": "8554847091@ybl",
-              "accountType": "ALTERNATE",
-              "accountStatus": "VALID"
-            },
-            {
               "appName": "MobiKwik",
-              "nameAtBank": "RASHMI VINAYAK SHINDE",
-              "upiId": "8554847091@ikwik",
+              "nameAtBank": "ARIF  IKBAL",
+              "upiId": "8207277594@ikwik",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -58,9 +58,9 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "918554847091",
-      "cleansedPhoneNumber": "+918554847091",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "inputPhoneNumber": "8207277594",
+      "cleansedPhoneNumber": "+918207277594",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "shinderashmi07@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"

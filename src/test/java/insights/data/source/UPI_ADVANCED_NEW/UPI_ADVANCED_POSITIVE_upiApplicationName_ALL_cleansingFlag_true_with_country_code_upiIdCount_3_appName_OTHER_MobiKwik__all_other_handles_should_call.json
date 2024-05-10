@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
@@ -9,8 +9,8 @@
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,15 +21,8 @@
       "upi": {
         "basic": null,
         "advanced": {
-          "upiIdCount": 3,
+          "upiIdCount": 2,
           "accounts": [
-            {
-              "appName": "Google Pay",
-              "nameAtBank": "RASHMI VINAYAK SHINDE",
-              "upiId": "shinderashmi07@okhdfcbank",
-              "accountType": "ALTERNATE",
-              "accountStatus": "VALID"
-            },
             {
               "appName": "PhonePe",
               "nameAtBank": "RASHMI VINAYAK SHINDE",
@@ -38,9 +31,9 @@
               "accountStatus": "VALID"
             },
             {
-              "appName": "MobiKwik",
+              "appName": "Google Pay",
               "nameAtBank": "RASHMI VINAYAK SHINDE",
-              "upiId": "8554847091@ikwik",
+              "upiId": "shinderashmi07@okhdfcbank",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -60,13 +53,14 @@
     "meta": {
       "inputPhoneNumber": "918554847091",
       "cleansedPhoneNumber": "+918554847091",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "2862db7d-42b6-47dd-8463-4cda65f2cfbc",
       "inputEmail": "shinderashmi07@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
       "inputUpiApplicationName": "ALL"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
