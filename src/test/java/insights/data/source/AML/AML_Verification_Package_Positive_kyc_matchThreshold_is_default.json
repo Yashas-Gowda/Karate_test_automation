@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "entityType": "INDIVIDUAL",
     "userDetails": {
@@ -10,7 +10,7 @@
       "KYC_AML"
     ]
   },
-  "response":{
+  "response": {
     "data": {
       "kyc": {
         "government": null,
@@ -19,8 +19,8 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 28,
-            "totalRecords": 86
+            "noOfProfiles": 33,
+            "totalRecords": 80
           },
           "records": [
             {
@@ -42,7 +42,8 @@
                 "https://ofac.treasury.gov/media/7686/download?inline"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "JONG UN KIM"
               ],
@@ -59,7 +60,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "5625303434703252520",
+              "profileId": "c2d76fce-3229-4318-9613-eb3928e00de8",
               "matchScore": 100,
               "firstName": "Jong",
               "middleName": "Un",
@@ -77,11 +78,13 @@
                 "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jong Un KIM"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -237,8 +240,9 @@
                 "https://www.cidob.org/en/biografias_lideres_politicos/asia/corea_del_norte/kim_jong_un",
                 "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/"
               ],
-              "summary": "Kim in 2019 General Secretary of the Workers' Party of Korea[a] Assumed office: 11 April 2012 Preceded by: Kim Jong Il President of the State Affairs of North Korea Assumed office: 29 June 2016 First Vice President: Choe Ryong-hae Vice President: , Ri Sol-ju, ​, (, m., 2009), ​ Children: 3 (unconfirmed), including Kim Ju-ae Parents: Kim Jong Il, (father) Ko Yong-hui, (mother) Relatives: Kim family Alma mater: Kim Il Sung University, Kim Il Sung Military University Military service Allegiance: North Korea Branch/service: Korean People's Army Years of service: 2010–present Rank: Wonsu Korean name Chosŏn'gŭl: 김, 정, 은 Hancha: 金, 正, 恩 Revised Romanization: Gim Jeong(-)eun McCune–Reischauer: Kim Chŏngŭn Central institution membership 2012–present: Member, Presidium of the Political Bureau of the 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2012–present: Member, Political Bureau of the 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2010–present: Member, 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2014–2019: Deputy, 13th Supreme People's Assembly Other offices held 2012–present: Chairman, Central Military Commission of the Workers' Party of Korea 2010–2012: Vice Chairman, Central Military Commission of the Workers' Party of Korea\r\nTerm of office: 17 december 2011 - Acting",
-              "mediaAdversary": [],
+              "summary": "Kim in 2019 General Secretary of the Workers' Party of Korea[a] Assumed office: 11 April 2012 Preceded by: Kim Jong Il President of the State Affairs of North Korea Assumed office: 29 June 2016 First Vice President: Choe Ryong-hae Vice President: , Ri Sol-ju, \u200B, (, m., 2009), \u200B Children: 3 (unconfirmed), including Kim Ju-ae Parents: Kim Jong Il, (father) Ko Yong-hui, (mother) Relatives: Kim family Alma mater: Kim Il Sung University, Kim Il Sung Military University Military service Allegiance: North Korea Branch/service: Korean People's Army Years of service: 2010\u2013present Rank: Wonsu Korean name Chosŏn'gŭl: 김, 정, 은 Hancha: 金, 正, 恩 Revised Romanization: Gim Jeong(-)eun McCune\u2013Reischauer: Kim Chŏngŭn Central institution membership 2012\u2013present: Member, Presidium of the Political Bureau of the 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2012\u2013present: Member, Political Bureau of the 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2010\u2013present: Member, 6th, 7th, 8th Central Committee of the Workers' Party of Korea 2014\u20132019: Deputy, 13th Supreme People's Assembly Other offices held 2012\u2013present: Chairman, Central Military Commission of the Workers' Party of Korea 2010\u20132012: Vice Chairman, Central Military Commission of the Workers' Party of Korea\r\nTerm of office: 17 december 2011 - Acting",
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "ኪም ጆንግ ኡን",
                 "كم جونغ أون",
@@ -321,7 +325,8 @@
                 "1/8/1984 12:00:00 AM",
                 "8 january 1984"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -343,7 +348,8 @@
                 "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/"
               ],
               "summary": "Terms: 1) In office since April 11, 2012  \r\nPolitical Party: Workers\\' Party of Korea  \r\nOther Political Titles: Supreme Leader of North Korea, First Chairman of the National Defence Commission, Supreme Commander of the Korean People\\'s Army, Chairman of the Central Military Commission, Vice Chairman of the Central Military Commission  \r\nEducation: Kim Il-sung University, Kim Il-sung Military University\r\nCountry Unique Code: 731 \r\nLeader Id: A3.0-181 \r\nStart Date: 17/12/2011 \r\nKim Jong Un  doesn't have a military career",
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Jong-un",
                 "Jong-un Kim",
@@ -354,7 +360,8 @@
                 "1/8/1983 12:00:00 AM",
                 "1983"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -375,17 +382,20 @@
                 "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/"
               ],
               "summary": "",
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Jong-sun",
                 "KIM Jong Sun"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
-              "profileId": "7f4598e9-af48-4465-9aa7-1c1be4da0931",
+              "profileId": "44a788cd-adba-4dfc-9266-8cd753e1e2d1",
               "matchScore": 90,
               "firstName": "KIM",
               "middleName": "Jong ",
@@ -402,12 +412,15 @@
                 "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/"
               ],
               "summary": "",
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM Jong Sun"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -421,12 +434,14 @@
               "type": "SANCTION",
               "sourceName": "UK HM Treasury Office of Financial Sanctions Implementation Sanction List",
               "programName": "Democratic People's Republic of Korea",
-              "otherInformation": "(UK Sanctions List Ref):DPR0025. (UK Statement of Reasons):Former director of Office 39 of the Central Committee of the Workers’ Party of Korea which is involved in proliferation financing. In 2011, reportedly in charge of Office 38 to raise funds for the leadership and elites. (Gender):Male UK Sanctions List Date Designated: 31/12/2020",
+              "otherInformation": "(UK Sanctions List Ref):DPR0025. (UK Statement of Reasons):Former director of Office 39 of the Central Committee of the Workers\u2019 Party of Korea which is involved in proliferation financing. In 2011, reportedly in charge of Office 38 to raise funds for the leadership and elites. (Gender):Male UK Sanctions List Date Designated: 31/12/2020",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "TONG UN KIM",
                 "TONG-UN KIM"
@@ -461,7 +476,8 @@
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R1331"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM Tong Un",
                 "김동운",
@@ -470,7 +486,8 @@
               "otherPossibleDob": [
                 "11/1/1936 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -484,12 +501,14 @@
               "type": "SANCTION",
               "sourceName": "Trésor Direction Générale Economic Sanctions List",
               "programName": null,
-              "otherInformation": "Reason: Ancien directeur du “Bureau 39” du Comité central du Parti des travailleurs de Corée, qui participait au financement de la prolifération. Il peut avoir également travaillé dans une autre unité du Parti, le “Bureau 38”, pour collecter des fonds pour les dirigeants et les élites qui pourraient avoir soutenu le programme nucléaire et de missiles balistiques. Legal basis: 437 (UE) 2020/1129 du 30/07/2020 (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 990 (UE) 2017/1509 du 30/08/2017- (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 1156 (UE) 2021/1300 du 05/08/2021 (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 2420 (UE) 2022/1331 du 28/07/2022 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
+              "otherInformation": "Reason: Ancien directeur du \u201CBureau 39\u201D du Comité central du Parti des travailleurs de Corée, qui participait au financement de la prolifération. Il peut avoir également travaillé dans une autre unité du Parti, le \u201CBureau 38\u201D, pour collecter des fonds pour les dirigeants et les élites qui pourraient avoir soutenu le programme nucléaire et de missiles balistiques. Legal basis: 437 (UE) 2020/1129 du 30/07/2020 (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 990 (UE) 2017/1509 du 30/08/2017- (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 1156 (UE) 2021/1300 du 05/08/2021 (UE Corée du Nord - Règlement (UE) 2017/1509)\r\n Legal basis: 2420 (UE) 2022/1331 du 28/07/2022 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM Tong Un",
                 "Tong-un KIM"
@@ -497,7 +516,8 @@
               "otherPossibleDob": [
                 "11/1/1936 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -518,13 +538,16 @@
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2020.247.01.0005.01.ENG&toc=OJ:L:2020:247:TOC"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Tong-un KIM",
                 "Tong Un KIM"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -545,7 +568,8 @@
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R1331"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM Tong Un",
                 "김동운",
@@ -554,7 +578,8 @@
               "otherPossibleDob": [
                 "11/1/1936 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -568,14 +593,15 @@
               "type": "SANCTION",
               "sourceName": "Monaco Economic Sanctions",
               "programName": null,
-              "otherInformation": "Sanction Regime:UE Corée du Nord - Règlement (UE) 2017/1509 Monaco Sanction Id: 93287 Reason: Ancien directeur du “Bureau 39” du Comité central du Parti des travailleurs de Corée, qui participait au financement de la prolifération. Il peut avoir également travaillé dans une autre unité du Parti, le “Bureau 38”, pour collecter des fonds pour les dirigeants et les élites qui pourraient avoir soutenu le programme nucléaire et de missiles balistiques. Legal Basis: (UE) 2017/1509 du 30/08/2017,\n(UE) 2020/1129 du 30/07/2020,\n(UE) 2021/1300 du 05/08/2021,\n(UE) 2022/1331 du 28/07/2022 Monaco Legal Basis:DM 2021-01 du 04/06/2021\nDM 2021-16 du 06/08/2021\nDM 2022-64 du 01/08/2022 ",
+              "otherInformation": "Sanction Regime:UE Corée du Nord - Règlement (UE) 2017/1509 Monaco Sanction Id: 93287 Reason: Ancien directeur du \u201CBureau 39\u201D du Comité central du Parti des travailleurs de Corée, qui participait au financement de la prolifération. Il peut avoir également travaillé dans une autre unité du Parti, le \u201CBureau 38\u201D, pour collecter des fonds pour les dirigeants et les élites qui pourraient avoir soutenu le programme nucléaire et de missiles balistiques. Legal Basis: (UE) 2017/1509 du 30/08/2017,\n(UE) 2020/1129 du 30/07/2020,\n(UE) 2021/1300 du 05/08/2021,\n(UE) 2022/1331 du 28/07/2022 Monaco Legal Basis:DM 2021-01 du 04/06/2021\nDM 2021-16 du 06/08/2021\nDM 2022-64 du 01/08/2022 ",
               "group": null,
               "classification": null,
               "links": [
                 "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM Tong Un",
                 "Tong-Un Kim"
@@ -583,7 +609,8 @@
               "otherPossibleDob": [
                 "11/1/1936 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -597,19 +624,21 @@
               "type": "SANCTION",
               "sourceName": "UK FCDO Sanctions List",
               "programName": null,
-              "otherInformation": "Regime Name: The Democratic People's Republic of Korea (Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Travel Ban \r\nDesignation Source: UK \r\nLast Update Date: 18/12/2021 \r\nUK Statement of Reasons: \r\nFormer director of Office 39 of the Central Committee of the Workers’ Party of Korea which is involved in proliferation financing. In 2011, reportedly in charge of Office 38 to raise funds for the leadership and elites. \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: No",
+              "otherInformation": "Regime Name: The Democratic People's Republic of Korea (Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Travel Ban \r\nDesignation Source: UK \r\nLast Update Date: 18/12/2021 \r\nUK Statement of Reasons: \r\nFormer director of Office 39 of the Central Committee of the Workers\u2019 Party of Korea which is involved in proliferation financing. In 2011, reportedly in charge of Office 38 to raise funds for the leadership and elites. \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: No",
               "group": null,
               "classification": null,
               "links": [
                 "https://www.gov.uk/government/publications/the-uk-sanctions-list"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Tong Un Kim",
                 "Tong-Un Kim"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -637,12 +666,15 @@
                 "https://www.nj.gov/dobi/division_insurance/insfines10.htm"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jungun Kim"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -670,8 +702,9 @@
                 "https://zh.wikipedia.org/wiki/金鍾仁_(政治人物)",
                 "http://kimchongin.com/"
               ],
-              "summary": "Leader of the People Power Party Interim In office: 27 May 2020 – 8 April 2021 Preceded by: Joo Ho-young, (acting) Succeeded by: Kim Gi-hyeon, (acting) Leader of the Democratic Party of Korea Interim In office: 27 January 2016 – 27 August 2016 Preceded by: Moon Jae-in Succeeded by: Choo Mi-ae Member of the National Assembly In office: 30 May 2016 – 8 March 2017 Constituency: Proportional representation In office: 30 May 2004 – 29 May 2008 In office: 30 May 1992 – 10 September 1994 In office: 11 April 1981 – 29 May 1988 Constituency: Proportional representation Minister of Health and Social Affairs In office: 19 July 1989 – 13 March 1990 President: Roh Tae-woo Preceded by: Moon Tae-joon Succeeded by: Kim Jung-soo Party Name: People Power Party (South Korea) Other politicalaffiliations: Democratic Justice Party, Democratic Liberal Party, Millennium Democratic Party, Saenuri, (2011–2012), Democratic Party of Korea, (2016–2017), People's Party Alma mater: Hankuk University of Foreign Studies, University of Münster Occupation: Politician, economist",
-              "mediaAdversary": [],
+              "summary": "Leader of the People Power Party Interim In office: 27 May 2020 \u2013 8 April 2021 Preceded by: Joo Ho-young, (acting) Succeeded by: Kim Gi-hyeon, (acting) Leader of the Democratic Party of Korea Interim In office: 27 January 2016 \u2013 27 August 2016 Preceded by: Moon Jae-in Succeeded by: Choo Mi-ae Member of the National Assembly In office: 30 May 2016 \u2013 8 March 2017 Constituency: Proportional representation In office: 30 May 2004 \u2013 29 May 2008 In office: 30 May 1992 \u2013 10 September 1994 In office: 11 April 1981 \u2013 29 May 1988 Constituency: Proportional representation Minister of Health and Social Affairs In office: 19 July 1989 \u2013 13 March 1990 President: Roh Tae-woo Preceded by: Moon Tae-joon Succeeded by: Kim Jung-soo Party Name: People Power Party (South Korea) Other politicalaffiliations: Democratic Justice Party, Democratic Liberal Party, Millennium Democratic Party, Saenuri, (2011\u20132012), Democratic Party of Korea, (2016\u20132017), People's Party Alma mater: Hankuk University of Foreign Studies, University of Münster Occupation: Politician, economist",
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "김종인",
                 "كيم تشونغ إن",
@@ -687,7 +720,8 @@
               "otherPossibleDob": [
                 "7/11/1940 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -708,7 +742,8 @@
                 "http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;SID=9c56be4b62298b390b0ff99de1f08f69&amp;tpl=/ecfrbrowse/Title31/31cfr544_main_02.tpl"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Chung Chong KIM",
                 "JUNG JONG KIM"
@@ -739,9 +774,11 @@
               "otherInformation": "Served as the Tanchon Commercial Bank representative in Vietnam.",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM JUNG JONG",
                 "Kim Chung Chong"
@@ -749,7 +786,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -766,9 +804,11 @@
               "otherInformation": "(UK Sanctions List Ref):DPR0228. (UN Ref):KPi.021. Served as the Tanchon Commercial Bank representative in Vietnam. UK Sanctions List Date Designated: 02/03/2016",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KİM CHUNG CHONG",
                 "KIM JUNG JONG"
@@ -776,7 +816,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -793,9 +834,11 @@
               "otherInformation": "Served as the Tanchon Commercial Bank representative in Vietnam.\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Jung Jong",
                 "Kim Chung Chong"
@@ -803,7 +846,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -820,9 +864,11 @@
               "otherInformation": "Tanchon Commercial Bank Representative. Passport no.:  a) 199421147 (Expired 29 Dec. 2014)  b) 381110042  (Expired 25 Jan. 2016)  c) 563210184  (Expires 18 Jun. 2018). Served as the Tanchon Commercial Bank representative in Vietnam. ",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Jung Jong ",
                 "Kim Chung Chong  "
@@ -830,7 +876,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -851,7 +898,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jung Jong Kim",
                 "Chung Chong Kim"
@@ -859,7 +907,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -876,9 +925,11 @@
               "otherInformation": "Served as the Tanchon Commercial Bank representative in Vietnam.\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM JUNG JONG",
                 "Kim Chung Chong"
@@ -886,7 +937,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -903,9 +955,11 @@
               "otherInformation": " Commentaire: expire le 29/12/2014\r\n Commentaire: expire le 25/01/2016\r\n Commentaire: expire le 18/06/2018\r\nReason: il a été le représentant de la Tanchon Commercial Bank au Viêt Nam Legal basis: 364 Décision du comité de sanction des Nations unies du 02/03/2016 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n Legal basis: 421 (UE) 2017/1509 du 30/08/2017 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -913,7 +967,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -930,9 +985,11 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "キム・チュンチョン",
                 "KIM JUNG JONG",
@@ -942,7 +999,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -963,7 +1021,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jung Jong Kim",
                 "Chung Chong Kim"
@@ -971,7 +1030,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -988,9 +1048,11 @@
               "otherInformation": "Designation: Tanchon Commercial Bank Representative   Served as the Tanchon Commercial Bank representative in Vietnam.Last Updated : 09.11.2020 \r\nזהות הגורם שהכריז במקור:מועצת הביטחון של האו\"ם \r\nמספר החלטה ומספר סידורי ברשומות, כפי שניתנה עי הגורם הבינל המוסמך שהכריז במקור:1718 KPi.021 \r\nמועד אימוץ ההכרזה בישראל(אימוץ אוטומטי זמני):12 במרץ \n2018 \r\nמועד אימוץ ההכרזה בישראל(אימוץ קבוע):12 ביולי\n2018 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM  JUNG JONG"
@@ -1021,16 +1083,19 @@
               "otherInformation": "Comitetul Consiliului de Securitate al ONU instituit prin Rezoluția 1718 (2006) \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM JUNG JONG"
               ],
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1044,19 +1109,22 @@
               "type": "WANTED",
               "sourceName": "Moldova National Terrorist List",
               "programName": "Lista persoanelor, grupurilor și entităților implicate în incidentele teroriste și teroriste de către directorul SIS al Republicii Moldova \r\n",
-              "otherInformation": "persoanelor, entităților și altor grupuri implicate în proliferarea armelor de distrugere în masă și supuse măsurilor restrictive, aparținînd Republicii Populare Democrate Coreene, menținută de Comitetul Consiliului de Securitate al Organizației Națiunilor Unite, instituită prin Rezoluția 1718 (2006) \r\n",
+              "otherInformation": "persoanelor, entităților și altor grupuri implicate în proliferarea armelor de distrugere în masă și supuse măsurilor restrictive, aparținînd Republicii Populare Democrate Coreene, menținută de Comitetul Consiliului de Securitate al Organizației Națiunilor Unite, instituită prin Rezoluția 1718 (2006) \r\n",
               "group": null,
               "classification": null,
               "links": [
                 "https://www.legis.md/cautare/getResults?doc_id=133442&lang=ro#"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM JUNG JONG"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1066,16 +1134,18 @@
               "middleName": "JUNGJUNG",
               "lastName": "JONG",
               "fullName": "KIM JUNG JONG",
-              "nationality": "Democratic People’s Republic of Korea",
+              "nationality": "Democratic People\u2019s Republic of Korea",
               "type": "SANCTION",
               "sourceName": "Sri Lanka Ministry of Defence Sanctions Designations Under UN",
               "programName": "Sri Lanka Ministry of Defence Sanctions Designations under UN Regulation concerning the proliferation of WMD \r\n",
               "otherInformation": "Designation : Tanchon Commercial Bank Representative \r\nListed On : 2 Mar, 2016 (amended on 01 Jun, 2017) \r\nServed as the Tanchon Commercial Bank representative \r\nPersonal Number : KPi.0 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1083,7 +1153,8 @@
               "otherPossibleDob": [
                 "11/1/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1104,7 +1175,8 @@
                 "https://ms.hmb.gov.tr/uploads/sites/12/2021/03/CB-Karar-ve-eki.pdf"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1112,7 +1184,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1133,7 +1206,8 @@
                 "https://kgb.gov.by/ru/perechen-inf-ru/"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KİM JUNG JONG",
                 "KİM CHUNG CHONG",
@@ -1142,7 +1216,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1156,14 +1231,15 @@
               "type": "WATCHLIST",
               "sourceName": "Mexico Financial Intelligence Unit UN Sanction List",
               "programName": null,
-              "otherInformation": "ANEXO “C” RESOLUCIÓN 1718 (2006) relativa a la República Popular Democrática de Corea\r\n",
+              "otherInformation": "ANEXO \u201CC\u201D RESOLUCIÓN 1718 (2006) relativa a la República Popular Democrática de Corea\r\n",
               "group": null,
               "classification": null,
               "links": [
                 "https://www.gob.mx/cms/uploads/attachment/file/361503/ANEXO_C_RELATIVO_A_LA_RESOLUCION_1718__2006_.pdf"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1171,7 +1247,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1192,7 +1269,8 @@
                 "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1200,40 +1278,7 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "2414597907948296445",
-              "matchScore": 81,
-              "firstName": "Jung",
-              "middleName": "Jong",
-              "lastName": "KIM",
-              "fullName": "Jung Jong KIM",
-              "nationality": null,
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "NPWMD",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Jung Jong KIM",
-                " Chung Chong KIM"
-              ],
-              "otherPossibleDob": [],
               "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
               ]
             },
             {
@@ -1255,7 +1300,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jung Jong Kim",
                 "Chung Chong Kim"
@@ -1263,7 +1309,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1280,16 +1327,19 @@
               "otherInformation": "Served as the Tanchon Commercial Bank representative in Vietnam.",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM JUNG JONG"
               ],
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1306,9 +1356,11 @@
               "otherInformation": "ID Number: 412\r\nComments: Served as the Tanchon Commercial Bank representative in Vietnam.\r\nTanchon Commercial Bank Representative",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM  JUNG JONG"
@@ -1316,7 +1368,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1337,7 +1390,8 @@
                 "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "Kim Jung Jong"
@@ -1345,7 +1399,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1359,22 +1414,25 @@
               "type": "SANCTION",
               "sourceName": "Financial Monitoring Service of the Republic of Azerbaijan ",
               "programName": null,
-              "otherInformation": "COMMENTS1: Served as the Tanchon Commercial Bank representative in Vietnam. Designation: Served as the Tanchon Commercial Bank representative in Vietnam.\r\n",
+              "otherInformation": "COMMENTS1: Served as the Tanchon Commercial Bank representative in Vietnam. Designation: Served as the Tanchon Commercial Bank representative in Vietnam.\r\n\r\nCOMMENTS1: Served as the Tanchon Commercial Bank representative in Vietnam.Designation: Served as the Tanchon Commercial Bank representative in Vietnam.\r\n\r\n",
               "group": null,
               "classification": null,
               "links": [
                 "http://www.hms.gov.az/frq-content/nov_snk_v1/INTERNATIONAL21.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
+                "KIM JUNG JONG",
                 "KIM JUNG JONG"
               ],
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1395,7 +1453,8 @@
                 "https://portal.moi.gov.qa/wps/portal/NCTC/sanctionlist/unifiedsanctionlist/!ut/p/a1/hZDLbsIwEEW_pQtv46ljIHRnLBSnTQhUkQBvKtOGYCmJU9vQ329CQarUB7ObozO6mosl3mDZqpOulNemVfWwy_FLMiWUCErSnFMGq3CWFFmYQRyPemHbCyORzmP6BIt4UsxglRNRjJ8FAbi_db_G8kthWQKEQprPea9MRSF4CBAtJxfhv4izAH8MA_yIZVWb3fmfLWt3YVRhact9aUsbHG2PD9537gEBgs5Yr-qgMTqozCl4Vwg-OnflCBa84Aical-HimrtPIJjq_e6fPsOf0s6mIH_CMBdswG9bNaRY3efJl1kaQ!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1403,7 +1462,8 @@
               "otherPossibleDob": [
                 "1966-11-07"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1424,7 +1484,8 @@
                 "https://www.gov.uk/government/publications/the-uk-sanctions-list"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Chung Chong",
                 "KIM JUNG JONG"
@@ -1432,7 +1493,8 @@
               "otherPossibleDob": [
                 "11/7/1966 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1453,12 +1515,51 @@
                 "http://fedsfm.ru/documents/omu-or-terrorists-catalog-all"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "JONG KIM JUNG"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "0c07af59-eeac-48d0-b3ec-fac07c3e3f2a",
+              "matchScore": 81,
+              "firstName": "Jung",
+              "middleName": "Jong",
+              "lastName": "KIM",
+              "fullName": "Jung Jong KIM",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Department of State Nonproliferation Sanctions List",
+              "programName": "NPWMD",
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Jung Jong KIM",
+                " Chung Chong KIM"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
             },
             {
               "entityType": "Individual",
@@ -1491,7 +1592,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1512,14 +1614,16 @@
                 "https://ofac.treasury.gov/media/7671/download?inline"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "JONG HUN KIL"
               ],
               "otherPossibleDob": [
                 "2/20/1972 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1536,7 +1640,8 @@
               "otherInformation": "",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
               "mediaAdversary": [
                 {
@@ -1558,7 +1663,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1575,7 +1681,8 @@
               "otherInformation": "(UK Sanctions List Ref):DPR0272. (UN Ref):KPi.027. UK Sanctions List Date Designated: 02/03/2016",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
               "mediaAdversary": [
                 {
@@ -1597,7 +1704,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1614,16 +1722,19 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Ryu Jin"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1640,9 +1751,11 @@
               "otherInformation": "Connected to designated entity Korea Mining Development Trading Corporation (KOMID), including as its representative in Namibia. Passport number 472410022 (expired 2017); 563410081 (expired 2018)",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kil Jong Hun",
                 "Kil Cho'ng-hun",
@@ -1651,7 +1764,8 @@
               "otherPossibleDob": [
                 "2/20/1972 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1668,7 +1782,8 @@
               "otherInformation": "KOMID Representative in Syria. Passport no.: 563410081.",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
               "mediaAdversary": [
                 {
@@ -1690,7 +1805,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1711,14 +1827,16 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jin Ryu"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1735,16 +1853,19 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1761,7 +1882,8 @@
               "otherInformation": " Legal basis: 364 Décision du comité de sanction des Nations unies du 02/03/2016 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n Legal basis: 421 (UE) 2017/1509 du 30/08/2017 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
               "mediaAdversary": [
                 {
@@ -1783,7 +1905,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1800,9 +1923,11 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kil Jong Hun",
                 "キル・ジョンフン"
@@ -1810,7 +1935,8 @@
               "otherPossibleDob": [
                 "2/20/1972 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1824,12 +1950,14 @@
               "type": "SANCTION",
               "sourceName": "Japan Ministry of Finance Economic Sanctions List",
               "programName": null,
-              "otherInformation": "Last Update Date: ※2016年3月11日改訂\r\n",
+              "otherInformation": "Last Update Date: \u203B2016年3月11日改訂\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN",
                 "リュ・ジン"
@@ -1838,7 +1966,8 @@
                 "8/7/1965 12:00:00 AM",
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1859,14 +1988,16 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jin Ryu"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1883,9 +2014,11 @@
               "otherInformation": "Designation: KOMID Representative in SyriaLast Updated : 09.11.2020 \r\nזהות הגורם שהכריז במקור:מועצת הביטחון של האו\"ם \r\nמספר החלטה ומספר סידורי ברשומות, כפי שניתנה עי הגורם הבינל המוסמך שהכריז במקור:1718 KPi.027 \r\nמועד אימוץ ההכרזה בישראל(אימוץ אוטומטי זמני):12 במרץ \n2018 \r\nמועד אימוץ ההכרזה בישראל(אימוץ קבוע):12 ביולי\n2018 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU  JIN"
               ],
@@ -1915,16 +2048,19 @@
               "otherInformation": "Comitetul Consiliului de Securitate al ONU instituit prin Rezoluția 1718 (2006) \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1934,23 +2070,26 @@
               "middleName": null,
               "lastName": "JIN",
               "fullName": "RYN JIN",
-              "nationality": "Democratic People’s Republic of Korea",
+              "nationality": "Democratic People\u2019s Republic of Korea",
               "type": "SANCTION",
               "sourceName": "Sri Lanka Ministry of Defence Sanctions Designations Under UN",
               "programName": "Sri Lanka Ministry of Defence Sanctions Designations under UN Regulation concerning the proliferation of WMD \r\n",
               "otherInformation": "Designation : KOMID Representative in Syria \r\nPersonal Number : KPi.07 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYN JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1971,14 +2110,16 @@
                 "https://ms.hmb.gov.tr/uploads/sites/12/2021/03/CB-Karar-ve-eki.pdf"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -1999,7 +2140,8 @@
                 "https://kgb.gov.by/ru/perechen-inf-ru/"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JİN",
                 "Рю Джин"
@@ -2007,7 +2149,8 @@
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2021,21 +2164,23 @@
               "type": "WATCHLIST",
               "sourceName": "Mexico Financial Intelligence Unit UN Sanction List",
               "programName": null,
-              "otherInformation": "ANEXO “C” RESOLUCIÓN 1718 (2006) relativa a la República Popular Democrática de Corea\r\n",
+              "otherInformation": "ANEXO \u201CC\u201D RESOLUCIÓN 1718 (2006) relativa a la República Popular Democrática de Corea\r\n",
               "group": null,
               "classification": null,
               "links": [
                 "https://www.gob.mx/cms/uploads/attachment/file/361503/ANEXO_C_RELATIVO_A_LA_RESOLUCION_1718__2006_.pdf"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2056,68 +2201,16 @@
                 "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "14474058094742316376",
-              "matchScore": 80,
-              "firstName": "Jong",
-              "middleName": "Hun",
-              "lastName": "KIL",
-              "fullName": "Jong Hun KIL",
-              "nationality": "KP\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "DPRK2",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Jong Hun KIL"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "14474058094742316376",
-              "matchScore": 80,
-              "firstName": "Jin",
-              "middleName": null,
-              "lastName": "RYU",
-              "fullName": "Jin RYU",
-              "nationality": "KP\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "DPRK2",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Jin RYU"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2138,14 +2231,16 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R1509&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jin Ryu"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2162,16 +2257,19 @@
               "otherInformation": "",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2188,16 +2286,19 @@
               "otherInformation": "ID Number: 407\r\nKOMID Representative in Syria",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU  JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2218,21 +2319,23 @@
                 "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Ryu Jin"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
               "profileId": "14474058094742316376",
               "matchScore": 80,
               "firstName": "RYU",
-              "middleName": null,
+              "middleName": "",
               "lastName": "JIN",
               "fullName": "RYU JIN",
               "nationality": "Democratic People's Republic of Korea",
@@ -2246,14 +2349,17 @@
                 "http://www.hms.gov.az/frq-content/nov_snk_v1/INTERNATIONAL21.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
+                "RYU JIN",
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2274,14 +2380,16 @@
                 "https://portal.moi.gov.qa/wps/portal/NCTC/sanctionlist/unifiedsanctionlist/!ut/p/a1/hZDLbsIwEEW_pQtv46ljIHRnLBSnTQhUkQBvKtOGYCmJU9vQ329CQarUB7ObozO6mosl3mDZqpOulNemVfWwy_FLMiWUCErSnFMGq3CWFFmYQRyPemHbCyORzmP6BIt4UsxglRNRjJ8FAbi_db_G8kthWQKEQprPea9MRSF4CBAtJxfhv4izAH8MA_yIZVWb3fmfLWt3YVRhact9aUsbHG2PD9537gEBgs5Yr-qgMTqozCl4Vwg-OnflCBa84Aical-HimrtPIJjq_e6fPsOf0s6mIH_CMBdswG9bNaRY3efJl1kaQ!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "1965-08-07"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2295,17 +2403,21 @@
               "type": "SANCTION",
               "sourceName": "Trésor Direction Générale Economic Sanctions List",
               "programName": null,
-              "otherInformation": "Reason: En sa qualité de représentant de Korea Mining Development Trading Corporation (KOMID), Kil Jong Hun est chargé de fournir une assistance à la Guinée équatoriale pour l’acquisition d’armes, contournant ainsi l’embargo international sur les armes institué par les résolutions pertinentes du Conseil de sécurité des Nations unies. Il fait l’objet de sanctions des États-Unis depuis 2015. Précédemment employé comme représentant de l’entité désignée KOMID en Namibie sous statut diplomatique, il a ouvert un compte bancaire en Afrique du Sud. En raison de sa position, il poursuit ses activités de prolifération pour KOMID en fournissant un financement précieux à la RPDC malgré les sanctions internationales. Legal basis: 2485 (UE) 2022/2429 du 12/12/2022 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
+              "otherInformation": "Reason: En sa qualité de représentant de Korea Mining Development Trading Corporation (KOMID), Kil Jong Hun est chargé de fournir une assistance à la Guinée équatoriale pour l\u2019acquisition d\u2019armes, contournant ainsi l\u2019embargo international sur les armes institué par les résolutions pertinentes du Conseil de sécurité des Nations unies. Il fait l\u2019objet de sanctions des États-Unis depuis 2015. Précédemment employé comme représentant de l\u2019entité désignée KOMID en Namibie sous statut diplomatique, il a ouvert un compte bancaire en Afrique du Sud. En raison de sa position, il poursuit ses activités de prolifération pour KOMID en fournissant un financement précieux à la RPDC malgré les sanctions internationales. Legal basis: 2485 (UE) 2022/2429 du 12/12/2022 (ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509)\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jong Hun KIL"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2326,7 +2438,8 @@
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.LI.2022.318.01.0013.01.ENG&toc=OJ%3AL%3A2022%3A318I%3ATOC"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jong Hun KIL"
               ],
@@ -2334,7 +2447,8 @@
                 "2/20/1972 12:00:00 AM",
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2355,7 +2469,8 @@
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.LI.2022.318.01.0013.01.ENG&toc=OJ%3AL%3A2022%3A318I%3ATOC"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jong Hun KIL"
               ],
@@ -2363,7 +2478,8 @@
                 "2/20/1972 12:00:00 AM",
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2384,14 +2500,16 @@
                 "https://www.gov.uk/government/publications/the-uk-sanctions-list"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "RYU JIN"
               ],
               "otherPossibleDob": [
                 "8/7/1965 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2412,7 +2530,8 @@
                 "https://ofac.treasury.gov/media/7676/download?inline"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Cho'ng-man KIM",
                 "JONG MAN KIM"
@@ -2448,9 +2567,11 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "キム・チョンマン",
                 "Kim Jong Man",
@@ -2470,114 +2591,6 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "9664415490057549593",
-              "matchScore": 80,
-              "firstName": "Jong",
-              "middleName": "Man",
-              "lastName": "KIM",
-              "fullName": "Jong Man KIM",
-              "nationality": "KP\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "DPRK4",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Jong Man KIM",
-                " Cho'ng-man KIM"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                },
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "10375743229503261011",
-              "matchScore": 80,
-              "firstName": "SONG",
-              "middleName": "HUN",
-              "lastName": "KIM",
-              "fullName": "SONG HUN KIM",
-              "nationality": "Korea, North ",
-              "type": "SANCTION",
-              "sourceName": "US Department of The Treasury OFAC SDN List",
-              "programName": "NPWMD ",
-              "otherInformation": "(Linked To: SECOND ACADEMY OF NATURAL SCIENCES)Transactions Prohibited For Persons Owned or Controlled By U.S. Financial Institutions: North Korea Sanctions Regulations section 510.214\r\nSecondary sanctions risk: North Korea Sanctions Regulations, sections 510.201 and 510.210\r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;SID=9c56be4b62298b390b0ff99de1f08f69&amp;tpl=/ecfrbrowse/Title31/31cfr544_main_02.tpl"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "SONG HUN KIM",
-                "So'ng-hun KIM"
-              ],
-              "otherPossibleDob": [
-                "4/10/1978 12:00:00 AM"
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": "Shenyang",
-                  "country": "China"
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "10375743229503261011",
-              "matchScore": 80,
-              "firstName": "Song",
-              "middleName": "Hun",
-              "lastName": "KIM",
-              "fullName": "Song Hun KIM",
-              "nationality": "KP\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "NPWMD",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Song Hun KIM",
-                " So'ng-hun KIM"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
               "profileId": "5926637246362040957",
               "matchScore": 80,
               "firstName": "KIM",
@@ -2586,21 +2599,24 @@
               "fullName": "KIM YONG JUN",
               "nationality": null,
               "type": "WATCHLIST",
-              "sourceName": "New York Office of the Medicaid Inspector General List of Exclusions",
+              "sourceName": "New York Office of the Medicaid Inspector General List of Exclusions",
               "programName": null,
-              "otherInformation": "Provider Type: Physician \r\nLicense Number: 236715 \r\n",
+              "otherInformation": "Provider Type: Physician \r\nLicense Number: 00236715 \r\n",
               "group": null,
               "classification": null,
               "links": [
                 "https://apps.omig.ny.gov/exclusions/ex_formatted_list.aspx"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "KIM YONG JUN"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
@@ -2622,12 +2638,51 @@
                 "http://brokercheck.finra.org/Individual/Summary/5687815"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "YONG KUN KIM"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "10375743229503261011",
+              "matchScore": 80,
+              "firstName": "SONG",
+              "middleName": "HUN",
+              "lastName": "KIM",
+              "fullName": "SONG HUN KIM",
+              "nationality": "Korea, North ",
+              "type": "SANCTION",
+              "sourceName": "US Department of The Treasury OFAC SDN List",
+              "programName": "NPWMD ",
+              "otherInformation": "(Linked To: SECOND ACADEMY OF NATURAL SCIENCES)Secondary sanctions risk: North Korea Sanctions Regulations, sections 510.201 and 510.210\r\nTransactions Prohibited For Persons Owned or Controlled By U.S. Financial Institutions: North Korea Sanctions Regulations section 510.214\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;SID=9c56be4b62298b390b0ff99de1f08f69&amp;tpl=/ecfrbrowse/Title31/31cfr544_main_02.tpl"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "SONG HUN KIM",
+                "So'ng-hun KIM"
+              ],
+              "otherPossibleDob": [
+                "4/10/1978 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": "Shenyang",
+                  "country": "China"
+                }
+              ]
             },
             {
               "entityType": "Individual",
@@ -2641,14 +2696,15 @@
               "type": "SANCTION",
               "sourceName": "Monaco Economic Sanctions",
               "programName": null,
-              "otherInformation": "Sanction Regime:ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509 Monaco Sanction Id: 101881 Reason: En sa qualité de représentant de Korea Mining Development Trading Corporation (KOMID), Kil Jong Hun est chargé de fournir une assistance à la Guinée équatoriale pour l’acquisition d’armes, contournant ainsi l’embargo international sur les armes institué par les résolutions pertinentes du Conseil de sécurité des Nations unies. Il fait l’objet de sanctions des États-Unis depuis 2015.\nPrécédemment employé comme représentant de l’entité désignée KOMID en Namibie sous statut diplomatique, il a ouvert un compte bancaire en Afrique du Sud. En raison de sa position, il poursuit ses activités de prolifération pour KOMID en fournissant un financement précieux à la RPDC malgré les sanctions internationales. Other Information: N° de passeport: Numéro de passeport: 563410081 /472410022.\n Legal Basis: (UE) 2022/2429 du 12/12/2022 Monaco Legal Basis:DM 2022-100 du 13/12/2022 ",
+              "otherInformation": "Sanction Regime:ONU Corée du Nord - RCSNU 1718 (2006) et R (UE) 2017/1509 Monaco Sanction Id: 101881 Reason: En sa qualité de représentant de Korea Mining Development Trading Corporation (KOMID), Kil Jong Hun est chargé de fournir une assistance à la Guinée équatoriale pour l\u2019acquisition d\u2019armes, contournant ainsi l\u2019embargo international sur les armes institué par les résolutions pertinentes du Conseil de sécurité des Nations unies. Il fait l\u2019objet de sanctions des États-Unis depuis 2015.\nPrécédemment employé comme représentant de l\u2019entité désignée KOMID en Namibie sous statut diplomatique, il a ouvert un compte bancaire en Afrique du Sud. En raison de sa position, il poursuit ses activités de prolifération pour KOMID en fournissant un financement précieux à la RPDC malgré les sanctions internationales. Other Information: N° de passeport : Numéro de passeport: 563410081 /472410022.\n Legal Basis: (UE) 2022/2429 du 12/12/2022 Monaco Legal Basis:DM 2022-100 du 13/12/2022 ",
               "group": null,
               "classification": null,
               "links": [
                 "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Jong Hun Kil"
               ],
@@ -2656,39 +2712,12 @@
                 "8/7/1965 12:00:00 AM",
                 "2/20/1972 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
-              "profileId": "c082e711-a4ee-4f60-91a3-ed321aa90c71",
-              "matchScore": 80,
-              "firstName": "Sun",
-              "middleName": "Dong",
-              "lastName": "Kim",
-              "fullName": "Sun Dong Kim",
-              "nationality": null,
-              "type": "WATCHLIST",
-              "sourceName": "New Zealand Commerce Commission",
-              "programName": null,
-              "otherInformation": "Parties : Sun Dong Kim\r\nCategory : Consumer\r\nSection : Fair Trading Act s 13(a)\r\nIndustry : Retail - other\r\nStatus : Closed\r\nOut Come : Judgment\r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://comcom.govt.nz/s-uat/redirect?collection=comcom-www-meta&url=https%3A%2F%2Fcomcom.govt.nz%2Fcase-register%2Fcase-register-entries%2Fbudge-collection-limited-and-sun-dong-kim&auth=apPRSG3Eit6znsOwHRP22w&profile=noise&rank=521&query=%21padrenull+d%3E31Dec1900",
-                "https://comcom.govt.nz/__data/assets/pdf_file/0024/69045/CC-v-Budge-Collection-Ltd-and-Sun-Dong-Kim-District-Court-Judgment-16-August-2016.PDF",
-                "https://comcom.govt.nz/case-register/case-register-entries/budge-collection-limited-and-sun-dong-kim"
-              ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "Sun Dong Kim"
-              ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "eeb7ff54-506c-4c06-8196-b075fdb9cc73",
+              "profileId": "5c618e35-61e0-4540-8bcd-4f52c74d9939",
               "matchScore": 80,
               "firstName": "Kim",
               "middleName": "Song",
@@ -2701,20 +2730,23 @@
               "otherInformation": "Passport 745235023 (North Korea)",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Kim Song Hun"
               ],
               "otherPossibleDob": [
                 "4/10/1978 12:00:00 AM"
               ],
-              "possibleAddresses": []
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Individual",
-              "profileId": "350612f8-b05b-4626-9ddb-25c62d8c3943",
+              "profileId": "97024d1f-20b4-4eaf-a69a-8b7126ef7176",
               "matchScore": 80,
               "firstName": "YONG",
               "middleName": "JUN",
@@ -2727,9 +2759,11 @@
               "otherInformation": "Business Name: PHYSICIAN (MD DO) \r\nSpeciality: INTERNAL MEDICINE \r\nType: 1128a1 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "YONG JUN KIM"
               ],
@@ -2743,41 +2777,6 @@
                   "country": null
                 }
               ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "14329824153369387980",
-              "matchScore": 80,
-              "firstName": "KIM",
-              "middleName": null,
-              "lastName": "JONGMIN",
-              "fullName": "KIM JONGMIN",
-              "nationality": "",
-              "type": "PEP",
-              "sourceName": "",
-              "programName": "",
-              "otherInformation": null,
-              "group": "1",
-              "classification": "",
-              "links": [
-                "https://ko.wikipedia.org/wiki/김종민_(1964년)",
-                "http://blog.naver.com/socmind",
-                "https://korea.assembly.go.kr:447/mem/mem_01.jsp"
-              ],
-              "summary": "Republic of Korea Parliament",
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "김종민",
-                "金鍾民",
-                "Kim Jong-min",
-                "김종민",
-                "KIM JONGMIN",
-                "KIM JONGMIN"
-              ],
-              "otherPossibleDob": [
-                "5/12/1964 12:00:00 AM"
-              ],
-              "possibleAddresses": []
             }
           ]
         }
@@ -2785,13 +2784,14 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "Dpi_feb_21_1",
+      "referenceId": "9f438829-a4eb-41ca-a1b7-e91f13a05180",
       "requestedPackages": [
         "KYC_AML"
       ],
       "inputFullGivenName": "Kim Jong Un",
       "inputRecordLimit": "20"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

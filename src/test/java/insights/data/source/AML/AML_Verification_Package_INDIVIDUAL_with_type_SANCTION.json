@@ -20,8 +20,8 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 5,
-            "totalRecords": 34
+            "noOfProfiles": 4,
+            "totalRecords": 32
           },
           "records": [
             {
@@ -397,45 +397,6 @@
               "entityType": "Individual",
               "profileId": "6931564511777943732",
               "matchScore": 100,
-              "firstName": "Arkam",
-              "middleName": "Abbas",
-              "lastName": "AL-KABI",
-              "fullName": "Arkam Abbas AL-KABI",
-              "nationality": "IQ\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "IRAQ3; SDGT",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Arkam Abbas AL-KABI",
-                " Akram Abas AL-KA'BI",
-                " Sheik Akram AL-KA'ABI",
-                " Shaykh Abu-Akram AL-KA'ABI",
-                "ABU-MUHAMMAD",
-                "KARUMI",
-                " Abu 'ALI",
-                " Akram 'Abbas AL-KABI"
-              ],
-              "otherPossibleDob": [
-                "circa 1976",
-                "circa 1973"
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "6931564511777943732",
-              "matchScore": 100,
               "firstName": "Saddam",
               "middleName": "HusseinHussein",
               "lastName": "Al-Tikriti",
@@ -754,44 +715,6 @@
                 "1937"
               ],
               "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "9123186534633613337",
-              "matchScore": 84,
-              "firstName": "Sadam",
-              "middleName": null,
-              "lastName": "Hussain",
-              "fullName": "Sadam Hussain",
-              "nationality": null,
-              "type": "SANCTION",
-              "sourceName": "FIA Pakistan Terrorist List",
-              "programName": null,
-              "otherInformation": "Son of: Razai Caste Baloch \r\nReward: -- \r\nFIR No: 1. 05/2019 u/s 3/4/5 Exp. Act, 324/353/34/186 PPC, 07 ATA PS CTD Gawadar \r\nAge: 30 \r\nHeight: 5\u201F7\u201D \r\nComplexion: Wheatish \r\nPhysical Structure: Strong \r\nFace Structure: Round \r\nForehead: Wide \r\nEyes: Black/round \r\nNose: Long \r\nEars: Small \r\nCheeks: Fluffy \r\nLips: Thin \r\nChin: Small \r\nMustaches: Thin \r\nBeard: Light \r\nHead Structure: Long \r\nHair Style: Straight \r\nEducation: -- \r\nDress: Balochi \r\nGait: -- \r\nReligious & Political Affiliation: BLF \r\nAny other information: Active member of BLF and involved in anti Pakistan activities. \r\n \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://www.fia.gov.pk/files/publications/1622660602.pdf"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Guru",
-                "Shahu",
-                "Jabbar",
-                "Muslim",
-                "Sadam Hussain"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
               ]
             },
             {
@@ -1179,7 +1102,7 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "abf3059f-e6f5-4ef0-a3ec-8859667f3354",
+      "referenceId": "f74e78b5-9f8a-41fc-b8d4-733370fecdbf",
       "requestedPackages": [
         "KYC_AML"
       ],
