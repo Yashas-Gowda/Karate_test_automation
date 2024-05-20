@@ -41,7 +41,7 @@
               "employerName": "OKAYA INFOCOM (P) LTD",
               "dateOfJoining": "2016-11-07",
               "dateOfExit": "2017-05-12",
-              "reasonOfExit": ""
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
               "pfAccountNumber": "101155054190",
@@ -52,7 +52,7 @@
               "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
               "dateOfJoining": "2018-12-07",
               "dateOfExit": "2023-07-12",
-              "reasonOfExit": "",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason",
               "additionalDetails": {
                 "nationalId": "********3266",
                 "taxId": "GB******7K",
@@ -69,25 +69,26 @@
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "4334040",
-                "employeeCount": 1182,
+                "totalAmount": "4157411",
+                "employeeCount": 1152,
+                "wageMonth": "MAR-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "4337790",
+                "employeeCount": 1183,
                 "wageMonth": "FEB-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "4678565",
-                "employeeCount": 1300,
+                "totalAmount": "4682315",
+                "employeeCount": 1301,
                 "wageMonth": "JAN-24"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "5771199",
-                "employeeCount": 1588,
-                "wageMonth": "DEC-23"
               }
             ]
           }
         },
+        "social": null,
         "details": null
       },
       "income": null,
@@ -101,7 +102,7 @@
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "924ced4e-3427-4c9d-b6d1-ab579748820b",
+      "referenceId": "f192feb5-2bdf-4ea6-8b42-58bbd195608d",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]

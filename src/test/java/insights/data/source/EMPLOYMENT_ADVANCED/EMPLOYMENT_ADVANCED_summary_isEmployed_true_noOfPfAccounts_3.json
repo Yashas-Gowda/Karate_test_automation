@@ -5,7 +5,7 @@
     "packages": [
       "EMPLOYMENT_ADVANCED"
     ],
-    "phoneNumber": "8106068222",
+    "phoneNumber": "8860943536",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
@@ -27,51 +27,51 @@
             "isNameExact": true,
             "isPfFiledLastMonth": false,
             "hasPfFilingDetails": true,
-            "recentEmployerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
+            "recentEmployerName": "CORE INTEGRA CONSULTING SERVICES PVT.LTD.",
             "noOfPfAccounts": 3,
-            "dateOfJoining": "2023-02-01",
-            "matchingPfAccountNumber": "101287760910"
+            "dateOfJoining": "2023-09-06",
+            "matchingPfAccountNumber": "101063071129"
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100586880851",
-              "name": "Palloli Karthik",
+              "pfAccountNumber": "100686807783",
+              "name": "Sujit Singh",
               "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
+              "dateOfBirth": "1993-02-06",
               "nationalIdVerificationStatus": true,
-              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
-              "dateOfJoining": "2015-11-15",
-              "dateOfExit": "2016-03-31",
-              "reasonOfExit": ""
+              "employerName": "ADECCO INDIA PVT. LTD.",
+              "dateOfJoining": "2015-10-01",
+              "dateOfExit": "2017-03-07",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
-              "pfAccountNumber": "100460881293",
-              "name": "Palloli Karthik",
+              "pfAccountNumber": "100443156968",
+              "name": "Sujeet Singh Singh",
               "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
+              "dateOfBirth": "1994-02-06",
               "nationalIdVerificationStatus": true,
-              "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
-              "dateOfJoining": "2014-08-01",
-              "dateOfExit": "2015-03-18",
-              "reasonOfExit": ""
+              "employerName": "INNOVSOURCE PRIVATE LIMITED",
+              "dateOfJoining": "2014-09-01",
+              "dateOfExit": "2015-09-13",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
-              "pfAccountNumber": "101287760910",
-              "name": "PALLOLI KARTHIK",
+              "pfAccountNumber": "101063071129",
+              "name": "Sujit Singh",
               "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
+              "dateOfBirth": "1993-02-06",
               "nationalIdVerificationStatus": true,
-              "employerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
-              "dateOfJoining": "2023-02-01",
+              "employerName": "CORE INTEGRA CONSULTING SERVICES PVT.LTD.",
+              "dateOfJoining": "2023-09-06",
               "reasonOfExit": "",
               "additionalDetails": {
-                "nationalId": "********3218",
-                "taxId": "BL******1P",
-                "email": "P************K@GMAIL.COM",
-                "bankAccountNumber": "*******4295",
-                "bankBranchCode": "SBIN*****36",
-                "bankAddress": "STATE BANK OF INDIA,KOLIMIGUNDLA",
-                "pfNomineeName": "PALLOLI SEKHARA BABU",
+                "nationalId": "********1827",
+                "taxId": "GL******5G",
+                "email": "s*************0@gmail.com",
+                "bankAccountNumber": "********6626",
+                "bankBranchCode": "ICIC*****86",
+                "bankAddress": "ICICI BANK LIMITED,DELHI-ITO",
+                "pfNomineeName": "RAM RATAN",
                 "pfNomineeRelation": "FATHER"
               }
             }
@@ -79,7 +79,7 @@
           "pfFilingDetails": {
             "employeePfMatches": [
               {
-                "name": "PALLOLI KARTHIK",
+                "name": "SUJIT SINGH",
                 "confidence": 1.0,
                 "pfHistory": {
                   "MAR-24": true,
@@ -91,20 +91,20 @@
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "480872",
-                "employeeCount": 108,
+                "totalAmount": "17334090",
+                "employeeCount": 5069,
                 "wageMonth": "MAR-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "522682",
-                "employeeCount": 110,
+                "totalAmount": "17501737",
+                "employeeCount": 5148,
                 "wageMonth": "FEB-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "560519",
-                "employeeCount": 118,
+                "totalAmount": "20328255",
+                "employeeCount": 6322,
                 "wageMonth": "JAN-24"
               }
             ]
@@ -122,14 +122,13 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "8106068222",
-      "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "d1544b35-27ca-4843-a482-0700f2de6e1d",
+      "inputPhoneNumber": "8860943536",
+      "cleansedPhoneNumber": "+918860943536",
+      "referenceId": "Dpi_may_20_emp_1",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
