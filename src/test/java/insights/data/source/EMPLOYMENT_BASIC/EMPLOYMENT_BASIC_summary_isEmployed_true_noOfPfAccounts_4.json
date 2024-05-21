@@ -29,6 +29,17 @@
           },
           "employmentHistory": [
             {
+              "pfAccountNumber": "100511577626",
+              "name": "AMIT",
+              "gender": "MALE",
+              "dateOfBirth": "1988-12-18",
+              "nationalIdVerificationStatus": true,
+              "employerName": "A K AUTOMATICS UNIT-III",
+              "dateOfJoining": "2014-06-02",
+              "dateOfExit": "2016-07-09",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+            },
+            {
               "pfAccountNumber": "101157962288",
               "name": "Sansaar",
               "gender": "MALE",
@@ -37,17 +48,6 @@
               "employerName": "RANA ENTERPRISES",
               "dateOfJoining": "2022-07-04",
               "dateOfExit": null,
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "100080237365",
-              "name": "Amit Kumar",
-              "gender": "MALE",
-              "dateOfBirth": "1988-12-18",
-              "nationalIdVerificationStatus": true,
-              "employerName": "SHREE BALAJI INDUSTRIAL SERVICES",
-              "dateOfJoining": "2013-09-18",
-              "dateOfExit": "2014-06-30",
               "reasonOfExit": ""
             },
             {
@@ -62,19 +62,20 @@
               "reasonOfExit": ""
             },
             {
-              "pfAccountNumber": "100511577626",
-              "name": "AMIT",
+              "pfAccountNumber": "100080237365",
+              "name": "Amit Kumar",
               "gender": "MALE",
               "dateOfBirth": "1988-12-18",
               "nationalIdVerificationStatus": true,
-              "employerName": "A K AUTOMATICS UNIT-III",
-              "dateOfJoining": "2014-06-02",
-              "dateOfExit": "2016-07-09",
-              "reasonOfExit": ""
+              "employerName": "SHREE BALAJI INDUSTRIAL SERVICES",
+              "dateOfJoining": "2013-09-18",
+              "dateOfExit": "2014-06-30",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             }
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -88,7 +89,7 @@
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "39f35658-380c-4d06-802c-85ba3a2ef30a",
+      "referenceId": "0e415abb-0657-4b62-94b6-70da895814bc",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]

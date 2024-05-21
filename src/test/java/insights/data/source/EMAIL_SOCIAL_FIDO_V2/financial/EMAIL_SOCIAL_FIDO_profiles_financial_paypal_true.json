@@ -1,12 +1,12 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
     "email": "sabarishwaran185@gmail.com"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -22,6 +22,7 @@
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -39,7 +40,8 @@
               "google": {
                 "registered": true,
                 "name": "Sabarish Art",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/0522a8a4/3e1d/4329/a6ed/409071199a7c/a74ed8a9-16e0-4de2-b855-9fd2be58dd15.jpg"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/b5648f4d/97d6/45ac/bb52/bfbf7fc80e8f/37113c88-f2df-4c16-9fe6-3bc7bc5ecbee.jpg",
+                "gender": "M"
               },
               "yahoo": {
                 "registered": false
@@ -56,7 +58,7 @@
                 "registered": true
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": null
@@ -72,6 +74,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -116,7 +121,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -220,7 +225,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -238,6 +243,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -253,15 +266,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
+      "referenceId": "ca1ccaf3-1d4c-4a57-a970-2a55dd125180",
       "inputEmail": "sabarishwaran185@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

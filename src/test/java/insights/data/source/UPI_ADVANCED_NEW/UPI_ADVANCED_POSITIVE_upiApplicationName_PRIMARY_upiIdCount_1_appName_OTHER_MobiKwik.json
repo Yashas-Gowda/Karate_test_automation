@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "918554847091",
+    "phoneNumber": "8207277594",
     "email": "shinderashmi07@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -25,8 +25,8 @@
           "accounts": [
             {
               "appName": "MobiKwik",
-              "nameAtBank": "RASHMI VINAYAK SHINDE",
-              "upiId": "8554847091@ikwik",
+              "nameAtBank": "ARIF  IKBAL",
+              "upiId": "8207277594@ikwik",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -39,16 +39,19 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "918554847091",
-      "cleansedPhoneNumber": "+918554847091",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "inputPhoneNumber": "8207277594",
+      "cleansedPhoneNumber": "+918207277594",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "shinderashmi07@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "PRIMARY"
     },
     "errors": []
   }

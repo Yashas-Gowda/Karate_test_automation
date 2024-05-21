@@ -20,8 +20,8 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 491,
-            "totalRecords": 148
+            "noOfProfiles": 502,
+            "totalRecords": 142
           },
           "records": [
             {
@@ -106,6 +106,11 @@
               "possibleAddresses": [
                 {
                   "zipCode": null,
+                  "city": "Moscow",
+                  "country": "Russia"
+                },
+                {
+                  "zipCode": null,
                   "city": null,
                   "country": "Russia"
                 },
@@ -117,11 +122,6 @@
                 {
                   "zipCode": null,
                   "city": null,
-                  "country": "Russia"
-                },
-                {
-                  "zipCode": null,
-                  "city": "Moscow",
                   "country": "Russia"
                 }
               ]
@@ -190,57 +190,6 @@
                 "10/7/1952 12:00:00 AM"
               ],
               "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "12048168245769849306",
-              "matchScore": 100,
-              "firstName": "Vladimir",
-              "middleName": "Vladimirovich",
-              "lastName": "PUTIN",
-              "fullName": "Vladimir Vladimirovich PUTIN",
-              "nationality": "RU\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "RUSSIA-EO14024",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Vladimirovich PUTIN",
-                " Vladimir PUTIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                },
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                },
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                },
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
               ]
             },
             {
@@ -401,7 +350,7 @@
                 "Vladimir Vladimirovich PUTIN"
               ],
               "otherPossibleDob": [
-                "in 1952 "
+                "1952 "
               ],
               "possibleAddresses": [
               ]
@@ -616,6 +565,57 @@
             },
             {
               "entityType": "Individual",
+              "profileId": "4e66c9d7-9909-4b1c-8502-2c104645b1f1",
+              "matchScore": 100,
+              "firstName": "Vladimir",
+              "middleName": "Vladimirovich",
+              "lastName": "PUTIN",
+              "fullName": "Vladimir Vladimirovich PUTIN",
+              "nationality": "RU\r\n",
+              "type": "SANCTION",
+              "sourceName": "Department of State Nonproliferation Sanctions List",
+              "programName": "RUSSIA-EO14024",
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Vladimir Vladimirovich PUTIN",
+                " Vladimir PUTIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
               "profileId": "17907935048912109670",
               "matchScore": 100,
               "firstName": "Vladimir",
@@ -649,37 +649,8 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "1351648079074123561",
-              "matchScore": 100,
-              "firstName": "Vladimir",
-              "middleName": null,
-              "lastName": "Putin",
-              "fullName": "Vladimir Putin",
-              "nationality": "Russian",
-              "type": "PEP",
-              "sourceName": "",
-              "programName": "",
-              "otherInformation": null,
-              "group": "1",
-              "classification": "President of the Russian Federation, Supreme Commander-in-Chief of the Armed Forces of the Russian Federation",
-              "links": [
-                "http://eng.mil.ru/en/management/leader.htm?id=10330475@SD_Employee"
-              ],
-              "summary": "The Russia Armed Forces \r\nBorn on 7 October 1952 in the city of Leningrad (now St. Petersburg).",
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Putin"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
               "profileId": "4547637862810710520",
-              "matchScore": 92,
+              "matchScore": 100,
               "firstName": null,
               "middleName": null,
               "lastName": null,
@@ -703,6 +674,35 @@
               ],
               "otherPossibleDob": [
                 "7 october 1952"
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "1351648079074123561",
+              "matchScore": 100,
+              "firstName": "Vladimir",
+              "middleName": null,
+              "lastName": "Putin",
+              "fullName": "Vladimir Putin",
+              "nationality": "Russian",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "President of the Russian Federation, Supreme Commander-in-Chief of the Armed Forces of the Russian Federation",
+              "links": [
+                "http://eng.mil.ru/en/management/leader.htm?id=10330475@SD_Employee"
+              ],
+              "summary": "The Russia Armed Forces \r\nBorn on 7 October 1952 in the city of Leningrad (now St. Petersburg).",
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Vladimir Putin"
+              ],
+              "otherPossibleDob": [
               ],
               "possibleAddresses": [
               ]
@@ -777,7 +777,183 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "2490681674760327513",
+              "profileId": "7760904198405981287",
+              "matchScore": 84,
+              "firstName": "",
+              "middleName": "Vladimir",
+              "lastName": "Yudin",
+              "fullName": " Vladimir Yudin",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "The Gazette Insolvency Notices Individual ",
+              "programName": "Bankruptcy Orders",
+              "otherInformation": "Notice category: Personal Insolvency \r\nEdition: The London Gazette \r\nNotice Id: 3155467 \r\nNotice code: 2503 \r\nIssue number: 62476 \r\nPage number: 21340 \r\nOther Information:  \r\nIn the Office of the Adjudicator \r\nNo 5064068 of 2018 \r\nDate of Filing Petition: 15 November 2018 \r\nBankruptcy order date: 16 November 2018 \r\nTime of Bankruptcy Order: 16:00 \r\nWhether Debtor's or Creditor's Petition\u0097Debtor's \r\nC Hudson 2nd Floor, Rosebrae Court, Woodside Ferry Approach, Birkenhead, CH41 6DU, telephone: 01253830700/01516660220 \r\nCapacity of office holder(s): Trustee \r\n16 November 2018 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://m.thegazette.co.uk/notice/3155467"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                " Vladimir Yudin"
+              ],
+              "otherPossibleDob": [
+                "1/4/1974 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                },
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "dee75ca6-9803-404f-8904-60cd475570a9",
+              "matchScore": 84,
+              "firstName": "RUKIN",
+              "middleName": "Vladimir",
+              "lastName": "Alekseevich",
+              "fullName": "RUKIN Vladimir Alekseevich",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Ukraine NACP Warning List",
+              "programName": null,
+              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Head of the Territorial Office of the Federal State Statistics Service for the Tambov Region (Tambovstat) \r\nPosition in Russian: Руководитель Территориального органа Федеральной службы государственной статистики по Тамбовской области (Тамбовстат) \r\nPosition in Ukranian: Керівник Територіального органу Федеральної служби державної статистики по Тамбовській області (Тамбовстат) \r\nReason for imposing sanctions in English: Official of the territorial authority of a federal authority supporting actions and policies that undermine the territorial integrity, sovereignty and independence of Ukraine \r\nReason for imposing sanctions in English: Должностное лицо территориального органа федерального органа власти, поддерживающего действия и политику, которые подрывают территориальную целостность, суверенитет и независимость Украины \r\nReason for imposing sanctions in English: Посадова особа територіального органу федерального органу влади, який підтримує дії та політику, що підривають територіальну цілісність, суверенітет та незалежність України \r\nCategory of person in Russian: category_3 \r\nSubategory of person in Russian (Level 1): Керівництво територіальних органів ЦОВВ \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "РУКИН Владимир Алексеевич",
+                "РУКІН Володимир Олексійович",
+                "RUKIN Vladimir Alekseevich",
+                "RUKIN Vladimir"
+              ],
+              "otherPossibleDob": [
+                "18.10.1969"
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "3a29303b-dc61-4532-8bed-0a1f269c0320",
+              "matchScore": 84,
+              "firstName": "LUKIN",
+              "middleName": "Vladimir",
+              "lastName": "Valerievich",
+              "fullName": "LUKIN Vladimir Valerievich",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Ukraine NACP Warning List",
+              "programName": null,
+              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Member of the Presidium of the RPS (Kursk Region) / General Director of JSC \"Corporation for the Development of the Kursk Region\" \r\nPosition in Russian: Член президиума РПС (Курская область) / генеральный директор АО \"Корпорация развития Курской области\" \r\nPosition in Ukranian: Член президії РПР (Курська область) /\n  генеральний директор АТ \"Корпорація розвитку Курської області\" \r\nReason for imposing sanctions in English: Member of the Presidium of the Regional Political Council of the United russia party, who participated in the support of policies aimed at violent change, overthrow of the constitutional order, seizure of state power, encroachment on the territorial integrity and inviolability of Ukraine, undermining democratic processes and institutions in Ukraine, threatening its security, sovereignty and independence \r\nReason for imposing sanctions in English: Член Президиума регионального политического совета партии \"Единая россия\", который принимал участие в поддержке политики, направленной на насильственное изменение, свержение конституционного строя, захват государственной власти, посягательство на территориальную целостность и неприкосновенность Украины, подрывая демократические процессы и институции в Украине, угрожая ее безопасности, суверенитету и независимости. \r\nReason for imposing sanctions in English: Член Президії регіональної політради партії «Єдина росія», який брав участь у підтримці політики, спрямованої на насильницьку зміну, повалення конституційного ладу, захоплення державної влади, посягання на територіальну цілісність і недоторканність України, підрив демократичних процесів та інститутів в Україні, загрозу її безпеці, суверенітету та незалежності. \r\nCategory of person in Russian: category_7 \r\nSubategory of person in Russian (Level 1): Регіональне керівництво «Єдиної росії» \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "ЛУКИН Владимир Валерьевич",
+                "ЛУКІН Володимир Валерійович",
+                "LUKIN Vladimir Valerievich",
+                "LUKIN Vladimir"
+              ],
+              "otherPossibleDob": [
+                "31.05.1981"
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "b4bfdb9d-2397-4cae-bc2b-2d2c7dc3b4b3",
+              "matchScore": 84,
+              "firstName": "DUDIN",
+              "middleName": "Vladimir",
+              "lastName": "Nikolaevich",
+              "fullName": "DUDIN Vladimir Nikolaevich",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Ukraine NACP Warning List",
+              "programName": null,
+              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Member of the Central Council of the political party A JUST RUSSIA - PATRIOTS - FOR THE TRUTH \r\nPosition in Russian: Член Совета Палаты депутатов политической партии СПРАВЕДЛИВАЯ РОССИЯ \u2013 ПАТРИОТЫ \u2013 ЗА ПРАВДУ \r\nPosition in Ukranian: Член Ради Палати депутатів політичної партії СПРАВЕДЛИВА РОСІЯ \u2013 ПАТРІОТИ \u2013 ЗА ПРАВДУ \r\nReason for imposing sanctions in English: A member of the governing body of the political party «A Just Russia - Patriots - for Truth», whose chairman - MIRONOV, expressing the position of the party he leads, said that «The special military operation announced by the president of the Russian Federation is aimed at preventing a large-scale humanitarian catastrophe, protecting citizens living on the territory of the Donetsk and Luhansk people's republics from genocide, which for 8 years has been systematically carried out by the current regime in Kyiv, whose coming to power was made possible solely thanks to bloody armed coup by the forces of Ukrainian neo-Nazis with the full support of the leaders of a number of European countries and the United States, as well as the special services of these countries», which expressed support for Putin's policy aimed at violent change, the overthrow of the constitutional order, the seizure of state power, encroachment on the territorial integrity and inviolability of Ukraine, undermining democratic processes and institutions in Ukraine, threatening its security, sovereignty and independence. \r\nReason for imposing sanctions in English: Член руководящего органа политической партии «Справедливая россия - патриоты - за правду», председатель которой \u2013 Миронов, выражая позицию, возглавляемой им партии, заявил, что «Объявленная президентом российской федерации специальная военная операция направлена на предотвращение масштабной гуманитарной катастрофы, защиту граждан, проживающих на территории донецкой и луганской народных республик, \u2013 от геноцида, который на протяжении 8 лет планомерно осуществляет действующий режим в Киеве, чей приход к власти стал возможным исключительно благодаря кровавому вооружённому перевороту силами украинских неонацистов при полной поддержке лидеров ряда стран Европы и США, а также спецслужб этих стран», чем выразил поддержку политики путина, направленной на насильственное изменение, свержение конституционного строя, захват государственной власти, посягательство на территориальную целостность и неприкосновенность Украины, подрывая демократические процессы и институции в Украине, угрожая ее безопасности, суверенитету и независимости. \r\nReason for imposing sanctions in English: Член керівного органу політичної партії «Справедлива росія \u2013 патріоти \u2013 за правду», голова якої \u2013 Миронов, виражаючи позицію партії, яку він очолює, заявив, що «Оголошена президентом російської федерації спеціальна воєнна операція спрямована на запобігання масштабної гуманітарної катастрофи, захист громадян, які проживають на території донецької та луганської народних республік, \u2013 від геноциду, який впродовж 8 років планомірно здійснює діючий режим в Києві, чий прихід до влади став можливим завдяки збройному перевороту силами українських неонацистів за повної підтримки лідерів низки країн Європи та США, а також спецслужб цих країн», висловивши таким чином підтримку політики путіна, спрямованої на насильницьку зміну, повалення конституційного ладу, захоплення державної влади, зазіхання на територіальну цілісність і недоторканність України, підриваючи демократичні процеси та інституції України, загрожуючи її безпеці, суверенітету і незалежності. \r\nCategory of person in Russian: category_7 \r\nSubategory of person in Russian (Level 1): Керівництво «Справедлива росія - патріоти - за правду» \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "ДУДИН Владимир Николаевич",
+                "ДУДІН Володимир Миколайович",
+                "DUDIN Vladimir Nikolaevich",
+                "DUDIN Vladimir"
+              ],
+              "otherPossibleDob": [
+                "23.12.1955"
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "8836868638775699846",
+              "matchScore": 84,
+              "firstName": "VLADİMİR",
+              "middleName": "ANATOLEVİCH",
+              "lastName": "POLIN",
+              "fullName": "VLADİMİR ANATOLEVİCH POLIN",
+              "nationality": "Russia ",
+              "type": "SANCTION",
+              "sourceName": "US Department of The Treasury OFAC SDN List",
+              "programName": "RUSSIA-EO14024 ",
+              "otherInformation": "(Linked To: PUBLIC JOINT STOCK COMPANY POLYUS)",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://ofac.treasury.gov/media/57936/download?inline"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "VLADİMİR ANATOLEVİCH POLIN",
+                "Владимир Анатольевич Полин",
+                "VLADİMİR POLIN"
+              ],
+              "otherPossibleDob": [
+                "8/10/1962 12:00:00 AM"
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Russia"
+                }
+              ]
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "6147425d-caeb-4452-9be6-bdeb021ffbe0",
               "matchScore": 84,
               "firstName": "Vladimir",
               "middleName": "Anatolyevich",
@@ -830,217 +1006,6 @@
                   "city": null,
                   "country": null
                 }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "8836868638775699846",
-              "matchScore": 84,
-              "firstName": "VLADİMİR",
-              "middleName": "ANATOLEVİCH",
-              "lastName": "POLIN",
-              "fullName": "VLADİMİR ANATOLEVİCH POLIN",
-              "nationality": "Russia ",
-              "type": "SANCTION",
-              "sourceName": "US Department of The Treasury OFAC SDN List",
-              "programName": "RUSSIA-EO14024 ",
-              "otherInformation": "(Linked To: PUBLIC JOINT STOCK COMPANY POLYUS)",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://ofac.treasury.gov/media/57936/download?inline"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "VLADİMİR ANATOLEVİCH POLIN",
-                "Владимир Анатольевич Полин",
-                "VLADİMİR POLIN"
-              ],
-              "otherPossibleDob": [
-                "8/10/1962 12:00:00 AM"
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": "Russia"
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "8836868638775699846",
-              "matchScore": 84,
-              "firstName": "Vladimir",
-              "middleName": "Anatolevich",
-              "lastName": "POLIN",
-              "fullName": "Vladimir Anatolevich POLIN",
-              "nationality": "RU\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "RUSSIA-EO14024",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Anatolevich POLIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "7760904198405981287",
-              "matchScore": 84,
-              "firstName": "",
-              "middleName": "Vladimir",
-              "lastName": "Yudin",
-              "fullName": " Vladimir Yudin",
-              "nationality": null,
-              "type": "WATCHLIST",
-              "sourceName": "The Gazette Insolvency Notices Individual ",
-              "programName": "Bankruptcy Orders",
-              "otherInformation": "Notice category: Personal Insolvency \r\nEdition: The London Gazette \r\nNotice Id: 3155467 \r\nNotice code: 2503 \r\nIssue number: 62476 \r\nPage number: 21340 \r\nOther Information:  \r\nIn the Office of the Adjudicator \r\nNo 5064068 of 2018 \r\nDate of Filing Petition: 15 November 2018 \r\nBankruptcy order date: 16 November 2018 \r\nTime of Bankruptcy Order: 16:00 \r\nWhether Debtor's or Creditor's Petition\u0097Debtor's \r\nC Hudson 2nd Floor, Rosebrae Court, Woodside Ferry Approach, Birkenhead, CH41 6DU, telephone: 01253830700/01516660220 \r\nCapacity of office holder(s): Trustee \r\n16 November 2018 \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://m.thegazette.co.uk/notice/3155467"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                " Vladimir Yudin"
-              ],
-              "otherPossibleDob": [
-                "1/4/1974 12:00:00 AM"
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                },
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "e694a40b-915a-4801-933f-fc630106d975",
-              "matchScore": 84,
-              "firstName": "RUKIN",
-              "middleName": "Vladimir",
-              "lastName": "Alekseevich",
-              "fullName": "RUKIN Vladimir Alekseevich",
-              "nationality": null,
-              "type": "WATCHLIST",
-              "sourceName": "Ukraine NACP Warning List",
-              "programName": null,
-              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Head of the Territorial Office of the Federal State Statistics Service for the Tambov Region (Tambovstat) \r\nPosition in Russian: Руководитель Территориального органа Федеральной службы государственной статистики по Тамбовской области (Тамбовстат) \r\nPosition in Ukranian: Керівник Територіального органу Федеральної служби державної статистики по Тамбовській області (Тамбовстат) \r\nReason for imposing sanctions in English: Official of the territorial authority of a federal authority supporting actions and policies that undermine the territorial integrity, sovereignty and independence of Ukraine \r\nReason for imposing sanctions in English: Должностное лицо территориального органа федерального органа власти, поддерживающего действия и политику, которые подрывают территориальную целостность, суверенитет и независимость Украины \r\nReason for imposing sanctions in English: Посадова особа територіального органу федерального органу влади, який підтримує дії та політику, що підривають територіальну цілісність, суверенітет та незалежність України \r\nCategory of person in Russian: category_3 \r\nSubategory of person in Russian (Level 1): Керівництво територіальних органів ЦОВВ \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "РУКИН Владимир Алексеевич",
-                "РУКІН Володимир Олексійович",
-                "RUKIN Vladimir Alekseevich",
-                "RUKIN Vladimir"
-              ],
-              "otherPossibleDob": [
-                "18.10.1969"
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "ec5af7e5-7eeb-4584-b3ad-88a2bd0e5ce3",
-              "matchScore": 84,
-              "firstName": "LUKIN",
-              "middleName": "Vladimir",
-              "lastName": "Valerievich",
-              "fullName": "LUKIN Vladimir Valerievich",
-              "nationality": null,
-              "type": "WATCHLIST",
-              "sourceName": "Ukraine NACP Warning List",
-              "programName": null,
-              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Member of the Presidium of the RPS (Kursk Region) / General Director of JSC \"Corporation for the Development of the Kursk Region\" \r\nPosition in Russian: Член президиума РПС (Курская область) / генеральный директор АО \"Корпорация развития Курской области\" \r\nPosition in Ukranian: Член президії РПР (Курська область) /\n  генеральний директор АТ \"Корпорація розвитку Курської області\" \r\nReason for imposing sanctions in English: Member of the Presidium of the Regional Political Council of the United russia party, who participated in the support of policies aimed at violent change, overthrow of the constitutional order, seizure of state power, encroachment on the territorial integrity and inviolability of Ukraine, undermining democratic processes and institutions in Ukraine, threatening its security, sovereignty and independence \r\nReason for imposing sanctions in English: Член Президиума регионального политического совета партии \"Единая россия\", который принимал участие в поддержке политики, направленной на насильственное изменение, свержение конституционного строя, захват государственной власти, посягательство на территориальную целостность и неприкосновенность Украины, подрывая демократические процессы и институции в Украине, угрожая ее безопасности, суверенитету и независимости. \r\nReason for imposing sanctions in English: Член Президії регіональної політради партії «Єдина росія», який брав участь у підтримці політики, спрямованої на насильницьку зміну, повалення конституційного ладу, захоплення державної влади, посягання на територіальну цілісність і недоторканність України, підрив демократичних процесів та інститутів в Україні, загрозу її безпеці, суверенітету та незалежності. \r\nCategory of person in Russian: category_7 \r\nSubategory of person in Russian (Level 1): Регіональне керівництво «Єдиної росії» \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "ЛУКИН Владимир Валерьевич",
-                "ЛУКІН Володимир Валерійович",
-                "LUKIN Vladimir Valerievich",
-                "LUKIN Vladimir"
-              ],
-              "otherPossibleDob": [
-                "31.05.1981"
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "6eaccc2d-6072-4e85-8f66-f7487eb4068b",
-              "matchScore": 84,
-              "firstName": "DUDIN",
-              "middleName": "Vladimir",
-              "lastName": "Nikolaevich",
-              "fullName": "DUDIN Vladimir Nikolaevich",
-              "nationality": null,
-              "type": "WATCHLIST",
-              "sourceName": "Ukraine NACP Warning List",
-              "programName": null,
-              "otherInformation": "Individuals Identified for Sanctioning \r\nPosition in English: Member of the Central Council of the political party A JUST RUSSIA - PATRIOTS - FOR THE TRUTH \r\nPosition in Russian: Член Совета Палаты депутатов политической партии СПРАВЕДЛИВАЯ РОССИЯ \u2013 ПАТРИОТЫ \u2013 ЗА ПРАВДУ \r\nPosition in Ukranian: Член Ради Палати депутатів політичної партії СПРАВЕДЛИВА РОСІЯ \u2013 ПАТРІОТИ \u2013 ЗА ПРАВДУ \r\nReason for imposing sanctions in English: A member of the governing body of the political party «A Just Russia - Patriots - for Truth», whose chairman - MIRONOV, expressing the position of the party he leads, said that «The special military operation announced by the president of the Russian Federation is aimed at preventing a large-scale humanitarian catastrophe, protecting citizens living on the territory of the Donetsk and Luhansk people's republics from genocide, which for 8 years has been systematically carried out by the current regime in Kyiv, whose coming to power was made possible solely thanks to bloody armed coup by the forces of Ukrainian neo-Nazis with the full support of the leaders of a number of European countries and the United States, as well as the special services of these countries», which expressed support for Putin's policy aimed at violent change, the overthrow of the constitutional order, the seizure of state power, encroachment on the territorial integrity and inviolability of Ukraine, undermining democratic processes and institutions in Ukraine, threatening its security, sovereignty and independence. \r\nReason for imposing sanctions in English: Член руководящего органа политической партии «Справедливая россия - патриоты - за правду», председатель которой \u2013 Миронов, выражая позицию, возглавляемой им партии, заявил, что «Объявленная президентом российской федерации специальная военная операция направлена на предотвращение масштабной гуманитарной катастрофы, защиту граждан, проживающих на территории донецкой и луганской народных республик, \u2013 от геноцида, который на протяжении 8 лет планомерно осуществляет действующий режим в Киеве, чей приход к власти стал возможным исключительно благодаря кровавому вооружённому перевороту силами украинских неонацистов при полной поддержке лидеров ряда стран Европы и США, а также спецслужб этих стран», чем выразил поддержку политики путина, направленной на насильственное изменение, свержение конституционного строя, захват государственной власти, посягательство на территориальную целостность и неприкосновенность Украины, подрывая демократические процессы и институции в Украине, угрожая ее безопасности, суверенитету и независимости. \r\nReason for imposing sanctions in English: Член керівного органу політичної партії «Справедлива росія \u2013 патріоти \u2013 за правду», голова якої \u2013 Миронов, виражаючи позицію партії, яку він очолює, заявив, що «Оголошена президентом російської федерації спеціальна воєнна операція спрямована на запобігання масштабної гуманітарної катастрофи, захист громадян, які проживають на території донецької та луганської народних республік, \u2013 від геноциду, який впродовж 8 років планомірно здійснює діючий режим в Києві, чий прихід до влади став можливим завдяки збройному перевороту силами українських неонацистів за повної підтримки лідерів низки країн Європи та США, а також спецслужб цих країн», висловивши таким чином підтримку політики путіна, спрямованої на насильницьку зміну, повалення конституційного ладу, захоплення державної влади, зазіхання на територіальну цілісність і недоторканність України, підриваючи демократичні процеси та інституції України, загрожуючи її безпеці, суверенітету і незалежності. \r\nCategory of person in Russian: category_7 \r\nSubategory of person in Russian (Level 1): Керівництво «Справедлива росія - патріоти - за правду» \r\nSanctions imposed by the European Union: False \r\nSanctions imposed by the Great Britain: False \r\nSanctions imposed by the USA: False \r\nSanctions imposed by the Canada: False \r\nSanctions imposed by the Switzerland: False \r\nSanctions imposed by the Australia: False \r\nSanctions imposed by the Japain: False \r\nSanctions imposed by the Poland: False \r\nSanctions imposed by the Ukraine: False \r\nSanctions imposed by the  New Zeland: False \r\nStatus: Identified for application of sanctions \r\nWhether a person is included in the TOP-50 personal sanctionS: 0 \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://sanctions.nazk.gov.ua/en/sanction-lists/"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "ДУДИН Владимир Николаевич",
-                "ДУДІН Володимир Миколайович",
-                "DUDIN Vladimir Nikolaevich",
-                "DUDIN Vladimir"
-              ],
-              "otherPossibleDob": [
-                "23.12.1955"
-              ],
-              "possibleAddresses": [
               ]
             },
             {
@@ -1207,41 +1172,6 @@
                   "zipCode": null,
                   "city": "Moscow",
                   "country": "Russia"
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "16071532480179468600",
-              "matchScore": 80,
-              "firstName": "Vladimir",
-              "middleName": "Olegovich",
-              "lastName": "POTANIN",
-              "fullName": "Vladimir Olegovich POTANIN",
-              "nationality": "RU\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "RUSSIA-EO14024",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Olegovich POTANIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
                 }
               ]
             },
@@ -1599,7 +1529,7 @@
               "otherPossibleNames": [
                 "Vladimir Nikolaevich PLIGIN",
                 "Volodomyr Mykolayovych PLIHIN",
-                "Vladimir Nikolaevich PLIGIN"
+                "Vladimir PLIGIN"
               ],
               "otherPossibleDob": [
                 "5/19/1960 12:00:00 AM"
@@ -2426,7 +2356,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "ee1390c2-0b57-46c3-8da4-0f3a6bf97435",
+              "profileId": "262684bc-bf04-43c9-bf27-9d8056f9b56c",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -2455,7 +2385,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "adf6cda6-c451-4e0c-b45b-4e10d61595d5",
+              "profileId": "4999db14-e9d0-46bd-a1ac-2c2fb3158126",
               "matchScore": 78,
               "firstName": "PRONIN",
               "middleName": "Vladimir",
@@ -2520,7 +2450,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "3ec09041-75b4-4256-bb56-ebf449c1103a",
+              "profileId": "91e95d2f-e2df-43b9-a1d5-e2450ed65920",
               "matchScore": 78,
               "firstName": "MUKHIN",
               "middleName": "Vladimir",
@@ -2623,7 +2553,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "a5e57418-0588-4fb3-ba4e-4f23bd7291b2",
+              "profileId": "b170818b-1603-430d-bbdb-7665fa334044",
               "matchScore": 78,
               "firstName": "VLADİMİR",
               "middleName": "VLADİMİROVİCH",
@@ -2659,7 +2589,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "baa7c3c0-4c23-4433-ae93-22e54e7c0615",
+              "profileId": "e525de3c-3936-4240-b841-234e63c4abd6",
               "matchScore": 78,
               "firstName": "Владимир",
               "middleName": "Иванович",
@@ -2691,7 +2621,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "2fd1f9e9-6189-452a-86c1-1e98ee801c78",
+              "profileId": "d88fe4af-466b-40e0-ac52-ab3b6db85d7d",
               "matchScore": 78,
               "firstName": "Владимир",
               "middleName": "Иванович",
@@ -2759,7 +2689,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "f6b289d4-d30a-437e-b345-ffaef7fad8b3",
+              "profileId": "6d84988a-9ea9-4a05-af8a-98344bd8fe6f",
               "matchScore": 78,
               "firstName": "Vladimir",
               "middleName": null,
@@ -3023,41 +2953,6 @@
                   "zipCode": null,
                   "city": null,
                   "country": "Russia"
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "1203036239870316038",
-              "matchScore": 76,
-              "firstName": "Vladimir",
-              "middleName": "Iosifovich",
-              "lastName": "RESIN",
-              "fullName": "Vladimir Iosifovich RESIN",
-              "nationality": "RU\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "RUSSIA-EO14024",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Iosifovich RESIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
                 }
               ]
             },
@@ -3406,7 +3301,8 @@
               "mediaAdversary": [
               ],
               "otherPossibleNames": [
-                "Vladimir Borisovich Senin"
+                "Vladimir Borisovich Senin",
+                "Vladimir Senin"
               ],
               "otherPossibleDob": [
                 "9/17/1960 12:00:00 AM"
@@ -4407,72 +4303,6 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "3252674470282565926",
-              "matchScore": 76,
-              "firstName": "VLADİMİR",
-              "middleName": "BORİSOVİCH",
-              "lastName": "SENIN",
-              "fullName": "VLADİMİR BORİSOVİCH SENIN",
-              "nationality": "Russia",
-              "type": "SANCTION",
-              "sourceName": "Canadian Sanctions Justice for Victims of Corrupt Foreign Officials Act",
-              "programName": null,
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/victims_corrupt-victimes_corrompus.aspx?lang=eng"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "VLADİMİR BORİSOVİCH SENIN",
-                "СЕНИН ВЛАДИМИР БОРИСОВИЧ",
-                "VLADİMİR SENIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "3252674470282565926",
-              "matchScore": 76,
-              "firstName": "Vladimir",
-              "middleName": "Borisovich",
-              "lastName": "SENIN",
-              "fullName": "Vladimir Borisovich SENIN",
-              "nationality": "RU\r\n",
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "RUSSIA-EO14024",
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Vladimir Borisovich SENIN"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
-              ]
-            },
-            {
-              "entityType": "Individual",
               "profileId": "17187245157378725871",
               "matchScore": 76,
               "firstName": "Kutev",
@@ -4701,6 +4531,37 @@
             },
             {
               "entityType": "Individual",
+              "profileId": "3252674470282565926",
+              "matchScore": 76,
+              "firstName": "VLADİMİR",
+              "middleName": "BORİSOVİCH",
+              "lastName": "SENIN",
+              "fullName": "VLADİMİR BORİSOVİCH SENIN",
+              "nationality": "Russia",
+              "type": "SANCTION",
+              "sourceName": "Canadian Sanctions Justice for Victims of Corrupt Foreign Officials Act",
+              "programName": null,
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/victims_corrupt-victimes_corrompus.aspx?lang=eng"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "VLADİMİR BORİSOVİCH SENIN",
+                "СЕНИН ВЛАДИМИР БОРИСОВИЧ",
+                "VLADİMİR SENIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Individual",
               "profileId": "5524315810983129573",
               "matchScore": 76,
               "firstName": "IVIN",
@@ -4833,7 +4694,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "71e92b34-ca22-45ef-928c-33c5f73c837e",
+              "profileId": "f4ae9f3c-f7dc-4923-a3e5-3593cccf9d63",
               "matchScore": 76,
               "firstName": "FOMIN",
               "middleName": "Vladimir",
@@ -4865,7 +4726,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "3f410987-ae44-423b-a611-b47839a7e843",
+              "profileId": "7d9092d0-79bc-410a-835a-138f45dadc60",
               "matchScore": 76,
               "firstName": "REPIN",
               "middleName": "Vladimir",
@@ -4898,7 +4759,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "8067cc18-173f-4c34-ab48-12424bc79797",
+              "profileId": "bbe3b4e0-bcc9-4b6d-8960-1e9936a8493e",
               "matchScore": 76,
               "firstName": "KOVIN",
               "middleName": "Vladimir",
@@ -4964,7 +4825,7 @@
             },
             {
               "entityType": "Individual",
-              "profileId": "828147ef-6c5f-4760-aa15-5cd6d118d592",
+              "profileId": "0e9d5118-d4d6-4ad9-adac-4f55f63e86ef",
               "matchScore": 76,
               "firstName": "SAVIN",
               "middleName": "Vladimir",
@@ -4993,67 +4854,6 @@
               ],
               "possibleAddresses": [
               ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "12432355480997170500",
-              "matchScore": 76,
-              "firstName": "Vladimir",
-              "middleName": "Nikolaevich",
-              "lastName": "LEPIN",
-              "fullName": "Vladimir Nikolaevich LEPIN",
-              "nationality": "Russia",
-              "type": "SANCTION",
-              "sourceName": "UK FCDO Sanctions List",
-              "programName": null,
-              "otherInformation": "Regime Name: The Russia (Sanctions) (EU Exit) Regulations 2019 \r\nSanctions Imposed: Asset freeze|Travel Ban|Trust Services Sanctions \r\nDesignation Source: UK \r\nLast Update Date: 26/05/2023 \r\nUK Statement of Reasons: \r\n Vladimir Nikolaevich LEPIN (\"LEPIN\") is an \u201Cinvolved person\u201D under the Russia (Sanctions) (EU Exit) Regulations 2019 (the \"Russia Sanctions Regulations\") because LEPIN is and has been involved in supporting the Government of Russia by working as a director or equivalent of a Government of Russia affiliated entity carrying on business in a sector of strategic significance to the Government of Russia, namely JSC Concern Kalashnikov (\"Kalashnikov\") which operates within the Russian defence sector.\r\n \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: YesPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: NoPosition(s): Director General of JSC Concern Kalashnikov \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://www.gov.uk/government/publications/the-uk-sanctions-list"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "Владимир Николаевич Лепин",
-                "Vladimir Nikolaevich LEPIN",
-                "Vladimir LEPIN"
-              ],
-              "otherPossibleDob": [
-                "7/28/1959 12:00:00 AM"
-              ],
-              "possibleAddresses": [
-              ]
-            },
-            {
-              "entityType": "Individual",
-              "profileId": "04f7f179-21dc-4ace-9dfe-5f92500fb11b",
-              "matchScore": 76,
-              "firstName": "CURIC",
-              "middleName": null,
-              "lastName": "VLADIMIR",
-              "fullName": "CURIC VLADIMIR",
-              "nationality": null,
-              "type": "WANTED",
-              "sourceName": "Poland Police Most Wanted",
-              "programName": null,
-              "otherInformation": null,
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://poszukiwani.policja.pl/pos/form/r96230827713356,CURIC-VLADIMIR.html"
-              ],
-              "summary": null,
-              "mediaAdversary": [
-              ],
-              "otherPossibleNames": [
-                "CURIC VLADIMIR"
-              ],
-              "otherPossibleDob": [
-              ],
-              "possibleAddresses": [
-              ]
             }
           ]
         }
@@ -5061,7 +4861,7 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "917d1c74-16cd-4d5f-9896-36c3efcdc390",
+      "referenceId": "bf8ffa17-1c6d-4601-aab5-32716fbebee0",
       "requestedPackages": [
         "KYC_AML"
       ],

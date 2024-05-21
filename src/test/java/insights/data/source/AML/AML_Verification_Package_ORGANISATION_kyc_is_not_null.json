@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "entityType": "ORGANISATION",
     "userDetails": {
@@ -10,8 +10,8 @@
     "packages": [
       "KYC_AML"
     ]
-  }  ,
-  "response":{
+  },
+  "response": {
     "data": {
       "kyc": {
         "government": null,
@@ -20,7 +20,7 @@
         "aml": {
           "summary": {
             "matchFound": true,
-            "noOfProfiles": 3,
+            "noOfProfiles": 4,
             "totalRecords": 42
           },
           "records": [
@@ -43,7 +43,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab",
                 "Al-Shabab",
@@ -72,8 +73,10 @@
                 "Unitatea tineretului islamic",
                 "Mișcarea de tineret Mujaahidiin"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -90,9 +93,11 @@
               "otherInformation": "INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/une/5775567 click here\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "THE YOUTH",
@@ -102,7 +107,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMIYA",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
@@ -114,8 +119,10 @@
                 "AL-SHABAB",
                 "SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -136,7 +143,8 @@
                 null
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB AL-ISLAAM",
                 "AL-SHABAAB AL-ISLAMIYA",
@@ -158,64 +166,9 @@
                 "YOUTH WING",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
-            },
-            {
-              "entityType": "Corporate",
-              "profileId": "15408520055907323701",
-              "matchScore": 100,
-              "firstName": null,
-              "middleName": null,
-              "lastName": "AL-SHABAAB",
-              "fullName": "AL-SHABAAB",
-              "nationality": null,
-              "type": "SANCTION",
-              "sourceName": "Department of State Nonproliferation Sanctions List",
-              "programName": "FTO  SDGT  SOMALIA",
-              "otherInformation": "Data Source: Specially Designated Nationals (SDN) - Treasury Department \r\n",
-              "group": null,
-              "classification": null,
-              "links": [
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              "otherPossibleDob": [
               ],
-              "summary": null,
-              "mediaAdversary": [],
-              "otherPossibleNames": [
-                "AL-SHABAAB",
-                "THE YOUTH",
-                "AL-SHABAB",
-                "MUJAHIDIN AL-SHABAAB MOVEMENT",
-                "MUJAHIDIN YOUTH MOVEMENT",
-                "MUJAHIDEEN YOUTH MOVEMENT",
-                "MYM",
-                "HARAKAT SHABAB AL-MUJAHIDIN",
-                "HIZBUL SHABAAB",
-                "HISB'UL SHABAAB",
-                "AL-SHABAAB AL-ISLAMIYA",
-                "YOUTH WING",
-                "AL-SHABAAB AL-ISLAAM",
-                "AL-SHABAAB AL-JIHAAD",
-                "THE UNITY OF ISLAMIC YOUTH",
-                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
-                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
-                "SHABAAB",
-                "MUJAAHIDIIN YOUTH MOVEMENT",
-                "AL-HIJRA",
-                "AL HIJRA",
-                "MUSLIM YOUTH CENTER",
-                "MYC",
-                "PUMWANI MUSLIM YOUTH",
-                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER"
-              ],
-              "otherPossibleDob": [],
               "possibleAddresses": [
-                {
-                  "zipCode": null,
-                  "city": null,
-                  "country": null
-                }
               ]
             },
             {
@@ -230,12 +183,14 @@
               "type": "WATCHLIST",
               "sourceName": "Belarus State Security Agency List of Organizations and Individuals Involved in Terrorist Activities",
               "programName": null,
-              "otherInformation": "Reference Info: Ссылка на веб-ресурс \"Специальные уведомления Интерпола — Совета Безопасности ООН\":  https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Entities\r\nBasis For Listing:Санкционный перечень Комитета Совета Безопасности ООН, учрежденный резолюциями 751 (1992)/1907.\r\n",
+              "otherInformation": "Reference Info: Ссылка на веб-ресурс \"Специальные уведомления Интерпола \u2014 Совета Безопасности ООН\":  https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Entities\r\nBasis For Listing:Санкционный перечень Комитета Совета Безопасности ООН, учрежденный резолюциями 751 (1992)/1907.\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "AL-SHABAB",
@@ -247,7 +202,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHİDİN",
                 "HİZBUL SHABAAB",
-                "HİSB’UL SHABAAB",
+                "HİSB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMİYA\nL YOUTH WİNG",
                 "AL-SHABAAB AL-ISLAAM",
                 "AL-SHABAAB AL-JİHAAD",
@@ -257,8 +212,10 @@
                 "MUJAAHİDİİN YOUTH MOVEMENT",
                 "Аш-Шабааб"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -279,7 +236,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab",
                 "Al-Shabab",
@@ -308,8 +266,10 @@
                 "Unitatea tineretului islamic",
                 "Mișcarea de tineret Mujaahidiin"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -332,7 +292,8 @@
                 "http://www.ecfr.gov/cgi-bin/text-idx?SID=5eae22affe2e3675b6deaa3fb796eb7a&amp;tpl=/ecfrbrowse/Title31/31cfr551_main_02.tpl"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL HIJRA",
                 "AL-HIJRA",
@@ -360,7 +321,8 @@
                 "THE YOUTH",
                 "YOUTH WING"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -381,12 +343,14 @@
               "type": "SANCTION",
               "sourceName": "DFAT Australia Consolidated Sanctions List",
               "programName": "1373 (2001)",
-              "otherInformation": "Al Shabaab, or “the youth”, was formed out of the militant wing of the former Somali Council of Islamic Courts. Its primary objective is the establishment of an Islamist state in the Horn of Africa based on Sharia law and the elimination of secular and foreign influence, including through violent means.",
+              "otherInformation": "Al Shabaab, or \u201Cthe youth\u201D, was formed out of the militant wing of the former Somali Council of Islamic Courts. Its primary objective is the establishment of an Islamist state in the Horn of Africa based on Sharia law and the elimination of secular and foreign influence, including through violent means.",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab",
                 "Al-Shabaab al-Islamiya",
@@ -412,7 +376,8 @@
                 "Young Mujahideen Movement",
                 "Youth Wing"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -436,9 +401,11 @@
               "otherInformation": "Also listed by the Minister for Foreign Affairs on 21 August 2009 under section 15(1) of the Charter of the United Nations Act 1945 (CotUNA), pursuant to Australia's obligations under UNSC resolution 1373 (2001), see Consolidated List entry 1131.",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab",
                 "Al-Shabaab al-Islamiya",
@@ -451,7 +418,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
                 "AL-SHABAAB AL-JIHAAD",
@@ -460,7 +427,8 @@
                 "HARAKATUL SHABAAB AL MUJAAHIDIIN",
                 "MUJAAHIDIIN YOUTH MOVEMENT"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -481,12 +449,14 @@
               "type": "SANCTION",
               "sourceName": "Switzerland Sanction List - SECO",
               "programName": "Ordinance of 13 May 2009 on measures against Somalia (SR 946.231.169.4), annex 1",
-              "otherInformation": "Justification: Al-Shabaab has engaged in acts that directly or indirectly threaten the peace, security, or stability of Somalia, including but not limited to acts that threaten the Djibouti Agreement of Aug 18, 2008, or the political process and acts that threaten the Transitional Federal Institutions (TFIs), the African Union Mission in Somalia (AMISOM), or other international peacekeeping operations related to Somalia.\r\nJustification: Al-Shabaab has also obstructed the delivery of humanitarian assistance to Somalia, or access to, or distribution of humanitarian assistance in Somalia.\r\nAccording to the Statement by the Chairman of the Security Council Committee established pursuant to resolution 751 (1992) concerning Somalia to the Security Council delivered on 29 Jul 2009, both Al-Shabaab and Hisb’ul Islam publicly and repeatedly claimed responsibility for the attacks by their forces on the Transitional Federal Government (TFG) and AMISOM. Al-Shabaab had also claimed responsibility for the killing of TFG officials, and on 19 Jul 2009 had raided and shut down the field offices of UNOPS, UNDSS and UNDP in the Bay and Bakool regions, in violation of paragraph 8 (c) of resolution 1844 (2008). Al-Shabaab has also repeatedly obstructed access to, or distribution of humanitarian assistance in Somalia.\r\nThe United Nations Security Council’s Report of the Secretary-General on the situation in Somalia, dated 20 Jul 2009, contained the following paragraphs involving the activities of al-Shabaab in Somalia: Insurgent groups, such as Al-Shabaab, are alleged to be extorting money from private companies and recruiting young people to join the fight against the Government in Mogadishu, including child soldiers. Al-Shabaab has confirmed the presence of foreign fighters within its ranks and has stated openly that it is working with Al-Qaeda in Mogadishu to remove the Government of Somalia. The foreign fighters, many of whom reportedly originate from Pakistan and Afghanistan, appear to be well trained and battle-tested. They have been observed wearing hoods and directing offensive operations against Government forces in Mogadishu and neighbouring regions. Al-Shabaab has intensified its strategy to coerce and intimidate the Somali population, as reflected in the carefully selected high gain assassinations and arrests of clan elders, several of whom have been murdered. On 19 Jun 2009, Omar Hashi Aden, the Minister of National Security, was killed in a large-scale suicide car bomb in Beletwyne. Over 30 other people were killed in the attack, which was strongly condemned by the international community and a broad cross-section of Somali society.\r\nAccording to the Dec 2008 report from the UN Security Council Somalia Monitoring Group (2008/769), Al-Shabaab is responsible for a variety of attacks within Somalia over the last several years, including: the reported killing and beheading of a Somali driver working for the World Food Programme in Sep 2008, the bombing of a market in Puntland that killed 20 and wounded over 100 on 6 Feb 2008, a campaign of bombings and targeted killings in Somaliland intended to disrupt the 2006 parliamentary elections and the murders of several foreign aid workers in 2003 and 2004.\r\nAccording to reporting, Al-Shabaab raided United Nations compounds in Somalia on 20 Jul 2009, and issued a decree banning three agencies of the United Nations from the Al-Shabaab controlled areas of Somalia. Additionally, Somali Transitional Federal Government forces fought Al-Shabaab and Hizbul Islam insurgents from 11-12 Jul 2009 resulting in the deaths of over 60 people. In the fighting on 11 Jul 2009, Al-Shabaab landed four mortars inside Villa Somalia that resulted in the deaths of three African Union Mission to Somalia (AMISOM) soldiers and injuries to eight others.\r\nAccording to an article published by the British Broadcasting Corporation on 22 Feb 2009, Al-Shabaab claimed responsibility for a suicide car bomb attack on an African Union military base in Mogadishu. According to the article, the African Union confirmed that 11 African Union peacekeepers were killed and 15 others were hurt.\r\nAccording to an article published by Reuters on 14 Jul 2009, Al-Shabaab militants made gains in 2009 in guerrilla-style attacks on Somali and African Union forces.\r\nAccording to an article published by Voice of America on 10 Jul 2009, Al-Shabaab was involved in an attack on Somali government forces in May 2009. According to an article posted on the website of the Council on Foreign Relations authored on 27 Feb 2009, Al-Shabaab has waged an insurgency against Somalia’s transitional government and its Ethiopian supporters since 2006. Al-Shabaab killed eleven Burundian soldiers in the deadliest attack on AU peacekeepers since their deployment and states that Al-Shabaab engaged in heavy fighting that killed at least fifteen people in Mogadishu.\r\n",
+              "otherInformation": "Justification: Al-Shabaab has engaged in acts that directly or indirectly threaten the peace, security, or stability of Somalia, including but not limited to acts that threaten the Djibouti Agreement of Aug 18, 2008, or the political process and acts that threaten the Transitional Federal Institutions (TFIs), the African Union Mission in Somalia (AMISOM), or other international peacekeeping operations related to Somalia.\r\nJustification: Al-Shabaab has also obstructed the delivery of humanitarian assistance to Somalia, or access to, or distribution of humanitarian assistance in Somalia.\r\nAccording to the Statement by the Chairman of the Security Council Committee established pursuant to resolution 751 (1992) concerning Somalia to the Security Council delivered on 29 Jul 2009, both Al-Shabaab and Hisb\u2019ul Islam publicly and repeatedly claimed responsibility for the attacks by their forces on the Transitional Federal Government (TFG) and AMISOM. Al-Shabaab had also claimed responsibility for the killing of TFG officials, and on 19 Jul 2009 had raided and shut down the field offices of UNOPS, UNDSS and UNDP in the Bay and Bakool regions, in violation of paragraph 8 (c) of resolution 1844 (2008). Al-Shabaab has also repeatedly obstructed access to, or distribution of humanitarian assistance in Somalia.\r\nThe United Nations Security Council\u2019s Report of the Secretary-General on the situation in Somalia, dated 20 Jul 2009, contained the following paragraphs involving the activities of al-Shabaab in Somalia: Insurgent groups, such as Al-Shabaab, are alleged to be extorting money from private companies and recruiting young people to join the fight against the Government in Mogadishu, including child soldiers. Al-Shabaab has confirmed the presence of foreign fighters within its ranks and has stated openly that it is working with Al-Qaeda in Mogadishu to remove the Government of Somalia. The foreign fighters, many of whom reportedly originate from Pakistan and Afghanistan, appear to be well trained and battle-tested. They have been observed wearing hoods and directing offensive operations against Government forces in Mogadishu and neighbouring regions. Al-Shabaab has intensified its strategy to coerce and intimidate the Somali population, as reflected in the carefully selected high gain assassinations and arrests of clan elders, several of whom have been murdered. On 19 Jun 2009, Omar Hashi Aden, the Minister of National Security, was killed in a large-scale suicide car bomb in Beletwyne. Over 30 other people were killed in the attack, which was strongly condemned by the international community and a broad cross-section of Somali society.\r\nAccording to the Dec 2008 report from the UN Security Council Somalia Monitoring Group (2008/769), Al-Shabaab is responsible for a variety of attacks within Somalia over the last several years, including: the reported killing and beheading of a Somali driver working for the World Food Programme in Sep 2008, the bombing of a market in Puntland that killed 20 and wounded over 100 on 6 Feb 2008, a campaign of bombings and targeted killings in Somaliland intended to disrupt the 2006 parliamentary elections and the murders of several foreign aid workers in 2003 and 2004.\r\nAccording to reporting, Al-Shabaab raided United Nations compounds in Somalia on 20 Jul 2009, and issued a decree banning three agencies of the United Nations from the Al-Shabaab controlled areas of Somalia. Additionally, Somali Transitional Federal Government forces fought Al-Shabaab and Hizbul Islam insurgents from 11-12 Jul 2009 resulting in the deaths of over 60 people. In the fighting on 11 Jul 2009, Al-Shabaab landed four mortars inside Villa Somalia that resulted in the deaths of three African Union Mission to Somalia (AMISOM) soldiers and injuries to eight others.\r\nAccording to an article published by the British Broadcasting Corporation on 22 Feb 2009, Al-Shabaab claimed responsibility for a suicide car bomb attack on an African Union military base in Mogadishu. According to the article, the African Union confirmed that 11 African Union peacekeepers were killed and 15 others were hurt.\r\nAccording to an article published by Reuters on 14 Jul 2009, Al-Shabaab militants made gains in 2009 in guerrilla-style attacks on Somali and African Union forces.\r\nAccording to an article published by Voice of America on 10 Jul 2009, Al-Shabaab was involved in an attack on Somali government forces in May 2009. According to an article posted on the website of the Council on Foreign Relations authored on 27 Feb 2009, Al-Shabaab has waged an insurgency against Somalia\u2019s transitional government and its Ethiopian supporters since 2006. Al-Shabaab killed eleven Burundian soldiers in the deadliest attack on AU peacekeepers since their deployment and states that Al-Shabaab engaged in heavy fighting that killed at least fifteen people in Mogadishu.\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab",
                 "Al-Shabab",
@@ -498,7 +468,7 @@
                 "Mym",
                 "Harakat Shabab Al-Mujahidin",
                 "Hizbul Shabaab",
-                "Hisb’ul Shabaab",
+                "Hisb\u2019ul Shabaab",
                 "Al-Shabaab Al-Islamiya",
                 "Youth Wing",
                 "Al-Shabaab Al-Islaam",
@@ -508,7 +478,8 @@
                 "Harakatul Shabaab Al Mujaahidiin",
                 "Mujaahidiin Youth Movement"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -532,9 +503,11 @@
               "otherInformation": null,
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al Shabaab",
                 "Harakat Shabaab al-Mujahidin",
@@ -566,8 +539,10 @@
                 "l'Union de la jeunesse islamique",
                 "le Mouvement populaire de résistance dans la terre des deux migrations"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -588,7 +563,8 @@
                 "http://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL SHABAAB",
                 "Harakat Shabaab al Mujahidin",
@@ -608,8 +584,10 @@
                 "the Unity of Islamic Youth",
                 "the Popular Resistance Movement in the Land of the Two Migrations"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -626,9 +604,11 @@
               "otherInformation": "DUNS: LTJZNJ1L9RV4 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "PUMWANI ISLAMIST MUSLIM YOUTH CENTER",
                 "AL-SHABAAB ",
@@ -648,7 +628,8 @@
                 "PUMWANI MUSLIM YOUTH",
                 "MUJAAHIDIIN YOUTH MOVEMENT"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -672,9 +653,11 @@
               "otherInformation": "DUNS: YM3YQJ69WFA3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAAB AL-ISLAAM ",
@@ -692,7 +675,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -716,9 +700,11 @@
               "otherInformation": "DUNS: J93UAYTJA9H7 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAAB AL-ISLAMIYA ",
@@ -736,7 +722,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -760,9 +747,11 @@
               "otherInformation": "DUNS: FTRHJPS49K16 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAAB AL-JIHAAD ",
@@ -780,7 +769,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -804,9 +794,11 @@
               "otherInformation": "DUNS: UM67FWGQWBJ3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAB ",
@@ -824,7 +816,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -848,9 +841,11 @@
               "otherInformation": "DUNS: E9NMRJMF7QM5 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN ",
@@ -868,7 +863,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -892,9 +888,11 @@
               "otherInformation": "DUNS: VJ9XMBTF6AJ6 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "HARAKAT SHABAB AL-MUJAHIDIN ",
@@ -912,7 +910,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -936,9 +935,11 @@
               "otherInformation": "DUNS: NDCYKFXEK7L4 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN ",
@@ -956,7 +957,8 @@
                 "SHABAAB",
                 "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -980,9 +982,11 @@
               "otherInformation": "DUNS: DZFYSBC5LN78 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "HISB'UL SHABAAB ",
@@ -1000,7 +1004,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1024,9 +1029,11 @@
               "otherInformation": "DUNS: W3DQJQYZVRN9 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "HIZBUL SHABAAB ",
@@ -1044,7 +1051,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1068,9 +1076,11 @@
               "otherInformation": "INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "AL-SHABAB",
@@ -1082,7 +1092,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMIYA",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
@@ -1092,7 +1102,8 @@
                 "HARAKATUL SHABAAB AL MUJAAHIDIIN",
                 "MUJAAHIDIIN YOUTH MOVEMENT"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1116,9 +1127,11 @@
               "otherInformation": "Country: Somalia \r\nDATE OF ORIGINAL DESIGNATION: 10.02.2010 00:00:00 \r\nDATE/S DESIGNATION RENEWED: 11/02/2013\n02/02/2016\n30/01/2019 14/12/2021 \r\nDATE OF DESIGNATION EXPIRATION UNLESS RENEWED OR REVOKED PRIOR: 14.12.2024 00:00:00 \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Young Mujahideen Movement in Somalia",
                 "Young Mujahideen Movement",
@@ -1128,7 +1141,8 @@
                 "Al-Shabaab al-Islamiya",
                 "Al-Shabaab"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1152,9 +1166,11 @@
               "otherInformation": "DUNS: CJ3FPJMA9R69 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "SHABAAB",
                 "MUJAAHIDIIN YOUTH MOVEMENT ",
@@ -1172,7 +1188,8 @@
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
                 "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1196,9 +1213,11 @@
               "otherInformation": "DUNS: T19CQQF22PM3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "MUJAHIDEEN YOUTH MOVEMENT ",
@@ -1216,7 +1235,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1240,9 +1260,11 @@
               "otherInformation": "DUNS: LUUUJN91H244 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "MUJAHIDIN AL-SHABAAB MOVEMENT ",
@@ -1260,7 +1282,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1284,9 +1307,11 @@
               "otherInformation": "DUNS: Q9FBMSYXDYD3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "MUJAHIDIN YOUTH MOVEMENT ",
@@ -1304,7 +1329,8 @@
                 "SHABAAB",
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1328,14 +1354,17 @@
               "otherInformation": "DUNS: HFAYF3MYX7G9 \r\nExcluding Agency: TREAS-OFAC \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nActive Date: 03/19/2008 \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "PUMWANI ISLAMIST MUSLIM YOUTH CENTER "
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1359,14 +1388,17 @@
               "otherInformation": "DUNS: K2LHCZTFS8V8 \r\nExcluding Agency: TREAS-OFAC \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nActive Date: 03/19/2008 \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "PUMWANI MUSLIM YOUTH "
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1390,9 +1422,11 @@
               "otherInformation": "DUNS: KUABVWKDU8U3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "SHABAAB ",
@@ -1410,7 +1444,8 @@
                 "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
                 "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1434,14 +1469,18 @@
               "otherInformation": "\r\n\n\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al Shabaab"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1458,9 +1497,11 @@
               "otherInformation": "Additional Info: (UK Sanctions List Ref):SOM0001. (UN Ref):SOe.001. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/une/5775567 UK Sanctions List Date Designated: 12/04/2010",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "AL-SHABAAB AL-ISLAAM",
@@ -1481,7 +1522,8 @@
                 "THE YOUTH",
                 "YOUTH WING"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1509,7 +1551,8 @@
                 "https://www.state.gov/reports/country-reports-on-terrorism-2018/#AS"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AS",
                 "The Harakat Shabaab al-Mujahidin",
@@ -1522,8 +1565,10 @@
                 "al-Hijra, Al Hijra, Muslim Youth Center, MYC, Pumwani Muslim Youth, Pumwani Islamist Muslim Youth Center",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1544,7 +1589,8 @@
                 "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAB",
                 "SHABAAB",
@@ -1555,7 +1601,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMIYA",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
@@ -1566,8 +1612,10 @@
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1584,9 +1632,11 @@
               "otherInformation": "INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB",
                 "AL-SHABAB",
@@ -1598,7 +1648,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMIYA",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
@@ -1608,7 +1658,8 @@
                 "HARAKATUL SHABAAB AL MUJAAHIDIIN",
                 "MUJAAHIDIIN YOUTH MOVEMENT"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1636,7 +1687,8 @@
                 "http://www.hms.gov.az/frq-content/nov_snk_v1/INTERNATIONAL22.xml"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAB",
                 "SHABAAB",
@@ -1647,7 +1699,7 @@
                 "MYM",
                 "HARAKAT SHABAB AL-MUJAHIDIN",
                 "HIZBUL SHABAAB",
-                "HISB’UL SHABAAB",
+                "HISB\u2019UL SHABAAB",
                 "AL-SHABAAB AL-ISLAMIYA",
                 "YOUTH WING",
                 "AL-SHABAAB AL-ISLAAM",
@@ -1658,8 +1710,10 @@
                 "MUJAAHIDIIN YOUTH MOVEMENT",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1680,7 +1734,8 @@
                 "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabab",
                 "Shabaab",
@@ -1702,8 +1757,10 @@
                 "Mujaahidiin Youth Movement",
                 "Al-Shabaab"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1724,7 +1781,8 @@
                 "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Mujahidin AlShabaab Movement",
                 "Mujahideen Youth Movement",
@@ -1749,8 +1807,10 @@
                 "Mișcarea de tineret Mujaahidiin",
                 "AlShabab"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1771,7 +1831,8 @@
                 "https://www.gov.uk/government/publications/the-uk-sanctions-list"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "AL-SHABAAB AL-ISLAAM",
                 "AL-SHABAAB AL-ISLAMIYA",
@@ -1792,7 +1853,8 @@
                 "YOUTH WING",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
+              "otherPossibleDob": [
+              ],
               "possibleAddresses": [
                 {
                   "zipCode": null,
@@ -1811,21 +1873,24 @@
               "fullName": "Al-Shabaab",
               "nationality": null,
               "type": "WATCHLIST",
-              "sourceName": "US Rewards for Justice Most Wanted",
+              "sourceName": "US Rewards for Justice Most Wanted",
               "programName": null,
-              "otherInformation": "Information: Al-Shabaab is an al-Qa’ida (AQ) affiliate and has ties to other AQ affiliates, including AQ in the Arabian Peninsula and AQ in the Islamic Maghreb. Al-Shabaab was the militant wing of the former Somali Islamic Courts Council that took over parts of southern Somalia during the second half of 2006. Since the end of 2006, al-Shabaab and associated militias have engaged in violent insurgency using guerrilla warfare and terrorist tactics against the transitional governments of Somalia.Al-Shabaab has conducted attacks in Somalia, Kenya, Uganda, and Djibouti. Al-Shabaab was responsible for the July 11, 2010 suicide bombings in Kampala. The attack, which took place during the World Cup, killed 76 people, including a U.S. citizen. In September 2013, al-Shabaab staged a significant attack against the Westgate Mall in Nairobi. The multi-day siege resulted in the deaths of at least 65 civilians, as well as six soldiers and police officers and hundreds of others were injured. In April 2015, al-Shabaab carried out a raid with small arms and grenades on Kenya’s Garissa University College that killed 148 people.On March 18, 2008, the U.S. Department of State designated al-Shabaab as a Foreign Terrorist Organization under section 219 of the Immigration and Nationality Act, as amended. Later, on March 19, 2008, the Department of State designated al-Shabaab as a Specially Designated Global Terrorist pursuant to Executive Order 13224, as amended. As a result, all of al-Shabaab’s property, and interests in property, subject to U.S. jurisdiction are blocked, and U.S. persons are generally prohibited from engaging in any transactions with al-Shabaab. It is a crime to knowingly provide, or to attempt or conspire to provide, material support or resources to al-Shabaab. \r\n",
+              "otherInformation": "Information: Al-Shabaab is an al-Qa\u2019ida (AQ) affiliate and has ties to other AQ affiliates, including AQ in the Arabian Peninsula and AQ in the Islamic Maghreb. Al-Shabaab was the militant wing of the former Somali Islamic Courts Council that took over parts of southern Somalia during the second half of 2006. Since the end of 2006, al-Shabaab and associated militias have engaged in violent insurgency using guerrilla warfare and terrorist tactics against the transitional governments of Somalia.Al-Shabaab has conducted attacks in Somalia, Kenya, Uganda, and Djibouti. Al-Shabaab was responsible for the July 11, 2010 suicide bombings in Kampala. The attack, which took place during the World Cup, killed 76 people, including a U.S. citizen. In September 2013, al-Shabaab staged a significant attack against the Westgate Mall in Nairobi. The multi-day siege resulted in the deaths of at least 65 civilians, as well as six soldiers and police officers and hundreds of others were injured. In April 2015, al-Shabaab carried out a raid with small arms and grenades on Kenya\u2019s Garissa University College that killed 148 people.On March 18, 2008, the U.S. Department of State designated al-Shabaab as a Foreign Terrorist Organization under section 219 of the Immigration and Nationality Act, as amended. Later, on March 19, 2008, the Department of State designated al-Shabaab as a Specially Designated Global Terrorist pursuant to Executive Order 13224, as amended. As a result, all of al-Shabaab\u2019s property, and interests in property, subject to U.S. jurisdiction are blocked, and U.S. persons are generally prohibited from engaging in any transactions with al-Shabaab. It is a crime to knowingly provide, or to attempt or conspire to provide, material support or resources to al-Shabaab. \r\n",
               "group": null,
               "classification": null,
               "links": [
                 "https://rewardsforjustice.net/rewards/al-shabaab/"
               ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabaab"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
             },
             {
               "entityType": "Corporate",
@@ -1842,9 +1907,11 @@
               "otherInformation": "Reason: Les Chabab (Al-Shabaab) se livrent à des actes qui menacent directement ou indirectement la paix, la sécurité ou la stabilité de la Somalie, notamment mais sans s'y limiter : des actes qui mettent en péril l'accord de Djibouti du 18 août 2008 ou le processus politique - Des actes qui menacent les Institutions fédérales de transition, la Mission de l'Union africaine en Somalie (AMISOM) ou d'autres opérations internationales de maintien de la paix liées à la Somalie. Les Chabab font également obstacle à l'acheminement de l'aide humanitaire destinée à la Somalie, à l'accès à cette aide ou à sa distribution en Somalie Legal basis: 118 (UE) 2017/395 du 07/03/2017 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 113 (UE) 356/2010 du 26/04/2010 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 114 (UE) 956/2011 du 26/09/2011 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 237 Décision du comité des sanctions des Nations Unies du 12/04/2010 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n",
               "group": null,
               "classification": null,
-              "links": [],
+              "links": [
+              ],
               "summary": null,
-              "mediaAdversary": [],
+              "mediaAdversary": [
+              ],
               "otherPossibleNames": [
                 "Al-Shabab",
                 "Shabaab",
@@ -1866,8 +1933,69 @@
                 "Mujaahidiin Youth Movement",
                 "AL-SHABAAB"
               ],
-              "otherPossibleDob": [],
-              "possibleAddresses": []
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "9d5dff32-244f-4a7c-8046-b91a21c86194",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Department of State Nonproliferation Sanctions List",
+              "programName": "FTO  SDGT  SOMALIA",
+              "otherInformation": "Data Source: Specially Designated Nationals (SDN) - Treasury Department \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "THE YOUTH",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-HIJRA",
+                "AL HIJRA",
+                "MUSLIM YOUTH CENTER",
+                "MYC",
+                "PUMWANI MUSLIM YOUTH",
+                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
             }
           ]
         }
@@ -1875,7 +2003,7 @@
       "kyb": null
     },
     "meta": {
-      "referenceId": "Dpi_feb_21_1",
+      "referenceId": "21debfdf-1820-443e-a40c-b28d049dc9a4",
       "requestedPackages": [
         "KYC_AML"
       ],
@@ -1883,6 +2011,7 @@
       "inputRecordLimit": "20",
       "inputMatchThreshold": "80"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

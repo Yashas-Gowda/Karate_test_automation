@@ -11,7 +11,14 @@
   },
   "response": {
     "data": null,
-    "meta": null,
+    "meta": {
+      "referenceId": "Dpi_April_30_2",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_COUNT",
+      "inputDomainName": "example.org"
+    },
     "errors": [
       {
         "package": null,

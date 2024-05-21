@@ -14,10 +14,10 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 6,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
             "registeredProfessionalProfiles": 1,
             "registeredMessagingProfiles": 2,
             "lastActivity": null,
@@ -54,7 +54,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": null
+                "registered": true
               },
               "instagram": {
                 "registered": false
@@ -148,7 +148,7 @@
     "meta": {
       "inputPhoneNumber": "447958000000",
       "cleansedPhoneNumber": "+447958000000",
-      "referenceId": "c2ab0625-d726-447d-92e9-1fa12d603706",
+      "referenceId": "f2eb03ab-46d2-4f93-87b0-5fb5f0170881",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ]

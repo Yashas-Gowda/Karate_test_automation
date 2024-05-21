@@ -8,7 +8,7 @@
     "phoneNumber": "8106068222",
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -22,9 +22,9 @@
         "basic": {
           "summary": {
             "isEmployed": true,
-            "recentEmployerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
+            "recentEmployerName": "SCOOTSY LOGISTICS PRIVATE LIMITED",
             "noOfPfAccounts": 3,
-            "dateOfJoining": "2023-02-01",
+            "dateOfJoining": "2024-04-01",
             "matchingPfAccountNumber": "101287760910"
           },
           "employmentHistory": [
@@ -40,6 +40,17 @@
               "reasonOfExit": ""
             },
             {
+              "pfAccountNumber": "101287760910",
+              "name": "PALLOLI KARTHIK",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "SCOOTSY LOGISTICS PRIVATE LIMITED",
+              "dateOfJoining": "2024-04-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
               "pfAccountNumber": "100460881293",
               "name": "Palloli Karthik",
               "gender": "MALE",
@@ -49,21 +60,11 @@
               "dateOfJoining": "2014-08-01",
               "dateOfExit": "2015-03-18",
               "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "101287760910",
-              "name": "PALLOLI KARTHIK",
-              "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
-              "employerName": "SUPR INFOTECH SOLUTIONS PRIVATE LIMITED",
-              "dateOfJoining": "2023-02-01",
-              "dateOfExit": null,
-              "reasonOfExit": ""
             }
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -77,7 +78,7 @@
     "meta": {
       "inputPhoneNumber": "8106068222",
       "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "fce9cac8-4459-4c8e-9ffd-e8952c10de33",
+      "referenceId": "8ae069d4-170f-4ad5-9bc0-636f8751d698",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ]
