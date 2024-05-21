@@ -1,0 +1,141 @@
+{
+  "request": {
+    "email": "psvineesh@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_SOCIAL"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "social": {
+          "summary": {
+            "name": "Vineesh PS",
+            "linkedinHeadline": "TERRITORY MANAGER - RESIDUAL MANAGEMENT at TVS Credit Services LTD",
+            "location": "Kerala, India",
+            "employerName": "TVS Credit Services Ltd.",
+            "linkedinUrl": "https://linkedin.com/in/vineesh-ps-2374451a",
+            "employmentHistoryCount": 9,
+            "educationHistoryCount": 1
+          },
+          "employmentHistory": [
+            {
+              "employeeDesignation": "Territory Manager Residual Management",
+              "employerName": "TVS Credit Services Ltd. ",
+              "employerLocation": "Kozhikode, Kerala, India · On-site",
+              "dateOfJoining": "2022-11-01",
+              "employerLogo": "https://media.licdn.com/dms/image/C510BAQEd1o6oX9581w/company-logo_200_200/0/1630617128243/tvs_credit_services_ltd__logo?e=1724284800&v=beta&t=aq-bNHjL55vVm9P2XlgzdTNC7cfjqdRNXOyKM_IBDI4",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/1481214/"
+            },
+            {
+              "employeeDesignation": "Assistant Manager Stock Yard Operations",
+              "employerName": "Bajaj Auto Finance",
+              "employerLocation": "Kochi, Kerala, India",
+              "dateOfJoining": "2020-12-01",
+              "dateOfExit": "2023-10-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C510BAQGQcz_BkZ0FPw/company-logo_200_200/0/1630600387807/bajaj_auto_ltd___auto_finance_vertical_logo?e=1724284800&v=beta&t=BUJinJtKuXROsoLpDxcLYRBVyXxryY4WcXkw-BcV5eo",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/878056/"
+            },
+            {
+              "employeeDesignation": "Assistant Manager Branch Operations",
+              "employerName": "Bajaj Auto Finance",
+              "employerLocation": "Calicut Area, India",
+              "dateOfJoining": "2017-02-01",
+              "dateOfExit": "2020-12-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C510BAQGQcz_BkZ0FPw/company-logo_200_200/0/1630600387807/bajaj_auto_ltd___auto_finance_vertical_logo?e=1724284800&v=beta&t=BUJinJtKuXROsoLpDxcLYRBVyXxryY4WcXkw-BcV5eo",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/878056/"
+            },
+            {
+              "employeeDesignation": "Assistant Manager Collection Coordination",
+              "employerName": "Muthoot Capital Services Ltd - India",
+              "employerLocation": "Cochin Area, India",
+              "dateOfJoining": "2015-07-01",
+              "dateOfExit": "2017-02-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C510BAQHT5U8HsMhg2A/company-logo_200_200/0/1630607774224/muthoot_capital_services_ltd___india_logo?e=1724284800&v=beta&t=DDGtz8kOTwIFWwQgj31v6W3SP5buwg3aFyTs-I36uvk",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/7809713/"
+            },
+            {
+              "employeeDesignation": "Assistant Manager Operation cum Location Controller",
+              "employerName": "Bajaj Finserv",
+              "employerLocation": "Calicut",
+              "dateOfJoining": "2010-12-01",
+              "dateOfExit": "2014-05-15",
+              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1724284800&v=beta&t=SYpRON84TQYRCfUVkrN8OgWFzyVZwAxfmC5yAgbqa0k",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
+            },
+            {
+              "employeeDesignation": "Jr Officer - Collections",
+              "employerName": "HDFC BANK LTD",
+              "employerLocation": "Calicut Area, India",
+              "dateOfJoining": "2008-09-01",
+              "dateOfExit": "2010-12-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C510BAQGqZH7vVbVzWw/company-logo_200_200/0/1630606529683/hdfc_bank_logo?e=1724284800&v=beta&t=yMJ8Aw94L2KYfVKYvRNsLzADw9glH2XJhYL_kMnd920",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/164151/"
+            },
+            {
+              "employeeDesignation": "Executive",
+              "employerName": "Bajaj Auto Finance Ltd",
+              "employerLocation": "Calicut Area, India",
+              "dateOfJoining": "2007-06-01",
+              "dateOfExit": "2008-08-15",
+              "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Bajaj+Auto+Finance+Ltd"
+            },
+            {
+              "employeeDesignation": "Accountant",
+              "employerName": "K V R Motors",
+              "employerLocation": "Calicut Area, India",
+              "dateOfJoining": "2005-05-01",
+              "dateOfExit": "2007-06-15",
+              "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=K+V+R+Motors"
+            },
+            {
+              "employeeDesignation": "Accountant",
+              "employerName": "P P Achuthan & Company Tax Practitioner",
+              "employerLocation": "Calicut Area, India",
+              "dateOfJoining": "2004-08-01",
+              "dateOfExit": "2005-05-15",
+              "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=P+P+Achuthan+%26+Company+Tax+Practitioner"
+            }
+          ],
+          "educationHistory": [
+            {
+              "fieldOfStudy": "Bachelor's degree, Business/Commerce, General",
+              "degreeName": "Bachelor's degree, Business/Commerce, General",
+              "schoolName": "University of Calicut",
+              "startYear": 2000,
+              "endYear": 2004
+            }
+          ]
+        },
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_20_fido_1",
+      "inputEmail": "psvineesh@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}
