@@ -217,7 +217,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
 
 
   @Eyecon @IDENTITY_ENRICHMENT_Eyecon
-  Scenario Outline:  DPI Identity Enrichment Scenarios for Eyecon data partner - <Scenario>
+  Scenario Outline:  DPI Identity Enrichment Scenarios for Eyecon data partner with multiple languages  - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
     And headers headers
@@ -239,7 +239,12 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    And match $.data.identity.enrichment contains payload.response.data.identity.enrichment
+    And match payload.response.data.identity.enrichment contains only deep  $.data.identity.enrichment
+
+    And match $.data.identity.enrichmentPlus == null
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    Then match  payload.response.errors contains only $.errors
 
     Examples:
       | Scenario | statusCode |
