@@ -52,7 +52,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -85,7 +85,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-  # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -108,8 +108,8 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
       | TC016    | 200        |
       | TC017    | 200        |
       | TC018    | 200        |
-         # | TC021            | 200        |
-          #| TC022            | 200        |
+  # | TC021            | 200        |
+  #| TC022            | 200        |
   Scenario Outline:  DPI Identity Enrichment Scenarios for region Indonesia - <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
@@ -118,7 +118,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -155,7 +155,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -191,7 +191,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-   # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -214,3 +214,37 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
       | TC019    | 200        |
       | TC020    | 200        |
       | TC024    | 200        |
+
+
+  @Eyecon @IDENTITY_ENRICHMENT_Eyecon
+  Scenario Outline:  DPI Identity Enrichment Scenarios for Eyecon data partner - <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.identity.enrichment contains payload.response.data.identity.enrichment
+
+    Examples:
+      | Scenario | statusCode |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_10_names_Tamil_langauage    | 200        |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_10_names_Telugu_langauage    | 200        |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_2_names_Gujarati_langauage    | 200        |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_7_names_Gujarati_langauage    | 200        |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_3_names_Malayalam_langauage    | 200        |
