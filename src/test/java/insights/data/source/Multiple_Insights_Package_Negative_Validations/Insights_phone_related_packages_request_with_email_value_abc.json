@@ -1,44 +1,38 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
     "packages": [
-      "IDENTITY_ENRICHMENT",
-      "EMAIL_BASIC",
       "EMAIL_SOCIAL",
+      "IDENTITY_ENRICHMENT",
       "IDENTITY_ENRICHMENT_PLUS",
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_SOCIAL"
     ],
     "email": "abc"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "Dpi_may_20_fido_1",
       "inputEmail": "abc",
       "requestedPackages": [
-        "IDENTITY_ENRICHMENT",
-        "EMAIL_BASIC",
         "EMAIL_SOCIAL",
+        "IDENTITY_ENRICHMENT",
         "IDENTITY_ENRICHMENT_PLUS",
-        "EMPLOYMENT_DETAILS"
-      ]
+        "EMPLOYMENT_SOCIAL"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
-        "package": "IDENTITY_ENRICHMENT",
-        "message": "Invalid email address",
-        "code": "INVALID_EMAIL_ADDRESS",
-        "type": "INVALID_INPUT"
-      },
-      {
-        "package": "EMAIL_BASIC",
-        "message": "Invalid email address",
-        "code": "INVALID_EMAIL_ADDRESS",
-        "type": "INVALID_INPUT"
-      },
-      {
         "package": "EMAIL_SOCIAL",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "IDENTITY_ENRICHMENT",
         "message": "Invalid email address",
         "code": "INVALID_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"
@@ -50,7 +44,7 @@
         "type": "INVALID_INPUT"
       },
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_SOCIAL",
         "message": "Invalid email address",
         "code": "INVALID_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"

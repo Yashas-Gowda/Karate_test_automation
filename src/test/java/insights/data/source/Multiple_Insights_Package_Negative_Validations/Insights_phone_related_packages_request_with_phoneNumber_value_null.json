@@ -14,7 +14,7 @@
     "phoneNumber": null,
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": null,
     "meta": {
       "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
@@ -26,7 +26,8 @@
         "IDENTITY_ENRICHMENT_PLUS",
         "EMPLOYMENT_BASIC",
         "EMPLOYMENT_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {

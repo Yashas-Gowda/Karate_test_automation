@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -13,8 +13,8 @@
     ],
     "phoneNumber": "abc123",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
       "inputPhoneNumber": "abc123",
@@ -28,7 +28,8 @@
         "IDENTITY_ENRICHMENT_PLUS",
         "EMPLOYMENT_BASIC",
         "EMPLOYMENT_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
