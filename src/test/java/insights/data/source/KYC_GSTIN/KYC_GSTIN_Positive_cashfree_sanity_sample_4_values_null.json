@@ -44,7 +44,8 @@
       "requestedPackages": [
         "KYC_GSTIN"
       ],
-      "inputGstin": "05BBICP2912R1ZR"
+      "inputGstin": "05BBICP2912R1ZR",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

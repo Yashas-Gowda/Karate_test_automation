@@ -12,7 +12,8 @@
       "referenceId": "Dpi_march_6_upi_1",
       "requestedPackages": [
         "KYC_GSTIN"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
