@@ -11,10 +11,11 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "AMS-test-1",
+      "referenceId": "f92137b2-5185-4c0b-afbc-aa9c2f07aed9",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {

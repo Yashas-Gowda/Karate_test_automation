@@ -1,24 +1,24 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "ID",
-
     "email": "njrane29@gmail.com",
     "upiApplicationName": "GOOGLE_PAY",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-b0fa898380574e8115488c2f51b633dba3fd462b",
+      "referenceId": "edb6cca3-c52d-4757-8d07-eb101cda6648",
       "inputEmail": "njrane29@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
-      "inputUpiApplicationName": "GOOGLE_PAY"
+      "inputUpiApplicationName": "GOOGLE_PAY",
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
       {
