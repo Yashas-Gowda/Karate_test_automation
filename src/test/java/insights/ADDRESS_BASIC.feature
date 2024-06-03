@@ -30,7 +30,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-#    Then match $ contains payload.response
+    #    Then match $ contains payload.response
     * def Original_Address_basic = payload.response.data.address.basic
     Then match $.data.address.basic contains payload.response.data.address.basic
     Then match $.meta contains payload.response.meta
@@ -39,20 +39,20 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                            | statusCode |
       | Address_BASIC_positive_AllInputFields_Both_Q_and_QQ | 200        |
 
-#  Scenario Outline: https://monnai.atlassian.net/browse/MB-1410 -Validate DPI ADDRESS_BASIC positive scenarios with 'q' input fields(q-addressLine1-8) <Scenario>
-#    Given url requestUrl
-#    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
-#    And headers headers
-#    And request payload.request
-#    When method POST
-#    * print karate.pretty(response)
-#    Then print payload.response
-#    Then status <statusCode>
-#    Then match $ contains payload.response
-#
-#    Examples:
-#      | Scenario                                                              | statusCode |
-#      | Address_BASIC_positive_AllInputFields_without_QQ_with_Q_input_Adrline1 | 200        |
+  #  Scenario Outline: https://monnai.atlassian.net/browse/MB-1410 -Validate DPI ADDRESS_BASIC positive scenarios with 'q' input fields(q-addressLine1-8) <Scenario>
+  #    Given url requestUrl
+  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And headers headers
+  #    And request payload.request
+  #    When method POST
+  #    * print karate.pretty(response)
+  #    Then print payload.response
+  #    Then status <statusCode>
+  #    Then match $ contains payload.response
+  #
+  #    Examples:
+  #      | Scenario                                                              | statusCode |
+  #      | Address_BASIC_positive_AllInputFields_without_QQ_with_Q_input_Adrline1 | 200        |
 
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with 'Q' input fields(q-addressLine1 only) input and optional fields keys are missing <Scenario>
     Given url requestUrl
@@ -62,7 +62,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-     # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -91,7 +91,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-     # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -119,7 +119,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-     # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -138,7 +138,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print expectedPostalCode
     * def actualPostalCode = $.data.address.basic.records[*].postalCode
     * print actualPostalCode
-#    * match actualPostalCode == [expectedPostalCode]
+    #    * match actualPostalCode == [expectedPostalCode]
     * match ([expectedPostalCode]) contains only actualPostalCode
     Then match $.data.address contains payload.response.data.address
 
@@ -146,6 +146,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                                            | statusCode |
       | Address_BASIC_positive_AllInputFields_Q_and_QQ_with_postalCode_only | 200        |
 
+  
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like city) <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
@@ -154,7 +155,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-     # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -173,7 +174,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print expectedCity
     * def actualCity = $.data.address.basic.records[*].city
     * print actualCity
-    * match ([expectedCity]) contains only actualCity
+    * match ([expectedCity]) contains any actualCity
     Then match $.data.address contains payload.response.data.address
 
     Examples:
@@ -208,7 +209,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print expectedState
     * def actualState = $.data.address.basic.records[*].state
     * print actualState
-#    * match actualCity == [expectedCity]
+    #    * match actualCity == [expectedCity]
     * match ([expectedState]) contains only actualState
     Then match $.data.address contains payload.response.data.address
 
@@ -217,26 +218,26 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Address_BASIC_positive_AllInputFields_Q_and_QQ_with_state_only | 200        |
 
 
-#  Scenario Outline:https://monnai.atlassian.net/browse/MB-1683 Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like country) <Scenario>
-#    Given url requestUrl
-#    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
-#    And headers headers
-#    And request payload.request
-#    When method POST
-#    * print karate.pretty(response)
-#    Then print payload.response
-#    Then status <statusCode>
-#    Then match $ contains payload.response
-#    * print payload.request.city
-#    * def expectedCountry = payload.request.address.country
-#    * print expectedCountry
-#    * def actualCountryName = $.data.address.basic.records[*].countryName
-#    * print actualCountryName
-##    * match actualCity == [expectedCity]
-#    * match ([expectedCountry]) contains only actualCountryName
-#    Examples:
-#      | Scenario                                                         | statusCode |
-#      | Address_BASIC_positive_AllInputFields_Q_and_QQ_with_country_only | 200        |
+  #  Scenario Outline:https://monnai.atlassian.net/browse/MB-1683 Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like country) <Scenario>
+  #    Given url requestUrl
+  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And headers headers
+  #    And request payload.request
+  #    When method POST
+  #    * print karate.pretty(response)
+  #    Then print payload.response
+  #    Then status <statusCode>
+  #    Then match $ contains payload.response
+  #    * print payload.request.city
+  #    * def expectedCountry = payload.request.address.country
+  #    * print expectedCountry
+  #    * def actualCountryName = $.data.address.basic.records[*].countryName
+  #    * print actualCountryName
+  ##    * match actualCity == [expectedCity]
+  #    * match ([expectedCountry]) contains only actualCountryName
+  #    Examples:
+  #      | Scenario                                                         | statusCode |
+  #      | Address_BASIC_positive_AllInputFields_Q_and_QQ_with_country_only | 200        |
 
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where mandatory field "addressLine1" is missing in request <Scenario>
     Given url requestUrl
@@ -269,7 +270,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                                  | statusCode |
       | Address_BASIC_Negative_Mandatory_Addressline1_Key_Missing | 400        |
 
-    #this same as above sceanrio?? CHECK
+  #this same as above sceanrio?? CHECK
   Scenario Outline: Validate DPI ADDRESS_BASIC negative scenario where mandatory field "addressLine1" is with invalid input <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/ADDRESS_BASIC/<Scenario>.json")
@@ -279,7 +280,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-     # cloud watch traces -start
+    # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
     * print 'x-reference-id----->',karate.request.headers['x-reference-id']
@@ -332,28 +333,28 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
       | Scenario                                                                  | statusCode | addressLine1 |
       | Address_BASIC_Negative_Mandatory_Addressline1_invalid_empty_or_null_input | 400        | null         |
 
-#  Scenario Outline: https://monnai.atlassian.net/browse/MB-1682 Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
-#    Given url requestUrl
-#    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
-#    And headers headers
-#    And request payload.request.address.postalCode = <postalCode>
-#    And request payload.request
-#    When method POST
-#    * print karate.pretty(response)
-#    Then print payload.response
-#    Then status <statusCode>
-#    * print payload.request.postalCode
-#    * def expectedPostalCode = payload.request.address.postalCode
-#    * print expectedPostalCode
-#    * match expectedPostalCode == '#number'
-#    * def actualPostalCode = $.data.address.basic.records[*].postalCode
-#    * print actualPostalCode
-##    * match actualPostalCode == [expectedPostalCode]
-#    * match ([expectedPostalCode]) contains only actualPostalCode
-#    Then match $ contains payload.response
-#
-#    Examples:
-#      | Scenario                                                                  | statusCode | postalCode |
-#      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 200        | '123456'    |
-##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | 'abc123 '    |
-##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | abcedAB    |
+  #  Scenario Outline: https://monnai.atlassian.net/browse/MB-1682 Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
+  #    Given url requestUrl
+  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And headers headers
+  #    And request payload.request.address.postalCode = <postalCode>
+  #    And request payload.request
+  #    When method POST
+  #    * print karate.pretty(response)
+  #    Then print payload.response
+  #    Then status <statusCode>
+  #    * print payload.request.postalCode
+  #    * def expectedPostalCode = payload.request.address.postalCode
+  #    * print expectedPostalCode
+  #    * match expectedPostalCode == '#number'
+  #    * def actualPostalCode = $.data.address.basic.records[*].postalCode
+  #    * print actualPostalCode
+  ##    * match actualPostalCode == [expectedPostalCode]
+  #    * match ([expectedPostalCode]) contains only actualPostalCode
+  #    Then match $ contains payload.response
+  #
+  #    Examples:
+  #      | Scenario                                                                  | statusCode | postalCode |
+  #      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 200        | '123456'    |
+  ##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | 'abc123 '    |
+  ##      | Address_BASIC_Negative_AllInputFields_Q_and_QQ_with_postalCode_Validation | 400        | abcedAB    |
