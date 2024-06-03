@@ -13,7 +13,8 @@
       "referenceId": "UkiEJiWcyQ0EMIA=",
       "requestedPackages": [
         "KYC_PAN"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {

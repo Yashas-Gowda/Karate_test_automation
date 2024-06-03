@@ -14,7 +14,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "ATWPY7073N"
+      "inputPan": "ATWPY7073N",
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
       {

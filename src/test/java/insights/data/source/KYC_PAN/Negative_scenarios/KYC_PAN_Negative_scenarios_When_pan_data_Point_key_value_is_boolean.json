@@ -14,7 +14,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "true"
+      "inputPan": "true",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
