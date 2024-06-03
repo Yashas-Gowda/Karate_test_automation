@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "525555088314",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
       "inputPhoneNumber": "525555088314",
@@ -16,7 +16,8 @@
       "referenceId": "6051cd20-36ae-4721-a934-6ead3001245d",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
