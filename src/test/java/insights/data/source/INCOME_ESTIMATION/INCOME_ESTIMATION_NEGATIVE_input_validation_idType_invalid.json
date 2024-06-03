@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "INCOME_ESTIMATION"
     ],
     "id": "3175031407830020",
-    "idType":"abc",
+    "idType": "abc",
     "phoneNumber": "6285310060783",
     "phoneDefaultCountryCode": "ID"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
       "inputPhoneNumber": "6285310060783",
@@ -20,7 +20,8 @@
       "inputIdType": "#ignore",
       "requestedPackages": [
         "INCOME_ESTIMATION"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
       {
