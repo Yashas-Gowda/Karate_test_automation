@@ -41,7 +41,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "AAPCM2882E"
+      "inputPan": "AAPCM2882E",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

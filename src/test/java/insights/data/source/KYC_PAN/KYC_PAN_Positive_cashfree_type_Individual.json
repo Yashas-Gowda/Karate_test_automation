@@ -43,7 +43,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "ETLPB9544N"
+      "inputPan": "ETLPB9544N",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

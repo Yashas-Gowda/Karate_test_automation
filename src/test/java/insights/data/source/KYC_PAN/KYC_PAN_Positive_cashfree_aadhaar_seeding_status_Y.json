@@ -42,7 +42,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "HYEPM3845Q"
+      "inputPan": "HYEPM3845Q",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

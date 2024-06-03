@@ -42,7 +42,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "DBTPP3898A"
+      "inputPan": "DBTPP3898A",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]
