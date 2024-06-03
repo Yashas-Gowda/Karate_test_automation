@@ -84,7 +84,7 @@
                 "businessAccount": false
               },
               "viber": {
-                "registered": null,
+                "registered": false,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -148,10 +148,11 @@
     "meta": {
       "inputPhoneNumber": "447958000000",
       "cleansedPhoneNumber": "+447958000000",
-      "referenceId": "f2eb03ab-46d2-4f93-87b0-5fb5f0170881",
+      "referenceId": "44749506-7a45-4201-92d3-4688191bd852",
       "requestedPackages": [
         "PHONE_SOCIAL"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "GB"
     },
     "errors": [
     ]
