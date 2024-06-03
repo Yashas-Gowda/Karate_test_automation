@@ -8,7 +8,7 @@
     "phoneNumber": "919163238236",
     "phoneDefaultCountryCode": "IN"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -69,7 +69,8 @@
       "referenceId": "916bb74e-a9ed-4b50-8b0e-475f66bc6c23",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

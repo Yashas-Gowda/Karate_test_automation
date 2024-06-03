@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -8,7 +8,7 @@
     "phoneNumber": "526144160457",
     "phoneDefaultCountryCode": "MX"
   },
-  "response":{
+  "response": {
     "data": null,
     "meta": {
       "inputPhoneNumber": "526144160457",
@@ -16,7 +16,8 @@
       "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "MX"
     },
     "errors": [
       {

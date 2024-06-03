@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,15 +7,16 @@
     ],
     "phoneNumber": "9108510043",
     "phoneDefaultCountryCode": "INDIA"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": null,
     "meta": {
       "inputPhoneNumber": "9108510043",
       "referenceId": "6e60f743-9ad6-4f04-83cb-d094ca3700f7",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "INDIA"
     },
     "errors": [
       {
