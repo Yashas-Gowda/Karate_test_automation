@@ -251,5 +251,5 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
       | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_10_names_Tamil_langauage    | 200        |
       | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_10_names_Telugu_langauage    | 200        |
       | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_2_names_Gujarati_langauage    | 200        |
-      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_7_names_Gujarati_langauage    | 200        |
+      | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_7_names_Kannada_langauage    | 200        |
       | IDENTITY_ENRICHMENT_with_Eyecon_data_partner_with_3_names_Malayalam_langauage    | 200        |
