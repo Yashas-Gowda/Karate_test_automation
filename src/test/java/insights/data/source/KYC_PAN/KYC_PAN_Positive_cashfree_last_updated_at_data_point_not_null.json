@@ -43,7 +43,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "GCMPM5812A"
+      "inputPan": "GCMPM5812A",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

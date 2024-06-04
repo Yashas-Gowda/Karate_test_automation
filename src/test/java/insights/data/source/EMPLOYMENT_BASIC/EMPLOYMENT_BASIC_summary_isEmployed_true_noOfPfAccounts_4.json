@@ -92,7 +92,8 @@
       "referenceId": "0e415abb-0657-4b62-94b6-70da895814bc",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

@@ -4,7 +4,7 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": false,
     "packages": [
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_SOCIAL"
     ]
   },
   "response": {
@@ -20,140 +20,131 @@
       "employment": {
         "basic": null,
         "advanced": null,
-        "details": {
-          "social": {
-            "summary": {
-              "name": "Harish YVS",
-              "linkedinHeadline": "Your Fintduct (Fintech + Product) guy",
-              "location": "Bengaluru, Karnataka, India",
-              "employerName": "Monnai",
-              "linkedinUrl": "https://linkedin.com/in/harish-yvs-a46b3138",
-              "photoUrl": "https://media.licdn.com/dms/image/C5603AQFlFcLmx6gppA/profile-displayphoto-shrink_800_800/0/1632690087885?e=1717632000&v=beta&t=qPBzOXKHSLDSCtp68I6IBhqATbIhWllCsWrC9C4YqLw",
-              "employmentHistoryCount": 11,
-              "educationHistoryCount": 2
+        "social": {
+          "summary": {
+            "name": "Harish YVS",
+            "linkedinHeadline": "Your Fintduct (Fintech + Product) guy",
+            "location": "Bengaluru, Karnataka, India",
+            "employerName": "Monnai",
+            "linkedinUrl": "https://linkedin.com/in/harish-yvs-a46b3138",
+            "photoUrl": "https://media.licdn.com/dms/image/C5603AQFlFcLmx6gppA/profile-displayphoto-shrink_800_800/0/1632690087885?e=1723075200&v=beta&t=zYyW6I8No4IndZUrWW3ASVJAkXQ0q9mi0dMMyIzahw0",
+            "employmentHistoryCount": 11,
+            "educationHistoryCount": 2
+          },
+          "employmentHistory": [
+            {
+              "employeeDesignation": "Head - Product Development and Product Strategy ",
+              "employerName": "Monnai ",
+              "employerLocation": "Bengaluru, Karnataka, India",
+              "dateOfJoining": "2022-05-01",
+              "employerLogo": "https://media.licdn.com/dms/image/D560BAQHd5VURKeIXAQ/company-logo_200_200/0/1664528260260/monnai_logo?e=1725494400&v=beta&t=neenl71Cuy6WELja56Doy6Wkaa44hACN3nIWjJqJsPo",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/77158228/"
             },
-            "employmentHistory": [
-              {
-                "employeeDesignation": "Head - Product Development and Product Strategy ",
-                "employerName": "Monnai ",
-                "employerLocation": "Bengaluru, Karnataka, India",
-                "dateOfJoining": "2022-05-01",
-                "dateOfExit": null,
-                "employerLogo": "https://media.licdn.com/dms/image/D560BAQHd5VURKeIXAQ/company-logo_200_200/0/1664528260260/monnai_logo?e=1720051200&v=beta&t=tQZOz8_KMaJDiB8fOaoooxeJIK5-DYGYreoEqMZqAhY",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/77158228/"
-              },
-              {
-                "employeeDesignation": "Assistant Vice President - Product Strategy",
-                "employerName": "Karza Technologies Private Limited",
-                "employerLocation": "Pune, Maharashtra, India",
-                "dateOfJoining": "2021-03-01",
-                "dateOfExit": "2022-05-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQGdBcerOjG2Xg/company-logo_200_200/0/1675239943137/karza_technologies_logo?e=1720051200&v=beta&t=DfJKiPx4wh1GdSYpaj2KXWft-wSwEYeuOM5J02zpayM",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/6603026/"
-              },
-              {
-                "employeeDesignation": "Senior Manager - Technology and Product Innovation",
-                "employerName": "Bajaj Finserv",
-                "employerLocation": null,
-                "dateOfJoining": "2018-09-01",
-                "dateOfExit": "2021-02-15",
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1720051200&v=beta&t=SshRFTeiXT4G2qL0nXYUf31l_di0VcT3MFclRG-CvJE",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
-              },
-              {
-                "employeeDesignation": "Research Analyst",
-                "employerName": "Bajaj Finserv",
-                "employerLocation": null,
-                "dateOfJoining": "2017-01-01",
-                "dateOfExit": "2018-08-15",
-                "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1720051200&v=beta&t=SshRFTeiXT4G2qL0nXYUf31l_di0VcT3MFclRG-CvJE",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
-              },
-              {
-                "employeeDesignation": "Lead Analyst",
-                "employerName": "Tracxn ",
-                "employerLocation": "Bengaluru Area, India",
-                "dateOfJoining": "2016-04-01",
-                "dateOfExit": "2016-12-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C4D0BAQG8QTQUeybruQ/company-logo_200_200/0/1652177251610/tracxn_logo?e=1720051200&v=beta&t=nMTSWWzvLuChrAQwOJsDihYUE-TPMuPRLw6wKAWIKVA",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/3366835/"
-              },
-              {
-                "employeeDesignation": "Manager",
-                "employerName": "Reliance",
-                "employerLocation": null,
-                "dateOfJoining": "2015-08-01",
-                "dateOfExit": "2016-04-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1720051200&v=beta&t=tQO0Jg6YnA-M5iRZBPT7cuQjwYJM1BuJ2CDTM21f0DY",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
-              },
-              {
-                "employeeDesignation": "Graduate Engineering Trainee",
-                "employerName": "Reliance",
-                "employerLocation": null,
-                "dateOfJoining": "2014-07-01",
-                "dateOfExit": "2015-07-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1720051200&v=beta&t=tQO0Jg6YnA-M5iRZBPT7cuQjwYJM1BuJ2CDTM21f0DY",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
-              },
-              {
-                "employeeDesignation": "Deputy General Secretary, Placements",
-                "employerName": "Indian Institute of Technology, Guwahati",
-                "employerLocation": "Guwahati Area, India",
-                "dateOfJoining": "2013-06-01",
-                "dateOfExit": "2014-07-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1720051200&v=beta&t=aO7PLa8jqy7R1-jw7A50Hl330WMspbBJqNPkq1_8QM8",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
-              },
-              {
-                "employeeDesignation": "Summer Intern",
-                "employerName": "Reliance",
-                "employerLocation": "Jamnagar Area, India",
-                "dateOfJoining": "2013-05-01",
-                "dateOfExit": "2013-07-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1720051200&v=beta&t=tQO0Jg6YnA-M5iRZBPT7cuQjwYJM1BuJ2CDTM21f0DY",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
-              },
-              {
-                "employeeDesignation": "Internship Coordinator",
-                "employerName": "Indian Institute of Technology, Guwahati",
-                "employerLocation": "Guwahati Area, India",
-                "dateOfJoining": "2012-07-01",
-                "dateOfExit": "2013-04-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1720051200&v=beta&t=aO7PLa8jqy7R1-jw7A50Hl330WMspbBJqNPkq1_8QM8",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
-              },
-              {
-                "employeeDesignation": "Summer Intern",
-                "employerName": "Reliance",
-                "employerLocation": "Jamnagar Area, India",
-                "dateOfJoining": "2012-05-01",
-                "dateOfExit": "2012-07-15",
-                "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1720051200&v=beta&t=tQO0Jg6YnA-M5iRZBPT7cuQjwYJM1BuJ2CDTM21f0DY",
-                "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
-              }
-            ],
-            "educationHistory": [
-              {
-                "fieldOfStudy": "Bachelor of Technology (B.Tech.), Chemical Engineering",
-                "degreeName": "Bachelor of Technology (B.Tech.), Chemical Engineering",
-                "schoolName": "Indian Institute of Technology, Guwahati",
-                "schoolLocation": null,
-                "startYear": 2010,
-                "endYear": 2014
-              },
-              {
-                "fieldOfStudy": "10th Std",
-                "degreeName": "10th Std",
-                "schoolName": "Sri Krishna Vidya Mandir",
-                "schoolLocation": null,
-                "startYear": 2002,
-                "endYear": 2007
-              }
-            ],
-            "recentActivity": null
-          }
-        }
+            {
+              "employeeDesignation": "Assistant Vice President - Product Strategy",
+              "employerName": "Karza Technologies Private Limited ",
+              "employerLocation": "Pune, Maharashtra, India · Hybrid",
+              "dateOfJoining": "2021-03-01",
+              "dateOfExit": "2022-05-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGdBcerOjG2Xg/company-logo_200_200/0/1675239943137/karza_technologies_logo?e=1725494400&v=beta&t=NWA-5AlyQX8YP0vE9mM2vS_EN_5GndUiL2wFjLAasrA",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/6603026/"
+            },
+            {
+              "employeeDesignation": "Senior Manager - Technology and Product Innovation",
+              "employerName": "Bajaj Finserv",
+              "dateOfJoining": "2018-09-01",
+              "dateOfExit": "2021-02-15",
+              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1725494400&v=beta&t=bYbTl2a4B8RVUOueRGfaBV1QdRNyZPpFrN-N290xmLU",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
+            },
+            {
+              "employeeDesignation": "Research Analyst",
+              "employerName": "Bajaj Finserv",
+              "dateOfJoining": "2017-01-01",
+              "dateOfExit": "2018-08-15",
+              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1725494400&v=beta&t=bYbTl2a4B8RVUOueRGfaBV1QdRNyZPpFrN-N290xmLU",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
+            },
+            {
+              "employeeDesignation": "Lead Analyst",
+              "employerName": "Tracxn ",
+              "employerLocation": "Bengaluru Area, India",
+              "dateOfJoining": "2016-04-01",
+              "dateOfExit": "2016-12-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C4D0BAQG8QTQUeybruQ/company-logo_200_200/0/1652177251610/tracxn_logo?e=1725494400&v=beta&t=Ml2wyx5YfkwKPfOQgAWMHqlci8OzCPh72dS5huCgfHU",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/3366835/"
+            },
+            {
+              "employeeDesignation": "Manager",
+              "employerName": "Reliance",
+              "dateOfJoining": "2015-08-01",
+              "dateOfExit": "2016-04-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
+            },
+            {
+              "employeeDesignation": "Graduate Engineering Trainee",
+              "employerName": "Reliance",
+              "dateOfJoining": "2014-07-01",
+              "dateOfExit": "2015-07-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
+            },
+            {
+              "employeeDesignation": "Deputy General Secretary, Placements",
+              "employerName": "Indian Institute of Technology, Guwahati",
+              "employerLocation": "Guwahati Area, India",
+              "dateOfJoining": "2013-06-01",
+              "dateOfExit": "2014-07-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1725494400&v=beta&t=1t6XiShC2rRPJ1TOFZlGHGXZx0I-BVWazPrCTRjJQUk",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
+            },
+            {
+              "employeeDesignation": "Summer Intern",
+              "employerName": "Reliance",
+              "employerLocation": "Jamnagar Area, India",
+              "dateOfJoining": "2013-05-01",
+              "dateOfExit": "2013-07-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
+            },
+            {
+              "employeeDesignation": "Internship Coordinator",
+              "employerName": "Indian Institute of Technology, Guwahati",
+              "employerLocation": "Guwahati Area, India",
+              "dateOfJoining": "2012-07-01",
+              "dateOfExit": "2013-04-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1725494400&v=beta&t=1t6XiShC2rRPJ1TOFZlGHGXZx0I-BVWazPrCTRjJQUk",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
+            },
+            {
+              "employeeDesignation": "Summer Intern",
+              "employerName": "Reliance",
+              "employerLocation": "Jamnagar Area, India",
+              "dateOfJoining": "2012-05-01",
+              "dateOfExit": "2012-07-15",
+              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
+            }
+          ],
+          "educationHistory": [
+            {
+              "fieldOfStudy": "Bachelor of Technology (B.Tech.), Chemical Engineering",
+              "degreeName": "Bachelor of Technology (B.Tech.), Chemical Engineering",
+              "schoolName": "Indian Institute of Technology, Guwahati",
+              "startYear": 2010,
+              "endYear": 2014
+            },
+            {
+              "fieldOfStudy": "10th Std",
+              "degreeName": "10th Std",
+              "schoolName": "Sri Krishna Vidya Mandir",
+              "startYear": 2002,
+              "endYear": 2007
+            }
+          ]
+        },
+        "details": null
       },
       "income": null,
       "blacklist": null,
@@ -164,10 +155,10 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "baf828f7-9064-485b-a831-9b4f9f04701e",
+      "referenceId": "d15e0494-ca84-4f4d-8419-8339dcefb6d4",
       "inputEmail": "harishyvs5@gmail.com",
       "requestedPackages": [
-        "EMPLOYMENT_DETAILS"
+        "EMPLOYMENT_SOCIAL"
       ]
     },
     "errors": [

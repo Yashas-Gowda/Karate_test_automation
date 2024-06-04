@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "INCOME_ESTIMATION"
     ],
     "id": "3276045207920007",
-    "idType":"NIK",
+    "idType": "NIK",
     "phoneNumber": "628111992102",
     "phoneDefaultCountryCode": "ID"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -45,7 +45,8 @@
       "inputIdType": "NIK",
       "requestedPackages": [
         "INCOME_ESTIMATION"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": []
   }

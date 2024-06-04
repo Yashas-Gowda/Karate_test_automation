@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "6285771034863",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
@@ -7,8 +7,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -51,6 +51,61 @@
           "topUpHistory": [
             {
               "topUpTenure": {
+                "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 20000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 20000
+            },
+            {
+              "topUpTenure": {
                 "min": 360,
                 "max": 720
               },
@@ -60,7 +115,8 @@
               "maximumTopUpAmount": 20000,
               "averageTopUpAmount": 11000
             }
-          ]
+          ],
+          "simSwap": null
         },
         "social": null,
         "identity": null
@@ -84,10 +140,11 @@
     "meta": {
       "inputPhoneNumber": "6285771034863",
       "cleansedPhoneNumber": "+6285771034863",
-      "referenceId": "Dpi_feb_12_1",
+      "referenceId": "Dpi_may_20_fido_1",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": []
   }

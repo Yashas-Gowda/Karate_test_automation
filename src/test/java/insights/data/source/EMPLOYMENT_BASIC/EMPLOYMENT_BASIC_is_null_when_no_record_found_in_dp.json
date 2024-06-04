@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "6006251517",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -37,7 +37,8 @@
       "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

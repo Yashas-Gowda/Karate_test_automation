@@ -42,7 +42,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "CYFPP6914H"
+      "inputPan": "CYFPP6914H",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

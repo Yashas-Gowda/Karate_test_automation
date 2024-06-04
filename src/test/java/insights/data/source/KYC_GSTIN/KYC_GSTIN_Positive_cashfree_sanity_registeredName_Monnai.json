@@ -47,7 +47,8 @@
       "requestedPackages": [
         "KYC_GSTIN"
       ],
-      "inputGstin": "24AAPCM2882E1ZB"
+      "inputGstin": "24AAPCM2882E1ZB",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

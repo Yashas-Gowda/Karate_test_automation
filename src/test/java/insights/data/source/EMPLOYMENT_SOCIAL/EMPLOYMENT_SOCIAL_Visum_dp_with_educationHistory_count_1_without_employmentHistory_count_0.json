@@ -26,6 +26,7 @@
             "linkedinHeadline": "Attended PES University",
             "location": "Bengaluru, Karnataka, India",
             "linkedinUrl": "https://linkedin.com/in/spoorthi-e-m-2a9355293",
+            "photoUrl": "https://media.licdn.com/dms/image/D5603AQGKOaqmj6uGHw/profile-displayphoto-shrink_800_800/0/1716317928845?e=1723075200&v=beta&t=VGtQneAYcSEEOeXZFCt2-p0tjB02KyNSD6VMAvEO6D0",
             "employmentHistoryCount": 0,
             "educationHistoryCount": 2
           },
@@ -57,12 +58,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_may_20_fido_1",
+      "referenceId": "3eabf7a3-bcca-46e5-bf59-cb351606510b",
       "inputEmail": "spoorthimudegowdru1609@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

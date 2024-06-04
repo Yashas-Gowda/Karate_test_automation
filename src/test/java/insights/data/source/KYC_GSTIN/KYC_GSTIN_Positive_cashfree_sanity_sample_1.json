@@ -46,7 +46,8 @@
       "requestedPackages": [
         "KYC_GSTIN"
       ],
-      "inputGstin": "27AAHFJ2001P1ZC"
+      "inputGstin": "27AAHFJ2001P1ZC",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

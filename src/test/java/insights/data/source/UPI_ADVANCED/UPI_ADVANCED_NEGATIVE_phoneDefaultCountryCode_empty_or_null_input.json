@@ -12,16 +12,17 @@
     "data": null,
     "meta": {
       "inputPhoneNumber": "9108510043",
-      "referenceId": "32793ad8-9984-4911-b7dd-875e935154d4",
+      "referenceId": "16511f18-b386-4ede-b2b8-6f704677942e",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "123"
     },
     "errors": [
       {
         "package": "UPI_ADVANCED",
-        "message": "Missing phone default country code",
-        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "message": "Invalid phone default country code",
+        "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"
       }
     ]

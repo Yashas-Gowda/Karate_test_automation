@@ -42,7 +42,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "AQEPC0503C"
+      "inputPan": "AQEPC0503C",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
     ]

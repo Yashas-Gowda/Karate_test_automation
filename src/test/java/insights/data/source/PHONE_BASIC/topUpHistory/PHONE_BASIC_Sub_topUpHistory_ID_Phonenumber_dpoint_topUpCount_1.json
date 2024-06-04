@@ -53,17 +53,6 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 60
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 90
               },
               "currency": "IDR",
@@ -96,8 +85,8 @@
             },
             {
               "topUpTenure": {
-                "min": 30,
-                "max": 60
+                "min": 60,
+                "max": 90
               },
               "currency": "IDR",
               "topUpCount": 1,
@@ -152,10 +141,11 @@
     "meta": {
       "inputPhoneNumber": "087809453668",
       "cleansedPhoneNumber": "+6287809453668",
-      "referenceId": "a6070f8a-4601-4f41-b4ae-e16ce9da8128",
+      "referenceId": "eae6208d-85b6-4424-b50f-602bde44a1db",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
     ]

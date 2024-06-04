@@ -130,6 +130,7 @@
       ]
     },
     "errors": [
-    ]
+    ],
+    "inputPhoneDefaultCountryCode": "IN"
   }
 }

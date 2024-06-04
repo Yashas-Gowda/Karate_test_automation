@@ -38,7 +38,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "ABCDC1234C"
+      "inputPan": "ABCDC1234C",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

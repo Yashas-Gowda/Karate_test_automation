@@ -14,7 +14,8 @@
       "requestedPackages": [
         "KYC_PAN"
       ],
-      "inputPan": "RWJPS8170M"
+      "inputPan": "RWJPS8170M",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {

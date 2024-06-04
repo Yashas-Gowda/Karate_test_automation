@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
@@ -7,8 +7,8 @@
     ],
     "phoneNumber": "12017234014",
     "phoneDefaultCountryCode": "US"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": null,
@@ -77,7 +77,7 @@
               },
               "whatsapp": {
                 "registered": true,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/cf1d8bae/cb47/42fa/9a14/95998028217e/d0677899-b59c-468a-8498-83b02e6fde7c.jpg",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/5a98f475/fb5c/4ada/a7dd/0964b24676a5/cc0c0c52-b665-4710-9928-43babffeba29.jpg",
                 "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
@@ -86,7 +86,7 @@
               "viber": {
                 "registered": true,
                 "photo": null,
-                "lastSeen": "2024-02-17T07:18:13Z",
+                "lastSeen": "2024-05-31T12:55:00Z",
                 "name": "Em"
               },
               "kakao": {
@@ -148,10 +148,11 @@
     "meta": {
       "inputPhoneNumber": "12017234014",
       "cleansedPhoneNumber": "+12017234014",
-      "referenceId": "7e74ce31-b9e6-48ea-9eb6-52b7afcf90ed",
+      "referenceId": "cd854334-eabb-465a-bf4d-492bdea93359",
       "requestedPackages": [
         "PHONE_SOCIAL"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "US"
     },
     "errors": [
     ]

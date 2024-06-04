@@ -6,11 +6,11 @@
       "INCOME_ESTIMATION"
     ],
     "id": "3172034904750007",
-    "idType":"NIK",
+    "idType": "NIK",
     "phoneNumber": "6281808384926",
     "phoneDefaultCountryCode": "ID"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -45,7 +45,8 @@
       "inputIdType": "NIK",
       "requestedPackages": [
         "INCOME_ESTIMATION"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": []
   }

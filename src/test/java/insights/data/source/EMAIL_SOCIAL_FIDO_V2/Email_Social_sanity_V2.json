@@ -12,13 +12,13 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 8,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
             "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
@@ -33,7 +33,7 @@
                 "registered": true
               },
               "samsung": {
-                "registered": null
+                "registered": false
               }
             },
             "emailProvider": {
@@ -167,17 +167,17 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -243,9 +243,6 @@
             "financial": {
               "paypal": {
                 "registered": true
-              },
-              "binance": {
-                "registered": false
               }
             },
             "education": {
@@ -273,7 +270,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "ac950870-e002-4c0d-8c96-01ba04292ece",
+      "referenceId": "c484c03d-0ee5-478a-bccb-8a2a9f559a4a",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

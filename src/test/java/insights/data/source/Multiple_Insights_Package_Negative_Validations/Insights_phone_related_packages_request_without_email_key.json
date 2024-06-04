@@ -2,25 +2,27 @@
   "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
     "packages": [
       "EMAIL_BASIC",
       "EMAIL_SOCIAL",
       "IDENTITY_ENRICHMENT",
       "IDENTITY_ENRICHMENT_PLUS",
-      "EMPLOYMENT_DETAILS"
+      "EMPLOYMENT_SOCIAL"
     ]
   },
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "059f27ba-2126-4f65-b7b3-d5e48bbec84f",
+      "referenceId": "Dpi_may_20_fido_1",
       "requestedPackages": [
         "EMAIL_BASIC",
         "EMAIL_SOCIAL",
         "IDENTITY_ENRICHMENT",
         "IDENTITY_ENRICHMENT_PLUS",
-        "EMPLOYMENT_DETAILS"
-      ]
+        "EMPLOYMENT_SOCIAL"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
@@ -48,7 +50,7 @@
         "type": "INVALID_INPUT"
       },
       {
-        "package": "EMPLOYMENT_DETAILS",
+        "package": "EMPLOYMENT_SOCIAL",
         "message": "Email cannot be empty/null",
         "code": "MISSING_EMAIL_ADDRESS",
         "type": "INVALID_INPUT"

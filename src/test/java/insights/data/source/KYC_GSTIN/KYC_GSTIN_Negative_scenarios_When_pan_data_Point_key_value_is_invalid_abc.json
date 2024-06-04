@@ -14,7 +14,8 @@
       "requestedPackages": [
         "KYC_GSTIN"
       ],
-      "inputGstin": "abc"
+      "inputGstin": "abc",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
