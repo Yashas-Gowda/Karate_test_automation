@@ -1,0 +1,286 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "nitishksoft905@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 5,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
+            "registeredTravelProfiles": 0,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 2
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": false
+              },
+              "samsung": {
+                "registered": true
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/04a67d96/6dcc/431b/9f7f/91668ca9fb2b/9a72e580-848d-4c15-a98f-91b3f7df366f.jpg",
+                "gender": "M"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": {
+                "registered": null
+              },
+              "rambler": {
+                "registered": null
+              }
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": false
+              },
+              "flipkart": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "lazada": {
+                "registered": null
+              },
+              "tokopedia": {
+                "registered": null
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": false
+              },
+              "flickr": {
+                "registered": null,
+                "username": null
+              },
+              "pinterest": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": true
+              },
+              "tumblr": {
+                "registered": null
+              },
+              "weibo": {
+                "registered": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": null
+              },
+              "quora": {
+                "registered": null
+              },
+              "qzone": {
+                "registered": null
+              },
+              "gravatar": {
+                "registered": true,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/4913265f/83c8/43b0/bc97/0c3a68cb5339/f8a04357-54c9-45ec-a002-09f442b82f22.jpg"
+              },
+              "foursquare": {
+                "registered": null,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": false,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
+            },
+            "professional": {
+              "github": {
+                "registered": null
+              },
+              "wordpress": {
+                "registered": true
+              },
+              "atlassian": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": false,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": "",
+                "photo": null,
+                "connectionCount": null
+              },
+              "evernote": {
+                "registered": null
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "zoho": {
+                "registered": null
+              },
+              "adobe": {
+                "registered": null
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": false
+              },
+              "lastfm": {
+                "registered": null
+              },
+              "vimeo": {
+                "registered": null
+              },
+              "envato": {
+                "registered": null
+              },
+              "patreon": {
+                "registered": null
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": null
+              },
+              "archiveorg": {
+                "registered": null
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": false
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": false
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "nitishksoft905@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

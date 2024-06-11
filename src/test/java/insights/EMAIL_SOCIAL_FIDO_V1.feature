@@ -91,7 +91,10 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Scenario                                                   | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false | 200        |
-  #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_false | 200        |
+
 
   # fido doen't give {mailru,rambler} gives only {google-(registered,name,photo), yahoo}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider   - <Scenario>
@@ -406,6 +409,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   #      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_true                 | 200        |
   #      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_true_wordpress_false | 200        |
   #      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_microsoft_hubspot_false                | 200        |
+
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - wordpress <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V1/professional/<Scenario>.json")
@@ -439,6 +443,40 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true                 | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_false | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_null                | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - wordpress <Scenario>
+    Given url requestUrl
+    And def payload = read("data/" + source + "/EMAIL_SOCIAL_FIDO_V1/professional/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
+    * match payload.response.data.email.social.profiles.professional.atlassian == $.data.email.social.profiles.professional.atlassian
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_true                 | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_false                | 200        |
+
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - linkedin <Scenario>
     Given url requestUrl
