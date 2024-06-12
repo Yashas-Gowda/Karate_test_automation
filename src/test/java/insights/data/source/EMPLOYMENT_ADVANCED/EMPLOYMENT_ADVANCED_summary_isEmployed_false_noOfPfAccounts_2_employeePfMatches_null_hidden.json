@@ -33,17 +33,6 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100984866758",
-              "name": "Mahipal Kumar Singh",
-              "gender": "MALE",
-              "dateOfBirth": "1994-06-22",
-              "nationalIdVerificationStatus": true,
-              "employerName": "OKAYA INFOCOM (P) LTD",
-              "dateOfJoining": "2016-11-07",
-              "dateOfExit": "2017-05-12",
-              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
-            },
-            {
               "pfAccountNumber": "101155054190",
               "name": "MAHIPAL KUMAR SINGH",
               "gender": "MALE",
@@ -52,7 +41,7 @@
               "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
               "dateOfJoining": "2018-12-07",
               "dateOfExit": "2023-07-12",
-              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason",
+              "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********3266",
                 "taxId": "GB******7K",
@@ -63,6 +52,17 @@
                 "pfNomineeName": "RAVINDRA SINGH",
                 "pfNomineeRelation": "FATHER"
               }
+            },
+            {
+              "pfAccountNumber": "100984866758",
+              "name": "Mahipal Kumar Singh",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": true,
+              "employerName": "OKAYA INFOCOM (P) LTD",
+              "dateOfJoining": "2016-11-07",
+              "dateOfExit": "2017-05-12",
+              "reasonOfExit": ""
             }
           ],
           "pfFilingDetails": {
@@ -102,7 +102,7 @@
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "f192feb5-2bdf-4ea6-8b42-58bbd195608d",
+      "referenceId": "5bb04aa7-3e5d-43b8-b815-8aaea6a02ab5",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ],

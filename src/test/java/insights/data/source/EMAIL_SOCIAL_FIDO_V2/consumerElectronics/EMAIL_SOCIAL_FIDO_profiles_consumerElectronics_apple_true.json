@@ -1,30 +1,31 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "EMAIL_SOCIAL"
     ],
     "email": "rushipatel4445@gmail.com"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 11,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 4,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
@@ -32,14 +33,15 @@
                 "registered": true
               },
               "samsung": {
-                "registered": null
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": "Rushi Patel",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/7e3854f7/0ca1/4ab0/ab04/d3e5bbe901ff/2ea63828-df84-4e05-91e3-d705fe798931.jpg"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/58d0e9ba/0b07/457b/87f6/a588e8cfcdc5/a4ee51a5-5f13-41aa-ace4-30deef44a403.jpg",
+                "gender": "M"
               },
               "yahoo": {
                 "registered": false
@@ -56,7 +58,7 @@
                 "registered": true
               },
               "ebay": {
-                "registered": null
+                "registered": false
               },
               "flipkart": {
                 "registered": null
@@ -72,6 +74,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -116,7 +121,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -137,15 +142,15 @@
                 "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "RUSHI PATEL",
+                "id": "rushipatel4445",
                 "handle": null,
                 "bio": null,
                 "age": null,
-                "city": null,
+                "city": "surat",
                 "state": null,
-                "country": null,
-                "photo": null
+                "country": "India",
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/fec1bbd5/9b0e/4b6b/815a/fd69ac89cf0b/a586dd66-c773-4ee7-b5ab-e5cd7756e725.jpg"
               },
               "discord": {
                 "registered": null
@@ -162,17 +167,17 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -220,7 +225,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -239,6 +244,11 @@
               "paypal": {
                 "registered": false
               }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
             }
           }
         },
@@ -253,15 +263,20 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
+      "referenceId": "cc3a0edf-fc47-441e-831f-43ffde8e655e",
       "inputEmail": "rushipatel4445@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

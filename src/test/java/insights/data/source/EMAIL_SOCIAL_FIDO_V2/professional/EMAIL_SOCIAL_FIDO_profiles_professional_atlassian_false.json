@@ -1,10 +1,11 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email": "rraghavendra523@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ],
-    "email": "yashas@monnai.com"
+    ]
   },
   "response": {
     "data": {
@@ -12,25 +13,25 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
-            "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 2,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredProfiles": 6,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 0
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
                 "registered": false
@@ -39,11 +40,12 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": null,
-                "photo": null
+                "name": "Raghavendra Raghu",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
+                "gender": "M"
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
               "mailru": {
                 "registered": null
@@ -54,7 +56,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -80,20 +82,20 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": false
@@ -138,7 +140,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -166,10 +168,10 @@
                 "registered": false
               },
               "atlassian": {
-                "registered": true
+                "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -184,7 +186,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": null
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -270,7 +272,7 @@
     },
     "meta": {
       "referenceId": "Dpi_march_6_upi_1",
-      "inputEmail": "yashas@monnai.com",
+      "inputEmail": "rraghavendra523@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

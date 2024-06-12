@@ -13,16 +13,17 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 11,
+            "registeredProfiles": 13,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 5,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 0,
+            "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 2
@@ -32,13 +33,15 @@
               "apple": {
                 "registered": false
               },
-              "samsung": null
+              "samsung": {
+                "registered": false
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": "Shubhangi Gangaheriya",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/314b18c2/9e22/4b68/a4ca/32177bb2df5d/c9f25cc3-3251-4233-9c13-6c320d337c0d.jpg",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/ff24001e/cc99/44bf/a995/6e0bfaa6c810/f52ddb3c-107c-419d-9ae5-d523f9f689f2.jpg",
                 "gender": "F"
               },
               "yahoo": {
@@ -80,7 +83,7 @@
                 "name": null,
                 "profileUrl": null,
                 "username": null,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/fa3de098/17f4/49d1/9fd9/46e8d7562970/8df97128-aef3-4274-b159-95d335fdb051.jpg"
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/6ed9de8e/6103/4faa/bb4b/c48526ee71d5/4c295425-ba7a-4c86-a5c2-d66d45e0da67.jpg"
               }
             },
             "messaging": {
@@ -105,8 +108,11 @@
               "wordpress": {
                 "registered": true
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -152,6 +158,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": true
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -174,13 +188,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "1678882c-48cd-480b-9f3b-4981d2a4eb3c",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "gshubhangi41@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

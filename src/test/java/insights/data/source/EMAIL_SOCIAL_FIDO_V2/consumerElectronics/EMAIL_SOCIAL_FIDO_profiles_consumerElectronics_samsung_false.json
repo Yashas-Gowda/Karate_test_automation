@@ -1,10 +1,11 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "yashas@monnai.com"
+    "email": "nitishksoft905@gmail.com"
   },
   "response": {
     "data": {
@@ -14,10 +15,10 @@
           "summary": {
             "registeredProfiles": 5,
             "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 2,
+            "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
+            "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
@@ -25,25 +26,26 @@
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": true
+                "registered": false
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": null,
-                "photo": null
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/04a67d96/6dcc/431b/9f7f/91668ca9fb2b/9a72e580-848d-4c15-a98f-91b3f7df366f.jpg",
+                "gender": "M"
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
               "mailru": {
                 "registered": null
@@ -96,7 +98,7 @@
                 "registered": false
               },
               "twitter": {
-                "registered": false
+                "registered": true
               },
               "tumblr": {
                 "registered": null
@@ -120,11 +122,12 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": false,
+                "registered": true,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
-                "username": null
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/4913265f/83c8/43b0/bc97/0c3a68cb5339/f8a04357-54c9-45ec-a002-09f442b82f22.jpg"
               },
               "foursquare": {
                 "registered": null,
@@ -138,7 +141,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": true,
+                "registered": false,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -163,13 +166,13 @@
                 "registered": null
               },
               "wordpress": {
-                "registered": false
-              },
-              "atlassian": {
                 "registered": true
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": false,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -184,7 +187,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": null
+                "registered": false
               },
               "zoho": {
                 "registered": null
@@ -242,6 +245,9 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": false
               }
             },
             "education": {
@@ -270,7 +276,7 @@
     },
     "meta": {
       "referenceId": "Dpi_march_6_upi_1",
-      "inputEmail": "yashas@monnai.com",
+      "inputEmail": "nitishksoft905@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]

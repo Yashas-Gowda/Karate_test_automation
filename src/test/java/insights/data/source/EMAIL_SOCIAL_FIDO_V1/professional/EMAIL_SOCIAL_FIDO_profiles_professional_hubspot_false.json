@@ -13,18 +13,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 7,
+            "registeredProfiles": 8,
             "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 0,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -32,13 +33,15 @@
               "apple": {
                 "registered": true
               },
-              "samsung": null
+              "samsung": {
+                "registered": false
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Mukesh Jain",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/0030103e/ebeb/4301/aba9/47d334b8f3de/ecd8a893-f49f-479e-8d97-4f33e273842a.jpg",
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/05128e96/4a9a/49bd/882f/ae3c434bdffe/f44f9763-a054-4de1-aebd-405b072d0c98.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -104,8 +107,11 @@
               "wordpress": {
                 "registered": false
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -151,6 +157,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -173,13 +187,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "54327b0d-1b9a-4c5b-ab83-84c476ade95a",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "mukesh@adroitoverseas.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
