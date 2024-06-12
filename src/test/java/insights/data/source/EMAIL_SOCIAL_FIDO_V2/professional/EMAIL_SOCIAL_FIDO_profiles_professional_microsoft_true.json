@@ -13,19 +13,20 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 11,
+            "registeredProfiles": 13,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 5,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 1,
-            "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfPhotosReturned": 2
           },
           "profiles": {
             "consumerElectronics": {
@@ -33,14 +34,15 @@
                 "registered": false
               },
               "samsung": {
-                "registered": null
+                "registered": false
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": "Shubhangi Gangaheriya",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/314b18c2/9e22/4b68/a4ca/32177bb2df5d/c9f25cc3-3251-4233-9c13-6c320d337c0d.jpg"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/ff24001e/cc99/44bf/a995/6e0bfaa6c810/f52ddb3c-107c-419d-9ae5-d523f9f689f2.jpg",
+                "gender": "F"
               },
               "yahoo": {
                 "registered": false
@@ -124,7 +126,8 @@
                 "location": null,
                 "name": null,
                 "profileUrl": null,
-                "username": null
+                "username": null,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/6ed9de8e/6103/4faa/bb4b/c48526ee71d5/4c295425-ba7a-4c86-a5c2-d66d45e0da67.jpg"
               },
               "foursquare": {
                 "registered": null,
@@ -166,17 +169,17 @@
                 "registered": true
               },
               "atlassian": {
-                "registered": null
+                "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -242,6 +245,14 @@
             "financial": {
               "paypal": {
                 "registered": false
+              },
+              "binance": {
+                "registered": true
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -264,12 +275,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UQOrFit2SQ0EPNw=",
+      "referenceId": "069bb957-bc1f-4a59-801f-6813d8f7b6bb",
       "inputEmail": "gshubhangi41@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
-    "email": "gshubhangi41@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ]
+    ],
+    "email": "yashas@monnai.com"
   },
   "response": {
     "data": {
@@ -13,37 +12,38 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 11,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 5,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 1,
+            "registeredProfiles": 5,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 0,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": {
-                "registered": null
+                "registered": false
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Shubhangi Gangaheriya",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/314b18c2/9e22/4b68/a4ca/32177bb2df5d/c9f25cc3-3251-4233-9c13-6c320d337c0d.jpg"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -54,7 +54,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -80,23 +80,23 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": true,
+                "registered": false,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "tumblr": {
                 "registered": null
@@ -120,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": true,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -138,7 +138,7 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
                 "name": null,
@@ -163,10 +163,10 @@
                 "registered": null
               },
               "wordpress": {
-                "registered": true
+                "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": true
               },
               "linkedin": {
                 "registered": null,
@@ -176,7 +176,7 @@
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -184,7 +184,7 @@
                 "registered": null
               },
               "microsoft": {
-                "registered": true
+                "registered": null
               },
               "zoho": {
                 "registered": null
@@ -198,7 +198,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
+                "registered": false
               },
               "lastfm": {
                 "registered": null
@@ -224,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": true
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -241,6 +241,11 @@
             },
             "financial": {
               "paypal": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
                 "registered": false
               }
             }
@@ -264,8 +269,8 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UQOrFit2SQ0EPNw=",
-      "inputEmail": "gshubhangi41@gmail.com",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "yashas@monnai.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
