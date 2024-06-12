@@ -13,16 +13,17 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 16,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 18,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 2,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 5,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 2,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 2,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 2,
             "numberOfPhotosReturned": 2
@@ -32,13 +33,15 @@
               "apple": {
                 "registered": true
               },
-              "samsung": null
+              "samsung": {
+                "registered": true
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Maykol Baron",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/62457bf2/d147/4ff6/b057/0afb58b677e0/65a74f2c-cd04-47f4-a940-50bf0bb54eb6.jpg",
+                "name": "Maykol Baron (SISTEMAS AVANZADOS PZA)",
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/387cd389/694f/47ec/8fc5/fdb5281d5572/4cb8be9b-7bd4-4aad-8dfd-4dba6cc73744.jpg",
                 "gender": "M"
               },
               "yahoo": {
@@ -80,7 +83,7 @@
                 "name": null,
                 "profileUrl": null,
                 "username": null,
-                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/4678ad35/4773/42bb/bc94/752d45c31599/b2235ef9-b109-4b48-9df5-a383a557b9d8.jpg"
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/5a739561/e6d9/487c/a8c3/36ed38d55249/69d000e6-0c4e-4e83-aeb4-09bc0104ec7b.jpg"
               }
             },
             "messaging": {
@@ -105,8 +108,11 @@
               "wordpress": {
                 "registered": null
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -152,6 +158,14 @@
             "financial": {
               "paypal": {
                 "registered": true
+              },
+              "binance": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
@@ -174,13 +188,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "2f324ca3-2754-4dfd-a85b-f1e1f041d6e0",
+      "referenceId": "Dpi_march_6_upi_1",
       "inputEmail": "MAYKOLJAJA@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
