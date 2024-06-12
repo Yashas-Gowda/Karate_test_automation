@@ -23,8 +23,8 @@
           "phoneNumberAge": 3,
           "phoneNumberAgeDescription": "6 to 12 Months",
           "phoneTenure": {
-            "min": 6,
-            "max": 8
+            "min": 8,
+            "max": 10
           },
           "country": "ID",
           "originalCarrier": "XL (PT XL Axiata Tbk)",
@@ -53,17 +53,6 @@
             {
               "topUpTenure": {
                 "min": 0,
-                "max": 90
-              },
-              "currency": "IDR",
-              "topUpCount": 1,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 25000
-            },
-            {
-              "topUpTenure": {
-                "min": 0,
                 "max": 180
               },
               "currency": "IDR",
@@ -85,8 +74,8 @@
             },
             {
               "topUpTenure": {
-                "min": 60,
-                "max": 90
+                "min": 90,
+                "max": 180
               },
               "currency": "IDR",
               "topUpCount": 1,
@@ -141,7 +130,7 @@
     "meta": {
       "inputPhoneNumber": "087809453668",
       "cleansedPhoneNumber": "+6287809453668",
-      "referenceId": "eae6208d-85b6-4424-b50f-602bde44a1db",
+      "referenceId": "1582fafd-b1aa-459a-904b-5a1dd4e61c52",
       "requestedPackages": [
         "PHONE_BASIC"
       ],

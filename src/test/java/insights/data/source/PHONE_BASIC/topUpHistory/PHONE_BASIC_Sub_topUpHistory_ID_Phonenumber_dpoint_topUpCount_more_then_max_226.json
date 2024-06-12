@@ -56,10 +56,10 @@
                 "max": 30
               },
               "currency": "IDR",
-              "topUpCount": 20,
+              "topUpCount": 17,
               "minimumTopUpAmount": 5000,
               "maximumTopUpAmount": 20000,
-              "averageTopUpAmount": 12000
+              "averageTopUpAmount": 11000
             },
             {
               "topUpTenure": {
@@ -67,10 +67,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 32,
-              "minimumTopUpAmount": 4000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 14000
+              "topUpCount": 37,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 12000
             },
             {
               "topUpTenure": {
@@ -80,8 +80,8 @@
               "currency": "IDR",
               "topUpCount": 49,
               "minimumTopUpAmount": 4000,
-              "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 16000
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 13000
             },
             {
               "topUpTenure": {
@@ -89,7 +89,7 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 72,
+              "topUpCount": 86,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 14000
@@ -100,7 +100,7 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 151,
+              "topUpCount": 156,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 12000
@@ -111,10 +111,10 @@
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 12,
-              "minimumTopUpAmount": 4000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 16000
+              "topUpCount": 20,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 12000
             },
             {
               "topUpTenure": {
@@ -122,10 +122,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 17,
-              "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 125000,
-              "averageTopUpAmount": 19000
+              "topUpCount": 12,
+              "minimumTopUpAmount": 4000,
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 16000
             },
             {
               "topUpTenure": {
@@ -133,10 +133,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 23,
+              "topUpCount": 37,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 25000,
-              "averageTopUpAmount": 12000
+              "maximumTopUpAmount": 125000,
+              "averageTopUpAmount": 15000
             },
             {
               "topUpTenure": {
@@ -144,10 +144,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 79,
+              "topUpCount": 70,
               "minimumTopUpAmount": 5000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 9000
             },
             {
               "topUpTenure": {
@@ -155,7 +155,7 @@
                 "max": 720
               },
               "currency": "IDR",
-              "topUpCount": 226,
+              "topUpCount": 225,
               "minimumTopUpAmount": 4000,
               "maximumTopUpAmount": 125000,
               "averageTopUpAmount": 15000
@@ -185,7 +185,7 @@
     "meta": {
       "inputPhoneNumber": "6281574928730",
       "cleansedPhoneNumber": "+6281574928730",
-      "referenceId": "bf4fb031-3de0-4fe7-874f-7ab3f9295e36",
+      "referenceId": "942ec988-7b8b-4bed-8ef6-b2dfa1de0b2a",
       "requestedPackages": [
         "PHONE_BASIC"
       ],
