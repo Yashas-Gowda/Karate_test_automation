@@ -1,0 +1,41 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "fullGivenName": "INDRA SETIAWAN",
+      "dateOfBirth": "1990-02-12"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputFullGivenName": "INDRA SETIAWAN",
+      "inputDateOfBirth": "1990-02-12"
+    },
+    "errors": [
+      {
+        "package": "KYC_MOBILE",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
