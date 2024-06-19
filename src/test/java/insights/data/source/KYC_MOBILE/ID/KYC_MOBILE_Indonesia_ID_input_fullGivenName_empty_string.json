@@ -1,0 +1,44 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "fullGivenName": "",
+      "dateOfBirth": "1992-03-07",
+      "phoneNumber": "6281391442893"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "6281391442893",
+      "cleansedPhoneNumber": "+6281391442893",
+      "inputDateOfBirth": "1992-03-07"
+    },
+    "errors": [
+      {
+        "package": "KYC_MOBILE",
+        "message": "FullGivenName Name cannot be blank/null",
+        "code": "MISSING_FULL_GIVEN_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
