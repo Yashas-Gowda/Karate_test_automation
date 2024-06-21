@@ -1,0 +1,61 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "777869049",
+      "firstName": "Cesar",
+      "lastName": "Dusuel",
+      "dateOfBirth": "2006-01-29",
+      "streetNumber": "14",
+      "streetName": "Rue d'Amour",
+      "city": "Talmas",
+      "postalCode": "80260"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": {
+          "matchFirstName": "NO_MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "MATCH",
+          "matchFullGivenName": "MATCH",
+          "matchDateOfBirth": "NO_MATCH",
+          "matchPhoneNumber": "MATCH",
+          "matchAddress": "NO_MATCH",
+          "matchAddressLine1": "NOT_SUPPORTED",
+          "matchId1": "NOT_SUPPORTED",
+          "matchStreetNumber": "NOT_SUPPORTED",
+          "matchStreet": "NOT_SUPPORTED",
+          "matchCity": "MATCH",
+          "matchPostalCode": "NO_DATA",
+          "appendedFields": {}
+        },
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "777869049",
+      "cleansedPhoneNumber": "+33777869049",
+      "inputFirstName": "Cesar",
+      "inputLastName": "Dusuel",
+      "inputDateOfBirth": "2006-01-29",
+      "inputStreetNumber": "14",
+      "inputCity": "Talmas",
+      "inputPostalCode": "80260"
+    },
+    "errors": []
+  }
+}

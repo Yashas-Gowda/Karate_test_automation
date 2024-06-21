@@ -1,0 +1,61 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "641426418",
+      "firstName": "michel",
+      "middleName": "",
+      "lastName": "supiot",
+      "dateOfBirth": "1963-05-28",
+      "streetNumber": "319",
+      "streetName": "Impasse du Bois de Cathou",
+      "city": null,
+      "postalCode": "56500"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": {
+          "matchFirstName": "MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "MATCH",
+          "matchFullGivenName": "MATCH",
+          "matchDateOfBirth": "MATCH",
+          "matchPhoneNumber": "MATCH",
+          "matchAddress": "MATCH",
+          "matchAddressLine1": "NOT_SUPPORTED",
+          "matchId1": "NOT_SUPPORTED",
+          "matchStreetNumber": "NOT_SUPPORTED",
+          "matchStreet": "NOT_SUPPORTED",
+          "matchCity": "NO_DATA",
+          "matchPostalCode": "NO_MATCH",
+          "appendedFields": {}
+        },
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "641426418",
+      "cleansedPhoneNumber": "+33641426418",
+      "inputFirstName": "michel",
+      "inputLastName": "supiot",
+      "inputDateOfBirth": "1963-05-28",
+      "inputStreetNumber": "319",
+      "inputPostalCode": "56500"
+    },
+    "errors": []
+  }
+}
