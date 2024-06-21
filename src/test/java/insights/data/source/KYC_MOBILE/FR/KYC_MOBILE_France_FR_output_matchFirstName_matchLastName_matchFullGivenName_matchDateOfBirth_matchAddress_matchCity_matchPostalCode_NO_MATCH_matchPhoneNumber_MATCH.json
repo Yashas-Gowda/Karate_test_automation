@@ -1,0 +1,61 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "681552088",
+      "firstName": "Anthony",
+      "lastName": "LALLOYEAU",
+      "dateOfBirth": "1992-07-13",
+      "streetNumber": "40",
+      "streetName": "Chemin des Garrigues",
+      "city": "Hyères",
+      "postalCode": "83400"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": {
+          "matchFirstName": "NO_MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "NO_MATCH",
+          "matchFullGivenName": "NO_MATCH",
+          "matchDateOfBirth": "NO_MATCH",
+          "matchPhoneNumber": "MATCH",
+          "matchAddress": "NO_MATCH",
+          "matchAddressLine1": "NOT_SUPPORTED",
+          "matchId1": "NOT_SUPPORTED",
+          "matchStreetNumber": "NOT_SUPPORTED",
+          "matchStreet": "NOT_SUPPORTED",
+          "matchCity": "NO_MATCH",
+          "matchPostalCode": "NO_MATCH",
+          "appendedFields": {}
+        },
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "681552088",
+      "cleansedPhoneNumber": "+33681552088",
+      "inputFirstName": "Anthony",
+      "inputLastName": "LALLOYEAU",
+      "inputDateOfBirth": "1992-07-13",
+      "inputStreetNumber": "40",
+      "inputCity": "Hyères",
+      "inputPostalCode": "83400"
+    },
+    "errors": []
+  }
+}
