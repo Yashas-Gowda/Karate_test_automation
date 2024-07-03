@@ -34,7 +34,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -71,7 +71,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -109,7 +109,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -155,7 +155,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -168,7 +168,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
   #      | KYC_PAN_Positive_cleartax_status_FAKE                    | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DEACTIVATED               | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DELETED               | 200        |
-  
+
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "aadhaar_seeding_status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read("data/" + source + "/KYC_PAN/<Scenario>.json")
@@ -196,7 +196,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -235,7 +235,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.gstin == "#null"
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]

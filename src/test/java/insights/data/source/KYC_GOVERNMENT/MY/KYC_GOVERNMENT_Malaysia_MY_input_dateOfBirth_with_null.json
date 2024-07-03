@@ -1,0 +1,43 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "MY",
+    "cleansingFlag": true,
+    "originalCountryCode": "MY",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "fullGivenName": "Mohamad Hafiz Darimie Bin Mohsin",
+      "dateOfBirth": null,
+      "id1": "870509035409"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_july_3_kyc_1",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFullGivenName": "Mohamad Hafiz Darimie Bin Mohsin",
+      "inputId1": "870509035409"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Date of Birth cannot be blank/null",
+        "code": "MISSING_DATE_OF_BIRTH",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

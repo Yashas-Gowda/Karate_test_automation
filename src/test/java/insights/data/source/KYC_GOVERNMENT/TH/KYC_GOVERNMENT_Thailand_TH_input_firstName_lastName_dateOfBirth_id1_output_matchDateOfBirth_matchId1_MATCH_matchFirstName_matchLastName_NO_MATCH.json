@@ -1,0 +1,76 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "TH",
+    "originalCountryCode": "TH",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "firstName": "PHAENPHATPHONG SRISA",
+      "lastName": "SRISA",
+      "fullGivenName": "PHAENPHATPHONG SRISA",
+      "gender": "",
+      "dateOfBirth": "1989-10-12",
+      "id1": "1411300141781",
+      "addressLine1": "105 หมู่ที่ 1",
+      "addressLine2": "",
+      "additionalAddressField1": "",
+      "additionalAddressField2": "",
+      "city": "หนองแก"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": {
+          "matchFirstName": "NO_MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "NO_MATCH",
+          "matchFullGivenName": "NOT_SUPPORTED",
+          "matchDateOfBirth": "MATCH",
+          "matchGender": "NOT_SUPPORTED",
+          "matchId1": "MATCH",
+          "matchId2": "NOT_SUPPORTED",
+          "matchId3": "NOT_SUPPORTED",
+          "matchId4": "NOT_SUPPORTED",
+          "matchId5": "NOT_SUPPORTED",
+          "matchBuildingNumber": "NOT_SUPPORTED",
+          "matchBuildingName": "NOT_SUPPORTED",
+          "matchUnitNumber": "NOT_SUPPORTED",
+          "matchStreetName": "NOT_SUPPORTED",
+          "matchPoBox": "NOT_SUPPORTED",
+          "matchCity": "NOT_SUPPORTED",
+          "matchState": "NOT_SUPPORTED",
+          "matchCountry": "NOT_SUPPORTED",
+          "matchAddressLine1": "NO_DATA",
+          "matchAddressLine2": "NO_INPUT",
+          "matchAdditionalAddressField1": "NO_INPUT",
+          "matchAdditionalAddressField2": "NO_INPUT",
+          "matchAdditionalAddressField3": "NOT_SUPPORTED",
+          "matchPhone": "NOT_SUPPORTED",
+          "matchEmail": "NOT_SUPPORTED",
+          "appendedFields": {}
+        },
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "PHAENPHATPHONG SRISA",
+      "inputLastName": "SRISA",
+      "inputFullGivenName": "PHAENPHATPHONG SRISA",
+      "inputDateOfBirth": "1989-10-12",
+      "inputId1": "1411300141781",
+      "inputCity": "หนองแก",
+      "inputAddressLine1": "105 หมู่ที่ 1"
+    },
+    "errors": []
+  }
+}
