@@ -1,0 +1,10 @@
+{
+  "app_client_name": "Release_yashas_tenant@tenant_01HYZAXNP24WRMX800Q4ES17JX",
+  "client_id": "1qnv00se7ak3peb0jhu8k9gf6s",
+  "client_secret": "d4edqnmk0o26v53oskp5qn9pt0che8shds6nk2rutummhctkj61",
+  "grant_type": "client_credentials",
+  "scope": "insights/domain_breach",
+  "issue-description": " Release_yashas_tenant",
+  "tenant_config": {
+  }
+}

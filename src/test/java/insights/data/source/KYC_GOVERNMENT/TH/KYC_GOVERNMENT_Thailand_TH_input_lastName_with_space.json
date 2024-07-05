@@ -1,0 +1,54 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "TH",
+    "originalCountryCode": "TH",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "firstName": "MONTREE SUKOPHAN",
+      "lastName": " ",
+      "fullGivenName": "MONTREE SUKOPHAN",
+      "gender": "",
+      "dateOfBirth": "1989-12-21",
+      "id1": "1349900326968",
+      "addressLine1": "160 หมู่ที่ 4",
+      "addressLine2": "",
+      "additionalAddressField1": "",
+      "additionalAddressField2": "",
+      "city": "วารินชำราบ"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "MONTREE SUKOPHAN",
+      "inputFullGivenName": "MONTREE SUKOPHAN",
+      "inputDateOfBirth": "1989-12-21",
+      "inputId1": "1349900326968",
+      "inputCity": "วารินชำราบ",
+      "inputAddressLine1": "160 หมู่ที่ 4"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Last Name cannot be blank/null",
+        "code": "MISSING_LAST_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

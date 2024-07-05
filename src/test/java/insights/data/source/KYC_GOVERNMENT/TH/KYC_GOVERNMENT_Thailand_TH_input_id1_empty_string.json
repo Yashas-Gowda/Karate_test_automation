@@ -1,0 +1,54 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "TH",
+    "originalCountryCode": "TH",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "firstName": "MONTREE SUKOPHAN",
+      "lastName": "SUKOPHAN",
+      "fullGivenName": "MONTREE SUKOPHAN",
+      "gender": "",
+      "dateOfBirth": "1989-12-21",
+      "id1": "",
+      "addressLine1": "160 หมู่ที่ 4",
+      "addressLine2": "",
+      "additionalAddressField1": "",
+      "additionalAddressField2": "",
+      "city": "วารินชำราบ"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "MONTREE SUKOPHAN",
+      "inputLastName": "SUKOPHAN",
+      "inputFullGivenName": "MONTREE SUKOPHAN",
+      "inputDateOfBirth": "1989-12-21",
+      "inputCity": "วารินชำราบ",
+      "inputAddressLine1": "160 หมู่ที่ 4"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Id value cannot be blank/null",
+        "code": "MISSING_ID",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
