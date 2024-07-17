@@ -254,6 +254,7 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     Examples:
       | Scenario                                                | statusCode | type      |
       | AML_Verification_Package_INDIVIDUAL_with_type_PEP       | 200        | PEP       |
+      | AML_Verification_Package_INDIVIDUAL_with_type_RCA       | 200        | RCA       |
       | AML_Verification_Package_INDIVIDUAL_with_type_SANCTION  | 200        | SANCTION  |
       | AML_Verification_Package_INDIVIDUAL_with_type_WATCHLIST | 200        | WATCHLIST |
       | AML_Verification_Package_INDIVIDUAL_with_type_WANTED    | 200        | WANTED    |
