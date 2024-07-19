@@ -30,25 +30,25 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "101255913872",
-              "name": "Ajaykumar Gulabbhai Halpati",
-              "gender": "MALE",
-              "dateOfBirth": "1995-07-15",
-              "nationalIdVerificationStatus": true,
-              "employerName": "WELSPUN INDIA LIMITED",
-              "dateOfJoining": "2018-02-22",
-              "dateOfExit": null,
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "101141014604",
               "name": "Ajay Gulabbhai Halpati",
               "gender": "MALE",
               "dateOfBirth": "1995-07-15",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
               "dateOfJoining": "2017-06-01",
               "dateOfExit": "2018-06-04",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101255913872",
+              "name": "Ajaykumar Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "WELSPUN LIVING LIMITED",
+              "dateOfJoining": "2018-02-22",
+              "dateOfExit": null,
               "reasonOfExit": ""
             },
             {
@@ -56,7 +56,7 @@
               "name": "Dinaben Gulabbhai Halpati",
               "gender": "FEMALE",
               "dateOfBirth": "1971-01-08",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "RADIANT PLASTRUDERS (I) PVT. LTD",
               "dateOfJoining": "2014-01-01",
               "dateOfExit": null,
@@ -65,6 +65,7 @@
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -73,17 +74,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "919978520376",
       "cleansedPhoneNumber": "+919978520376",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "341164fb-b8d9-4a64-b960-73675b26c372",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

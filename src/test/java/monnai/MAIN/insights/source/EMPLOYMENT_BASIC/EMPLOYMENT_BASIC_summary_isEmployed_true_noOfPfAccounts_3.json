@@ -29,25 +29,25 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100586880851",
-              "name": "Palloli Karthik",
-              "gender": "MALE",
-              "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
-              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
-              "dateOfJoining": "2015-11-15",
-              "dateOfExit": "2016-03-31",
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "101287760910",
               "name": "PALLOLI KARTHIK",
               "gender": "MALE",
               "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "SCOOTSY LOGISTICS PRIVATE LIMITED",
               "dateOfJoining": "2024-04-01",
               "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100586880851",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": false,
+              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
+              "dateOfJoining": "2015-10-15",
+              "dateOfExit": "2016-03-31",
               "reasonOfExit": ""
             },
             {
@@ -55,7 +55,7 @@
               "name": "Palloli Karthik",
               "gender": "MALE",
               "dateOfBirth": "1993-07-01",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
               "dateOfJoining": "2014-08-01",
               "dateOfExit": "2015-03-18",
@@ -73,12 +73,13 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "8106068222",
       "cleansedPhoneNumber": "+918106068222",
-      "referenceId": "8ae069d4-170f-4ad5-9bc0-636f8751d698",
+      "referenceId": "6a15dc38-fc99-45ab-906a-b2c860c0c930",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],

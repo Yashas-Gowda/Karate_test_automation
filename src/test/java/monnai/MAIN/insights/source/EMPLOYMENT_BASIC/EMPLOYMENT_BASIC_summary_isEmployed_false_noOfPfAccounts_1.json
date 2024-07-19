@@ -34,7 +34,7 @@
               "name": "Basavaraju K S",
               "gender": "MALE",
               "dateOfBirth": "1988-12-20",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "KERI PREETHA",
               "dateOfJoining": "2019-08-06",
               "dateOfExit": "2020-12-30",
@@ -43,6 +43,7 @@
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -51,17 +52,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "918310038265",
       "cleansedPhoneNumber": "+918310038265",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "d0283dab-95ad-4638-a69c-c8e1e5fa3d14",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

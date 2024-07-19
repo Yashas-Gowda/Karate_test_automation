@@ -30,14 +30,14 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100740741243",
-              "name": "JITESH MAHENDRA VALANTRA",
+              "pfAccountNumber": "101281942125",
+              "name": "Jitesh Mahendra Valantra",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "RELIANCE PROJECTS & PROPERTY MANAGEMENT SERVICES LIMITED",
-              "dateOfJoining": "2015-11-16",
-              "dateOfExit": "2016-09-10",
+              "nationalIdVerificationStatus": false,
+              "employerName": "CHANNEL PLAY LIMITED",
+              "dateOfJoining": "2019-10-01",
+              "dateOfExit": "2020-07-10",
               "reasonOfExit": ""
             },
             {
@@ -45,10 +45,21 @@
               "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "V5 GLOBAL SERVICES PRIVATE LIMITED",
               "dateOfJoining": "2016-10-01",
               "dateOfExit": "2018-02-28",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100740741243",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": false,
+              "employerName": "RELIANCE PROJECTS & PROPERTY MANAGEMENT SERVICES LIMITED",
+              "dateOfJoining": "2015-11-16",
+              "dateOfExit": "2016-09-10",
               "reasonOfExit": ""
             },
             {
@@ -56,26 +67,16 @@
               "name": "Jitesh M Valantra",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "XYLEM RESOURCE MANAGEMENT PVT LTD",
               "dateOfJoining": "2014-04-23",
               "dateOfExit": "2015-09-30",
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "101281942125",
-              "name": "Jitesh Mahendra Valantra",
-              "gender": "MALE",
-              "dateOfBirth": "1991-07-27",
-              "nationalIdVerificationStatus": true,
-              "employerName": "CHANNEL PLAY LIMITED",
-              "dateOfJoining": "2019-10-01",
-              "dateOfExit": "2020-07-10",
               "reasonOfExit": ""
             }
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -84,17 +85,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "d5bb4747-941b-476a-b98e-3186e00ba627",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -30,30 +30,31 @@
           },
           "employmentHistory": [
             {
-              "pfAccountNumber": "100984866758",
-              "name": "Mahipal Kumar Singh",
-              "gender": "MALE",
-              "dateOfBirth": "1994-06-22",
-              "nationalIdVerificationStatus": true,
-              "employerName": "OKAYA INFOCOM (P) LTD",
-              "dateOfJoining": "2016-11-07",
-              "dateOfExit": "2017-05-12",
-              "reasonOfExit": ""
-            },
-            {
               "pfAccountNumber": "101155054190",
               "name": "MAHIPAL KUMAR SINGH",
               "gender": "MALE",
               "dateOfBirth": "1994-06-22",
-              "nationalIdVerificationStatus": true,
+              "nationalIdVerificationStatus": false,
               "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
               "dateOfJoining": "2018-12-07",
               "dateOfExit": "2023-07-12",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100984866758",
+              "name": "Mahipal Kumar Singh",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": false,
+              "employerName": "OKAYA INFOCOM (P) LTD",
+              "dateOfJoining": "2016-11-07",
+              "dateOfExit": "2017-05-12",
               "reasonOfExit": ""
             }
           ]
         },
         "advanced": null,
+        "social": null,
         "details": null
       },
       "income": null,
@@ -62,17 +63,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "9671055127",
       "cleansedPhoneNumber": "+919671055127",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "95d46ef5-cd60-4095-aca1-3057c2331728",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }
