@@ -1,0 +1,115 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "919163238236",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
+            "noOfPfAccounts": 2,
+            "dateOfJoining": "2022-02-24",
+            "matchingPfAccountNumber": "101658587636"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101658587636",
+              "name": "Saikat Das",
+              "gender": "MALE",
+              "dateOfBirth": "1982-10-12",
+              "nationalIdVerificationStatus": false,
+              "employerName": "CONCENTRIX DAKSH  SERVICES INDIA PRIVATE LIMITED",
+              "dateOfJoining": "2022-02-24",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100327821218",
+              "name": "Saikat Das",
+              "gender": "MALE",
+              "dateOfBirth": "1988-06-16",
+              "nationalIdVerificationStatus": false,
+              "employerName": "PACE SETTERS BUSINESS SOLUTIONS PVT LTD",
+              "dateOfJoining": "2013-09-01",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "SAIKAT DAS",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "MAY-24": true,
+                  "APR-24": true,
+                  "MAR-24": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "13359938",
+                "employeeCount": 3830,
+                "wageMonth": "MAY-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "12477381",
+                "employeeCount": 3619,
+                "wageMonth": "APR-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "11903206",
+                "employeeCount": 3377,
+                "wageMonth": "MAR-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919163238236",
+      "cleansedPhoneNumber": "+919163238236",
+      "referenceId": "040b4569-9858-4888-83da-60033440bcab",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": [
+      "1db61125-297f-4544-abad-eae8a56ecd90"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
+            "country": "IN",
+            "lastModified": "2024-07-08",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Realme",
+              "model": "RMX2170"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
+              },
+              "mostSeenLocation": {
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
+                "state": "MH",
+                "zipCode": "400092"
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "cae3f208-6da0-4b9f-8ae6-5bd089f4acb9",
+      "inputDeviceIds": [
+        "1db61125-297f-4544-abad-eae8a56ecd90"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

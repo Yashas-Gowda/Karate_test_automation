@@ -1,0 +1,137 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "8106068222",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "SCOOTSY LOGISTICS PRIVATE LIMITED",
+            "noOfPfAccounts": 3,
+            "dateOfJoining": "2024-04-01",
+            "matchingPfAccountNumber": "101287760910"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101287760910",
+              "name": "PALLOLI KARTHIK",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": true,
+              "employerName": "SCOOTSY LOGISTICS PRIVATE LIMITED",
+              "dateOfJoining": "2024-04-01",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********3218",
+                "taxId": "BL******1P",
+                "email": "P************K@GMAIL.COM",
+                "bankAccountNumber": "*******4295",
+                "bankBranchCode": "SBIN*****36",
+                "bankAddress": "STATE BANK OF INDIA,KOLIMIGUNDLA",
+                "pfNomineeName": "PALLOLI SEKHARA BABU",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100586880851",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": false,
+              "employerName": "BUZZWORKS BUSINESS SERVICES PVT LTD",
+              "dateOfJoining": "2015-10-15",
+              "dateOfExit": "2016-03-31",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100460881293",
+              "name": "Palloli Karthik",
+              "gender": "MALE",
+              "dateOfBirth": "1993-07-01",
+              "nationalIdVerificationStatus": false,
+              "employerName": "M/S.ZEALOT INDUSTRIAL & LOGISTIC SERVICES PVT. LTD",
+              "dateOfJoining": "2014-08-01",
+              "dateOfExit": "2015-03-18",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "PALLOLI KARTHIK",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "MAY-24": true,
+                  "APR-24": true,
+                  "MAR-24": null
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "5861661",
+                "employeeCount": 1291,
+                "wageMonth": "MAY-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "5794729",
+                "employeeCount": 1361,
+                "wageMonth": "APR-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "5365615",
+                "employeeCount": 1222,
+                "wageMonth": "MAR-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "8106068222",
+      "cleansedPhoneNumber": "+918106068222",
+      "referenceId": "92ec2237-eedf-46dd-b297-4c13c30b4dcf",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

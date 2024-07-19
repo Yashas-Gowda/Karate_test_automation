@@ -1,0 +1,27 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "INDIVIDUAL",
+    "userDetails": {
+      "fullGivenName": "Kim Jong Un",
+      "dateOfBirth": "1972"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Invalid DateOfBirth. Please specify a past date in YYYY-MM-DD format",
+        "code": "INVALID_DOB",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

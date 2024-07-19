@@ -1,0 +1,77 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "INDIVIDUAL",
+    "userDetails": {
+      "fullGivenName": "Joko Widodo"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": true,
+            "noOfProfiles": 1,
+            "totalRecords": 1
+          },
+          "records": [
+            {
+              "entityType": "Individual",
+              "profileId": "5977130753277149787",
+              "matchScore": 100,
+              "firstName": "Joko",
+              "middleName": "Jokowi ",
+              "lastName": "Widodo",
+              "fullName": "Joko Widodo",
+              "nationality": "Indonesia, INS",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "Leaders and Cabinet Members",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "Presidente de la República (2014-), Pres.",
+              "links": [
+                "https://www.worldpresidentsdb.com//Joko-Widodo/",
+                "https://www.cidob.org/en/biografias_lideres_politicos/asia/indonesia/joko_widodo",
+                "https://www.cia.gov/resources/world-leaders/foreign-governments/indonesia/"
+              ],
+              "summary": "Terms: 1) In office since October 20, 2014  \r\nPolitical Party: Indonesian Democratic Party  \r\nOther Political Titles: Governor of Jakarta, Mayor of Surakarta  \r\nEducation: Gadjah Mada University\r\nTerm of office: 20 october 2014 - Acting\nProfession: Empresario\r\nCountry Unique Code: 850 \r\nLeader Id: cb-850-1 \r\nStart Date: 20/10/2014 \r\nJoko Widodo  doesn't have a military career \r\nOfficially Selected Month: 7 Officially Selected Year: 2014",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Joko Widodo",
+                "Joko Widodo",
+                "Jokowi",
+                "Joko Widodo",
+                "Joko Widodo",
+                "Joko Jokowi WIDODO"
+              ],
+              "otherPossibleDob": [
+                "6/21/1961 12:00:00 AM",
+                "21 de junio de 1961",
+                "1961"
+              ],
+              "possibleAddresses": []
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "referenceId": "dpi_oct_19_1",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "Joko Widodo"
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "ORGANISATION",
+    "userDetails": {
+      "fullGivenName": null
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_feb_21_1",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
+    },
+    "errors": [
+      {
+        "package": "KYC_AML",
+        "message": "Invalid FullName ",
+        "code": "INVALID_FULL_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

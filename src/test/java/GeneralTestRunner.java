@@ -25,7 +25,7 @@ public class GeneralTestRunner {
 
     @Test
     void auth_Token() {
-        Results results = Runner.path("classpath:insights/Auth_Token_Generation.feature")
+        Results results = Runner.path("classpath:monnai/Auth_Token_Generation.feature")
                 .outputCucumberJson(true)
 //                .tags("@auth_Token")
                 .parallel(5);
@@ -35,7 +35,7 @@ public class GeneralTestRunner {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:insights")
+        Results results = Runner.path("classpath:monnai")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
                 .karateEnv("MONNAI_API_Automation")
@@ -47,7 +47,7 @@ public class GeneralTestRunner {
 
     @Test
     void _dpi_gen_call() {
-        Results results = Runner.path("classpath:_dpi_gen_call")
+        Results results = Runner.path("classpath:monnai")
                 .outputCucumberJson(true)
                 .tags("@gen_insights")
 //                .tags("@gen_verification")
@@ -58,7 +58,7 @@ public class GeneralTestRunner {
 
     @Test
     void _userManagement() {
-        Results results = Runner.path("classpath:_userManagement")
+        Results results = Runner.path("classpath:monnai")
                 .outputCucumberJson(true)
                 .tags("@fido_email_basic")
                 .parallel(5);
@@ -68,7 +68,7 @@ public class GeneralTestRunner {
 
     @Test
     void DEX() {
-        Results results = Runner.path("classpath:DEX")
+        Results results = Runner.path("classpath:monnai/DPI/DataExchange_DEX")
                 .outputCucumberJson(true)
                 .tags("@custom_dex_call")
 //                .tags("@fido_email_basic")
@@ -76,7 +76,7 @@ public class GeneralTestRunner {
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
-    
+
     @Test
     void DPI_Partner_registry() {
         Results results = Runner.path("classpath:DPI_Partner_registry")
@@ -91,7 +91,7 @@ public class GeneralTestRunner {
 
     @Test
     void mockDex() {
-        Results results = Runner.path("classpath:insights").outputCucumberJson(true)
+        Results results = Runner.path("classpath:monnai").outputCucumberJson(true)
                 .tags("@data_partner_res_phone_social")
                 .parallel(5);
         generateReport(results.getReportDir());
@@ -100,9 +100,21 @@ public class GeneralTestRunner {
 
     @Test
     void Inside_Insights() {
-        Results results = Runner.path("classpath:insights")
+        Results results = Runner.path("classpath:monnai")
                 .outputCucumberJson(true)
-                .tags("@Mutliple_package_negative_scenarios")
+                .tags("@INCOME_ESTIMATION")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void Inside_Monnai() {
+        Results results = Runner.path("classpath:monnai")
+                .outputCucumberJson(true)
+                .tags("@AML_1")
+//
+//                .tags("@IDENTITIY_CORRELATION_check")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

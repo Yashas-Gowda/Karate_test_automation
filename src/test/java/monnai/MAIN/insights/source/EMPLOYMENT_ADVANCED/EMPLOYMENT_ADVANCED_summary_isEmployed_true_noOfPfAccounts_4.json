@@ -1,0 +1,154 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "8237646022",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+            "noOfPfAccounts": 4,
+            "dateOfJoining": "2018-07-10",
+            "matchingPfAccountNumber": "101334830183"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101334830183",
+              "name": "JAYESH DILIP SONAWANE",
+              "gender": "MALE",
+              "dateOfBirth": "1983-10-23",
+              "nationalIdVerificationStatus": true,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2018-07-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********5172",
+                "taxId": "BR******6Q",
+                "email": "S***************5@GMAIL.COM",
+                "bankAccountNumber": "***********3854",
+                "bankBranchCode": "UBIN*****61",
+                "bankAddress": "UNION BANK OF INDIA,SAVEDI, AHMED NAGAR",
+                "pfNomineeName": "DILIP",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100909297671",
+              "name": "Shelke Sunil Ashok",
+              "gender": "MALE",
+              "dateOfBirth": "1986-05-11",
+              "nationalIdVerificationStatus": false,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2008-04-16",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100820144571",
+              "name": "PANDURANG SHREERANG GHODAKE",
+              "gender": "MALE",
+              "dateOfBirth": "1989-03-10",
+              "nationalIdVerificationStatus": true,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "dateOfJoining": "2014-09-01",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********2717",
+                "taxId": "BV******8E",
+                "email": "",
+                "bankAccountNumber": "**********4549",
+                "bankBranchCode": "HDFC*****81",
+                "bankAddress": "HDFC BANK,AHMEDNAGAR",
+                "pfNomineeName": "SHRIRANG",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100416843178",
+              "name": "Sanjay Uttam Zagade",
+              "gender": "MALE",
+              "dateOfBirth": "1981-12-01",
+              "nationalIdVerificationStatus": false,
+              "employerName": "EATON INDUSTRIAL SYSTEMS PRIVATE LTD.,",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "JAYESH DILIP SONAWANE",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "JUN-24": true,
+                  "MAY-24": true,
+                  "APR-24": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "2603775",
+                "employeeCount": 286,
+                "wageMonth": "JUN-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "6049413",
+                "employeeCount": 283,
+                "wageMonth": "MAY-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "2310463",
+                "employeeCount": 282,
+                "wageMonth": "APR-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "8237646022",
+      "cleansedPhoneNumber": "+918237646022",
+      "referenceId": "89870d7b-125a-4868-938a-108e4d8125f4",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}
