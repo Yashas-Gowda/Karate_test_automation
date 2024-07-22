@@ -1,0 +1,134 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "address": {
+      "addressLine1": "vijay  nagar",
+      "addressLine2": null,
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": "davanagere",
+      "state": "Karnataka",
+      "postalCode": "560038",
+      "country": "India"
+    },
+    "packages": [
+      "INCOME_ESTIMATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": {
+        "estimation": {
+          "source": null,
+          "salaryType": null,
+          "currency": null,
+          "salaryRange": {
+            "min": 0,
+            "max": 0
+          },
+          "addressBased": {
+            "class": [
+              "UPCOMING_URBAN_CLIMBERS"
+            ],
+            "location": {
+              "category": "URBAN",
+              "locality": "Apache Nagar",
+              "postalCode": "577002",
+              "state": "karnataka"
+            },
+            "secLevel": "C1",
+            "regionTypes": [
+              "SMALL_URBAN_AREA",
+              "SUBURBS"
+            ],
+            "income": {
+              "currency": "INR",
+              "range": {
+                "min": 80000,
+                "max": 130000
+              }
+            },
+            "purchase": {
+              "retail": {
+                "hasWashingMachine": true,
+                "onlineShopping": "RARE",
+                "fabricWashProducts": "MASS",
+                "personalWashProducts": "PREMIUM",
+                "packagedFoodProducts": "MASS",
+                "cosmeticsProducts": "POPULAR"
+              },
+              "fashion": {
+                "category": "PREMIUM",
+                "currency": "INR",
+                "range": {
+                  "min": 1500,
+                  "max": 3500
+                }
+              },
+              "travel": {
+                "category": "BASIC",
+                "destinationCategory": "DOMESTIC",
+                "nicheTravel": false
+              },
+              "automobile": {}
+            },
+            "banking": {},
+            "insurance": {
+              "healthAwareness": "CAREFREE",
+              "types": [
+                "SAVINGS_PLAN",
+                "RETIREMENT_PLAN"
+              ]
+            },
+            "realEstate": {
+              "currency": "INR",
+              "range": {
+                "min": 5100000,
+                "max": 10000000
+              }
+            }
+          }
+        }
+      },
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_May_17_enrich_1",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "vijay  nagar",
+        "addressLine2": null,
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "davanagere",
+        "state": "Karnataka",
+        "postalCode": "560038",
+        "country": "India"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

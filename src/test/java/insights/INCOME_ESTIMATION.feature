@@ -1,4 +1,4 @@
-@INCOME_ESTIMATION
+@INCOME_ESTIMATION @ignore
 Feature: INCOME_ESTIMATION Package full Automation
 
   Background:
@@ -18,10 +18,10 @@ Feature: INCOME_ESTIMATION Package full Automation
   #Step 4: Round off the value 2657142.86 to 2657143; we will always round up to the next higher digit
   #Step 5: The above given value will be adjusted to the range Range 2: > 2500001 - 3500000, were min: 2500001   max: 3500000
 
-
+  @INCOME_ESTIMATION_ID
   Scenario Outline: Validation of INCOME_ESTIMATION Positive scenario for valid phoneNumber & NIK id as input -> <Scenario> |
     Given url requestUrl
-    And def payload = read("data/" + source + "/INCOME_ESTIMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/ID/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -117,10 +117,10 @@ Feature: INCOME_ESTIMATION Package full Automation
   #      | Scenario                                                                      | statusCode |
   #      | INCOME_ESTIMATION_POSITIVE_input_only_NIK_output_salaryRange_7500001_10000000 | 200        |
 
-
+  @INCOME_ESTIMATION_ID
   Scenario Outline: Validation of INCOME_ESTIMATION Positive scenario for valid phoneNumber & NIK id as input where are data partner doesn't return data  -> <Scenario> |
     Given url requestUrl
-    And def payload = read("data/" + source + "/INCOME_ESTIMATION/<Scenario>.json")
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/ID/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -150,7 +150,7 @@ Feature: INCOME_ESTIMATION Package full Automation
 
   Scenario Outline: Validation of INCOME_ESTIMATION NEGATIVE scenario for permutation and combination of input data points -> <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/INCOME_ESTIMATION/Negative/<Scenario>.json")
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/ID/Negative/<Scenario>.json")
     And request payload.request.phoneDefaultCountryCode = <phoneDefaultCountryCode>
     And headers headers
     And header Authorization = BearerToken
@@ -189,7 +189,7 @@ Feature: INCOME_ESTIMATION Package full Automation
 
   Scenario Outline: Validation of INCOME_ESTIMATION NEGATIVE scenario for permutation and combination of input idType data points -> <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/INCOME_ESTIMATION/Negative/<Scenario>.json")
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/ID/Negative/<Scenario>.json")
     And request payload.request.idType = <idType>
     And headers headers
     And header Authorization = BearerToken
@@ -224,8 +224,77 @@ Feature: INCOME_ESTIMATION Package full Automation
       | INCOME_ESTIMATION_NEGATIVE_input_validation_idType_missing | 400        | null     |
 
 
+  @INCOME_ESTIMATION_IN
+  Scenario Outline: Validation of INCOME_ESTIMATION Positive scenario for INDIA refion -> <Scenario> |
+    Given url requestUrl
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/IN/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.income.estimation.source == null
+    * match $.data.income.estimation.salaryType == null
+    * match $.data.income.estimation.currency == null
+    * match $.data.income.estimation.salaryRange.min == 0
+    * match $.data.income.estimation.salaryRange.max == 0
+
+    * match $.data.income.estimation.addressBased contains only deep payload.response.data.income.estimation.addressBased
+
+    * match $.meta contains only deep payload.response.meta
+    * match $.errors contains only deep payload.response.errors
+
+    Examples:
+      | Scenario                                                                                                           | statusCode |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_RURAL                             | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_URBAN_NEW_WEALTH      | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_UPCOMING_URBAN_CLIMBERS      | 200        |
 
 
+  @INCOME_ESTIMATION_IN
+  Scenario Outline: Validation of INCOME_ESTIMATION Positive scenario for INDIA refion where output is null-> <Scenario> |
+    Given url requestUrl
+    And def payload = read("data/" + source + "/INCOME_ESTIMATION/IN/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.income.estimation contains only deep payload.response.data.income.estimation
+    * match $.meta contains only deep payload.response.meta
+    * match $.errors contains only deep payload.response.errors
+
+    Examples:
+      | Scenario                                                                                 | statusCode |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_null                      | 200        |
 
 
 
