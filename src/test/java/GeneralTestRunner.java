@@ -35,7 +35,7 @@ public class GeneralTestRunner {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:monnai")
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
                 .karateEnv("MONNAI_API_Automation")
@@ -47,7 +47,7 @@ public class GeneralTestRunner {
 
     @Test
     void _dpi_gen_call() {
-        Results results = Runner.path("classpath:monnai")
+        Results results = Runner.path("classpath:monnai/DPI/DPI_general_call")
                 .outputCucumberJson(true)
                 .tags("@gen_insights")
 //                .tags("@gen_verification")
@@ -58,7 +58,7 @@ public class GeneralTestRunner {
 
     @Test
     void _userManagement() {
-        Results results = Runner.path("classpath:monnai")
+        Results results = Runner.path("classpath:monnai/UserManagement")
                 .outputCucumberJson(true)
                 .tags("@fido_email_basic")
                 .parallel(5);
@@ -79,7 +79,7 @@ public class GeneralTestRunner {
 
     @Test
     void DPI_Partner_registry() {
-        Results results = Runner.path("classpath:DPI_Partner_registry")
+        Results results = Runner.path("classpath:monnai/DPI/DataPartnerRegistry_DPR")
                 .outputCucumberJson(true)
                 .tags("@Filter_Partner")
 //                .tags("@Get_Tenant_config")
@@ -91,7 +91,8 @@ public class GeneralTestRunner {
 
     @Test
     void mockDex() {
-        Results results = Runner.path("classpath:monnai").outputCucumberJson(true)
+        Results results = Runner.path("classpath:monnai")
+                .outputCucumberJson(true)
                 .tags("@data_partner_res_phone_social")
                 .parallel(5);
         generateReport(results.getReportDir());
@@ -100,7 +101,7 @@ public class GeneralTestRunner {
 
     @Test
     void Inside_Insights() {
-        Results results = Runner.path("classpath:monnai")
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
                 .tags("@INCOME_ESTIMATION")
                 .parallel(5);
@@ -110,11 +111,9 @@ public class GeneralTestRunner {
 
     @Test
     void Inside_Monnai() {
-        Results results = Runner.path("classpath:monnai")
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
                 .tags("@AML_1")
-//
-//                .tags("@IDENTITIY_CORRELATION_check")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
