@@ -1,0 +1,118 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "7701979717",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "919719061192",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "IN",
+          "originalCarrier": "Vodafone - Uttar Pradesh West",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2024-06-07",
+            "numberOfPorts": 7,
+            "portedSinceXDays": 41,
+            "currentCarrierCircle": "AirTel Haryana",
+            "originalCarrierCircle": "Vi India Uttar Pradesh (West)",
+            "changeInCarrierRegion": "CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "Airtel Haryana",
+                "portedDate": "2024-06-07"
+              },
+              {
+                "carrierCircle": "Vodafone Haryana",
+                "portedDate": "2023-07-04"
+              },
+              {
+                "carrierCircle": "JIO Haryana",
+                "portedDate": "2022-12-24"
+              },
+              {
+                "carrierCircle": "Airtel Haryana",
+                "portedDate": "2022-08-18"
+              },
+              {
+                "carrierCircle": "Vodafone Haryana",
+                "portedDate": "2021-10-05"
+              },
+              {
+                "carrierCircle": "Airtel Uttar Pradesh (West)",
+                "portedDate": "2021-03-26"
+              },
+              {
+                "carrierCircle": "BSNL Uttar Pradesh (West)",
+                "portedDate": "2019-08-29"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "96",
+            "networkName": "Airtel - Haryana",
+            "serviceProfileId": "91039"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": {
+            "minimumTenureDays": 1204,
+            "maximumTenureDays": 1235
+          },
+          "isSpam": null,
+          "topUpHistory": null,
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919719061192",
+      "cleansedPhoneNumber": "+919719061192",
+      "referenceId": "872e7caa-4737-4c09-97b2-ae57be773b36",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

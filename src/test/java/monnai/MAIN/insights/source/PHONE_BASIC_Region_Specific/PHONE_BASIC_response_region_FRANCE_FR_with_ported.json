@@ -1,0 +1,96 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "33622788226",
+    "phoneDefaultCountryCode": "FR"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "33622788226",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "FR",
+          "originalCarrier": "Societe francaise radiotelephone (SFR)",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2019-06-18",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 1857,
+            "currentCarrierCircle": "Orange Orange S.A.",
+            "originalCarrierCircle": "SFR Altice",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2019-06-18"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2018-11-22"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "208",
+            "mobileNetworkCode": "01",
+            "networkName": "Orange",
+            "serviceProfileId": "33511"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null,
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "33622788226",
+      "cleansedPhoneNumber": "+33622788226",
+      "referenceId": "78384b86-ea12-46cd-a62f-b927f9981a13",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "FR"
+    },
+    "errors": [
+    ]
+  }
+}

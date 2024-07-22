@@ -1,0 +1,166 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9426597869",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "RUI CHUANG TECHNOLOGIES PRIVATE LIMITED",
+            "noOfPfAccounts": 5,
+            "dateOfJoining": "2018-04-06",
+            "matchingPfAccountNumber": "101291581445"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101291581445",
+              "name": "Irfanhusen Ikabalhusen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RUI CHUANG TECHNOLOGIES PRIVATE LIMITED",
+              "dateOfJoining": "2018-04-06",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********7092",
+                "taxId": "CG******0J",
+                "email": "s**********a@gmail.com",
+                "bankAccountNumber": "***********2370",
+                "bankBranchCode": "BKID*****02",
+                "bankAddress": "BANK OF INDIA,MODASA",
+                "pfNomineeName": "IKABALHUSEN ABDULRAHIM PATHAN",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100732354289",
+              "name": "Irfanhusen Ikabalhusen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "HARIOM COMMUNICATION LLP",
+              "dateOfJoining": "2016-04-01",
+              "dateOfExit": "2018-03-31",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********7092",
+                "taxId": "",
+                "email": "a**********4@gmail.com",
+                "bankAccountNumber": "***********2370",
+                "bankBranchCode": "BKID*****02",
+                "bankAddress": "BANK OF INDIA,MODASA",
+                "pfNomineeName": "IKABALHUSEN PATHAN",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100575653371",
+              "name": "Irfan Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1983-06-27",
+              "nationalIdVerificationStatus": false,
+              "employerName": "TECH SMART",
+              "dateOfJoining": "2015-09-05",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100563078362",
+              "name": "Irfan Iqbalhussen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1984-06-26",
+              "nationalIdVerificationStatus": false,
+              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
+              "dateOfJoining": "2015-07-01",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100472465662",
+              "name": "Irfan Iqbalhussen Pathan",
+              "gender": "MALE",
+              "dateOfBirth": "1984-06-26",
+              "nationalIdVerificationStatus": false,
+              "employerName": "DELTA MOBILITY PRIVATE LIMITED",
+              "dateOfJoining": "2015-01-01",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "IRFANHUSEN IKABALHUSEN PATHAN",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "JUN-24": true,
+                  "MAY-24": true,
+                  "APR-24": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "6940239",
+                "employeeCount": 3136,
+                "wageMonth": "JUN-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "6726611",
+                "employeeCount": 3116,
+                "wageMonth": "MAY-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "6658447",
+                "employeeCount": 3129,
+                "wageMonth": "APR-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9426597869",
+      "cleansedPhoneNumber": "+919426597869",
+      "referenceId": "80f70fac-71c9-4b38-85b8-f05c3c9103d3",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

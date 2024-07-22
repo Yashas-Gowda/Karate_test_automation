@@ -1,0 +1,39 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "123",
+    "userDetails": {
+      "fullGivenName": "Kim Jong Un",
+      "dateOfBirth": 123
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  },
+  "response":{
+    "data": {
+      "kyc": null,
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_feb_26_4",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "Kim Jong Un",
+      "inputDateOfBirth": "1970-05-04",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
+    },
+    "errors": [
+      {
+        "package": "KYC_AML",
+        "message": "Invalid Entity Name, please refer to API Documentation",
+        "code": "INVALID_ENTITY_NAME",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

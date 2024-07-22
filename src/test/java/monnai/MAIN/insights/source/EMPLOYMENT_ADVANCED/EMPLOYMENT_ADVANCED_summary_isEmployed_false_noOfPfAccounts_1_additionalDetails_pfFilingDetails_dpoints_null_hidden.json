@@ -1,0 +1,72 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "918310038265",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": false,
+            "recentEmployerName": "KERI PREETHA",
+            "noOfPfAccounts": 1,
+            "dateOfJoining": "2019-08-06",
+            "dateOfExit": "2020-12-30",
+            "matchingPfAccountNumber": "101508691318"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101508691318",
+              "name": "Basavaraju K S",
+              "gender": "MALE",
+              "dateOfBirth": "1988-12-20",
+              "nationalIdVerificationStatus": false,
+              "employerName": "KERI PREETHA",
+              "dateOfJoining": "2019-08-06",
+              "dateOfExit": "2020-12-30",
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "918310038265",
+      "cleansedPhoneNumber": "+918310038265",
+      "referenceId": "09de82ad-e789-476e-b2f1-f072f147ee8e",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

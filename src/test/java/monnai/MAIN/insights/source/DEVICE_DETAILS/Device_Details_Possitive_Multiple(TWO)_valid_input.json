@@ -1,0 +1,115 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": []
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
+            "country": "IN",
+            "lastModified": "2024-07-08",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Xiaomi",
+              "model": "M2101K7AI"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": 26.894960403442383,
+                "longitude": 75.76601028442383,
+                "city": "Jaipur",
+                "state": "RJ",
+                "zipCode": "302019"
+              },
+              "nightLocation": {
+                "latitude": 26.600217819213867,
+                "longitude": 75.72549819946289,
+                "city": "Bagru",
+                "state": "RJ",
+                "zipCode": "303904"
+              },
+              "mostSeenLocation": {
+                "latitude": 27.869997024536133,
+                "longitude": 74.69003677368164,
+                "city": "Sujangarh",
+                "state": "RJ",
+                "zipCode": "331506"
+              }
+            }
+          },
+          {
+            "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
+            "country": "IN",
+            "lastModified": "2024-07-08",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "Realme",
+              "model": "RMX2170"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": 19.27199363708496,
+                "longitude": 72.84330368041992,
+                "city": "Mira Bhayandar",
+                "state": "MH",
+                "zipCode": "401101"
+              },
+              "mostSeenLocation": {
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
+                "state": "MH",
+                "zipCode": "400092"
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "b1ed7029-4ded-466d-ae6e-759868f877f2",
+      "inputDeviceIds": [
+        "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
+        "1db61125-297f-4544-abad-eae8a56ecd90"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

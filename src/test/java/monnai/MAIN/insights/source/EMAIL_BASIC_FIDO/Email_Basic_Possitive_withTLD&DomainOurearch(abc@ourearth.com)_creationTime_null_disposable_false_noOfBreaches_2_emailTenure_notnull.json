@@ -1,0 +1,84 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "mysite@ourearth.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": null,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "ourearth.com",
+            "tld": ".com",
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": null,
+            "companyName": "",
+            "registrarName": "GoDaddy.com, LLC",
+            "disposable": false,
+            "freeProvider": null,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": null,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 2,
+            "firstBreach": "2019-02-25",
+            "lastBreach": "2023-09-20",
+            "breaches": [
+              {
+                "platformName": "VerificationsIO",
+                "domainName": null,
+                "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "NazApi",
+                "domainName": null,
+                "breachDate": "2023-09-20"
+              }
+            ]
+          },
+          "emailTenure": 5.39
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "c2df3084-2bbc-4402-8cc2-fc343c235ee6",
+      "inputEmail": "mysite@ourearth.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}
