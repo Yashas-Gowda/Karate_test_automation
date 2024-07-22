@@ -42,7 +42,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   #  Scenario Outline: https://monnai.atlassian.net/browse/MB-1410 -Validate DPI ADDRESS_BASIC positive scenarios with 'q' input fields(q-addressLine1-8) <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/ADDRESS_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -221,7 +221,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   #  Scenario Outline:https://monnai.atlassian.net/browse/MB-1683 Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-individual fields like country) <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/ADDRESS_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -336,7 +336,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
   #  Scenario Outline: https://monnai.atlassian.net/browse/MB-1682 Validate DPI ADDRESS_BASIC negative scenario where optional field 'postalCode' validation <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/ADDRESS_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/ADDRESS_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request.address.postalCode = <postalCode>
   #    And request payload.request

@@ -13,7 +13,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
   @UAN_BASIC
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_BASIC positive scenario  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -48,7 +48,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
   @UAN_BASIC @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_BASIC Negative scenario  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -80,7 +80,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
   @UAN_ADVANCED
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_ADVANCED positive scenario  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -117,7 +117,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
   @UAN_ADVANCED @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_ADVANCED Negative scenario  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -148,7 +148,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
   @UAN_BASIC @UAN_ADVANCED @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/EMPLOYMENT_DETAILS/Negative/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/Negative/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request

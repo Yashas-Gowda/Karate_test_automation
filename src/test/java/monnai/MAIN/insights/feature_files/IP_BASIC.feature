@@ -4,13 +4,13 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   Background:
     * configure charset = null
     * path '/api/insights/'
-    * def authFeature = call read('Auth_Token_Generation.feature')
+    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
   @smokeTest
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+    And def payload = read( "../" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And header Authorization = BearerToken
@@ -43,7 +43,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   #CHECK - Looks same as the above sceanrio
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+    And def payload = read( "../" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And header Authorization = BearerToken
@@ -76,7 +76,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
 
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
-    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+    And def payload = read( "../" + source + "/IP_BASIC/<Scenario>.json")
     And request payload.request.ipAddress = <ipAddress>
     And headers headers
     And header Authorization = BearerToken
@@ -112,7 +112,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   #  @smokeTest12
   #  Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
   #    Given url requestUrl
-  #    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + source + "/IP_BASIC/<Scenario>.json")
   #    And request payload.request.ipAddress = <ipAddress>
   #    And headers headers
   #    And header Authorization = BearerToken
@@ -143,7 +143,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   #  @3908
   #  Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IPV4 & IPV6 IP_address in input -> <Scenario> | InputIP -> <ipAddress>.
   #    Given url requestUrl
-  #    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + source + "/IP_BASIC/<Scenario>.json")
   #    And request payload.request.ipAddress = <ipAddress>
   #    And headers headers
   #    And header Authorization = BearerToken
@@ -184,7 +184,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
   #
   #  Scenario Outline: Validation of IP_BASIC Positive scenario for Valid IP_address with "High Abuse velocity","recent abuse", "bot status","VPN" -> <Scenario> | InputIP -> <ipAddress>.
   #    Given url requestUrl
-  #    And def payload = read("data/" + source + "/IP_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + source + "/IP_BASIC/<Scenario>.json")
   #    And request payload.request.ipAddress = <ipAddress>
   #    And headers headers
   #    And header Authorization = BearerToken

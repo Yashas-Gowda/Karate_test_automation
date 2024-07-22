@@ -10,7 +10,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @FIDO @smokeTest
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -53,7 +53,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @PHONE_SOCIAL @FIDO
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for all regions specific country- <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -102,7 +102,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of emailProvider - [google,yahoo] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -149,7 +149,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of ecommerce - [flipkart,bukalapak,jdid,amazon] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -195,7 +195,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of socialMedia - [facebook,twitter,instagram] - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -246,7 +246,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -303,7 +303,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -345,7 +345,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios
   @Schema_validation_2
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
-    And def payload = read("data/" + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
+    And def payload = read( "../"  + source + "/PHONE_SOCIAL_FIDO/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request

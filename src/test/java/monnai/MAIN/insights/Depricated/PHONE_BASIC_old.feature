@@ -9,7 +9,7 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
 
   #  Scenario Outline:  DPI PHONE_BASIC positive scenario with different regions - <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/PHONE_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/PHONE_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -34,7 +34,7 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
   #
   #  Scenario Outline:  DPI PHONE_BASIC positive scenarios across different Data points - <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/PHONE_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/PHONE_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -77,7 +77,7 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
   #    #  @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays
   ##  Scenario Outline:  DPI PHONE_BASIC_Sub_PORTED_DETAILS positive scenario for Indian region with validation of ported  - <Scenario>
   ##    Given url requestUrl
-  ##    And def payload = read("data/" + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
+  ##    And def payload = read( "../"  + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
   ##    And headers headers
   ##    And request payload.request
   ##    When method POST
@@ -152,7 +152,7 @@ Feature: Testing of DPI  - Phone_basic and Phone_social scenarios
   ##  @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays
   ##  Scenario Outline:  DPI PHONE_BASIC_Sub_PORTED_DETAILS positive scenario for Indian region with validation of ported  - <Scenario>
   ##    Given url requestUrl
-  ##    And def payload = read("data/" + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
+  ##    And def payload = read( "../"  + env + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
   ##    And headers headers
   ##    And request payload.request
   ###    * set payload.response.data.phone.basic.portedHistory.portedSinceXDays = "#number"

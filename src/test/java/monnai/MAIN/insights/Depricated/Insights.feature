@@ -7,7 +7,7 @@ Feature: Testing of DPI Insights feature scenarios
 
   #  Scenario Outline: Sunny day scenarios for DPI Insights <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/<Scenario>.json")
   #    And headers headers
   #    And header Content-Type = "application/vnd.monnai.v1.1+json"
   #    And request payload.request
@@ -25,7 +25,7 @@ Feature: Testing of DPI Insights feature scenarios
   ##
   #  Scenario Outline: Rainy day scenarios of DPI Insights <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -38,7 +38,7 @@ Feature: Testing of DPI Insights feature scenarios
   #
   #  Scenario Outline:  UPI BASIC POSITIVE SC's Insights <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/UPI_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -57,7 +57,7 @@ Feature: Testing of DPI Insights feature scenarios
   #
   #  Scenario Outline:  UPI BASIC NEGATIVE SC's Insights <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/UPI_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/UPI_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -70,7 +70,7 @@ Feature: Testing of DPI Insights feature scenarios
 
   #  Scenario Outline:  DPI EMAIL_BASIC possitive senario - <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/EMAIL_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -85,7 +85,7 @@ Feature: Testing of DPI Insights feature scenarios
 
   #  Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input - <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/EMAIL_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST
@@ -102,7 +102,7 @@ Feature: Testing of DPI Insights feature scenarios
 
   #  Scenario Outline:  DPI EMAIL_BASIC Negitive senario with null/empty input - <Scenario>
   #    Given url requestUrl
-  #    And def payload = read("data/" + env + "/EMAIL_BASIC/<Scenario>.json")
+  #    And def payload = read( "../"  + env + "/EMAIL_BASIC/<Scenario>.json")
   #    And headers headers
   #    And request payload.request
   #    When method POST

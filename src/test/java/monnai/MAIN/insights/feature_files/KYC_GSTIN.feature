@@ -1,4 +1,6 @@
-@KYC_GSTIN
+@KYC_GSTIN @ignore
+
+  # This package is changed structre is changes so this page is not running as part of regression from then
 
 Feature: Testing of DPI  - KYC_GSTIN Package scenarios with cashfree dp
 
