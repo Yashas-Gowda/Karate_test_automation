@@ -103,7 +103,7 @@ public class GeneralTestRunner {
     void Inside_Insights() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@INCOME_ESTIMATION")
+                .tags("@EMAIL_BASIC_CUSTOM")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -113,7 +113,7 @@ public class GeneralTestRunner {
     void Inside_Monnai() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@AML_1")
+                .tags("@EMAIL_BASIC_FIDO,@EMAIL_SOCIAL_FIDOV2,@PHONE_SOCIAL_FIDOV2")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
