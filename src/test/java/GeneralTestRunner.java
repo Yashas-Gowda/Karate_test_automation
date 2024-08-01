@@ -103,7 +103,47 @@ public class GeneralTestRunner {
     void Inside_Insights() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
+                .tags("@get_tenant_config_before_update")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void EMAIL_BASIC_CUSTOM() {
+        Results results = Runner.path("classpath:monnai/MAIN")
+                .outputCucumberJson(true)
                 .tags("@EMAIL_BASIC_CUSTOM")
+                .parallel(1);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void Test_tag1() {
+        Results results = Runner.path("classpath:monnai/MAIN")
+                .outputCucumberJson(true)
+                .tags("@EMAIL_BASIC_CUSTOM_CONFIG")
+                .parallel(1);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void Test_tag2() {
+        Results results = Runner.path("classpath:monnai/MAIN")
+                .outputCucumberJson(true)
+                .tags("@email_aug_1_check")
+                .parallel(1);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void EMAIL_BASIC_COMBINE() {
+        Results results = Runner.path("classpath:monnai/MAIN")
+                .outputCucumberJson(true)
+                .tags("@EMAIL_BASIC_FIDO,@EMAIL_BASIC_CUSTOM")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -113,7 +153,8 @@ public class GeneralTestRunner {
     void Inside_Monnai() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@EMAIL_BASIC_FIDO,@EMAIL_SOCIAL_FIDOV2,@PHONE_SOCIAL_FIDOV2")
+//                .tags("@EMAIL_BASIC_FIDO,@EMAIL_SOCIAL_FIDOV2,@PHONE_SOCIAL_FIDOV2")
+                .tags("@EMAIL_SOCIAL_FIDOV1,@PHONE_SOCIAL_FidoV1")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
