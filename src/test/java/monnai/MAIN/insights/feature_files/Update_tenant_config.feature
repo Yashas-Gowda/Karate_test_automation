@@ -9,7 +9,6 @@ Feature: Update_tenant_config
 
 
 
-
   @get_tenant_config_before_update
   Scenario:  GET Tenant config automation - Before Tenant Config update.
     * def AUrl = requestUrl + '/api/registry/tenants/' + _custom_tenant_id

@@ -34,6 +34,16 @@ public class GeneralTestRunner {
     }
 
     @Test
+    void custom_auth_Token() {
+        Results results = Runner.path("classpath:monnai/Auth_Token_Generation_parallel.feature")
+                .outputCucumberJson(true)
+//                .tags("@auth_Token")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
     void testParallel() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
@@ -113,7 +123,7 @@ public class GeneralTestRunner {
     void EMAIL_BASIC_CUSTOM() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@EMAIL_BASIC_CUSTOM")
+                .tags("@EMAIL_BASIC_FIDO_PARALLEL")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -133,7 +143,7 @@ public class GeneralTestRunner {
     void Test_tag2() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@email_aug_1_check")
+                .tags("@EMAIL_BASIC_CUSTOM_PARALLEL,@EMAIL_BASIC_FIDO")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
