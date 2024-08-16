@@ -1,7 +1,8 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'release-custom_email_basic'
+    var env = 'release-fidoV2'
+//    var c_email_env = 'release-custom_email_basic'
     var source = 'source'
     karate.log('karate.envData system property was:', env);
 
@@ -44,18 +45,21 @@ function() {
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
+
            case "release-fidoV2":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
+                  config.c_email_env = 'release-custom_email_basic';
+
                   break;
            case "release-seon":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
            case "release-custom_email_basic":
-                             config.requestUrl = "https://release.monnai.com";
-                             config.authUrl = "https://release-auth.monnai.com";
-                             break;
+                 config.requestUrl = "https://release.monnai.com";
+                 config.authUrl = "https://release-auth.monnai.com";
+                 break;
 
 
            case "test-m":
