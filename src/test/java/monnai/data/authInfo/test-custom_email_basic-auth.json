@@ -1,0 +1,43 @@
+{
+  "app_client_name": "Automation_test_email_basic_custom@tenant_01J5MYCE75ZFG28G5ED4BJ0N0S",
+  "client_id": "2cfh1s5ben7bk66cdil8p75khm",
+  "client_secret": "1uhefcgmkj64r6fuhplmhqabr8u9of0tuotqq9cvgqlj2am9q9g1",
+  "grant_type": "client_credentials",
+  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Automation_release_email_basic_custom - dp's like WhoIsXML, ZeroBounce,AtData, HaveIBeenPawned",
+  "tenant_config": {
+    "tenant": "tenant_01J5MYCE75ZFG28G5ED4BJ0N0S",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML",
+          "order": 0
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned",
+          "order": 0
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation",
+          "order": 0
+        }
+      }
+    }
+  }
+}
