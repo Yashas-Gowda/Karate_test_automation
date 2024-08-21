@@ -306,7 +306,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_Germany_DE_output_When_input_optional_field_streetName_value_null       | 200        |
 
 
-  @KYC_MOBILE_region_FR
+  @KYC_MOBILE_region_DE
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for Country DE <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/DE/<Scenario>.json")
@@ -347,17 +347,16 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       #      | KYC_MOBILE_Germany_DE_input_firstName_with_number                                    | 400        |
       #      | KYC_MOBILE_Germany_DE_input_firstName_with_bollen                                    | 400        |
 
-
-      | KYC_MOBILE_France_FR_input_lastName_empty_string                                  | 400        |
-      | KYC_MOBILE_France_FR_input_lastName_with_space                                    | 400        |
-      | KYC_MOBILE_France_FR_input_Key_lastName_missing                                   | 400        |
+      | KYC_MOBILE_Germany_DE_input_lastName_empty_string                                  | 400        |
+      | KYC_MOBILE_Germany_DE_input_lastName_with_space                                    | 400        |
+      | KYC_MOBILE_Germany_DE_input_Key_lastName_missing                                   | 400        |
       #    https://monnai.atlassian.net/browse/MB-5685
       #      | KYC_MOBILE_France_FR_input_lastName_with_number                                    | 400        |
       #      | KYC_MOBILE_France_FR_input_lastName_with_bollen                                    | 400        |
 
-      | KYC_MOBILE_France_FR_input_postalCode_empty_string                                  | 400        |
-      | KYC_MOBILE_France_FR_input_postalCode_with_space                                    | 400        |
-      | KYC_MOBILE_France_FR_input_Key_postalCode_missing                                   | 400        |
+      | KYC_MOBILE_Germany_DE_input_postalCode_empty_string                                  | 400        |
+      | KYC_MOBILE_Germany_DE_input_postalCode_with_space                                    | 400        |
+      | KYC_MOBILE_Germany_DE_input_Key_postalCode_missing                                   | 400        |
   #    https://monnai.atlassian.net/browse/MB-5685
   #      | KYC_MOBILE_France_FR_input_postalCode_with_number                                    | 400        |
   #      | KYC_MOBILE_France_FR_input_postalCode_with_bollen                                    | 400        |
