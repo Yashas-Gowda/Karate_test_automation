@@ -19,6 +19,7 @@ Feature: Update_tenant_config
     Then status 200
     * def beforeRunTenantConfig = response
     * print 'Filter response---->',beforeRunTenantConfig
+    * print 'Filter response---->',response
 
   @Update_tenant_config_partners
   Scenario: UPDATE TENANT CONFIG for Tenant ID

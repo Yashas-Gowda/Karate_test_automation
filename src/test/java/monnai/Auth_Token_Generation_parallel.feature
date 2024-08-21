@@ -10,7 +10,7 @@ Feature: Generating auth token
 
   Scenario: generating auth token for env specific
     Given url authUrl
-    * def authLoad = read("classpath:monnai/data/authInfo/" + c_email_env + "-auth.json")
+    * def authLoad = read("classpath:monnai/data/authInfo/" + email_custom_tenant + "-auth.json")
     And form field client_id = authLoad.client_id
     And form field client_secret = authLoad.client_secret
     And form field grant_type = 'client_credentials'
