@@ -8,14 +8,14 @@
     ],
     "userDetails": {
       "phoneNumber": "641426418",
-      "firstName": "michel",
-      "middleName": "",
+      "firstName": "",
+      "middleName": "michel",
       "lastName": "supiot",
       "dateOfBirth": "1963-05-28",
       "streetNumber": "319",
       "streetName": "Impasse du Bois de Cathou",
-      "city": null,
-      "postalCode": "56500"
+      "city": "Saint-Maurice-en-Gourgois",
+      "postalCode": "42240"
     }
   },
   "response": {
@@ -23,42 +23,33 @@
       "kyc": {
         "government": null,
         "consumer": null,
-        "mobile": {
-          "matchFirstName": "MATCH",
-          "matchMiddleName": "NOT_SUPPORTED",
-          "matchLastName": "MATCH",
-          "matchFullGivenName": "MATCH",
-          "matchDateOfBirth": "MATCH",
-          "matchPhoneNumber": "MATCH",
-          "matchAddress": "MATCH",
-          "matchAddressLine1": "NOT_SUPPORTED",
-          "matchId1": "NOT_SUPPORTED",
-          "matchStreetNumber": "NOT_SUPPORTED",
-          "matchStreet": "NOT_SUPPORTED",
-          "matchCity": "NO_INPUT",
-          "matchPostalCode": "NO_MATCH",
-          "appendedFields": {
-          }
-        },
+        "mobile": null,
         "aml": null
       },
       "kyb": null
     },
     "meta": {
-      "referenceId": "404d4449-12b9-4832-a4d4-2d3216992168",
+      "referenceId": "Dpi_july_3_kyc_1",
       "requestedPackages": [
         "KYC_MOBILE"
       ],
       "inputPhoneNumber": "641426418",
       "cleansedPhoneNumber": "+33641426418",
-      "inputFirstName": "michel",
+      "inputMiddleName": "michel",
       "inputLastName": "supiot",
       "inputDateOfBirth": "1963-05-28",
       "inputStreetNumber": "319",
-      "inputPostalCode": "56500",
+      "inputCity": "Saint-Maurice-en-Gourgois",
+      "inputPostalCode": "42240",
       "inputPhoneDefaultCountryCode": "FR"
     },
     "errors": [
+      {
+        "package": "KYC_MOBILE",
+        "message": "First Name cannot be blank/null",
+        "code": "MISSING_FIRST_NAME",
+        "type": "INVALID_INPUT"
+      }
     ]
   }
 }

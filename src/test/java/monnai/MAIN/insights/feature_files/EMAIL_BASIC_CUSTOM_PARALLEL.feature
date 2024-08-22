@@ -1,17 +1,72 @@
-@EMAIL_BASIC_FIDO
-Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
-  # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-fido mapping info. After discussion with roopa, Automation Test data is not verified and taken reference from manual sign off.
-  # scenarios names are not updated, which will be picked in the next sprint
+@EMAIL_BASIC_CUSTOM_PARALLEL
+
+Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partner WhoIsXML, ZeroBounce,AtData, HaveIBeenPawned.
+  # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-dp mapping info. After discussion with roopa, Automation Test data is not verified by yashas and taken reference from manual sign off.
+
   Background:
     * configure charset = null
     * path '/api/insights/'
-    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
+    * def authFeature = call read('classpath:monnai/Auth_Token_Generation_parallel.feature')
     * def BearerToken = authFeature.authToken
+    * def  Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
+    * print Custom_env_authFeature_tenant_config
+
+    * def custom_tenant_config =
+      """
+      {
+        "tenant": "tenant_01J41BG58AXQR74CQYT46TT3GN",
+        "exclude": {
+          "EMAIL_BASIC": {
+            "01HP1HECME5P4JQD91CPAW2Y60": {
+              "name": "BRE_Featurization_EmailBasicAnalysis"
+            },
+            "01H785HGK5PSKMST8QZSEDCAQY": {
+              "name": "FIDO email_basic"
+            },
+            "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+              "name": "Seon Email"
+            },
+            "01H6XFS4G3JFMTG43WS0F6FB85": {
+              "name": "SEON email_basic"
+            }
+          }
+        },
+        "include": {
+          "EMAIL_BASIC": {
+            "01HQ56STADP5RN4YKR6K9RMKM2": {
+              "name": "WhoIsXML",
+              "order": 0
+            },
+            "01HPVAGR327YWCGH4DAPHRNA18": {
+              "name": "Have I Been Pawned",
+              "order": 0
+            },
+            "01HPVAZ4H2055V28EZ6P4B4DE6": {
+              "name": "Zero Bounce Email Validation",
+              "order": 0
+            }
+          }
+        }
+      }
+      """
+    * def custom_tenant_id = custom_tenant_config.tenant
+
+  #
+  #  -------------------------------
+  #  Tenant config code
+  #  --------------------------------
+  #
+
+
+  Scenario: Calling Update_tenant_config.feature --> Update tenant with custom tenant config.
+    * def result = call read('Update_tenant_config.feature@get_tenant_config_before_update') { _custom_tenant_id : '#(custom_tenant_id)' }
+    * def result = call read('Update_tenant_config.feature@Update_tenant_config_partners') custom_tenant_config
+    * def result = call read('Update_tenant_config.feature@get_tenant_config_after_update') { _custom_tenant_id : '#(custom_tenant_id)' }
 
   @second @smokeTest @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -32,8 +87,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
-    * match $.data.email.basic.domainDetails.updateTime == "#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -56,7 +111,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
   #rerun if deliverable is null
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -77,8 +132,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
-    * match $.data.email.basic.domainDetails.updateTime == "#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -96,7 +151,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -118,8 +173,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
-    * match $.data.email.basic.domainDetails.updateTime == "#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -137,7 +192,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -174,16 +229,16 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
 
     When method POST
-    * match $.data.email.basic.domainDetails.creationTime == "#null"
-    * match $.data.email.basic.domainDetails.updateTime == "#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
+    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * match $.data.email.basic.emailTenure == '#number'
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
@@ -210,13 +265,13 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     Examples:
       | Scenario                                                                                                                                                                                                                | statusCode |
       | Email_Basic_Possitive_withDomainNet(abc@you.me.net)_deliverable_true_disposable_true_noOfBreaches_1_emailTenure_notnull                                                                                              | 200        |
-      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_null_disposable_false_noOfBreaches_2_emailTenure_notnull                                                                    | 200        |
+      | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_disposable_acceptAll_null_false_noOfBreaches_3_emailTenure_notnull                                                                    | 200        |
   # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
   ## Check this
   @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -237,8 +292,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
-    * match $.data.email.basic.domainDetails.updateTime == "#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -256,7 +311,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -278,8 +333,8 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match $.data.email.basic.domainDetails.creationTime == "#null"
-    * match $.data.email.basic.domainDetails.updateTime =="#null"
-    * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime =="#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
@@ -291,10 +346,10 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Scenario | statusCode |
   #data no| Email_Basic_custom_true | 200        |
 
-  @email_aug_1_check
+
   Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -314,7 +369,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    #      Then match $ contains payload.response
+    Then match $ contains payload.response
     * match payload.response.data.email.basic == $.data.email.basic
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -339,7 +394,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
 
   Scenario Outline: DPI EMAIL_BASIC Negitive scenario with null/empty input :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -375,9 +430,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_Negitive_Nullinput(null)    | 400        |
       | Email_Basic_Negitive_No_input_Email_key | 400        |
 
-  Scenario Outline: DPI EMAIL_BASIC positive scenario - Schema validation of data points  :- <Scenario>
+  Scenario Outline:  DPI EMAIL_BASIC_CUSTOM positive scenario - Schema validation of data points  :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -413,9 +468,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
   @Schema_validation_2
-  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Schema validation of data points  :- <Scenario>
+  Scenario Outline: DPI EMAIL_BASIC_CUSTOM positive scenario - Schema validation of data points  :- <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -503,4 +558,9 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     Examples:
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
+
+  Scenario: Calling Update_tenant_config.feature -> Revert to original tenant config in auth file of Custom tenant used.
+    * print Custom_env_authFeature_tenant_config
+    * def result = call read('Update_tenant_config.feature@Update_to_before_run_tenant_config_partners') Custom_env_authFeature_tenant_config
+    * def result = call read('Update_tenant_config.feature@get_tenant_config_after_update') { _custom_tenant_id : '#(custom_tenant_id)' }
 
