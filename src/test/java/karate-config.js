@@ -1,7 +1,7 @@
 function() {
 
    // var env = karate.env; // get java system property 'karate.envData' from TestRunner.java
-    var env = 'test-fidoV2'
+    var env = 'release-fidoV2'
 //    var email_custom_tenant = 'release-custom_email_basic'
     var source = 'source'
     karate.log('karate.envData system property was:', env);

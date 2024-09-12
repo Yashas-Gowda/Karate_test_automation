@@ -3,6 +3,6 @@
   "client_id": "7f67hll4bm77dcpqph1n00t0fu",
   "client_secret": "ferdf49aec6gqsr9k56um50o49aon4sk8t71hs4phq7balkm8pa",
   "grant_type": "client_credentials",
-  "scope": "insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "scope": "insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
   "issue": "non"
 }

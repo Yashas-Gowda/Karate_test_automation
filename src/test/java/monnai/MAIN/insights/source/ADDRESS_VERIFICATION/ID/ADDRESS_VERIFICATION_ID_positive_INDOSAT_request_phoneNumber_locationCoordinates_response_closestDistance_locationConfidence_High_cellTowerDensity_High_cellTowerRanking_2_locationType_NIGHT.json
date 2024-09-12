@@ -1,0 +1,63 @@
+{
+  "request": {
+    "phoneNumber": "85773444483",
+    "phoneDefaultCountryCode": "ID",
+    "cleansingFlag": true,
+    "locationCoordinates": {
+      "latitude": "-197.281503",
+      "longitude": "1106.6024222"
+    },
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "closestDistance": {
+            "min": 0.0,
+            "max": 1.127290433E7
+          },
+          "locationConfidence": "High",
+          "cellTowerDensity": "High",
+          "cellTowerRanking": 2,
+          "locationType": "NIGHT"
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "85773444483",
+      "cleansedPhoneNumber": "+6285773444483",
+      "referenceId": "Dpi_sep_9_a_1",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputLocationCoordinates": {
+        "latitude": "-197.281503",
+        "longitude": "1106.6024222"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

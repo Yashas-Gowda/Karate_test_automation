@@ -1,0 +1,80 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "918879364922",
+    "address": {
+      "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "city": "",
+      "province": "",
+      "postalCode": "",
+      "country": "India1"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "phoneMatch": "MATCH",
+          "addressMatch": "NO_MATCH",
+          "phoneAndAddressMatch": "NO_MATCH",
+          "addressVisited": true,
+          "addressLastVisited": "2023-03-08"
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "918879364922",
+      "cleansedPhoneNumber": "+918879364922",
+      "referenceId": "Dpi_May_17_enrich_1",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "",
+        "state": null,
+        "postalCode": "",
+        "country": "India1"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

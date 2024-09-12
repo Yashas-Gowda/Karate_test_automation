@@ -1,32 +1,31 @@
 {
-  "request":{
-    "phoneNumber": "85773444483",
+  "request": {
     "phoneDefaultCountryCode": "ID",
-    "cleansingFlag": true,
+    "phoneNumber": "6289600000001",
     "locationCoordinates": {
-      "latitude": "-197.281503",
-      "longitude": "1106.6024222"
+      "latitude": "-6.23",
+      "longitude": "106.81"
     },
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "ADDRESS_VERIFICATION"
-    ]
-  } ,
-  "response":{
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
       "address": {
         "basic": null,
         "verification": {
-          "closestDistance": {
-            "min": 0.0,
-            "max": 1.1233689685999999E7
-          },
-          "locationConfidence": "High",
-          "cellTowerDensity": "Strongest",
-          "cellTowerRanking": 4,
-          "locationType": "NIGHT"
+          "packageDetails": [
+            "S2101"
+          ]
         }
       },
       "name": null,
@@ -41,15 +40,22 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "85773444483",
-      "cleansedPhoneNumber": "+6285773444483",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputPhoneNumber": "6289600000001",
+      "cleansedPhoneNumber": "+6289600000001",
+      "referenceId": "Dpi_sep_9_1",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
-      ]
+      ],
+      "inputLocationCoordinates": {
+        "latitude": "-6.23",
+        "longitude": "106.81"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": []
   }

@@ -133,7 +133,7 @@ public class GeneralTestRunner {
     void Test_tag1() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@EMAIL_BASIC_CUSTOM_CONFIG")
+                .tags("@KYC_GOVERNMENT,KYC_MOBILE")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

@@ -1,0 +1,67 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "+6285893641388",
+    "locationCoordinates": {
+      "latitude": "-6.25822",
+      "longitude": "106.595"
+    },
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "closestDistance": {
+            "min": 0.0,
+            "max": 1085.529
+          },
+          "locationConfidence": "Medium",
+          "cellTowerDensity": "Very High",
+          "cellTowerRanking": 3,
+          "locationType": "NIGHT"
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "+6285893641388",
+      "cleansedPhoneNumber": "+6285893641388",
+      "referenceId": "Dpi_sep_9_1",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputLocationCoordinates": {
+        "latitude": "-6.25822",
+        "longitude": "106.595"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}
