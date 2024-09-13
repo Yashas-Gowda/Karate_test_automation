@@ -4,7 +4,7 @@
     "phoneDefaultCountryCode": "IN",
     "address": {
       "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
-      "country": "India1"
+      "country": "INDIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -59,7 +59,7 @@
         "city": null,
         "state": null,
         "postalCode": null,
-        "country": "India1"
+        "country": "INDIA"
       },
       "inputPhoneDefaultCountryCode": "IN"
     },

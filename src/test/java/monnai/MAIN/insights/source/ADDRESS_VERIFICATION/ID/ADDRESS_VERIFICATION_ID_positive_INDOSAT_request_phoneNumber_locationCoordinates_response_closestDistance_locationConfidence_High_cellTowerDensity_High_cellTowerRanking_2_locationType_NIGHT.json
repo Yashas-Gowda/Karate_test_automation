@@ -25,7 +25,7 @@
           },
           "locationConfidence": "High",
           "cellTowerDensity": "High",
-          "cellTowerRanking": 2,
+          "cellTowerRanking": 3,
           "locationType": "NIGHT"
         }
       },

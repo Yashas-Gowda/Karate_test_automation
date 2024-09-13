@@ -5,7 +5,7 @@
     "phoneNumber": "918879364922",
     "address": {
       "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
-      "country": "IN"
+      "country": "INDIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -65,7 +65,7 @@
         "city": null,
         "state": null,
         "postalCode": null,
-        "country": "IN"
+        "country": "INDIA"
       },
       "inputPhoneDefaultCountryCode": "IN"
     },

@@ -2,7 +2,7 @@
   "request": {
     "eventType": "ACCOUNT_CREATION",
     "phoneDefaultCountryCode": "ID",
-    "phoneNumber": "6281700000003",
+    "phoneNumber": "123456",
     "address": {
       "addressLine1": "Sungai Cibuni, QRRX+M4M, RT.1/RW.5, Ps. Manggis, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10310, Indonesia",
       "addressLine2": null,
@@ -18,38 +18,11 @@
     ]
   },
   "response": {
-    "data": {
-      "phone": null,
-      "email": null,
-      "address": {
-        "basic": null,
-        "verification": {
-          "closestDistance": {
-            "min": 501.0,
-            "max": 750.0
-          }
-        }
-      },
-      "name": null,
-      "ip": null,
-      "identity": null,
-      "upi": null,
-      "device": null,
-      "employment": null,
-      "income": null,
-      "blacklist": null,
-      "domain": null,
-      "kyc": null,
-      "bank": null,
-      "aadhaar": null,
-      "statement": null,
-      "business": null,
-      "bre": null
-    },
+    "data": null,
     "meta": {
-      "inputPhoneNumber": "6281700000003",
-      "cleansedPhoneNumber": "+6281700000003",
-      "referenceId": "d4vY6gZZSQ0EJgg=",
+      "inputPhoneNumber": "123456",
+      "cleansedPhoneNumber": "+62123456",
+      "referenceId": "vatsa1",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -69,6 +42,13 @@
       },
       "inputPhoneDefaultCountryCode": "ID"
     },
-    "errors": []
+    "errors": [
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
   }
 }

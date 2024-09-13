@@ -11,7 +11,7 @@
       "city": null,
       "state": null,
       "postalCode": null,
-      "country": "ID"
+      "country": "INDONESIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -64,7 +64,7 @@
         "city": null,
         "state": null,
         "postalCode": null,
-        "country": "ID"
+        "country": "INDONESIA"
       },
       "inputPhoneDefaultCountryCode": "ID"
     },

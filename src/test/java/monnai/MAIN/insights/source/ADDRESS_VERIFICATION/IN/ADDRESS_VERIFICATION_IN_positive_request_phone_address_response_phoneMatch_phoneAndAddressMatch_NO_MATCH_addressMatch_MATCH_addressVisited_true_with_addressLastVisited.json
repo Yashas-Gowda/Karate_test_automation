@@ -11,7 +11,7 @@
       "city": "banglore",
       "province": "",
       "postalCode": "560040",
-      "country": "ID"
+      "country": "INDIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -71,7 +71,7 @@
         "city": "banglore",
         "state": null,
         "postalCode": "560040",
-        "country": "ID"
+        "country": "INDIA"
       },
       "inputPhoneDefaultCountryCode": "IN"
     },

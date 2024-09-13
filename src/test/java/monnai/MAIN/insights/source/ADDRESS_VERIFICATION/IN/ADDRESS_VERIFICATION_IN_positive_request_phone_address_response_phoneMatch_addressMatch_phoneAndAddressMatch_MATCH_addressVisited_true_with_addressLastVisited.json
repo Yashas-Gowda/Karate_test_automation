@@ -11,7 +11,7 @@
       "city": "",
       "province": "",
       "postalCode": "",
-      "country": "IN"
+      "country": "INDIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -71,7 +71,7 @@
         "city": "",
         "state": null,
         "postalCode": "",
-        "country": "IN"
+        "country": "INDIA"
       },
       "inputPhoneDefaultCountryCode": "IN"
     },

@@ -1,4 +1,6 @@
-@ADDRESS_VERIFICATION @ignore
+@ignore
+  #@ADDRESS_VERIFICATION
+
 Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
 
   Background:
@@ -8,7 +10,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
     * def BearerToken = authFeature.authToken
 
   @ADDRESS_VERIFICATION_IN
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/IN/<Scenario>.json")
     And headers headers
@@ -53,7 +55,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
 
 
   @ADDRESS_VERIFICATION_IN @Negative
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/IN/Negative/<Scenario>.json")
     And headers headers
@@ -75,7 +77,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.address.verification == null
+    Then match $.data == null
     Then match $.meta contains payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     Then match $.errors contains payload.response.errors
@@ -97,7 +99,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_IN_Negative_request_where_mandatory_input_country_addressLine1_with_null         | 400        |
 
   @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
@@ -146,11 +148,11 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_1001_2000                                                                                                        | 200        |
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000                                                                                                        | 200        |
       #     https://monnai.atlassian.net/browse/MB-6658
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_4000_null                                                                                                        | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_4001_null                                                                                                        | 200        |
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_packageDetails_S2101_when_dp_closest_distance_null                                                                               | 200        |
 
   @ADDRESS_VERIFICATION_ID @Negative
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/Negative/<Scenario>.json")
     And headers headers
@@ -172,43 +174,49 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.address.verification == null
+    Then match $.data == null
     Then match $.meta contains payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     Then match $.errors contains payload.response.errors
 
 
     Examples:
-      | Scenario                                                                                              | statusCode |
+      | Scenario                                                                                                         | statusCode |
       #    https://monnai.atlassian.net/browse/MB-6655
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_empty_string              | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_space                     | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_null                      | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_empty_string                         | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_space                                | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_with_null                                 | 400        |
 
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_empty_string         | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_space                | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_null                 | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_empty_string                    | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_space                           | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_addressLine1_with_null                            | 400        |
 
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_empty_string | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_space        | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_null         | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_missing           | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_empty_string            | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_space                   | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_with_null                    | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_country_addressLine1_missing                      | 400        |
 
 
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_empty_string          | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_space                 | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_null                  | 400        |
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_missing                    | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_empty_string                     | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_space                            | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_null                             | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_missing                               | 400        |
 
       #      https://monnai.atlassian.net/browse/MB-6651
-      #      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_invalid_phonenumber   | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phoneNumber_with_invalid_phonenumber              | 400        |
 
       #      https://monnai.atlassian.net/browse/MB-6659
-      #      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_empty_string  | 400        |
-      #      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_space         | 400        |
-      #      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_null          | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_empty_string             | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_space                    | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_with_null                     | 400        |
 
-      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_missing            | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phonenumber_locationCoordinates_with_empty_string | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phonenumber_locationCoordinates_with_space        | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phonenumber_locationCoordinates_with_null         | 400        |
+
+
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_locationCoordinates_missing                       | 400        |
+      | ADDRESS_VERIFICATION_ID_Negative_request_where_mandatory_input_phonenumber_locationCoordinates_missing           | 400        |
 
 
 
