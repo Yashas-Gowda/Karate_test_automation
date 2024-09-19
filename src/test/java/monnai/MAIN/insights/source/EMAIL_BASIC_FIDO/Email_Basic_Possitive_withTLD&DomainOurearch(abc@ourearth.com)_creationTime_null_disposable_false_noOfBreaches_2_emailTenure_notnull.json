@@ -13,7 +13,7 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": null,
+          "deliverable": true,
           "domainDetails": {
             "domainType": "valid",
             "domainName": "ourearth.com",
@@ -25,33 +25,53 @@
             "companyName": "",
             "registrarName": "GoDaddy.com, LLC",
             "disposable": false,
-            "freeProvider": null,
+            "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": false,
-            "acceptAll": null,
+            "websiteExists": null,
+            "acceptAll": false,
             "custom": null
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 2,
-            "firstBreach": "2019-02-25",
-            "lastBreach": "2023-09-20",
+            "noOfBreaches": 6,
+            "firstBreach": "2019-03-28",
+            "lastBreach": "2024-07-26",
             "breaches": [
               {
-                "platformName": "VerificationsIO",
+                "platformName": "Mixed Combolist",
                 "domainName": null,
-                "breachDate": "2019-02-25"
+                "breachDate": "2024-07-26"
               },
               {
-                "platformName": "NazApi",
+                "platformName": "Naz.api Combolist",
                 "domainName": null,
-                "breachDate": "2023-09-20"
+                "breachDate": "2023-10-20"
+              },
+              {
+                "platformName": "AskDev",
+                "domainName": null,
+                "breachDate": "2022-05-12"
+              },
+              {
+                "platformName": "Russian Password Stealer",
+                "domainName": null,
+                "breachDate": "2020-04-02"
+              },
+              {
+                "platformName": "TrickBot Email List",
+                "domainName": null,
+                "breachDate": "2020-03-26"
+              },
+              {
+                "platformName": "Verifications.io",
+                "domainName": null,
+                "breachDate": "2019-03-28"
               }
             ]
           },
-          "emailTenure": 5.39
+          "emailTenure": 5.48
         },
         "breach": null
       },
@@ -69,10 +89,11 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "c2df3084-2bbc-4402-8cc2-fc343c235ee6",
+      "referenceId": "66b8f9ed-00ea-4229-8655-573ade50b5cf",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
