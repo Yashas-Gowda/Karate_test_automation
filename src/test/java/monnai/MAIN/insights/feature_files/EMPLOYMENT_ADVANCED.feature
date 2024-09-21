@@ -16,7 +16,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
@@ -47,7 +46,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     Examples:
       | Scenario                                                                                                            | statusCode |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_1_additionalDetails_pfFilingDetails_dpoints_null_hidden | 200        |
-
 
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario when dp gives message as no_record_found <Scenario>
     Given url requestUrl
@@ -80,8 +78,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       # Bug https://monnai.atlassian.net/browse/MB-3786,MB-3805
       | EMPLOYMENT_ADVANCED_is_null_when_no_record_found_in_dp | 200        |
 
-  # After dicusion with Roopa, not validating the values of data point inside the "employeePfMatches" as it is highly dynamic
-  @EMPLOYMENT_ADVANCED_test_1
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
@@ -159,10 +155,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       # Bug https://monnai.atlassian.net/browse/MB-4198
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_5 | 200        |
 
-  # Need to add in other assertions
-  #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_3                               | 200        |
-
-  @EMPLOYMENT_ADVANCED_test_1
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario without (pfFilingDetails.employeePfMatches[0].pfHistory) - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
@@ -233,8 +225,8 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | Scenario                                                                                    | statusCode |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_1_without_91                     | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_2_employeePfMatches_null_hidden | 200        |
+      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_3                               | 200        |
 
-  @EMPLOYMENT_ADVANCED_test_1
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario without (pfFilingDetails.employeePfMatches[0].pfHistory) - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_ADVANCED/<Scenario>.json")
