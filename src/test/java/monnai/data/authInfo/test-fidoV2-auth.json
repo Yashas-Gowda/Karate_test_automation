@@ -40,6 +40,9 @@
         "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
           "name": "FIDO Phone"
         },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
         "01GVK2BBQCZVCB8A88Q1MW2MTR": {
           "name": "Seon Phone"
         }
@@ -62,6 +65,31 @@
         "01H72XCMJ3A08W8MREYD8T1EBS": {
           "name": "FIDO phone_social_v2",
           "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
         }
       }
     }

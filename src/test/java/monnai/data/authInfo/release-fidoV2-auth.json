@@ -66,6 +66,31 @@
           "name": "FIDO phone_social_v2",
           "order": 0
         }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
       }
     }
   }
