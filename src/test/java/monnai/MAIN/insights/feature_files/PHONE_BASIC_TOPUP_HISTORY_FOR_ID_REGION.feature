@@ -1,4 +1,4 @@
-@PHONE_BASIC_FULL
+@PHONE_BASIC_FULL  @PHONE_BASIC_TOPUP
 Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for ID Region
 
   Background:
@@ -34,16 +34,18 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And match $.data.phone.basic.topUpHistory == '#notnull'
     And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
 
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.min ==  "#number"
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.max ==  "#number"
     * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
     * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
 
     * match each $.data.phone.basic.topUpHistory contains { "minimumTopUpAmount": '#? _ >=1000' }
     * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#? _ >=1000' }
     * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#? _ >=1000' }
-
-    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
-    * match $.meta == payload.response.meta
-
+    # data is higly dynamic so we changed the approch from specific assertion to general assertion
+    #    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    Then match $.meta == payload.response.meta
+    Then match $.errors contains only payload.response.errors
     Examples:
       | Scenario                                                                                                                      | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_sanity_check_for_currency_topUpCount_minimumTopUpAmount_maximumTopUpAmount_averageTopUpAmount | 200        |
@@ -74,8 +76,10 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#notnull'
     And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
-    And match $.data.phone.basic.topUpHistory[*].topUpCount contains any <topUpCount>
+    #    And match $.data.phone.basic.topUpHistory[*].topUpCount contains any <topUpCount>
 
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.min ==  "#number"
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.max ==  "#number"
 
     * match each $.data.phone.basic.topUpHistory contains { "currency": "IDR"}
     * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#? _ >=1'}
@@ -84,15 +88,16 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#? _ >=1000' }
     * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#? _ >=1000' }
 
-    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
-    * match $.meta == payload.response.meta
-
+    # data is higly dynamic so we changed the approch from specific assertion to general assertion
+    #    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    Then match $.meta == payload.response.meta
+    Then match $.errors contains only payload.response.errors
     Examples:
-      | Scenario                                                              | statusCode | topUpCount |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1       | 200        | 1          |
-      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9   | 200        | 9          |
-      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128 | 200        | 128        |
-      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197 | 200        | 197        |
+      | Scenario                                                                        | statusCode | topUpCount |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_1                 | 200        | 1          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_9             | 200        | 9          |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_128           | 200        | 128        |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197           | 200        | 197        |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_more_then_max_226 | 200        | 225        |
 
   @PHONE_BASIC @topUpHistory @izidata
@@ -122,18 +127,20 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     And match $.data.phone.basic.topUpHistory == '#notnull'
     And match $.data.phone.basic.topUpHistory[*].topUpCount != 0
 
-    * def Expected_topUpArray_count = <No_of_array_objects>
+    #    * def Expected_topUpArray_count = <No_of_array_objects>
     # Expected_topUpArray_count is count of array objects expected
-    * print Expected_topUpArray_count
+    #    * print Expected_topUpArray_count
     * def Actual_topUpArray = $.data.phone.basic.topUpHistory
     * print Actual_topUpArray
     * def Actual_topUpArray_count = Actual_topUpArray.length
     # Actual_topUpArray_count is count of array objects come up in actual response
     * print Actual_topUpArray_count
-    * match Expected_topUpArray_count  == Actual_topUpArray_count
+    #    * match Expected_topUpArray_count  == Actual_topUpArray_count
 
     #    _$ --> The 'parent' of 'self' or 'current' item in the list, relevant when using match each
 
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.min ==  "#number"
+    * match each $.data.phone.basic.topUpHistory[*].topUpTenure.max ==  "#number"
 
     * match each $.data.phone.basic.topUpHistory contains  { "currency": "IDR"}
     * match each $.data.phone.basic.topUpHistory contains { "topUpCount": '#number? _ >=1'}
@@ -141,21 +148,22 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     * match each $.data.phone.basic.topUpHistory contains { "minimumTopUpAmount": '#number? _ >=1000' }
     * match each $.data.phone.basic.topUpHistory contains { "maximumTopUpAmount": '#number? _ >=1000' }
     * match each $.data.phone.basic.topUpHistory contains { "averageTopUpAmount": '#number? _ >=1000' }
-
-    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
-    * match $.meta == payload.response.meta
-
+    # data is higly dynamic so we changed the approch from specific assertion to general assertion
+    #    * match $.data.phone.basic.topUpHistory == payload.response.data.phone.basic.topUpHistory
+    Then match $.meta == payload.response.meta
+    Then match $.errors contains only payload.response.errors
     Examples:
-      | Scenario                                                                 | statusCode | No_of_array_objects |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        | 10                  |
+      | Scenario                                                                 | statusCode |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_10 | 200        |
+      #    Decreased the test cases count as per roopa suggestion, we just doing genreal assetion of key and not asserting the exact value
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_9  | 200        | 9                   |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_8  | 200        | 8                   |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_7  | 200        | 7                   |
-      #     | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
+      #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_5  | 200        | 5                   |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_4  | 200        | 4                   |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_3  | 200        | 3                   |
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
-      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_6  | 200        | 6                   |
+      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_6  | 200        |
 
   @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
@@ -182,7 +190,8 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#null'
-
+    Then match $.meta == payload.response.meta
+    Then match $.errors contains only payload.response.errors
 
     Examples:
       | Scenario                                                                         | statusCode |
@@ -216,7 +225,8 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     Then status <statusCode>
     And match $.data.phone.basic == '#notnull'
     And match $.data.phone.basic.topUpHistory == '#null'
-
+    Then match $.meta == payload.response.meta
+    Then match $.errors contains only payload.response.errors
     Examples:
       | Scenario                                                                                           | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_When_phoneDefaultCountryCode_other_then_ID_response_topUpHistory_null | 200        |

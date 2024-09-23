@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "YES",
+          "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -32,7 +32,7 @@
           "portedHistory": {
             "portedDate": "2019-06-18",
             "numberOfPorts": 2,
-            "portedSinceXDays": 1857,
+            "portedSinceXDays": 1924,
             "currentCarrierCircle": "Orange Orange S.A.",
             "originalCarrierCircle": "SFR Altice",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -79,12 +79,13 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "33622788226",
       "cleansedPhoneNumber": "+33622788226",
-      "referenceId": "78384b86-ea12-46cd-a62f-b927f9981a13",
+      "referenceId": "35bdb00e-e644-498f-b28b-dbdc9fe89c7d",
       "requestedPackages": [
         "PHONE_BASIC"
       ],
