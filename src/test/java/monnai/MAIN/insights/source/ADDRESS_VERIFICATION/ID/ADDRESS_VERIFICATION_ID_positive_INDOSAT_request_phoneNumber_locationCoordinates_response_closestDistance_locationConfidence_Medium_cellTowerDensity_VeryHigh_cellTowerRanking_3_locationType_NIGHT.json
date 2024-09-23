@@ -23,6 +23,9 @@
       "address": {
         "basic": null,
         "verification": {
+          "packageDetails": [
+            "S2101"
+          ],
           "closestDistance": {
             "min": 0.0,
             "max": 1085.529
@@ -52,7 +55,7 @@
     "meta": {
       "inputPhoneNumber": "+6285893641388",
       "cleansedPhoneNumber": "+6285893641388",
-      "referenceId": "Dpi_sep_9_1",
+      "referenceId": "a3c683ad-8f5b-4a2b-9331-2a95e83a5106",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -62,6 +65,7 @@
       },
       "inputPhoneDefaultCountryCode": "ID"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

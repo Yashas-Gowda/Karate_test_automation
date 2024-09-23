@@ -12,7 +12,7 @@
       "province": "",
       "postalCode": "",
       "state": "",
-      "country": "ID"
+      "country": "INDONESIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -28,7 +28,7 @@
     "meta": {
       "inputPhoneNumber": "6285893641388",
       "cleansedPhoneNumber": "+6285893641388",
-      "referenceId": "Dpi_sep_10_a_3",
+      "referenceId": "Dpi_sep_10_release_5",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -44,7 +44,7 @@
         "city": "",
         "state": "",
         "postalCode": "",
-        "country": "ID"
+        "country": "INDONESIA"
       },
       "inputPhoneDefaultCountryCode": "ID"
     },

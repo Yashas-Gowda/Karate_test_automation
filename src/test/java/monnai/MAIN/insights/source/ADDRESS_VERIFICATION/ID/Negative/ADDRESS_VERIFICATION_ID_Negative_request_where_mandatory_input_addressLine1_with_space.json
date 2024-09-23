@@ -12,7 +12,7 @@
       "province": "",
       "postalCode": "",
       "state": "",
-      "country": "ID"
+      "country": "INDONESIA"
     },
     "packages": [
       "ADDRESS_VERIFICATION"
@@ -44,7 +44,7 @@
         "city": "",
         "state": "",
         "postalCode": "",
-        "country": "ID"
+        "country": "INDONESIA"
       },
       "inputPhoneDefaultCountryCode": "ID"
     },

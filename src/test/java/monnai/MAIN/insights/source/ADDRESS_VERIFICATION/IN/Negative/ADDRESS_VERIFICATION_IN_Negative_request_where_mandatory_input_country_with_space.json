@@ -51,7 +51,7 @@
     "errors": [
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "address.country is missing",
+        "message": "Country in address cannot be blank/null",
         "code": "MISSING_COUNTRY",
         "type": "INVALID_INPUT"
       }
