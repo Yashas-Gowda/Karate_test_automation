@@ -1,13 +1,18 @@
-@EMAIL_SOCIAL_FIDOV1 @ignore
+@EMAIL_SOCIAL_FIDOV1
+  #@ignore
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   Background:
     * configure charset = null
     * path '/api/insights/'
-    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
+    #    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
+    #    * def BearerToken = authFeature.authToken
+    * def authFeature = call read('classpath:monnai/Auth_Token_Generation_fidoV1_social_parallel.feature')
     * def BearerToken = authFeature.authToken
+    * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
+    * print Custom_env_authFeature_tenant_config
 
   # Automated by Yashas on proof of Manual sign off (Sameena) - 29 dec 2023
-  # Automated by Yashas by yashas on 11 march 2024
+  # Automated by Yashas on 11 march 2024
 
   # automation ticket - https://monnai.atlassian.net/browse/MB-3908
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
@@ -88,9 +93,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false | 200        |
+      | Scenario                                                     | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true    | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false   | 200        |
       #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_false | 200        |
@@ -127,13 +132,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                         | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true       | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo             |200 |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender             |200 |
+      | Scenario                                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true             | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false            | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo        | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
 
 
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider - yahoo   - <Scenario>
@@ -196,13 +201,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                    | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true      | 200        |
+      | Scenario                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false    | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true       | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_true      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_false | 200        |
 
 
   #fido gives socialMedia profiles{facebook,instagram,pinterest,twitter, gravatar with photo}
@@ -235,13 +240,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true                           | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false                          | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false                     | 200        |
+      | Scenario                                                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false | 200        |
       #  Data not found   | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_without_photo                     | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                     | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_false                     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                        | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_false                                  | 200        |
 
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia - instagram  - <Scenario>
   #    Given url requestUrl
@@ -396,12 +401,12 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
+      | Scenario                                                                                             | statusCode |
       # data not found     | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_without_other_skype_data_points | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country   | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id                    | 200        |
       #  https://monnai.atlassian.net/browse/MB-3818 | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_photo | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                                     | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                                                  | 200        |
 
 
   #fido gives list for professional profiles {wordpress,linkedin,microsoft,hubspot}
@@ -439,10 +444,10 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true                 | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_null                | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_null  | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - wordpress <Scenario>
     Given url requestUrl
@@ -473,9 +478,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_true                 | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_false                | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_false | 200        |
 
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - linkedin <Scenario>
@@ -507,10 +512,10 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
+      | Scenario                                              | statusCode |
       # Data Not found     | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_true                 | 200        |
       # Data Not found      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null                | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - microsoft <Scenario>
     Given url requestUrl
@@ -541,8 +546,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_true                 | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_false | 200        |
   #  100% coverage - so not possible to get null    | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_null                | 200        |
 
@@ -575,8 +580,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_true                 | 200        |
+      | Scenario                                              | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_false | 200        |
   #  100% coverage - so not possible to get null     | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_null                | 200        |
 
@@ -681,11 +686,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true | 200        |
+      | Scenario                                           | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true   | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null   | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 
   #fido gives only {duolingo} as education profiles | registeredEducationProfiles <= 1
@@ -718,7 +723,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                   | statusCode |
+      | Scenario                                            | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_false | 200        |
   #  Data not found    | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |

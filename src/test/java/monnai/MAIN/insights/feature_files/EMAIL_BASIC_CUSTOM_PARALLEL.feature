@@ -6,7 +6,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
   Background:
     * configure charset = null
     * path '/api/insights/'
-    * def authFeature = call read('classpath:monnai/Auth_Token_Generation_parallel.feature')
+    * def authFeature = call read('classpath:monnai/Auth_Token_Generation_email_custom_tenant_parallel.feature')
     * def BearerToken = authFeature.authToken
     * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
     * print Custom_env_authFeature_tenant_config
