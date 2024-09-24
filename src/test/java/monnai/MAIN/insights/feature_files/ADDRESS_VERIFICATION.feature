@@ -231,7 +231,7 @@
         | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_1001_2000 | 200        |
         | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000 | 200        |
 
-    @ADDRESS_VERIFICATION_ID @ADDRESS_VERIFICATION_test_1
+    @ADDRESS_VERIFICATION_ID
     Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
       Given url requestUrl
       And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -269,7 +269,7 @@
         #     https://monnai.atlassian.net/browse/MB-6658
         | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_packageDetails_S2101_when_dp_closest_distance_null | 200        |
 
-    @ADDRESS_VERIFICATION_ID @ADDRESS_VERIFICATION_test_1
+    @ADDRESS_VERIFICATION_ID
     Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
       Given url requestUrl
       And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -379,8 +379,8 @@
 
 
     # For mock used this  'Content-Type' ---->  * header Content-Type = 'application/vnd.monnai.mock+json'
-
-    #  @ADDRESS_VERIFICATION_IN @ADDRESS_VERIFICATION_mock @mock
+    #    Adding test cases using mock for this package is paused as there is issue in adding mock for thie packaghe which will fixed by aman later in up comming sprint
+    #  @ADDRESS_VERIFICATION_IN @ADDRESS_VERIFICATION_moc
     #  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india with Mock <Scenario>
     #    Given url requestUrl
     #    And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/IN/<Scenario>.json")
@@ -412,7 +412,7 @@
     #      | Scenario                                                                                                                                                       | statusCode |
     #      #    case 1
     ##      | ADDRESS_VERIFICATION_IN_positive_request_phone_address_response_phoneMatch_addressMatch_phoneAndAddressMatch_MATCH_addressVisited_true_with_addressLastVisited | 200        |
-    #
+
 
 
 

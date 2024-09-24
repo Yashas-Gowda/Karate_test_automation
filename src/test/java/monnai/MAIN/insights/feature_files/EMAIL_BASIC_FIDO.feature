@@ -8,7 +8,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")

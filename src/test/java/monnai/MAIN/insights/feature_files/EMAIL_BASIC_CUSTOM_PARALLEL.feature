@@ -63,7 +63,6 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
     * def result = call read('Update_tenant_config.feature@Update_tenant_config_partners') custom_tenant_config
     * def result = call read('Update_tenant_config.feature@get_tenant_config_after_update') { _custom_tenant_id : '#(custom_tenant_id)' }
 
-  @second @smokeTest @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
@@ -124,7 +123,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
       | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                               | 200        |
 
-  @second @smokeTest @smokeTest
+
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
@@ -180,49 +179,6 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Scenario                                                                                                                 | statusCode |
       | Email_Basic_Positive_disposable_false_deliverable_true_noOfBreaches_16_EmailTenure_Present_in_double_digit               | 200        |
       | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_more_than_7_emailTenure_notnull_double_digit | 200        |
-
-  #  #rerun if deliverable is null
-  #  @email_basic_custom_test1
-  #  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure notnull  :- <Scenario>
-  #    Given url requestUrl
-  #    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
-  #    And headers headers
-  #    And header Authorization = BearerToken
-  #    And request payload.request
-  #    * set payload.response.meta.referenceId = "#ignore"
-  #
-  #    When method POST
-  #    # cloud watch traces -start
-  #    * print karate.request.headers
-  #    * print karate.response.headers
-  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-  #    * def reference_id = karate.request.headers['x-reference-id']
-  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  #    # ResponseTime
-  #    * print 'responseTime----->',responseTime
-  #    # Request-response
-  #    * print 'API Request----->',payload.request
-  #    * print 'Expected Response---->',payload.response
-  #    * print 'Actual Response---->',karate.pretty(response)
-  #    * match $.data.email.basic.domainDetails.creationTime == "#regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
-  #    #    * match $.data.email.basic.domainDetails.updateTime == "#null";
-  #    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
-  #    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
-  #    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
-  #    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-  #    Then status <statusCode>
-  #    Then match $.data.email.basic contains payload.response.data.email.basic
-  #    * match  $.meta contains  payload.response.meta
-  #    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-  #    * match  $.errors contains only deep  payload.response.errors
-  #
-  #    Examples:
-  #      | Scenario                                                                                                                 | statusCode |
-  ##      | Email_Basic_deliverable_false_disposable_false_isBreached_true_noOfBreaches_more_than_7_emailTenure_notnull_double_digit | 200        |
-  ##      | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                                        | 200        |
-  ##      | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                               | 200        |
-  ##      | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                                        | 200        |
 
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- <Scenario>
@@ -447,8 +403,6 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Email_Basic_Possitive_withTLD&DomainOurearch(abc@ourearth.com)_creationTime_disposable_acceptAll_null_false_noOfBreaches_3_emailTenure_notnull | 200        |
 
   # $.data.email.basic.domainDetails.acceptAll might come as null so rerun -sc48
-  ## Check this
-  @smokeTest
   Scenario Outline:  DPI EMAIL_BASIC positive scenario where emailTenure = null :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
@@ -504,44 +458,42 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Email_Basic_Positive_isBreached_false_noOfBreaches_0 | 200        |
   #no data | Email_Basic_Positive_CustomDomain_True | 200        |
 
-  #
-  #  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | :- <Scenario>
-  #    Given url requestUrl
-  #    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
-  #    And headers headers
-  #    And header Authorization = BearerToken
-  #    And request payload.request
-  #    * set payload.response.meta.referenceId = "#ignore"
-  #    * set payload.response.data.email.basic.emailTenure = "#null"
-  #    When method POST
-  #    # cloud watch traces -start
-  #    * print karate.request.headers
-  #    * print karate.response.headers
-  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-  #    * def reference_id = karate.request.headers['x-reference-id']
-  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  #    # ResponseTime
-  #    * print 'responseTime----->',responseTime
-  #    # Request-response
-  #    * print 'API Request----->',payload.request
-  #    * print 'Expected Response---->',payload.response
-  #    * print 'Actual Response---->',karate.pretty(response)
-  #    Then status <statusCode>
-  #    * match $.data.email.basic.domainDetails.creationTime == "#null"
-  #    #    * match $.data.email.basic.domainDetails.updateTime =="#null";
-  #    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
-  #    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
-  #    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
-  #    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
-  #    Then match $.data.email.basic contains payload.response.data.email.basic
-  #    * match  $.meta contains  payload.response.meta
-  #    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-  #    * match  $.errors contains only deep  payload.response.errors
-  #    Examples:
-  #      | Scenario | statusCode |
-  #  #data no| Email_Basic_custom_true | 200        |
-
+  Scenario Outline:  DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with creationTime is null | :- <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.email.basic.emailTenure = "#null"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.email.basic.domainDetails.creationTime == "#null"
+    #    * match $.data.email.basic.domainDetails.updateTime =="#null";
+    #    * match $.data.email.basic.domainDetails.expiryTime == "#null";
+    * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
+    Then match $.data.email.basic contains payload.response.data.email.basic
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario | statusCode |
+  #data no| Email_Basic_custom_true | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC Negitive senario with invalid input :- <Scenario>
     Given url requestUrl

@@ -45,8 +45,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                             | statusCode |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1            | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1_without_91 | 200        |
-
-  @EMPLOYMENT_BASIC_test_1
+      
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")

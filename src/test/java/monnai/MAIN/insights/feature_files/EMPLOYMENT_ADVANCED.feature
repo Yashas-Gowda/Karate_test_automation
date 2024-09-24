@@ -1,7 +1,5 @@
 @EMPLOYMENT_ADVANCED
 Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
-  # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
-  # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
   # EMPLOYMENT_BASIC and EMPLOYMENT_ADVANCED package manual sign off was given by Anjan and AUTOMATION is done by Yashas.
   #SOCIAL_LINKS will be there in the subpackage of EMPLOYMENT_DETAILS package where UAN_BASIC and UAN_ADVANCED are disabled.
   #  (Manual sign off given by Anjan)
@@ -109,14 +107,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * match each $.data.employment.advanced.employmentHistory contains {"reasonOfExit": "##string"}
     #    Then match each $.data.employment.advanced.employmentHistory == payload.response.data.employment.advanced.employmentHistory
     Then match $.data.employment.advanced.employmentHistory contains only deep payload.response.data.employment.advanced.employmentHistory
-    #    Then match $.data.employment.advanced.employmentHistory contains any payload.response.data.employment.advanced.employmentHistory
-    #
-    #    Then match $.data.employment.advanced.employmentHistory[0] contains deep payload.response.data.employment.advanced.employmentHistory[0]
-    #    Then match $.data.employment.advanced.employmentHistory[1] contains deep payload.response.data.employment.advanced.employmentHistory[1]
-    #    Then match $.data.employment.advanced.employmentHistory[2] contains deep payload.response.data.employment.advanced.employmentHistory[2]
-    #    Then match $.data.employment.advanced.employmentHistory[3] contains deep payload.response.data.employment.advanced.employmentHistory[3]
-    #    Then match $.data.employment.advanced.employmentHistory[4] contains deep payload.response.data.employment.advanced.employmentHistory[4]
-
     * def pfHistory = $.data.employment.advanced.pfFilingDetails.employeePfMatches[0].pfHistory
     * print pfHistory
     * def pfHistory_keys = []
@@ -148,7 +138,6 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | Scenario                                                     | statusCode |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_1 | 200        |
       # Bug https://monnai.atlassian.net/browse/MB-3800,MB-3001
-
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_2 | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_3 | 200        |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_true_noOfPfAccounts_4 | 200        |
@@ -184,33 +173,8 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.data.employment.advanced.employmentHistory[*].reasonOfExit = "#ignore"
     * print 'Expected Response---->',payload.response
     * match each $.data.employment.advanced.employmentHistory contains {"reasonOfExit": "##string"}
-    #    Then match each $.data.employment.advanced.employmentHistory == payload.response.data.employment.advanced.employmentHistory
     Then match $.data.employment.advanced.employmentHistory contains only deep payload.response.data.employment.advanced.employmentHistory
-    #    Then match $.data.employment.advanced.employmentHistory contains any payload.response.data.employment.advanced.employmentHistory
-    #
-    #    Then match $.data.employment.advanced.employmentHistory[0] contains deep payload.response.data.employment.advanced.employmentHistory[0]
-    #    Then match $.data.employment.advanced.employmentHistory[1] contains deep payload.response.data.employment.advanced.employmentHistory[1]
-    #    Then match $.data.employment.advanced.employmentHistory[2] contains deep payload.response.data.employment.advanced.employmentHistory[2]
-    #    Then match $.data.employment.advanced.employmentHistory[3] contains deep payload.response.data.employment.advanced.employmentHistory[3]
-    #    Then match $.data.employment.advanced.employmentHistory[4] contains deep payload.response.data.employment.advanced.employmentHistory[4]
 
-    #    * def pfHistory = $.data.employment.advanced.pfFilingDetails.employeePfMatches[0].pfHistory
-    #    * print pfHistory
-    #    * def pfHistory_keys = []
-    #    * def pfHistory_vals = []
-    #    * def fun =
-    #      """
-    #      function(x, y) {
-    #        karate.appendTo(pfHistory_keys, x);
-    #        karate.appendTo(pfHistory_vals, y);
-    #      }
-    #      """
-    #    * karate.forEach (pfHistory,fun)
-    #    * print pfHistory_keys
-    #    * print pfHistory_vals
-    #    * def wageMonths = get $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails[*].wageMonth
-    #    * print wageMonths
-    #    * match pfHistory_keys contains only wageMonths
 
     * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "currency": "INR"}
     * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "totalAmount":'#? _ >=1'}
@@ -256,33 +220,10 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * set payload.response.data.employment.advanced.employmentHistory[*].reasonOfExit = "#ignore"
     * print 'Expected Response---->',payload.response
     * match each $.data.employment.advanced.employmentHistory contains {"reasonOfExit": "##string"}
-    #    Then match each $.data.employment.advanced.employmentHistory == payload.response.data.employment.advanced.employmentHistory
-    #    Then match $.data.employment.advanced.employmentHistory contains only deep payload.response.data.employment.advanced.employmentHistory
-
     Then match $.data.employment.advanced.employmentHistory[0] contains deep payload.response.data.employment.advanced.employmentHistory[0]
     Then match $.data.employment.advanced.employmentHistory[1] contains deep payload.response.data.employment.advanced.employmentHistory[1]
     Then match $.data.employment.advanced.employmentHistory[2] contains deep payload.response.data.employment.advanced.employmentHistory[2]
     Then match $.data.employment.advanced.employmentHistory[3] contains deep payload.response.data.employment.advanced.employmentHistory[3]
-    #    Then match $.data.employment.advanced.employmentHistory[4] contains deep payload.response.data.employment.advanced.employmentHistory[4]
-
-    #    * def pfHistory = $.data.employment.advanced.pfFilingDetails.employeePfMatches[0].pfHistory
-    #    * print pfHistory
-    #    * def pfHistory_keys = []
-    #    * def pfHistory_vals = []
-    #    * def fun =
-    #      """
-    #      function(x, y) {
-    #        karate.appendTo(pfHistory_keys, x);
-    #        karate.appendTo(pfHistory_vals, y);
-    #      }
-    #      """
-    #    * karate.forEach (pfHistory,fun)
-    #    * print pfHistory_keys
-    #    * print pfHistory_vals
-    #    * def wageMonths = get $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails[*].wageMonth
-    #    * print wageMonths
-    #    * match pfHistory_keys contains only wageMonths
-
     * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "currency": "INR"}
     * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "totalAmount":'#? _ >=1'}
     * match each $.data.employment.advanced.pfFilingDetails.employerPfFilingDetails contains { "employeeCount":'#? _ >=1'}

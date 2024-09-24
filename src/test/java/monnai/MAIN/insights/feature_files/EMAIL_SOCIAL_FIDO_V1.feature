@@ -283,7 +283,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                        | 200        |
+    Examples:
+      | Scenario                                                        | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo | 200        |
+
+  #      Below socialMedia realeted scanarios are covered in the above test cases, so commented the old test cases
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia - instagram  - <Scenario>
   #    Given url requestUrl
   #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/socialMedia/<Scenario>.json")
@@ -437,11 +441,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                             | statusCode |
+      | Scenario                                                                          | statusCode |
       # data not found     | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_without_other_skype_data_points | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id                    | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id | 200        |
       #  https://monnai.atlassian.net/browse/MB-3818 | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_photo | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                                                  | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                               | 200        |
 
 
 
@@ -694,37 +698,37 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   # no data     | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_disneyplus_null | 200        |
 
 
-#  fido gives only { booking}  travel profiles | registeredTravelProfiles <= 1
-    Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel (dynamic in both FIdo V1 and V2)  - <Scenario>
-      Given url requestUrl
-      And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/travel/<Scenario>.json")
-      And headers headers
-      And header Authorization = BearerToken
-      And request payload.request
-      * set payload.response.meta.referenceId = "#ignore"
-      When method POST
+  #  fido gives only { booking}  travel profiles | registeredTravelProfiles <= 1
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel (dynamic in both FIdo V1 and V2)  - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/travel/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
     # cloud watch traces -start
-      * print karate.request.headers
-      * print karate.response.headers
-      * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-      * def reference_id = karate.request.headers['x-reference-id']
-      * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-      * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
     # ResponseTime
-      * print 'responseTime----->',responseTime
+    * print 'responseTime----->',responseTime
     # Request-response
-      * print 'API Request----->',payload.request
-      * print 'Expected Response---->',payload.response
-      * print 'Actual Response---->',karate.pretty(response)
-      Then status <statusCode>
-      * match payload.response.data.email.social.summary.registeredTravelProfiles ==  "#notpresent"
-      * match payload.response.data.email.social.profiles.travel == "#notpresent"
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredTravelProfiles ==  "#notpresent"
+    * match payload.response.data.email.social.profiles.travel == "#notpresent"
 
-      * match  $.meta contains  payload.response.meta
-      * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-      * match  $.errors contains only deep  payload.response.errors
-      Examples:
-        | Scenario                                  | statusCode |
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario | statusCode |
   # no data       | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
