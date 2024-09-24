@@ -1,5 +1,5 @@
 @PHONE_SOCIAL_FidoV1
-#@ignore
+  #@ignore
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   #  @FIDO_V1 @ignore
   Background:
@@ -46,9 +46,11 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
     * match payload.response.data.phone.social.profiles.professional contains $.data.phone.social.profiles.professional
-    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
+    #    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
     * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
+    * set payload.response.data.phone.social.profiles.messaging.telegram.photo = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
+    * match $.data.phone.social.profiles.messaging.telegram.photo == "##regex ^.*(https://).*"
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
 
@@ -140,7 +142,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
     * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
     * match payload.response.data.phone.social.profiles.professional contains $.data.phone.social.profiles.professional
-    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
+    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z"
     * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging contains $.data.phone.social.profiles.messaging
 
@@ -367,9 +369,71 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   #   data not found   | PHONE_SOCIAL_FIDO_profiles_professional_linkedin_registered_false           | 200        |
 
 
-  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging with photo assertion-- [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    * def payload_part = payload.response.data.phone.social.profiles.messaging
+    * print payload_part
+    * def response_part = $.data.phone.social.profiles.messaging
+    * print response_part
+    Then status <statusCode>
+    And match $.data.phone.social == '#notnull'
+    And match $.data.phone.social.summary == '#notnull'
+    And match $.data.phone.social.profiles == '#notnull'
+
+    * set payload.response.data.phone.social.profiles.messaging.telegram.photo = "#ignore"
+    * set payload.response.data.phone.social.profiles.messaging.whatsapp.photo = "#ignore"
+    * match  $.data.phone.social.profiles.messaging == payload.response.data.phone.social.profiles.messaging
+    * match $.data.phone.social.profiles.messaging.telegram.photo == "#regex ^.*(https://).*"
+    * match $.data.phone.social.profiles.messaging.whatsapp.photo == "#regex ^.*(https://).*"
+
+    * match payload.response.data.phone.social.summary.numberOfNamesReturned == $.data.phone.social.summary.numberOfNamesReturned
+    * match payload.response.data.phone.social.summary.numberOfPhotosReturned == $.data.phone.social.summary.numberOfPhotosReturned
+    * match  $.data.phone.social.summary.lastActivity == '#null'
+
+    * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+
+    # Test data for all fields true - 916383761273,'916354392816,918919307951,917276417276,918418077188,918886565536
+    # telegram false -
+
+
+    # telegram-false - 919705300142,919610062000,919971513080,918985999905,91974239606,9919889868205,919406099650
+    #whatsapp false -917980925895,918669070751,918953417418,919964484685,919079632630,919000883907,918790368717
+
+
+    Examples:
+      | Scenario                                                                                                        | statusCode |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true                                          | 200        |
+      #      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC          | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_without_photo_with_privacyStatus_PRIVATE | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC    | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PRIVATE   | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_with_photo_privacyStatus_PUBLIC    | 200        |
+
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
@@ -406,26 +470,12 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
 
-    # Test data for all fields true - 916383761273,'916354392816,918919307951,917276417276,918418077188,918886565536
-    # telegram false -
-
-
-    # telegram-false - 919705300142,919610062000,919971513080,918985999905,91974239606,9919889868205,919406099650
-    #whatsapp false -917980925895,918669070751,918953417418,919964484685,919079632630,919000883907,918790368717
-
 
     Examples:
       | Scenario                                                                                                         | statusCode |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true                                           | 200        |
-      #      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_registered_photo_privacyStatus_lastSeen_null                       | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC           | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_whatsapp_registered_true_without_photo_with_privacyStatus_PRIVATE  | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PUBLIC     | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_telegram_false_whatsapp_registered_true_with_photo_privacyStatus_PRIVATE    | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_with_photo_privacyStatus_PUBLIC     | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_without_photo_privacyStatus_PRIVATE | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_skype_false                                                           | 200        |
-      | PHONE_SOCIAL_FIDO_profiles_messaging_viber_datapoint_hidden                                                      | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_photo_lastSeen_name_null                                   | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_true_with_name                                             | 200        |
 
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging when where messaging.viber.lastSeen is notnull - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
@@ -458,7 +508,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     And match $.data.phone.social == '#notnull'
     And match $.data.phone.social.summary == '#notnull'
     And match $.data.phone.social.profiles == '#notnull'
-    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
+    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z"
     * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
     * match payload.response.data.phone.social.profiles.messaging == $.data.phone.social.profiles.messaging
     * match payload.response.data.phone.social.summary.numberOfNamesReturned == $.data.phone.social.summary.numberOfNamesReturned

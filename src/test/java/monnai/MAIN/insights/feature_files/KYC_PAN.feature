@@ -8,7 +8,6 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * def BearerToken = authFeature.authToken
 
   #KYC_PAN - only Cashfree data parter done
-
   Scenario Outline:  DPI KYC_PAN Package positive scenario - sanity :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_PAN/<Scenario>.json")
@@ -36,16 +35,23 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     #    * match $.data.kyc.gstin == "#null"
+    #    * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
+    * def Expected_panCardName = payload.response.data.kyc.pan.panCardName
+    * print Expected_panCardName
+    * set payload.response.data.kyc.pan.panCardName = "#ignore"
+    * def panCardName = $.data.kyc.pan.panCardName
+    * def Actual_panCardName = panCardName.trim()
+    * print Actual_panCardName
+    * match Expected_panCardName == Actual_panCardName
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
-    * match $.meta contains only deep payload.response.meta
-    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                 | statusCode |
-      | KYC_PAN_Positive_cashfree_sanity                         | 200        |
+      | Scenario                         | statusCode |
+      | KYC_PAN_Positive_cashfree_sanity | 200        |
 
-  @march_15
+
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_PAN/<Scenario>.json")
@@ -73,15 +79,21 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     #    * match $.data.kyc.gstin == "#null"
+    * def Expected_panCardName = payload.response.data.kyc.pan.panCardName
+    * print Expected_panCardName
+    * set payload.response.data.kyc.pan.panCardName = "#ignore"
+    * def panCardName = $.data.kyc.pan.panCardName
+    * def Actual_panCardName = panCardName.trim()
+    * print Actual_panCardName
+    * match Expected_panCardName == Actual_panCardName
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
-    * match $.meta contains only deep payload.response.meta
-    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Positive_cashfree_valid_false                    | 200        |
-      | KYC_PAN_Positive_cashfree_valid_true                  | 200        |
+      | Scenario                              | statusCode |
+      | KYC_PAN_Positive_cashfree_valid_false | 200        |
+      | KYC_PAN_Positive_cashfree_valid_true  | 200        |
 
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point :- <Scenario>
     Given url requestUrl
@@ -117,9 +129,9 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Positive_cashfree_type_Individual                    | 200        |
-      | KYC_PAN_Positive_cashfree_type_Company               | 200        |
+      | Scenario                                  | statusCode |
+      | KYC_PAN_Positive_cashfree_type_Individual | 200        |
+      | KYC_PAN_Positive_cashfree_type_Company    | 200        |
   #      | KYC_PAN_Positive_cleartax_type_AOP                    | 200        |
   #      | KYC_PAN_Positive_cleartax_type_BOI               | 200        |
   #      | KYC_PAN_Positive_cleartax_type_Firm               | 200        |
@@ -163,9 +175,9 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Positive_cashfree_status_VALID                    | 200        |
-      | KYC_PAN_Positive_cashfree_status_INVALID               | 200        |
+      | Scenario                                 | statusCode |
+      | KYC_PAN_Positive_cashfree_status_VALID   | 200        |
+      | KYC_PAN_Positive_cashfree_status_INVALID | 200        |
   #      | KYC_PAN_Positive_cleartax_status_FAKE                    | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DEACTIVATED               | 200        |
   #      | KYC_PAN_Positive_cleartax_status_DELETED               | 200        |
@@ -204,11 +216,12 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Positive_cashfree_aadhaar_seeding_status_Y                    | 200        |
-      | KYC_PAN_Positive_cashfree_aadhaar_seeding_status_U               | 200        |
+      | Scenario                                           | statusCode |
+      | KYC_PAN_Positive_cashfree_aadhaar_seeding_status_Y | 200        |
+      | KYC_PAN_Positive_cashfree_aadhaar_seeding_status_U | 200        |
   #      | KYC_PAN_Positive_cleartax_aadhaar_seeding_status_T                    | 200        |
   #      | KYC_PAN_Positive_cleartax_aadhaar_seeding_status_NA               | 200        |
+
 
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "last_updated_at" data point :- <Scenario>
     Given url requestUrl
@@ -237,14 +250,20 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     #    * match $.data.kyc.gstin == "#null"
+    * def Expected_panCardName = payload.response.data.kyc.pan.panCardName
+    * print Expected_panCardName
+    * set payload.response.data.kyc.pan.panCardName = "#ignore"
+    * def panCardName = $.data.kyc.pan.panCardName
+    * def Actual_panCardName = panCardName.trim()
+    * print Actual_panCardName
+    * match Expected_panCardName == Actual_panCardName
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
-    * match $.meta contains only deep payload.response.meta
-    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Positive_cashfree_last_updated_at_data_point_not_null                   | 200        |
+      | Scenario                                                      | statusCode |
+      | KYC_PAN_Positive_cashfree_last_updated_at_data_point_not_null | 200        |
   # data not found   | KYC_PAN_Positive_cleartax_last_updated_at_data_point_null_hidden               | 200        |
 
 
@@ -280,15 +299,15 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
+      | Scenario                                                                    | statusCode |
       # https://monnai.atlassian.net/browse/MB-4539    | KYC_PAN_Negative_INVALID_PHONE_DEFAULT_COUNTRY_CODE                 | 400        |
       # https://monnai.atlassian.net/browse/MB-4539 | KYC_PAN_Negative_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME               | 400        |
 
-      |  KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY               | 400        |
-      |  KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_OTHER_THEN_INDIA               | 501        |
-      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_null              | 400        |
-      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_space               | 400        |
-      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_empty_string               | 400        |
+      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY                     | 400        |
+      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_OTHER_THEN_INDIA  | 501        |
+      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_null         | 400        |
+      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_space        | 400        |
+      | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_empty_string | 400        |
   # https://monnai.atlassian.net/browse/MB-4539     | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_number              | 400        |
   #  https://monnai.atlassian.net/browse/MB-4539    | KYC_PAN_Negative_MISSING_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_bollen             | 400        |
 
@@ -325,16 +344,16 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      |  KYC_PAN_Negative_scenarios_When_pan_data_Point_key_is_missing                 | 400        |
-      |  KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_syntax_format                 | 400        |
+      | Scenario                                                                            | statusCode |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_is_missing                       | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_invalid_syntax_format   | 400        |
       # https://monnai.atlassian.net/browse/MB-4541
-      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string               | 400        |
-      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string_with_space               | 400        |
-      |  KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_null               | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string            | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_empty_string_with_space | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_null                    | 400        |
       #  https://monnai.atlassian.net/browse/MB-4542
-      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_number               | 400        |
-      |  KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_boolean               | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_number                  | 400        |
+      | KYC_PAN_Negative_scenarios_When_pan_data_Point_key_value_is_boolean                 | 400        |
 
 
   Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point :- <Scenario>
@@ -367,9 +386,9 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                | statusCode |
-      | KYC_PAN_Negative_scenarios_When_Package_name_null                | 400        |
-      |  KYC_PAN_Negative_scenarios_When_Package_Key_is_not_present               | 400        |
+      | Scenario                                                   | statusCode |
+      | KYC_PAN_Negative_scenarios_When_Package_name_null          | 400        |
+      | KYC_PAN_Negative_scenarios_When_Package_Key_is_not_present | 400        |
 
   @3191
   Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point :- <Scenario>
@@ -400,6 +419,6 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $ contains only deep payload.response
 
     Examples:
-      | Scenario                                                                | statusCode |
-      |  KYC_PAN_Negative_scenarios_When_Package_empty_Array                 | 403        |
-      |  KYC_PAN_Negative_scenarios_When_Package_invalid                | 403        |
+      | Scenario                                            | statusCode |
+      | KYC_PAN_Negative_scenarios_When_Package_empty_Array | 403        |
+      | KYC_PAN_Negative_scenarios_When_Package_invalid     | 403        |

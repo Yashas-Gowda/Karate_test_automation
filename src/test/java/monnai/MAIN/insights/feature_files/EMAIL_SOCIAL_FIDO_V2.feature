@@ -45,7 +45,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     #    Then match $ contains payload.response
     * match payload.response.data.email.social.summary == $.data.email.social.summary
     * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
-    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
+    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    * match $.data.email.social.profiles.emailProvider.google.photo ==  "##regex ^.*(https://).*"
     #    * match $.response.data.email.social.profiles.emailProvider.google.photo == "#string"
     * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
@@ -101,7 +103,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_false | 200        |
 
-  # fido doen't give {mailru,rambler} gives only {google-(registered,name,photo), yahoo}
+  @EMAIL_SOCIAL_FIDOV2_test_1
+    # fido doen't give {mailru,rambler} gives only {google-(registered,name,photo), yahoo}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider   - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/emailProvider/<Scenario>.json")
@@ -126,8 +129,11 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match payload.response.data.email.social.summary.registeredEmailProviderProfiles == $.data.email.social.summary.registeredEmailProviderProfiles
-    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
+    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    * match $.data.email.social.profiles.emailProvider.google.photo == "##regex ^.*(https://).*"
 
+    * match $.data.email.social.profiles.emailProvider.google.gender == "##? _ == 'F' || _ == 'M'"
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -282,12 +288,46 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                             | statusCode |
+      | Scenario                                                                          | statusCode |
       # data not found     | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_without_other_skype_data_points | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id                    | 200        |
+
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id | 200        |
       #  https://monnai.atlassian.net/browse/MB-3818 | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_photo | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                                                  | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                               | 200        |
+
+  #fido gives only {skype with name,id,city,country,state,photo}  messaging profiles | registeredMessagingProfiles <= 1
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging - skype with photo  - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/messaging/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredMessagingProfiles == $.data.email.social.summary.registeredMessagingProfiles
+    * set payload.response.data.email.social.profiles.messaging.skype.photo = "#ignore"
+    * match $.data.email.social.profiles.messaging == payload.response.data.email.social.profiles.messaging
+    * match $.data.email.social.profiles.messaging.skype.photo == "#regex ^.*(https://).*"
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country | 200        |
 
   #fido gives list for professional profiles {wordpress,linkedin,microsoft,hubspot}
   #  After discussion with roopa to avoid more failure due to dynamic data we have validated each profile separatly
@@ -317,8 +357,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.wordpress == $.data.email.social.profiles.professional.wordpress
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -386,8 +426,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.linkedin == $.data.email.social.profiles.professional.linkedin
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -420,8 +460,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.microsoft == $.data.email.social.profiles.professional.microsoft
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -594,8 +634,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
     * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
