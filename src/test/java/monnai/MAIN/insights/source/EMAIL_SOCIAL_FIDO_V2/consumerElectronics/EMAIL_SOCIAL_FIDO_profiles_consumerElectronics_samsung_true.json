@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "mohdshahid2505@gmail.com"
+    "email": "MEGHA.GOLECHA@GMAIL.COM"
   },
   "response": {
     "data": {
@@ -13,25 +12,25 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 7,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 10,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 2,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 1
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
           },
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
               "samsung": {
                 "registered": true
@@ -40,9 +39,8 @@
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Mohd Shahid",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/19a56dcc/7c11/4556/8ed8/2d65d2f6a804/ae19c8fb-a5c6-4274-9bff-8d4a82210cac.jpg",
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
@@ -88,7 +86,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
@@ -171,7 +169,7 @@
                 "registered": false
               },
               "linkedin": {
-                "registered": false,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -244,9 +242,6 @@
             "financial": {
               "paypal": {
                 "registered": false
-              },
-              "binance": {
-                "registered": false
               }
             },
             "education": {
@@ -256,7 +251,8 @@
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -271,16 +267,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "fa20f006-dc65-4118-8ac6-f0211845959d",
-      "inputEmail": "mohdshahid2505@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "MEGHA.GOLECHA@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

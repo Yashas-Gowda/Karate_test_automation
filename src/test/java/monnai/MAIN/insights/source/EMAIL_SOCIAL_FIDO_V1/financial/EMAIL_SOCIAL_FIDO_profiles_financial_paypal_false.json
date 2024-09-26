@@ -32,7 +32,9 @@
               "apple": {
                 "registered": false
               },
-              "samsung": null
+              "samsung": {
+                "registered": null
+              }
             },
             "emailProvider": {
               "google": {
@@ -44,8 +46,12 @@
               "yahoo": {
                 "registered": false
               },
-              "mailru": null,
-              "rambler": null
+              "mailru": {
+                "registered": null
+              },
+              "rambler": {
+                "registered": null
+              }
             },
             "ecommerce": {
               "amazon": {
@@ -53,6 +59,21 @@
               },
               "ebay": {
                 "registered": false
+              },
+              "flipkart": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "lazada": {
+                "registered": null
+              },
+              "tokopedia": {
+                "registered": null
               },
               "deliveroo": {
                 "registered": false
@@ -68,11 +89,36 @@
               "instagram": {
                 "registered": false
               },
+              "flickr": {
+                "registered": null,
+                "username": null
+              },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
                 "registered": false
+              },
+              "tumblr": {
+                "registered": null
+              },
+              "weibo": {
+                "registered": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": null
+              },
+              "quora": {
+                "registered": null
+              },
+              "qzone": {
+                "registered": null
               },
               "gravatar": {
                 "registered": false,
@@ -80,6 +126,15 @@
                 "name": null,
                 "profileUrl": null,
                 "username": null
+              },
+              "foursquare": {
+                "registered": null,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": null
               }
             },
             "messaging": {
@@ -97,12 +152,22 @@
                 "country": null,
                 "photo": null
               },
-              "discord": null,
-              "kakao": null
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
             },
             "professional": {
+              "github": {
+                "registered": null
+              },
               "wordpress": {
                 "registered": false
+              },
+              "atlassian": {
+                "registered": null
               },
               "linkedin": {
                 "registered": null,
@@ -116,8 +181,17 @@
                 "photo": null,
                 "connectionCount": null
               },
+              "evernote": {
+                "registered": null
+              },
               "microsoft": {
                 "registered": false
+              },
+              "zoho": {
+                "registered": null
+              },
+              "adobe": {
+                "registered": null
               },
               "hubspot": {
                 "registered": false
@@ -127,8 +201,26 @@
               "spotify": {
                 "registered": false
               },
+              "lastfm": {
+                "registered": null
+              },
+              "vimeo": {
+                "registered": null
+              },
+              "envato": {
+                "registered": null
+              },
+              "patreon": {
+                "registered": null
+              },
               "disneyplus": {
                 "registered": false
+              },
+              "netflix": {
+                "registered": null
+              },
+              "archiveorg": {
+                "registered": null
               }
             },
             "travel": {
@@ -181,12 +273,13 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_march_6_upi_1",
+      "referenceId": "702bb20c-c1ac-4d98-8998-4ae9a23b7732",
       "inputEmail": "kalyani001989@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

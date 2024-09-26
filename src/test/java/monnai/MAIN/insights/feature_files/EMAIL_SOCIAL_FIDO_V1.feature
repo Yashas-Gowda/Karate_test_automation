@@ -45,7 +45,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match payload.response.data.email.social.summary == $.data.email.social.summary
     * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
     * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * set payload.response.data.email.social.profiles.emailProvider.google.gender = "#ignore"
     * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    #    * match $.data.email.social.profiles.emailProvider.google contains {"gender":"##? _ == 'F' || _ == 'M'"}
     * match $.data.email.social.profiles.emailProvider.google.photo ==  "##regex ^.*(https://).*"
     * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
@@ -65,7 +67,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Email_Social_sanity_V1 | 200        |
 
   #      in consumerElectronics , fido gives only apple and not samsung
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics   - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics - apple  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/consumerElectronics/<Scenario>.json")
     And headers headers
@@ -87,17 +89,59 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
-    * match payload.response.data.email.social.summary.registeredConsumerElectronicsProfiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
+    * def consumerElectronics = $.data.email.social.profiles.consumerElectronics
+    * print consumerElectronics
+    * def consumerElectronics_registered_array = $.data.email.social.profiles.consumerElectronics..registered
+    * print consumerElectronics_registered_array
+    * def count_consumerElectronics_registered_profiles = consumerElectronics_registered_array.filter(x => x == true).length
+    * print count_consumerElectronics_registered_profiles
+    * match count_consumerElectronics_registered_profiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
+    * match payload.response.data.email.social.profiles.consumerElectronics.apple == $.data.email.social.profiles.consumerElectronics.apple
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                   | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false | 200        |
+  #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
 
+  #      in consumerElectronics , fido gives only apple and not samsung
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = consumerElectronics - samsung - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/consumerElectronics/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * def consumerElectronics = $.data.email.social.profiles.consumerElectronics
+    * print consumerElectronics
+    * def consumerElectronics_registered_array = $.data.email.social.profiles.consumerElectronics..registered
+    * print consumerElectronics_registered_array
+    * def count_consumerElectronics_registered_profiles = consumerElectronics_registered_array.filter(x => x == true).length
+    * print count_consumerElectronics_registered_profiles
+    * match count_consumerElectronics_registered_profiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
+    * match payload.response.data.email.social.profiles.consumerElectronics.samsung == $.data.email.social.profiles.consumerElectronics.samsung
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                     | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true    | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false   | 200        |
-      #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_false | 200        |
 
@@ -126,54 +170,75 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredEmailProviderProfiles == $.data.email.social.summary.registeredEmailProviderProfiles
+    * def emailProvider = $.data.email.social.profiles.emailProvider
+    * print emailProvider
+    * def emailProvider_registered_array = $.data.email.social.profiles.emailProvider..registered
+    * print emailProvider_registered_array
+    * def count_emailProvider_registered_profiles = emailProvider_registered_array.filter(x => x == true).length
+    * print count_emailProvider_registered_profiles
+    * match count_emailProvider_registered_profiles == $.data.email.social.summary.registeredEmailProviderProfiles
     * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
-    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    * match $.data.email.social.profiles.emailProvider.google == payload.response.data.email.social.profiles.emailProvider.google
     * match $.data.email.social.profiles.emailProvider.google.photo == "##regex ^.*(https://).*"
-    * match $.data.email.social.profiles.emailProvider.google.gender == "##? _ == 'F' || _ == 'M'"
-
+    * match $.data.email.social.profiles.emailProvider.google contains {"gender":"##? _ == 'F' || _ == 'M'"}
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                               | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true             | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false            | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false       | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true       | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo        | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
+      | Scenario                                                                  | statusCode |
+      #    Depricated test cases
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true             | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false            | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false       | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true       | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo        | 200        |
+      #      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
 
-
-  #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider - yahoo   - <Scenario>
-  #    Given url requestUrl
-  #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/emailProvider/<Scenario>.json")
-  #    And headers headers
-  #    And header Authorization = BearerToken
-  #    And request payload.request
-  #    * set payload.response.meta.referenceId = "#ignore"
-  #    When method POST
-  #    # cloud watch traces -start
-  #    * print karate.request.headers
-  #    * print karate.response.headers
-  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-  #    * def reference_id = karate.request.headers['x-reference-id']
-  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  #    # ResponseTime
-  #    * print 'responseTime----->',responseTime
-  #    # Request-response
-  #    * print 'API Request----->',payload.request
-  #    * print 'Expected Response---->',payload.response
-  #    * print 'Actual Response---->',karate.pretty(response)
-  #    Then status <statusCode>
-  #    * match payload.response.data.email.social.summary.registeredEmailProviderProfiles == $.data.email.social.summary.registeredEmailProviderProfiles
-  #    * match payload.response.data.email.social.profiles.emailProvider.yahoo == $.data.email.social.profiles.emailProvider.yahoo
-  #
-  #    Examples:
-  #      | Scenario                                               | statusCode |
-  #      | EMAIL_SOCIAL_FIDO_V1_profiles_emailProvider_yahoo_true | 200        |
-  #      | EMAIL_SOCIAL_FIDO_V1_profiles_emailProvider_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true                      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false                     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo           | 200        |
+      # Data changed     | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_without_name_photo_gender | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_With_gender               | 200        |
+      
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider - yahoo   - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/emailProvider/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * def emailProvider = $.data.email.social.profiles.emailProvider
+    * print emailProvider
+    * def emailProvider_registered_array = $.data.email.social.profiles.emailProvider..registered
+    * print emailProvider_registered_array
+    * def count_emailProvider_registered_profiles = emailProvider_registered_array.filter(x => x == true).length
+    * print count_emailProvider_registered_profiles
+    * match count_emailProvider_registered_profiles == $.data.email.social.summary.registeredEmailProviderProfiles
+    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * match $.data.email.social.profiles.emailProvider.yahoo == payload.response.data.email.social.profiles.emailProvider.yahoo
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_yahoo_false | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_yahoo_true  | 200        |
 
   #fido ecommerce - fido gives { amazon, ebay , deliveroo}
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
@@ -198,9 +263,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredEcommerceProfiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * def ecommerce = $.data.email.social.profiles.ecommerce
+    * print ecommerce
+    * def ecommerce_registered_array = $.data.email.social.profiles.ecommerce..registered
+    * print ecommerce_registered_array
+    * def count_ecommerce_registered_profiles = ecommerce_registered_array.filter(x => x == true).length
+    * print count_ecommerce_registered_profiles
+    * match count_ecommerce_registered_profiles == $.data.email.social.summary.registeredEcommerceProfiles
     * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
-
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -237,9 +307,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredSocialMediaProfiles == $.data.email.social.summary.registeredSocialMediaProfiles
+    * def socialMedia = $.data.email.social.profiles.socialMedia
+    * print socialMedia
+    * def socialMedia_registered_array = $.data.email.social.profiles.socialMedia..registered
+    * print socialMedia_registered_array
+    * def count_socialMedia_registered_profiles = socialMedia_registered_array.filter(x => x == true).length
+    * print count_socialMedia_registered_profiles
+    * match count_socialMedia_registered_profiles == $.data.email.social.summary.registeredSocialMediaProfiles
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
-
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -278,7 +353,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
     * match $.data.email.social.profiles.socialMedia.gravatar.photo == "##regex ^.*(https://).*"
 
-    * match payload.response.data.email.social.summary.registeredSocialMediaProfiles == $.data.email.social.summary.registeredSocialMediaProfiles
+    * def socialMedia = $.data.email.social.profiles.socialMedia
+    * print socialMedia
+    * def socialMedia_registered_array = $.data.email.social.profiles.socialMedia..registered
+    * print socialMedia_registered_array
+    * def count_socialMedia_registered_profiles = socialMedia_registered_array.filter(x => x == true).length
+    * print count_socialMedia_registered_profiles
+    * match count_socialMedia_registered_profiles == $.data.email.social.summary.registeredSocialMediaProfiles
+    * match $.data.email.social.profiles.socialMedia == payload.response.data.email.social.profiles.socialMedia
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -434,7 +516,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredMessagingProfiles == $.data.email.social.summary.registeredMessagingProfiles
+    * def messaging = $.data.email.social.profiles.messaging
+    * print messaging
+    * def messaging_registered_array = $.data.email.social.profiles.messaging..registered
+    * print messaging_registered_array
+    * def count_messaging_registered_profiles = messaging_registered_array.filter(x => x == true).length
+    * print count_messaging_registered_profiles
+    * match count_messaging_registered_profiles == $.data.email.social.summary.registeredMessagingProfiles
+
     * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
 
     * match  $.meta contains  payload.response.meta
@@ -449,7 +538,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
 
 
 
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging   - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging - skype with photo - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/messaging/<Scenario>.json")
     And headers headers
@@ -471,17 +560,23 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredMessagingProfiles == $.data.email.social.summary.registeredMessagingProfiles
+    * def messaging = $.data.email.social.profiles.messaging
+    * print messaging
+    * def messaging_registered_array = $.data.email.social.profiles.messaging..registered
+    * print messaging_registered_array
+    * def count_messaging_registered_profiles = messaging_registered_array.filter(x => x == true).length
+    * print count_messaging_registered_profiles
+    * match count_messaging_registered_profiles == $.data.email.social.summary.registeredMessagingProfiles
     * set payload.response.data.email.social.profiles.messaging.skype.photo = "#ignore"
-    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
-    * match $.data.email.social.profiles.messaging.skype.photo == "##regex ^.*(https://).*"
-
+    * match $.data.email.social.profiles.messaging == payload.response.data.email.social.profiles.messaging
+    * match $.data.email.social.profiles.messaging.skype.photo == "#regex ^.*(https://).*"
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario                                                                                             | statusCode |
       | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_photo                      | 200        |
 
   #fido gives list for professional profiles {wordpress,linkedin,microsoft,hubspot}
   #  After discussion with roopa to avoid more failure due to dynamic data we have validated each profile separatly
@@ -511,9 +606,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def professional = $.data.email.social.profiles.professional
+    * print professional
+    * def professional_registered_array = $.data.email.social.profiles.professional..registered
+    * print professional_registered_array
+    * def count_professional_registered_profiles = professional_registered_array.filter(x => x == true).length
+    * print count_professional_registered_profiles
+    * match count_professional_registered_profiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.wordpress == $.data.email.social.profiles.professional.wordpress
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
-
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -545,8 +645,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def professional = $.data.email.social.profiles.professional
+    * print professional
+    * def professional_registered_array = $.data.email.social.profiles.professional..registered
+    * print professional_registered_array
+    * def count_professional_registered_profiles = professional_registered_array.filter(x => x == true).length
+    * print count_professional_registered_profiles
+    * match count_professional_registered_profiles == $.data.email.social.summary.registeredProfessionalProfiles
+
     * match payload.response.data.email.social.profiles.professional.atlassian == $.data.email.social.profiles.professional.atlassian
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -579,17 +686,24 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def professional = $.data.email.social.profiles.professional
+    * print professional
+    * def professional_registered_array = $.data.email.social.profiles.professional..registered
+    * print professional_registered_array
+    * def count_professional_registered_profiles = professional_registered_array.filter(x => x == true).length
+    * print count_professional_registered_profiles
+    * match count_professional_registered_profiles == $.data.email.social.summary.registeredProfessionalProfiles
+
     * match payload.response.data.email.social.profiles.professional.linkedin == $.data.email.social.profiles.professional.linkedin
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                              | statusCode |
-      # Data Not found     | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_true                 | 200        |
-      # Data Not found      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null | 200        |
+      | Scenario                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_false | 200        |
+  #      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null  | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - microsoft <Scenario>
     Given url requestUrl
@@ -613,8 +727,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def professional = $.data.email.social.profiles.professional
+    * print professional
+    * def professional_registered_array = $.data.email.social.profiles.professional..registered
+    * print professional_registered_array
+    * def count_professional_registered_profiles = professional_registered_array.filter(x => x == true).length
+    * print count_professional_registered_profiles
+    * match count_professional_registered_profiles == $.data.email.social.summary.registeredProfessionalProfiles
+
     * match payload.response.data.email.social.profiles.professional.microsoft == $.data.email.social.profiles.professional.microsoft
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -647,8 +768,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def professional = $.data.email.social.profiles.professional
+    * print professional
+    * def professional_registered_array = $.data.email.social.profiles.professional..registered
+    * print professional_registered_array
+    * def count_professional_registered_profiles = professional_registered_array.filter(x => x == true).length
+    * print count_professional_registered_profiles
+    * match count_professional_registered_profiles == $.data.email.social.summary.registeredProfessionalProfiles
+
     * match payload.response.data.email.social.profiles.professional.hubspot == $.data.email.social.profiles.professional.hubspot
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -683,8 +811,16 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def entertainment = $.data.email.social.profiles.professional
+    * print entertainment
+    * def entertainment_registered_array = $.data.email.social.profiles.entertainment..registered
+    * print entertainment_registered_array
+    * def count_entertainment_registered_profiles = entertainment_registered_array.filter(x => x == true).length
+    * print count_entertainment_registered_profiles
+    * match count_entertainment_registered_profiles == $.data.email.social.summary.registeredEntertainmentProfiles
+
+
     * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
-    * match payload.response.data.email.social.summary.registeredEntertainmentProfiles == $.data.email.social.summary.registeredEntertainmentProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -729,7 +865,48 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.errors contains only deep  payload.response.errors
     Examples:
       | Scenario | statusCode |
-  # no data       | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
+  #  data not found    | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel   - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/travel/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    #    * match payload.response.data.email.social.summary.registeredTravelProfiles == $.data.email.social.summary.registeredTravelProfiles
+    * def travel = $.data.email.social.profiles.travel
+    * print travel
+    * def travel_registered_array = $.data.email.social.profiles.travel..registered
+    * print travel_registered_array
+    * def count_travel_registered_profiles = travel_registered_array.filter(x => x == true).length
+    * print count_travel_registered_profiles
+    * match count_travel_registered_profiles == $.data.email.social.summary.registeredTravelProfiles
+
+    * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                    | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_travel_booking_true_airbnb_null  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_travel_booking_false_airbnb_null | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
     Given url requestUrl
@@ -753,8 +930,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def financial = $.data.email.social.profiles.financial
+    * print financial
+    * def financial_registered_array = $.data.email.social.profiles.financial..registered
+    * print financial_registered_array
+    * def count_financial_registered_profiles = financial_registered_array.filter(x => x == true).length
+    * print count_financial_registered_profiles
+    * match count_financial_registered_profiles == $.data.email.social.summary.registeredFinancialProfiles
+
     * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
-    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -763,7 +947,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Scenario                                           | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true   | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null   | 200        |
+      # Data changed     | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 
@@ -790,8 +974,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
+    * def education = $.data.email.social.profiles.education
+    * print education
+    * def education_registered_array = $.data.email.social.profiles.education..registered
+    * print education_registered_array
+    * def count_education_registered_profiles = education_registered_array.filter(x => x == true).length
+    * print count_education_registered_profiles
+    * match count_education_registered_profiles == $.data.email.social.summary.registeredEducationProfiles
+
     * match payload.response.data.email.social.profiles.education == $.data.email.social.profiles.education
-    * match payload.response.data.email.social.summary.registeredEducationProfiles == $.data.email.social.summary.registeredEducationProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -872,47 +1063,47 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
   #
-  #  @Schema_validation_1
-  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
-  #    Given url requestUrl
-  #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
-  #    And headers headers
-  #    And header Authorization = BearerToken
-  #    And request payload.request
-  #    * set payload.response.meta.referenceId = "#ignore"
-  #    When method POST
-  #  # cloud watch traces -start
-  #    * print karate.request.headers
-  #    * print karate.response.headers
-  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-  #    * def reference_id = karate.request.headers['x-reference-id']
-  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  #  # ResponseTime
-  #    * print 'responseTime----->',responseTime
-  #  # Request-response
-  #    * print 'API Request----->',payload.request
-  #    * print 'Expected Response---->',payload.response
-  #    * print 'Actual Response---->',karate.pretty(response)
-  #    Then status <statusCode>
-  #    And match $.data.email.social == '#notnull'
-  #    And match $.data.email.basic == '#null'
-  #    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
-  #    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
-  #    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
-  #    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
-  #    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
-  #    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
-  #    And match $.errors == []
-  #    Examples:
-  #      | Scenario                                                        | statusCode |
-  #      | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
+  @Schema_validation_1
+  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    And match $.data.email.social == '#notnull'
+    And match $.data.email.basic == '#null'
+    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
+    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
+    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
+    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
+    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
+    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
+    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
+    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
+    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
+    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
+    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
+    And match $.errors == []
+    Examples:
+      | Scenario                              | statusCode |
+      | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
 
   @Schema_validation_2
@@ -1121,5 +1312,5 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       }
       """
     Examples:
-      | Scenario                                                        | statusCode |
-      | Email_Social_SocialMedia_Instagram&Pinterest&Twitter_Registered | 200        |
+      | Scenario                              | statusCode |
+      | Email_Basic_FIDO_V2_Schema_validation | 200        |

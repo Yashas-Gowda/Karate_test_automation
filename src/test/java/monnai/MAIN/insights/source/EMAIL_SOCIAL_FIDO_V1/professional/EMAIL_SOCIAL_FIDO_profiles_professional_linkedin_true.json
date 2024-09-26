@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "Malarkodisathees8989@gmail.com"
+    "email": "MEGHA.GOLECHA@GMAIL.COM"
   },
   "response": {
     "data": {
@@ -12,16 +12,17 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 0,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 0,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
+            "registeredProfiles": 10,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
@@ -29,13 +30,15 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": true
               },
-              "samsung": null
+              "samsung": {
+                "registered": true
+              }
             },
             "emailProvider": {
               "google": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null
               },
@@ -47,7 +50,7 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
                 "registered": false
@@ -58,16 +61,16 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "pinterest": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": false
@@ -102,8 +105,11 @@
               "wordpress": {
                 "registered": false
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -115,7 +121,7 @@
                 "connectionCount": null
               },
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "hubspot": {
                 "registered": false
@@ -131,7 +137,7 @@
             },
             "travel": {
               "booking": {
-                "registered": false
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -150,10 +156,16 @@
               "paypal": {
                 "registered": false
               }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -168,16 +180,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "95e3eec7-bece-45b9-b8a2-7482cb9090e9",
-      "inputEmail": "Malarkodisathees8989@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "MEGHA.GOLECHA@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

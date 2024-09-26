@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "tejashreekarmokar2812@gmail.com"
+    "email": "PRASADYADAVBIRENDRA802@GMAIL.COM"
   },
   "response": {
     "data": {
@@ -12,18 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 3,
             "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 2,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 0,
-            "registeredEntertainmentProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -32,47 +33,27 @@
                 "registered": false
               },
               "samsung": {
-                "registered": null
+                "registered": false
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Tejashree Karmokar",
-                "photo": null,
-                "gender": "F"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
-              "mailru": {
-                "registered": null
-              },
-              "rambler": {
-                "registered": null
-              }
+              "mailru": null,
+              "rambler": null
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
-              },
-              "flipkart": {
-                "registered": null
-              },
-              "jdid": {
-                "registered": null
-              },
-              "bukalapak": {
-                "registered": null
-              },
-              "lazada": {
-                "registered": null
-              },
-              "tokopedia": {
-                "registered": null
               },
               "deliveroo": {
                 "registered": false
@@ -86,11 +67,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
-              },
-              "flickr": {
-                "registered": null,
-                "username": null
+                "registered": false
               },
               "pinterest": {
                 "registered": true
@@ -98,42 +75,12 @@
               "twitter": {
                 "registered": false
               },
-              "tumblr": {
-                "registered": null
-              },
-              "weibo": {
-                "registered": null
-              },
-              "ok": {
-                "registered": null,
-                "age": null,
-                "city": null,
-                "dateJoined": null
-              },
-              "imgur": {
-                "registered": null
-              },
-              "quora": {
-                "registered": null
-              },
-              "qzone": {
-                "registered": null
-              },
               "gravatar": {
                 "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
                 "username": null
-              },
-              "foursquare": {
-                "registered": null,
-                "bio": null,
-                "photo": null,
-                "profileUrl": null
-              },
-              "myspace": {
-                "registered": null
               }
             },
             "messaging": {
@@ -151,25 +98,18 @@
                 "country": null,
                 "photo": null
               },
-              "discord": {
-                "registered": null
-              },
-              "kakao": {
-                "registered": null
-              }
+              "discord": null,
+              "kakao": null
             },
             "professional": {
-              "github": {
-                "registered": null
-              },
               "wordpress": {
                 "registered": false
               },
               "atlassian": {
-                "registered": null
+                "registered": false
               },
               "linkedin": {
-                "registered": null,
+                "registered": false,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -180,17 +120,8 @@
                 "photo": null,
                 "connectionCount": null
               },
-              "evernote": {
-                "registered": null
-              },
               "microsoft": {
                 "registered": false
-              },
-              "zoho": {
-                "registered": null
-              },
-              "adobe": {
-                "registered": null
               },
               "hubspot": {
                 "registered": false
@@ -198,28 +129,10 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
-              },
-              "lastfm": {
-                "registered": null
-              },
-              "vimeo": {
-                "registered": null
-              },
-              "envato": {
-                "registered": null
-              },
-              "patreon": {
-                "registered": null
+                "registered": false
               },
               "disneyplus": {
                 "registered": false
-              },
-              "netflix": {
-                "registered": null
-              },
-              "archiveorg": {
-                "registered": null
               }
             },
             "travel": {
@@ -241,12 +154,18 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -261,16 +180,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "4d3e2ddf-a182-4b47-a1b2-1bd9a652b186",
-      "inputEmail": "tejashreekarmokar2812@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "PRASADYADAVBIRENDRA802@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

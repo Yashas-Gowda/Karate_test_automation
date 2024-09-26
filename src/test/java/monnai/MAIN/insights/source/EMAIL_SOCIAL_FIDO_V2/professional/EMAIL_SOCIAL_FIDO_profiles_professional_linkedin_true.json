@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "yashasgowda2510@gmail.com"
+    "email": "MEGHA.GOLECHA@GMAIL.COM"
   },
   "response": {
     "data": {
@@ -12,18 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 9,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 10,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -31,14 +32,15 @@
               "apple": {
                 "registered": true
               },
-              "samsung": null
+              "samsung": {
+                "registered": true
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "YASHAS MODEGOWDRU",
-                "photo": null,
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
@@ -71,7 +73,7 @@
                 "registered": true
               },
               "twitter": {
-                "registered": true
+                "registered": false
               },
               "gravatar": {
                 "registered": false,
@@ -103,8 +105,11 @@
               "wordpress": {
                 "registered": false
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -151,10 +156,16 @@
               "paypal": {
                 "registered": false
               }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -169,16 +180,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "1891151b-1313-419a-853b-e11a79eac093",
-      "inputEmail": "yashasgowda2510@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "MEGHA.GOLECHA@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

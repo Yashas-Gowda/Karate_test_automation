@@ -1,7 +1,6 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
     "packages": [
       "EMAIL_SOCIAL"
     ],
@@ -14,18 +13,19 @@
         "social": {
           "summary": {
             "registeredProfiles": 12,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 2,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 1,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "consumerElectronics": {
@@ -33,7 +33,7 @@
                 "registered": null
               },
               "samsung": {
-                "registered": null
+                "registered": true
               }
             },
             "emailProvider": {
@@ -43,35 +43,16 @@
                 "photo": null
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
-              "mailru": {
-                "registered": null
-              },
-              "rambler": {
-                "registered": null
-              }
+              "mailru": null,
+              "rambler": null
             },
             "ecommerce": {
               "amazon": {
                 "registered": true
               },
               "ebay": {
-                "registered": false
-              },
-              "flipkart": {
-                "registered": null
-              },
-              "jdid": {
-                "registered": null
-              },
-              "bukalapak": {
-                "registered": null
-              },
-              "lazada": {
-                "registered": null
-              },
-              "tokopedia": {
                 "registered": null
               },
               "deliveroo": {
@@ -86,11 +67,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
-              },
-              "flickr": {
-                "registered": null,
-                "username": null
+                "registered": false
               },
               "pinterest": {
                 "registered": true
@@ -98,42 +75,12 @@
               "twitter": {
                 "registered": true
               },
-              "tumblr": {
-                "registered": null
-              },
-              "weibo": {
-                "registered": null
-              },
-              "ok": {
-                "registered": null,
-                "age": null,
-                "city": null,
-                "dateJoined": null
-              },
-              "imgur": {
-                "registered": null
-              },
-              "quora": {
-                "registered": null
-              },
-              "qzone": {
-                "registered": null
-              },
               "gravatar": {
                 "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
                 "username": null
-              },
-              "foursquare": {
-                "registered": null,
-                "bio": null,
-                "photo": null,
-                "profileUrl": null
-              },
-              "myspace": {
-                "registered": null
               }
             },
             "messaging": {
@@ -149,19 +96,12 @@
                 "city": "Athens",
                 "state": "Glyfada",
                 "country": "Luxembourg",
-                "photo": null
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/dac8b09c/722d/46a9/abc3/89559de9b7be/91aa0d3b-a884-43ca-abec-a6efa699f965.jpg"
               },
-              "discord": {
-                "registered": null
-              },
-              "kakao": {
-                "registered": null
-              }
+              "discord": null,
+              "kakao": null
             },
             "professional": {
-              "github": {
-                "registered": null
-              },
               "wordpress": {
                 "registered": false
               },
@@ -169,7 +109,7 @@
                 "registered": null
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -180,17 +120,8 @@
                 "photo": null,
                 "connectionCount": null
               },
-              "evernote": {
-                "registered": null
-              },
               "microsoft": {
                 "registered": true
-              },
-              "zoho": {
-                "registered": null
-              },
-              "adobe": {
-                "registered": null
               },
               "hubspot": {
                 "registered": false
@@ -200,26 +131,8 @@
               "spotify": {
                 "registered": true
               },
-              "lastfm": {
-                "registered": null
-              },
-              "vimeo": {
-                "registered": null
-              },
-              "envato": {
-                "registered": null
-              },
-              "patreon": {
-                "registered": null
-              },
               "disneyplus": {
                 "registered": false
-              },
-              "netflix": {
-                "registered": null
-              },
-              "archiveorg": {
-                "registered": null
               }
             },
             "travel": {
@@ -243,10 +156,16 @@
               "paypal": {
                 "registered": true
               }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -261,15 +180,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UQUrTjRbyQ0EPFw=",
+      "referenceId": "71bf360d-e582-4038-99b4-ed0d6101a97c",
       "inputEmail": "shehos2003@yahoo.gr",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

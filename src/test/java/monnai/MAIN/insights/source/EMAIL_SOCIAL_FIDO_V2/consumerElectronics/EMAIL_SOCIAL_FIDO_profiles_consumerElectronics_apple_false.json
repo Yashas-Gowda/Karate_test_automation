@@ -12,13 +12,13 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
+            "registeredProfiles": 6,
             "registeredConsumerElectronicsProfiles": 0,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
+            "registeredProfessionalProfiles": 1,
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
             "registeredFinancialProfiles": 0,
@@ -169,7 +169,7 @@
                 "registered": false
               },
               "linkedin": {
-                "registered": false,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -268,16 +268,16 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "09ac8fdf-7efd-49e6-9b74-a22cf40d16c2",
+      "referenceId": "Dpi_sep_10_release_5",
       "inputEmail": "skaltaf0404@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
