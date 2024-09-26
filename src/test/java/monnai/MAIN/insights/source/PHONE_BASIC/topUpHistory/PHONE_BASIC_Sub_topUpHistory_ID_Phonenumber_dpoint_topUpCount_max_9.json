@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "082198569672",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
@@ -7,8 +7,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -152,7 +152,8 @@
       "referenceId": "bbd83b63-7999-4798-b286-29182f0640d3",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
     ]

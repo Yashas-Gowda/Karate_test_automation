@@ -37,26 +37,23 @@ function() {
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
            case "release-y":
-                             config.requestUrl = "https://release.monnai.com";
-                             config.authUrl = "https://release-auth.monnai.com";
-                             break;
-
+                  config.requestUrl = "https://release.monnai.com";
+                  config.authUrl = "https://release-auth.monnai.com";
+                  break;
            case "release-fido":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
-
            case "release-fidoV2":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   config.email_custom_tenant = 'release-custom_email_basic';
+                  config.fidoV1_social = 'release-fido';
                   break;
-
            case "release-seon":
                   config.requestUrl = "https://release.monnai.com";
                   config.authUrl = "https://release-auth.monnai.com";
                   break;
-
            case "release-custom_email_basic":
                  config.requestUrl = "https://release.monnai.com";
                  config.authUrl = "https://release-auth.monnai.com";
@@ -75,12 +72,13 @@ function() {
                  config.requestUrl = "https://test.monnai.com";
                  config.authUrl = "https://test-auth.monnai.com";
                  config.email_custom_tenant = 'test-custom_email_basic';
+                 config.fidoV1_social = 'test-fido';
                  break;
-
            case "test-seon":
                 config.requestUrl = "https://test.monnai.com";
                 config.authUrl = "https://test-auth.monnai.com";
                 break;
+
 //  General auth gen curl for any env with general credentials
             case "env-release-gen":
                  config.requestUrl = "https://release.monnai.com";

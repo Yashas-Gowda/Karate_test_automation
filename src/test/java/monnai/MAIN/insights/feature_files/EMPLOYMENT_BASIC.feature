@@ -1,3 +1,4 @@
+@EMPLOYMENT_BASIC
 Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
   # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
   # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
@@ -11,7 +12,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario  <Scenario>
+  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario  --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")
     And headers headers
@@ -33,6 +34,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    * set payload.response.data.employment.basic.employmentHistory[*].nationalIdVerificationStatus = "#ignore"
+    * match each $.data.employment.basic.employmentHistory[*].nationalIdVerificationStatus == "#boolean"
     Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
     Then match $.data.employment.basic.employmentHistory contains only deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
@@ -42,8 +45,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                             | statusCode |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1            | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1_without_91 | 200        |
-
-  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario  <Scenario>
+      
+  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")
     And headers headers
@@ -66,6 +69,8 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then match $.data.employment.basic.summary contains payload.response.data.employment.basic.summary
+    * set payload.response.data.employment.basic.employmentHistory[*].nationalIdVerificationStatus = "#ignore"
+    * match each $.data.employment.basic.employmentHistory[*].nationalIdVerificationStatus == "#boolean"
     Then match $.data.employment.basic.employmentHistory contains only deep payload.response.data.employment.basic.employmentHistory
     Then match $.meta contains only payload.response.meta
     Then match $.errors contains only payload.response.errors
@@ -73,6 +78,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     Examples:
       | Scenario                                                   | statusCode |
       # Bug https://monnai.atlassian.net/browse/MB-3786  | EMPLOYMENT_BASIC_is_null_when_no_record_found_in_dp     |                  | 200        |
+      #
       | EMPLOYMENT_BASIC_summary_isEmployed_false_noOfPfAccounts_1 | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_2  | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_false_noOfPfAccounts_2 | 200        |
@@ -83,7 +89,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_5  | 200        |
 
   @positive
-  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS scenario when data partner gives 200 with response  <Scenario>
+  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS scenario when data partner gives 200 with response  --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")
     And headers headers
@@ -114,7 +120,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_returns_M50_1001_when_dp_returns_message_no_records_found | 200        |
 
   @Negative
-  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN <Scenario>
+  Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")
     And headers headers
@@ -145,7 +151,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
 
   @Negative
-  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
+  Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")
     And headers headers

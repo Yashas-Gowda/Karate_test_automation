@@ -1,13 +1,18 @@
-@EMAIL_SOCIAL_FIDOV1 @ignore
+@EMAIL_SOCIAL_FIDOV1
+  #@ignore
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   Background:
     * configure charset = null
     * path '/api/insights/'
-    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
+    #    * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
+    #    * def BearerToken = authFeature.authToken
+    * def authFeature = call read('classpath:monnai/Auth_Token_Generation_fidoV1_social_parallel.feature')
     * def BearerToken = authFeature.authToken
+    * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
+    * print Custom_env_authFeature_tenant_config
 
   # Automated by Yashas on proof of Manual sign off (Sameena) - 29 dec 2023
-  # Automated by Yashas by yashas on 11 march 2024
+  # Automated by Yashas on 11 march 2024
 
   # automation ticket - https://monnai.atlassian.net/browse/MB-3908
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - <Scenario>
@@ -39,8 +44,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     Then status <statusCode>
     * match payload.response.data.email.social.summary == $.data.email.social.summary
     * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
-    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
-    #    * match $.response.data.email.social.profiles.emailProvider.google.photo == "#string"
+    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    * match $.data.email.social.profiles.emailProvider.google.photo ==  "##regex ^.*(https://).*"
     * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
     * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
     * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
@@ -81,16 +87,16 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredConsumerElectronicsProfiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
     * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
+    * match payload.response.data.email.social.summary.registeredConsumerElectronicsProfiles == $.data.email.social.summary.registeredConsumerElectronicsProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false | 200        |
+      | Scenario                                                     | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_true    | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_false   | 200        |
       #      | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_apple_null  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_consumerElectronics_samsung_false | 200        |
@@ -121,19 +127,22 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * match payload.response.data.email.social.summary.registeredEmailProviderProfiles == $.data.email.social.summary.registeredEmailProviderProfiles
-    * match payload.response.data.email.social.profiles.emailProvider == $.data.email.social.profiles.emailProvider
+    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
+    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
+    * match $.data.email.social.profiles.emailProvider.google.photo == "##regex ^.*(https://).*"
+    * match $.data.email.social.profiles.emailProvider.google.gender == "##? _ == 'F' || _ == 'M'"
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                         | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true       | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo             |200 |
-      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender             |200 |
+      | Scenario                                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_true             | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_yahoo_false            | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_true_yahoo_false       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_false_yahoo_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo        | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
 
 
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider - yahoo   - <Scenario>
@@ -196,13 +205,13 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                    | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true      | 200        |
+      | Scenario                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false    | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true       | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_false      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_true      | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_false | 200        |
 
 
   #fido gives socialMedia profiles{facebook,instagram,pinterest,twitter, gravatar with photo}
@@ -235,14 +244,50 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true                           | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false                          | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false                     | 200        |
+      | Scenario                                                                               | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_twitter_false      | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_facebook_instagram_pinterest_true_twitter_false | 200        |
       #  Data not found   | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_without_photo                     | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo                     | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_false                     | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_false                                  | 200        |
 
+  #fido gives socialMedia profiles{facebook,instagram,pinterest,twitter, gravatar with photo}
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia - assertion of gravatar photo  - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/socialMedia/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * set payload.response.data.email.social.profiles.socialMedia.gravatar.photo = "#ignore"
+    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
+    * match $.data.email.social.profiles.socialMedia.gravatar.photo == "##regex ^.*(https://).*"
+
+    * match payload.response.data.email.social.summary.registeredSocialMediaProfiles == $.data.email.social.summary.registeredSocialMediaProfiles
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                        | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_socialMedia_gravatar_true_with_photo | 200        |
+
+  #      Below socialMedia realeted scanarios are covered in the above test cases, so commented the old test cases
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = socialMedia - instagram  - <Scenario>
   #    Given url requestUrl
   #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/socialMedia/<Scenario>.json")
@@ -396,13 +441,47 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
+      | Scenario                                                                          | statusCode |
       # data not found     | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_without_other_skype_data_points | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country   | 200        |
       | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id | 200        |
       #  https://monnai.atlassian.net/browse/MB-3818 | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_photo | 200        |
-      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                                     | 200        |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_false                               | 200        |
 
+
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = messaging   - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/messaging/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredMessagingProfiles == $.data.email.social.summary.registeredMessagingProfiles
+    * set payload.response.data.email.social.profiles.messaging.skype.photo = "#ignore"
+    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
+    * match $.data.email.social.profiles.messaging.skype.photo == "##regex ^.*(https://).*"
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                                                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_V1_profiles_messaging_skype_true_with_other_data_points_name_id_city_state_country | 200        |
 
   #fido gives list for professional profiles {wordpress,linkedin,microsoft,hubspot}
   #  After discussion with roopa to avoid more failure due to dynamic data we have validated each profile separatly
@@ -432,17 +511,17 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.wordpress == $.data.email.social.profiles.professional.wordpress
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true                 | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_null                | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_wordpress_null  | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - wordpress <Scenario>
     Given url requestUrl
@@ -466,16 +545,16 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.atlassian == $.data.email.social.profiles.professional.atlassian
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_true                 | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_false                | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_true  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_atlassian_false | 200        |
 
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - linkedin <Scenario>
@@ -500,17 +579,17 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.linkedin == $.data.email.social.profiles.professional.linkedin
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
+      | Scenario                                              | statusCode |
       # Data Not found     | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_true                 | 200        |
       # Data Not found      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null                | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_linkedin_null | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = professional - microsoft <Scenario>
     Given url requestUrl
@@ -534,15 +613,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.microsoft == $.data.email.social.profiles.professional.microsoft
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_true                 | 200        |
+      | Scenario                                                | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_false | 200        |
   #  100% coverage - so not possible to get null    | EMAIL_SOCIAL_FIDO_profiles_professional_microsoft_null                | 200        |
 
@@ -568,15 +647,15 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
     * match payload.response.data.email.social.profiles.professional.hubspot == $.data.email.social.profiles.professional.hubspot
+    * match payload.response.data.email.social.summary.registeredProfessionalProfiles == $.data.email.social.summary.registeredProfessionalProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                                                                | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_true                 | 200        |
+      | Scenario                                              | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_false | 200        |
   #  100% coverage - so not possible to get null     | EMAIL_SOCIAL_FIDO_profiles_professional_hubspot_null                | 200        |
 
@@ -604,8 +683,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredEntertainmentProfiles == $.data.email.social.summary.registeredEntertainmentProfiles
     * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
+    * match payload.response.data.email.social.summary.registeredEntertainmentProfiles == $.data.email.social.summary.registeredEntertainmentProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -619,38 +698,38 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   # no data     | EMAIL_SOCIAL_FIDO_profiles_entertainment_spotify_disneyplus_null | 200        |
 
 
-  #fido gives only { booking}  travel profiles | registeredTravelProfiles <= 1
-  #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel (dynamic in both FIdo V1 and V2)  - <Scenario>
-  #    Given url requestUrl
-  #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/travel/<Scenario>.json")
-  #    And headers headers
-  #    And header Authorization = BearerToken
-  #    And request payload.request
-  #    * set payload.response.meta.referenceId = "#ignore"
-  #    When method POST
-  #  # cloud watch traces -start
-  #    * print karate.request.headers
-  #    * print karate.response.headers
-  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-  #    * def reference_id = karate.request.headers['x-reference-id']
-  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-  #  # ResponseTime
-  #    * print 'responseTime----->',responseTime
-  #  # Request-response
-  #    * print 'API Request----->',payload.request
-  #    * print 'Expected Response---->',payload.response
-  #    * print 'Actual Response---->',karate.pretty(response)
-  #    Then status <statusCode>
-  #    * match payload.response.data.email.social.summary.registeredTravelProfiles ==  "#notpresent"
-  #    * match payload.response.data.email.social.profiles.travel == "#notpresent"
-  #
-  #    * match  $.meta contains  payload.response.meta
-  #    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
-  #    * match  $.errors contains only deep  payload.response.errors
-  #    Examples:
-  #      | Scenario                                  | statusCode |
-  #      | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
+  #  fido gives only { booking}  travel profiles | registeredTravelProfiles <= 1
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = travel (dynamic in both FIdo V1 and V2)  - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL_FIDO_V1/travel/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match payload.response.data.email.social.summary.registeredTravelProfiles ==  "#notpresent"
+    * match payload.response.data.email.social.profiles.travel == "#notpresent"
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario | statusCode |
+  # no data       | EMAIL_SOCIAL_FIDO_profiles_travel_datapoint_dynamic_hidden | 200        |
 
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
     Given url requestUrl
@@ -674,18 +753,18 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
     * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                   | statusCode |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true  | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true | 200        |
+      | Scenario                                           | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true   | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false  | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null   | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 
   #fido gives only {duolingo} as education profiles | registeredEducationProfiles <= 1
@@ -711,14 +790,14 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    * match payload.response.data.email.social.summary.registeredEducationProfiles == $.data.email.social.summary.registeredEducationProfiles
     * match payload.response.data.email.social.profiles.education == $.data.email.social.profiles.education
+    * match payload.response.data.email.social.summary.registeredEducationProfiles == $.data.email.social.summary.registeredEducationProfiles
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
     Examples:
-      | Scenario                                   | statusCode |
+      | Scenario                                            | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_education_duolingo_false | 200        |
   #  Data not found    | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |

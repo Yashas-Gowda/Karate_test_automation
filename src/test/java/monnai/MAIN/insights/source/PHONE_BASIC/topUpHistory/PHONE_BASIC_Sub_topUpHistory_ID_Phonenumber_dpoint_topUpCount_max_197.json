@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "phoneNumber": "6281541386346",
     "phoneDefaultCountryCode": "ID",
     "eventType": "ACCOUNT_CREATION",
@@ -7,8 +7,8 @@
     "packages": [
       "PHONE_BASIC"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -184,7 +184,8 @@
       "referenceId": "dpi_dec_19_1st_call_fail",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": []
   }

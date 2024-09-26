@@ -8,7 +8,7 @@
     "phoneNumber": "19193456619",
     "phoneDefaultCountryCode": "US"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -31,8 +31,8 @@
           "ported": true,
           "portedHistory": {
             "portedDate": "2020-04-12",
-            "numberOfPorts": 3,
-            "portedSinceXDays": 1362,
+            "numberOfPorts": 2,
+            "portedSinceXDays": 1625,
             "currentCarrierCircle": "Verizon Verizon Wireless",
             "originalCarrierCircle": "T-Mobile T-Mobile US",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -40,10 +40,6 @@
               {
                 "carrierCircle": null,
                 "portedDate": "2020-04-12"
-              },
-              {
-                "carrierCircle": null,
-                "portedDate": "2016-05-11"
               },
               {
                 "carrierCircle": null,
@@ -58,12 +54,15 @@
             "networkName": "Verizon Wireless:6006 - SVR/2",
             "serviceProfileId": "151971"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -79,16 +78,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "19193456619",
       "cleansedPhoneNumber": "+19193456619",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "73438d08-689e-485f-b7b4-8558194a43a8",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "US"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

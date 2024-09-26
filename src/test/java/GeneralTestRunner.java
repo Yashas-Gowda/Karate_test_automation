@@ -34,14 +34,25 @@ public class GeneralTestRunner {
     }
 
     @Test
-    void custom_auth_Token() {
-        Results results = Runner.path("classpath:monnai/Auth_Token_Generation_parallel.feature")
+    void custom_auth_Token_emial_custom_flow() {
+        Results results = Runner.path("classpath:monnai/Auth_Token_Generation_email_custom_tenant_parallel.feature")
                 .outputCucumberJson(true)
 //                .tags("@auth_Token")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
+
+    @Test
+    void custom_auth_Token_fidoV1() {
+        Results results = Runner.path("classpath:monnai/Auth_Token_Generation_fidoV1_social_parallel.feature")
+                .outputCucumberJson(true)
+//                .tags("@auth_Token")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
 
     @Test
     void testParallel() {
@@ -133,7 +144,7 @@ public class GeneralTestRunner {
     void Test_tag1() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@EMAIL_BASIC_CUSTOM_CONFIG")
+                .tags("@AML_1")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -143,7 +154,7 @@ public class GeneralTestRunner {
     void Test_tag2() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@EMAIL_BASIC_CUSTOM_PARALLEL,@EMAIL_BASIC_FIDO")
+                .tags("@AML_FULL")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
@@ -165,6 +176,17 @@ public class GeneralTestRunner {
                 .outputCucumberJson(true)
 //                .tags("@EMAIL_BASIC_FIDO,@EMAIL_SOCIAL_FIDOV2,@PHONE_SOCIAL_FIDOV2")
                 .tags("@EMAIL_SOCIAL_FIDOV1,@PHONE_SOCIAL_FidoV1")
+                .parallel(5);
+        generateReport(results.getReportDir());
+        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+    }
+
+    @Test
+    void General() {
+        Results results = Runner.path("classpath:monnai")
+                .outputCucumberJson(true)
+//                .tags("@EMAIL_BASIC_FIDO,@EMAIL_SOCIAL_FIDOV2,@PHONE_SOCIAL_FIDOV2")
+                .tags("@um_test_1")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

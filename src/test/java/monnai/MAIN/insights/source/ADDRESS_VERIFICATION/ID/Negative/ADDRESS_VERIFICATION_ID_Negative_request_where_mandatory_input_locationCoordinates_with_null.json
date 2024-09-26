@@ -1,0 +1,43 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6285893641388",
+    "locationCoordinates": {
+      "latitude": null,
+      "longitude": null
+    },
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "6285893641388",
+      "cleansedPhoneNumber": "+6285893641388",
+      "referenceId": "vatsa1",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputLocationCoordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "latitude or longitude cannot be blank/null",
+        "code": "MISSING_COORDINATES",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

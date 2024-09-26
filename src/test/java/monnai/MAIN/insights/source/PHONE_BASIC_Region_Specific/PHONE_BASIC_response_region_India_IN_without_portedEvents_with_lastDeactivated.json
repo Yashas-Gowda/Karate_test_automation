@@ -11,72 +11,44 @@
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "919719061192",
+          "phoneNumber": "917701979717",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "YES",
+          "active": null,
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": "PREPAID",
+          "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": {
-            "min": 48,
-            "max": null
+            "min": 0,
+            "max": 6
           },
           "country": "IN",
-          "originalCarrier": "Vodafone - Uttar Pradesh West",
-          "ported": true,
+          "originalCarrier": "JIO - Delhi & NCR",
+          "ported": false,
           "portedHistory": {
-            "portedDate": "2024-06-07",
-            "numberOfPorts": 7,
-            "portedSinceXDays": 41,
-            "currentCarrierCircle": "AirTel Haryana",
-            "originalCarrierCircle": "Vi India Uttar Pradesh (West)",
-            "changeInCarrierRegion": "CHANGED",
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Jio Delhi",
+            "originalCarrierCircle": "Jio Delhi",
+            "changeInCarrierRegion": "NOT_CHANGED",
             "portedEvents": [
-              {
-                "carrierCircle": "Airtel Haryana",
-                "portedDate": "2024-06-07"
-              },
-              {
-                "carrierCircle": "Vodafone Haryana",
-                "portedDate": "2023-07-04"
-              },
-              {
-                "carrierCircle": "JIO Haryana",
-                "portedDate": "2022-12-24"
-              },
-              {
-                "carrierCircle": "Airtel Haryana",
-                "portedDate": "2022-08-18"
-              },
-              {
-                "carrierCircle": "Vodafone Haryana",
-                "portedDate": "2021-10-05"
-              },
-              {
-                "carrierCircle": "Airtel Uttar Pradesh (West)",
-                "portedDate": "2021-03-26"
-              },
-              {
-                "carrierCircle": "BSNL Uttar Pradesh (West)",
-                "portedDate": "2019-08-29"
-              }
             ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "404",
-            "mobileNetworkCode": "96",
-            "networkName": "Airtel - Haryana",
-            "serviceProfileId": "91039"
+            "mobileCountryCode": "405",
+            "mobileNetworkCode": "872",
+            "networkName": "JIO - Delhi & NCR",
+            "serviceProfileId": "91117"
           },
           "numberRecycled": null,
           "lastDeactivated": {
-            "minimumTenureDays": 1204,
-            "maximumTenureDays": 1235
+            "minimumTenureDays": 53,
+            "maximumTenureDays": 84
           },
           "isSpam": null,
           "topUpHistory": null,
@@ -101,12 +73,13 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919719061192",
-      "cleansedPhoneNumber": "+919719061192",
-      "referenceId": "872e7caa-4737-4c09-97b2-ae57be773b36",
+      "inputPhoneNumber": "7701979717",
+      "cleansedPhoneNumber": "+917701979717",
+      "referenceId": "0d21d59a-5d38-4bde-9628-c09a5c5dd9bd",
       "requestedPackages": [
         "PHONE_BASIC"
       ],
