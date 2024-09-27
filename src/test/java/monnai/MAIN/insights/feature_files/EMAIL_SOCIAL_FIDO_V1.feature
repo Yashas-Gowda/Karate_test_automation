@@ -1,5 +1,5 @@
-@EMAIL_SOCIAL_FIDOV1
-  #@ignore
+@EMAIL_SOCIAL_FIDOV1 @EMAIL_PACKAGES @regTest_2
+  
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   Background:
     * configure charset = null
@@ -200,7 +200,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       # Data changed     | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_with_name_photo_gender | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_without_name_photo_gender | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_emailProvider_google_With_gender               | 200        |
-      
+
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = emailProvider - yahoo   - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/emailProvider/<Scenario>.json")

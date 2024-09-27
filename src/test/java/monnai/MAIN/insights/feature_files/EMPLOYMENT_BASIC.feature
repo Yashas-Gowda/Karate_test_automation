@@ -1,4 +1,4 @@
-@EMPLOYMENT_BASIC
+@EMPLOYMENT_BASIC @regTest_3 @EMPLOYMENT_PACKAGES
 Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
   # UAN_BASIC -> Converted into EMPLOYMENT_BASIC
   # UAN_ADVANCED -> Converted into EMPLOYMENT_ADVANCED
@@ -45,7 +45,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                             | statusCode |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1            | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_1_without_91 | 200        |
-      
+
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")
@@ -88,7 +88,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_summary_isEmployed_false_noOfPfAccounts_4 | 200        |
       | EMPLOYMENT_BASIC_summary_isEmployed_true_noOfPfAccounts_5  | 200        |
 
-  @positive
+
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS scenario when data partner gives 200 with response  --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/<Scenario>.json")

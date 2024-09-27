@@ -1,4 +1,4 @@
-@EMAIL_SOCIAL_FIDOV2
+@EMAIL_SOCIAL_FIDOV2 @EMAIL_PACKAGES @regTest_2
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
   #@FIDO @ignore
   Background:

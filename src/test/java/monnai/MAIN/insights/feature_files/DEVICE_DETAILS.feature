@@ -1,4 +1,4 @@
-@debug
+@debug @regTest_5 @IP_BASIC
 Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Background:

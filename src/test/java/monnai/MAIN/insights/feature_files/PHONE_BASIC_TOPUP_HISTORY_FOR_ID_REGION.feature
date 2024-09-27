@@ -1,4 +1,4 @@
-@PHONE_BASIC_FULL  @PHONE_BASIC_TOPUP
+@PHONE_PACKAGES @regTest_1  @PHONE_BASIC_TOPUP  @PHONE_BASIC_FULL
 Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for ID Region
 
   Background:

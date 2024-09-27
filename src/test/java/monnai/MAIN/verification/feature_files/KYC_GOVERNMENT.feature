@@ -1,4 +1,4 @@
-@KYC_GOVERNMENT
+@KYC_GOVERNMENT @regTest_4 @KYC
 
 Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
@@ -67,11 +67,11 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                                  | statusCode |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchAddressLine1_NO_DATA_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT | 200        |
+      | Scenario                                                                                                                                                                                                                                       | statusCode |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchAddressLine1_NO_DATA_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT                                    | 200        |
       | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_MATCH_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT | 200        |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA | 200        |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH | 200        |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA                                                   | 200        |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH                                                                                               | 200        |
 
   @KYC_GOVERNMENT_TH @V_Negative
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Thailand (TH) <Scenario>
@@ -107,35 +107,35 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_Key_firstName_missing                                   | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_null                                     | 400        |
+      | Scenario                                                  | statusCode |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_empty_string   | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_space     | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_Key_firstName_missing    | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_null      | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Thailand_TH_input_firstName_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Thailand_TH_input_lastName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_Key_lastName_missing                                   | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_lastName_empty_string    | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_space      | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_Key_lastName_missing     | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_null       | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Thailand_TH_input_lastName_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_Key_dateOfBirth_missing                                   | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_empty_string | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_space   | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_Key_dateOfBirth_missing  | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_null    | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Thailand_TH_input_dateOfBirth_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Thailand_TH_input_id1_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_Key_id1_missing                                   | 400        |
-      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_id1_empty_string         | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_space           | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_Key_id1_missing          | 400        |
+      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_null            | 400        |
   # https://monnai.atlassian.net/browse/MB-5814
   #      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_number                                   | 400        |
   #      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_bollean                                  | 400        |
@@ -175,8 +175,8 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                                                                                                            | statusCode |
-      | KYC_GOVERNMENT_India_IN_input_idType_PSP_firstName_lastName_fullGivenName_dateOfBirth_id1_id2_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_matchId2_MATCH | 200        |
+      | Scenario                                                                                                                                                                      | statusCode |
+      | KYC_GOVERNMENT_India_IN_input_idType_PSP_firstName_lastName_fullGivenName_dateOfBirth_id1_id2_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_matchId2_MATCH    | 200        |
       | KYC_GOVERNMENT_India_IN_input_idType_PSP_firstName_lastName_fullGivenName_dateOfBirth_id1_id2_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_matchId2_NO_MATCH | 200        |
 
   @KYC_GOVERNMENT_IN @V_Negative
@@ -213,53 +213,53 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_India_IN_input_idType_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_idType_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_idType_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_idType_with_null                                     | 400        |
-      | KYC_GOVERNMENT_India_IN_input_idType_with_number                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_idType_with_bollean                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_idType_with_alphanumaric                                   | 400        |
+      | Scenario                                               | statusCode |
+      | KYC_GOVERNMENT_India_IN_input_idType_empty_string      | 400        |
+      | KYC_GOVERNMENT_India_IN_input_idType_with_space        | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_idType_missing       | 400        |
+      | KYC_GOVERNMENT_India_IN_input_idType_with_null         | 400        |
+      | KYC_GOVERNMENT_India_IN_input_idType_with_number       | 400        |
+      | KYC_GOVERNMENT_India_IN_input_idType_with_bollean      | 400        |
+      | KYC_GOVERNMENT_India_IN_input_idType_with_alphanumaric | 400        |
 
 
-      | KYC_GOVERNMENT_India_IN_input_firstName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_firstName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_firstName_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_firstName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_firstName_empty_string   | 400        |
+      | KYC_GOVERNMENT_India_IN_input_firstName_with_space     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_firstName_missing    | 400        |
+      | KYC_GOVERNMENT_India_IN_input_firstName_with_null      | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_India_IN_input_firstName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_India_IN_input_firstName_with_bollean                                  | 400        |
 
 
-      | KYC_GOVERNMENT_India_IN_input_lastName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_lastName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_lastName_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_lastName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_lastName_empty_string    | 400        |
+      | KYC_GOVERNMENT_India_IN_input_lastName_with_space      | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_lastName_missing     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_lastName_with_null       | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_India_IN_input_lastName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_India_IN_input_lastName_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_dateOfBirth_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_null                                     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_empty_string | 400        |
+      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_space   | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_dateOfBirth_missing  | 400        |
+      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_null    | 400        |
       #     https://monnai.atlassian.net/browse/MB-5815
       #      |  KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_number                                   | 400        |
 
 
-      | KYC_GOVERNMENT_India_IN_input_id1_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_id1_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_id1_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_id1_with_null                                     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id1_empty_string         | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id1_with_space           | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_id1_missing          | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id1_with_null            | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
-      | KYC_GOVERNMENT_India_IN_input_id1_with_number                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_id1_with_bollean                                  | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id1_with_number          | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id1_with_bollean         | 400        |
 
-      | KYC_GOVERNMENT_India_IN_input_id2_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_India_IN_input_id2_with_space                                    | 400        |
-      | KYC_GOVERNMENT_India_IN_input_Key_id2_missing                                   | 400        |
-      | KYC_GOVERNMENT_India_IN_input_id2_with_null                                     | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id2_empty_string         | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id2_with_space           | 400        |
+      | KYC_GOVERNMENT_India_IN_input_Key_id2_missing          | 400        |
+      | KYC_GOVERNMENT_India_IN_input_id2_with_null            | 400        |
   # https://monnai.atlassian.net/browse/MB-5814
   #      | KYC_GOVERNMENT_India_IN_input_id2_with_number                                   | 400        |
   #      | KYC_GOVERNMENT_India_IN_input_id2_with_bollean                                  | 400        |
@@ -299,8 +299,8 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_bollean                                  | 400        |
+      | Scenario                                               | statusCode |
+      | KYC_GOVERNMENT_India_IN_input_dateOfBirth_with_bollean | 400        |
 
   @KYC_GOVERNMENT_PH @V_Positive
   Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Philippines (PH) <Scenario>
@@ -364,7 +364,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                                  | statusCode |
+      | Scenario | statusCode |
   # data not found     | KYC_GOVERNMENT_Philippines_PH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH | 200        |
   # data not found        | KYC_GOVERNMENT_Philippines_PH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA | 200        |
 
@@ -401,45 +401,45 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Philippines_PH_input_idType_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_Key_idType_missing                                   | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_null                                     | 400        |
+      | Scenario                                                     | statusCode |
+      | KYC_GOVERNMENT_Philippines_PH_input_idType_empty_string      | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_space        | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_Key_idType_missing       | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_null         | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Philippines_PH_input_idType_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Philippines_PH_input_id1_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_Key_id1_missing                                   | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_id1_empty_string         | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_space           | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_Key_id1_missing          | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_null            | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Philippines_PH_input_id1_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Philippines_PH_input_firstName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_firstName_empty_string   | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_space     | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_null      | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Philippines_PH_input_firstName_with_bollean                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_Key_firstName_missing                                   | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_Key_firstName_missing    | 400        |
 
-      | KYC_GOVERNMENT_Philippines_PH_input_lastName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_lastName_empty_string    | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_space      | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_null       | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Philippines_PH_input_lastName_with_bollean                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_Key_lastName_missing                                   | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_Key_lastName_missing     | 400        |
 
-      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_empty_string | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_space   | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_null    | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_number                                   | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_Key_dateOfBirth_missing                                   | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_Key_dateOfBirth_missing  | 400        |
 
   @KYC_GOVERNMENT_PH  @V_Negative
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Philippines (PH) <Scenario>
@@ -476,9 +476,9 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_bollean                       | 400        |
-      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_alphanumaric_invalid          | 400        |
+      | Scenario                                                                  | statusCode |
+      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_bollean              | 400        |
+      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_alphanumaric_invalid | 400        |
 
 
   @KYC_GOVERNMENT_ID @V_Positive
@@ -544,9 +544,9 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                                  | statusCode |
+      | Scenario                                                                                                                                                                                                   | statusCode |
       | KYC_GOVERNMENT_Indonesia_ID_input_all_mandatory_optional_datapoints_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_matchAddressLine2_matchAdditionalAddressField2_MATCH | 200        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_all_mandatory_datapoints_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_matchAddressLine2_matchAdditionalAddressField2_MATCH | 200        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_all_mandatory_datapoints_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_matchAddressLine2_matchAdditionalAddressField2_MATCH          | 200        |
 
   @KYC_GOVERNMENT_ID @V_Negative
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Indonesia (ID) <Scenario>
@@ -581,29 +581,29 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Indonesia_ID_input_id1_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_Key_id1_missing                                   | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_null                                     | 400        |
+      | Scenario                                                     | statusCode |
+      | KYC_GOVERNMENT_Indonesia_ID_input_id1_empty_string           | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_space             | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_Key_id1_missing            | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_null              | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Indonesia_ID_input_id1_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_Key_fullGivenName_missing                                   | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_empty_string | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_space   | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_Key_fullGivenName_missing  | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_null    | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Indonesia_ID_input_fullGivenName_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_empty_string   | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_space     | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_null      | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_number                                   | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_Key_dateOfBirth_missing                                   | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_Key_dateOfBirth_missing    | 400        |
 
   @KYC_GOVERNMENT_ID  @V_Negative
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Indonesia (ID) <Scenario>
@@ -639,9 +639,9 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_bollean                                  | 400        |
-      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_alphanumaric_invalid                                  | 400        |
+      | Scenario                                                                | statusCode |
+      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_bollean              | 400        |
+      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_alphanumaric_invalid | 400        |
 
   @KYC_GOVERNMENT_MY @V_Positive
   Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Malaysia (MY)  <Scenario>
@@ -678,9 +678,9 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
     Examples:
-      | Scenario                                                                                  | statusCode |
+      | Scenario                                                                                                                                         | statusCode |
       | KYC_GOVERNMENT_Malaysia_MY_input_mandatory_with_optional_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_MATCH | 200        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_with_only_mandatory_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_MATCH | 200        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_with_only_mandatory_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_MATCH     | 200        |
 
   @KYC_GOVERNMENT_MY @V_Negative
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Malaysia (MY) <Scenario>
@@ -715,29 +715,29 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Malaysia_MY_input_id1_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_Key_id1_missing                                   | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_null                                     | 400        |
+      | Scenario                                                    | statusCode |
+      | KYC_GOVERNMENT_Malaysia_MY_input_id1_empty_string           | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_space             | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_Key_id1_missing            | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_null              | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Malaysia_MY_input_id1_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_Key_fullGivenName_missing                                   | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_empty_string | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_space   | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_Key_fullGivenName_missing  | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_null    | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_number                                   | 400        |
       #      | KYC_GOVERNMENT_Malaysia_MY_input_fullGivenName_with_bollean                                  | 400        |
 
-      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_empty_string                                  | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_space                                    | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_null                                     | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_empty_string   | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_space     | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_null      | 400        |
       # https://monnai.atlassian.net/browse/MB-5814
       #      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_number                                   | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_Key_dateOfBirth_missing                                   | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_Key_dateOfBirth_missing    | 400        |
 
 
   @KYC_GOVERNMENT_MY @V_Negative
@@ -774,8 +774,8 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                           | statusCode |
-      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_bollean                          | 400        |
-      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_alphanumaric_invalid             | 400        |
+      | Scenario                                                               | statusCode |
+      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_bollean              | 400        |
+      | KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_alphanumaric_invalid | 400        |
 
 

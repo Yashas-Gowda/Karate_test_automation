@@ -1,4 +1,4 @@
-@PHONE_BASIC_FULL
+@PHONE_PACKAGES @regTest_1 @PHONE_BASIC_FULL
 
   # $.data.phone.basic.active is ignored as it is highly dynamic(TMT response) after discussion with roopa
 Feature: Testing of DPI  - Phone_basic scenarios
@@ -37,13 +37,13 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then match $.meta contains payload.response.meta
 
     Examples:
-      | Scenario                                                               | statusCode |
-      | PHONE_BASIC_response_region_Singapore_SG                               | 200        |
-      | PHONE_BASIC_response_region_Thailand_TH_without_ported                 | 200        |
-      | PHONE_BASIC_response_region_Philippines_PH                             | 200        |
-      | PHONE_BASIC_response_region_Indonesia_ID                               | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US_without_ported             | 200        |
-      | PHONE_BASIC_response_region_MEXICO_MX_without_ported                   | 200        |
+      | Scenario                                                   | statusCode |
+      | PHONE_BASIC_response_region_Singapore_SG                   | 200        |
+      | PHONE_BASIC_response_region_Thailand_TH_without_ported     | 200        |
+      | PHONE_BASIC_response_region_Philippines_PH                 | 200        |
+      | PHONE_BASIC_response_region_Indonesia_ID                   | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_without_ported | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
 
 
   @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
@@ -76,10 +76,10 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then match $.data.phone.basic.portedHistory.portedSinceXDays == "#number"
 
     Examples:
-      | Scenario                                                               | statusCode |
-      | PHONE_BASIC_response_region_Thailand_TH_with_ported                    | 200        |
-      | PHONE_BASIC_response_region_UnitedStates_US_with_ported                | 200        |
-      | PHONE_BASIC_response_region_MEXICO_MX_with_ported                      | 200        |
+      | Scenario                                                | statusCode |
+      | PHONE_BASIC_response_region_Thailand_TH_with_ported     | 200        |
+      | PHONE_BASIC_response_region_UnitedStates_US_with_ported | 200        |
+      | PHONE_BASIC_response_region_MEXICO_MX_with_ported       | 200        |
 
   @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
@@ -145,8 +145,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then match $.data.phone.basic contains payload.response.data.phone.basic
 
     Examples:
-      | Scenario                                                               | statusCode |
-      | PHONE_BASIC_response_region_BRAZIL_BR_without_ported                   | 200        |
+      | Scenario                                             | statusCode |
+      | PHONE_BASIC_response_region_BRAZIL_BR_without_ported | 200        |
 
   @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
@@ -178,8 +178,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
     Then match $.data.phone.basic contains payload.response.data.phone.basic
 
     Examples:
-      | Scenario                                                               | statusCode |
-      | PHONE_BASIC_response_region_BRAZIL_BR_with_ported                      | 200        |
+      | Scenario                                          | statusCode |
+      | PHONE_BASIC_response_region_BRAZIL_BR_with_ported | 200        |
 
   #  PH(639058248748), SG(6596610822) , MY(60129279293),GB(447826292229),CY(35796898016) -( TMT is returning "porting_history": "n/a"- seems region not supported)
   #
@@ -221,14 +221,14 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
     Examples:
-      | Scenario                                                                       | statusCode |
-      | PHONE_BASIC_response_region_Malaysia_MY                                         | 200        |
-      | PHONE_BASIC_response_region_Vietnam_VN                                         | 200        |
-      | PHONE_BASIC_response_region_Cyprus_CY                                          | 200        |
-      | PHONE_BASIC_response_region_Italy_IT_without_ported                            | 200        |
-      | PHONE_BASIC_response_region_UnitedKingdom_GB                                   | 200        |
-      | PHONE_BASIC_response_region_FRANCE_FR_without_ported                           | 200        |
-      | PHONE_BASIC_response_region_Netherlands_NL_without_ported                      | 200        |
+      | Scenario                                                  | statusCode |
+      | PHONE_BASIC_response_region_Malaysia_MY                   | 200        |
+      | PHONE_BASIC_response_region_Vietnam_VN                    | 200        |
+      | PHONE_BASIC_response_region_Cyprus_CY                     | 200        |
+      | PHONE_BASIC_response_region_Italy_IT_without_ported       | 200        |
+      | PHONE_BASIC_response_region_UnitedKingdom_GB              | 200        |
+      | PHONE_BASIC_response_region_FRANCE_FR_without_ported      | 200        |
+      | PHONE_BASIC_response_region_Netherlands_NL_without_ported | 200        |
 
 
 

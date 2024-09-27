@@ -1,4 +1,4 @@
-@PHONE_SOCIAL_FidoV1
+@PHONE_SOCIAL_FidoV1 @PHONE_PACKAGES @regTest_1
   #@ignore
 Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   #  @FIDO_V1 @ignore
@@ -12,7 +12,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
     * print Custom_env_authFeature_tenant_config
 
-  @PHONE_SOCIAL @FIDO @smokeTest
+
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
@@ -61,7 +61,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | Scenario                | statusCode |
       | PHONE_SOCIAL_Happy_flow | 200        |
 
-  @PHONE_SOCIAL @FIDO
+
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions specific country where messaging.viber.lastSeen is null- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
@@ -108,7 +108,6 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_country_UnitedKingdom_GB_response | 200        |
 
 
-  @PHONE_SOCIAL @FIDO
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields for regions of specific country where messaging.viber.lastSeen is notnull - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
