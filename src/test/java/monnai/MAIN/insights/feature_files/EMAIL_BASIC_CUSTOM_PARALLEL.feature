@@ -1,4 +1,4 @@
-@EMAIL_BASIC_CUSTOM_PARALLEL
+@EMAIL_BASIC_CUSTOM_PARALLEL @EMAIL_PACKAGES @regTest_2
 
 Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partner WhoIsXML, ZeroBounce,AtData, HaveIBeenPawned.
   # This EMAIL_BASIC FIDO Manual sign off was given by Sameena, where we dont have monnai-dp mapping info. After discussion with roopa, Automation Test data is not verified by yashas and taken reference from manual sign off.

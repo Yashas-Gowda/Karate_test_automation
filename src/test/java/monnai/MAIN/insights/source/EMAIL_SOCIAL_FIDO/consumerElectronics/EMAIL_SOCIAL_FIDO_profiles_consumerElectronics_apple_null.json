@@ -6,7 +6,7 @@
     ],
     "email": "thousifabdul96@gmail.com"
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": {
@@ -17,11 +17,12 @@
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 3,
-            "registeredMessagingProfiles": 0,
+            "registeredMessagingProfiles": 1,
             "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
@@ -32,14 +33,14 @@
                 "registered": null
               },
               "samsung": {
-                "registered": null
+                "registered": false
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "ABDUL THOUSIF",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/2abce79d/3979/422f/9ace/d00b9496ba09/e8113398-f7e4-4979-8d45-d8bff7732a6f.jpg"
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/4bae928d/b963/4b4c/86f5/761566f2f2ac/df520e60-e847-4ecb-9c79-e18a14dd5e14.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -72,6 +73,9 @@
               },
               "tokopedia": {
                 "registered": null
+              },
+              "deliveroo": {
+                "registered": false
               }
             },
             "socialMedia": {
@@ -116,7 +120,7 @@
                 "registered": null
               },
               "gravatar": {
-                "registered": null,
+                "registered": false,
                 "location": null,
                 "name": null,
                 "profileUrl": null,
@@ -134,11 +138,11 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "S.ABDUL THOUSIF",
+                "id": "s.abdul.thousif",
                 "handle": null,
                 "bio": null,
                 "age": null,
@@ -172,7 +176,7 @@
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -220,7 +224,7 @@
             },
             "travel": {
               "booking": {
-                "registered": null
+                "registered": false
               },
               "airbnb": {
                 "registered": null,
@@ -237,12 +241,18 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -253,10 +263,16 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "dpi_23_sep25_2",
+      "referenceId": "Dpi_sep_10_release_5",
       "inputEmail": "thousifabdul96@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

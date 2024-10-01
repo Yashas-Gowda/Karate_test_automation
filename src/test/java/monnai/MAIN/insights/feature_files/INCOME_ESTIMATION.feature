@@ -1,4 +1,4 @@
-@INCOME_ESTIMATION @ignore
+@INCOME_ESTIMATION @ignore @regTest_4 @INCOME
 Feature: INCOME_ESTIMATION Package full Automation
 
   Background:
@@ -46,25 +46,25 @@ Feature: INCOME_ESTIMATION Package full Automation
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                              | statusCode |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_with_optional_input_phone_email_output_salaryRange_null_2500000      | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_null_2500000      | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_2500001_3500000   | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_3500001_4500000   | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_4500001_5500000   | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_5500001_6500000   | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_6500001_7500000   | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_7500001_10000000  | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_10000001_12500000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_12500001_15000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_15000001_17500000 | 200        |
+      | Scenario                                                                                                | statusCode |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_with_optional_input_phone_email_output_salaryRange_null_2500000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_null_2500000                                 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_2500001_3500000                              | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_3500001_4500000                              | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_4500001_5500000                              | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_5500001_6500000                              | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_6500001_7500000                              | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_7500001_10000000                             | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_10000001_12500000                            | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_12500001_15000000                            | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_15000001_17500000                            | 200        |
       # No data     | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_17500001_20000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_20000001_25000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_25000001_30000000 | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_20000001_25000000                            | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_25000001_30000000                            | 200        |
       # No data   | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_30000001_40000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_40000001_50000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_50000001_75000000 | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_75000001_100000000| 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_40000001_50000000                            | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_50000001_75000000                            | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_75000001_100000000                           | 200        |
   # No data  | INCOME_ESTIMATION_POSITIVE_input_NIK_ID_output_salaryRange_100000000_null    | 200        |
 
 
@@ -175,16 +175,16 @@ Feature: INCOME_ESTIMATION Package full Automation
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                    | statusCode | phoneDefaultCountryCode |
+      | Scenario                                                                                 | statusCode | phoneDefaultCountryCode |
       #  Need to change INVALID_ID_TYPE_FOR_COUNTRY    | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_Valid   | 400        | "IN"                    |
       | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_missing_empty_string | 400        | ""                      |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_missing_with_space | 400        | " "                     |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_Key_missing | 400        | " "                     |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_INDONESIA | 400        | "INDONESIA"             |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_123 | 400        | "123"                   |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_abc | 400        | "abc"                   |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_abc123 | 400        | "abc123"                   |
-      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_bollean | 400        | true               |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_missing_with_space   | 400        | " "                     |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_Key_missing          | 400        | " "                     |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_INDONESIA    | 400        | "INDONESIA"             |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_123          | 400        | "123"                   |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_abc          | 400        | "abc"                   |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_abc123       | 400        | "abc123"                |
+      | INCOME_ESTIMATION_NEGATIVE_input_validation_phoneDefaultCountryCode_invalid_bollean      | 400        | true                    |
 
 
   Scenario Outline: Validation of INCOME_ESTIMATION NEGATIVE scenario for permutation and combination of input idType data points -> <Scenario>
@@ -259,10 +259,10 @@ Feature: INCOME_ESTIMATION Package full Automation
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                                                           | statusCode |
-      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_RURAL                             | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_URBAN_NEW_WEALTH      | 200        |
-      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_UPCOMING_URBAN_CLIMBERS      | 200        |
+      | Scenario                                                                                                             | statusCode |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_RURAL                               | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_URBAN_NEW_WEALTH        | 200        |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_location_category_URBAN_class_UPCOMING_URBAN_CLIMBERS | 200        |
 
 
   @INCOME_ESTIMATION_IN
@@ -293,8 +293,8 @@ Feature: INCOME_ESTIMATION Package full Automation
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                                 | statusCode |
-      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_null                      | 200        |
+      | Scenario                                                            | statusCode |
+      | INCOME_ESTIMATION_POSITIVE_input_region_IN_with_address_output_null | 200        |
 
 
 

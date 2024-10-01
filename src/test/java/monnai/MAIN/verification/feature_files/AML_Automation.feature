@@ -1,4 +1,4 @@
-@AML_FULL
+@AML_FULL @regTest_4 @KYC
 Feature: Testing of DPI  - Verification AML Package scenarios
 
   Background:
@@ -8,7 +8,7 @@ Feature: Testing of DPI  - Verification AML Package scenarios
     * def BearerToken = authFeature.authToken
 
 
-  @smokeTest @AML_1
+
   Scenario Outline: Validate DPI AML positive scenarios with all input fields <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/AML/<Scenario>.json")

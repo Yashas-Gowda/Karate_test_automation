@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "tejashreekarmokar2812@gmail.com"
+    "email": "PRASADYADAVBIRENDRA802@GMAIL.COM"
   },
   "response": {
     "data": {
@@ -12,18 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
+            "registeredProfiles": 3,
             "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 2,
-            "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 3,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
             "registeredMessagingProfiles": 0,
             "registeredProfessionalProfiles": 0,
-            "registeredEntertainmentProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
             "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 1,
+            "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -31,24 +32,25 @@
               "apple": {
                 "registered": false
               },
-              "samsung": null
+              "samsung": {
+                "registered": false
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Tejashree Karmokar",
-                "photo": null,
-                "gender": "F"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
               "mailru": null,
               "rambler": null
             },
             "ecommerce": {
               "amazon": {
-                "registered": true
+                "registered": false
               },
               "ebay": {
                 "registered": false
@@ -65,7 +67,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "pinterest": {
                 "registered": true
@@ -103,8 +105,11 @@
               "wordpress": {
                 "registered": false
               },
+              "atlassian": {
+                "registered": false
+              },
               "linkedin": {
-                "registered": null,
+                "registered": false,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -124,7 +129,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": true
+                "registered": false
               },
               "disneyplus": {
                 "registered": false
@@ -149,12 +154,18 @@
             },
             "financial": {
               "paypal": {
-                "registered": true
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
               }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -169,16 +180,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "a64eb5b0-dcc4-4be8-8012-8b893e5e5ad6",
-      "inputEmail": "tejashreekarmokar2812@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "PRASADYADAVBIRENDRA802@GMAIL.COM",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -1,4 +1,4 @@
-@PORTED_DETAILS @PHONE_BASIC_FULL
+@PHONE_PACKAGES @regTest_1 @PHONE_BASIC_FULL
 Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
 
   Background:

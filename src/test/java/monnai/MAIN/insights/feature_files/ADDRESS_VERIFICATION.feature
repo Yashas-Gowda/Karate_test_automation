@@ -1,5 +1,5 @@
   #@ignore
-  @ADDRESS_VERIFICATION
+  @ADDRESS_VERIFICATION @regTest_4
 
   Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
 

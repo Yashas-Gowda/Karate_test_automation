@@ -1,4 +1,4 @@
-@EMPLOYMENT_SOCIAL
+@EMPLOYMENT_SOCIAL @regTest_3 @EMPLOYMENT_PACKAGES
 Feature:Testing of DPI  - EMPLOYMENT_SOCIAL feature scenarios on Social sub package for dp Visam
 
   Background:

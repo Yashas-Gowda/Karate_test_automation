@@ -1,11 +1,10 @@
 {
   "request": {
     "eventType": "ACCOUNT_CREATION",
-    "cleansingFlag": true,
-    "email": "rraghavendra523@gmail.com",
     "packages": [
       "EMAIL_SOCIAL"
-    ]
+    ],
+    "email": "shehos2003@yahoo.gr"
   },
   "response": {
     "data": {
@@ -13,16 +12,16 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 5,
-            "registeredConsumerElectronicsProfiles": 0,
+            "registeredProfiles": 12,
+            "registeredConsumerElectronicsProfiles": 1,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
             "registeredSocialMediaProfiles": 3,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredEntertainmentProfiles": 0,
-            "registeredTravelProfiles": 0,
-            "registeredFinancialProfiles": 0,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
             "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
@@ -31,29 +30,49 @@
           "profiles": {
             "consumerElectronics": {
               "apple": {
-                "registered": false
+                "registered": null
               },
-              "samsung": null
+              "samsung": {
+                "registered": true
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "Raghavendra Raghu",
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5a9625de/8e27/4a1f/943f/129f83564069/f8c3a8cb-7efd-468d-bd43-337b563c25e5.jpg",
-                "gender": "M"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
               },
-              "mailru": null,
-              "rambler": null
+              "mailru": {
+                "registered": null
+              },
+              "rambler": {
+                "registered": null
+              }
             },
             "ecommerce": {
               "amazon": {
                 "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
+              },
+              "flipkart": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "lazada": {
+                "registered": null
+              },
+              "tokopedia": {
+                "registered": null
               },
               "deliveroo": {
                 "registered": false
@@ -67,13 +86,38 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
+              },
+              "flickr": {
+                "registered": null,
+                "username": null
               },
               "pinterest": {
                 "registered": true
               },
               "twitter": {
-                "registered": false
+                "registered": true
+              },
+              "tumblr": {
+                "registered": null
+              },
+              "weibo": {
+                "registered": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": null
+              },
+              "quora": {
+                "registered": null
+              },
+              "qzone": {
+                "registered": null
               },
               "gravatar": {
                 "registered": false,
@@ -81,44 +125,72 @@
                 "name": null,
                 "profileUrl": null,
                 "username": null
+              },
+              "foursquare": {
+                "registered": null,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": null
               }
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "George Shehata",
+                "id": "george-shehata",
                 "handle": null,
                 "bio": null,
                 "age": null,
-                "city": null,
-                "state": null,
-                "country": null,
-                "photo": null
+                "city": "Athens",
+                "state": "Glyfada",
+                "country": "Luxembourg",
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/dac8b09c/722d/46a9/abc3/89559de9b7be/91aa0d3b-a884-43ca-abec-a6efa699f965.jpg"
               },
-              "discord": null,
-              "kakao": null
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
             },
             "professional": {
+              "github": {
+                "registered": null
+              },
               "wordpress": {
                 "registered": false
               },
+              "atlassian": {
+                "registered": null
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
+              "evernote": {
+                "registered": null
+              },
               "microsoft": {
-                "registered": false
+                "registered": true
+              },
+              "zoho": {
+                "registered": null
+              },
+              "adobe": {
+                "registered": null
               },
               "hubspot": {
                 "registered": false
@@ -126,15 +198,33 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
+              },
+              "lastfm": {
+                "registered": null
+              },
+              "vimeo": {
+                "registered": null
+              },
+              "envato": {
+                "registered": null
+              },
+              "patreon": {
+                "registered": null
               },
               "disneyplus": {
                 "registered": false
+              },
+              "netflix": {
+                "registered": null
+              },
+              "archiveorg": {
+                "registered": null
               }
             },
             "travel": {
               "booking": {
-                "registered": false
+                "registered": true
               },
               "airbnb": {
                 "registered": null,
@@ -151,10 +241,7 @@
             },
             "financial": {
               "paypal": {
-                "registered": false
-              },
-              "binance": {
-                "registered": false
+                "registered": true
               }
             },
             "education": {
@@ -164,7 +251,8 @@
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -179,16 +267,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "e667b9d5-1bc6-4e13-b234-297272af87e8",
-      "inputEmail": "rraghavendra523@gmail.com",
+      "referenceId": "Dpi_sep_10_release_5",
+      "inputEmail": "shehos2003@yahoo.gr",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

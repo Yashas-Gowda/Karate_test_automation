@@ -1,4 +1,4 @@
-@IP_BASIC
+@IP_BASIC @regTest_5 @IP_BASIC
 Feature: Testing of DPI  - IP_BASIC feature scenarios
 
   Background:
@@ -7,7 +7,7 @@ Feature: Testing of DPI  - IP_BASIC feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline: Validation of IP_BASIC Negative scenario for error code when an invalid / null / empty IP address in input -> <Scenario> | InputIP -> <ipAddress>.
     Given url requestUrl
     And def payload = read( "../" + source + "/IP_BASIC/<Scenario>.json")

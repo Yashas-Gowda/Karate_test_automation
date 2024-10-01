@@ -1,4 +1,4 @@
-@DOMAIN_BREACH @DOMAIN_BREACH_BREACH_SUBSCRIPTION_RECORDS
+@regTest_3 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_SUBSCRIPTION_RECORDS
 
 @parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_SUBSCRIPTION_RECORDS Package scenarios
@@ -82,38 +82,38 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_SUBSCRIPTION_RECORDS Package 
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                     | statusCode |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_is_missing                      | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_syntax_format  | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_abc            | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_123            | 400        |
+      | Scenario                                                                                                                                       | statusCode |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_is_missing                            | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_syntax_format        | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_abc                  | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_invalid_123                  | 400        |
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_empty_string                | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_empty_string_with_space     | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_null                        | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_empty_string                 | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_empty_string_with_space      | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_null                         | 400        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_number                | 400        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_boolean               | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_number                       | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_domainName_data_Point_key_value_is_boolean                      | 400        |
 
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_data_Point_key_is_missing                      | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_toDate_data_Point_key_is_missing                      | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_data_Point_key_is_missing                              | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_toDate_data_Point_key_is_missing                                | 400        |
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_is_missing                      | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_syntax_format  | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_abc            | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_123            | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_is_missing                       | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_syntax_format   | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_abc             | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_invalid_123             | 400        |
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_empty_string                | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_empty_string_with_space     | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_null                        | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_empty_string            | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_empty_string_with_space | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_null                    | 400        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_number                | 400        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_boolean               | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_number                  | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_boolean                 | 400        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_in_UTC_Format                | 400        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_are_same               | 400        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_data_Point_key_value_is_more_then_toDate               | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_is_in_UTC_Format           | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_toDate_data_Point_key_value_are_same                   | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_fromDate_data_Point_key_value_is_more_then_toDate               | 400        |
 
   #      Domain name is not subscribed so we are unable to get the resposne for this data point
   #      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_SUBSCRIPTION_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_syntax_format  | 400        |

@@ -1,4 +1,4 @@
-@KYC_PAN
+@KYC_PAN @regTest_4 @KYC
 Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
 
   Background:

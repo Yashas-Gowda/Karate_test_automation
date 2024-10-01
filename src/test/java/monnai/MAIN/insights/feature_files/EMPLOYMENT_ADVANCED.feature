@@ -1,4 +1,4 @@
-@EMPLOYMENT_ADVANCED
+@EMPLOYMENT_ADVANCED @regTest_3 @EMPLOYMENT_PACKAGES
 Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
   # EMPLOYMENT_BASIC and EMPLOYMENT_ADVANCED package manual sign off was given by Anjan and AUTOMATION is done by Yashas.
   #SOCIAL_LINKS will be there in the subpackage of EMPLOYMENT_DETAILS package where UAN_BASIC and UAN_ADVANCED are disabled.

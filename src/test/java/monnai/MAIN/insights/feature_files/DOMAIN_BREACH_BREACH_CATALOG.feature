@@ -1,4 +1,4 @@
-@DOMAIN_BREACH @DOMAIN_BREACH_BREACH_CATALOG
+@regTest_3 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_CATALOG
 
 @parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_CATALOG Package scenarios
@@ -42,15 +42,15 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_CATALOG Package scenarios
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                             | statusCode |
-      | DOMAIN_BREACH_Positive_type_BREACH_CATALOG_with_sourceId             | 200        |
-      | DOMAIN_BREACH_Positive_type_BREACH_CATALOG_with_sourceId_1           | 200        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_syntax_format  | 200        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_abc            | 200        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_123456            | 200        |
+      | Scenario                                                                                                                 | statusCode |
+      | DOMAIN_BREACH_Positive_type_BREACH_CATALOG_with_sourceId                                                                 | 200        |
+      | DOMAIN_BREACH_Positive_type_BREACH_CATALOG_with_sourceId_1                                                               | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_syntax_format | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_abc           | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_value_is_invalid_123456        | 200        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_number                | 200        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOGS_then_domainName_data_Point_key_value_is_boolean               | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_number              | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOGS_then_domainName_data_Point_key_value_is_boolean            | 200        |
 
 
   Scenario Outline:  DPI DOMAIN_BREACH Package Negative scenario where type = BREACH_CATALOG for validation of "sourceId":- <Scenario>
@@ -85,12 +85,12 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_CATALOG Package scenarios
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                     | statusCode |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_is_missing                      | 400        |
+      | Scenario                                                                                                                     | statusCode |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_sourceId_data_Point_key_is_missing                         | 400        |
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_empty_string                | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_empty_string_with_space     | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_null                        | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_empty_string            | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_empty_string_with_space | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_CATALOG_then_domainName_data_Point_key_value_is_null                    | 400        |
 
 
 

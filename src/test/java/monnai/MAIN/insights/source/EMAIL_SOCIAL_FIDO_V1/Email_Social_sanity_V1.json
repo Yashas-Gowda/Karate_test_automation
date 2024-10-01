@@ -40,8 +40,7 @@
               "google": {
                 "registered": true,
                 "name": null,
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/7b5c8eb1/4776/4438/9152/7840735e14cb/289f28b1-673f-4f57-a7b9-13854e9673a8.jpg",
-                "gender": "F"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/7b5c8eb1/4776/4438/9152/7840735e14cb/289f28b1-673f-4f57-a7b9-13854e9673a8.jpg"
               },
               "yahoo": {
                 "registered": false
@@ -186,7 +185,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "29ef950f-55aa-4d01-b69c-5df1c0668d3c",
+      "referenceId": "1f57d0f7-c1a8-43cd-ab1b-2c2b46c2bfbd",
       "inputEmail": "sammy.khnm@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
