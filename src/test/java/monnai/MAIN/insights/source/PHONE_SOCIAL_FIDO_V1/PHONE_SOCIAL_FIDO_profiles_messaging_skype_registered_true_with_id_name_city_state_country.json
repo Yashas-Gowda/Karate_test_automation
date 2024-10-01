@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "919830908019",
+    "phoneNumber": "919884992964",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
@@ -14,15 +14,15 @@
         "basic": null,
         "social": {
           "summary": {
-            "registeredProfiles": 2,
+            "registeredProfiles": 7,
             "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
+            "registeredEcommerceProfiles": 2,
             "registeredSocialMediaProfiles": 0,
-            "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 3,
             "lastActivity": null,
-            "numberOfNamesReturned": 0,
-            "numberOfPhotosReturned": 0
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "emailProvider": {
@@ -30,23 +30,17 @@
                 "registered": true,
                 "accountId": null,
                 "name": null
-              },
-              "yahoo": {
-                "registered": null
               }
             },
             "ecommerce": {
               "flipkart": {
-                "registered": false
+                "registered": true
               },
               "bukalapak": {
                 "registered": null
               },
-              "jdid": {
-                "registered": null
-              },
               "amazon": {
-                "registered": false
+                "registered": true
               }
             },
             "socialMedia": {
@@ -62,7 +56,7 @@
             },
             "professional": {
               "microsoft": {
-                "registered": false
+                "registered": true
               },
               "linkedin": {
                 "registered": null
@@ -70,59 +64,32 @@
             },
             "messaging": {
               "telegram": {
-                "registered": false,
+                "registered": true,
                 "photo": null,
-                "privacyStatus": null,
+                "privacyStatus": "PRIVATE",
                 "lastSeen": null
               },
               "whatsapp": {
                 "registered": true,
-                "photo": null,
-                "privacyStatus": "PRIVATE",
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/23630b62/4d64/4047/8c47/b7d297385f98/ea1bf90d-d5f8-43f1-a6ee-8ba4b7c333ae.jpg",
+                "privacyStatus": "PUBLIC",
                 "lastSeen": null,
                 "about": null,
                 "businessAccount": false
               },
-              "viber": {
-                "registered": null,
-                "photo": null,
-                "lastSeen": null,
-                "name": null
-              },
-              "kakao": {
-                "registered": null
-              },
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
-                "id": null,
+                "id": "wetbluee",
                 "handle": null,
                 "bio": null,
-                "name": null,
+                "name": "Aneesa Dawood",
                 "age": null,
                 "gender": null,
                 "photo": null,
-                "city": null,
-                "state": null,
-                "country": null
-              },
-              "ok": {
-                "registered": null,
-                "age": null
-              },
-              "zalo": {
-                "registered": null,
-                "uid": null,
-                "name": null,
-                "dateOfBirth": null
-              },
-              "line": {
-                "registered": null,
-                "name": null,
-                "photo": null
-              },
-              "snapchat": {
-                "registered": null
+                "city": "Chennai",
+                "state": "Tamil Nadu",
+                "country": "India"
               }
             }
           }
@@ -149,14 +116,15 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919830908019",
-      "cleansedPhoneNumber": "+919830908019",
-      "referenceId": "Dpi_sep_10_release_5",
+      "inputPhoneNumber": "919884992964",
+      "cleansedPhoneNumber": "+919884992964",
+      "referenceId": "31916c02-bc79-4e5b-b690-c8c1a74bc72c",
       "requestedPackages": [
         "PHONE_SOCIAL"
       ],
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

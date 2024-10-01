@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "919830908019",
+    "phoneNumber": "9448493493",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
@@ -17,9 +17,9 @@
             "registeredProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 0,
+            "registeredSocialMediaProfiles": 1,
             "registeredProfessionalProfiles": 0,
-            "registeredMessagingProfiles": 1,
+            "registeredMessagingProfiles": 0,
             "lastActivity": null,
             "numberOfNamesReturned": 0,
             "numberOfPhotosReturned": 0
@@ -51,7 +51,7 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": false
@@ -76,12 +76,11 @@
                 "lastSeen": null
               },
               "whatsapp": {
-                "registered": true,
+                "registered": false,
                 "photo": null,
-                "privacyStatus": "PRIVATE",
+                "privacyStatus": null,
                 "lastSeen": null,
-                "about": null,
-                "businessAccount": false
+                "about": null
               },
               "viber": {
                 "registered": null,
@@ -149,8 +148,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "919830908019",
-      "cleansedPhoneNumber": "+919830908019",
+      "inputPhoneNumber": "9448493493",
+      "cleansedPhoneNumber": "+919448493493",
       "referenceId": "Dpi_sep_10_release_5",
       "requestedPackages": [
         "PHONE_SOCIAL"

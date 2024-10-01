@@ -292,7 +292,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_amazon_registered_null                        | 200        |
 
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_true                      | 200        |
-      #  data not found    | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_false      | 200        |
+      | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_false                     | 200        |
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_flipkart_registered_null                      | 200        |
 
       | PHONE_SOCIAL_FIDO_profiles_ecommerce_bukalapak_registered_true_hasWhatsappOtp_true | 200        |
