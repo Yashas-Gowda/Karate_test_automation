@@ -937,7 +937,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_FIDO_profiles_messaging_whatsapp_false_telegram_registered_true_with_photo_privacyStatus_PUBLIC | 200        |
 
 
-  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp,skype,viber]  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")
     And headers headers
@@ -1003,8 +1003,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_true_with_name           | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_viber_registered_true_with_lastSeen_name  | 200        |
 
-
-  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging when where messaging.viber.lastSeen is notnull - [telegram,whatsapp,viber,kakao,skype,ok,zalo,line,snapchat],But fido gives only [telegram,whatsapp]  - <Scenario>
+  Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of messaging app - skype  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
     And headers headers
@@ -1055,7 +1054,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print count_numberOfPhotosReturned
     * match count_numberOfPhotosReturned == $.data.phone.social.summary.numberOfPhotosReturned
 
-    * match payload.response.data.phone.social.profiles.messaging == $.data.phone.social.profiles.messaging
+    * match payload.response.data.phone.social.profiles.messaging.skype == $.data.phone.social.profiles.messaging.skype
     * match  $.data.phone.social.summary.lastActivity == '#null'
     * set  payload.response.data.phone.social.profiles.messaging.viber = "#ignore"
     # Vibor major outrage so commented the below line, please uncomment when it is fixed from fido

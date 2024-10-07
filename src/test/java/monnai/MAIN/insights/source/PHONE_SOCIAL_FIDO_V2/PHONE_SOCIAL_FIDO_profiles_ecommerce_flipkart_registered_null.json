@@ -5,7 +5,7 @@
     "packages": [
       "PHONE_SOCIAL"
     ],
-    "phoneNumber": "6262818507188",
+    "phoneNumber": "62818507188",
     "phoneDefaultCountryCode": "ID"
   },
   "response": {
@@ -126,7 +126,8 @@
             }
           }
         },
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -142,17 +143,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6262818507188",
+      "inputPhoneNumber": "62818507188",
       "cleansedPhoneNumber": "+6262818507188",
-      "referenceId": "819e4211-cc23-4a9e-a2db-af0503435259",
+      "referenceId": "Dpi_oct_3_release_1",
       "requestedPackages": [
         "PHONE_SOCIAL"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -84,7 +84,7 @@
                 "businessAccount": false
               },
               "viber": {
-                "registered": false,
+                "registered": null,
                 "photo": null,
                 "lastSeen": null,
                 "name": null
@@ -127,7 +127,8 @@
             }
           }
         },
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -143,15 +144,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "6282226265640",
       "cleansedPhoneNumber": "+6282226265640",
-      "referenceId": "e232b99e-415a-4463-97d8-0a5a3e30138b",
+      "referenceId": "3b323b3e-8256-4b9c-967d-626e8b3bacc2",
       "requestedPackages": [
         "PHONE_SOCIAL"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
     ]
