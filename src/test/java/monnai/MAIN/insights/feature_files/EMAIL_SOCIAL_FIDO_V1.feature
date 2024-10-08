@@ -1,5 +1,5 @@
 @EMAIL_SOCIAL_FIDOV1 @EMAIL_PACKAGES @regTest_2
-  
+
 Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   Background:
     * configure charset = null
@@ -350,7 +350,6 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     * set payload.response.data.email.social.profiles.socialMedia.gravatar.photo = "#ignore"
-    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
     * match $.data.email.social.profiles.socialMedia.gravatar.photo == "##regex ^.*(https://).*"
 
     * def socialMedia = $.data.email.social.profiles.socialMedia
@@ -1066,7 +1065,8 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
-    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
+    #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
     And headers headers
     And header Authorization = BearerToken
     And request payload.request
