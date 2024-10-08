@@ -3,8 +3,8 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "918428880581",
-    "email": "naveenmj999@gmail.com",
+    "phoneNumber": "9652341923",
+    "email": "rachamounika786@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -24,9 +24,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "PhonePe",
-              "nameAtBank": "NARISETTY VENKATA RAVI",
-              "upiId": "12ravivenkat2@ybl",
+              "appName": "Samsung Pay",
+              "nameAtBank": "RACHA VENKAYAMMA ",
+              "upiId": "rachamounika786@pingpay",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -46,17 +46,16 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "918428880581",
-      "cleansedPhoneNumber": "+918428880581",
-      "referenceId": "50ad0c37-46df-4d6e-9d54-fd821a8530c0",
-      "inputEmail": "naveenmj999@gmail.com",
+      "inputPhoneNumber": "9652341923",
+      "cleansedPhoneNumber": "+919652341923",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "rachamounika786@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
       "inputUpiApplicationName": "PRIMARY",
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

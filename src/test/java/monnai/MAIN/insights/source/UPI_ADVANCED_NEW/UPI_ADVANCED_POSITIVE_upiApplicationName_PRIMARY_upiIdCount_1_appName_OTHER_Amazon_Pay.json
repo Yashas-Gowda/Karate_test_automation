@@ -3,7 +3,8 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9609451590",
+    "phoneNumber": "7302068606",
+    "email": "girendra2535@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -24,8 +25,8 @@
           "accounts": [
             {
               "appName": "Amazon Pay",
-              "nameAtBank": "PALASH PATRA",
-              "upiId": "9609451590@apl",
+              "nameAtBank": "Sangita  Devi",
+              "upiId": "amzn0010672811@apl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -40,16 +41,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9609451590",
-      "cleansedPhoneNumber": "+919609451590",
-      "referenceId": "Dpi_march_6_upi_1",
+      "inputPhoneNumber": "7302068606",
+      "cleansedPhoneNumber": "+917302068606",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "girendra2535@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
-      "inputUpiApplicationName": "PRIMARY"
+      "inputUpiApplicationName": "PRIMARY",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

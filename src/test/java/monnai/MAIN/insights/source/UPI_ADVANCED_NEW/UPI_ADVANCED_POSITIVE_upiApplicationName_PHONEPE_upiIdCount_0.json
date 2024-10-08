@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9550116199",
-    "email": "darshangowdadg456@gmail.com",
-    "upiApplicationName": "PHONEPE",
+    "phoneNumber": "9844785668",
+    "email": "eswarappam5929@gmail.com",
+    "upiApplicationName": "ALL",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -21,6 +21,9 @@
       "upi": {
         "basic": null,
         "advanced": {
+          "packageDetails": [
+            "S2101"
+          ],
           "upiIdCount": 0,
           "accounts": []
         }
@@ -31,16 +34,22 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9550116199",
-      "cleansedPhoneNumber": "+919550116199",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
-      "inputEmail": "darshangowdadg456@gmail.com",
+      "inputPhoneNumber": "9844785668",
+      "cleansedPhoneNumber": "+919844785668",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "eswarappam5929@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "ALL",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

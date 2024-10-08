@@ -3,8 +3,8 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9066834500",
-    "email": "acxsadf@gmail.com",
+    "phoneNumber": "7795731123",
+    "email": "kirankumarbs1985@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -25,8 +25,8 @@
           "accounts": [
             {
               "appName": "Slice",
-              "nameAtBank": "SRINIVAS  K R",
-              "upiId": "kr9066834@sliceaxis",
+              "nameAtBank": "KIRAN KUMAR B S",
+              "upiId": "kirankumarbs1@sliceaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -41,17 +41,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9066834500",
-      "cleansedPhoneNumber": "+919066834500",
-      "referenceId": "Dpi_march_29_2",
-      "inputEmail": "acxsadf@gmail.com",
+      "inputPhoneNumber": "7795731123",
+      "cleansedPhoneNumber": "+917795731123",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "kirankumarbs1985@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
-      "inputUpiApplicationName": "PRIMARY"
+      "inputUpiApplicationName": "PRIMARY",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }
