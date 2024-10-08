@@ -13,9 +13,10 @@ pipelines:
           caches:
             - maven  # Caches Maven dependencies
           script:
-            - mvn clean test-compile karate:execute  # Compiling tests and running Karate
+            - mvn clean install
+            - mvn test -Dtest=GeneralTestRunner
           artifacts:
-            - target/karate-reports/**  # Save Karate report artifacts
+            - target/karate-reports/** 
 definitions:
   caches:
     maven: ~/.m2/repository  # Cache for Maven dependencies
