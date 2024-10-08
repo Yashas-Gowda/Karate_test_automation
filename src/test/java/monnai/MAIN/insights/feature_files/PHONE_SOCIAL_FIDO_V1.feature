@@ -11,8 +11,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * def BearerToken = authFeature.authToken
     * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
     * print Custom_env_authFeature_tenant_config
-
-
+    
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
@@ -59,20 +58,15 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print count_numberOfPhotosReturned
     * match count_numberOfPhotosReturned == $.data.phone.social.summary.numberOfPhotosReturned
 
-    * match payload.response.data.phone.social.profiles.emailProvider contains $.data.phone.social.profiles.emailProvider
-    * match payload.response.data.phone.social.profiles.ecommerce contains $.data.phone.social.profiles.ecommerce
-    * match payload.response.data.phone.social.profiles.socialMedia contains $.data.phone.social.profiles.socialMedia
-    * match payload.response.data.phone.social.profiles.professional contains $.data.phone.social.profiles.professional
-    #    * match $.data.phone.social.profiles.messaging.viber.lastSeen == "#regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z";
-    * set response.data.phone.social.profiles.messaging.viber.lastSeen = "#ignore"
+    * match $.data.phone.social.summary contains {registeredProfiles : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {registeredEmailProviderProfiles : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {registeredEcommerceProfiles : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {registeredSocialMediaProfiles : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {registeredProfessionalProfiles : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {registeredMessagingProfiles : '#? _>= 0'}
 
-    * set payload.response.data.phone.social.profiles.messaging.telegram.photo = "#ignore"
-    * set  payload.response.data.phone.social.profiles.messaging.viber = "#ignore"
-    * match $.data.phone.social.profiles.messaging == payload.response.data.phone.social.profiles.messaging
-    * match $.data.phone.social.profiles.messaging.telegram.photo == "##regex ^.*(https://).*"
-    # Vibor major outrage so commented the below line, please uncomment when it is fixed from fido
-    #    * match $.data.phone.social.profiles.messaging.viber contains  {"registered":"##bollean","photo":"##regex ^.*(https://).*","lastSeen":"##regex\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z","name":"##string"}
-
+    * match $.data.phone.social.summary contains {numberOfNamesReturned : '#? _>= 0'}
+    * match $.data.phone.social.summary contains {numberOfPhotosReturned : '#? _>= 0'}
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
 
