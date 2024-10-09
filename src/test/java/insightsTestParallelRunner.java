@@ -90,8 +90,8 @@ public class insightsTestParallelRunner {
 
     @Test
     void single() {
-        Results results = Runner.path("classpath:monnai").outputCucumberJson(true)
-                .tags("@SMOKE_UPI_BASIC, @Mutliple_package_negative_scenarios")
+        Results results = Runner.path("classpath:monnai/MAIN/insights/feature_files").outputCucumberJson(true)
+                //.tags("@EMAIL_BASIC_FIDO, @Mutliple_package_negative_scenarios")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
