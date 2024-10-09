@@ -13,9 +13,16 @@ pipelines:
           caches:
             - maven  # Caches Maven dependencies
           script:
+            - export BUILD_ID=${BITBUCKET_BRANCH//\//_}_${BITBUCKET_BUILD_NUMBER}
+            - echo $BUILD_ID
+            - echo "RUNNING mvn clean install"
             - mvn clean install
-            - cd test-automation
-            - mvn test -Dtest=GeneralTestRunner
+            - pwd
+            - echo "Changing directory to /"
+            - cd /
+            - pwd
+            - echo "
+            - mvn test -Dtest=src.test.java.GeneralTestRunner
           artifacts:
             - target/karate-reports/** 
 definitions:
