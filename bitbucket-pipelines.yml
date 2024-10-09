@@ -21,7 +21,7 @@ pipelines:
             - echo "Changing directory to /"
             - cd /
             - pwd
-            - echo "
+            - echo "Execute mvn test"
             - mvn test -Dtest=src.test.java.GeneralTestRunner
           artifacts:
             - target/karate-reports/** 
