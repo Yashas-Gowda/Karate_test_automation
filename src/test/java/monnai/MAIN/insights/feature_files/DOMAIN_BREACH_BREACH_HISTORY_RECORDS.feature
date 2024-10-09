@@ -1,4 +1,4 @@
-@DOMAIN_BREACH  @DOMAIN_BREACH_BREACH_HISTORY_RECORDS
+@regTest_3 @DOMAIN_BREACH  @DOMAIN_BREACH_BREACH_HISTORY_RECORDS
 
 @parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_HISTORY_RECORDS Package scenarios
@@ -41,8 +41,8 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_HISTORY_RECORDS Package scena
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                     | statusCode |
-      | DOMAIN_BREACH_Positive_type_BREACH_HISTORY_RECORDS_when_cursor           | 200        |
+      | Scenario                                                       | statusCode |
+      | DOMAIN_BREACH_Positive_type_BREACH_HISTORY_RECORDS_when_cursor | 200        |
   #      | DOMAIN_BREACH_Positive_type_BREACH_HISTORY_RECORDS_when_Optional_cursor_with_null | 200        |
   #      | DOMAIN_BREACH_Positive_type_BREACH_HISTORY_RECORDS_when_Optional_cursor_key_missing| 200        |
   #      | DOMAIN_BREACH_Positive_type_BREACH_HISTORY_RECORDS_when_Optional_cursor_key_value_empty_string | 200        |
@@ -81,13 +81,13 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_HISTORY_RECORDS Package scena
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                     | statusCode |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_syntax_format  | 200        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_abc            | 200        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_123            | 200        |
+      | Scenario                                                                                                                                | statusCode |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_syntax_format | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_abc           | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_invalid_123           | 200        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_number                | 200        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_boolean               | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_number                | 200        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_Optional_cursor_data_Point_key_value_is_boolean               | 200        |
 
 
 
@@ -123,18 +123,18 @@ Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_HISTORY_RECORDS Package scena
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                     | statusCode |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_is_missing                      | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_syntax_format  | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_abc            | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_123            | 400        |
+      | Scenario                                                                                                                             | statusCode |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_is_missing                       | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_syntax_format   | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_abc             | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_invalid_123             | 400        |
 
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_empty_string                | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_empty_string_with_space     | 400        |
-      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_null                        | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_empty_string            | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_empty_string_with_space | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_null                    | 400        |
 
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_number                | 400        |
-      |  DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_boolean               | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_number                  | 400        |
+      | DOMAIN_BREACH_Negative_scenarios_When_type_is_BREACH_HISTORY_RECORDS_then_domainName_data_Point_key_value_is_boolean                 | 400        |
 
 
 

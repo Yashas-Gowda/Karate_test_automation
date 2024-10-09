@@ -21,24 +21,14 @@
       "employment": {
         "basic": {
           "summary": {
-            "isEmployed": true,
-            "recentEmployerName": "RANA ENTERPRISES",
+            "isEmployed": false,
+            "recentEmployerName": "TIGHT WELL FASTNERS",
             "noOfPfAccounts": 4,
-            "dateOfJoining": "2022-07-04",
-            "matchingPfAccountNumber": "101157962288"
+            "dateOfJoining": "2016-07-13",
+            "dateOfExit": "2024-05-16",
+            "matchingPfAccountNumber": "100897556662"
           },
           "employmentHistory": [
-            {
-              "pfAccountNumber": "101157962288",
-              "name": "Sansaar",
-              "gender": "MALE",
-              "dateOfBirth": "1996-09-04",
-              "nationalIdVerificationStatus": false,
-              "employerName": "RANA ENTERPRISES",
-              "dateOfJoining": "2022-07-04",
-              "dateOfExit": null,
-              "reasonOfExit": ""
-            },
             {
               "pfAccountNumber": "100897556662",
               "name": "AMIT",
@@ -47,6 +37,17 @@
               "nationalIdVerificationStatus": false,
               "employerName": "TIGHT WELL FASTNERS",
               "dateOfJoining": "2016-07-13",
+              "dateOfExit": "2024-05-16",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101157962288",
+              "name": "Sansaar",
+              "gender": "MALE",
+              "dateOfBirth": "1996-09-04",
+              "nationalIdVerificationStatus": false,
+              "employerName": "RANA ENTERPRISES",
+              "dateOfJoining": "2022-07-04",
               "dateOfExit": null,
               "reasonOfExit": ""
             },
@@ -85,12 +86,13 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "1e79e673-441b-4949-acfb-f5fa9d779db4",
+      "referenceId": "907178cf-0a53-4f7b-aa56-8c0ca0135d9c",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],

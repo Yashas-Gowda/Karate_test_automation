@@ -1,4 +1,4 @@
-@PHONE_BASIC_FULL
+@PHONE_BASIC_FULL @PHONE_PACKAGES @regTest_1
 Feature: Testing of DPI  - Phone_basic scenarios
 
   Background:

@@ -1,4 +1,4 @@
-@seon_email @EMAIL_BASIC_SEON @ignore
+ @EMAIL_BASIC_SEON @ignore @EMAIL_PACKAGES @regTest_2
 Feature: Testing of DPI  - EMAIL_BASIC_SEON feature scenarios
 #@seon_email @ignore
   Background:
@@ -7,7 +7,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_SEON feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @second @smokeTest @smokeTest
+
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull <Scenario>
     Given url requestUrl
     And def payload = read( "../" +  source + "/EMAIL_BASIC/<Scenario>.json")

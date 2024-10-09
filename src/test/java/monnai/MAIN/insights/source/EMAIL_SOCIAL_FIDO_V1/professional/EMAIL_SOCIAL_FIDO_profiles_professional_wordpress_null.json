@@ -13,18 +13,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 8,
-            "registeredConsumerElectronicsProfiles": 1,
+            "registeredProfiles": 12,
+            "registeredConsumerElectronicsProfiles": 2,
             "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 0,
+            "registeredSocialMediaProfiles": 1,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 3,
             "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 1,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 2,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 0
           },
           "profiles": {
@@ -32,14 +33,15 @@
               "apple": {
                 "registered": true
               },
-              "samsung": null
+              "samsung": {
+                "registered": true
+              }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
-                "name": "SHIVANI SINGH",
-                "photo": null,
-                "gender": "F"
+                "name": null,
+                "photo": null
               },
               "yahoo": {
                 "registered": false
@@ -69,7 +71,7 @@
                 "registered": false
               },
               "pinterest": {
-                "registered": false
+                "registered": true
               },
               "twitter": {
                 "registered": false
@@ -104,8 +106,11 @@
               "wordpress": {
                 "registered": null
               },
+              "atlassian": {
+                "registered": true
+              },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
@@ -150,12 +155,18 @@
             },
             "financial": {
               "paypal": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
                 "registered": true
               }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -170,10 +181,12 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "6bd5e799-0fb7-4532-94b5-82748688856e",
+      "referenceId": "b789d358-86d3-4260-bd53-5305a095f818",
       "inputEmail": "shivanijasveersingh@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"

@@ -1,0 +1,61 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "7744894646",
+    "email": "ahay58900@gmail.com",
+    "upiApplicationName": "PRIMARY",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "Navi",
+              "nameAtBank": "HEALTH CARE PHARMA",
+              "upiId": "7744894646@naviaxis",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "7744894646",
+      "cleansedPhoneNumber": "+917744894646",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "ahay58900@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "PRIMARY",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

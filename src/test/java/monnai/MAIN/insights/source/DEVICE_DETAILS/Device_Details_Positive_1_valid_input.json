@@ -24,7 +24,7 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2024-07-08",
+            "lastModified": "2024a-08-06",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -65,10 +65,11 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "cae3f208-6da0-4b9f-8ae6-5bd089f4acb9",
+      "referenceId": "283ca3ea-12f8-4fc3-93a4-48c06add275f",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],

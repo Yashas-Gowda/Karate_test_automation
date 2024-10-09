@@ -1,0 +1,59 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "7978688143",
+    "email": "sudam.1990@gmail.com",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "Bajaj Finserv",
+              "nameAtBank": "SUDAM SENAPATI",
+              "upiId": "7978688143.bfl@abfspay",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "7978688143",
+      "cleansedPhoneNumber": "+917978688143",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "sudam.1990@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

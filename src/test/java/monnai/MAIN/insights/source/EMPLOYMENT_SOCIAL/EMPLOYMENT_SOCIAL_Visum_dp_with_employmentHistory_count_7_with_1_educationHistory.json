@@ -22,81 +22,65 @@
         "advanced": null,
         "social": {
           "summary": {
-            "name": "Suraj Chepurwar",
-            "linkedinHeadline": "Highways, Bridges, Marine Projects",
-            "location": "Mumbai, Maharashtra, India",
-            "employerName": "STRABAG",
+            "name": "suraj chepurwar",
+            "location": "india, asia",
+            "employerName": "strabag",
             "linkedinUrl": "https://linkedin.com/in/suraj-chepurwar-a54593136",
-            "photoUrl": "https://media.licdn.com/dms/image/D5603AQF5TcyPqmUmMA/profile-displayphoto-shrink_800_800/0/1706849905033?e=1723075200&v=beta&t=pjcFDxs6iSoOmhwk2FTgxyaiviQcqu1DVjjCADHSQdU",
             "employmentHistoryCount": 7,
             "educationHistoryCount": 1
           },
           "employmentHistory": [
             {
-              "employeeDesignation": "Resident Engineer",
-              "employerName": "STRABAG ",
-              "employerLocation": "Mumbai, Maharashtra, India · On-site",
-              "dateOfJoining": "2022-09-01",
-              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFEFLyeWOjNpQ/company-logo_200_200/0/1687351171982?e=1725494400&v=beta&t=CiVwvSAypYpw600HOim0dMSdlRPOHoZl77M3V9eMLBw",
-              "employerLinkedinUrl": "https://www.linkedin.com/company/16035/"
-            },
-            {
-              "employeeDesignation": "Project Engineer",
-              "employerName": "Yooshin Engineering Corporation ",
-              "employerLocation": "Mumbai",
-              "dateOfJoining": "2018-12-01",
-              "dateOfExit": "2022-09-15",
-              "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Yooshin+Engineering+Corporation"
-            },
-            {
-              "employeeDesignation": "Highway Maintenance Engineer",
-              "employerName": "L&T Infrastructure Development Projects Limited ",
-              "employerLocation": "Ahmedabad, Gujarat, India",
-              "dateOfJoining": "2018-08-01",
-              "dateOfExit": "2018-12-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQHXr0fZ1Fd8uQ/company-logo_200_200/0/1631360601943?e=1725494400&v=beta&t=gKDxqk2to82DfAyb8qSx2-8991D1lEbVuuz4EeD5nbk",
-              "employerLinkedinUrl": "https://www.linkedin.com/company/2277430/"
-            },
-            {
-              "employeeDesignation": "Assistant Highway Engineer",
-              "employerName": "Artefact Projects Limited ",
-              "employerLocation": "Nagpur Area, India",
-              "dateOfJoining": "2017-02-01",
-              "dateOfExit": "2018-08-15",
-              "employerLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Artefact+Projects+Limited"
-            },
-            {
-              "employeeDesignation": "Site Engineer",
-              "employerName": "Tapi Prestressed Products LTD - India",
-              "employerLocation": "Maharashtra, India",
-              "dateOfJoining": "2015-12-01",
-              "dateOfExit": "2017-02-15",
-              "employerLinkedinUrl": "https://www.linkedin.com/company/7855217/"
-            },
-            {
-              "employeeDesignation": "Site Engineer- Highway ",
-              "employerName": "H.G. Infra Engineering Limited ",
-              "employerLocation": "Maharashtra, India",
+              "employerName": "h.g. infra engineering limited",
+              "employerLocation": "jaipur, rajasthan, india",
               "dateOfJoining": "2013-07-01",
               "dateOfExit": "2015-11-15",
-              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQE5mAKlWFF1tA/company-logo_200_200/0/1695714687667/hg_infra_engineering_limited_logo?e=1725494400&v=beta&t=83BkUU1J_tpx4OuqjidYZv3zRVVOnvb_DczZTZoA8SA",
-              "employerLinkedinUrl": "https://www.linkedin.com/company/2135375/"
+              "employerLinkedinUrl": "https://linkedin.com/company/h.g.-infra-projects-limited"
             },
             {
-              "employeeDesignation": "Highway Engineer",
-              "employerName": "Aarvee Associates ",
-              "employerLocation": "Hyderabad, Telangana, India",
+              "employerName": "yooshin engineering corporation (india)",
+              "employerLocation": "haryana, india",
+              "dateOfJoining": "2018-12-01",
+              "dateOfExit": "2022-09-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/yooshin-engineering-corporation-india"
+            },
+            {
+              "employerName": "strabag",
+              "employerLocation": "drau, karnten, austria",
+              "dateOfJoining": "2022-09-01",
+              "employerLinkedinUrl": "https://linkedin.com/company/strabag"
+            },
+            {
+              "employerName": "tapi prestressed products ltd - india",
+              "employerLocation": "pune, maharashtra, india",
+              "dateOfJoining": "2015-12-01",
+              "dateOfExit": "2017-02-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/tapi-prestressed-products-ltd---india"
+            },
+            {
+              "employerName": "aarvee associates",
+              "employerLocation": "hyderābād, telangana, india",
               "dateOfJoining": "2011-08-01",
               "dateOfExit": "2013-06-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQEWoBldzZjOlg/company-logo_200_200/0/1669737659656/aarvee_associates_logo?e=1725494400&v=beta&t=Nd5aiNGWJOJgywelqtW2Y7KP1E2zVwnhO9pZUe2PXn4",
-              "employerLinkedinUrl": "https://www.linkedin.com/company/1853420/"
+              "employerLinkedinUrl": "https://linkedin.com/company/aarvee-associates"
+            },
+            {
+              "employerName": "l&t infrastructure development projects limited",
+              "employerLocation": "chennai, tamil nadu, india",
+              "dateOfJoining": "2018-08-01",
+              "dateOfExit": "2018-12-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/l&t-infrastructure-development-projects-limited"
+            },
+            {
+              "employerName": "artefact projects limited",
+              "dateOfJoining": "2017-02-01",
+              "dateOfExit": "2018-08-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/artefact-projects-limited"
             }
           ],
           "educationHistory": [
             {
-              "fieldOfStudy": "Bachelor of Engineering - BE, Civil Engineering",
-              "degreeName": "Bachelor of Engineering - BE, Civil Engineering",
-              "schoolName": "Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur"
+              "schoolName": "rashtrasant tukadoji maharaj nagpur university, nagpur"
             }
           ]
         },
@@ -108,15 +92,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_may_20_fido_1",
+      "referenceId": "8a3e0a0b-af59-49a4-8fe9-34a9003b7974",
       "inputEmail": "cwarsuraj@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

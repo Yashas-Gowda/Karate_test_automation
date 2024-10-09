@@ -1,4 +1,4 @@
-@UPI_BASIC
+@UPI_BASIC @regTest_4 @UPI
 Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
   Background:
@@ -7,7 +7,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @SMOKE_UPI_BASIC
+
   Scenario Outline:  UPI BASIC POSITIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_BASIC/<Scenario>.json")
@@ -35,8 +35,8 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
 
     Examples:
-      | Scenario                 | statusCode |
-      | UPI_BASIC_sc_@ybl        | 200        |
+      | Scenario          | statusCode |
+      | UPI_BASIC_sc_@ybl | 200        |
 
 
   Scenario Outline:  UPI BASIC POSITIVE SC's Insights :- <Scenario>
@@ -73,7 +73,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | UPI_BASIC_sc_@okicici    | 200        |
       | UPI_BASIC_sc_@okhdfcbank | 200        |
 
-  @SMOKE_UPI_BASIC
+
   Scenario Outline:  UPI BASIC when "isUpiValid": false then NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_BASIC/<Scenario>.json")
@@ -105,7 +105,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
       | Scenario                         | statusCode |
       | UPI_BASIC_sc_Ne_isUpiValid_false | 200        |
 
-  @SMOKE_UPI_BASIC
+
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights - validation of upiId:- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_BASIC/<Scenario>.json")
@@ -136,14 +136,14 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
 
     Examples:
-      | Scenario              | statusCode |
-      | UPI_BASIC_sc_Ne_upiId_value_noUpi | 400        |
-      | UPI_BASIC_sc_Ne_upiId_Invalid_nohandle | 400        |
-      | UPI_BASIC_sc_Ne_upiId_Invalid_randam_value| 400        |
-      | UPI_BASIC_sc_Ne_upiId_Invalid_123| 400        |
-      | UPI_BASIC_sc_Ne_upiId_Invalid_true| 400        |
+      | Scenario                                   | statusCode |
+      | UPI_BASIC_sc_Ne_upiId_value_noUpi          | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_nohandle     | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_randam_value | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_123          | 400        |
+      | UPI_BASIC_sc_Ne_upiId_Invalid_true         | 400        |
 
-  @SMOKE_UPI_BASIC @Negative_UPI
+  @Negative
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_BASIC/<Scenario>.json")
@@ -173,15 +173,15 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
 
     Examples:
-      | Scenario                 | statusCode |
-      | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_other_then_IN | 501        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA_invalid | 400        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_null | 400        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_emptyString | 400        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_space | 400        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing | 400        |
+      | Scenario                                                                             | statusCode |
+      | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_other_then_IN                       | 501        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_INDIA_invalid                 | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_null                          | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_emptyString                   | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_value_with_space                         | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing                               | 400        |
       | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_upi_with_no_handle | 400        |
-      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_no_upi | 400        |
+      | UPI_BASIC_sc_Ne_phoneDefaultCountryCode_key_is_Missing_along_with_no_upi             | 400        |
 
   # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_number  | 400        |
   # https://monnai.atlassian.net/browse/MB-4539     | UPI_BASIC_sc_Ne_PHONE_DEFAULT_COUNTRY_CODE_VALUE_with_bollean |  400        |

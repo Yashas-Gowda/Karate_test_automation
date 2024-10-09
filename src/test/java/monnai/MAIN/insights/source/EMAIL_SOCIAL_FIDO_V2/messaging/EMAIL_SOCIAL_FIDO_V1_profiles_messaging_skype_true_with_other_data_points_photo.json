@@ -14,18 +14,19 @@
         "social": {
           "summary": {
             "registeredProfiles": 12,
-            "registeredConsumerElectronicsProfiles": 0,
-            "registeredEmailProviderProfiles": 2,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
             "registeredEcommerceProfiles": 1,
-            "registeredSocialMediaProfiles": 4,
+            "registeredSocialMediaProfiles": 3,
             "registeredMessagingProfiles": 1,
-            "registeredProfessionalProfiles": 1,
+            "registeredProfessionalProfiles": 2,
             "registeredEntertainmentProfiles": 1,
-            "registeredTravelProfiles": 0,
+            "registeredTravelProfiles": 1,
             "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
             "ageOnSocial": null,
             "numberOfNamesReturned": 1,
-            "numberOfPhotosReturned": 0
+            "numberOfPhotosReturned": 1
           },
           "profiles": {
             "consumerElectronics": {
@@ -33,7 +34,7 @@
                 "registered": null
               },
               "samsung": {
-                "registered": null
+                "registered": true
               }
             },
             "emailProvider": {
@@ -43,7 +44,7 @@
                 "photo": null
               },
               "yahoo": {
-                "registered": true
+                "registered": false
               },
               "mailru": {
                 "registered": null
@@ -57,7 +58,7 @@
                 "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": null
               },
               "flipkart": {
                 "registered": null
@@ -86,7 +87,7 @@
                 "url": null
               },
               "instagram": {
-                "registered": true
+                "registered": false
               },
               "flickr": {
                 "registered": null,
@@ -149,7 +150,7 @@
                 "city": "Athens",
                 "state": "Glyfada",
                 "country": "Luxembourg",
-                "photo": null
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/dac8b09c/722d/46a9/abc3/89559de9b7be/91aa0d3b-a884-43ca-abec-a6efa699f965.jpg"
               },
               "discord": {
                 "registered": null
@@ -169,14 +170,14 @@
                 "registered": null
               },
               "linkedin": {
-                "registered": null,
+                "registered": true,
                 "url": null,
                 "name": null,
                 "company": null,
                 "title": null,
                 "location": null,
                 "website": null,
-                "twitter": null,
+                "twitter": "",
                 "photo": null,
                 "connectionCount": null
               },
@@ -243,10 +244,16 @@
               "paypal": {
                 "registered": true
               }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
             }
           }
         },
-        "basic": null
+        "basic": null,
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -261,15 +268,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UQUrTjRbyQ0EPFw=",
+      "referenceId": "6f864782-ac8d-40b2-ba3b-4235e8b9281c",
       "inputEmail": "shehos2003@yahoo.gr",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

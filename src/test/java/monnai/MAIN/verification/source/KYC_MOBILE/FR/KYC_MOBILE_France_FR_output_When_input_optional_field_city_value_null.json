@@ -35,16 +35,17 @@
           "matchId1": "NOT_SUPPORTED",
           "matchStreetNumber": "NOT_SUPPORTED",
           "matchStreet": "NOT_SUPPORTED",
-          "matchCity": "NO_DATA",
+          "matchCity": "NO_INPUT",
           "matchPostalCode": "NO_MATCH",
-          "appendedFields": {}
+          "appendedFields": {
+          }
         },
         "aml": null
       },
       "kyb": null
     },
     "meta": {
-      "referenceId": "Dpi_may_17_kyc_2",
+      "referenceId": "404d4449-12b9-4832-a4d4-2d3216992168",
       "requestedPackages": [
         "KYC_MOBILE"
       ],
@@ -54,8 +55,10 @@
       "inputLastName": "supiot",
       "inputDateOfBirth": "1963-05-28",
       "inputStreetNumber": "319",
-      "inputPostalCode": "56500"
+      "inputPostalCode": "56500",
+      "inputPhoneDefaultCountryCode": "FR"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -1,0 +1,127 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "84936983031",
+    "phoneDefaultCountryCode": "VN"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 6,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 2,
+            "lastActivity": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "accountId": null,
+                "name": null
+              }
+            },
+            "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
+              "amazon": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "instagram": {
+                "registered": true
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": true,
+                "photo": null,
+                "privacyStatus": "PRIVATE",
+                "lastSeen": null
+              },
+              "whatsapp": {
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/a3e1f0bd/05f6/4a12/805b/ff814565b9d5/fa89478c-72e2-4a6e-bb9f-3fe1b1b062dd.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null,
+                "about": null,
+                "businessAccount": false
+              },
+              "skype": {
+                "registered": false,
+                "language": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "name": null,
+                "age": null,
+                "gender": null,
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
+              }
+            }
+          }
+        },
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "84936983031",
+      "cleansedPhoneNumber": "+84936983031",
+      "referenceId": "e7990430-af02-49d9-83ce-b29f91c20f57",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ],
+      "inputPhoneDefaultCountryCode": "VN"
+    },
+    "errors": [
+    ]
+  }
+}

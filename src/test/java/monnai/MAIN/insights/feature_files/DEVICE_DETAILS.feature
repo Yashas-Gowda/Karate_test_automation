@@ -1,4 +1,4 @@
-@debug
+@debug @regTest_5 @DEVICE_DETAILS
 Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Background:
@@ -6,6 +6,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
+
 
   Scenario Outline: Validate DPI DEVICE_DETAILS positive scenario with single valid input | <Scenario>
     Given url requestUrl
@@ -15,7 +16,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    #    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -32,7 +33,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     Then status <statusCode>
     Then print payload.response
     Then match $.data.device contains payload.response.data.device
-    #    * match $.data.device.deviceRecords[*].lastModified == "#regex\\d{4}-\\d{2}-\\d{2}"
+    * match each $.data.device.deviceRecords[*].lastModified == "#regex\\d{4}-\\d{2}-\\d{2}"
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -40,7 +41,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | Scenario                              | statusCode |
       | Device_Details_Positive_1_valid_input | 200        |
 
-  Scenario Outline: Validate DPI DEVICE_DETAILS Positive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
+  Scenario Outline: Validate DPI DEVICE_DETAILS Dynamic Positive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple(TWO)_valid_input.json'
     And def payload = read( "../" + source + "/DEVICE_DETAILS/" + Scenario)
@@ -49,7 +50,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
-    #    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -73,6 +74,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
+    * match each $.data.device.deviceRecords[*].lastModified == "#regex\\d{4}-\\d{2}-\\d{2}"
 
     Examples:
       | deviceIds                                                                       |
@@ -109,6 +111,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | deviceIds                                                                                                                                                                                                                                                                                                                                                                                               |
       | ["1db61125-297f-4544-abad-eae8a56ecd90","5c185ecc-8c24-4803-a60c-a26f52908d28","e84d8f43-d986-45bc-a529-ed9d494dac01","9723ec2b-17e2-43da-86c6-76f30a4c4f39","bc42981d-6231-4834-a076-83a83478dbe8","702f643d-8c6f-4150-8d6a-6851ab58be09","de2aa48d-7654-46b3-957d-11bb1b206c59","9cb44865-1d74-4744-b056-d7e71070da3c","0b45e826-d875-4d7f-8b8d-30388ebf40d2","0bb3f398-184d-43a1-aea6-637521dcf368"] |
 
+  #      test data
   #  "1db61125-297f-4544-abad-eae8a56ecd90",
   #  "5c185ecc-8c24-4803-a60c-a26f52908d28",
   #  "e84d8f43-d986-45bc-a529-ed9d494dac01",
@@ -180,7 +183,6 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   #      | "cab22197-414b-4ceb-9517-183774766d00" |
   #      | "a439a0c4-343b-41f3-b62b-64b1be2e3a7f" |
   #      | "c8ce79ec-dd48-4ad0-8a7b-6637decd91b5" |
-
 
 
 
@@ -266,6 +268,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     When method POST
     # cloud watch traces -start
     * print karate.request.headers
@@ -286,6 +289,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     Then print payload.response
     And match payload.response.data.device == "#notnull"
     And match payload.response.data.device.errors != '#[0]'
+    * match each $.data.device.deviceRecords[*].lastModified == "#regex\\d{4}-\\d{2}-\\d{2}"
 
 
     Examples:
@@ -441,7 +445,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | ["123abc"] |
 
 
-  #valid device id
+  #valid device id for reference - test data
   #  "97867bc8-0cdc-4072-86c4-2cc7e9d05616",
   #  "1db61125-297f-4544-abad-eae8a56ecd90",
   #  "1db61125-297f-4544-abad-eae8a56ecd90",

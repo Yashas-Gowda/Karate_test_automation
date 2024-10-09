@@ -1,0 +1,64 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6285893641388",
+    "address": {
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "city": "",
+      "province": "",
+      "postalCode": "",
+      "state": ""
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "6285893641388",
+      "cleansedPhoneNumber": "+6285893641388",
+      "referenceId": "Dpi_sep_10_a_3",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": null,
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": null
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "Country in address cannot be blank/null",
+        "code": "MISSING_COUNTRY",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "address.addressLine1 is missing",
+        "code": "MISSING_ADDRESSLINE1",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

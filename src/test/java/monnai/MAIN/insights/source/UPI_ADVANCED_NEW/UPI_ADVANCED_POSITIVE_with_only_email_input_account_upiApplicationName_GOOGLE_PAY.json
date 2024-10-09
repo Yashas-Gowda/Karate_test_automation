@@ -1,5 +1,5 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
@@ -8,8 +8,8 @@
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -25,7 +25,7 @@
             {
               "appName": "Google Pay",
               "nameAtBank": "ANJANADRY ARUN RANE",
-              "upiId": "njrane29@okhdfcbank",
+              "upiId": "njrane29@okicici",
               "accountType": "ALTERNATE",
               "accountStatus": "VALID"
             }
@@ -38,15 +38,22 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "referenceId": "d8c61e51-7b79-4163-bc60-151257eba701",
       "inputEmail": "njrane29@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "GOOGLE_PAY",
+      "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

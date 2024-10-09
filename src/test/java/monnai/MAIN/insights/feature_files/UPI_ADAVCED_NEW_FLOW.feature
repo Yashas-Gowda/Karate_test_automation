@@ -1,4 +1,4 @@
-@UPI_ADVANCED
+@UPI_ADVANCED @regTest_4 @UPI
 Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
 
   Background:
@@ -45,7 +45,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       #data needs to find | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okaxis_dpCall_cloudwatch_3     | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_oksbi_dpCall_cloudwatch_4      | 200        |
 
-  @upi_prod_sanity
+
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = GOOGLE_PAY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -109,7 +109,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ybl_dpCall_cloudwatch_1 | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_axl_dpCall_cloudwatch_2 | 200        |
   # data not found  | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ibl_dpCall_cloudwatch_4 | 200        |
-  @upi_prod_sanity
+
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PHONEPE with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -169,11 +169,11 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                              | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_0                           | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_1_paytm_dpCall_cloudwatch_1 | 200        |
+      | Scenario                                                    | statusCode |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_0 | 200        |
+  # Data not found     | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_1_paytm_dpCall_cloudwatch_1 | 200        |
 
-  @upi_prod_sanity
+
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PAYTM with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -233,16 +233,20 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                             | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_0                        | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PHONEPE        | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_GOOGLEPAY      | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PAYTM          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Slice    | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Amazon_Pay  | 200        |
+      | Scenario                                                                                  | statusCode |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_0                             | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PHONEPE             | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_GOOGLEPAY           | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PAYTM               | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik      | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Slice         | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Amazon_Pay    | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Bajaj_Finserv | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Jupiter_Money | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Navi          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Samsung_Pay   | 200        |
 
-  @upi_prod_sanity
+
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PRIMARY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -303,14 +307,15 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                                                 | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response               | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
-      # Data changed so haven't find number with 4 ids     | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_4_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_Slice_all_other_handles_should_call             | 200        |
+      | Scenario                                                                                                   | statusCode |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response | 200        |
+  #      Data changed
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+  #      # Data changed so haven't find number with 4 ids     | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_4_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_3_appName_OTHER_Slice_all_other_handles_should_call              | 200        |
 
   # when phone number with country code appended in the request
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = ALL with combination of phone number with 91-cleansingFlag combination and email input  -> <Scenario> | InputIP -> <phoneNumber>.
@@ -341,13 +346,14 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                                                                                      | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_0_all_other_handles_should_call_with_null_response               | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
+      | Scenario                                                                                                                                        | statusCode |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_0_all_other_handles_should_call_with_null_response | 200        |
+  #      Data changed
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PAYTM_other_PAYTM_handles_should_not_call         | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_PHONEPE_other_PHONEPE_handles_should_not_call     | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_appName_OTHER_MobiKwik__all_other_handles_should_call          | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_appName_OTHER_Slice__all_other_handles_should_call             | 200        |
 
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = ALL with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
@@ -446,12 +452,17 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                       | statusCode |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0       | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik   | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice      | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe    | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay | 200        |
+      | Scenario                                                                                | statusCode |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0                | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe             | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay          | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik            | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice               | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Amazon_Pay    | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Bajaj_Finserv | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Jupiter_Money | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Navi          | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Samsung_Pay   | 200        |
 
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName key is not present(DEFAULT_ALL) with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -480,11 +491,11 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
     Examples:
-      | Scenario                                                                                                                                                      | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik                                                                          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response                                                    | 200        |
+      | Scenario                                                                                                   | statusCode |
+      #    Data not found
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik                                                                          | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response | 200        |
 
   Scenario Outline: Validation of UPI_ADVANCED Possitive scenario for packageDetails <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -514,8 +525,8 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                       | statusCode |
-      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_when_DP_says_No_UPI_ID_found    | 200        |
+      | Scenario                                                                    | statusCode |
+      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_when_DP_says_No_UPI_ID_found | 200        |
 
   @upi_prod_sanity
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when upiApplicationName is invalid / null as input -> <Scenario> | InputIP -> <phoneNumber>.
@@ -696,6 +707,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     * set payload.response.meta.inputPhoneNumber = "#ignore"
+    * set payload.response.meta.inputPhoneDefaultCountryCode = "#ignore"
     * set payload.response.meta.cleansedPhoneNumber = "##string"
     When method POST
     # cloud watch traces -start
