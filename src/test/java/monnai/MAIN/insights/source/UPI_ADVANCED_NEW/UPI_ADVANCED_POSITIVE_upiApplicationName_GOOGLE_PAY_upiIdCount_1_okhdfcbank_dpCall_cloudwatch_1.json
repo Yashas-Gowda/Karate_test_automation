@@ -1,16 +1,16 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9700860627",
-    "email": "njrane29@gmail.com",
-    "upiApplicationName": "GOOGLE_PAY",
+    "phoneNumber": "9879399318",
+    "email": "hirenbokha4@gmail.com",
+    "upiApplicationName": "ALL",
     "packages": [
       "UPI_ADVANCED"
     ]
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -25,9 +25,9 @@
           "accounts": [
             {
               "appName": "Google Pay",
-              "nameAtBank": "ANJANADRY ARUN RANE",
-              "upiId": "njrane29@okhdfcbank",
-              "accountType": "ALTERNATE",
+              "nameAtBank": "BOKHA HIREN DEVCHANDBHAI",
+              "upiId": "hirenbokha4-1@okhdfcbank",
+              "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
           ]
@@ -39,16 +39,22 @@
       "blacklist": null,
       "domain": null,
       "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9700860627",
-      "cleansedPhoneNumber": "+919700860627",
-      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
-      "inputEmail": "njrane29@gmail.com",
+      "inputPhoneNumber": "9879399318",
+      "cleansedPhoneNumber": "+919879399318",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "hirenbokha4@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputUpiApplicationName": "ALL",
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

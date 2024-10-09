@@ -3,9 +3,8 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "918428880581",
-    "email": "naveenmj999@gmail.com",
-    "upiApplicationName": "PRIMARY",
+    "phoneNumber": "9528116174",
+    "email": "mohammad5869@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
@@ -24,9 +23,9 @@
           "upiIdCount": 1,
           "accounts": [
             {
-              "appName": "PhonePe",
-              "nameAtBank": "NARISETTY VENKATA RAVI",
-              "upiId": "12ravivenkat2@ybl",
+              "appName": "Jupiter Money",
+              "nameAtBank": "SAIM KHAN",
+              "upiId": "9528116174@jupiteraxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -46,17 +45,15 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "918428880581",
-      "cleansedPhoneNumber": "+918428880581",
-      "referenceId": "50ad0c37-46df-4d6e-9d54-fd821a8530c0",
-      "inputEmail": "naveenmj999@gmail.com",
+      "inputPhoneNumber": "9528116174",
+      "cleansedPhoneNumber": "+919528116174",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "mohammad5869@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
-      "inputUpiApplicationName": "PRIMARY",
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

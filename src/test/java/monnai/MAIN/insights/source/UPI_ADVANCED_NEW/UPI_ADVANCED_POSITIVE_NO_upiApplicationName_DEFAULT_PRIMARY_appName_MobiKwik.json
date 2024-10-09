@@ -3,13 +3,13 @@
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "6367009528",
-    "email": "manishbishnoiosian99@gmail.com",
+    "phoneNumber": "9305971288",
+    "email": "moradabad949@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -24,8 +24,8 @@
           "accounts": [
             {
               "appName": "MobiKwik",
-              "nameAtBank": "MANISH",
-              "upiId": "6367009528@ikwik",
+              "nameAtBank": "MOHD   ZAKI",
+              "upiId": "9305971288@ikwik",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -40,16 +40,19 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6367009528",
-      "cleansedPhoneNumber": "+916367009528",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
-      "inputEmail": "manishbishnoiosian99@gmail.com",
+      "inputPhoneNumber": "9305971288",
+      "cleansedPhoneNumber": "+919305971288",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "moradabad949@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

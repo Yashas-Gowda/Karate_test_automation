@@ -1,16 +1,15 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
-    "phoneNumber": "9980570646",
-    "email": "ravindrais53@gmail.com",
+    "phoneNumber": "918428880581",
+    "email": "naveenmj999@gmail.com",
     "packages": [
       "UPI_ADVANCED"
     ]
-  }
-,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -25,8 +24,8 @@
           "accounts": [
             {
               "appName": "PhonePe",
-              "nameAtBank": "RAVINDRA NEELAKANTA KULKARNI",
-              "upiId": "9980570646@ybl",
+              "nameAtBank": "NARISETTY VENKATA RAVI",
+              "upiId": "12ravivenkat2@ybl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -41,18 +40,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "9980570646",
-      "cleansedPhoneNumber": "+919980570646",
-      "referenceId": "fe18a038-3b5d-4716-89b7-892c31e5298e",
-      "inputEmail": "ravindrais53@gmail.com",
+      "inputPhoneNumber": "918428880581",
+      "cleansedPhoneNumber": "+918428880581",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "naveenmj999@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }
