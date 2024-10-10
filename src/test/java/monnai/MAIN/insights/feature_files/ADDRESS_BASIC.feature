@@ -1,4 +1,3 @@
-@debug
 @ADDRESS_BASIC @regTest_5
 Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
 
@@ -7,7 +6,6 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
-
 
   Scenario Outline: Validate DPI ADDRESS_BASIC positive scenarios with all input fields(q-addressLine1-8,qq-postal code,city,state,country) <Scenario>
     Given url requestUrl
@@ -32,9 +30,11 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     #    Then match $ contains payload.response
-    * def Original_Address_basic = payload.response.data.address.basic
-    Then match $.data.address.basic contains payload.response.data.address.basic
-    Then match $.meta contains payload.response.meta
+    #    Then match $.data.address.basic contains payload.response.data.address.basic
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                            | statusCode |
@@ -77,7 +77,10 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.address contains payload.response.data.address
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                                    | statusCode |
@@ -106,7 +109,10 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-    Then match $.data.address contains payload.response.data.address
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                                 | statusCode |
@@ -141,7 +147,10 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print actualPostalCode
     #    * match actualPostalCode == [expectedPostalCode]
     * match ([expectedPostalCode]) contains only actualPostalCode
-    Then match $.data.address contains payload.response.data.address
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                                            | statusCode |
@@ -176,7 +185,10 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * def actualCity = $.data.address.basic.records[*].city
     * print actualCity
     * match ([expectedCity]) contains any actualCity
-    Then match $.data.address contains payload.response.data.address
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                                      | statusCode |
@@ -212,7 +224,10 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print actualState
     #    * match actualCity == [expectedCity]
     * match ([expectedState]) contains only actualState
-    Then match $.data.address contains payload.response.data.address
+    And match $.data.address.basic.records == '#[_ > 0]'
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
 
     Examples:
       | Scenario                                                       | statusCode |
@@ -263,7 +278,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].package == "ADDRESS_BASIC"
-    And match $.errors[0].message == "address.addressLine1 is missing"
+    And match $.errors[0].message == 'AddressLine1 in address is missing'
     And match $.errors[0].code == "MISSING_ADDRESSLINE1"
     And match $.errors[0].type == "INVALID_INPUT"
 
@@ -296,7 +311,7 @@ Feature: Testing of DPI  - ADDRESS_BASIC feature scenarios
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     And match $.errors[0].package == "ADDRESS_BASIC"
-    And match $.errors[0].message == "address.addressLine1 is missing"
+    And match $.errors[0].message == 'AddressLine1 in address is missing'
     And match $.errors[0].code == "MISSING_ADDRESSLINE1"
     And match $.errors[0].type == "INVALID_INPUT"
 

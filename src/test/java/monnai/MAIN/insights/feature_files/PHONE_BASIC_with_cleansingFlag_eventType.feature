@@ -8,7 +8,7 @@ Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
     * def BearerToken = authFeature.authToken
 
   # tcs of isSpam are ignored as Eyecon data partner is disabled in DPI config
-  @PHONE_BASIC @phoneNumber
+  #  @PHONE_BASIC @phoneNumber
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario Validation for cleansingFlag_false and PhoneNumber added along with +91- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
@@ -43,7 +43,7 @@ Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
       | Scenario                                                                | statusCode |
       | PHONE_BASIC_response_region_IN_phoneNumber_with_+91_cleansingFlag_false | 200        |
 
-  @PHONE_BASIC @eventType
+  #  @PHONE_BASIC @eventType
   Scenario Outline:  DPI PHONE_BASIC package positive scenario Validation for cleansingFlag_false and eventType { ACCOUNT_CREATION,ACCOUNT_TRANSACTION,ACCOUNT_LOGIN,ACCOUNT_UPDATE,ACCOUNT_DELETE } <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
@@ -82,7 +82,7 @@ Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
       | PHONE_BASIC_response_region_IN_cleansingFlag_false_eventType_ACCOUNT_UPDATE      | 200        |
       | PHONE_BASIC_response_region_IN_cleansingFlag_false_eventType_ACCOUNT_DELETE      | 200        |
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual eventType  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")
@@ -118,7 +118,7 @@ Feature: Testing of DPI  - PHONE_BASIC_with_cleansingFlag_eventType scenarios
       | PHONE_BASIC_Negative_scenarios_MISSING_EVENT_TYPE_KEY   | 400        | '#null' | "Missing event type" | MISSING_EVENT_TYPE | INVALID_INPUT |
       | PHONE_BASIC_Negative_scenarios_MISSING_EVENT_TYPE_VALUE | 400        | '#null' | "Missing event type" | MISSING_EVENT_TYPE | INVALID_INPUT |
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber and countrycode separate - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_with_cleansingFlag_eventType/<Scenario>.json")

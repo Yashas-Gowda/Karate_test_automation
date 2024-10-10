@@ -382,7 +382,7 @@ Feature:Testing of DPI - UPI_ADVANCED feature scenarios
       | UPI_ADVANCED_POSITIVE_Phone_input_only_&_get_output_wiyhoutGpayid_with_spycloud_no_email | 200        |
 
     #Plase see cloud watch for below scenario, for phone and email input - SPY Cloud should not be called.
-  @demonov10
+#  @demonov10
   Scenario Outline: Validation of UPI_ADVANCED Positive scenario for valid phoneNumber & email input( spycloud not called in cloudwatch)with all 3 appNames like { Paytm,Google Pay,PhonePe} ACCOUNT in Output-> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED/<Scenario>.json")

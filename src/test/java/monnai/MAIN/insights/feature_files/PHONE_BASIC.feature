@@ -8,7 +8,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * def BearerToken = authFeature.authToken
   #    * def BearerToken = "Bearer eyJraWQiOiJUU2xyaDVMTW03XC9ZYVJCNEdoUnRFQVVIdzNMeWVSV280c1hMeWthU1RKWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmNDliOWM1ZS05YzQ1LTQ4NjAtYTdlMi0wNzBmMmViN2E0ZjkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfMVdiZkJPN3lGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNGpiZGYxNjJiZW40amxwZmFqM3FuNThwdjUiLCJvcmlnaW5fanRpIjoiOWFiOTQ4NzItNWY3ZC00OTZkLWE0YjItZWVkOTM0N2Y4MTBmIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJwaG9uZSBvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF1dGhfdGltZSI6MTcwMDcyMDU0MywiZXhwIjoxNzAwODA2OTQzLCJpYXQiOjE3MDA3MjA1NDQsImp0aSI6IjMwN2YyOWRjLTVlZDgtNGU4ZC04ODFkLWJiYjc1NTc5NjBmNSIsInVzZXJuYW1lIjoiZjQ5YjljNWUtOWM0NS00ODYwLWE3ZTItMDcwZjJlYjdhNGY5In0.E5XjO7rc7g1H5djWPxxUu4J9G39W1Yi3kMKefsBNd2omCjN2g_ArVR0FxT9iIKeOfHIkNTPgrLRnETANoq9u2xnoAoHW0IKzb_gncoFQdEkKgqsADUZKy--1TtpXFGk90r---aMV15ubJvCIBmSpkR14864X2d3DJKLwd2qaGT_x5dMH04BYo3_O-dEEKdrtdi9W7zuqdoGJWkAiBvJ5roMTtc_uCo3BXaRfk7u3MipdgL2dikbn52Qy0uRJFQvLL11VtidXrnw5Pg2VYqtsYT5kzzkqQXC_CKip1JlxR445FZlgncxCbNQgleJxYA6kF_IeYMZXrnwg2LFBKFEnRg"
 
-  @PHONE_BASIC @PHONE_INFORMATION @phoneValid @phoneDisposable @no_data_partner
+  #  @PHONE_BASIC @PHONE_INFORMATION @phoneValid @phoneDisposable @no_data_partner
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_INFORMATION positive scenario for Indian region with validation of phoneValid,phoneDisposable - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
@@ -40,7 +40,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true             | 200        |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_UnitedKingdom(GB)_phoneValid_phoneDisposable_true | 200        |
 
-  @smokeTest @PHONE_BASIC @SPAM_CHECK @isSpam  @Eyecon
+  #  @smokeTest @PHONE_BASIC @SPAM_CHECK @isSpam  @Eyecon
   Scenario Outline:  DPI PHONE_BASIC_Sub_SPAM_CHECK positive scenario for Indian region with validation of isSpam - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/SPAM_CHECK/<Scenario>.json")
@@ -73,7 +73,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #      | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_India_isSpam_false          | 200        | false  |
   #      | PHONE_BASIC_Sub_SPAM_CHECK_Eyecon_OtherCountry_UK_isSpam_null | 200        | null   |
 
-  @PHONE_BASIC @SIMTYPE @simType @Karza @WDD @INDOSAT
+  #  @PHONE_BASIC @SIMTYPE @simType @Karza @WDD @INDOSAT
   Scenario Outline:  DPI PHONE_BASIC_Sub_SIMTYPE positive scenario for Indian region with validation of simType - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/SIMTYPE/<Scenario>.json")
@@ -115,7 +115,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_SIMTYPE_NON_ID_NON_BR__US_NUMBER_simType_null | 200        | null       |
 
 
-  @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays @portedEvents
+  #  @PHONE_BASIC @PORTED_DETAILS @TMT @ported @portedDate @numberOfPorts @portedSinceXDays @portedEvents
   Scenario Outline:  DPI PHONE_BASIC_Sub_PORTED_DETAILS positive scenario for Indian region with validation of ported  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PORTED_DETAILS/<Scenario>.json")
@@ -171,7 +171,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #  phoneNumberAge and  phoneNumberAgeDescription ( Product team needs to confirm , do we need to disable Asliri or not )
   #  cc: @Roopa
 
-  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
+  #  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of PHONE_TENURE - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
@@ -264,7 +264,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_phoneNumberAge_6_phoneNumberAgeDescription_Above_36_Months_phoneTenure_36_null                        | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_called_IZIDATA_Data_partner_gives_error_PHONENUMBER_NOT_FOUND_phoneNumberAge_null_phoneNumberAgeDescription_null_phoneTenure_null | 200        | "#null"        | "#null"          | null           | null                      | "#null"     | "#notpresent"   | "#notpresent"   |
 
-  @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
+  #  @PHONE_BASIC @LAST_DEACTIVATED @Zumigo @lastDeactivated @minimumTenureDays @minimumTenureDays
   Scenario Outline:  DPI PHONE_BASIC_Sub_LAST_DEACTIVATED positive scenario for Indian region with validation of LAST_DEACTIVATED - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/LAST_DEACTIVATED/<Scenario>.json")
@@ -339,7 +339,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #      | PHONE_BASIC_Sub_CARRIER_INFORMATION_IN_TMT_changeInCarrierRegion_NOT_CHANGED   | 200        | "Jio Karnataka"      | "Airtel Karnataka"           | "NOT_CHANGED"         |
   #      | PHONE_BASIC_Sub_CARRIER_INFORMATION_BR_TMT_changeInCarrierRegion_NOT_SUPPORTED | 200        | "CLARO S.A."         | "CLARO S.A."                 | "NOT_SUPPORTED"       |
 
-  @PHONE_BASIC @CARRIER_INFORMATION @TMT @originalCarrier @localRoutingNumber @mobileCountryCode @mobileNetworkCode @networkName @serviceProfileId
+  #  @PHONE_BASIC @CARRIER_INFORMATION @TMT @originalCarrier @localRoutingNumber @mobileCountryCode @mobileNetworkCode @networkName @serviceProfileId
   Scenario Outline:  DPI PHONE_BASIC_Sub_CARRIER_INFORMATION positive scenario for Indian region with validation of networkName - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/CARRIER_INFORMATION/<Scenario>.json")
@@ -390,7 +390,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_CARRIER_INFORMATION_ID_TMT_currentCarrierCircle_Telkomsel_PT_Telekomunikasi_Selular_with_mcc_mnc_spid_changeInCarrierRegion_NOT_SUPPORTED         | 200        | "TELKOMSEL (PT Telekomunikasi Selular)" | "Telkomsel PT Telekomunikasi Selular"      | "Telkomsel PT Telekomunikasi Selular"      | "NOT_SUPPORTED"       | null               | "510"             | "10"              | "TELKOMSEL (PT Telekomunikasi Selular)" | "62504"          |
 
   #After discussion with roopa,Suggestion was to add YES,NO,Known for now and Our Automation is not handling fallback check for data partners
-  @PHONE_BASIC @PHONE_STATUS @WDD @IPQS @TMT @Xconnect @active
+  #  @PHONE_BASIC @PHONE_STATUS @WDD @IPQS @TMT @Xconnect @active
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_STATUS positive scenario for Indian region with validation of active - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_STATUS/<Scenario>.json")
@@ -452,7 +452,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   # | PHONE_BASIC_Sub_PHONE_STATUS_MX_PhoneNumber_IPQS_notreturn_TMT_notreturn_Xconnect_notreturn_null | 200        | YES     |
 
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of  individual PhoneNumber, countryCode separately - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -499,7 +499,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_KEY                             | 400        | "PHONE_BASIC" | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
       | PHONE_BASIC_Negative_scenarios_MISSING_PHONE_NUMBER_VALUE                           | 400        | "PHONE_BASIC" | "PhoneNumber cannot be blank/null"   | MISSING_PHONE_NUMBER               | INVALID_INPUT |
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of PHONE_BASIC when package name is not specified  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -537,7 +537,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_When_Package_Key_is_not_present | 400        | null    | "package is not selected" | PACKAGE_NOT_SELECTED | INVALID_INPUT |
   #  Covered in below scenarios    | PHONE_BASIC_Negative_scenarios_When_Package_name_random        | 400        | null    | "invalid package name"    | INVALID_PACKAGE_NAME | INVALID_INPUT |
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of PHONE_BASIC when package name is random  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -569,7 +569,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Negative_scenarios_When_Package_name_random | 403        | "Package not subscribed" |
 
 
-  @PHONE_BASIC @Negative
+  #  @PHONE_BASIC @Negative
   Scenario Outline:  DPI PHONE_BASIC Negative scenario for validation of both PhoneNumber and countrycode togather- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/Negative_scenarios/<Scenario>.json")
@@ -819,7 +819,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #      | PHONE_BASIC_Sub_topUpHistory_When_phoneDefaultCountryCode_other_then_ID_response_topUpHistory_null | 200        |
 
 
-  @Schema_validation_1
+  #  @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")
@@ -856,7 +856,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                                       | statusCode |
       | PHONE_BASIC_Sub_PHONE_INFORMATION_region_India_phoneValid_phoneDisposable_true | 200        |
 
-  @Schema_validation_1
+  #  @Schema_validation_1
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_INFORMATION/<Scenario>.json")

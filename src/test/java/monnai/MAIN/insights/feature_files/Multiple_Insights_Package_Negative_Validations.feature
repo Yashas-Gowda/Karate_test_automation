@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Multiple_Insights_Package_Negative_Validations scenar
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest @Negative
+
   Scenario Outline:  DPI Identity Multiple_Insights_Package_Negative_Validations Scenarios of phone validations - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/Multiple_Insights_Package_Negative_Validations/<Scenario>.json")
@@ -114,7 +114,7 @@ Feature: Testing of DPI  - Multiple_Insights_Package_Negative_Validations scenar
     * match $.errors contains only deep  payload.response.errors
 
     Examples:
-      | Scenario                                                                               | statusCode |
-      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_value_null        | 400        |
-      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_value_empty_string       | 400        |
-      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_key_missing       | 400        |
+      | Scenario                                                                                      | statusCode |
+      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_value_null         | 400        |
+      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_value_empty_string | 400        |
+      | Insights_phone_email_related_packages_request_with_phoneDefaultCountryCode_key_missing        | 400        |

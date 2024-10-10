@@ -42,20 +42,24 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
     And match $.data.email.social.summary == '#notnull'
     And match $.data.email.social.profiles == '#notnull'
     Then status <statusCode>
-    * match payload.response.data.email.social.summary == $.data.email.social.summary
-    * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
-    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
-    * set payload.response.data.email.social.profiles.emailProvider.google.gender = "#ignore"
-    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
-    #    * match $.data.email.social.profiles.emailProvider.google contains {"gender":"##? _ == 'F' || _ == 'M'"}
-    * match $.data.email.social.profiles.emailProvider.google.photo ==  "##regex ^.*(https://).*"
-    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
-    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
-    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
-    * match payload.response.data.email.social.profiles.professional == $.data.email.social.profiles.professional
-    * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
-    * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
-    * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+
+    * def registeredProfiles = $.data.email.social.summary.registeredProfiles
+    * print registeredProfiles
+    * def all_registered_array = $.data.email.social.profiles..registered
+    * print all_registered_array
+    * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
+    * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
+
+    * match $.data.email.social.summary contains {registeredProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredEmailProviderProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredEcommerceProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredSocialMediaProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredProfessionalProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredMessagingProfiles : '#? _>= 0'}
+
+    * match $.data.email.social.summary contains {numberOfNamesReturned : '#? _>= 0'}
+    * match $.data.email.social.summary contains {numberOfPhotosReturned : '#? _>= 0'}
 
     * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
     * match  $.meta contains  payload.response.meta

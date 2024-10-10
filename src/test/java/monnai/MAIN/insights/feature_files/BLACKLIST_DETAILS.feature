@@ -7,7 +7,6 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest @smokeTest
   Scenario Outline: Validate DPI BLACKLIST_DETAILS positive scenario with single valid input where isBlacklisted is No<Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/BLACKLIST_DETAILS/<Scenario>.json")
@@ -35,11 +34,11 @@ Feature: Testing of DPI  - BLACKLIST_DETAILS scenarios
     Then match $.data.blacklist contains payload.response.data.blacklist
 
     Examples:
-      | Scenario                                                                              | statusCode |
-      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO                 | 200        |
+      | Scenario                                                              | statusCode |
+      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NO | 200        |
       #      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_YES                | 200        |
       #      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_isBlacklisted_NEEDS_VERIFICATION | 200        |
-      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_null                             | 200        |
+      | BLACKLIST_DETAILS_Positive_1_valid_input_phonenumber_null             | 200        |
 
   Scenario Outline: Validate DPI BLACKLIST_DETAILS Negative scenario where input is not an Indonesian number <Scenario>
     Given url requestUrl

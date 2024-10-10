@@ -46,7 +46,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
 
 
-  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
+  #  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -81,7 +81,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_UnitedStates_US_with_ported | 200        |
       | PHONE_BASIC_response_region_MEXICO_MX_with_ported       | 200        |
 
-  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
+  #  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -117,7 +117,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                                               | statusCode |
       | PHONE_BASIC_response_region_India_IN_with_portedEvents_lastDeactivated | 200        |
 
-  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
+  #  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -148,7 +148,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | Scenario                                             | statusCode |
       | PHONE_BASIC_response_region_BRAZIL_BR_without_ported | 200        |
 
-  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
+  #  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -187,7 +187,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #
   #  VN(84389879520) ,ID(6282220000000) - Seems TMT retuned [] meaning region is supported by TMT (we have not got data)
 
-  @PHONE_BASIC @smoke @all_data_partner
+  #  @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -232,7 +232,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
 
 
 
-  @PHONE_BASIC @smoke @all_data_partner
+  #  @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
@@ -267,7 +267,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_FRANCE_FR_with_ported                              | 200        |
       | PHONE_BASIC_response_region_Netherlands_NL_with_ported                         | 200        |
 
-  @PHONE_BASIC @smoke @all_data_partner
+  #  @PHONE_BASIC @smoke @all_data_partner
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")

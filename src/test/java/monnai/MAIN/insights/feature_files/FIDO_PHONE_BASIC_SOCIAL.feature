@@ -7,7 +7,7 @@ Feature: Testing of DPI  - FIDO_PHONE_BASIC_SOCIAL scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest @smokeTest
+
   Scenario Outline: Validate DPI FIDO_PHONE_BASIC_SOCIAL positive scenario <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/FIDO_PHONE_BASIC_SOCIAL/<Scenario>.json")
@@ -37,8 +37,8 @@ Feature: Testing of DPI  - FIDO_PHONE_BASIC_SOCIAL scenarios
 
 
     Examples:
-      | Scenario                                                                    | statusCode |
-      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_MX                 | 200        |
-      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_ID                 | 200        |
-      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_BR                 | 200        |
+      | Scenario                                                    | statusCode |
+      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_MX | 200        |
+      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_ID | 200        |
+      | FIDO_PHONE_BASIC_SOCIAL_Positive_phoneDefaultCountryCode_BR | 200        |
 

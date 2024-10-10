@@ -119,7 +119,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | Scenario                                                                   | statusCode |
       | EMPLOYMENT_BASIC_returns_M50_1001_when_dp_returns_message_no_records_found | 200        |
 
-  @Negative
+
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario when "phoneDefaultCountryCode" other than IN --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")

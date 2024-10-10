@@ -390,7 +390,7 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | KYC_PAN_Negative_scenarios_When_Package_name_null          | 400        |
       | KYC_PAN_Negative_scenarios_When_Package_Key_is_not_present | 400        |
 
-  @3191
+
   Scenario Outline:  DPI KYC_PAN Package Negative scenario - Validation of "packages" data point :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_PAN/Negative_scenarios/<Scenario>.json")

@@ -8,7 +8,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL_SEON scenarios
     * def BearerToken = authFeature.authToken
 
   #Note - PHONE_SOCAIL with Seon data partner response is highly unstable so some test cases will fail always.
-  @PHONE_SOCIAL @seon
+  #  @PHONE_SOCIAL @seon
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Indian region with validation of all fields - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL/<Scenario>.json")

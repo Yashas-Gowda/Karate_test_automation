@@ -271,7 +271,7 @@ Feature:Testing of DPI  - EMPLOYMENT_SOCIAL feature scenarios on Social sub pack
   #    https://monnai.atlassian.net/browse/MB-5270 https://monnai.atlassian.net/browse/MB-5098  | EMPLOYMENT_SOCIAL_Visum_dp_without_any_employmentHistory_educationHistory | 200        |
 
 
-  @Negative
+
   Scenario Outline: Validate DPI EMPLOYMENT_SOCIAL Subpackage Negative scenario:- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_SOCIAL/Negative/<Scenario>.json")

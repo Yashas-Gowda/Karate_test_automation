@@ -7,7 +7,7 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline: Validate SAMPLE DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/IDENTITY_CORRELATION/<Scenario>.json")

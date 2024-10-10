@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest @PHONE_BASIC @topUpHistory @izidata
+  #  @smokeTest @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
@@ -50,7 +50,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
       | Scenario                                                                                                                      | statusCode |
       | PHONE_BASIC_Sub_topUpHistory_ID_sanity_check_for_currency_topUpCount_minimumTopUpAmount_maximumTopUpAmount_averageTopUpAmount | 200        |
 
-  @PHONE_BASIC @topUpHistory @izidata
+  #  @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
@@ -100,7 +100,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_max_197           | 200        | 197        |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_dpoint_topUpCount_more_then_max_226 | 200        | 225        |
 
-  @PHONE_BASIC @topUpHistory @izidata
+  #  @PHONE_BASIC @topUpHistory @izidata
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory positive scenario for Indonesia region with validation of data-points in topUpHistory - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
@@ -165,7 +165,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
       #      | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_2  | 200        | 2                   |
       | PHONE_BASIC_Sub_topUpHistory_ID_Phonenumber_topUpHistory_ArrayObjects_6  | 200        |
 
-  @PHONE_BASIC @topUpHistory @izidata @Negative
+  #  @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")
@@ -200,7 +200,7 @@ Feature: Testing of DPI  - Phone_basic Sub package TopUP History scenarios for I
   #PHONE_BASIC_Sub_topUpHistory_ID_region_Phonenumber_with_null_response_from_data_partner
 
 
-  @PHONE_BASIC @topUpHistory @izidata @Negative
+  #  @PHONE_BASIC @topUpHistory @izidata @Negative
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for region other then Indonesia(india) with validation of data-points in topUpHistory where  response is "topUpHistory": null   - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/topUpHistory/<Scenario>.json")

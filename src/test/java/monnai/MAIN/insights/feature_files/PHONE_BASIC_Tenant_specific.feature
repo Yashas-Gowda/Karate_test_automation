@@ -8,8 +8,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
     * def BearerToken = authFeature.authToken
 
   #    phoneDisposable by default it is always false, but after configuration for particular tenant it will picked from data partner SEON
-  @PHONE_BASIC @smoke @CTOSTenant
-
+  #  @PHONE_BASIC @smoke @CTOSTenant
   Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")

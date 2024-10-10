@@ -7,7 +7,7 @@ Feature: Testing of DPI  - IDENTITY_ENRICHMENT_CLEARTAX_CUSTOM_FLOW scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline:  DPI IDENTITY_ENRICHMENT_CLEARTAX_CUSTOM_FLOW Scenarios for region India - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/IDENTITY_ENRICHMENT_CLEARTAX_CUSTOM_FLOW/<Scenario>.json")
