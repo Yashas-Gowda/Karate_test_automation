@@ -4,7 +4,7 @@
     "packages": [
       "EMAIL_SOCIAL"
     ],
-    "email": "sammy.khnm@gmail.com"
+    "email": "vaibhavkumarkhurana@gmail.com"
   },
   "response": {
     "data": {
@@ -12,19 +12,19 @@
       "email": {
         "social": {
           "summary": {
-            "registeredProfiles": 7,
-            "registeredConsumerElectronicsProfiles": 1,
-            "registeredEmailProviderProfiles": 1,
-            "registeredEcommerceProfiles": 0,
-            "registeredSocialMediaProfiles": 2,
-            "registeredMessagingProfiles": 0,
-            "registeredProfessionalProfiles": 2,
-            "registeredEntertainmentProfiles": 0,
+            "registeredProfiles": 18,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 4,
+            "registeredEntertainmentProfiles": 1,
             "registeredTravelProfiles": 1,
-            "registeredFinancialProfiles": 0,
-            "registeredEducationProfiles": 0,
+            "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 1,
             "ageOnSocial": null,
-            "numberOfNamesReturned": 0,
+            "numberOfNamesReturned": 1,
             "numberOfPhotosReturned": 1
           },
           "profiles": {
@@ -33,18 +33,17 @@
                 "registered": true
               },
               "samsung": {
-                "registered": false
+                "registered": true
               }
             },
             "emailProvider": {
               "google": {
                 "registered": true,
                 "name": null,
-                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/7b5c8eb1/4776/4438/9152/7840735e14cb/289f28b1-673f-4f57-a7b9-13854e9673a8.jpg",
-                "gender": "F"
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/d9cc1d1f/d392/4d23/936d/18c27c1a1d36/51ce2ad6-7983-44c5-800a-61b3a1f8a492.jpg"
               },
               "yahoo": {
-                "registered": false
+                "registered": true
               },
               "mailru": {
                 "registered": null
@@ -55,10 +54,10 @@
             },
             "ecommerce": {
               "amazon": {
-                "registered": false
+                "registered": true
               },
               "ebay": {
-                "registered": false
+                "registered": true
               },
               "flipkart": {
                 "registered": null
@@ -81,20 +80,20 @@
             },
             "socialMedia": {
               "facebook": {
-                "registered": false,
+                "registered": true,
                 "name": null,
                 "photo": null,
                 "url": null
               },
               "instagram": {
-                "registered": false
+                "registered": true
               },
               "flickr": {
                 "registered": null,
                 "username": null
               },
               "pinterest": {
-                "registered": true
+                "registered": false
               },
               "twitter": {
                 "registered": true
@@ -139,17 +138,17 @@
             },
             "messaging": {
               "skype": {
-                "registered": false,
+                "registered": true,
                 "language": null,
                 "gender": null,
-                "name": null,
-                "id": null,
+                "name": "Vaibhav Kumar Khurana",
+                "id": "vaibhavkumarkhurana",
                 "handle": null,
                 "bio": null,
                 "age": null,
-                "city": null,
-                "state": null,
-                "country": null,
+                "city": "Delhi",
+                "state": "Delhi",
+                "country": "India",
                 "photo": null
               },
               "discord": {
@@ -164,10 +163,10 @@
                 "registered": null
               },
               "wordpress": {
-                "registered": false
+                "registered": true
               },
               "atlassian": {
-                "registered": false
+                "registered": true
               },
               "linkedin": {
                 "registered": true,
@@ -199,7 +198,7 @@
             },
             "entertainment": {
               "spotify": {
-                "registered": false
+                "registered": true
               },
               "lastfm": {
                 "registered": null
@@ -214,7 +213,7 @@
                 "registered": null
               },
               "disneyplus": {
-                "registered": false
+                "registered": null
               },
               "netflix": {
                 "registered": null
@@ -242,12 +241,12 @@
             },
             "financial": {
               "paypal": {
-                "registered": false
+                "registered": true
               }
             },
             "education": {
               "duolingo": {
-                "registered": false
+                "registered": true
               }
             }
           }
@@ -273,13 +272,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "366d9705-a9a8-484b-a1ff-6a8f1a8fcce4",
-      "inputEmail": "sammy.khnm@gmail.com",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "vaibhavkumarkhurana@gmail.com",
       "requestedPackages": [
         "EMAIL_SOCIAL"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -26,7 +26,7 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "Dpi_sep_9_1",
+      "referenceId": "81710dbb-fcd9-4e6e-b5f7-4aa13dbbc189",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -49,7 +49,7 @@
     "errors": [
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "address.addressLine1 is missing",
+        "message": "AddressLine1 in address is missing",
         "code": "MISSING_ADDRESSLINE1",
         "type": "INVALID_INPUT"
       },
