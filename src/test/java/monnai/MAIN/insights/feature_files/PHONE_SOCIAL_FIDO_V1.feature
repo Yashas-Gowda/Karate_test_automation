@@ -986,7 +986,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print count_numberOfPhotosReturned
     * match count_numberOfPhotosReturned == $.data.phone.social.summary.numberOfPhotosReturned
 
-    * match $.data.phone.social.profiles.messaging == payload.response.data.phone.social.profiles.messaging
+    * match $.data.phone.social.profiles.messaging.viber == payload.response.data.phone.social.profiles.messaging.viber
     * match  $.data.phone.social.summary.lastActivity == '#null'
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
