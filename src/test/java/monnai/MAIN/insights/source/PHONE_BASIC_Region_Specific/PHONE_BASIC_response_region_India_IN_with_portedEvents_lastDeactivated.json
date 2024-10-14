@@ -1,13 +1,13 @@
 {
-  "request":{
+  "request": {
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "PHONE_BASIC"
     ],
     "phoneNumber": "919719061192",
     "phoneDefaultCountryCode": "IN"
-  } ,
-  "response":{
+  },
+  "response": {
     "data": {
       "phone": {
         "basic": {
@@ -29,13 +29,17 @@
           "originalCarrier": "Vodafone - Uttar Pradesh West",
           "ported": true,
           "portedHistory": {
-            "portedDate": "2023-07-04",
-            "numberOfPorts": 6,
-            "portedSinceXDays": 211,
-            "currentCarrierCircle": "Vi India Haryana",
+            "portedDate": "2024-06-07",
+            "numberOfPorts": 7,
+            "portedSinceXDays": 129,
+            "currentCarrierCircle": "AirTel Haryana",
             "originalCarrierCircle": "Vi India Uttar Pradesh (West)",
             "changeInCarrierRegion": "CHANGED",
             "portedEvents": [
+              {
+                "carrierCircle": "Airtel Haryana",
+                "portedDate": "2024-06-07"
+              },
               {
                 "carrierCircle": "Vodafone Haryana",
                 "portedDate": "2023-07-04"
@@ -65,20 +69,22 @@
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "404",
-            "mobileNetworkCode": "01",
-            "networkName": "Vodafone - Haryana",
-            "serviceProfileId": "91229"
+            "mobileNetworkCode": "96",
+            "networkName": "Airtel - Haryana",
+            "serviceProfileId": "91039"
           },
           "numberRecycled": null,
           "lastDeactivated": {
-            "minimumTenureDays": 1035,
-            "maximumTenureDays": 1066
+            "minimumTenureDays": 1292,
+            "maximumTenureDays": 1323
           },
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -94,16 +100,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "919719061192",
       "cleansedPhoneNumber": "+919719061192",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "d9919371-b596-495e-a67e-8f07e1a9860c",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

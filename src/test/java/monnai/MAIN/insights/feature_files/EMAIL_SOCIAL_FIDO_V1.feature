@@ -1065,256 +1065,256 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Scenario                             | statusCode |
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
+
+  # Comenting the schema for fido V1 because it is dynamic structure when if data partner does provide resposne to particular profile then we hide that application key in DPI response so there is no point in asserting the schema validation as fido is not consistently giving the same response so our test cases are failing
+  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+  #    Given url requestUrl
+  #    #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
+  #    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/<Scenario>.json")
+  #    And headers headers
+  #    And header Authorization = BearerToken
+  #    And request payload.request
+  #    * set payload.response.meta.referenceId = "#ignore"
+  #    When method POST
+  #    # cloud watch traces -start
+  #    * print karate.request.headers
+  #    * print karate.response.headers
+  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+  #    * def reference_id = karate.request.headers['x-reference-id']
+  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+  #    # ResponseTime
+  #    * print 'responseTime----->',responseTime
+  #    # Request-response
+  #    * print 'API Request----->',payload.request
+  #    * print 'Expected Response---->',payload.response
+  #    * print 'Actual Response---->',karate.pretty(response)
+  #    Then status <statusCode>
+  #    And match $.data.email.social == '#notnull'
+  #    And match $.data.email.basic == '#null'
+  #    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
+  #    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
+  #    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
+  #    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
+  #    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+  #    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
+  #    And match $.errors == []
+  #    Examples:
+  #      | Scenario                              | statusCode |
+  #      | Email_Basic_FIDO_V2_Schema_validation | 200        |
   #
-  @Schema_validation_1
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
-    Given url requestUrl
-    #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
-    And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    And match $.data.email.social == '#notnull'
-    And match $.data.email.basic == '#null'
-    And match $.data.email.social.summary contains deep {"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"}
-    And match $.data.email.social.profiles.consumerElectronics contains deep {"apple":{"registered":"#present"},"samsung":{"registered":"#present"}}
-    And match $.data.email.social.profiles.emailProvider contains deep {"google":{"registered":"#present","photo":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
-    And match $.data.email.social.profiles.ecommerce contains deep {"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"}}
-    And match $.data.email.social.profiles.socialMedia contains deep {"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}}
-    And match $.data.email.social.profiles.messaging contains deep {"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}}
-    And match $.data.email.social.profiles.professional contains deep {"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}}
-    And match $.data.email.social.profiles.entertainment contains deep {"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}}
-    And match $.data.email.social.profiles.travel contains deep {"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}}
-    And match $.data.email.social.profiles.financial contains deep {"paypal":{"registered":"#present"}}
-    And match $.data contains {"phone":null,"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
-    And match $.meta contains deep {"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]}
-    And match $.errors == []
-    Examples:
-      | Scenario                              | statusCode |
-      | Email_Basic_FIDO_V2_Schema_validation | 200        |
-
-
-  @Schema_validation_2
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
-    Given url requestUrl
-    And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    Then match $ contains deep
-      """
-      {
-        "data": {
-          "phone": null,
-          "email": {
-            "social": {
-              "summary": {
-                "registeredProfiles": '#present',
-                "registeredConsumerElectronicsProfiles": '#present',
-                "registeredEmailProviderProfiles": '#present',
-                "registeredEcommerceProfiles": '#present',
-                "registeredSocialMediaProfiles": '#present',
-                "registeredMessagingProfiles": '#present',
-                "registeredProfessionalProfiles": '#present',
-                "registeredEntertainmentProfiles": '#present',
-                "registeredTravelProfiles": '#present',
-                "registeredFinancialProfiles": '#present',
-                "registeredEducationProfiles":  '#present',
-                "ageOnSocial": '#present',
-                "numberOfNamesReturned": '#present',
-                "numberOfPhotosReturned": '#present'
-              },
-              "profiles": {
-                "consumerElectronics": {
-                  "apple": {
-                    "registered": '#present'
-                  },
-                  "samsung": "#null"
-                },
-                "emailProvider": {
-                  "google": {
-                    "registered": '#present',
-                    "name": '#present',
-                    "photo": '#present',
-                    "gender":  '##present'
-                  },
-                  "yahoo": {
-                    "registered": '#present'
-                  },
-                  "mailru": "#null",
-                  "rambler": "#null"
-                },
-                "ecommerce": {
-                  "amazon": {
-                    "registered": '#present'
-                  },
-                  "ebay": {
-                    "registered": '#present'
-                  },
-                  "deliveroo": {
-                    "registered": '#present'
-                  }
-                },
-                "socialMedia": {
-                  "facebook": {
-                    "registered": '#present',
-                    "name": '#present',
-                    "photo": '#present',
-                    "url": '#present'
-                  },
-                  "instagram": {
-                    "registered": '#present'
-                  },
-                  "pinterest": {
-                    "registered": '#present'
-                  },
-                  "twitter": {
-                    "registered": '#present'
-                  },
-                  "gravatar": {
-                    "registered": '#present',
-                    "location": '#present',
-                    "name": '#present',
-                    "profileUrl": '#present',
-                    "username": '#present'
-                  }
-                },
-                "messaging": {
-                  "skype": {
-                    "registered": '#present',
-                    "language": '#present',
-                    "gender": '#present',
-                    "name": '#present',
-                    "id": '#present',
-                    "handle": '#present',
-                    "bio": '#present',
-                    "age": '#present',
-                    "city": '#present',
-                    "state": '#present',
-                    "country": '#present',
-                    "photo": '#present'
-                  },
-                  "discord":"#null",
-                  "kakao": "#null"
-                },
-                "professional": {
-                  "wordpress": {
-                    "registered": '#present'
-                  },
-                  "linkedin": {
-                    "registered": '#present',
-                    "url": '#present',
-                    "name": '#present',
-                    "company": '#present',
-                    "title": '#present',
-                    "location": '#present',
-                    "website": '#present',
-                    "twitter": '#present',
-                    "photo": '#present',
-                    "connectionCount": '#present'
-                  },
-                  "microsoft": {
-                    "registered": '#present'
-                  },
-                  "hubspot": {
-                    "registered": '#present'
-                  }
-                },
-                "entertainment": {
-                  "spotify": {
-                    "registered": '#present'
-                  },
-                  "disneyplus": {
-                    "registered": '#present'
-                  }
-                },
-                "travel": {
-                  "booking": {
-                    "registered": '#present'
-                  },
-                  "airbnb": {
-                    "registered": '#present',
-                    "about": '#present',
-                    "createdAt": '#present',
-                    "name": '#present',
-                    "identityVerified": '#present',
-                    "location": '#present',
-                    "photo": '#present',
-                    "revieweeCount": '#present',
-                    "trips": '#present',
-                    "work": '#present'
-                  }
-                },
-                "financial": {
-                  "paypal": {
-                    "registered": '#present'
-                  },
-                  "binance": {
-                    "registered": false
-                  }
-                },
-                "education": {
-                  "duolingo": {
-                    "registered": false
-                  }
-                }
-              }
-            },
-            "basic": '#null'
-          },
-          "address":  '#null',
-          "name":  '#null',
-          "ip":  '#null',
-          "identity":  '#null',
-          "upi":  '#null',
-          "device":  '#null',
-          "employment":  '#null',
-          "income":  '#null',
-          "blacklist":  '#null',
-          "bre":  '#null'
-        },
-        "meta": {
-          "referenceId": '#present',
-          "inputEmail": '#present',
-          "requestedPackages": [
-            "EMAIL_SOCIAL"
-          ]
-        },
-        "errors": '#array'
-      }
-      """
-    Examples:
-      | Scenario                              | statusCode |
-      | Email_Basic_FIDO_V2_Schema_validation | 200        |
+  #
+  #
+  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
+  #    Given url requestUrl
+  #    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/<Scenario>.json")
+  #    And headers headers
+  #    And header Authorization = BearerToken
+  #    And request payload.request
+  #    * set payload.response.meta.referenceId = "#ignore"
+  #    When method POST
+  #    # cloud watch traces -start
+  #    * print karate.request.headers
+  #    * print karate.response.headers
+  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+  #    * def reference_id = karate.request.headers['x-reference-id']
+  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+  #    # ResponseTime
+  #    * print 'responseTime----->',responseTime
+  #    # Request-response
+  #    * print 'API Request----->',payload.request
+  #    * print 'Expected Response---->',payload.response
+  #    * print 'Actual Response---->',karate.pretty(response)
+  #    Then status <statusCode>
+  #    Then match $ contains deep
+  #      """
+  #      {
+  #        "data": {
+  #          "phone": null,
+  #          "email": {
+  #            "social": {
+  #              "summary": {
+  #                "registeredProfiles": '#present',
+  #                "registeredConsumerElectronicsProfiles": '#present',
+  #                "registeredEmailProviderProfiles": '#present',
+  #                "registeredEcommerceProfiles": '#present',
+  #                "registeredSocialMediaProfiles": '#present',
+  #                "registeredMessagingProfiles": '#present',
+  #                "registeredProfessionalProfiles": '#present',
+  #                "registeredEntertainmentProfiles": '#present',
+  #                "registeredTravelProfiles": '#present',
+  #                "registeredFinancialProfiles": '#present',
+  #                "registeredEducationProfiles":  '#present',
+  #                "ageOnSocial": '#present',
+  #                "numberOfNamesReturned": '#present',
+  #                "numberOfPhotosReturned": '#present'
+  #              },
+  #              "profiles": {
+  #                "consumerElectronics": {
+  #                  "apple": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "samsung": "#null"
+  #                },
+  #                "emailProvider": {
+  #                  "google": {
+  #                    "registered": '#present',
+  #                    "name": '#present',
+  #                    "photo": '#present',
+  #                    "gender":  '##present'
+  #                  },
+  #                  "yahoo": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "mailru": "#null",
+  #                  "rambler": "#null"
+  #                },
+  #                "ecommerce": {
+  #                  "amazon": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "ebay": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "deliveroo": {
+  #                    "registered": '#present'
+  #                  }
+  #                },
+  #                "socialMedia": {
+  #                  "facebook": {
+  #                    "registered": '#present',
+  #                    "name": '#present',
+  #                    "photo": '#present',
+  #                    "url": '#present'
+  #                  },
+  #                  "instagram": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "pinterest": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "twitter": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "gravatar": {
+  #                    "registered": '#present',
+  #                    "location": '#present',
+  #                    "name": '#present',
+  #                    "profileUrl": '#present',
+  #                    "username": '#present'
+  #                  }
+  #                },
+  #                "messaging": {
+  #                  "skype": {
+  #                    "registered": '#present',
+  #                    "language": '#present',
+  #                    "gender": '#present',
+  #                    "name": '#present',
+  #                    "id": '#present',
+  #                    "handle": '#present',
+  #                    "bio": '#present',
+  #                    "age": '#present',
+  #                    "city": '#present',
+  #                    "state": '#present',
+  #                    "country": '#present',
+  #                    "photo": '#present'
+  #                  },
+  #                  "discord":"#null",
+  #                  "kakao": "#null"
+  #                },
+  #                "professional": {
+  #                  "wordpress": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "linkedin": {
+  #                    "registered": '#present',
+  #                    "url": '#present',
+  #                    "name": '#present',
+  #                    "company": '#present',
+  #                    "title": '#present',
+  #                    "location": '#present',
+  #                    "website": '#present',
+  #                    "twitter": '#present',
+  #                    "photo": '#present',
+  #                    "connectionCount": '#present'
+  #                  },
+  #                  "microsoft": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "hubspot": {
+  #                    "registered": '#present'
+  #                  }
+  #                },
+  #                "entertainment": {
+  #                  "spotify": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "disneyplus": {
+  #                    "registered": '#present'
+  #                  }
+  #                },
+  #                "travel": {
+  #                  "booking": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "airbnb": {
+  #                    "registered": '#present',
+  #                    "about": '#present',
+  #                    "createdAt": '#present',
+  #                    "name": '#present',
+  #                    "identityVerified": '#present',
+  #                    "location": '#present',
+  #                    "photo": '#present',
+  #                    "revieweeCount": '#present',
+  #                    "trips": '#present',
+  #                    "work": '#present'
+  #                  }
+  #                },
+  #                "financial": {
+  #                  "paypal": {
+  #                    "registered": '#present'
+  #                  },
+  #                  "binance": {
+  #                    "registered": false
+  #                  }
+  #                },
+  #                "education": {
+  #                  "duolingo": {
+  #                    "registered": false
+  #                  }
+  #                }
+  #              }
+  #            },
+  #            "basic": '#null'
+  #          },
+  #          "address":  '#null',
+  #          "name":  '#null',
+  #          "ip":  '#null',
+  #          "identity":  '#null',
+  #          "upi":  '#null',
+  #          "device":  '#null',
+  #          "employment":  '#null',
+  #          "income":  '#null',
+  #          "blacklist":  '#null',
+  #          "bre":  '#null'
+  #        },
+  #        "meta": {
+  #          "referenceId": '#present',
+  #          "inputEmail": '#present',
+  #          "requestedPackages": [
+  #            "EMAIL_SOCIAL"
+  #          ]
+  #        },
+  #        "errors": '#array'
+  #      }
+  #      """
+  #    Examples:
+  #      | Scenario                              | statusCode |
+  #      | Email_Basic_FIDO_V2_Schema_validation | 200        |

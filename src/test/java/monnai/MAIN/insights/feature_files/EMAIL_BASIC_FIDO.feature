@@ -265,9 +265,11 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
     * set payload.response.data.email.basic.domainDetails.creationTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.updateTime = "#ignore"
     * set payload.response.data.email.basic.domainDetails.expiryTime = "#ignore"
+    * set payload.response.data.email.basic.domainDetails.freeProvider = "#ignore"
     * match $.data.email.basic.domainDetails.creationTime == "##regex\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
     * match $.data.email.basic.domainDetails.updateTime == "#null"
     * match $.data.email.basic.domainDetails.expiryTime == "#null"
+    * match $.data.email.basic.domainDetails.freeProvider == "##boolean"
     * set payload.response.data.email.basic.breach = "#ignore"
     * def breach = $.data.email.basic.breach
     #    * def isBreached = karate.jsonPath(jsonObject,'$.data.email.basic.breach?[]')

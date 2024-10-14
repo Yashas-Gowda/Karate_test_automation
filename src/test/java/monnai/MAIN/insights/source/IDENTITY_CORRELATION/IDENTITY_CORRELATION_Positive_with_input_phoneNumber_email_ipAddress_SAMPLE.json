@@ -11,7 +11,7 @@
       "IDENTITY_CORRELATION"
     ]
   },
-  "response":{
+  "response": {
     "data": {
       "phone": null,
       "email": null,
@@ -22,7 +22,7 @@
         "correlation": {
           "phoneAndEmailMatched": "YES",
           "phoneAndIpAddressMatched": "NO",
-          "phoneAndIpLocationMatched": "NO",
+          "phoneAndIpLocationMatched": "NO_INPUT",
           "phoneEmailAndIpAddressMatched": "NO"
         },
         "enrichment": null,
@@ -33,18 +33,26 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "8005550123",
       "cleansedPhoneNumber": "+918005550123",
-      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "referenceId": "535e9364-4b54-4b89-92ab-e2faa07b2a69",
       "inputEmail": "example@me.com",
       "inputIpAddress": "107.77.94.125",
       "requestedPackages": [
         "IDENTITY_CORRELATION"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

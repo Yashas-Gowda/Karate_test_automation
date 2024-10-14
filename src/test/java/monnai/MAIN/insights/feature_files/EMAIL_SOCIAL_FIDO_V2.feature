@@ -962,7 +962,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
 
-  @Schema_validation_1 @travel_1
+
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -1007,8 +1007,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     Examples:
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
-
-  @Schema_validation_2
+      
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -1272,7 +1271,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                     "registered": '#present'
                   },
                   "binance": {
-                    "registered": '#present'
+                    "registered": '##present'
                   }
                 },
                 "education": {

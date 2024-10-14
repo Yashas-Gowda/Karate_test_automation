@@ -51,6 +51,47 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
       | Scenario                         | statusCode |
       | KYC_PAN_Positive_cashfree_sanity | 200        |
 
+  Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point :- <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/KYC_PAN/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # Request-response headers
+    * print 'ENV ---->', karate.prevRequest.headers.Host
+    * print 'Date----->',responseHeaders["Date"][0]
+    * print responseHeaders["Content-Type"][0]
+    * print karate.request.headers
+    * print karate.response.headers
+    # cloud watch traces -start
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    #    * match $.data.kyc.gstin == "#null"
+    #    * def Expected_panCardName = payload.response.data.kyc.pan.panCardName
+    #    * print Expected_panCardName
+    #    * set payload.response.data.kyc.pan.panCardName = "#ignore"
+    #    * def panCardName = $.data.kyc.pan.panCardName
+    #    * def Actual_panCardName = panCardName.trim()
+    #    * print Actual_panCardName
+    #    * match Expected_panCardName == Actual_panCardName
+    * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
+    * match $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
+
+    Examples:
+      | Scenario                              | statusCode |
+      | KYC_PAN_Positive_cashfree_valid_false | 200        |
 
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "valid" data point :- <Scenario>
     Given url requestUrl
@@ -91,10 +132,9 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                              | statusCode |
-      | KYC_PAN_Positive_cashfree_valid_false | 200        |
-      | KYC_PAN_Positive_cashfree_valid_true  | 200        |
-
+      | Scenario                             | statusCode |
+      | KYC_PAN_Positive_cashfree_valid_true | 200        |
+  
   Scenario Outline:  DPI KYC_PAN Package positive scenario - Validation of "status" data point :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_PAN/<Scenario>.json")
@@ -123,6 +163,13 @@ Feature: Testing of DPI  - KYC_PAN Package scenarios with cashfree dp
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
     #    * match $.data.kyc.gstin == "#null"
+    * def Expected_panCardName = payload.response.data.kyc.pan.panCardName
+    * print Expected_panCardName
+    * set payload.response.data.kyc.pan.panCardName = "#ignore"
+    * def panCardName = $.data.kyc.pan.panCardName
+    * def Actual_panCardName = panCardName.trim()
+    * print Actual_panCardName
+    * match Expected_panCardName == Actual_panCardName
     * match $.data.kyc.pan contains only deep payload.response.data.kyc.pan
     * match $.meta contains only deep payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
