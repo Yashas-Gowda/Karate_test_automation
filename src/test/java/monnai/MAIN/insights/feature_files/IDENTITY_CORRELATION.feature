@@ -1,4 +1,4 @@
-@debug @IDENTITIY_CORRELATION
+@IDENTITIY_CORRELATION
 Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Background:

@@ -343,7 +343,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
     * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
 
     Examples:
-      | Scenario                                  | statusCode |
+      | Scenario                               | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_travel_null | 200        |
 
   #fido gives no financial profiles-{paypal}
@@ -440,7 +440,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
 
-  @Schema_validation_1
+  #  @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -485,7 +485,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios
       | Scenario                                                        | statusCode |
       | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
 
-  @Schema_validation_2
+  #  @Schema_validation_2
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")

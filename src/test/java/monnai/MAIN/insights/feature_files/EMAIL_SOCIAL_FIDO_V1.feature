@@ -1032,7 +1032,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Email_Social_Negative_Onlyprefix_without@_NoDomainName(abc)     | 400        |
       | Email_Social_Negative_withPrefix_with@_NoDomainName(abc@)       | 400        |
 
-  Scenario Outline:  DPI EMAIL_BASIC Negative scenario with null/empty input - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario with null/empty input - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/<Scenario>.json")
     And headers headers
@@ -1067,7 +1067,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
       | Email_Social_Negative_NullInput(' ') | 400        |
 
   # Comenting the schema for fido V1 because it is dynamic structure when if data partner does provide resposne to particular profile then we hide that application key in DPI response so there is no point in asserting the schema validation as fido is not consistently giving the same response so our test cases are failing
-  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
+  #  Scenario Outline:  DPI EMAIL_SOCIAL  Negative scenario for Schema_validation_1 - <Scenario>
   #    Given url requestUrl
   #    #    And def payload = read( "../" + "data/" + source + "/EMAIL_SOCIAL/<Scenario>.json")
   #    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/<Scenario>.json")
@@ -1111,7 +1111,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V1
   #
   #
   #
-  #  Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
+  #  Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
   #    Given url requestUrl
   #    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V1/<Scenario>.json")
   #    And headers headers

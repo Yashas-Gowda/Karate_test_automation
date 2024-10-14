@@ -1,6 +1,7 @@
-@regTest_3 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_CATALOG
+@regTest_3 @DOMAIN_BREACH
+  #@DOMAIN_BREACH_BREACH_CATALOG
 
-@parallel=false
+  #@parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_CATALOG Package scenarios
 
   Background:

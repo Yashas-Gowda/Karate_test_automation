@@ -469,7 +469,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
-  @Schema_validation_2
+  #  @Schema_validation_2
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Schema validation of data points  :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_FIDO/<Scenario>.json")

@@ -1034,7 +1034,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V2 DP.
       | PHONE_SOCIAL_FIDO_profiles_messaging_skype_registered_true_with_id_name_photo_city_state_country | 200        |
       | PHONE_SOCIAL_FIDO_profiles_messaging_skype_registered_true_with_id_name_city_state_country       | 200        |
 
-  @Schema_validation_1
+  #  @Schema_validation_1
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V2/<Scenario>.json")

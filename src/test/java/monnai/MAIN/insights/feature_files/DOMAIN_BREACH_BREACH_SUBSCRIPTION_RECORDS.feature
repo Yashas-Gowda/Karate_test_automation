@@ -1,6 +1,7 @@
-@regTest_3 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_SUBSCRIPTION_RECORDS
+@regTest_3 @DOMAIN_BREACH
+  #@DOMAIN_BREACH_BREACH_SUBSCRIPTION_RECORDS
 
-@parallel=false
+  #@parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_SUBSCRIPTION_RECORDS Package scenarios
 
   Background:

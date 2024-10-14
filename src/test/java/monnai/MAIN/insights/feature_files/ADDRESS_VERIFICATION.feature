@@ -8,7 +8,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @ADDRESS_VERIFICATION_IN
+  #  @ADDRESS_VERIFICATION_IN
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/IN/<Scenario>.json")
@@ -53,8 +53,8 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_IN_positive_request_only_address_response_only_addressVisited_true_with_addressLastVisited                                                                            | 200        |
       | ADDRESS_VERIFICATION_IN_positive_request_only_address_without_optional_datapoints_response_only_addressVisited_true_with_addressLastVisited                                                | 200        |
       | ADDRESS_VERIFICATION_IN_positive_request_only__address_response_only_addressVisited_false                                                                                                  | 200        |
-      
-  @ADDRESS_VERIFICATION_IN @Negative
+
+  #  @ADDRESS_VERIFICATION_IN @Negative
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/IN/Negative/<Scenario>.json")
@@ -98,7 +98,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_IN_Negative_request_where_mandatory_input_country_addressLine1_with_space        | 400        |
       | ADDRESS_VERIFICATION_IN_Negative_request_where_mandatory_input_country_addressLine1_with_null         | 400        |
 
-  @ADDRESS_VERIFICATION_ID
+  #  @ADDRESS_VERIFICATION_ID
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -145,7 +145,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
   #        | ADDRESS_VERIFICATION_ID_positive_TELKOMSEL_request_phoneNumber_locationCoordinates_response_closestDistance_locationConfidence_Medium_cellTowerDensity_Strongest_cellTowerRanking_2_locationType_NIGHT | 200        |
   #        | ADDRESS_VERIFICATION_ID_positive_XL_request_phoneNumber_locationCoordinates_response_closestDistance_locationConfidence_Medium_cellTowerDensity_Strongest_cellTowerRanking_2_locationType_NIGHT        | 200        |
 
-  @ADDRESS_VERIFICATION_ID
+  #  @ADDRESS_VERIFICATION_ID
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -184,7 +184,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_locationCoordinates_response_packageDetails_S2101_data_partner_Location_not_available | 200        |
 
 
-  @ADDRESS_VERIFICATION_ID
+  #  @ADDRESS_VERIFICATION_ID
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -228,7 +228,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_1001_2000 | 200        |
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000 | 200        |
 
-  @ADDRESS_VERIFICATION_ID
+  #  @ADDRESS_VERIFICATION_ID
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -266,7 +266,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       #     https://monnai.atlassian.net/browse/MB-6658
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_packageDetails_S2101_when_dp_closest_distance_null | 200        |
 
-  @ADDRESS_VERIFICATION_ID
+  #  @ADDRESS_VERIFICATION_ID
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
@@ -305,7 +305,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_4001_null | 200        |
 
 
-  @ADDRESS_VERIFICATION_ID @Negative
+  #  @ADDRESS_VERIFICATION_ID @Negative
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/Negative/<Scenario>.json")

@@ -9,7 +9,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     * def BearerToken = authFeature.authToken
 
 
-  @KYC_GOVERNMENT_TH
+  #  @KYC_GOVERNMENT_TH
   Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Thailand (TH) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/TH/<Scenario>.json")
@@ -73,7 +73,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA                                                   | 200        |
       | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH                                                                                               | 200        |
 
-  @KYC_GOVERNMENT_TH
+  #  @KYC_GOVERNMENT_TH
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Thailand (TH) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/TH/<Scenario>.json")
@@ -141,7 +141,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
   #      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_bollean                                  | 400        |
   #      | KYC_GOVERNMENT_Thailand_TH_input_id1_with_alphanumaric                                  | 400        |
 
-  @KYC_GOVERNMENT_IN
+  #  @KYC_GOVERNMENT_IN
   Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country India (IN) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/IN/<Scenario>.json")
@@ -264,7 +264,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
   #      | KYC_GOVERNMENT_India_IN_input_id2_with_number                                   | 400        |
   #      | KYC_GOVERNMENT_India_IN_input_id2_with_bollean                                  | 400        |
 
-  @KYC_GOVERNMENT_IN
+  #  @KYC_GOVERNMENT_IN
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country India (IN) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/IN/<Scenario>.json")
@@ -368,7 +368,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
   # data not found     | KYC_GOVERNMENT_Philippines_PH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH | 200        |
   # data not found        | KYC_GOVERNMENT_Philippines_PH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA | 200        |
 
-  @KYC_GOVERNMENT_PH
+  #  @KYC_GOVERNMENT_PH
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Philippines (PH) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/PH/<Scenario>.json")
@@ -441,7 +441,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       #      | KYC_GOVERNMENT_Philippines_PH_input_dateOfBirth_with_number                                   | 400        |
       | KYC_GOVERNMENT_Philippines_PH_input_Key_dateOfBirth_missing  | 400        |
 
-  @KYC_GOVERNMENT_PH
+  #  @KYC_GOVERNMENT_PH
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Philippines (PH) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/PH/<Scenario>.json")
@@ -548,7 +548,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_GOVERNMENT_Indonesia_ID_input_all_mandatory_optional_datapoints_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_matchAddressLine2_matchAdditionalAddressField2_MATCH | 200        |
       | KYC_GOVERNMENT_Indonesia_ID_input_all_mandatory_datapoints_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_matchAddressLine2_matchAdditionalAddressField2_MATCH          | 200        |
 
-  @KYC_GOVERNMENT_ID
+  #  @KYC_GOVERNMENT_ID
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Indonesia (ID) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/ID/<Scenario>.json")
@@ -605,7 +605,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       #      | KYC_GOVERNMENT_Indonesia_ID_input_dateOfBirth_with_number                                   | 400        |
       | KYC_GOVERNMENT_Indonesia_ID_input_Key_dateOfBirth_missing    | 400        |
 
-  @KYC_GOVERNMENT_ID
+  #  @KYC_GOVERNMENT_ID
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Indonesia (ID) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/ID/<Scenario>.json")
@@ -682,7 +682,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_GOVERNMENT_Malaysia_MY_input_mandatory_with_optional_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_MATCH | 200        |
       | KYC_GOVERNMENT_Malaysia_MY_input_with_only_mandatory_output_matchFullGivenName_matchDateOfBirth_matchGender_matchId1_matchAddressLine1_MATCH     | 200        |
 
-  @KYC_GOVERNMENT_MY
+  #  @KYC_GOVERNMENT_MY
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Malaysia (MY) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/MY/<Scenario>.json")
@@ -740,7 +740,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_GOVERNMENT_Malaysia_MY_input_Key_dateOfBirth_missing    | 400        |
 
 
-  @KYC_GOVERNMENT_MY
+  #  @KYC_GOVERNMENT_MY
   Scenario Outline: Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Malaysia (MY) <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_GOVERNMENT/MY/<Scenario>.json")
