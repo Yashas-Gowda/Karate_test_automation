@@ -274,7 +274,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | Scenario                                                               | statusCode |
       | EMPLOYMENT_ADVANCED_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
 
-  @Negative
+
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_ADVANCED/Negative/<Scenario>.json")

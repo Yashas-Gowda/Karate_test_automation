@@ -1,4 +1,4 @@
-@debug @regTest_5 @DEVICE_DETAILS
+@regTest_5 @DEVICE_DETAILS
 Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Background:
