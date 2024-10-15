@@ -9,7 +9,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     * def BearerToken = authFeature.authToken
 
 
-  @KYC_MOBILE_region_ID
+  #  @KYC_MOBILE_region_ID
   Scenario Outline: Validate DPI KYC_MOBILE positive scenarios with all input fields  for Country ID <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/ID/<Scenario>.json")
@@ -62,7 +62,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
 
-  @KYC_MOBILE_region_ID
+  #  @KYC_MOBILE_region_ID
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for Country ID <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/ID/<Scenario>.json")
@@ -106,7 +106,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
 
 
-  @KYC_MOBILE_region_FR
+  #  @KYC_MOBILE_region_FR
   Scenario Outline: Validate DPI KYC_MOBILE positive scenarios with all input fields  for Country FR <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/FR/<Scenario>.json")
@@ -159,7 +159,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_France_FR_output_When_input_optional_field_streetName_value_null                                                                                         | 200        |
 
 
-  @KYC_MOBILE_region_FR
+  #  @KYC_MOBILE_region_FR
   Scenario Outline: Validate DPI KYC_MOBILE positive scenarios with all input fields  for Country FR <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/FR/<Scenario>.json")
@@ -198,7 +198,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_France_FR_output_mobile_null | 200        |
 
 
-  @KYC_MOBILE_region_FR
+  #  @KYC_MOBILE_region_FR
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for Country FR <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/FR/<Scenario>.json")
@@ -254,7 +254,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
   #      | KYC_MOBILE_France_FR_input_postalCode_with_bollen                                    | 400        |
 
 
-  @KYC_MOBILE_region_DE
+  #  @KYC_MOBILE_region_DE
   Scenario Outline: Validate DPI KYC_MOBILE positive scenarios with all input fields  for Country DE <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/DE/<Scenario>.json")
@@ -306,7 +306,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_Germany_DE_output_When_input_optional_field_streetName_value_null                                                                                         | 200        |
 
 
-  @KYC_MOBILE_region_DE
+  #  @KYC_MOBILE_region_DE
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for Country DE <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/DE/<Scenario>.json")
@@ -362,7 +362,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
   #      | KYC_MOBILE_France_FR_input_postalCode_with_bollen                                    | 400        |
 
 
-  @KYC_MOBILE_neg
+  #  @KYC_MOBILE_neg
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for all the Country  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/<Scenario>.json")
@@ -401,7 +401,7 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_input_phoneNumber_key_missing  | 400        |
 
 
-  @KYC_MOBILE_neg
+  #  @KYC_MOBILE_neg
   Scenario Outline: Validate DPI KYC_MOBILE Negative scenarios with all input fields for all the Country  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/KYC_MOBILE/<Scenario>.json")
