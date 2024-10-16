@@ -1,30 +1,31 @@
 {
   "request": {
+    "phoneNumber": "6282282507764",
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "",
     "eventType": "ACCOUNT_CREATION",
     "cleansingFlag": true,
     "packages": [
       "PHONE_BASIC"
-    ],
-    "phoneNumber": "6285262800427",
-    "phoneDefaultCountryCode": "ID"
+    ]
   },
   "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6285262800427",
+          "phoneNumber": "6282282507764",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "NO",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
-          "phoneNumberAge": 2,
-          "phoneNumberAgeDescription": "3 to 6 Months",
+          "phoneNumberAge": 6,
+          "phoneNumberAgeDescription": "Above 36 Months",
           "phoneTenure": {
-            "min": 4,
-            "max": 5
+            "min": 36,
+            "max": null
           },
           "country": "ID",
           "originalCarrier": "TELKOMSEL (PT Telekomunikasi Selular)",
@@ -52,13 +53,24 @@
             {
               "topUpTenure": {
                 "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 2,
+              "minimumTopUpAmount": 10000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 17000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 4,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 40000
             },
             {
               "topUpTenure": {
@@ -66,10 +78,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 5,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 38000
             },
             {
               "topUpTenure": {
@@ -77,10 +89,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 6,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 35000
             },
             {
               "topUpTenure": {
@@ -88,10 +100,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 9,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 38000
             },
             {
               "topUpTenure": {
@@ -99,10 +111,21 @@
                 "max": 60
               },
               "currency": "IDR",
+              "topUpCount": 2,
+              "minimumTopUpAmount": 50000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 62000
+            },
+            {
+              "topUpTenure": {
+                "min": 60,
+                "max": 90
+              },
+              "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "minimumTopUpAmount": 30000,
+              "maximumTopUpAmount": 30000,
+              "averageTopUpAmount": 30000
             },
             {
               "topUpTenure": {
@@ -111,9 +134,31 @@
               },
               "currency": "IDR",
               "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 180,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 3,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 75000,
+              "averageTopUpAmount": 43000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 24,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 36000
             }
           ],
           "simSwap": null
@@ -141,8 +186,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6285262800427",
-      "cleansedPhoneNumber": "+6285262800427",
+      "inputPhoneNumber": "6282282507764",
+      "cleansedPhoneNumber": "+6282282507764",
       "referenceId": "Dpi_oct_3_release_1",
       "requestedPackages": [
         "PHONE_BASIC"

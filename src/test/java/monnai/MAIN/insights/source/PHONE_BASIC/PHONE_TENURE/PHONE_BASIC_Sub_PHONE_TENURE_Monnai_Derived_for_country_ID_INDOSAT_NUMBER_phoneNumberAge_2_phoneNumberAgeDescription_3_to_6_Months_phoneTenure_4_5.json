@@ -5,18 +5,18 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "6285262800427",
+    "phoneNumber": "6281299120929",
     "phoneDefaultCountryCode": "ID"
   },
   "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "6285262800427",
+          "phoneNumber": "6281299120929",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "NO",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -52,13 +52,24 @@
             {
               "topUpTenure": {
                 "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 2,
+              "minimumTopUpAmount": 100000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 100000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
                 "max": 60
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 3,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 70000
             },
             {
               "topUpTenure": {
@@ -66,10 +77,10 @@
                 "max": 90
               },
               "currency": "IDR",
-              "topUpCount": 1,
+              "topUpCount": 4,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 77000
             },
             {
               "topUpTenure": {
@@ -77,10 +88,10 @@
                 "max": 180
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 5,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 72000
             },
             {
               "topUpTenure": {
@@ -88,10 +99,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 2,
+              "topUpCount": 5,
               "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 72000
             },
             {
               "topUpTenure": {
@@ -106,14 +117,36 @@
             },
             {
               "topUpTenure": {
+                "min": 60,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 100000,
+              "maximumTopUpAmount": 100000,
+              "averageTopUpAmount": 100000
+            },
+            {
+              "topUpTenure": {
                 "min": 90,
                 "max": 180
               },
               "currency": "IDR",
               "topUpCount": 1,
-              "minimumTopUpAmount": 10000,
-              "maximumTopUpAmount": 10000,
-              "averageTopUpAmount": 10000
+              "minimumTopUpAmount": 50000,
+              "maximumTopUpAmount": 50000,
+              "averageTopUpAmount": 50000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 16,
+              "minimumTopUpAmount": 2000,
+              "maximumTopUpAmount": 150000,
+              "averageTopUpAmount": 106000
             }
           ],
           "simSwap": null
@@ -141,8 +174,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "6285262800427",
-      "cleansedPhoneNumber": "+6285262800427",
+      "inputPhoneNumber": "6281299120929",
+      "cleansedPhoneNumber": "+6281299120929",
       "referenceId": "Dpi_oct_3_release_1",
       "requestedPackages": [
         "PHONE_BASIC"
