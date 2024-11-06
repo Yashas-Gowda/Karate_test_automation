@@ -171,7 +171,8 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #  cc: @Roopa
 
 
-  #  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
+  @oct_23_release
+    #  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of PHONE_TENURE - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC/PHONE_TENURE/<Scenario>.json")
@@ -267,7 +268,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_8_10                             | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 8               | 10              |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_10_12                            | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 10              | 12              |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_4_phoneNumberAgeDescription_12_to_24_Months_phoneTenure_12_24                           | 200        | "#null"        | "#null"          | 4              | "12 to 24 Months"         | "#notnull"  | 12              | 24              |
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_5_phoneNumberAgeDescription_Above_24_Months_phoneTenure_24_null                         | 200        | "#null"        | "#null"          | 5              | "Above 24 Months"         | "#notnull"  | 24              | null            |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_5_phoneNumberAgeDescription_24_to_36_Months_phoneTenure_24_36                           | 200        | "#null"        | "#null"          | 5              | "24 to 36 Months"         | "#notnull"  | 24              | 36              |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_6_phoneNumberAgeDescription_Above_24_Months_phoneTenure_36_null                         | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
       | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_null_phoneNumberAgeDescription_null_phoneTenure_null                                    | 200        | "#null"        | "#null"          | null           | null                      | "#null"     | "#notpresent"   | "#notpresent"   |
 
@@ -460,7 +461,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_Sub_PHONE_STATUS_BRAZIL_BR_PhoneNumber_WDD_UNKNOWN_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_71 | 200        | UNKNOWN |
       | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_YES_Xconnect_active_not_called_TC_72                     | 200        | YES     |
 
-      | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_67                    | 200        | UNKNOWN |
+      # Partners are now giving Yes/No instaed of UNKNOWN     | PHONE_BASIC_Sub_PHONE_STATUS_IN_PhoneNumber_TMT_UNKNOWN_Xconnect_active_UNKNOWN_TC_67                    | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
       | PHONE_BASIC_Sub_PHONE_STATUS_NON_BRAZIL_US_PhoneNumber_TMT_YES_Xconnect_not_called                       | 200        | YES     |
 

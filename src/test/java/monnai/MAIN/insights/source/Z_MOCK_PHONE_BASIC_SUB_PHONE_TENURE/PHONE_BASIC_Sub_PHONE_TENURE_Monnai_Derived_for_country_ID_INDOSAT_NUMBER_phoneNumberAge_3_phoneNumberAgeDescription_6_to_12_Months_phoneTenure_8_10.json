@@ -5,45 +5,45 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "628561731975",
+    "phoneNumber": "6281236649082",
     "phoneDefaultCountryCode": "ID"
   },
   "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "628561731975",
+          "phoneNumber": "6281236649082",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": "PREPAID",
-          "phoneNumberAge": 5,
-          "phoneNumberAgeDescription": "Above 24 Months",
+          "simType": null,
+          "phoneNumberAge": 3,
+          "phoneNumberAgeDescription": "6 to 12 Months",
           "phoneTenure": {
-            "min": 24,
-            "max": null
+            "min": 8,
+            "max": 10
           },
           "country": "ID",
-          "originalCarrier": "Indosat Ooredoo Hutchison",
+          "originalCarrier": "TELKOMSEL (PT Telekomunikasi Selular)",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
-            "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "currentCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
+            "originalCarrierCircle": "Telkomsel PT Telekomunikasi Selular",
             "changeInCarrierRegion": "NOT_SUPPORTED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "510",
-            "mobileNetworkCode": "01",
-            "networkName": "Indosat Ooredoo Hutchison",
-            "serviceProfileId": "62500"
+            "mobileNetworkCode": "10",
+            "networkName": "TELKOMSEL (PT Telekomunikasi Selular)",
+            "serviceProfileId": "62504"
           },
           "numberRecycled": null,
           "lastDeactivated": null,
@@ -52,13 +52,35 @@
             {
               "topUpTenure": {
                 "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
                 "max": 360
               },
               "currency": "IDR",
               "topUpCount": 2,
               "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 80000,
-              "averageTopUpAmount": 52000
+              "maximumTopUpAmount": 110000,
+              "averageTopUpAmount": 67000
+            },
+            {
+              "topUpTenure": {
+                "min": 90,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
             },
             {
               "topUpTenure": {
@@ -66,21 +88,10 @@
                 "max": 360
               },
               "currency": "IDR",
-              "topUpCount": 2,
-              "minimumTopUpAmount": 25000,
-              "maximumTopUpAmount": 80000,
-              "averageTopUpAmount": 52000
-            },
-            {
-              "topUpTenure": {
-                "min": 360,
-                "max": 720
-              },
-              "currency": "IDR",
-              "topUpCount": 4,
-              "minimumTopUpAmount": 27000,
-              "maximumTopUpAmount": 50000,
-              "averageTopUpAmount": 33000
+              "topUpCount": 1,
+              "minimumTopUpAmount": 110000,
+              "maximumTopUpAmount": 110000,
+              "averageTopUpAmount": 110000
             }
           ],
           "simSwap": null
@@ -108,8 +119,8 @@
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "628561731975",
-      "cleansedPhoneNumber": "+628561731975",
+      "inputPhoneNumber": "6281236649082",
+      "cleansedPhoneNumber": "+6281236649082",
       "referenceId": "Dpi_oct_3_release_1",
       "requestedPackages": [
         "PHONE_BASIC"
