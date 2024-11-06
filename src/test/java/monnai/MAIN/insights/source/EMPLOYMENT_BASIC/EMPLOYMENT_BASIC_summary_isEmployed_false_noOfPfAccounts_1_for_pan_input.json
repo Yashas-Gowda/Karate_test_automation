@@ -1,0 +1,69 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "pan": "DBTPP3898A"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": false,
+            "recentEmployerName": "LAGUNA CLOTHING PRIVATE LIMITED",
+            "noOfPfAccounts": 1,
+            "dateOfJoining": "2014-07-01",
+            "dateOfExit": "2020-02-29",
+            "matchingPfAccountNumber": "100568178274"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "100568178274",
+              "name": "PRAMILA",
+              "gender": "FEMALE",
+              "dateOfBirth": "1983-01-01",
+              "nationalIdVerificationStatus": false,
+              "employerName": "LAGUNA CLOTHING PRIVATE LIMITED",
+              "dateOfJoining": "2014-07-01",
+              "dateOfExit": "2020-02-29",
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_oct_17_release_2",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ],
+      "inputPan": "DBTPP3898A",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

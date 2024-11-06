@@ -5,25 +5,24 @@
     "packages": [
       "EMPLOYMENT_BASIC"
     ],
-    "phoneNumber": "525555088314",
-    "phoneDefaultCountryCode": "IN"
+    "phoneDefaultCountryCode": "IN",
+    "pan": "1234"
   },
   "response": {
     "data": null,
     "meta": {
-      "inputPhoneNumber": "525555088314",
-      "cleansedPhoneNumber": "+91525555088314",
-      "referenceId": "a87f80f9-27a8-4833-9224-49a4a78c84c3",
+      "referenceId": "Dpi_oct_17_release_2",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
+      "inputPan": "1234",
       "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
         "package": "EMPLOYMENT_BASIC",
-        "message": "Invalid Phone Number",
-        "code": "INVALID_PHONE_NUMBER",
+        "message": "Pan format is incorrect",
+        "code": "INVALID_PAN",
         "type": "INVALID_INPUT"
       }
     ]
