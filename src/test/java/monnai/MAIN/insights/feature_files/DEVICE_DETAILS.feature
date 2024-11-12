@@ -276,9 +276,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   #Bug raised https://monnai.atlassian.net/browse/MB-1314
 
 
-  Scenario Outline: Validation of DEVICE_DETAILS Package Positive with at least one valid deviceId attribute in request -Bug-MB 1314 - Device_Details_Positive_atleast_one_valid_input_with invalid_input.json
+  Scenario Outline: Validation of DEVICE_DETAILS Package Positive with at least one valid deviceId attribute in request -Bug-MB 1314 - Device_Details_Positive_atleast_one_valid_input_with_invalid_input.json
     Given url requestUrl
-    * def Scenario = 'Device_Details_Positive_atleast_one_valid_input_with invalid_input.json'
+    * def Scenario = 'Device_Details_Positive_atleast_one_valid_input_with_invalid_input.json'
     And def payload = read( "../" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers

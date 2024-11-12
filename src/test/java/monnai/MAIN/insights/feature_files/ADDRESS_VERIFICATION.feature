@@ -306,7 +306,6 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
 
 
   #  @ADDRESS_VERIFICATION_ID @Negative
-  @nov_12_check
   Scenario Outline: Validate DPI ADDRESS_VERIFICATION Negative scenarios for Country india -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/Negative/<Scenario>.json")

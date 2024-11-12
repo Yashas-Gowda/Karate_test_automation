@@ -28,20 +28,20 @@
           {
             "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
             "country": "IN",
-            "lastModified": "2024-07-08",
+            "lastModified": "2024-11-08",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "Xiaomi",
-              "model": "2107113SI"
+              "manufacturer": "xiaomi",
+              "model": "2107113si"
             },
             "location": {
               "dayLocation": {
-                "latitude": 12.978544235229492,
-                "longitude": 77.58527755737305,
+                "latitude": 12.939920425415039,
+                "longitude": 77.73290634155273,
                 "city": "Bengaluru",
                 "state": "KA",
-                "zipCode": "560001"
+                "zipCode": "560087"
               },
               "nightLocation": {
                 "latitude": 12.93614387512207,
@@ -69,10 +69,11 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "3e8d9d19-41a4-43de-84c4-fffa30fec8c5",
+      "referenceId": "904d6039-9e10-43b0-9b78-35a68e7774db",
       "inputDeviceIds": [
         "3342b21d-6ba2-4294-b808-f9612b24fed6"
       ],
