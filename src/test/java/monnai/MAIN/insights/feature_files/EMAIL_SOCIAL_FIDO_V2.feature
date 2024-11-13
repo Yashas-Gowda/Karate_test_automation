@@ -358,7 +358,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * def count_socialMedia_registered_profiles = socialMedia_registered_array.filter(x => x == true).length
     * print count_socialMedia_registered_profiles
     * match count_socialMedia_registered_profiles == $.data.email.social.summary.registeredSocialMediaProfiles
-    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
+    * set payload.response.data.email.social.profiles.socialMedia.gravatar.photo = "#ignore"
+    * match $.data.email.social.profiles.socialMedia.gravatar.photo == "##regex ^.*(https://).*"
+    * match  $.data.email.social.profiles.socialMedia == payload.response.data.email.social.profiles.socialMedia
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -1007,7 +1009,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     Examples:
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
-      
+
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
