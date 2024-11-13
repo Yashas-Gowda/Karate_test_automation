@@ -25,22 +25,20 @@
             "isEmployed": false,
             "isNameUnique": false,
             "hasPfFilingDetails": true,
-            "recentEmployerName": "CHANNEL PLAY LIMITED",
+            "recentEmployerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
             "noOfPfAccounts": 4,
-            "dateOfJoining": "2019-10-01",
-            "dateOfExit": "2020-07-10",
+            "dateOfJoining": "2024-10-10",
             "matchingPfAccountNumber": "101281942125"
           },
           "employmentHistory": [
             {
               "pfAccountNumber": "101281942125",
-              "name": "Jitesh Mahendra Valantra",
+              "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
               "nationalIdVerificationStatus": true,
-              "employerName": "CHANNEL PLAY LIMITED",
-              "dateOfJoining": "2019-10-01",
-              "dateOfExit": "2020-07-10",
+              "employerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
+              "dateOfJoining": "2024-10-10",
               "reasonOfExit": "",
               "additionalDetails": {
                 "nationalId": "********4086",
@@ -111,21 +109,21 @@
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "34595848",
-                "employeeCount": 11205,
+                "totalAmount": "6045211",
+                "employeeCount": 1743,
+                "wageMonth": "SEP-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "5962847",
+                "employeeCount": 1701,
                 "wageMonth": "AUG-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "33733255",
-                "employeeCount": 10989,
+                "totalAmount": "5695041",
+                "employeeCount": 1662,
                 "wageMonth": "JUL-24"
-              },
-              {
-                "currency": "INR",
-                "totalAmount": "32343343",
-                "employeeCount": 10550,
-                "wageMonth": "JUN-24"
               }
             ]
           }
@@ -146,7 +144,7 @@
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "683dbf6c-e217-4813-b443-e35fd7c88b92",
+      "referenceId": "504a4f05-aa96-4a58-b356-262623354fdf",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ],

@@ -216,7 +216,11 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * match header Content-Type == "application/json"
     Then status <statusCode>
     * set payload.response.data.employment.advanced.pfFilingDetails = "#ignore"
+    * set payload.response.data.employment.advanced.summary.dateOfJoining = "#ignore"
+    * set payload.response.data.employment.advanced.summary.recentEmployerName = "#ignore"
     Then match $.data.employment.advanced.summary contains only payload.response.data.employment.advanced.summary
+    * match $.data.employment.advanced.summary.dateOfJoining == "#regex\\d{4}-\\d{2}-\\d{2}"
+    * match $.data.employment.advanced.summary.recentEmployerName == "#string"
     * set payload.response.data.employment.advanced.employmentHistory[*].reasonOfExit = "#ignore"
     * print 'Expected Response---->',payload.response
     * match each $.data.employment.advanced.employmentHistory contains {"reasonOfExit": "##string"}
