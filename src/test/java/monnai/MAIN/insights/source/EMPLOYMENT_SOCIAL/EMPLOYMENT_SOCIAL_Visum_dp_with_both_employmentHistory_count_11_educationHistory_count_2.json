@@ -25,28 +25,33 @@
             "name": "Harish YVS",
             "linkedinHeadline": "Your Fintduct (Fintech + Product) guy",
             "location": "Bengaluru, Karnataka, India",
-            "employerName": "Monnai",
-            "linkedinUrl": "https://linkedin.com/in/harish-yvs-a46b3138",
-            "photoUrl": "https://media.licdn.com/dms/image/C5603AQFlFcLmx6gppA/profile-displayphoto-shrink_800_800/0/1632690087885?e=1723075200&v=beta&t=zYyW6I8No4IndZUrWW3ASVJAkXQ0q9mi0dMMyIzahw0",
-            "employmentHistoryCount": 11,
+            "linkedinUrl": "https://www.linkedin.com/in/harishyvs",
+            "photoUrl": "https://media.licdn.com/dms/image/v2/C5603AQFlFcLmx6gppA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1632690087885?e=1736985600&v=beta&t=hTEn6p2CHEthzUXOhuDR5EI5P1L3s7UTzrveBGeDHFg",
+            "employmentHistoryCount": 12,
             "educationHistoryCount": 2
           },
           "employmentHistory": [
+            {
+              "employeeDesignation": "Personal goal pursuit",
+              "employerName": "Career Break",
+              "dateOfJoining": "2024-10-01"
+            },
             {
               "employeeDesignation": "Head - Product Development and Product Strategy ",
               "employerName": "Monnai",
               "employerLocation": "Bengaluru, Karnataka, India",
               "dateOfJoining": "2022-05-01",
-              "employerLogo": "https://media.licdn.com/dms/image/D560BAQHd5VURKeIXAQ/company-logo_200_200/0/1664528260260/monnai_logo?e=1725494400&v=beta&t=neenl71Cuy6WELja56Doy6Wkaa44hACN3nIWjJqJsPo",
+              "dateOfExit": "2024-09-15",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D560BAQHd5VURKeIXAQ/company-logo_400_400/company-logo_400_400/0/1664528260260/monnai_logo?e=1739404800&v=beta&t=vAlxU2QYb2A2hWXiUVFJgEgdH6ogEWpsDmq81bm2IjU",
               "employerLinkedinUrl": "https://www.linkedin.com/company/77158228/"
             },
             {
               "employeeDesignation": "Assistant Vice President - Product Strategy",
-              "employerName": "Karza Technologies Private Limited ",
+              "employerName": "Karza Technologies Private Limited",
               "employerLocation": "Pune, Maharashtra, India · Hybrid",
               "dateOfJoining": "2021-03-01",
               "dateOfExit": "2022-05-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGdBcerOjG2Xg/company-logo_200_200/0/1675239943137/karza_technologies_logo?e=1725494400&v=beta&t=NWA-5AlyQX8YP0vE9mM2vS_EN_5GndUiL2wFjLAasrA",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGdBcerOjG2Xg/company-logo_400_400/company-logo_400_400/0/1675239943137/karza_technologies_logo?e=1739404800&v=beta&t=NW61jkSHeuHtG9reHBwjVek5uMNslFMj_MHWGtbkymY",
               "employerLinkedinUrl": "https://www.linkedin.com/company/6603026/"
             },
             {
@@ -54,7 +59,7 @@
               "employerName": "Bajaj Finserv",
               "dateOfJoining": "2018-09-01",
               "dateOfExit": "2021-02-15",
-              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1725494400&v=beta&t=bYbTl2a4B8RVUOueRGfaBV1QdRNyZPpFrN-N290xmLU",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1739404800&v=beta&t=NkHsDAma2SYejV4799lqt4lYicg6bxkMz7bD4YBP_pM",
               "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
             },
             {
@@ -62,16 +67,16 @@
               "employerName": "Bajaj Finserv",
               "dateOfJoining": "2017-01-01",
               "dateOfExit": "2018-08-15",
-              "employerLogo": "https://media.licdn.com/dms/image/D4D0BAQFqvNmVHyb1sQ/company-logo_200_200/0/1693568919419/bajaj_finserv_lending_logo?e=1725494400&v=beta&t=bYbTl2a4B8RVUOueRGfaBV1QdRNyZPpFrN-N290xmLU",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1739404800&v=beta&t=NkHsDAma2SYejV4799lqt4lYicg6bxkMz7bD4YBP_pM",
               "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
             },
             {
               "employeeDesignation": "Lead Analyst",
-              "employerName": "Tracxn ",
+              "employerName": "Tracxn",
               "employerLocation": "Bengaluru Area, India",
               "dateOfJoining": "2016-04-01",
               "dateOfExit": "2016-12-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C4D0BAQG8QTQUeybruQ/company-logo_200_200/0/1652177251610/tracxn_logo?e=1725494400&v=beta&t=Ml2wyx5YfkwKPfOQgAWMHqlci8OzCPh72dS5huCgfHU",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQG8QTQUeybruQ/company-logo_400_400/company-logo_400_400/0/1652177251610/tracxn_logo?e=1739404800&v=beta&t=vB7PweWBcWUtLjL6ZsJS6SL6hUg-ne3eqsi3b9wXi5w",
               "employerLinkedinUrl": "https://www.linkedin.com/company/3366835/"
             },
             {
@@ -79,7 +84,7 @@
               "employerName": "Reliance",
               "dateOfJoining": "2015-08-01",
               "dateOfExit": "2016-04-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -87,7 +92,7 @@
               "employerName": "Reliance",
               "dateOfJoining": "2014-07-01",
               "dateOfExit": "2015-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -96,7 +101,7 @@
               "employerLocation": "Guwahati Area, India",
               "dateOfJoining": "2013-06-01",
               "dateOfExit": "2014-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1725494400&v=beta&t=1t6XiShC2rRPJ1TOFZlGHGXZx0I-BVWazPrCTRjJQUk",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1739404800&v=beta&t=x067pQckRhZfkVHPuvEAdxPzjpaiyB3Hlkhb_S33dIs",
               "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
             },
             {
@@ -105,7 +110,7 @@
               "employerLocation": "Jamnagar Area, India",
               "dateOfJoining": "2013-05-01",
               "dateOfExit": "2013-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -114,7 +119,7 @@
               "employerLocation": "Guwahati Area, India",
               "dateOfJoining": "2012-07-01",
               "dateOfExit": "2013-04-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQFsVma02aZ5dg/company-logo_200_200/0/1631325731159?e=1725494400&v=beta&t=1t6XiShC2rRPJ1TOFZlGHGXZx0I-BVWazPrCTRjJQUk",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1739404800&v=beta&t=x067pQckRhZfkVHPuvEAdxPzjpaiyB3Hlkhb_S33dIs",
               "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
             },
             {
@@ -123,7 +128,7 @@
               "employerLocation": "Jamnagar Area, India",
               "dateOfJoining": "2012-05-01",
               "dateOfExit": "2012-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/C560BAQGL2p38Nc6Qkg/company-logo_200_200/0/1661518370542/reliance_logo?e=1725494400&v=beta&t=rU-OoThOrI6tgYfjuu80HXvSZ1Tiopm5ZNphyZP1y0M",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             }
           ],
@@ -152,10 +157,12 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "9ff85b2b-5de6-4aa8-b3e2-0da5cabb57ea",
+      "referenceId": "01a5141f-0355-405c-8e04-78be8b65c2a1",
       "inputEmail": "harishyvs5@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_SOCIAL"

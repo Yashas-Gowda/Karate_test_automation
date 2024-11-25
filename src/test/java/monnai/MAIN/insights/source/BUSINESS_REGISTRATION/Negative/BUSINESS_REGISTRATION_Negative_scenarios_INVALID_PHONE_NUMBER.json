@@ -1,0 +1,13 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "phoneNumber": "1234567",
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  } ,
+  "response":
+}
