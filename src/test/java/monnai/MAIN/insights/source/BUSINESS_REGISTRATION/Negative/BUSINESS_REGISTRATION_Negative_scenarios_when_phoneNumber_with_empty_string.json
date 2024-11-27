@@ -2,7 +2,7 @@
   "request": {
     "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "99013805",
+    "phoneNumber": "",
     "id": "UDYAM-KR-22-0065578",
     "type": "UDYAM_STATUS",
     "eventType": "ACCOUNT_CREATION",
@@ -13,8 +13,6 @@
   "response": {
     "data": null,
     "meta": {
-      "inputPhoneNumber": "99013805",
-      "cleansedPhoneNumber": "+9199013805",
       "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
       "inputId": "UDYAM-KR-22-0065578",
       "requestedPackages": [
@@ -26,8 +24,8 @@
     "errors": [
       {
         "package": "BUSINESS_REGISTRATION",
-        "message": "Invalid Phone Number",
-        "code": "INVALID_PHONE_NUMBER",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
         "type": "INVALID_INPUT"
       }
     ]

@@ -1,10 +1,9 @@
 {
   "request": {
-    "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "99013805",
+    "phoneNumber": "9901380538",
     "id": "UDYAM-KR-22-0065578",
-    "type": "UDYAM_STATUS",
+    "type": "UDYAM_DETAILS",
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "BUSINESS_REGISTRATION"
@@ -13,21 +12,19 @@
   "response": {
     "data": null,
     "meta": {
-      "inputPhoneNumber": "99013805",
-      "cleansedPhoneNumber": "+9199013805",
+      "inputPhoneNumber": "9901380538",
       "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
       "inputId": "UDYAM-KR-22-0065578",
       "requestedPackages": [
         "BUSINESS_REGISTRATION"
       ],
-      "inputType": "UDYAM_STATUS",
-      "inputPhoneDefaultCountryCode": "IN"
+      "inputType": "UDYAM_DETAILS"
     },
     "errors": [
       {
         "package": "BUSINESS_REGISTRATION",
-        "message": "Invalid Phone Number",
-        "code": "INVALID_PHONE_NUMBER",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
         "type": "INVALID_INPUT"
       }
     ]

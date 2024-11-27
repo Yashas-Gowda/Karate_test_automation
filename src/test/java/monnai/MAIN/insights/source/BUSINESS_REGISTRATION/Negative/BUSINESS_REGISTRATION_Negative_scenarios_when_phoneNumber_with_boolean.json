@@ -2,7 +2,7 @@
   "request": {
     "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "99013805",
+    "phoneNumber": true,
     "id": "UDYAM-KR-22-0065578",
     "type": "UDYAM_STATUS",
     "eventType": "ACCOUNT_CREATION",
@@ -13,8 +13,7 @@
   "response": {
     "data": null,
     "meta": {
-      "inputPhoneNumber": "99013805",
-      "cleansedPhoneNumber": "+9199013805",
+      "inputPhoneNumber": "true",
       "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
       "inputId": "UDYAM-KR-22-0065578",
       "requestedPackages": [

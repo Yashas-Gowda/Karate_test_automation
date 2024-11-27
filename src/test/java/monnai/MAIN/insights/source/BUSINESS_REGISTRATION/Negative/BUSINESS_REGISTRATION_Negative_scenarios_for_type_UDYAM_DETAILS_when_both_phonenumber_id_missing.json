@@ -2,9 +2,7 @@
   "request": {
     "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "phoneNumber": "99013805",
-    "id": "UDYAM-KR-22-0065578",
-    "type": "UDYAM_STATUS",
+    "type": "UDYAM_DETAILS",
     "eventType": "ACCOUNT_CREATION",
     "packages": [
       "BUSINESS_REGISTRATION"
@@ -13,21 +11,18 @@
   "response": {
     "data": null,
     "meta": {
-      "inputPhoneNumber": "99013805",
-      "cleansedPhoneNumber": "+9199013805",
-      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
-      "inputId": "UDYAM-KR-22-0065578",
+      "referenceId": "Monnai_Test12345",
       "requestedPackages": [
         "BUSINESS_REGISTRATION"
       ],
-      "inputType": "UDYAM_STATUS",
+      "inputType": "UDYAM_DETAILS",
       "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": [
       {
         "package": "BUSINESS_REGISTRATION",
-        "message": "Invalid Phone Number",
-        "code": "INVALID_PHONE_NUMBER",
+        "message": "Either phoneNumber or id is required",
+        "code": "MISSING_PHONE_NUMBER_OR_ID",
         "type": "INVALID_INPUT"
       }
     ]
