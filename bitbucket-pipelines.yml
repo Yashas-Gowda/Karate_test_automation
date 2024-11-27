@@ -3,20 +3,29 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 
-image: maven:3.8.4-openjdk-17
+image: maven:3.8.5-openjdk-11
 
 pipelines:
   default:
     - parallel:
-      - step:
-          name: 'Run karate Tests'
-          caches:
-            - maven  # Caches Maven dependencies
-          script:
-            - mvn clean install
-            - mvn test -Dtest=GeneralTestRunner
-          artifacts:
-            - target/karate-reports/** 
+        - step:
+            name: 'Run karate Tests'
+            caches:
+              - maven  # Caches Maven dependencies
+            script:
+              - mvn clean install
+              - mvn test -Dkarate.options="--tags @UPI_BASIC_check1"
+            #              - mvn test -Dtest=GeneralTestRunner
+
+        - step:
+            name: "Publish Test Results"
+            script:
+              - pipe: atlassian/pytest-test-results:0.1.0
+                variables:
+                  TEST_RESULTS: '**/target/test-*.xml'
+
+            artifacts:
+              - target/karate-reports/**
 definitions:
   caches:
     maven: ~/.m2/repository  # Cache for Maven dependencies
