@@ -1,0 +1,30 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "type": "REQUEST_CONSENT",
+    "aadhaarNumber": " ",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "AADHAAR_DETAILS"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-152d9f56234f6636a6b8a4ed4a912f326aac0e01",
+      "requestedPackages": [
+        "AADHAAR_DETAILS"
+      ],
+      "inputType": "REQUEST_CONSENT",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "AADHAAR_DETAILS",
+        "message": "Aadhaar Number cannot be blank/null",
+        "code": "MISSING_AADHAAR_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
