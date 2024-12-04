@@ -26,7 +26,7 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "Dpi_sep_9_1",
+      "referenceId": "1405846f-adda-4b27-9133-e34e24a82f28",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -49,14 +49,14 @@
     "errors": [
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "address.addressLine1 is missing",
-        "code": "MISSING_ADDRESSLINE1",
+        "message": "Country in address cannot be blank/null",
+        "code": "MISSING_COUNTRY",
         "type": "INVALID_INPUT"
       },
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "Country in address cannot be blank/null",
-        "code": "MISSING_COUNTRY",
+        "message": "AddressLine1 in address is missing",
+        "code": "MISSING_ADDRESSLINE1",
         "type": "INVALID_INPUT"
       }
     ]

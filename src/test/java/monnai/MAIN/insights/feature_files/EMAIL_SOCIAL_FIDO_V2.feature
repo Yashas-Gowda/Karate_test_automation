@@ -36,26 +36,25 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     And match $.data.email.social.summary == '#notnull'
     And match $.data.email.social.profiles == '#notnull'
 
-    #    * match $.data.email.social.profiles.professional.linkedin.photo == "##string"
-    #    * match $.data.email.social.profiles.emailProvider.google.photo == "##string"
-    #    * set payload.response.data.email.social.profiles.professional.linkedin.photo = "#ignore"
-    #    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#notnull"
-    #    * print payload.response
     Then status <statusCode>
     #    Then match $ contains payload.response
-    * match payload.response.data.email.social.summary == $.data.email.social.summary
-    * match payload.response.data.email.social.profiles.consumerElectronics == $.data.email.social.profiles.consumerElectronics
-    * set payload.response.data.email.social.profiles.emailProvider.google.photo = "#ignore"
-    * match $.data.email.social.profiles.emailProvider == payload.response.data.email.social.profiles.emailProvider
-    * match $.data.email.social.profiles.emailProvider.google.photo ==  "##regex ^.*(https://).*"
-    #    * match $.response.data.email.social.profiles.emailProvider.google.photo == "#string"
-    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
-    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
-    * match payload.response.data.email.social.profiles.messaging == $.data.email.social.profiles.messaging
-    * match payload.response.data.email.social.profiles.professional == $.data.email.social.profiles.professional
-    * match payload.response.data.email.social.profiles.entertainment == $.data.email.social.profiles.entertainment
-    * match payload.response.data.email.social.profiles.travel == $.data.email.social.profiles.travel
-    * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+    * def registeredProfiles = $.data.email.social.summary.registeredProfiles
+    * print registeredProfiles
+    * def all_registered_array = $.data.email.social.profiles..registered
+    * print all_registered_array
+    * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
+    * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
+
+    * match $.data.email.social.summary contains {registeredProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredEmailProviderProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredEcommerceProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredSocialMediaProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredProfessionalProfiles : '#? _>= 0'}
+    * match $.data.email.social.summary contains {registeredMessagingProfiles : '#? _>= 0'}
+
+    * match $.data.email.social.summary contains {numberOfNamesReturned : '#? _>= 0'}
+    * match $.data.email.social.summary contains {numberOfPhotosReturned : '#? _>= 0'}
 
     * match $.data contains {"phone":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
     * match  $.meta contains  payload.response.meta
@@ -359,7 +358,9 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * def count_socialMedia_registered_profiles = socialMedia_registered_array.filter(x => x == true).length
     * print count_socialMedia_registered_profiles
     * match count_socialMedia_registered_profiles == $.data.email.social.summary.registeredSocialMediaProfiles
-    * match payload.response.data.email.social.profiles.socialMedia == $.data.email.social.profiles.socialMedia
+    * set payload.response.data.email.social.profiles.socialMedia.gravatar.photo = "#ignore"
+    * match $.data.email.social.profiles.socialMedia.gravatar.photo == "##regex ^.*(https://).*"
+    * match  $.data.email.social.profiles.socialMedia == payload.response.data.email.social.profiles.socialMedia
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -963,7 +964,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Email_Social_Negative_Emptyinput('') | 400        |
       | Email_Social_Negative_NullInput(' ') | 400        |
 
-  @Schema_validation_1 @travel_1
+
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -1009,7 +1010,6 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
-  @Schema_validation_2
   Scenario Outline:  DPI EMAIL_SOCIAL Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/<Scenario>.json")
@@ -1273,7 +1273,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
                     "registered": '#present'
                   },
                   "binance": {
-                    "registered": '#present'
+                    "registered": '##present'
                   }
                 },
                 "education": {

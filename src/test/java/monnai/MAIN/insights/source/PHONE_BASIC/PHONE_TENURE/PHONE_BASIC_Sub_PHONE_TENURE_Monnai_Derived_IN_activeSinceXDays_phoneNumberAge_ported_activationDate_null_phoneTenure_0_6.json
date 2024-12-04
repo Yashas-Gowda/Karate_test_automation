@@ -5,21 +5,21 @@
     "packages": [
       "PHONE_BASIC"
     ],
-    "phoneNumber": "917506122902",
+    "phoneNumber": "917676562198",
     "phoneDefaultCountryCode": "IN"
   },
   "response": {
     "data": {
       "phone": {
         "basic": {
-          "phoneNumber": "917506122902",
+          "phoneNumber": "917676562198",
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
           "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
-          "simType": "POSTPAID",
+          "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": {
@@ -27,34 +27,36 @@
             "max": 6
           },
           "country": "IN",
-          "originalCarrier": "Vodafone - Mumbai",
+          "originalCarrier": "JIO - Karnataka",
           "ported": false,
           "portedHistory": {
             "portedDate": null,
             "numberOfPorts": 0,
             "portedSinceXDays": null,
-            "currentCarrierCircle": "Vi India Mumbai",
-            "originalCarrierCircle": "Vi India Mumbai",
+            "currentCarrierCircle": "Jio Karnataka",
+            "originalCarrierCircle": "Jio Karnataka",
             "changeInCarrierRegion": "NOT_CHANGED",
             "portedEvents": []
           },
           "currentNetwork": {
             "localRoutingNumber": null,
-            "mobileCountryCode": "404",
-            "mobileNetworkCode": "20",
-            "networkName": "Vodafone - Mumbai",
-            "serviceProfileId": "91234"
+            "mobileCountryCode": "405",
+            "mobileNetworkCode": "861",
+            "networkName": "JIO - Karnataka",
+            "serviceProfileId": "91106"
           },
           "numberRecycled": null,
           "lastDeactivated": {
-            "minimumTenureDays": 82,
-            "maximumTenureDays": 112
+            "minimumTenureDays": 167,
+            "maximumTenureDays": 197
           },
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -70,15 +72,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "inputPhoneNumber": "917506122902",
-      "cleansedPhoneNumber": "+917506122902",
-      "referenceId": "Dpi_feb_12_1",
+      "inputPhoneNumber": "917676562198",
+      "cleansedPhoneNumber": "+917676562198",
+      "referenceId": "Dpi_oct_3_release_1",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
     },
     "errors": []
   }

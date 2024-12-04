@@ -7,7 +7,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios - Email_Social_Schema validation,Booking&Spotify&Adobe&Quora_Registered,LinkedIn&Airbnb_Registered,Lazada&Microsoft&Evernote_Registered, wordpress&Gravatar&Twitter&Flipkart_Registered   - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -44,7 +44,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
   #      | Email_Social_wordpress&Gravatar&Twitter&Flipkart_Registered       | 200        |
 
   ## Check - Can we test scenario with ageonSocial NOT NULL
-  @smokeTest
+
   Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios where ageOnSocial is null - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -141,7 +141,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
       | Email_Social_Negative_Invalid_email_address | 400        |
 
 
-  @smokeTest
+
   Scenario Outline:  DPI EMAIL_SOCIAL validate Summary section - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -230,7 +230,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
       | Email_Social_Google_With_Photo_IsRegistered_LinkedIn_IsNull | 200        |
 
   # website used for json to oneline converter: https://jsonformatter.org/json-to-one-line
-  @Schema_validation_1
+
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")
@@ -274,7 +274,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL_SEON feature scenarios
       | Scenario                                                        | statusCode |
       | Email_Social_consumerElectronics_Registered_ageOnSocial_is_null | 200        |
 
-  @Schema_validation_2
+
   Scenario Outline:  DPI EMAIL_BASIC Negative scenario for Schema_validation_2 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL/<Scenario>.json")

@@ -528,7 +528,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | Scenario                                                                    | statusCode |
       | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_when_DP_says_No_UPI_ID_found | 200        |
 
-  @upi_prod_sanity
+
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when upiApplicationName is invalid / null as input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -735,7 +735,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_input | "In123"                 | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
       | UPI_ADVANCED_NEGATIVE_phoneDefaultCountryCode_invalid_input | "123"                   | 400        | INVALID_PHONE_DEFAULT_COUNTRY_CODE | Invalid phone default country code |
 
-  @upi_prod_sanity
+
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code SERVICE_UNAVAILABLE_FOR_COUNTRY when an input is  phoneDefaultCountryCode other then IN  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")

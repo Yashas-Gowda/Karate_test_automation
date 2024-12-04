@@ -16,7 +16,7 @@
   "response": {
     "data": null,
     "meta": {
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "bd9a8018-524e-4ad9-a2bc-9a332b80bcfe",
       "requestedPackages": [
         "IDENTITY_ENRICHMENT",
         "PHONE_BASIC",
@@ -55,8 +55,8 @@
       },
       {
         "package": "EMPLOYMENT_BASIC",
-        "message": "PhoneNumber cannot be blank/null",
-        "code": "MISSING_PHONE_NUMBER",
+        "message": "Either phoneNumber or pan is required",
+        "code": "EITHER_PHONE_NUMBER_OR_PAN",
         "type": "INVALID_INPUT"
       },
       {

@@ -24,20 +24,20 @@
           {
             "deviceId": "1db61125-297f-4544-abad-eae8a56ecd90",
             "country": "IN",
-            "lastModified": "2024a-08-06",
+            "lastModified": "2024-11-08",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
-              "manufacturer": "Realme",
-              "model": "RMX2170"
+              "manufacturer": "realme",
+              "model": "rmx2170"
             },
             "location": {
               "dayLocation": {
-                "latitude": null,
-                "longitude": null,
-                "city": null,
-                "state": null,
-                "zipCode": null
+                "latitude": 19.230966567993164,
+                "longitude": 72.84158706665039,
+                "city": "Mumbai",
+                "state": "MH",
+                "zipCode": "400092"
               },
               "nightLocation": {
                 "latitude": 19.27199363708496,
@@ -69,7 +69,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "283ca3ea-12f8-4fc3-93a4-48c06add275f",
+      "referenceId": "808247a0-45f0-4e85-8dc1-da6d24a3657e",
       "inputDeviceIds": [
         "1db61125-297f-4544-abad-eae8a56ecd90"
       ],

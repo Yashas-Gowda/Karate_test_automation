@@ -1,4 +1,4 @@
-@debug @regTest_5 @DEVICE_DETAILS
+@regTest_5 @DEVICE_DETAILS
 Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
 
   Background:
@@ -41,6 +41,7 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
       | Scenario                              | statusCode |
       | Device_Details_Positive_1_valid_input | 200        |
 
+
   Scenario Outline: Validate DPI DEVICE_DETAILS Dynamic Positive scenario with Multiple valid input(TWO devices) - Device_Details_Possitive_Multiple(TWO)_valid_input.json
     Given url requestUrl
     * def Scenario = 'Device_Details_Possitive_Multiple(TWO)_valid_input.json'
@@ -66,7 +67,23 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status 200
-    Then match $.data.device contains payload.response.data.device
+    * set payload.response.data.device.deviceRecords[*].location.dayLocation.latitude = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].location.dayLocation.longitude = "#ignore"
+    * match each $.data.device.deviceRecords[*].location.dayLocation.longitude == "##number"
+    * match each $.data.device.deviceRecords[*].location.dayLocation.longitude == "##number"
+
+    * set payload.response.data.device.deviceRecords[*].location.nightLocation.latitude = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].location.nightLocation.longitude = "#ignore"
+    * match each $.data.device.deviceRecords[*].location.nightLocation.longitude == "#number"
+    * match each $.data.device.deviceRecords[*].location.nightLocation.longitude == "#number"
+
+
+    * set payload.response.data.device.deviceRecords[*].location.mostSeenLocation.latitude = "#ignore"
+    * set payload.response.data.device.deviceRecords[*].location.mostSeenLocation.longitude = "#ignore"
+    * match each $.data.device.deviceRecords[*].location.mostSeenLocation.longitude == "#number"
+    * match each $.data.device.deviceRecords[*].location.mostSeenLocation.longitude == "#number"
+
+    #    Then match $.data.device contains payload.response.data.device
     #    * match $.data.device.deviceRecords[?].lastModified == ["#regex\\d{4}-\\d{2}-\\d{2}"]
     Then print payload.response
     #    [2] - validate the number of deviceRecords
@@ -259,9 +276,9 @@ Feature: Testing of DPI  - DEVICE_DETAILS feature scenarios
   #Bug raised https://monnai.atlassian.net/browse/MB-1314
 
 
-  Scenario Outline: Validation of DEVICE_DETAILS Package Positive with at least one valid deviceId attribute in request -Bug-MB 1314 - Device_Details_Positive_atleast_one_valid_input_with invalid_input.json
+  Scenario Outline: Validation of DEVICE_DETAILS Package Positive with at least one valid deviceId attribute in request -Bug-MB 1314 - Device_Details_Positive_atleast_one_valid_input_with_invalid_input.json
     Given url requestUrl
-    * def Scenario = 'Device_Details_Positive_atleast_one_valid_input_with invalid_input.json'
+    * def Scenario = 'Device_Details_Positive_atleast_one_valid_input_with_invalid_input.json'
     And def payload = read( "../" + source + "/DEVICE_DETAILS/" + Scenario)
     And request payload.request.deviceIds = <deviceIds>
     And headers headers

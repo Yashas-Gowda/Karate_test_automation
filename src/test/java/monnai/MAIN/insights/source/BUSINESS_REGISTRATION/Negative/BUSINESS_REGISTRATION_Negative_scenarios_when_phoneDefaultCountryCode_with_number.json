@@ -1,0 +1,34 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": 123,
+    "cleansingFlag": true,
+    "phoneNumber": "9901380538",
+    "id": "UDYAM-KR-22-0065578",
+    "type": "UDYAM_DETAILS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "9901380538",
+      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
+      "inputId": "UDYAM-KR-22-0065578",
+      "requestedPackages": [
+        "BUSINESS_REGISTRATION"
+      ],
+      "inputType": "UDYAM_DETAILS",
+      "inputPhoneDefaultCountryCode": "123"
+    },
+    "errors": [
+      {
+        "package": "BUSINESS_REGISTRATION",
+        "message": "Service unavailable for country 123",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "id": "a$#@%^&",
+    "type": "UDYAM_DETAILS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Monnai_Test12345",
+      "inputId": "a$#@%^&amp;",
+      "requestedPackages": [
+        "BUSINESS_REGISTRATION"
+      ],
+      "inputType": "UDYAM_DETAILS",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "BUSINESS_REGISTRATION",
+        "message": "Id format is incorrect",
+        "code": "INVALID_ID",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

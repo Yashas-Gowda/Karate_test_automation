@@ -10,7 +10,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @UAN_BASIC
+  #  @UAN_BASIC
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_BASIC positive scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
@@ -45,7 +45,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
       | EMPLOYMENT_DETAILS_Sub_UAN_BASIC_summary_isEmployed_true_noOfPfAccounts_3 | 200        |
 
 
-  @UAN_BASIC @Negative
+  #  @UAN_BASIC @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_BASIC Negative scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_BASIC/<Scenario>.json")
@@ -77,7 +77,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
       | EMPLOYMENT_DETAILS_Sub_UAN_BASIC_pfBasic_is_null_when_no_record_found_in_dp | 200        |
 
 
-  @UAN_ADVANCED
+  #  @UAN_ADVANCED
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_ADVANCED positive scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
@@ -114,7 +114,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
       | EMPLOYMENT_DETAILS_Sub_UAN_ADVANCED_summary_isEmployed_true_noOfPfAccounts_2 | 200        |
       | EMPLOYMENT_DETAILS_Sub_UAN_ADVANCED_summary_isEmployed_true_noOfPfAccounts_3 | 200        |
 
-  @UAN_ADVANCED @Negative
+  #  @UAN_ADVANCED @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Subpackage UAN_ADVANCED Negative scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/UAN_ADVANCED/<Scenario>.json")
@@ -145,7 +145,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios for sub package 
       | Scenario                                                                       | statusCode |
       | EMPLOYMENT_DETAILS_Sub_UAN_ADVANCED_pfBasic_is_null_when_no_record_found_in_dp | 200        |
 
-  @UAN_BASIC @UAN_ADVANCED @Negative
+  #  @UAN_BASIC @UAN_ADVANCED @Negative
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/Negative/<Scenario>.json")

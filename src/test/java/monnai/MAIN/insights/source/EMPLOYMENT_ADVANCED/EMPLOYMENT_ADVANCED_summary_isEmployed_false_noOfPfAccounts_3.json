@@ -23,15 +23,28 @@
         "advanced": {
           "summary": {
             "isEmployed": false,
-            "isNameUnique": false,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
             "hasPfFilingDetails": true,
-            "recentEmployerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
+            "recentEmployerName": "WELSPUN LIVING LIMITED",
             "noOfPfAccounts": 3,
-            "dateOfJoining": "2017-06-01",
-            "dateOfExit": "2018-06-04",
-            "matchingPfAccountNumber": "101141014604"
+            "dateOfJoining": "2018-02-22",
+            "dateOfExit": "2024-08-13",
+            "matchingPfAccountNumber": "101255913872"
           },
           "employmentHistory": [
+            {
+              "pfAccountNumber": "101255913872",
+              "name": "Ajaykumar Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "WELSPUN LIVING LIMITED",
+              "dateOfJoining": "2018-02-22",
+              "dateOfExit": "2024-08-13",
+              "reasonOfExit": ""
+            },
             {
               "pfAccountNumber": "101141014604",
               "name": "Ajay Gulabbhai Halpati",
@@ -41,16 +54,6 @@
               "employerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
               "dateOfJoining": "2017-06-01",
               "dateOfExit": "2018-06-04",
-              "reasonOfExit": ""
-            },
-            {
-              "pfAccountNumber": "101255913872",
-              "name": "Ajaykumar Gulabbhai Halpati",
-              "gender": "MALE",
-              "dateOfBirth": "1995-07-15",
-              "nationalIdVerificationStatus": false,
-              "employerName": "WELSPUN LIVING LIMITED",
-              "dateOfJoining": "2018-02-22",
               "reasonOfExit": ""
             },
             {
@@ -65,24 +68,35 @@
             }
           ],
           "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "AJAYKUMAR GULABBHAI HALPATI",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "SEP-24": null,
+                  "AUG-24": true,
+                  "JUL-24": true
+                }
+              }
+            ],
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "1904814",
-                "employeeCount": 561,
-                "wageMonth": "MAY-24"
+                "totalAmount": "24506389",
+                "employeeCount": 8126,
+                "wageMonth": "SEP-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "1892037",
-                "employeeCount": 573,
-                "wageMonth": "APR-24"
+                "totalAmount": "25969748",
+                "employeeCount": 8244,
+                "wageMonth": "AUG-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "1872077",
-                "employeeCount": 582,
-                "wageMonth": "MAR-24"
+                "totalAmount": "25457521",
+                "employeeCount": 8335,
+                "wageMonth": "JUL-24"
               }
             ]
           }
@@ -97,12 +111,13 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "919978520376",
       "cleansedPhoneNumber": "+919978520376",
-      "referenceId": "0878d22a-aab9-4139-b407-81454214e514",
+      "referenceId": "16952d7d-e4aa-4138-a9b6-b5364ef5ec63",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ],

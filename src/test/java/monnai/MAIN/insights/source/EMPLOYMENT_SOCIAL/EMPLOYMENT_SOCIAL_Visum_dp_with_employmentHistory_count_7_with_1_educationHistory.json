@@ -46,7 +46,7 @@
             },
             {
               "employerName": "strabag",
-              "employerLocation": "drau, karnten, austria",
+              "employerLocation": "vienna, austria",
               "dateOfJoining": "2022-09-01",
               "employerLinkedinUrl": "https://linkedin.com/company/strabag"
             },
@@ -80,7 +80,8 @@
           ],
           "educationHistory": [
             {
-              "schoolName": "rashtrasant tukadoji maharaj nagpur university, nagpur"
+              "schoolName": "rashtrasant tukadoji maharaj nagpur university",
+              "schoolLocation": "nagpur, maharashtra, india"
             }
           ]
         },
@@ -97,7 +98,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "8a3e0a0b-af59-49a4-8fe9-34a9003b7974",
+      "referenceId": "16c36153-1efd-4451-a2da-b0648bd058a9",
       "inputEmail": "cwarsuraj@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_SOCIAL"

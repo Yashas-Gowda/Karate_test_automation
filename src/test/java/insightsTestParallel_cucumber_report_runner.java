@@ -34,7 +34,7 @@ public class insightsTestParallel_cucumber_report_runner {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_FIDO.feature")
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
                 .karateEnv("MONNAI_API_Automation")

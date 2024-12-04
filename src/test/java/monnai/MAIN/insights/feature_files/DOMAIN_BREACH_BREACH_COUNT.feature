@@ -1,6 +1,7 @@
-@regTest_3 @DOMAIN_BREACH @DOMAIN_BREACH_BREACH_COUNT
+@regTest_3 @DOMAIN_BREACH
+  #@DOMAIN_BREACH_BREACH_COUNT
 
-@parallel=false
+  #@parallel=false
 Feature: Testing of DPI  - DOMAIN_BREACH -> BREACH_COUNT Package scenarios
 
   Background:

@@ -11,7 +11,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * def BearerToken = authFeature.authToken
     * def Custom_env_authFeature_tenant_config = authFeature.Auth_custom_tenant_config
     * print Custom_env_authFeature_tenant_config
-    
+
   Scenario Outline:  DPI PHONE_SOCIAL_FIDO Data Partner for Positive scenarios for validation of all fields- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")
@@ -45,6 +45,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print all_registered_array
     * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
     * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
 
     * def numberOfNamesReturned = $.data.phone.social.profiles..name
     * print numberOfNamesReturned
@@ -110,6 +111,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print all_registered_array
     * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
     * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
 
     * def numberOfNamesReturned = $.data.phone.social.profiles..name
     * print numberOfNamesReturned
@@ -172,6 +174,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print all_registered_array
     * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
     * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
 
     * def numberOfNamesReturned = $.data.phone.social.profiles..name
     * print numberOfNamesReturned
@@ -240,6 +243,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print all_registered_array
     * def count_all_registered_profiles = all_registered_array.filter(x => x == true).length
     * print count_all_registered_profiles
+    * match registeredProfiles == count_all_registered_profiles
 
     * def numberOfNamesReturned = $.data.phone.social.profiles..name
     * print numberOfNamesReturned
@@ -982,7 +986,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
     * print count_numberOfPhotosReturned
     * match count_numberOfPhotosReturned == $.data.phone.social.summary.numberOfPhotosReturned
 
-    * match $.data.phone.social.profiles.messaging == payload.response.data.phone.social.profiles.messaging
+    * match $.data.phone.social.profiles.messaging.viber == payload.response.data.phone.social.profiles.messaging.viber
     * match  $.data.phone.social.summary.lastActivity == '#null'
 
     * match $.data contains {"email":"#null","address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
@@ -1108,7 +1112,7 @@ Feature: Testing of DPI  - PHONE_SOCIAL scenarios configured for FIDO V1 DP.
   ##      | PHONE_SOCIAL_country_Malaysia_response | 200        |
 
 
-  @Schema_validation_1
+
   Scenario Outline:  DPI PHONE_SOCIAL positive scenario for Schema_validation_1 - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_SOCIAL_FIDO_V1/<Scenario>.json")

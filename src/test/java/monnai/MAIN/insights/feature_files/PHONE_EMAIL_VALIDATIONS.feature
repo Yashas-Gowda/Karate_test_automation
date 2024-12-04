@@ -7,7 +7,7 @@ Feature: Testing of DPI  - Phone & Email Validations scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+  #  @smokeTest
   Scenario Outline:  DPI Identity Enrichment Scenarios of phone validations - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_EMAIL_VALIDATIONS/<Scenario>.json")
@@ -33,16 +33,16 @@ Feature: Testing of DPI  - Phone & Email Validations scenarios
     And match $ contains payload.response
 
     Examples:
-      | Scenario         | statusCode |
-      | TC001            | 400        |
-      | TC002            | 400        |
-      | TC003            | 400        |
-      | TC004            | 400        |
-      | TC005            | 400        |
-      | TC006            | 400        |
-      | TC007            | 400        |
-      | TC008            | 400        |
-      | TC009            | 400        |
-      | TC010            | 400        |
-      | TC011            | 400        |
-      | TC012            | 400        |
+      | Scenario | statusCode |
+      | TC001    | 400        |
+      | TC002    | 400        |
+      | TC003    | 400        |
+      | TC004    | 400        |
+      | TC005    | 400        |
+      | TC006    | 400        |
+      | TC007    | 400        |
+      | TC008    | 400        |
+      | TC009    | 400        |
+      | TC010    | 400        |
+      | TC011    | 400        |
+      | TC012    | 400        |

@@ -53,6 +53,61 @@
           "topUpHistory": [
             {
               "topUpTenure": {
+                "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
                 "min": 360,
                 "max": 720
               },
@@ -62,10 +117,12 @@
               "maximumTopUpAmount": 5000,
               "averageTopUpAmount": 5000
             }
-          ]
+          ],
+          "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -81,15 +138,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "628571116541",
       "cleansedPhoneNumber": "+628571116541",
-      "referenceId": "c5361a3b-d8de-40c0-9bbb-635273af1725",
+      "referenceId": "1b76560e-870f-4e04-b117-81f0bffe51c1",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
     },
     "errors": [
     ]

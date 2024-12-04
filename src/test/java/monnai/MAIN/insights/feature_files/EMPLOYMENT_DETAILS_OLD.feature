@@ -7,7 +7,7 @@ Feature: Testing of DPI  - EMPLOYMENT_DETAILS feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @second
+  #  @second
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS positive scenario with single valid input where isEmployed is true <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_DETAILS/<Scenario>.json")

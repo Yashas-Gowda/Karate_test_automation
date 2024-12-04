@@ -21,7 +21,7 @@
     "meta": {
       "inputPhoneNumber": "6285893641388",
       "cleansedPhoneNumber": "+6285893641388",
-      "referenceId": "vatsa1",
+      "referenceId": "39c8526c-7a67-449f-90bf-f4b655763fe8",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -34,7 +34,7 @@
     "errors": [
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "latitude or longitude cannot be blank/null",
+        "message": "Latitude or Longitude cannot be blank/null",
         "code": "MISSING_COORDINATES",
         "type": "INVALID_INPUT"
       }

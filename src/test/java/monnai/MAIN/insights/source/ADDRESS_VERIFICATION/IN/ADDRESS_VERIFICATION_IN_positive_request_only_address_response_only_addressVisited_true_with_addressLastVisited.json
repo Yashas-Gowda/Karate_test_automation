@@ -3,13 +3,13 @@
     "eventType": "ACCOUNT_CREATION",
     "phoneDefaultCountryCode": "IN",
     "address": {
-      "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
+      "addressLine1": "Mota Varachha",
       "addressLine2": "",
       "addressLine3": "",
       "addressLine4": "",
-      "city": "",
+      "city": "Surat",
       "province": "",
-      "postalCode": "",
+      "postalCode": "394010",
       "country": "INDIA"
     },
     "packages": [
@@ -29,7 +29,7 @@
         "basic": null,
         "verification": {
           "addressVisited": true,
-          "addressLastVisited": "2023-03-08"
+          "addressLastVisited": "2024-06-11"
         }
       },
       "name": null,
@@ -49,12 +49,12 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_sep_9_1",
+      "referenceId": "Dpi_oct_17_release_2",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
       "inputAddress": {
-        "addressLine1": "A302 Gango CHS, Off New Link Road, Borivali West, Mumbai",
+        "addressLine1": "Mota Varachha",
         "addressLine2": "",
         "addressLine3": "",
         "addressLine4": "",
@@ -62,9 +62,9 @@
         "addressLine6": null,
         "addressLine7": null,
         "addressLine8": null,
-        "city": "",
+        "city": "Surat",
         "state": null,
-        "postalCode": "",
+        "postalCode": "394010",
         "country": "INDIA"
       },
       "inputPhoneDefaultCountryCode": "IN"

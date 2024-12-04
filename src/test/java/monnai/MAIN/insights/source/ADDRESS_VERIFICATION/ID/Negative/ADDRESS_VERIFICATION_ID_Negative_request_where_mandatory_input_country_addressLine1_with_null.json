@@ -28,7 +28,7 @@
     "meta": {
       "inputPhoneNumber": "6285893641388",
       "cleansedPhoneNumber": "+6285893641388",
-      "referenceId": "Dpi_sep_10_a_3",
+      "referenceId": "99073baf-80c7-478c-9608-6f4d200a9280",
       "requestedPackages": [
         "ADDRESS_VERIFICATION"
       ],
@@ -57,7 +57,7 @@
       },
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "address.addressLine1 is missing",
+        "message": "AddressLine1 in address is missing",
         "code": "MISSING_ADDRESSLINE1",
         "type": "INVALID_INPUT"
       }

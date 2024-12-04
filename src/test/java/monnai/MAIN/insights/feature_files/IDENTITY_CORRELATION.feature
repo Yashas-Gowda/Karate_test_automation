@@ -1,4 +1,4 @@
-@debug @IDENTITIY_CORRELATION
+@IDENTITIY_CORRELATION
 Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
 
   Background:
@@ -7,7 +7,7 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline: Validate SAMPLE DPI IDENTITY_CORRELATION positive scenarios with input mandatory field like phoneNumber and optional fields like email,ipAddress <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/IDENTITY_CORRELATION/<Scenario>.json")
@@ -35,7 +35,7 @@ Feature: Testing of DPI  - IDENTITY_CORRELATION feature scenarios
     * def phoneAndIpAddressMatched = $.data.identity.correlation.phoneAndIpAddressMatched
     * match phoneAndIpAddressMatched != 'NO_INPUT'
     * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneAndIpLocationMatched
-    * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
+    #  As IPQS credits are exacasted and aman  removed the partner partner * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
     * def phoneEmailAndIpAddressMatched = $.data.identity.correlation.phoneEmailAndIpAddressMatched
     * match phoneEmailAndIpAddressMatched != 'NO_INPUT'
     Then match $.data.identity.correlation contains payload.response.data.identity.correlation

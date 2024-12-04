@@ -340,7 +340,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_SEON feature scenarios
       | Scenario                                        | statusCode |
       | Email_Basic_isBreached_true_emailTenure_notnull | 200        |
 
-  @Schema_validation_2
+#  @Schema_validation_2
   Scenario Outline:  DPI PHONE_BASIC_Sub_topUpHistory Negative scenario for Indonesia region with validation of data-points in topUpHistory where no response is given by datapoint  - <Scenario>
     Given url requestUrl
     And def payload = read( "../" +  source + "/EMAIL_BASIC/<Scenario>.json")

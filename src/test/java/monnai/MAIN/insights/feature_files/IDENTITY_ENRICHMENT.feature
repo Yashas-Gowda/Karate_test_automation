@@ -8,7 +8,7 @@ Feature: Testing of DPI  - Identity_Enrichment scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  @smokeTest
+
   Scenario Outline:  DPI Identity Enrichment Scenarios for region India - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/IDENTITY_ENRICHMENT/<Scenario>.json")

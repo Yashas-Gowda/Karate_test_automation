@@ -3,7 +3,7 @@
   "client_id": "4hfbf2d97m4862puq5ob7enofs",
   "client_secret": "1e8iffbhrdeq4kbdk9ffjil7v7k6odie3tjbr7519r50dseqf9q7",
   "grant_type": "client_credentials",
-  "scope": "insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "scope": "insights/aadhaar_details insights/address_basic insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
   "issue-description": " release-upiApplicationName custom tenant -> tenant for configuring the upiApplicationName in tenant config ",
   "tenant_config": {
     "tenant": "tenant_01HMDWBE06XDTNFHFCD67DYJM0",

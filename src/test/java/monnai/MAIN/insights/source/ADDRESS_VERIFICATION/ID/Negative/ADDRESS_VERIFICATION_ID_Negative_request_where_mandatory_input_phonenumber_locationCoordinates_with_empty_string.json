@@ -38,7 +38,7 @@
       },
       {
         "package": "ADDRESS_VERIFICATION",
-        "message": "latitude or longitude cannot be blank/null",
+        "message": "Latitude or Longitude cannot be blank/null",
         "code": "MISSING_COORDINATES",
         "type": "INVALID_INPUT"
       }

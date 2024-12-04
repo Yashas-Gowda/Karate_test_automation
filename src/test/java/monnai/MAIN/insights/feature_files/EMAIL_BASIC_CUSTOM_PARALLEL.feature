@@ -574,7 +574,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Email_Basic_Negitive_Nullinput(null)    | 400        |
       | Email_Basic_Negitive_No_input_Email_key | 400        |
 
-  @Schema_validation_1
+  #  @Schema_validation_1
   Scenario Outline:  DPI EMAIL_BASIC_CUSTOM positive scenario - Schema validation of data points  :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")
@@ -612,7 +612,7 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
       | Scenario                              | statusCode |
       | Email_Basic_FIDO_V2_Schema_validation | 200        |
 
-  @Schema_validation_2
+  #  @Schema_validation_2
   Scenario Outline: DPI EMAIL_BASIC_CUSTOM positive scenario - Schema validation of data points  :- <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_BASIC_CUSTOM/<Scenario>.json")

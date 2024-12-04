@@ -1,12 +1,13 @@
 {
   "request": {
-    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
     "cleansingFlag": true,
-    "packages": [
-      "EMPLOYMENT_ADVANCED"
-    ],
     "phoneNumber": "sdfsdffdsf3efds#@@",
-    "phoneDefaultCountryCode": "IN"
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
   },
   "response": {
     "data": null,
