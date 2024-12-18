@@ -15,8 +15,7 @@ pipelines:
           script:
             # Install Maven
             - echo "Running Karate tests..."
-            - mvn test -Dtest=DemoRunner#auth_Token
-            - mvn clean test
+            - mvn clean test -Dtest=DemoRunner#auth_Token
           artifacts:
             - target/karate-reports/**
 

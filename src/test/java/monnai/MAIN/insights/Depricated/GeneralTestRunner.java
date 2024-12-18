@@ -1,3 +1,5 @@
+package monnai.MAIN.insights.Depricated;
+
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;

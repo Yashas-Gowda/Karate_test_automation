@@ -1,3 +1,5 @@
+package monnai.MAIN.insights.Depricated;
+
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
@@ -13,7 +15,14 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class KarateTestRunner {
+public class insightsTestParallel_cucumber_report_runner {
+//    private static String ENV = "";
+//    static {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//
+//        objectMapper.readValue(Paths.get("../karate-config.json"))
+//    }
+
 
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
@@ -25,23 +34,13 @@ public class KarateTestRunner {
     }
 
     @Test
-    void auth_Token() {
-        Results results = Runner.path("classpath:monnai/Auth_Token_Generation.feature")
+    void testParallel() {
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-//                .tags("@auth_Token")
+                .tags("~@ignore")
+                .karateEnv("MONNAI_API_Automation")
                 .parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
-
-    @Test
-    void runJavaClassName() {
-        Results results = Runner.path("classpath:monnai/MAIN")
-                .outputCucumberJson(true)
-                .tags("@KYC_PAN")
-                .parallel(1);
-        generateReport(results.getReportDir());
-        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
-    }
 }
-
