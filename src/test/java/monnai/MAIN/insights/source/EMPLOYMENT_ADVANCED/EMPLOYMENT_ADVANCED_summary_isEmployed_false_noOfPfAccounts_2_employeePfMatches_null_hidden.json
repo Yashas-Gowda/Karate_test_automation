@@ -1,0 +1,115 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9671055127",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
+            "noOfPfAccounts": 2,
+            "dateOfJoining": "2018-12-07",
+            "dateOfExit": "2023-07-12",
+            "matchingPfAccountNumber": "101155054190"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101155054190",
+              "name": "MAHIPAL KUMAR SINGH",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": true,
+              "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
+              "dateOfJoining": "2018-12-07",
+              "dateOfExit": "2023-07-12",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********3266",
+                "taxId": "GB******7K",
+                "email": "m***************h@gmail.com",
+                "bankAccountNumber": "***********0659",
+                "bankBranchCode": "YESB*****69",
+                "bankAddress": "YES BANK,NEW FRIENDS COLONY, NEW DELHI",
+                "pfNomineeName": "RAVINDRA SINGH",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100984866758",
+              "name": "Mahipal Kumar Singh",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": false,
+              "employerName": "OKAYA INFOCOM (P) LTD",
+              "dateOfJoining": "2016-11-07",
+              "dateOfExit": "2017-05-12",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "3602419",
+                "employeeCount": 979,
+                "wageMonth": "JUN-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "3852296",
+                "employeeCount": 1047,
+                "wageMonth": "MAY-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "3901277",
+                "employeeCount": 1072,
+                "wageMonth": "APR-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9671055127",
+      "cleansedPhoneNumber": "+919671055127",
+      "referenceId": "76814a48-4f0f-48ea-ab59-eb858cd29ae7",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

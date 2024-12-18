@@ -1,0 +1,53 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9844785668",
+    "email": "eswarappam5929@gmail.com",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "packageDetails": [
+            "S2101"
+          ],
+          "upiIdCount": 0,
+          "accounts": [
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9844785668",
+      "cleansedPhoneNumber": "+919844785668",
+      "referenceId": "88703b00-bc82-4cb6-a613-9d231f77c4ad",
+      "inputEmail": "eswarappam5929@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

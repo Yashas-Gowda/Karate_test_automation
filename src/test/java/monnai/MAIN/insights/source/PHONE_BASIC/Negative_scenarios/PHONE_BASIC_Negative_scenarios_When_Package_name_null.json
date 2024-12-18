@@ -1,0 +1,26 @@
+{
+  "request": {
+    "phoneNumber": "9108510043",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": null,
+    "packages": null
+  },
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "package is not selected",
+        "code": "PACKAGE_NOT_SELECTED",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}
+
+
+
+
+

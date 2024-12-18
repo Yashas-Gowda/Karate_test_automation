@@ -1,0 +1,85 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "9818020560",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "919818020560",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "POSTPAID",
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 24,
+            "max": 48
+          },
+          "country": "IN",
+          "originalCarrier": "Airtel - Delhi & NCR",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-04-27",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 421,
+            "currentCarrierCircle": "AirTel Delhi & NCR",
+            "originalCarrierCircle": "AirTel Delhi & NCR",
+            "changeInCarrierRegion": "NOT_CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "Airtel Delhi & NCR",
+                "portedDate": "2022-04-27"
+              },
+              {
+                "carrierCircle": "Vodafone Delhi & NCR",
+                "portedDate": "2020-01-17"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "10",
+            "networkName": "Airtel - Delhi & NCR",
+            "serviceProfileId": "91027"
+          },
+          "lastDeactivated": null,
+          "isSpam": false
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9818020560",
+      "cleansedPhoneNumber": "+919818020560",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

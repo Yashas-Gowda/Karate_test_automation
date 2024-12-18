@@ -1,0 +1,30 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "email": "shinderashmi07@gmail.com",
+    "upiApplicationName": "PRIMARY",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "inputEmail": "shinderashmi07@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

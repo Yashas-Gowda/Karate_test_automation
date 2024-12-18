@@ -1,0 +1,42 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "cleansingFlag": true,
+    "originalCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "id1": "3276052203830087",
+      "fullGivenName": "FURY INDAH PUSPITASARI"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "26026517-e136-49ad-a46b-5bdbdbce65de",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFullGivenName": "FURY INDAH PUSPITASARI",
+      "inputId1": "3276052203830087"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Date of Birth cannot be blank/null",
+        "code": "MISSING_DATE_OF_BIRTH",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

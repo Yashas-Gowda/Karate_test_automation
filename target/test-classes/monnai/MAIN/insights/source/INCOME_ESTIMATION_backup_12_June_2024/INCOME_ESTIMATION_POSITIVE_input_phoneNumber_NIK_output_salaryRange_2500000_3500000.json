@@ -1,0 +1,53 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "INCOME_ESTIMATION"
+    ],
+    "idType": "NIK",
+    "id": "3174074503960001",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "81213179896"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": {
+        "estimation": {
+          "source": "GOVERNMENT",
+          "salaryType": "MONTHLY",
+          "currency": "IDR",
+          "salaryRange": {
+            "min": 2500000,
+            "max": 3500000
+          }
+        }
+      },
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "81213179896",
+      "cleansedPhoneNumber": "+6281213179896",
+      "referenceId": "UI-419b2d26d4d935284712ad1b0ffb4f732444ab53",
+      "inputId": "3174074503960001",
+      "inputIdType": "NIK",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

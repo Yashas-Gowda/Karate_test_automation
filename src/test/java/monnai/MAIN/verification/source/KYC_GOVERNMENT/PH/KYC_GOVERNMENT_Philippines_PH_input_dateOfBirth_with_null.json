@@ -1,0 +1,60 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "PH",
+    "originalCountryCode": "PH",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "idType": "PSP",
+      "id1": "P6336720B",
+      "firstName": "CZARINA",
+      "lastName": "PEDROZO",
+      "middleName": "RODIL",
+      "fullGivenName": "CHARMAGNE PEDROZO",
+      "dateOfBirth": null,
+      "addressLine1": "BLK14 LOT64 PH3 MABUHAY HOMES 2000 PALIPARAN ",
+      "city": "MANILA",
+      "addressLine2": "DASMARINAS CAVITE PHL 4114",
+      "state": "philippines",
+      "zipCode": "58340"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "CZARINA",
+      "inputMiddleName": "RODIL",
+      "inputLastName": "PEDROZO",
+      "inputFullGivenName": "CHARMAGNE PEDROZO",
+      "inputIdType": "PSP",
+      "inputId1": "P6336720B",
+      "inputCity": "MANILA",
+      "inputState": "philippines",
+      "inputAddressLine1": "BLK14 LOT64 PH3 MABUHAY HOMES 2000 PALIPARAN ",
+      "inputAddressLine2": "DASMARINAS CAVITE PHL 4114"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Date of Birth cannot be blank/null",
+        "code": "MISSING_DATE_OF_BIRTH",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

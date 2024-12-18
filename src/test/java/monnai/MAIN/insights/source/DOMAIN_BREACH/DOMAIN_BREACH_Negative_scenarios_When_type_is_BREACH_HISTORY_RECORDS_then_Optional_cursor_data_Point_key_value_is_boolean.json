@@ -1,0 +1,43 @@
+{
+  "request": {
+    "type": "BREACH_HISTORY_RECORDS",
+    "domainName": "example.org",
+    "cursor": true,
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": {
+        "breach": null
+      },
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_HISTORY_RECORDS",
+      "inputDomainName": "example.org",
+      "inputCursor": "true"
+    },
+    "errors": []
+  }
+}

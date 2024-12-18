@@ -1,0 +1,197 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "prabh9@yahoo.in"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 14,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 2
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": true
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": "https://eu-west-1-807149116723-google-profile.s3.eu-west-1.amazonaws.com/production/5c3c2664/0f8e/4afc/b441/34a7fe3acb60/29675971-7736-4688-bdcc-536a9d21e098.jpg"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": true
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "PrabhSharan Singh",
+                "id": "prabhsharan9",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "New Delhi",
+                "state": "New Delhi",
+                "country": "India",
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/930135ce/b01b/43d7/82f3/c997e97187c8/52663f96-5886-46d4-af4e-40053f531b85.jpg"
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": true,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "basic": null,
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "890fba8e-6e1e-4f59-a155-80ba4099827f",
+      "inputEmail": "prabh9@yahoo.in",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

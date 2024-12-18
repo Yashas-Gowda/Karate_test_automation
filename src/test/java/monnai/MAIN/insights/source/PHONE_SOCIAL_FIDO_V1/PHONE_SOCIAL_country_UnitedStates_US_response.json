@@ -1,0 +1,129 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "12017234014",
+    "phoneDefaultCountryCode": "US"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 8,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 1,
+            "registeredProfessionalProfiles": 1,
+            "registeredMessagingProfiles": 4,
+            "lastActivity": null,
+            "numberOfNamesReturned": 2,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "accountId": null,
+                "name": null
+              }
+            },
+            "ecommerce": {
+              "bukalapak": {
+                "registered": null
+              },
+              "amazon": {
+                "registered": true
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "instagram": {
+                "registered": false
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": true,
+                "photo": null,
+                "privacyStatus": "PRIVATE",
+                "lastSeen": null
+              },
+              "whatsapp": {
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/cf1d8bae/cb47/42fa/9a14/95998028217e/d0677899-b59c-468a-8498-83b02e6fde7c.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null,
+                "about": null,
+                "businessAccount": false
+              },
+              "viber": {
+                "registered": true,
+                "photo": null,
+                "lastSeen": "2024-03-15T09:34:52Z",
+                "name": "Em"
+              },
+              "skype": {
+                "registered": true,
+                "language": null,
+                "id": "live:atulp123",
+                "handle": null,
+                "bio": null,
+                "name": "ATUL PAREKH",
+                "age": null,
+                "gender": null,
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "12017234014",
+      "cleansedPhoneNumber": "+12017234014",
+      "referenceId": "07d3a1a5-7103-41c3-b72d-be91e549d3b9",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

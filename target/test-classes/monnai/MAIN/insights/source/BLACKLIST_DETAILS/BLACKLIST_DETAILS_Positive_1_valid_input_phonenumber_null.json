@@ -1,0 +1,44 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6289694982534",
+    "idType": "NIK",
+    "id": "6285239998916",
+    "packages": [
+      "BLACKLIST_DETAILS"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": {
+        "details": {
+          "isBlacklisted": null
+        }
+      },
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6289694982534",
+      "cleansedPhoneNumber": "+6289694982534",
+      "referenceId": "ITqr2jA3yQ0EPWA=",
+      "inputId": "6285239998916",
+      "inputIdType": "NIK",
+      "requestedPackages": [
+        "BLACKLIST_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}

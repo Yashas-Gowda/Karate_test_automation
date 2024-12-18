@@ -1,0 +1,88 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "919718849541",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "919718849541",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "NO",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 24,
+            "max": 48
+          },
+          "country": "IN",
+          "originalCarrier": "IDEA (Vi) - Delhi & NCR",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-04-08",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 444,
+            "currentCarrierCircle": "Vi India Delhi & NCR",
+            "originalCarrierCircle": "Vi India Delhi & NCR",
+            "changeInCarrierRegion": "NOT_CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "Vodafone Delhi & NCR",
+                "portedDate": "2022-04-08"
+              },
+              {
+                "carrierCircle": "JIO Delhi",
+                "portedDate": "2020-07-17"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "11",
+            "networkName": "Vodafone - Delhi & NCR",
+            "serviceProfileId": "91231"
+          },
+          "lastDeactivated": {
+            "minimumTenureDays": 510,
+            "maximumTenureDays": 541
+          },
+          "isSpam": false
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919718849541",
+      "cleansedPhoneNumber": "+919718849541",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

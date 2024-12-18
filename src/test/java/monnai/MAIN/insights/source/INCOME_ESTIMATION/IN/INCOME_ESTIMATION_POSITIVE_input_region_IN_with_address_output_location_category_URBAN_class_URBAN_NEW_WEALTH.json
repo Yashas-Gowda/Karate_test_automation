@@ -1,0 +1,158 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "address": {
+      "addressLine1": "259 savnour house",
+      "addressLine2": "hal 2nd stge indranagar",
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": "Banglore",
+      "state": "Karnataka",
+      "postalCode": "560038",
+      "country": "India"
+    },
+    "packages": [
+      "INCOME_ESTIMATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": {
+        "estimation": {
+          "source": null,
+          "salaryType": null,
+          "currency": null,
+          "salaryRange": {
+            "min": 0,
+            "max": 0
+          },
+          "addressBased": {
+            "class": [
+              "URBAN_NEW_WEALTH"
+            ],
+            "location": {
+              "category": "URBAN",
+              "locality": "Indira Nagar",
+              "postalCode": "560038",
+              "state": "karnataka"
+            },
+            "secLevel": "A3",
+            "regionTypes": [
+              "COSMOPOLITAN_URBAN_AREA",
+              "SUBURBS"
+            ],
+            "income": {
+              "currency": "INR",
+              "range": {
+                "min": 80000,
+                "max": 130000
+              }
+            },
+            "purchase": {
+              "retail": {
+                "hasWashingMachine": true,
+                "onlineShopping": "MODERATE",
+                "homeAndLivingCategory": "MODERATE",
+                "fabricWashProducts": "PREMIUM",
+                "personalWashProducts": "PREMIUM",
+                "packagedFoodProducts": "POPULAR",
+                "cosmeticsProducts": "POPULAR"
+              },
+              "fashion": {
+                "category": "PREMIUM",
+                "currency": "INR",
+                "range": {
+                  "min": 1500,
+                  "max": 3500
+                },
+                "jewellery": [
+                  "BRANDED",
+                  "MODERATELY_PRICED_GOLD",
+                  "MODERATELY_PRICED_DIAMOND"
+                ]
+              },
+              "travel": {
+                "category": "BASIC",
+                "destinationCategory": "DOMESTIC",
+                "nicheTravel": false
+              },
+              "automobile": {
+                "twoWheeler": [
+                  "PREMIUM_SCOOTER",
+                  "PREMIUM_COMMUTER",
+                  "ENTRY_LEVEL_SPORTS_BIKE"
+                ],
+                "fourWheeler": [
+                  "PREMIUM_HATCH",
+                  "COMPACT_SEDAN",
+                  "SECOND_HAND_SEDAN"
+                ]
+              }
+            },
+            "banking": {
+              "services": [
+                "MUTUAL_FUND"
+              ],
+              "creditCardUsage": "AVERAGE"
+            },
+            "insurance": {
+              "healthAwareness": "INFORMED",
+              "types": [
+                "SAVINGS_PLAN",
+                "RETIREMENT_PLAN",
+                "ULIP_PLAN",
+                "HEALTH_PLAN"
+              ]
+            },
+            "realEstate": {
+              "currency": "INR",
+              "range": {
+                "min": 5100000,
+                "max": 10000000
+              }
+            }
+          }
+        }
+      },
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_May_17_enrich_1",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "259 savnour house",
+        "addressLine2": "hal 2nd stge indranagar",
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "Banglore",
+        "state": "Karnataka",
+        "postalCode": "560038",
+        "country": "India"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "9143017777",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+
+  "data": {
+    "phone": {
+      "basic": {
+        "phoneNumber": "919143017777",
+        "phoneValid": true,
+        "phoneType": "MOBILE",
+        "phoneDisposable": false,
+        "active": "YES",
+        "activationDate": null,
+        "activeSinceXDays": null,
+        "simType": "POSTPAID",
+        "phoneNumberAge": null,
+        "phoneNumberAgeDescription": null,
+        "phoneTenure": {
+          "min": 48,
+          "max": null
+        },
+        "country": "IN",
+        "originalCarrier": "SISTEMA Shayam - Kolkata",
+        "ported": true,
+        "portedHistory": {
+          "portedDate": "2018-07-28",
+          "numberOfPorts": 3,
+          "portedSinceXDays": "#ignore",
+          "currentCarrierCircle": "Airtel Andhra Pradesh and Telangana",
+          "originalCarrierCircle": "SISTEMA Shayam - Kolkata",
+          "changeInCarrierRegion": "CHANGED",
+          "portedEvents": [
+            {
+              "carrierCircle": "Airtel Andhra Pradesh and Telangana",
+              "portedDate": "2018-07-28"
+            },
+            {
+              "carrierCircle": "JIO Andhra Pradesh",
+              "portedDate": "2018-04-14"
+            },
+            {
+              "carrierCircle": "Aircel Andhra Pradesh and Telangana",
+              "portedDate": "2017-12-31"
+            }
+          ]
+        },
+        "currentNetwork": {
+          "localRoutingNumber": null,
+          "mobileCountryCode": "404",
+          "mobileNetworkCode": "49",
+          "networkName": "Airtel - Rajasthan",
+          "serviceProfileId": "91032"
+        },
+        "lastDeactivated": null,
+        "isSpam": null
+      },
+      "social": null,
+      "identity": null
+    },
+    "email": null,
+    "address": null,
+    "name": null,
+    "ip": null,
+    "identity": null,
+    "upi": null,
+    "device": null,
+    "employment": null,
+    "bre": null
+  },
+  "meta": {
+    "inputPhoneNumber": "9143017777",
+    "cleansedPhoneNumber": "+919143017777",
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "errors": []
+}
+}

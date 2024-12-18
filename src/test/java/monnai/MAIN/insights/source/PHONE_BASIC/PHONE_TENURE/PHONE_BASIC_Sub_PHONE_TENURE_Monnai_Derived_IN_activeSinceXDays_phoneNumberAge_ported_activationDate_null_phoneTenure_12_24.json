@@ -1,0 +1,92 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "918754204321",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "918754204321",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 12,
+            "max": 24
+          },
+          "country": "IN",
+          "originalCarrier": "Airtel - Tamil Nadu",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2022-12-06",
+            "numberOfPorts": 1,
+            "portedSinceXDays": 680,
+            "currentCarrierCircle": "BSNL Mobile Tamil Nadu",
+            "originalCarrierCircle": "AirTel Tamil Nadu",
+            "changeInCarrierRegion": "NOT_CHANGED",
+            "portedEvents": [
+              {
+                "carrierCircle": "BSNL Tamil Nadu",
+                "portedDate": "2022-12-06"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "404",
+            "mobileNetworkCode": "80",
+            "networkName": "BSNL - Tamil Nadu",
+            "serviceProfileId": "91070"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null,
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "918754204321",
+      "cleansedPhoneNumber": "+918754204321",
+      "referenceId": "Dpi_oct_3_release_1",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

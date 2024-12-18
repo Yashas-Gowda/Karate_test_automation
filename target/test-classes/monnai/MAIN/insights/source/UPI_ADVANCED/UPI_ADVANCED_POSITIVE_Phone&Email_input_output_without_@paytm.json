@@ -1,0 +1,49 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "email": "abhishekyadav86@gmail.com",
+    "phoneNumber": "9025605001",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "accounts": [
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "SOWMYA Y",
+              "upiId": "9025605001@ybl"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9025605001",
+      "cleansedPhoneNumber": "+919025605001",
+      "referenceId": "AMS-test-1",
+      "inputEmail": "abhishekyadav86@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

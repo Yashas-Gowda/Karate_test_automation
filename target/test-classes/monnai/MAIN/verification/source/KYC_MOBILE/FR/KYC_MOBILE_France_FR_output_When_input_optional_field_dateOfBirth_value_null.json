@@ -1,0 +1,65 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "641426418",
+      "firstName": "michel",
+      "middleName": "michel",
+      "lastName": "supiot",
+      "dateOfBirth": null,
+      "streetNumber": "319",
+      "streetName": "Impasse du Bois de Cathou",
+      "city": "Saint-Maurice-en-Gourgois",
+      "postalCode": "42240"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": {
+          "matchFirstName": "MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "MATCH",
+          "matchFullGivenName": "MATCH",
+          "matchDateOfBirth": "NO_INPUT",
+          "matchPhoneNumber": "MATCH",
+          "matchAddress": "MATCH",
+          "matchAddressLine1": "NOT_SUPPORTED",
+          "matchId1": "NOT_SUPPORTED",
+          "matchStreetNumber": "NOT_SUPPORTED",
+          "matchStreet": "NOT_SUPPORTED",
+          "matchCity": "MATCH",
+          "matchPostalCode": "MATCH",
+          "appendedFields": {
+          }
+        },
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "31f4421b-7e6c-4854-a8ad-c02582ebb753",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "641426418",
+      "cleansedPhoneNumber": "+33641426418",
+      "inputFirstName": "michel",
+      "inputMiddleName": "michel",
+      "inputLastName": "supiot",
+      "inputStreetNumber": "319",
+      "inputCity": "Saint-Maurice-en-Gourgois",
+      "inputPostalCode": "42240",
+      "inputPhoneDefaultCountryCode": "FR"
+    },
+    "errors": [
+    ]
+  }
+}

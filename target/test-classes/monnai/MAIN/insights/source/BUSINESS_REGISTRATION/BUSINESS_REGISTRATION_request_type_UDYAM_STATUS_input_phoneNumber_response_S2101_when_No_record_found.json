@@ -1,0 +1,51 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "phoneNumber": "7095671305",
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": {
+        "registration": {
+          "packageDetails": [
+            "S2101"
+          ]
+        }
+      },
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "7095671305",
+      "cleansedPhoneNumber": "+917095671305",
+      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
+      "requestedPackages": [
+        "BUSINESS_REGISTRATION"
+      ],
+      "inputType": "UDYAM_STATUS",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

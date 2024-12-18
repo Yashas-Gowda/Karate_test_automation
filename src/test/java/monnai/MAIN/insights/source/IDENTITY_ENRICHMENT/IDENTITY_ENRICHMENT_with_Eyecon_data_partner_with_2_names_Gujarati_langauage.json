@@ -1,0 +1,69 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": "true",
+    "phoneNumber": "919327945381",
+    "email": "",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "અનિલ રોઝાઈ"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Anil Bariya"
+                }
+              ],
+              "genders": null,
+              "dateOfBirths": null,
+              "addresses": null,
+              "phoneNumber": null,
+              "emailAddress": null,
+              "ipAddresses": null,
+              "nationalId": null
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919327945381",
+      "cleansedPhoneNumber": "+919327945381",
+      "referenceId": "Dpi_May_27_2",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "919148012367",
+    "email":"vsupritha1804@gmail.com",
+    "upiApplicationName": "ALL",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 3,
+          "accounts": [
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "SUPRITHA V",
+              "upiId": "9148012367@ybl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Paytm",
+              "nameAtBank": "Supritha V .",
+              "upiId": "9148012367@paytm",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "SUPRITHA V  ",
+              "upiId": "vsupritha1804@oksbi",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919148012367",
+      "cleansedPhoneNumber": "+919148012367",
+      "referenceId": "UI-163d2d9a96b9381bd89ec05dec4ae66e1816d54d",
+      "inputEmail": "vsupritha1804@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}

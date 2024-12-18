@@ -1,0 +1,65 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "abc"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainType": "invalid-email",
+            "domainName": null,
+            "tld": null,
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": null,
+            "companyName": null,
+            "registrarName": null,
+            "disposable": null,
+            "freeProvider": null,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": null,
+            "acceptAll": null,
+            "custom": null
+          },
+          "breach": null,
+          "emailTenure": null
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "c7472ef6-0e58-42fc-97fb-52caa2e02b8f",
+      "inputEmail": "abc",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

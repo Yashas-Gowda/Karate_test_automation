@@ -1,0 +1,132 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "919721553497",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 4,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 2,
+            "registeredSocialMediaProfiles": 0,
+            "registeredProfessionalProfiles": 0,
+            "registeredMessagingProfiles": 1,
+            "lastActivity": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "accountId": null,
+                "name": null
+              }
+            },
+            "ecommerce": {
+              "flipkart": {
+                "registered": true
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "amazon": {
+                "registered": true
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": false
+              },
+              "instagram": {
+                "registered": false
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": null
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": false,
+                "photo": null,
+                "privacyStatus": null,
+                "lastSeen": null
+              },
+              "whatsapp": {
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/ddd4996d/cc4c/466d/ad26/4b90bfd9f3a9/61a68244-3c88-4a13-aeeb-0840f362e1e7.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null,
+                "about": null,
+                "businessAccount": true
+              },
+              "viber": {
+                "registered": false,
+                "photo": null,
+                "lastSeen": null,
+                "name": null
+              },
+              "skype": {
+                "registered": false,
+                "language": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "name": null,
+                "age": null,
+                "gender": null,
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919721553497",
+      "cleansedPhoneNumber": "+919721553497",
+      "referenceId": "df31e2e6-dd28-40ce-8198-8a7f046fdfdb",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

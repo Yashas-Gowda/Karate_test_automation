@@ -1,0 +1,45 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ],
+    "phoneDefaultCountryCode": "BR",
+    "originalCountryCode": "BR",
+    "phoneNumber": "551144000000",
+    "email": "sameena@monnai.com"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": null,
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "551144000000",
+      "cleansedPhoneNumber": "+551144000000",
+      "referenceId": "123",
+      "inputEmail": "sameena@monnai.com",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+
+  }
+}

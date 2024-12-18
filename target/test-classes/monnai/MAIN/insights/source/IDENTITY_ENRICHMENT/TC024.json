@@ -1,0 +1,47 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "IDENTITY_ENRICHMENT_PLUS"
+    ],
+    "phoneDefaultCountryCode": "BR",
+    "originalCountryCode": "BR",
+    "phoneNumber": "551144000000"
+  },
+  "response":{
+
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": null,
+        "enrichmentPlus": {
+          "persons": []
+        }
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "551144000000",
+      "cleansedPhoneNumber": "+551144000000",
+      "referenceId": "test123444",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT",
+        "IDENTITY_ENRICHMENT_PLUS"
+      ]
+    },
+    "errors": []
+  }
+}

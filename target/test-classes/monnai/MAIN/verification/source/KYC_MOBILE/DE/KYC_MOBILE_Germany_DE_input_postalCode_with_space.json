@@ -1,0 +1,52 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "DE",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "15161632262",
+      "firstName": "Ahmad",
+      "lastName": "Romadi",
+      "dateOfBirth": "1993-09-07",
+      "streetNumber": "25",
+      "streetName": "Crailsheimer Straße",
+      "city": "Dinkelsbühl",
+      "postalCode": " "
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "15161632262",
+      "cleansedPhoneNumber": "+4915161632262",
+      "inputFirstName": "Ahmad",
+      "inputLastName": "Romadi",
+      "inputDateOfBirth": "1993-09-07",
+      "inputStreetNumber": "25",
+      "inputCity": "Dinkelsbühl"
+    },
+    "errors": [
+      {
+        "package": "KYC_MOBILE",
+        "message": "Postal Code cannot be blank/null",
+        "code": "MISSING_POSTAL_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

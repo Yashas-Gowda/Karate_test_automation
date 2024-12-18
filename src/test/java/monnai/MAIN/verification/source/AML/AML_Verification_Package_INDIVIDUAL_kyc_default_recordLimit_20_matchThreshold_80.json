@@ -1,0 +1,169 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "INDIVIDUAL",
+    "userDetails": {
+      "fullGivenName": "Amith shah"
+    },
+
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": true,
+            "noOfProfiles": 5,
+            "totalRecords": 5
+          },
+          "records": [
+            {
+              "entityType": "Individual",
+              "profileId": "4350365603359287776",
+              "matchScore": 88,
+              "firstName": "Amit",
+              "middleName": null,
+              "lastName": "Shah",
+              "fullName": "Amit Shah",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "India Securities Exchange Board of India Debarred Entities",
+              "programName": "List of SEBI Debarred Entities - NSE India",
+              "otherInformation": "Period : Revoked  on 25 Jan 2021 \r\nFull Name : Mr. Amit Shah",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Amit Shah"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "18181851457745048271",
+              "matchScore": 88,
+              "firstName": "AMIT",
+              "middleName": null,
+              "lastName": "SHAH",
+              "fullName": "AMIT SHAH",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Ministry of Corporate Affairs India Disqualified Directors Section 274",
+              "programName": null,
+              "otherInformation": "Signatory ID: 834863 \r\nLocation: ROC Mumbai \r\nStatus: Active \r\nTicket No: SR1406607 \r\nPeriod To: 31.10.2023 \r\nCompany Name: GET FIT (INDIA) PRIVATE LIMITED \r\nCIN: U91120MH2000PTC128572 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [],
+              "summary": null,
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "AMIT SHAH"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "5003114787377617241",
+              "matchScore": 88,
+              "firstName": null,
+              "middleName": null,
+              "lastName": null,
+              "fullName": "Amit Shah",
+              "nationality": "",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "Leaders and Cabinet Members",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "Ministry of Home Affairs, Min. of Cooperation",
+              "links": [
+                "https://www.india.gov.in/my-government/whos-who/council-ministers;https://www.india.gov.in/my-government/whos-who/chief-ministers",
+                "https://www.cia.gov/resources/world-leaders/foreign-governments/india/"
+              ],
+              "summary": "Indian Cabinet Minister Member Ministry of Cooperation",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Amit Shah",
+                "Amit SHAH"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "2943289904367735717",
+              "matchScore": 88,
+              "firstName": "Amish",
+              "middleName": null,
+              "lastName": "Shah",
+              "fullName": "Amish Shah",
+              "nationality": "American",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "",
+              "links": [
+                "https://openstates.org/person/amish-shah-2xXB6Sdg6fcw6o26ulK0MF/"
+              ],
+              "summary": "Party: Democratic \r\nDistrict: 24 \r\nCapitol Office \r\nHouse of Representatives \r\n1700 West Washington \r\nRoom 123 \r\nPhoenix, AZ 85007 \r\nPhone: 602-926-3280",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Amish Shah"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            },
+            {
+              "entityType": "Individual",
+              "profileId": "4476601561508510223",
+              "matchScore": 88,
+              "firstName": null,
+              "middleName": null,
+              "lastName": null,
+              "fullName": "Amit Shah",
+              "nationality": "Indian",
+              "type": "PEP",
+              "sourceName": "",
+              "programName": "",
+              "otherInformation": null,
+              "group": "1",
+              "classification": "UNION HOME MINISTER",
+              "links": [
+                "https://www.mha.gov.in/about-us/meet-the-minister/union-home-minister"
+              ],
+              "summary": "",
+              "mediaAdversary": [],
+              "otherPossibleNames": [
+                "Amit Shah"
+              ],
+              "otherPossibleDob": [],
+              "possibleAddresses": []
+            }
+          ]
+        }
+      }
+    },
+    "meta": {
+      "referenceId": "UI-267e644d9845f3c065b6fb592703460f744dc056",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "Amith shah"
+    },
+    "errors": []
+  }
+}

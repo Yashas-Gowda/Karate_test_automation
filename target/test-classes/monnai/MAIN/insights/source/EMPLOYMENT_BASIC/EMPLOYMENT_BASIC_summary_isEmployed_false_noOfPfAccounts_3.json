@@ -1,0 +1,92 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneNumber": "919978520376",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": false,
+            "recentEmployerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
+            "noOfPfAccounts": 3,
+            "dateOfJoining": "2017-06-01",
+            "dateOfExit": "2018-06-04",
+            "matchingPfAccountNumber": "101141014604"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101141014604",
+              "name": "Ajay Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
+              "dateOfJoining": "2017-06-01",
+              "dateOfExit": "2018-06-04",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "101255913872",
+              "name": "Ajaykumar Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "WELSPUN LIVING LIMITED",
+              "dateOfJoining": "2018-02-22",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100017238671",
+              "name": "Dinaben Gulabbhai Halpati",
+              "gender": "FEMALE",
+              "dateOfBirth": "1971-01-08",
+              "nationalIdVerificationStatus": false,
+              "employerName": "RADIANT PLASTRUDERS (I) PVT. LTD",
+              "dateOfJoining": "2014-01-01",
+              "dateOfExit": null,
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919978520376",
+      "cleansedPhoneNumber": "+919978520376",
+      "referenceId": "341164fb-b8d9-4a64-b960-73675b26c372",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

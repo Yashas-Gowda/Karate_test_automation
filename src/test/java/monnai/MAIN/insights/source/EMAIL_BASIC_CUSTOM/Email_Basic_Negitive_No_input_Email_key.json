@@ -1,0 +1,26 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ]
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "InyWHjFjyQ0EMNw=",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMAIL_BASIC",
+        "message": "Email cannot be empty/null",
+        "code": "MISSING_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

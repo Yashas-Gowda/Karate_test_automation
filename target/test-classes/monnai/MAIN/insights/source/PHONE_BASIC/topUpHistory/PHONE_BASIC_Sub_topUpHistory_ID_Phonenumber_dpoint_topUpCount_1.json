@@ -1,0 +1,142 @@
+{
+  "request": {
+    "phoneNumber": "087809453668",
+    "phoneDefaultCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "6287809453668",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": 3,
+          "phoneNumberAgeDescription": "6 to 12 Months",
+          "phoneTenure": {
+            "min": 8,
+            "max": 10
+          },
+          "country": "ID",
+          "originalCarrier": "XL (PT XL Axiata Tbk)",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "XL PT XL Axiata Tbk",
+            "originalCarrierCircle": "XL PT XL Axiata Tbk",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "510",
+            "mobileNetworkCode": "11",
+            "networkName": "XL (PT XL Axiata Tbk)",
+            "serviceProfileId": "62502"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": [
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 2,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 90,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 180,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 25000,
+              "maximumTopUpAmount": 25000,
+              "averageTopUpAmount": 25000
+            }
+          ],
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "087809453668",
+      "cleansedPhoneNumber": "+6287809453668",
+      "referenceId": "1582fafd-b1aa-459a-904b-5a1dd4e61c52",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+    ]
+  }
+}

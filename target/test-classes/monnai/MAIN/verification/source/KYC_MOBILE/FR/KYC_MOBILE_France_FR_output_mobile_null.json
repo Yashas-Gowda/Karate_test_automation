@@ -1,0 +1,46 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "749651245",
+      "firstName": "Anouar",
+      "lastName": "Alia",
+      "dateOfBirth": "2002-10-25",
+      "streetNumber": "8",
+      "streetName": "Allée de l'Université",
+      "city": "Nanterre",
+      "postalCode": "92000"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "749651245",
+      "cleansedPhoneNumber": "+33749651245",
+      "inputFirstName": "Anouar",
+      "inputLastName": "Alia",
+      "inputDateOfBirth": "2002-10-25",
+      "inputStreetNumber": "8",
+      "inputCity": "Nanterre",
+      "inputPostalCode": "92000"
+    },
+    "errors": []
+  }
+}

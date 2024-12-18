@@ -1,0 +1,16 @@
+{
+  "request": {
+    "phoneNumber": "6282122171634",
+    "phoneDefaultCountryCode": "ID",
+    "cleansingFlag": true,
+    "locationCoordinates": {
+      "latitude": "-4.68803725151329",
+      "longitude": "121.65185275156333"
+    },
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response":
+}

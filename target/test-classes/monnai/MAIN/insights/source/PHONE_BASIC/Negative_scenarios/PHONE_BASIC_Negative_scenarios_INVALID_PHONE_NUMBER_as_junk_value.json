@@ -1,0 +1,29 @@
+{
+  "request":{
+    "phoneNumber": "sdfsdffdsf3efds#@@",
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "sdfsdffdsf3efds#@@",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "PHONE_BASIC",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

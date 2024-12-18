@@ -1,0 +1,32 @@
+{
+  "request": {
+    "type": "BREACH_COUNT",
+    "domainName": null,
+    "fromDate": "2024-02-01",
+    "toDate": "2024-02-29",
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_COUNT",
+      "inputToDate": "2024-02-29",
+      "inputFromDate": "2024-02-01"
+    },
+    "errors": [
+      {
+        "package": "DOMAIN_BREACH",
+        "message": "Missing value of domain in the request",
+        "code": "MISSING_DOMAIN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

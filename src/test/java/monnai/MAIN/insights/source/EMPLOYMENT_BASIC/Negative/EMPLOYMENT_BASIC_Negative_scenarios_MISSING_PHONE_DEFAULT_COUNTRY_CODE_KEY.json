@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneNumber": "9108510043"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "9108510043",
+      "referenceId": "63e92624-4c25-4517-b3d4-8d08a0abeb36",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_BASIC",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

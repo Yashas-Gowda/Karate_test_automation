@@ -1,0 +1,259 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "sammykhnm17@gmail.com"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 13,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 5,
+            "registeredMessagingProfiles": 0,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 2,
+            "registeredTravelProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": false
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcRiX7dADpVF2R-Dg0cTLtncIegsqWbbswnKh-GIef=mo"
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": {
+                "registered": false
+              },
+              "rambler": {
+                "registered": false
+              }
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": null
+              },
+              "ebay": {
+                "registered": false
+              },
+              "flipkart": {
+                "registered": true
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": false
+              },
+              "lazada": {
+                "registered": false
+              },
+              "tokopedia": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "flickr": {
+                "registered": false,
+                "username": null
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "tumblr": {
+                "registered": false
+              },
+              "weibo": {
+                "registered": false
+              },
+              "ok": {
+                "registered": false,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": false
+              },
+              "quora": {
+                "registered": true
+              },
+              "qzone": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              },
+              "foursquare": {
+                "registered": null,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": false
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": false,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": {
+                "registered": false
+              },
+              "kakao": {
+                "registered": null
+              }
+            },
+            "professional": {
+              "github": {
+                "registered": false
+              },
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "evernote": {
+                "registered": false
+              },
+              "microsoft": {
+                "registered": false
+              },
+              "zoho": {
+                "registered": false
+              },
+              "adobe": {
+                "registered": true
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "lastfm": {
+                "registered": null
+              },
+              "vimeo": {
+                "registered": false
+              },
+              "envato": {
+                "registered": false
+              },
+              "patreon": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": true
+              },
+              "archiveorg": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "sammykhnm17@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+  }

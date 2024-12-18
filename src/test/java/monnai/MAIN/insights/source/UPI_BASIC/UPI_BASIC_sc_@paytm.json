@@ -1,0 +1,45 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "upiId": "9108510043@paytm",
+    "countryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": {
+          "isUpiValid": true,
+          "nameAtBank": "Yashasgowda E M . .",
+          "upiId": "9108510043@paytm"
+        },
+        "advanced": null
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputUpiId": "9108510043@paytm",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

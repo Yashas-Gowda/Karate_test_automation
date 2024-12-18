@@ -1,0 +1,114 @@
+{
+  "request":{
+    "phoneNumber": "6285771034863",
+    "phoneDefaultCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "6285771034863",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": 5,
+          "phoneNumberAgeDescription": "Above 24 months",
+          "phoneTenure": {
+            "min": 24,
+            "max": null
+          },
+          "country": "ID",
+          "originalCarrier": "Indosat Ooredoo Hutchison",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "510",
+            "mobileNetworkCode": "01",
+            "networkName": "Indosat Ooredoo Hutchison",
+            "serviceProfileId": "62500"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": [
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 17,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 10000
+            },
+            {
+              "topUpTenure": {
+                "min": 180,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 17,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 10000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 6,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 20000,
+              "averageTopUpAmount": 13000
+            }
+          ]
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6285771034863",
+      "cleansedPhoneNumber": "+6285771034863",
+      "referenceId": "dpi_dec_19_1st_call_fail",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

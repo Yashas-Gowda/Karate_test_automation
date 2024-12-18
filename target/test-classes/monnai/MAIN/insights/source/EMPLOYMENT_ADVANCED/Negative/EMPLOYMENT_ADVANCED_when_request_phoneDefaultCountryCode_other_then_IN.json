@@ -1,0 +1,31 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "526144160457",
+    "phoneDefaultCountryCode": "MX"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "526144160457",
+      "cleansedPhoneNumber": "+526144160457",
+      "referenceId": "Dpi_may_20_fido_1",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "MX"
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_ADVANCED",
+        "message": "Service unavailable for country Mexico",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

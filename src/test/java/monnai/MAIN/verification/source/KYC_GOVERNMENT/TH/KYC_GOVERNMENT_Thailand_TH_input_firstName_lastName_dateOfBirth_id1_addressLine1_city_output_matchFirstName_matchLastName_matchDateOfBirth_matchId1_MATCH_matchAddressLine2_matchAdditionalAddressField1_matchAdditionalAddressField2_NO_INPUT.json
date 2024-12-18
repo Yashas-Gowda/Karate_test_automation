@@ -1,0 +1,76 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "TH",
+    "originalCountryCode": "TH",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "firstName": "Chayapon",
+      "lastName": "Phucharoenyos",
+      "fullGivenName": "Chayapon Phucharoenyos",
+      "gender": "",
+      "dateOfBirth": "1967-02-20",
+      "id1": "3120100686021",
+      "addressLine1": "24 Soi Ramkhamhaeng 174,",
+      "addressLine2": "",
+      "additionalAddressField1": "",
+      "additionalAddressField2": "",
+      "city": "Bangkok"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": {
+          "matchFirstName": "MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "MATCH",
+          "matchFullGivenName": "NOT_SUPPORTED",
+          "matchDateOfBirth": "MATCH",
+          "matchGender": "NOT_SUPPORTED",
+          "matchId1": "MATCH",
+          "matchId2": "NOT_SUPPORTED",
+          "matchId3": "NOT_SUPPORTED",
+          "matchId4": "NOT_SUPPORTED",
+          "matchId5": "NOT_SUPPORTED",
+          "matchBuildingNumber": "NOT_SUPPORTED",
+          "matchBuildingName": "NOT_SUPPORTED",
+          "matchUnitNumber": "NOT_SUPPORTED",
+          "matchStreetName": "NOT_SUPPORTED",
+          "matchPoBox": "NOT_SUPPORTED",
+          "matchCity": "NOT_SUPPORTED",
+          "matchState": "NOT_SUPPORTED",
+          "matchCountry": "NOT_SUPPORTED",
+          "matchAddressLine1": "NO_DATA",
+          "matchAddressLine2": "NO_INPUT",
+          "matchAdditionalAddressField1": "NO_INPUT",
+          "matchAdditionalAddressField2": "NO_INPUT",
+          "matchAdditionalAddressField3": "NOT_SUPPORTED",
+          "matchPhone": "NOT_SUPPORTED",
+          "matchEmail": "NOT_SUPPORTED",
+          "appendedFields": {}
+        },
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "Chayapon",
+      "inputLastName": "Phucharoenyos",
+      "inputFullGivenName": "Chayapon Phucharoenyos",
+      "inputDateOfBirth": "1967-02-20",
+      "inputId1": "3120100686021",
+      "inputCity": "Bangkok",
+      "inputAddressLine1": "24 Soi Ramkhamhaeng 174,"
+    },
+    "errors": []
+  }
+}

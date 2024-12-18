@@ -1,0 +1,59 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "gstin": "29aapfk0486r3z8",
+    "packages": [
+      "KYC_GSTIN"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": {
+        "pan": null,
+        "gstin": {
+          "valid": true,
+          "status": "Active",
+          "registeredName": "KARACHI BAKERY SHAIKPET",
+          "registeredDate": "2019-03-12",
+          "lastUpdated": "2024-02-16",
+          "businessConstitution": "Partnership",
+          "taxpayerType": "Regular",
+          "natureOfBusiness": [
+            "Supplier of Services",
+            "Retail Business",
+            "Wholesale Business",
+            "Factory / Manufacturing",
+            "Warehouse / Depot",
+            "Others"
+          ],
+          "gstinAddress": "NO 665, Bengaluru, 1st Main, 100 Feet Road, Karnataka, 560038"
+        }
+      },
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_march_6_upi_1",
+      "requestedPackages": [
+        "KYC_GSTIN"
+      ],
+      "inputGstin": "29aapfk0486r3z8",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

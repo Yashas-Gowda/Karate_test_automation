@@ -1,0 +1,65 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "ID",
+    "cleansingFlag": true,
+    "originalCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "id1": "3276052203830087",
+      "fullGivenName": "FURY INDAH PUSPITASARI",
+      "dateOfBirth": 12345
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": {
+          "matchFirstName": "NOT_SUPPORTED",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "NOT_SUPPORTED",
+          "matchFullGivenName": "MATCH",
+          "matchDateOfBirth": "NO_MATCH",
+          "matchGender": "NO_INPUT",
+          "matchId1": "MATCH",
+          "matchId2": "NOT_SUPPORTED",
+          "matchId3": "NOT_SUPPORTED",
+          "matchId4": "NOT_SUPPORTED",
+          "matchId5": "NOT_SUPPORTED",
+          "matchBuildingNumber": "NOT_SUPPORTED",
+          "matchBuildingName": "NOT_SUPPORTED",
+          "matchUnitNumber": "NOT_SUPPORTED",
+          "matchStreetName": "NOT_SUPPORTED",
+          "matchPoBox": "NOT_SUPPORTED",
+          "matchCity": "NOT_SUPPORTED",
+          "matchState": "NOT_SUPPORTED",
+          "matchCountry": "NOT_SUPPORTED",
+          "matchAddressLine1": "NO_INPUT",
+          "matchAddressLine2": "NO_INPUT",
+          "matchAdditionalAddressField1": "NOT_SUPPORTED",
+          "matchAdditionalAddressField2": "NO_INPUT",
+          "matchAdditionalAddressField3": "NOT_SUPPORTED",
+          "matchPhone": "NOT_SUPPORTED",
+          "matchEmail": "NOT_SUPPORTED",
+          "appendedFields": {}
+        },
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_july_3_kyc_1",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFullGivenName": "FURY INDAH PUSPITASARI",
+      "inputDateOfBirth": "2003-10-20",
+      "inputId1": "3276052203830087"
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "type": "BREACH_HISTORY_RECORDS",
+    "domainName": "abc",
+    "cursor": "096338f0-6fde-417f-ba60-919bb14077f6",
+    "packages": [
+      "DOMAIN_BREACH"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_HISTORY_RECORDS",
+      "inputDomainName": "abc",
+      "inputCursor": "096338f0-6fde-417f-ba60-919bb14077f6"
+    },
+    "errors": [
+      {
+        "package": "DOMAIN_BREACH",
+        "message": "The passed value of domain is invalid for the request",
+        "code": "INVALID_DOMAIN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

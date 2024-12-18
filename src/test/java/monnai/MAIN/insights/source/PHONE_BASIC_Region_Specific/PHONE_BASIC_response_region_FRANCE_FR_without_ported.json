@@ -1,0 +1,78 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "33164531599",
+    "phoneDefaultCountryCode": "FR"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "33164531599",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": false,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "FR",
+          "originalCarrier": "Orange",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Orange",
+            "originalCarrierCircle": "Orange",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "Orange",
+            "serviceProfileId": "33511"
+          },
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "33164531599",
+      "cleansedPhoneNumber": "+33164531599",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

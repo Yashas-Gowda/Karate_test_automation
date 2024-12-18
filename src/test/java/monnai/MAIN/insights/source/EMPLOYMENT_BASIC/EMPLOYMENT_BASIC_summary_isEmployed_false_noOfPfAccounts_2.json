@@ -1,0 +1,81 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneNumber": "9671055127",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": {
+          "summary": {
+            "isEmployed": false,
+            "recentEmployerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
+            "noOfPfAccounts": 2,
+            "dateOfJoining": "2018-12-07",
+            "dateOfExit": "2023-07-12",
+            "matchingPfAccountNumber": "101155054190"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101155054190",
+              "name": "MAHIPAL KUMAR SINGH",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": false,
+              "employerName": "IDC TECHNOLOGIES SOLUTIONS INDIA PRIVATE LIMITED",
+              "dateOfJoining": "2018-12-07",
+              "dateOfExit": "2023-07-12",
+              "reasonOfExit": ""
+            },
+            {
+              "pfAccountNumber": "100984866758",
+              "name": "Mahipal Kumar Singh",
+              "gender": "MALE",
+              "dateOfBirth": "1994-06-22",
+              "nationalIdVerificationStatus": false,
+              "employerName": "OKAYA INFOCOM (P) LTD",
+              "dateOfJoining": "2016-11-07",
+              "dateOfExit": "2017-05-12",
+              "reasonOfExit": ""
+            }
+          ]
+        },
+        "advanced": null,
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9671055127",
+      "cleansedPhoneNumber": "+919671055127",
+      "referenceId": "95d46ef5-cd60-4095-aca1-3057c2331728",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

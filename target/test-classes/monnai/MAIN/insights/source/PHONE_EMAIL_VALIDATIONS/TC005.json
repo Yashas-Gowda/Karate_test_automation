@@ -1,0 +1,69 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "PHONE_BASIC",
+      "PHONE_SOCIAL",
+      "UPI_ADVANCED",
+      "IDENTITY_ENRICHMENT_PLUS",
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "originalCountryCode": "IN",
+    "phoneNumber": null
+  },
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "test123444",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT",
+        "PHONE_BASIC",
+        "PHONE_SOCIAL",
+        "UPI_ADVANCED",
+        "IDENTITY_ENRICHMENT_PLUS",
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": [
+      {
+        "package": "IDENTITY_ENRICHMENT",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_SEARCH_PARAMETER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "PHONE_BASIC",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "PHONE_SOCIAL",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "UPI_ADVANCED",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "IDENTITY_ENRICHMENT_PLUS",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_EMAIL_AND_PHONE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMPLOYMENT_DETAILS",
+        "message": "At least one search parameter Email or Phone Number is required",
+        "code": "MISSING_EMAIL_AND_PHONE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

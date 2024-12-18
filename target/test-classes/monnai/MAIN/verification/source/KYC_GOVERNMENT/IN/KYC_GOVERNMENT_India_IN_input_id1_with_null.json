@@ -1,0 +1,50 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "originalCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "idType": "PSP",
+      "firstName": "SAYED WEQAR FATIMA",
+      "lastName": "ABEDI",
+      "fullGivenName": "SAYED WEQAR FATIMA ABEDI",
+      "dateOfBirth": "2000-08-05",
+      "id1": null,
+      "id2": "BO3070887891817"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "SAYED WEQAR FATIMA",
+      "inputLastName": "ABEDI",
+      "inputFullGivenName": "SAYED WEQAR FATIMA ABEDI",
+      "inputDateOfBirth": "2000-08-05",
+      "inputIdType": "PSP",
+      "inputId2": "BO3070887891817"
+    },
+    "errors": [
+      {
+        "package": "KYC_GOVERNMENT",
+        "message": "Id value cannot be blank/null",
+        "code": "MISSING_ID",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

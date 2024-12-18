@@ -1,0 +1,56 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9844785668",
+    "email": "eswarappam5929@gmail.com",
+    "upiApplicationName": "ALL",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "packageDetails": [
+            "S2101"
+          ],
+          "upiIdCount": 0,
+          "accounts": []
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9844785668",
+      "cleansedPhoneNumber": "+919844785668",
+      "referenceId": "Dpi_oct_3_release_1",
+      "inputEmail": "eswarappam5929@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "ALL",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

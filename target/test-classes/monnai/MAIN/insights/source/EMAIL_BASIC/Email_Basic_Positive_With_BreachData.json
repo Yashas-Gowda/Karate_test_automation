@@ -1,0 +1,141 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "deepakjain_878@yahoo.co.in"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainName": "yahoo.co.in",
+            "tld": ".in",
+            "creationTime": "2003-06-30 04:00:00",
+            "updateTime": "2023-06-13 21:08:51",
+            "expiryTime": "2024-06-30 04:00:00",
+            "registered": true,
+            "companyName": null,
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": true,
+            "spfStrict": true,
+            "suspiciousTld": false,
+            "websiteExists": true,
+            "acceptAll": true,
+            "custom": false
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 15,
+            "firstBreach": "2012-05-05",
+            "lastBreach": "2021-05-23",
+            "breaches": [
+              {
+                "platformName": "Animoto",
+                "domainName": "animoto.com",
+                "breachDate": "2018-07-10"
+              },
+              {
+                "platformName": "bigbasket",
+                "domainName": "bigbasket.com",
+                "breachDate": "2020-10-14"
+              },
+              {
+                "platformName": "Canva",
+                "domainName": "canva.com",
+                "breachDate": "2019-05-24"
+              },
+              {
+                "platformName": "Cit0day",
+                "domainName": "cit0day.in",
+                "breachDate": "2020-11-04"
+              },
+              {
+                "platformName": "Digimon",
+                "domainName": "digimon.co.in",
+                "breachDate": "2016-09-05"
+              },
+              {
+                "platformName": "Domino's India",
+                "domainName": "dominos.co.in",
+                "breachDate": "2021-03-24"
+              },
+              {
+                "platformName": "Gaadi",
+                "domainName": "gaadi.com",
+                "breachDate": "2015-05-14"
+              },
+              {
+                "platformName": "iMesh",
+                "domainName": "imesh.com",
+                "breachDate": "2013-09-22"
+              },
+              {
+                "platformName": "IndiaMART",
+                "domainName": "indiamart.com",
+                "breachDate": "2021-05-23"
+              },
+              {
+                "platformName": "LinkedIn",
+                "domainName": "linkedin.com",
+                "breachDate": "2012-05-05"
+              },
+              {
+                "platformName": "Promo",
+                "domainName": "promo.com",
+                "breachDate": "2020-06-22"
+              },
+              {
+                "platformName": "Twitter (200M)",
+                "domainName": "twitter.com",
+                "breachDate": "2021-01-01"
+              },
+              {
+                "platformName": "Verifications.io",
+                "domainName": "verifications.io",
+                "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "Zomato",
+                "domainName": "zomato.com",
+                "breachDate": "2017-05-17"
+              },
+              {
+                "platformName": "demo.zeeroq.com",
+                "domainName": null,
+                "breachDate": null
+              }
+            ]
+          },
+          "emailTenure": 11.22
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "deepakjain_878@yahoo.co.in",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "request": {
+    "cleansingFlag": true,
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
+      "requestedPackages": [
+        "BUSINESS_REGISTRATION"
+      ],
+      "inputType": "UDYAM_STATUS"
+    },
+    "errors": [
+      {
+        "package": "BUSINESS_REGISTRATION",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "BUSINESS_REGISTRATION",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

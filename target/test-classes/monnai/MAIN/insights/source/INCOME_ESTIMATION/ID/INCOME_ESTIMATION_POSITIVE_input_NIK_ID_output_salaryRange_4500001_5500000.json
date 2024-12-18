@@ -1,0 +1,52 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "INCOME_ESTIMATION"
+    ],
+    "id": "3173064508700016",
+    "idType": "NIK",
+    "phoneDefaultCountryCode": "ID"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": {
+        "estimation": {
+          "source": "GOVERNMENT",
+          "salaryType": "MONTHLY",
+          "currency": "IDR",
+          "salaryRange": {
+            "min": 4500001,
+            "max": 5500000
+          }
+        }
+      },
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_income_june_12",
+      "inputId": "3173064508700016",
+      "inputIdType": "NIK",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

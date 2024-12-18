@@ -1,0 +1,66 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "sdfdsfsd@HDFCBANK.COM"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainName": "hdfcbank.com",
+            "tld": ".com",
+            "creationTime": "1997-05-13 09:27:21",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": "",
+            "disposable": false,
+            "freeProvider": null,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": [
+            ]
+          },
+          "emailTenure": null
+        }
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "sdfdsfsd@HDFCBANK.COM",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

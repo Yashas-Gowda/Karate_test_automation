@@ -1,0 +1,110 @@
+{
+  "request": {
+    "email": "cwarsuraj@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_SOCIAL"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "social": {
+          "summary": {
+            "name": "suraj chepurwar",
+            "location": "india, asia",
+            "employerName": "strabag",
+            "linkedinUrl": "https://linkedin.com/in/suraj-chepurwar-a54593136",
+            "employmentHistoryCount": 7,
+            "educationHistoryCount": 1
+          },
+          "employmentHistory": [
+            {
+              "employerName": "h.g. infra engineering limited",
+              "employerLocation": "jaipur, rajasthan, india",
+              "dateOfJoining": "2013-07-01",
+              "dateOfExit": "2015-11-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/h.g.-infra-projects-limited"
+            },
+            {
+              "employerName": "yooshin engineering corporation (india)",
+              "employerLocation": "haryana, india",
+              "dateOfJoining": "2018-12-01",
+              "dateOfExit": "2022-09-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/yooshin-engineering-corporation-india"
+            },
+            {
+              "employerName": "strabag",
+              "employerLocation": "vienna, austria",
+              "dateOfJoining": "2022-09-01",
+              "employerLinkedinUrl": "https://linkedin.com/company/strabag"
+            },
+            {
+              "employerName": "tapi prestressed products ltd - india",
+              "employerLocation": "pune, maharashtra, india",
+              "dateOfJoining": "2015-12-01",
+              "dateOfExit": "2017-02-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/tapi-prestressed-products-ltd---india"
+            },
+            {
+              "employerName": "aarvee associates",
+              "employerLocation": "hyderābād, telangana, india",
+              "dateOfJoining": "2011-08-01",
+              "dateOfExit": "2013-06-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/aarvee-associates"
+            },
+            {
+              "employerName": "l&t infrastructure development projects limited",
+              "employerLocation": "chennai, tamil nadu, india",
+              "dateOfJoining": "2018-08-01",
+              "dateOfExit": "2018-12-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/l&t-infrastructure-development-projects-limited"
+            },
+            {
+              "employerName": "artefact projects limited",
+              "dateOfJoining": "2017-02-01",
+              "dateOfExit": "2018-08-15",
+              "employerLinkedinUrl": "https://linkedin.com/company/artefact-projects-limited"
+            }
+          ],
+          "educationHistory": [
+            {
+              "schoolName": "rashtrasant tukadoji maharaj nagpur university",
+              "schoolLocation": "nagpur, maharashtra, india"
+            }
+          ]
+        },
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "16c36153-1efd-4451-a2da-b0648bd058a9",
+      "inputEmail": "cwarsuraj@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

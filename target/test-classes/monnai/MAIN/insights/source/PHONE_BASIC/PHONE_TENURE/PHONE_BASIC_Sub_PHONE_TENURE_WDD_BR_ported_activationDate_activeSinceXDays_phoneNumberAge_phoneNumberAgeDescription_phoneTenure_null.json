@@ -1,0 +1,73 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "554730388111",
+    "phoneDefaultCountryCode": "BR"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "554730388111",
+          "phoneValid": true,
+          "phoneType": "FIXED",
+          "phoneDisposable": false,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "BR",
+          "originalCarrier": "TELEFONICA BRASIL S.A.",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "TELEFONICA BRASIL S.A.",
+            "originalCarrierCircle": "TELEFONICA BRASIL S.A.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": null,
+            "mobileNetworkCode": null,
+            "networkName": "TELEFONICA BRASIL S.A.",
+            "serviceProfileId": "55215"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "554730388111",
+      "cleansedPhoneNumber": "+554730388111",
+      "referenceId": "UI-f50cb4e9c2709b1fdd25fed785ecb13b43ff8a96",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

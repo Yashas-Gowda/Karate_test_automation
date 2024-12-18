@@ -1,0 +1,193 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "yashas@monnai.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 5,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 0,
+            "registeredSocialMediaProfiles": 0,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
+            "registeredEntertainmentProfiles": 0,
+            "registeredTravelProfiles": 0,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 0
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": false
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": null
+              },
+              "yahoo": {
+                "registered": true
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": false
+              },
+              "pinterest": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": null
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": false
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "yashas@monnai.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

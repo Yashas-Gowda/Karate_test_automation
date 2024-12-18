@@ -1,0 +1,83 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "3490086224",
+    "phoneDefaultCountryCode": "IT"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "393490086224",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "IT",
+          "originalCarrier": "Vodafone (former Omnitel Pronto Italia)",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": "2023-04-09",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 19,
+            "currentCarrierCircle": "Vodafone Vodafone Italia S.p.A.",
+            "originalCarrierCircle": "Vodafone Vodafone Italia S.p.A.",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2023-04-09"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2018-01-15"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "222",
+            "mobileNetworkCode": "10",
+            "networkName": "Vodafone (former Omnitel Pronto Italia)",
+            "serviceProfileId": "39341"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "3490086224",
+      "cleansedPhoneNumber": "+393490086224",
+      "referenceId": "UI-61885202673b015424b2121a7a59d45b46b53e4c",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": []
+  }
+  }

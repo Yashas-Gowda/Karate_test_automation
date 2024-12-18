@@ -1,0 +1,8 @@
+{
+  "app_client_name": "DEV Tenant UI  Monnai@01FZD2V1DFN01K39Q8CBYKTXGV",
+  "client_id": "18gpr4u2309h9sskcf3t5k1adi",
+  "client_secret": "1tmbn172cmq53atqmkokv3888ammkmnk6t4aelud65i48cq2pc75",
+  "grant_type": "client_credentials",
+  "scope": "insights/address_verification batch/insights insights/address_basic insights/device_details insights/email_basic insights/email_social insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/name_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_basic",
+  "issue": " "
+}

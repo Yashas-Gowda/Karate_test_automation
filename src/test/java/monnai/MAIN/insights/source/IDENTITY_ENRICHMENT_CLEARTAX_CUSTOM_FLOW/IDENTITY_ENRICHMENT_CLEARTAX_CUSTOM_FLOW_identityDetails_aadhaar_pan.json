@@ -1,0 +1,207 @@
+{
+  "request":{
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "phoneNumber": "9768715699",
+    "fullName": "Chandan Kadam",
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "CHANDAN V KADAM"
+                }
+              ],
+              "genders": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "MALE"
+                }
+              ],
+              "dateOfBirths": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1988-09-10",
+                    "end": "1988-09-10"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "validSince": "2023-05-25T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Owns,Permanent",
+                  "addressLine1": "23/1813 OLD MHB COLONY  DURVANK SOCIETY  GORAI RD  BORIVALI WEST MUMBAI",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "400091",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2022-05-31T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Primary",
+                  "addressLine1": "23/ DURVANK SOCIETY  1813 GORAI RD  MHB CO BORIVALI WEST  NR POST OFFICE MUMBAI",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "400091",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2022-01-28T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Office",
+                  "addressLine1": "CAPGEMINI INDIA 8TH FLOOR  BLDG  NO B 6 CAPGEMINI KNOWLEDGE PARK  AIROLI WEST THANE",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "400708",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2022-01-28T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Rents,Primary",
+                  "addressLine1": "FLAT NO 1813 1ST FLOOR  BLDG  NO 23 DURVANK SOC GORAI ROAD  MHB COLONY  MUMBAI",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "400091",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                },
+                {
+                  "validSince": "2021-09-30T00:00:00Z",
+                  "lastSeen": null,
+                  "addressType": "Permanent",
+                  "addressLine1": "23 DURVANK SO 1ST FLOOR  PLOT  NO 18/3 OLD MHB COLONY  GORAI RD  NEAR POST OFFICE BORIVALI WEST",
+                  "addressLine2": null,
+                  "city": null,
+                  "postalCode": "400091",
+                  "country": null,
+                  "geoLocation": null,
+                  "state": "MAHARASHTRA",
+                  "countryCode": null
+                }
+              ],
+              "phoneNumber": null,
+              "emailAddress": null,
+              "phoneDetails": [
+                {
+                  "validSince": "2021-09-30T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "222345678",
+                  "phoneType": "Home"
+                },
+                {
+                  "validSince": "2019-12-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "9768715699",
+                  "phoneType": "Home"
+                },
+                {
+                  "validSince": "2023-09-30T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "9768715699",
+                  "phoneType": "Mobile"
+                },
+                {
+                  "validSince": "2023-05-25T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "09768715699",
+                  "phoneType": "Mobile"
+                },
+                {
+                  "validSince": "2023-05-25T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "00040866116",
+                  "phoneType": "Work Telephone"
+                },
+                {
+                  "validSince": "2021-09-30T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "2242497000",
+                  "phoneType": "Work Telephone"
+                }
+              ],
+              "emailDetails": [
+                {
+                  "validSince": "2022-08-31T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "CHANDANKADAM7@GMAIL.COM"
+                }
+              ],
+              "ipAddresses": null,
+              "nationalId": null,
+              "identityDetails": {
+                "aadhaar": [
+                  {
+                    "value": "XXXXXXXXXXXX"
+                  }
+                ],
+                "pan": [
+                  {
+                    "value": "BLDPK9745H"
+                  }
+                ]
+              },
+              "additionalDetails": {
+                "incomeCurrency": "INR",
+                "incomeAmount": "633657"
+              }
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9768715699",
+      "cleansedPhoneNumber": "+919768715699",
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ],
+      "inputFullName": "Chandan Kadam"
+    },
+    "errors": []
+  }
+}

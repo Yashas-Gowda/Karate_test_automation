@@ -1,0 +1,80 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "upiApplicationName": "ALL",
+    "phoneNumber": "9179749391",
+    "email": "shinderashmi07@gmail.com",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 4,
+          "accounts": [
+            {
+              "appName": "Paytm",
+              "nameAtBank": "Ram Prakash Gautam So Shaligram Gau",
+              "upiId": "9179749391@paytm",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "RASHMI VINAYAK SHINDE",
+              "upiId": "shinderashmi07@okhdfcbank",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "RAM PRAKASH GAUTAM SO SHALIGRAM GAU",
+              "upiId": "9179749391@ybl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "MobiKwik",
+              "nameAtBank": "RAM PRAKASH GAUTAM SO SHALIGRAM GAU",
+              "upiId": "9179749391@ikwik",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9179749391",
+      "cleansedPhoneNumber": "+919179749391",
+      "referenceId": "3a20df9d-dd4f-45e4-a956-2fb17d846840",
+      "inputEmail": "shinderashmi07@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "ALL"
+    },
+    "errors": [
+    ]
+  }
+}

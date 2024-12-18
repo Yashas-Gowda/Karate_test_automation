@@ -1,0 +1,114 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "IDENTITY_ENRICHMENT_PLUS"
+    ],
+    "id": "3514064206870001",
+    "idType": "NIK",
+    "email": "sammy.khnm@gmail.com",
+    "phoneNumber": "+6289643478758",
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "ID"
+  },
+  "response":{
+    
+      "data": {
+        "phone": null,
+        "email": null,
+        "address": null,
+        "name": null,
+        "ip": null,
+        "identity": {
+          "correlation": null,
+          "enrichment": {
+            "persons": [
+              {
+                "names": [
+                  {
+                    "validSince": null,
+                    "lastSeen": null,
+                    "value": "WITA AZIZAH"
+                  }
+                ],
+                "genders": [
+                  {
+                    "validSince": null,
+                    "lastSeen": null,
+                    "value": "FEMALE"
+                  }
+                ],
+                "dateOfBirths": [
+                  {
+                    "validSince": null,
+                    "lastSeen": null,
+                    "dateRange": {
+                      "start": "1987-06-02",
+                      "end": "1987-06-02"
+                    }
+                  }
+                ],
+                "addresses": [
+                  {
+                    "validSince": null,
+                    "lastSeen": null,
+                    "addressLine1": "TUMPANG                                 ",
+                    "addressLine2": "PACAR KELING KEJAYAN",
+                    "city": "PASURUAN",
+                    "postalCode": null,
+                    "country": "INDONESIA",
+                    "geoLocation": null,
+                    "state": "JAWA TIMUR",
+                    "countryCode": null
+                  }
+                ],
+                "phoneNumber": null,
+                "emailAddress": null,
+                "ipAddresses": null,
+                "nationalId": "3514064206870001"
+              }
+            ]
+          },
+          "enrichmentPlus": {
+            "persons": [
+              {
+                "validSince": null,
+                "lastSeen": null,
+                "name": null,
+                "gender": null,
+                "dateOfBirth": null,
+                "address": null,
+                "phoneNumber": "+6282231407123",
+                "emailAddress": null,
+                "ipAddresses": null
+              }
+            ]
+          }
+        },
+        "upi": null,
+        "device": null,
+        "employment": null,
+        "income": null,
+        "blacklist": null,
+        "bre": null
+      },
+      "meta": {
+        "inputPhoneNumber": "+6289643478758",
+        "cleansedPhoneNumber": "+6289643478758",
+        "referenceId": "UI-73b12daeebacff324f68bc003c1ab0bb13601220",
+        "inputEmail": "sammy.khnm@gmail.com",
+        "inputId": "3514064206870001",
+        "inputIdType": "NIK",
+        "requestedPackages": [
+          "IDENTITY_ENRICHMENT",
+          "IDENTITY_ENRICHMENT_PLUS"
+        ]
+      },
+      "errors": []
+    }
+
+  
+}

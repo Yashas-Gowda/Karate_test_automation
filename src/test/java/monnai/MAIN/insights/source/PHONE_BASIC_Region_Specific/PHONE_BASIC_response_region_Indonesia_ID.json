@@ -1,0 +1,157 @@
+{
+  "request": {
+    "phoneNumber": "628571116541",
+    "phoneDefaultCountryCode": "ID",
+    "originalCountryCode": "",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "628571116541",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "NO",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": 1,
+          "phoneNumberAgeDescription": "Below 3 Months",
+          "phoneTenure": {
+            "min": 0,
+            "max": 3
+          },
+          "country": "ID",
+          "originalCarrier": "Indosat Ooredoo Hutchison",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "originalCarrierCircle": "Indosat Ooredoo Hutchison PT Indosat Tbk",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "510",
+            "mobileNetworkCode": "01",
+            "networkName": "Indosat Ooredoo Hutchison",
+            "serviceProfileId": "62500"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": [
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 1,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 5000,
+              "averageTopUpAmount": 5000
+            }
+          ],
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "628571116541",
+      "cleansedPhoneNumber": "+628571116541",
+      "referenceId": "1b76560e-870f-4e04-b117-81f0bffe51c1",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+    ]
+  }
+}

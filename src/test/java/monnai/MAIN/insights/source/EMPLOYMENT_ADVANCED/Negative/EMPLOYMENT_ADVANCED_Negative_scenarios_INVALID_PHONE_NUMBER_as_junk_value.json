@@ -1,0 +1,31 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "phoneNumber": "sdfsdffdsf3efds#@@",
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "sdfsdffdsf3efds#@@",
+      "referenceId": "4936e6ab-6b67-4e29-a739-03ac622b1666",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_ADVANCED",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "address": {
+      "addressLine1": "Mota Varachha",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "city": "Surat",
+      "province": "",
+      "postalCode": "394010",
+      "country": "INDIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "addressVisited": true,
+          "addressLastVisited": "2024-06-11"
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_oct_17_release_2",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "Mota Varachha",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "Surat",
+        "state": null,
+        "postalCode": "394010",
+        "country": "INDIA"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

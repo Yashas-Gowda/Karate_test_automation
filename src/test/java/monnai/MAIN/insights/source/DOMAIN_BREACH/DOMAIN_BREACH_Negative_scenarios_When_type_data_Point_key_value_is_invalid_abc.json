@@ -1,0 +1,30 @@
+{
+  "request": {
+    "type": "abc",
+    "domainName": "example.org",
+    "cursor": null,
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "abc",
+      "inputDomainName": "example.org"
+    },
+    "errors": [
+      {
+        "package": "DOMAIN_BREACH",
+        "message": "The passed value of type is invalid for the request",
+        "code": "INVALID_TYPE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

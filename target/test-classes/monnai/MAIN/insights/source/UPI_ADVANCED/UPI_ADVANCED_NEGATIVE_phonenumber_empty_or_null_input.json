@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_ADVANCED"
+    ],
+    "phoneNumber": "",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "9a4d1fe9-7393-4caf-8cbb-d942056b1107",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "UPI_ADVANCED",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

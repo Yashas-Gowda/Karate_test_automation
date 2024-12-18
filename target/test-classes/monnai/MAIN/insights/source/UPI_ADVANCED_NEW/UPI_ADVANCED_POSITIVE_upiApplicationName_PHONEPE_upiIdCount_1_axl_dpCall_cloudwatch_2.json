@@ -1,0 +1,58 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9037453604",
+    "email": "eswarappam5929@gmail.com",
+    "upiApplicationName": "PHONEPE",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "PhonePe",
+              "nameAtBank": "MR SHANFAR T A",
+              "upiId": "9037453604@axl",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9037453604",
+      "cleansedPhoneNumber": "+919037453604",
+      "referenceId": "Dpi_march_6_upi_1",
+      "inputEmail": "eswarappam5929@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "PHONEPE"
+    },
+    "errors": []
+  }
+}

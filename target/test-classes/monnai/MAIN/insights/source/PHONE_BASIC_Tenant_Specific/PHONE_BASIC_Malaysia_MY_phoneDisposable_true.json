@@ -1,0 +1,75 @@
+{
+  "request": {
+    "phoneNumber": "601128675909",
+    "phoneDefaultCountryCode": "MY",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "601128675909",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": true,
+          "active": "UNKNOWN",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "MY",
+          "originalCarrier": "U MOBILE SDN BHD",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "U MOBILE SDN BHD",
+            "originalCarrierCircle": "U MOBILE SDN BHD",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "502",
+            "mobileNetworkCode": "18",
+            "networkName": "U MOBILE SDN BHD",
+            "serviceProfileId": "60502"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "601128675909",
+      "cleansedPhoneNumber": "+601128675909",
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "inputEmail": null,
+      "inputIpAddress": null,
+      "inputUpiId": null,
+      "inputDeviceIds": null,
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputAddress": null
+    },
+    "errors": []
+  }
+}

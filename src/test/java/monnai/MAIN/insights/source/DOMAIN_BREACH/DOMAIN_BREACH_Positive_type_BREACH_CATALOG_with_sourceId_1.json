@@ -1,0 +1,58 @@
+{
+  "request": {
+    "type": "BREACH_CATALOG",
+    "sourceId": "53211",
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": {
+        "breach": {
+          "catalog": {
+            "uuid": "ef754e1f-5ab0-4723-af02-85d2ba186728",
+            "title": "Infostealer Combolist",
+            "description": "In January 2024, a combolist was published. This data contains email addresses, usernames, passwords, target URLs, and may contain other compromised user details. This breach is being publicly shared on the Internet.",
+            "sourceId": 53211,
+            "type": "PUBLIC",
+            "numRecords": 52149589,
+            "site": "n/a",
+            "siteDescription": "This data appeared within a list of credentials stolen by threat actors. Known as combolists to criminals, these are summarized lists of data often from many different sources. Combolists are used to by criminals to attempt to compromise accounts.",
+            "assets": {
+              "password": 52149589,
+              "targetUrl": 50063144,
+              "email": 19054710,
+              "username": 33096550
+            }
+          }
+        }
+      },
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_CATALOG",
+      "inputSourceId": "53211"
+    },
+    "errors": []
+  }
+}

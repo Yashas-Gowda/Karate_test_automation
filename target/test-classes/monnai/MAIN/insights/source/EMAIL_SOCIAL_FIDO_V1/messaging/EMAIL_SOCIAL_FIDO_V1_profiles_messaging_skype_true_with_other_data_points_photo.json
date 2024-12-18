@@ -1,0 +1,197 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "shehos2003@yahoo.gr"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 12,
+            "registeredConsumerElectronicsProfiles": 1,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 3,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 2,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "registeredEducationProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 1
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": null
+              },
+              "samsung": {
+                "registered": true
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": null
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": null
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": false
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": true
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "George Shehata",
+                "id": "george-shehata",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "Athens",
+                "state": "Glyfada",
+                "country": "Luxembourg",
+                "photo": "https://eu-west-1-807149116723-profile-pictures-production.s3.eu-west-1.amazonaws.com/dac8b09c/722d/46a9/abc3/89559de9b7be/91aa0d3b-a884-43ca-abec-a6efa699f965.jpg"
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": true,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": true
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": false
+              }
+            }
+          }
+        },
+        "basic": null,
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "71bf360d-e582-4038-99b4-ed0d6101a97c",
+      "inputEmail": "shehos2003@yahoo.gr",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

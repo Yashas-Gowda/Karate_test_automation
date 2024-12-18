@@ -1,0 +1,79 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "919108510043",
+    "address": {
+      "addressLine1": "kakkaragolla village",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "city": "",
+      "province": "",
+      "postalCode": "",
+      "country": "INDIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "phoneMatch": "MATCH",
+          "addressMatch": "NO_MATCH",
+          "phoneAndAddressMatch": "NO_MATCH",
+          "addressVisited": false
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919108510043",
+      "cleansedPhoneNumber": "+919108510043",
+      "referenceId": "Dpi_May_17_enrich_1",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "kakkaragolla village",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "",
+        "state": null,
+        "postalCode": "",
+        "country": "INDIA"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

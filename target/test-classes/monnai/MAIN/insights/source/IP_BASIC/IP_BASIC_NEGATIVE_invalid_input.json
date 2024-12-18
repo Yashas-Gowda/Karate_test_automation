@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IP_BASIC"
+    ],
+    "ipAddress": ""
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "inputIpAddress": "123abc",
+      "requestedPackages": [
+        "IP_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "IP_BASIC",
+        "message": "Invalid IP Address",
+        "code": "INVALID_IP_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

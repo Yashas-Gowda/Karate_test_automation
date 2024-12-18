@@ -1,0 +1,130 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+	"cleansingFlag": true,
+	"packages": [
+		"IDENTITY_ENRICHMENT"
+	],
+	"phoneDefaultCountryCode": "IN",
+	"originalCountryCode": "IN",
+	"email":"sammy.khnm@gmail.com",
+	"phoneNumber": "9148771222"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": "2013-06-08T07:17:06Z",
+                  "lastSeen": null,
+                  "value": "Sammy Khnm"
+                },
+                {
+                  "validSince": "2019-03-14T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "Sammy Khanm"
+                },
+                {
+                  "validSince": "2019-06-20T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "Sameena Yasmeen"
+                }
+              ],
+              "genders": [],
+              "dateOfBirths": [],
+              "addresses": [
+                {
+                  "validSince": "2018-03-20T00:00:00Z",
+                  "lastSeen": null,
+                  "addressLine1": "",
+                  "addressLine2": "",
+                  "city": "",
+                  "postalCode": "",
+                  "country": "India",
+                  "geoLocation": " ",
+                  "state": "",
+                  "countryCode": "IN"
+                },
+                {
+                  "validSince": "2018-11-29T00:00:00Z",
+                  "lastSeen": null,
+                  "addressLine1": "",
+                  "addressLine2": "",
+                  "city": "Bengaluru",
+                  "postalCode": "",
+                  "country": "India",
+                  "geoLocation": "12.97194000 77.59369000",
+                  "state": "Karnataka",
+                  "countryCode": "IN"
+                },
+                {
+                  "validSince": "2019-04-25T19:25:09Z",
+                  "lastSeen": null,
+                  "addressLine1": "Google Plus Login",
+                  "addressLine2": "Azeez sait nagar kalyangiri mysore",
+                  "city": "Mysuru",
+                  "postalCode": "570011",
+                  "country": "India",
+                  "geoLocation": " ",
+                  "state": "Karnataka",
+                  "countryCode": "IN"
+                }
+              ],
+              "phoneNumber": {
+                "validSince": "2019-04-25T19:25:09Z",
+                "lastSeen": null,
+                "value": "9148771222"
+              },
+              "emailAddress": {
+                "validSince": "2013-06-08T07:17:06Z",
+                "lastSeen": null,
+                "value": "sammy.khnm@gmail.com"
+              },
+              "ipAddresses": [
+                {
+                  "validSince": "2018-03-20T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "223.238.254.42"
+                },
+                {
+                  "validSince": "2018-11-29T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "106.51.46.137"
+                }
+              ],
+              "nationalId": null
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9148771222",
+      "cleansedPhoneNumber": "+919148771222",
+      "referenceId": "123",
+      "inputEmail": "sammy.khnm@gmail.com",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+
+  }
+}

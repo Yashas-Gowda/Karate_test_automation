@@ -1,0 +1,27 @@
+{
+  "request": {
+    "type": "BREACH_CATALOG",
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_CATALOG"
+    },
+    "errors": [
+      {
+        "package": "DOMAIN_BREACH",
+        "message": "The source is invalid, please refer to the API Documentation",
+        "code": "INVALID_REQUEST",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

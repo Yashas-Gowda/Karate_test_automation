@@ -1,0 +1,22 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "ATWPY7073N",
+    "packages": [
+      null
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "package is not selected",
+        "code": "PACKAGE_NOT_SELECTED",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"efficiency":0.0,"totalTime":0.0,"threads":5,"resultDate":"2024-12-18 11:43:54 am","env":"release-m","version":"1.5.0","scenariosfailed":0,"featureSummary":[],"featuresPassed":0,"featuresFailed":0,"featuresSkipped":0,"scenariosPassed":0,"elapsedTime":997.0}

@@ -1,0 +1,108 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "koulvishesh1@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "gmail.com",
+            "tld": ".com",
+            "creationTime": "1995-08-12 16:35:07",
+            "updateTime": "2024-07-11 09:52:57",
+            "expiryTime": "2025-08-12 00:00:00",
+            "registered": true,
+            "companyName": "Google LLC",
+            "registrarName": "MarkMonitor Inc.",
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 7,
+            "firstBreach": "2017-05-17",
+            "lastBreach": "2021-03-24",
+            "breaches": [
+              {
+                "platformName": "bigbasket",
+                "domainName": "bigbasket.com",
+                "breachDate": "2020-10-14"
+              },
+              {
+                "platformName": "Cit0day",
+                "domainName": "cit0day.in",
+                "breachDate": "2020-11-04"
+              },
+              {
+                "platformName": "Domino's India",
+                "domainName": "dominos.co.in",
+                "breachDate": "2021-03-24"
+              },
+              {
+                "platformName": "Dubsmash",
+                "domainName": "dubsmash.com",
+                "breachDate": "2018-12-01"
+              },
+              {
+                "platformName": "Dunzo",
+                "domainName": "dunzo.com",
+                "breachDate": "2020-06-19"
+              },
+              {
+                "platformName": "ixigo",
+                "domainName": "ixigo.com",
+                "breachDate": "2019-01-03"
+              },
+              {
+                "platformName": "Zomato",
+                "domainName": "zomato.com",
+                "breachDate": "2017-05-17"
+              }
+            ]
+          },
+          "emailTenure": 7.2
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_July_30_email_2",
+      "inputEmail": "koulvishesh1@gmail.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

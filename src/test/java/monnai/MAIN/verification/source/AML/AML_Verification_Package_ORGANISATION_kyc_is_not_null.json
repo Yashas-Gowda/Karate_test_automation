@@ -1,0 +1,2017 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "ORGANISATION",
+    "userDetails": {
+      "fullGivenName": "THE UNITY OF ISLAMIC YOUTH"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": true,
+            "noOfProfiles": 4,
+            "totalRecords": 42
+          },
+          "records": [
+            {
+              "entityType": "Corporate",
+              "profileId": "15408520055907323701",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "EEAS Consolidated Sanction List",
+              "programName": "SOM",
+              "otherInformation": "Designation Date: 2010-04-12 \r\nEU Reference Number: EU.3600.81 \r\nNumber Title: 2017/395 (OJ L60) \r\nEntry Into Force Date: 2017-03-08 \r\nRegulation Organisation Type: council \r\nRegulation Type: amendment \r\n",
+              "group": null,
+              "classification": "",
+              "links": [
+                "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab",
+                "Al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin Al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "MYM",
+                "Harakat Shabab Al-Mujahidin",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "Al-Shabaab Al-Islamiya",
+                "Youth Wing",
+                "Al-Shabaab Al-Islaam",
+                "Al-Shabaab Al-Jihaad",
+                "The Unity Of Islamic Youth",
+                "Harakat Al-Shabaab Al-Mujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement",
+                "Tineretul (The Youth)",
+                "Mișcarea Mujahidin Al-Shabaab",
+                "Mișcarea de tineret Mujahideen",
+                "Mișcarea de tineret Mujahidin",
+                "Aripa tânără (Youth Wing)",
+                "Unitatea tineretului islamic",
+                "Mișcarea de tineret Mujaahidiin"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "15408520055907323701",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Ukraine State Financial Monitoring Black List",
+              "programName": "Резолюція РБ ООН 751 (1992) та 1907 (2009)",
+              "otherInformation": "INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/une/5775567 click here\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAB",
+                "SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "15408520055907323701",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "South Africa Targeted Financial Sanctions List",
+              "programName": null,
+              "otherInformation": "Reference Number: SOe.001\r\nComments: INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Entities\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                null
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-JIHAAD",
+                "AL-SHABAB",
+                "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "HISBUL SHABAAB",
+                "HIZBUL SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "SHABAAB",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "THE YOUTH",
+                "YOUTH WING",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "15408520055907323701",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Аш-Шабааб",
+              "fullName": "Аш-Шабааб",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Belarus State Security Agency List of Organizations and Individuals Involved in Terrorist Activities",
+              "programName": null,
+              "otherInformation": "Reference Info: Ссылка на веб-ресурс \"Специальные уведомления Интерпола \u2014 Совета Безопасности ООН\":  https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Entities\r\nBasis For Listing:Санкционный перечень Комитета Совета Безопасности ООН, учрежденный резолюциями 751 (1992)/1907.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHİDİN AL-SHABAAB MOVEMENT",
+                "MUJAHİDEEN YOUTH MOVEMENT",
+                "MUJAHİDİN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHİDİN",
+                "HİZBUL SHABAAB",
+                "HİSB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMİYA\nL YOUTH WİNG",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JİHAAD",
+                "THE UNİTY OF ISLAMİC YOUTH",
+                "HARAKAT AL - SHABAAB AL - MUJAAHİDİİN",
+                "HARAKATUL SHABAAB AL MUJAAHİDİİN",
+                "MUJAAHİDİİN YOUTH MOVEMENT",
+                "Аш-Шабааб"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "15408520055907323701",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Luxembourg Liste des Sanctions Financieres Internationales",
+              "programName": "SOM",
+              "otherInformation": "EU Reference Number: EU.3600.81 \r\nNumber Title: 2017/395 (OJ L60) \r\nEntry Into Force Date: 2017-03-08 \r\nRegulation Organisation Type: council \r\nRegulation Type: amendment \r\n",
+              "group": null,
+              "classification": "",
+              "links": [
+                "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab",
+                "Al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin Al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "MYM",
+                "Harakat Shabab Al-Mujahidin",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "Al-Shabaab Al-Islamiya",
+                "Youth Wing",
+                "Al-Shabaab Al-Islaam",
+                "Al-Shabaab Al-Jihaad",
+                "The Unity Of Islamic Youth",
+                "Harakat Al-Shabaab Al-Mujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement",
+                "Tineretul (The Youth)",
+                "Mișcarea Mujahidin Al-Shabaab",
+                "Mișcarea de tineret Mujahideen",
+                "Mișcarea de tineret Mujahidin",
+                "Aripa tânără (Youth Wing)",
+                "Unitatea tineretului islamic",
+                "Mișcarea de tineret Mujaahidiin"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "US Department of The Treasury OFAC SDN List",
+              "programName": "FTO SDGT SOMALIA ",
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.ecfr.gov/cgi-bin/text-idx?SID=5eae22affe2e3675b6deaa3fb796eb7a&amp;tpl=/ecfrbrowse/Title31/31cfr597_main_02.tpl",
+                "http://www.ecfr.gov/cgi-bin/text-idx?SID=5eae22affe2e3675b6deaa3fb796eb7a&amp;tpl=/ecfrbrowse/Title31/31cfr594_main_02.tpl",
+                "http://www.ecfr.gov/cgi-bin/text-idx?SID=5eae22affe2e3675b6deaa3fb796eb7a&amp;tpl=/ecfrbrowse/Title31/31cfr551_main_02.tpl"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL HIJRA",
+                "AL-HIJRA",
+                "AL-SHABAAB",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-JIHAAD",
+                "AL-SHABAB",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "HISB'UL SHABAAB",
+                "HIZBUL SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUSLIM YOUTH CENTER",
+                "MYC",
+                "MYM",
+                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER",
+                "PUMWANI MUSLIM YOUTH",
+                "SHABAAB",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "THE YOUTH",
+                "YOUTH WING"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Somalia"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "DFAT Australia Consolidated Sanctions List",
+              "programName": "1373 (2001)",
+              "otherInformation": "Al Shabaab, or \u201Cthe youth\u201D, was formed out of the militant wing of the former Somali Council of Islamic Courts. Its primary objective is the establishment of an Islamist state in the Horn of Africa based on Sharia law and the elimination of secular and foreign influence, including through violent means.",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab",
+                "Al-Shabaab al-Islamiya",
+                "Al-Shabaab al-Islamiya",
+                "Al-Shabaab al-Jihaad",
+                "Al-Shabab",
+                "Ash-Shabaab",
+                "Harakat al-Shabaab al-Mujahideen",
+                "Harakat Shabab al-Mujahidin",
+                "Harakatul Shabaab al-Mujahidiin",
+                "Hisb'ul Shabaab",
+                "Hizbul Shabaab",
+                "Mujaahidiin Youth Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin al Shabaab Movement",
+                "Mujahidin Youth Movement",
+                "Shabaab",
+                "The Popular Resistance Movement in the Land of the Two Migrations",
+                "The Unity of Islamic Youth",
+                "The Youth",
+                "Ugus",
+                "Young Mujahideen Movement in Somalia",
+                "Young Mujahideen Movement",
+                "Youth Wing"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "DFAT Australia Consolidated Sanctions List",
+              "programName": "751 (Somalia and Eritrea)",
+              "otherInformation": "Also listed by the Minister for Foreign Affairs on 21 August 2009 under section 15(1) of the Charter of the United Nations Act 1945 (CotUNA), pursuant to Australia's obligations under UNSC resolution 1373 (2001), see Consolidated List entry 1131.",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab",
+                "Al-Shabaab al-Islamiya",
+                "Mujahidin Youth Movement",
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Switzerland Sanction List - SECO",
+              "programName": "Ordinance of 13 May 2009 on measures against Somalia (SR 946.231.169.4), annex 1",
+              "otherInformation": "Justification: Al-Shabaab has engaged in acts that directly or indirectly threaten the peace, security, or stability of Somalia, including but not limited to acts that threaten the Djibouti Agreement of Aug 18, 2008, or the political process and acts that threaten the Transitional Federal Institutions (TFIs), the African Union Mission in Somalia (AMISOM), or other international peacekeeping operations related to Somalia.\r\nJustification: Al-Shabaab has also obstructed the delivery of humanitarian assistance to Somalia, or access to, or distribution of humanitarian assistance in Somalia.\r\nAccording to the Statement by the Chairman of the Security Council Committee established pursuant to resolution 751 (1992) concerning Somalia to the Security Council delivered on 29 Jul 2009, both Al-Shabaab and Hisb\u2019ul Islam publicly and repeatedly claimed responsibility for the attacks by their forces on the Transitional Federal Government (TFG) and AMISOM. Al-Shabaab had also claimed responsibility for the killing of TFG officials, and on 19 Jul 2009 had raided and shut down the field offices of UNOPS, UNDSS and UNDP in the Bay and Bakool regions, in violation of paragraph 8 (c) of resolution 1844 (2008). Al-Shabaab has also repeatedly obstructed access to, or distribution of humanitarian assistance in Somalia.\r\nThe United Nations Security Council\u2019s Report of the Secretary-General on the situation in Somalia, dated 20 Jul 2009, contained the following paragraphs involving the activities of al-Shabaab in Somalia: Insurgent groups, such as Al-Shabaab, are alleged to be extorting money from private companies and recruiting young people to join the fight against the Government in Mogadishu, including child soldiers. Al-Shabaab has confirmed the presence of foreign fighters within its ranks and has stated openly that it is working with Al-Qaeda in Mogadishu to remove the Government of Somalia. The foreign fighters, many of whom reportedly originate from Pakistan and Afghanistan, appear to be well trained and battle-tested. They have been observed wearing hoods and directing offensive operations against Government forces in Mogadishu and neighbouring regions. Al-Shabaab has intensified its strategy to coerce and intimidate the Somali population, as reflected in the carefully selected high gain assassinations and arrests of clan elders, several of whom have been murdered. On 19 Jun 2009, Omar Hashi Aden, the Minister of National Security, was killed in a large-scale suicide car bomb in Beletwyne. Over 30 other people were killed in the attack, which was strongly condemned by the international community and a broad cross-section of Somali society.\r\nAccording to the Dec 2008 report from the UN Security Council Somalia Monitoring Group (2008/769), Al-Shabaab is responsible for a variety of attacks within Somalia over the last several years, including: the reported killing and beheading of a Somali driver working for the World Food Programme in Sep 2008, the bombing of a market in Puntland that killed 20 and wounded over 100 on 6 Feb 2008, a campaign of bombings and targeted killings in Somaliland intended to disrupt the 2006 parliamentary elections and the murders of several foreign aid workers in 2003 and 2004.\r\nAccording to reporting, Al-Shabaab raided United Nations compounds in Somalia on 20 Jul 2009, and issued a decree banning three agencies of the United Nations from the Al-Shabaab controlled areas of Somalia. Additionally, Somali Transitional Federal Government forces fought Al-Shabaab and Hizbul Islam insurgents from 11-12 Jul 2009 resulting in the deaths of over 60 people. In the fighting on 11 Jul 2009, Al-Shabaab landed four mortars inside Villa Somalia that resulted in the deaths of three African Union Mission to Somalia (AMISOM) soldiers and injuries to eight others.\r\nAccording to an article published by the British Broadcasting Corporation on 22 Feb 2009, Al-Shabaab claimed responsibility for a suicide car bomb attack on an African Union military base in Mogadishu. According to the article, the African Union confirmed that 11 African Union peacekeepers were killed and 15 others were hurt.\r\nAccording to an article published by Reuters on 14 Jul 2009, Al-Shabaab militants made gains in 2009 in guerrilla-style attacks on Somali and African Union forces.\r\nAccording to an article published by Voice of America on 10 Jul 2009, Al-Shabaab was involved in an attack on Somali government forces in May 2009. According to an article posted on the website of the Council on Foreign Relations authored on 27 Feb 2009, Al-Shabaab has waged an insurgency against Somalia\u2019s transitional government and its Ethiopian supporters since 2006. Al-Shabaab killed eleven Burundian soldiers in the deadliest attack on AU peacekeepers since their deployment and states that Al-Shabaab engaged in heavy fighting that killed at least fifteen people in Mogadishu.\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab",
+                "Al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin Al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "Mym",
+                "Harakat Shabab Al-Mujahidin",
+                "Hizbul Shabaab",
+                "Hisb\u2019ul Shabaab",
+                "Al-Shabaab Al-Islamiya",
+                "Youth Wing",
+                "Al-Shabaab Al-Islaam",
+                "Al-Shabaab Al-Jihaad",
+                "The Unity of Islamic Youth",
+                "Harakat Al-Shabaab Al-Mujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Somalia"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al Shabaab",
+              "fullName": "Al Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Office of the Superintendent of Financial Institutions Person List ",
+              "programName": null,
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al Shabaab",
+                "Harakat Shabaab al-Mujahidin",
+                "al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin al Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "MYM",
+                "Mujahidin Youth",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "al-Shabaab al-Islamiya",
+                "Youth Wing",
+                "al Shabaab al-Islaam",
+                "al-Shabaab al-Jihad",
+                "The Unity of Islamic Youth",
+                "the Popular Resistance Movement in the Land of the Two Migrations",
+                "Al Chabaab",
+                "Harakat Shabaab Al-Moudjahidine",
+                "Al Chabab",
+                "Chabaab",
+                "la Jeunesse",
+                "Mouvement des moudjahidin al-Shabab",
+                "Mouvement de la jeunesse moudjahidin",
+                "MJM",
+                "Jeunes moudjahidin",
+                "Aile jeunesse",
+                "l'Union de la jeunesse islamique",
+                "le Mouvement populaire de résistance dans la terre des deux migrations"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL SHABAAB",
+              "fullName": "AL SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Public Safety Canada List",
+              "programName": null,
+              "otherInformation": "Al Shabaab is an organized but shifting Islamist group dedicated to establishing a Somali caliphate, waging war against the enemies of Islam, and removing all foreign forces and Western influence from Somalia. It is currently the strongest, best organized, financed and armed military group in Somalia, controlling the largest stretch of territory in southern Somalia. Al Shabaab has carried out suicide bombings and attacks using land mines and remote-controlled roadside bombs, as well as targeted assassinations against Ethiopian and Somali security forces, other government officials, journalists, and civil society leaders. It has also carried out suicide bombings in Uganda in retaliation for the presence of Ugandan peacekeeping forces in Somalia. In October 2017, Al Shabaab detonated two vehicle-borne improvised explosive devices in Mogadishu, killing 512 people and injuring 312 others. More recently, on December 28, 2019, Al Shabaab claimed responsibility for a bombing at a busy intersection on the outskirts of Mogadishu, Somalia, killing at least 78 people and injuring at least 51 people. The group is believed to be closely linked with Al Qaida and formally pledged allegiance to Usama bin Laden and his terrorist network.",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL SHABAAB",
+                "Harakat Shabaab al Mujahidin",
+                "al Shabab",
+                "Shabaab",
+                "the Youth",
+                "Mujahidin al Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "MYM",
+                "Mujahidin Youth",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "al-Shabaab al-Islamiya",
+                "Youth Wing",
+                "al Shabaab al-Islaam",
+                "al-Shabaab al-Jihad",
+                "the Unity of Islamic Youth",
+                "the Popular Resistance Movement in the Land of the Two Migrations"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB ",
+              "fullName": "AL-SHABAAB ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: LTJZNJ1L9RV4 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER",
+                "AL-SHABAAB ",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "SHABAAB",
+                "PUMWANI MUSLIM YOUTH",
+                "MUJAAHIDIIN YOUTH MOVEMENT"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "SOM"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB AL-ISLAAM ",
+              "fullName": "AL-SHABAAB AL-ISLAAM ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: YM3YQJ69WFA3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAAB AL-ISLAAM ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB AL-ISLAMIYA ",
+              "fullName": "AL-SHABAAB AL-ISLAMIYA ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: J93UAYTJA9H7 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAAB AL-ISLAMIYA ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB AL-JIHAAD ",
+              "fullName": "AL-SHABAAB AL-JIHAAD ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: FTRHJPS49K16 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAAB AL-JIHAAD ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAB ",
+              "fullName": "AL-SHABAB ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: UM67FWGQWBJ3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAB ",
+                "AL-SHABAAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN ",
+              "fullName": "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: E9NMRJMF7QM5 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "HARAKAT SHABAB AL-MUJAHIDIN ",
+              "fullName": "HARAKAT SHABAB AL-MUJAHIDIN ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: VJ9XMBTF6AJ6 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "HARAKATUL-SHABAAB AL MUJAAHIDIIN ",
+              "fullName": "HARAKATUL-SHABAAB AL MUJAAHIDIIN ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: NDCYKFXEK7L4 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "SHABAAB",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "HISB'UL SHABAAB ",
+              "fullName": "HISB'UL SHABAAB ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: DZFYSBC5LN78 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "HISB'UL SHABAAB ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "HIZBUL SHABAAB ",
+              "fullName": "HIZBUL SHABAAB ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: W3DQJQYZVRN9 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "HIZBUL SHABAAB ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "United Nations Sanctions (UN)",
+              "programName": "Somalia",
+              "otherInformation": "INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": ""
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "New Zealand Police Designated Terrorists List",
+              "programName": null,
+              "otherInformation": "Country: Somalia \r\nDATE OF ORIGINAL DESIGNATION: 10.02.2010 00:00:00 \r\nDATE/S DESIGNATION RENEWED: 11/02/2013\n02/02/2016\n30/01/2019 14/12/2021 \r\nDATE OF DESIGNATION EXPIRATION UNLESS RENEWED OR REVOKED PRIOR: 14.12.2024 00:00:00 \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Young Mujahideen Movement in Somalia",
+                "Young Mujahideen Movement",
+                "Shabaab al-Mujahideen Movement",
+                "Mujahidin Youth Movement",
+                "Harakat al-Shabaab al-Mujahideen",
+                "Al-Shabaab al-Islamiya",
+                "Al-Shabaab"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Somalia \r\n"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "MUJAAHIDIIN YOUTH MOVEMENT ",
+              "fullName": "MUJAAHIDIIN YOUTH MOVEMENT ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: CJ3FPJMA9R69 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "MUJAHIDEEN YOUTH MOVEMENT ",
+              "fullName": "MUJAHIDEEN YOUTH MOVEMENT ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: T19CQQF22PM3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "MUJAHIDIN AL-SHABAAB MOVEMENT ",
+              "fullName": "MUJAHIDIN AL-SHABAAB MOVEMENT ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: LUUUJN91H244 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "MUJAHIDIN YOUTH MOVEMENT ",
+              "fullName": "MUJAHIDIN YOUTH MOVEMENT ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: Q9FBMSYXDYD3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "SHABAAB",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "USA"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "PUMWANI ISLAMIST MUSLIM YOUTH CENTER ",
+              "fullName": "PUMWANI ISLAMIST MUSLIM YOUTH CENTER ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: HFAYF3MYX7G9 \r\nExcluding Agency: TREAS-OFAC \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nActive Date: 03/19/2008 \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER "
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "PUMWANI MUSLIM YOUTH ",
+              "fullName": "PUMWANI MUSLIM YOUTH ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: K2LHCZTFS8V8 \r\nExcluding Agency: TREAS-OFAC \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nActive Date: 03/19/2008 \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "PUMWANI MUSLIM YOUTH "
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "SHABAAB ",
+              "fullName": "SHABAAB ",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Sam Exclusions List",
+              "programName": "Reciprocal",
+              "otherInformation": "DUNS: KUABVWKDU8U3 \r\nExcluding Agency: TREAS-OFAC \r\nCT Code: 03-FTO-01 \r\nExclusion Type: Prohibition/Restriction \r\nAdditional Comments: PII data has been masked from view \r\nTermination Date: Indefinite \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "SHABAAB ",
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "XUN"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al Shabaab",
+              "fullName": "Al Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "UK Proscribed Terrorist Organisations",
+              "programName": null,
+              "otherInformation": "\r\n\n\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al Shabaab"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "UK HM Treasury Office of Financial Sanctions Implementation Sanction List",
+              "programName": "Somalia",
+              "otherInformation": "Additional Info: (UK Sanctions List Ref):SOM0001. (UN Ref):SOe.001. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/une/5775567 UK Sanctions List Date Designated: 12/04/2010",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL - MUJAAHIDIIN",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "HISB'UL SHABAAB",
+                "HIZBUL SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MYM",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "SHABAAB",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "THE YOUTH",
+                "YOUTH WING"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Somalia"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "US DoS - Country Reports on Terrorism",
+              "programName": null,
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.state.gov/reports/country-reports-on-terrorism-2018/#AS"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AS",
+                "The Harakat Shabaab al-Mujahidin",
+                "al-Shabab",
+                "Shabaab",
+                "the Youth",
+                "Mujahidin al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "al-Hijra, Al Hijra, Muslim Youth Center, MYC, Pumwani Muslim Youth, Pumwani Islamist Muslim Youth Center",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "Argentina Ministry of Foreign Affairs and UN Sanctions",
+              "programName": null,
+              "otherInformation": "Otros datos: INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Hong Kong Special Administrative Region Sanctions under the UN Sanctions Ordinance",
+              "programName": "Somalia",
+              "otherInformation": "INTERPOL-UN Security Council Special Notice web link:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": ""
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Financial Monitoring Service of the Republic of Azerbaijan ",
+              "programName": null,
+              "otherInformation": null,
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://www.hms.gov.az/frq-content/nov_snk_v1/INTERNATIONAL22.xml"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAB",
+                "SHABAAB",
+                "THE YOUTH",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB\u2019UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Monaco Economic Sanctions",
+              "programName": null,
+              "otherInformation": "Sanction Regime:ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010 Monaco Sanction Id: 90452 Reason: Les Chabab (Al-Shabaab) se livrent à des actes qui menacent directement ou indirectement la paix, la sécurité ou la stabilité de la Somalie, notamment mais sans s'y limiter : des actes qui mettent en péril l'accord de Djibouti du 18 août 2008 ou le processus politique - Des actes qui menacent les Institutions fédérales de transition, la Mission de l'Union africaine en Somalie (AMISOM) ou d'autres opérations internationales de maintien de la paix liées à la Somalie. Les Chabab font également obstacle à l'acheminement de l'aide humanitaire destinée à la Somalie, à l'accès à cette aide ou à sa distribution en Somalie Legal Basis: (UE) 2017/395 du 07/03/2017,\n(UE) 356/2010 du 26/04/2010,\n(UE) 956/2011 du 26/09/2011,\nDécision du comité des sanctions des Nations Unies du 12/04/2010 Monaco Legal Basis:DM 2021-01 du 04/06/2021 ",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://geldefonds.gouv.mc/liste-nationale-de-gel-des-fonds"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin Al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "MYM",
+                "Harakat Shabab Al-Mujahidin",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "Al-Shabaab Al-Islamiya",
+                "Youth Wing",
+                "Al-Shabaab Al-Islaam",
+                "Al-Shabaab Al-Jihaad",
+                "The Unity Of Islamic Youth",
+                "Harakat Al-Shabaab Al-Mujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement",
+                "Al-Shabaab"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AlShabab",
+              "fullName": "AlShabab",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Belgium Federal Public Service Finance National and European Sanctions",
+              "programName": null,
+              "otherInformation": "(Date of UN designation: 2010-04-12)\\n(Location: Somalia.)\r\nEmbargoes: SOM\r\nRegulation: 2017/395 (OJ L60)\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R0395&from=EN"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Mujahidin AlShabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "MYM",
+                "Harakat Shabab AlMujahidin",
+                "Hizbul Shabaab",
+                "Hisbul Shabaab",
+                "AlShabaab AlIslamiya",
+                "AlShabaab AlIslaam",
+                "AlShabaab AlJihaad",
+                "The Unity Of Islamic Youth",
+                "Harakat AlShabaab AlMujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement",
+                "Tineretul The Youth",
+                "Mișcarea Mujahidin AlShabaab",
+                "Mișcarea de tineret Mujahideen",
+                "Mișcarea de tineret Mujahidin",
+                "Aripa tânără Youth Wing",
+                "Unitatea tineretului islamic",
+                "Mișcarea de tineret Mujaahidiin",
+                "AlShabab"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "UK FCDO Sanctions List",
+              "programName": null,
+              "otherInformation": "Regime Name: The Somalia (Sanctions) (EU Exit) Regulations 2020 \r\nDesignation Source: UN \r\nSanctions Imposed: Asset freeze \r\nLast Update Date: 14/01/2022 \r\nInfo: INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/une/5775567 \r\nAsset Freeze: YesArms Embargo: NoTargeted Arms Embargo: NoChartering Of Ships: NoClosure Of Representative Offices: NoCrew Servicing Of Ships And Aircraft: NoDeflag: NoPrevention Of Business Arrangements: NoProhibition Of Port Entry: NoTravel Ban: NoPrevention Of Chartering Of Ships: NoPrevention Of Chartering Of Ships And Aircraft: NoTechnical Assistance Related To Aircraft: No",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://www.gov.uk/government/publications/the-uk-sanctions-list"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "AL-SHABAAB AL-JIHAAD",
+                "HARAKAT AL-SHABAAB AL - MUJAAHIDIIN",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HARAKATUL SHABAAB AL MUJAAHIDIIN",
+                "HISB'UL SHABAAB",
+                "HIZBUL SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT (MYM)",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MYM",
+                "SHABAAB",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "THE YOUTH",
+                "YOUTH WING",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": "Somalia"
+                }
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "5160328903846423538",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "Al-Shabaab",
+              "fullName": "Al-Shabaab",
+              "nationality": null,
+              "type": "WATCHLIST",
+              "sourceName": "US Rewards for Justice Most Wanted",
+              "programName": null,
+              "otherInformation": "Information: Al-Shabaab is an al-Qa\u2019ida (AQ) affiliate and has ties to other AQ affiliates, including AQ in the Arabian Peninsula and AQ in the Islamic Maghreb. Al-Shabaab was the militant wing of the former Somali Islamic Courts Council that took over parts of southern Somalia during the second half of 2006. Since the end of 2006, al-Shabaab and associated militias have engaged in violent insurgency using guerrilla warfare and terrorist tactics against the transitional governments of Somalia.Al-Shabaab has conducted attacks in Somalia, Kenya, Uganda, and Djibouti. Al-Shabaab was responsible for the July 11, 2010 suicide bombings in Kampala. The attack, which took place during the World Cup, killed 76 people, including a U.S. citizen. In September 2013, al-Shabaab staged a significant attack against the Westgate Mall in Nairobi. The multi-day siege resulted in the deaths of at least 65 civilians, as well as six soldiers and police officers and hundreds of others were injured. In April 2015, al-Shabaab carried out a raid with small arms and grenades on Kenya\u2019s Garissa University College that killed 148 people.On March 18, 2008, the U.S. Department of State designated al-Shabaab as a Foreign Terrorist Organization under section 219 of the Immigration and Nationality Act, as amended. Later, on March 19, 2008, the Department of State designated al-Shabaab as a Specially Designated Global Terrorist pursuant to Executive Order 13224, as amended. As a result, all of al-Shabaab\u2019s property, and interests in property, subject to U.S. jurisdiction are blocked, and U.S. persons are generally prohibited from engaging in any transactions with al-Shabaab. It is a crime to knowingly provide, or to attempt or conspire to provide, material support or resources to al-Shabaab. \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://rewardsforjustice.net/rewards/al-shabaab/"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabaab"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "734849964522007972",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Trésor Direction Générale Economic Sanctions List",
+              "programName": null,
+              "otherInformation": "Reason: Les Chabab (Al-Shabaab) se livrent à des actes qui menacent directement ou indirectement la paix, la sécurité ou la stabilité de la Somalie, notamment mais sans s'y limiter : des actes qui mettent en péril l'accord de Djibouti du 18 août 2008 ou le processus politique - Des actes qui menacent les Institutions fédérales de transition, la Mission de l'Union africaine en Somalie (AMISOM) ou d'autres opérations internationales de maintien de la paix liées à la Somalie. Les Chabab font également obstacle à l'acheminement de l'aide humanitaire destinée à la Somalie, à l'accès à cette aide ou à sa distribution en Somalie Legal basis: 118 (UE) 2017/395 du 07/03/2017 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 113 (UE) 356/2010 du 26/04/2010 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 114 (UE) 956/2011 du 26/09/2011 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n Legal basis: 237 Décision du comité des sanctions des Nations Unies du 12/04/2010 (ONU Somalie - RCSNU 751 (1992) et R (UE) 356/2010)\r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "Al-Shabab",
+                "Shabaab",
+                "The Youth",
+                "Mujahidin Al-Shabaab Movement",
+                "Mujahideen Youth Movement",
+                "Mujahidin Youth Movement",
+                "MYM",
+                "Harakat Shabab Al-Mujahidin",
+                "Hizbul Shabaab",
+                "Hisb'ul Shabaab",
+                "Al-Shabaab Al-Islamiya",
+                "Youth Wing",
+                "Al-Shabaab Al-Islaam",
+                "Al-Shabaab Al-Jihaad",
+                "The Unity Of Islamic Youth",
+                "Harakat Al-Shabaab Al-Mujaahidiin",
+                "Harakatul Shabaab Al Mujaahidiin",
+                "Mujaahidiin Youth Movement",
+                "AL-SHABAAB"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+              ]
+            },
+            {
+              "entityType": "Corporate",
+              "profileId": "2ac8248e-04fe-4697-96a3-5649c54d1816",
+              "matchScore": 100,
+              "firstName": null,
+              "middleName": null,
+              "lastName": "AL-SHABAAB",
+              "fullName": "AL-SHABAAB",
+              "nationality": null,
+              "type": "SANCTION",
+              "sourceName": "Department of State Nonproliferation Sanctions List",
+              "programName": "FTO  SDGT  SOMALIA",
+              "otherInformation": "Data Source: Specially Designated Nationals (SDN) - Treasury Department \r\n",
+              "group": null,
+              "classification": null,
+              "links": [
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+                "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists"
+              ],
+              "summary": null,
+              "mediaAdversary": [
+              ],
+              "otherPossibleNames": [
+                "AL-SHABAAB",
+                "THE YOUTH",
+                "AL-SHABAB",
+                "MUJAHIDIN AL-SHABAAB MOVEMENT",
+                "MUJAHIDIN YOUTH MOVEMENT",
+                "MUJAHIDEEN YOUTH MOVEMENT",
+                "MYM",
+                "HARAKAT SHABAB AL-MUJAHIDIN",
+                "HIZBUL SHABAAB",
+                "HISB'UL SHABAAB",
+                "AL-SHABAAB AL-ISLAMIYA",
+                "YOUTH WING",
+                "AL-SHABAAB AL-ISLAAM",
+                "AL-SHABAAB AL-JIHAAD",
+                "THE UNITY OF ISLAMIC YOUTH",
+                "HARAKAT AL-SHABAAB AL-MUJAAHIDIIN",
+                "HARAKATUL-SHABAAB AL MUJAAHIDIIN",
+                "SHABAAB",
+                "MUJAAHIDIIN YOUTH MOVEMENT",
+                "AL-HIJRA",
+                "AL HIJRA",
+                "MUSLIM YOUTH CENTER",
+                "MYC",
+                "PUMWANI MUSLIM YOUTH",
+                "PUMWANI ISLAMIST MUSLIM YOUTH CENTER"
+              ],
+              "otherPossibleDob": [
+              ],
+              "possibleAddresses": [
+                {
+                  "zipCode": null,
+                  "city": null,
+                  "country": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "025a997f-38fa-4a1a-b341-5fa3b2b263d3",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "THE UNITY OF ISLAMIC YOUTH",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
+    },
+    "errors": [
+    ]
+  }
+}

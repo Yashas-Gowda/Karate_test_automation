@@ -1,0 +1,22 @@
+{
+  "request":{
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "641426418",
+      "firstName": 123,
+      "middleName": "michel",
+      "lastName": "supiot",
+      "dateOfBirth": "1963-05-28",
+      "streetNumber": "319",
+      "streetName": "Impasse du Bois de Cathou",
+      "city": "Saint-Maurice-en-Gourgois",
+      "postalCode": "42240"
+    }
+  } ,
+  "response":
+}

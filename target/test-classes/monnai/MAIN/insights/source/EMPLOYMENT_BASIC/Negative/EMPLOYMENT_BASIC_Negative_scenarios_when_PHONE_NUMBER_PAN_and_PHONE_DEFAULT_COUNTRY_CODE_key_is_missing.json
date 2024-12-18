@@ -1,0 +1,32 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "83cc1610-c7a7-4c07-9556-23c7ac541f74",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_BASIC",
+        "message": "Missing phone default country code",
+        "code": "MISSING_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "EMPLOYMENT_BASIC",
+        "message": "Either phoneNumber or pan is required",
+        "code": "EITHER_PHONE_NUMBER_OR_PAN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "",
+    "address": {
+      "addressLine1": "Sungai Cibuni, QRRX+M4M, RT.1/RW.5, Ps. Manggis, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10310, Indonesia",
+      "addressLine2": null,
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": null,
+      "state": null,
+      "postalCode": null,
+      "country": "INDONESIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_sep_10_a_3",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "Sungai Cibuni, QRRX+M4M, RT.1/RW.5, Ps. Manggis, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10310, Indonesia",
+        "addressLine2": null,
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": null,
+        "state": null,
+        "postalCode": null,
+        "country": "INDONESIA"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

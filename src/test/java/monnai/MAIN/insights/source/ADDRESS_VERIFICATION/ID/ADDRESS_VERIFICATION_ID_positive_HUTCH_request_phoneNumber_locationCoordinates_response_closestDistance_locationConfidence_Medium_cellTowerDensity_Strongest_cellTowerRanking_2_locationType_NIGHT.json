@@ -1,0 +1,24 @@
+{
+  "request": {
+    "phoneNumber": "6289669522652",
+    "phoneDefaultCountryCode": "ID",
+    "cleansingFlag": true,
+    "locationCoordinates": {
+      "latitude": "-4.68803725151329",
+      "longitude": "121.65185275156333"
+    },
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response": {
+    "ATTRIBUTES": {
+      "closestDistance": 1651.137473,
+      "confidenceBucket": "Medium",
+      "frequencyRanking": 2,
+      "locationType": "NIGHT",
+      "towerDensity": "Strongest"
+    }
+  }
+}

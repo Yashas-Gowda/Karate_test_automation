@@ -1,0 +1,28 @@
+{
+  "request":{
+
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  } ,
+  "response":{
+    "data": null,
+    "meta": {
+      "referenceId": "UI-80383817c48b430127d0c6a89f0ac874dc5cfd01",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "PHONE_BASIC",
+        "message": "PhoneNumber cannot be blank/null",
+        "code": "MISSING_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

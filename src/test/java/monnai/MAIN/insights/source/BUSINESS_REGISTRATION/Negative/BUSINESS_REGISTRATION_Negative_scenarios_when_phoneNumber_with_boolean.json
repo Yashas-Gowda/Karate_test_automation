@@ -1,0 +1,34 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "phoneNumber": true,
+    "id": "UDYAM-KR-22-0065578",
+    "type": "UDYAM_STATUS",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "BUSINESS_REGISTRATION"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "true",
+      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
+      "inputId": "UDYAM-KR-22-0065578",
+      "requestedPackages": [
+        "BUSINESS_REGISTRATION"
+      ],
+      "inputType": "UDYAM_STATUS",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "BUSINESS_REGISTRATION",
+        "message": "Invalid Phone Number",
+        "code": "INVALID_PHONE_NUMBER",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

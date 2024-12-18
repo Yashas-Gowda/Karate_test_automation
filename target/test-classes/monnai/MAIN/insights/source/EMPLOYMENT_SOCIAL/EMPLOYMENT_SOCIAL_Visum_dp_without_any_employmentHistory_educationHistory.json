@@ -1,0 +1,43 @@
+{
+  "request": {
+    "email": "eswarappam5929@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_SOCIAL"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "social": {},
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_20_fido_1",
+      "inputEmail": "eswarappam5929@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "request":{
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_LOGIN",
+    "cleansingFlag": true,
+    "phoneNumber": "9619620539",
+    "fullName": "Manisha Timori",
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": null,
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9619620539",
+      "cleansedPhoneNumber": "+919619620539",
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ],
+      "inputFullName": "Manisha Timori"
+    },
+    "errors": []
+  }
+}

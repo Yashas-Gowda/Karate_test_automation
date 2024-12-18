@@ -1,0 +1,70 @@
+{
+  "request":{
+    "email": "dnagalinges.ft@gmail.com",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": false,
+    "packages": [
+      "EMPLOYMENT_DETAILS"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": null,
+        "details": {
+          "pfBasic": null,
+          "pfAdvanced": null,
+          "social": {
+            "summary": {
+              "name": "Nagalinges waran. D",
+              "linkedinHeadline": "Quality Department Specialist at Shahi Exports Pvt Ltd",
+              "location": "Bengaluru, Karnataka, India",
+              "employerName": "Shahi Exports Pvt Ltd",
+              "linkedinUrl": "https://linkedin.com/in/nagalinges-waran-d-865b15208",
+              "photoUrl": "https://media.licdn.com/dms/image/C4D03AQEhCJ22Oq5STg/profile-displayphoto-shrink_800_800/0/1615403163889?e=1712793600&v=beta&t=NEz-K3pMPL5oAiG9KYDtfXozS3k27Od3IRzD0ykCtSw",
+              "employmentHistoryCount": 1,
+              "educationHistoryCount": 0
+            },
+            "employmentHistory": [
+              {
+                "employeeDesignation": "Quality Department Specialist",
+                "employerName": "Shahi Exports Pvt Ltd ",
+                "employerLocation": null,
+                "dateOfJoining": null,
+                "dateOfExit": null,
+                "employerLogo": "https://media.licdn.com/dms/image/C4E0BAQETGoOIvw9YVw/company-logo_200_200/0/1639114672405/shahi_exports_pvt_ltd_logo?e=1715212800&v=beta&t=JdE3uxu5MpziG3h5wfuXLLm735rjQd8M2eSOomtoleQ",
+                "employerLinkedinUrl": "https://www.linkedin.com/company/129585/"
+              }
+            ],
+            "educationHistory": [],
+            "recentActivity": null
+          }
+        }
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "inputEmail": "dnagalinges.ft@gmail.com",
+      "requestedPackages": [
+        "EMPLOYMENT_DETAILS"
+      ]
+    },
+    "errors": []
+  }
+}
