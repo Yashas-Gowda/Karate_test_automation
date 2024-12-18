@@ -120,27 +120,29 @@ function fn() {
 
 
   // 14-dec-2023 -> Disabled Production regression.
-              case "app":
-                  config.requestUrl = "https://app.monnai.com";
-                  config.authUrl ="https://auth.monnai.com";
-                  break;
-              case "app-sg":
-                  config.requestUrl = "https://app-sg.monnai.com";
-                  config.authUrl ="https://auth-sg.monnai.com";
-                  break;
-              case "app-id":
-                  config.requestUrl = "https://app-id.monnai.com";
-                  config.authUrl ="https://auth-sg.monnai.com";
-                  break;
-              case "app-us":
-                  config.requestUrl = "https://app-us.monnai.com";
-                  config.authUrl ="https://auth-us.monnai.com";
-                  break;
+//              case "app":
+//                  config.requestUrl = "https://app.monnai.com";
+//                  config.authUrl ="https://auth.monnai.com";
+//                  break;
+//              case "app-sg":
+//                  config.requestUrl = "https://app-sg.monnai.com";
+//                  config.authUrl ="https://auth-sg.monnai.com";
+//                  break;
+//              case "app-id":
+//                  config.requestUrl = "https://app-id.monnai.com";
+//                  config.authUrl ="https://auth-sg.monnai.com";
+//                  break;
+//              case "app-us":
+//                  config.requestUrl = "https://app-us.monnai.com";
+//                  config.authUrl ="https://auth-us.monnai.com";
+//                  break;
 
               default:
-                  config.requestUrl = "https://default.monnai.com";
-                  config.headers.Authorization = "Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfU1A4VzhubnNQIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiNXA3dWtuaGdhMGpmb2FoaTk4bDA2aWM4YW0iLCJvcmlnaW5fanRpIjoiYmI3YzVjNTktNTA1OS00NGJlLTlhOTEtYWE0NmNiNzIxNGExIiwiZXZlbnRfaWQiOiJjOWU1MDJlZS1hMGE4LTQyZTQtYTk4Ni0xMDM5NWNkN2Y5YzgiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6InBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjk1ODQyMjE2LCJleHAiOjE2OTU5Mjg2MTYsImlhdCI6MTY5NTg0MjIxNywianRpIjoiYmJmYzRlNzEtMmUzYS00ODA0LWJkMzYtOTVjMDM4ODE5MmQxIiwidXNlcm5hbWUiOiI1MDgyNDJlNS02YjE2LTRmOTYtYWU0NS01ZTM1NmY4MDI4MWUifQ.nS7rUPm98CAyWzOR_w2z-pcn3JP3kLMwNIdL5cJewzjtsamB4obpCFG6KQ2WZU7A58veonBcuPcotwNEYxvO0HQu-HCugsBzrtCpaJiqnxjaAnsQ0B_TdwQFq0mXkQKVfj-eLivc1AZt5XTJ6ey0ZNeylPEwSrq9OKJF6Gu9Nwg_YQo96Bq5pn03PGF0SmX5OLYr_qqn9HPGlv1kkQUdpnxu4W_Ajms7O0V6VLNpEiXF5_AjvffCC-k7wR-oFcdp9JGKD3vk9EX6BxEahbd4DeCf1wCrUTL4d9WLFZnrmkno-OxF9qqjLwd2eI1y_rEWWNTquUkACGgoGUKBEEjTHA";
-                  break;
+                    config.requestUrl = "https://test.monnai.com";
+                    config.authUrl = "https://test-auth.monnai.com";
+                    config.email_custom_tenant = 'test-custom_email_basic';
+                    config.fidoV1_social = 'test-fido';
+                    break;
           }
   //      karate.configure('connectTimeout', 5000);
   //      karate.configure('readTimeout', 5000);
