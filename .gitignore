@@ -56,3 +56,8 @@ Thumbs.db
 *.wmv
 
 target_oct27
+
+/target
+
+.idea
+.allure
