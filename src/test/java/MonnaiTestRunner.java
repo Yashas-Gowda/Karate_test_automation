@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MonnaiTestRunner {
 
     @Test
-    void auth_Token() throws InterruptedException {
+    void auth_Token() {
         Results results = Runner.path("classpath:monnai/Auth_Token_Generation.feature")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
