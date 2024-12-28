@@ -14,9 +14,9 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Test_Env_Insights:
       - step:
@@ -25,9 +25,9 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Test_Env_Verification:
       - step:
@@ -36,9 +36,9 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Release_Env_Insights_Verification:
       - step:
@@ -49,7 +49,7 @@ pipelines:
             - echo "Running Karate tests - Release_Env_Insights_Verification"
             - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Release_Env_Insights:
       - step:
@@ -60,7 +60,7 @@ pipelines:
             - echo "Running Karate tests - Release_Env_Insights"
             - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Release_Env_Verification:
       - step:
@@ -72,7 +72,7 @@ pipelines:
             - echo "Running Karate tests - Release_Env_Verification"
             - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Dev_Env_Insights_Verification:
       - step:
@@ -83,7 +83,7 @@ pipelines:
             - echo "Running Karate tests - Dev_Env_Insights_Verification"
             - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Dev_Env_Insights:
       - step:
@@ -94,7 +94,7 @@ pipelines:
             - echo "Running Karate tests - Dev_Env_Insights"
             - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Dev_Env_Verification:
       - step:
@@ -105,7 +105,7 @@ pipelines:
             - echo "Running Karate tests - Dev_Env_Verification"
             - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
     Test_Env_authGen:
       - step:
@@ -126,7 +126,7 @@ pipelines:
             - echo "Running Karate tests - Release_Env_authGen"
             - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
           artifacts:
-            - karate-reports/**
+            - target/karate-reports/**
 
 
 
