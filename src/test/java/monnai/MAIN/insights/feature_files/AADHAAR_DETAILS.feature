@@ -20,7 +20,6 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -58,7 +57,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -93,7 +92,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -131,7 +130,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -170,7 +169,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -209,7 +208,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -245,7 +244,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -281,7 +280,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers

@@ -1,8 +1,0 @@
-{
-  "app_client_name": "Yashas_APP_Testing_Tenant@tenant_01HWYKGE3VFE7JP3MCFNXTPPCJ",
-  "client_id": "4m4febujh2gpef174s8p36tp2j",
-  "client_secret": "1sj54bord9jqhi5mmubddul8jfef1gogil23resmde133qa1qtas",
-  "grant_type": "client_credentials",
-  "scope": "insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
-  "issue": "non"
-}

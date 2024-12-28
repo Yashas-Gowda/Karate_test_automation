@@ -7,15 +7,106 @@ image: maven:3.8.5-openjdk-17
 
 pipelines:
   custom:
-    Run_sample_karate_file:
+    Test_Env_Insights_Verification:
       - step:
           name: Run Karate Tests
           caches:
             - maven
           script:
-            # Install Maven
-            - echo "Running Karate tests..."
-            - mvn clean test -Dtest=MonnaiTestRunner#auth_Token
+            - echo "Running Karate tests - Test_Env_Insights_Verification"
+            - mvn clean test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner
           artifacts:
-            - target/karate-reports/**
+            - karate-reports/**
+
+    Test_Env_Insights:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_Insights"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
+          artifacts:
+            - karate-reports/**
+
+    Test_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+          artifacts:
+            - karate-reports/**
+
+    Release_Env_Insights_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Insights_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
+          artifacts:
+            - karate-reports/**
+
+    Release_Env_Insights:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Insights"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
+          artifacts:
+            - karate-reports/**
+
+    Release_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            script:
+            - echo "Running Karate tests - Release_Env_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+          artifacts:
+            - karate-reports/**
+
+    Dev_Env_Insights_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Insights_Verification"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
+          artifacts:
+            - karate-reports/**
+
+    Dev_Env_Insights:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Insights"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
+          artifacts:
+            - karate-reports/**
+
+    Dev_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Verification"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+          artifacts:
+            - karate-reports/**
+
+
+
 
