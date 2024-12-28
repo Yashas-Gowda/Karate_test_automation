@@ -114,7 +114,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_authGen"
-            - mvn clean test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
           artifacts:
             - karate-reports/**
 
