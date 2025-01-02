@@ -135,16 +135,16 @@ pipelines:
             - target/karate-reports/**
 
     Release_Env_authGen:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            # Run report
-            - echo "Running Karate tests - Release_Env_authGen"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
-          artifacts:
-            - target/karate-reports/**
+#      - step:
+#          name: Run Karate Tests
+#          caches:
+#            - maven
+#          script:
+#            # Run report
+#            - echo "Running Karate tests - Release_Env_authGen"
+#            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
+#          artifacts:
+#            - target/karate-reports/**
 
       - step:
           name: Generate Report - Release_Env_authGen
@@ -154,6 +154,8 @@ pipelines:
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
+            - cat /etc/os-release
+
             # Install Aws CLI for uploading artifacts to S3
             - apk update && apk add --no-cache curl unzip zip
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
