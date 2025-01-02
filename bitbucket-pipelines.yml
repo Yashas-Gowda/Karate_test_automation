@@ -2,8 +2,10 @@
 # Use a skeleton to build, test and deploy using manual and parallel steps
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
+#
+#image: maven:3.8.5-openjdk-17
 
-image: maven:3.8.5-openjdk-17
+image: yashasgowdaem/custom-oraclelinux-maven
 
 pipelines:
   custom:
@@ -373,7 +375,6 @@ pipelines:
     Release_Env_authGen:
       - step:
           name: Run Karate Tests
-          image: oraclelinux:8
           caches:
             - maven
           script:
@@ -400,7 +401,7 @@ pipelines:
               # slack_alerts_qa_testing   - Slack_Url="https://hooks.slack.com/services/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"
             - Slack_Url="https://hooks.slack.com/services/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"
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
-             
+
           artifacts:
             - target/karate-reports/**
 
