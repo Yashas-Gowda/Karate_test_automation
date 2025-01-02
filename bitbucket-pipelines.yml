@@ -155,10 +155,11 @@ pipelines:
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
             # Install Aws CLI for uploading artifacts to S3
+            - echo "Installing AWS CLI..."
+            - apt-get update && apt-get install -y curl unzip
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-            - unzip awscliv2.zip && ./aws/install
-            - #apt-get update && apt-get install -y awscli
-            - rm -rf awscliv2.zip aws
+            - unzip awscliv2.zip
+            - sudo ./aws/install
             - aws --version
             # Generate Allure Report
             - echo "Generating Report."
