@@ -3,7 +3,7 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 
-image: maven:3.8.5-openjdk-17 ubuntu:latest
+image: maven:3.8.5-openjdk-17
 
 pipelines:
   custom:
@@ -163,9 +163,12 @@ pipelines:
             - aws --version
             # Generate Allure Report
             - echo "Generating Report."
-            # - allure generate allure-results --clean -o allure-report --single-file
-            - aws s3 cp target/karate-reports/** s3://autoreports_Karate/$DATE_TIME/
-            - Report_Url="https://autoreports_Karate.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/index.html"
+              # Upload to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/karate-summary.html s3://autokaratereport/karate-reports/report.html --acl public-read
+#            - aws s3 cp ${REPORT_DIR}/karate-summary.html s3://${S3_BUCKET_NAME}/${S3_REPORT_PATH} --acl public-read
+#            - aws s3 cp target/karate-reports/** s3://autokaratereport/$DATE_TIME/
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/index.html"
             - Slack_Url="https://hooks.slack.com/services/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"
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
 
