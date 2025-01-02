@@ -7,6 +7,7 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
+
   Scenario Outline: MOCK - Validate DPI AADHAAR_BASIC Mock with valid aadhaarNumber positive scenario -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/AADHAAR_BASIC/MOCK/<Scenario>.json")
@@ -20,7 +21,6 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -43,7 +43,7 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     Examples:
       | Scenario                                                                                    | statusCode |
       | AADHAAR_BASIC_MOCK_request_input_aadhaarNumber_response_linkedPhoneNumber_gender_MALE_state | 200        |
-      
+
   Scenario Outline: Validate DPI AADHAAR_BASIC Mock with valid aadhaarNumber positive scenario-> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/AADHAAR_BASIC/<Scenario>.json")
@@ -56,7 +56,6 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -93,7 +92,6 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -135,7 +133,7 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -157,12 +155,12 @@ Feature:Testing of DPI  - AADHAAR_BASIC feature scenarios
 
     Examples:
       | Scenario                                                                              | statusCode |
-      | AADHAAR_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE                   | 501        |
-      | AADHAAR_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME | 501        |
+      | AADHAAR_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE                   | 400        |
+      | AADHAAR_BASIC_Negative_scenarios_INVALID_PHONE_DEFAULT_COUNTRY_CODE_FULL_COUNTRY_NAME | 400        |
       | AADHAAR_BASIC_Negative_scenarios_MISSING_PHONE_DEFAULT_COUNTRY_CODE_KEY               | 400        |
       | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_empty_string       | 400        |
       | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_space              | 400        |
-      | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_number             | 501        |
-      | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_boolean            | 501        |
+      | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_number             | 400        |
+      | AADHAAR_BASIC_Negative_scenarios_when_phoneDefaultCountryCode_with_boolean            | 400        |
 
 

@@ -55,4 +55,12 @@ Thumbs.db
 *.mov
 *.wmv
 
-target_oct27
+
+target/
+target*/
+target
+
+
+
+.idea/
+.allure/

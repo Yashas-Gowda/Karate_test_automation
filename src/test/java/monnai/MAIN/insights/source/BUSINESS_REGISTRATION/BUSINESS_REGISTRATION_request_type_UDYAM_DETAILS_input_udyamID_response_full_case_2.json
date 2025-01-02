@@ -58,6 +58,8 @@
             {
               "unitName": "Sucheth Infra",
               "fullAddress": "250/A, Sucheth infra, BEML Layout, 3rd stage, 2nd cross, MYSURU, Mysore, KARNATAKA, 570008, India",
+              "addressLine1": "250/A, Sucheth infra",
+              "addressLine2": "BEML Layout, 3rd stage",
               "street": "2nd cross",
               "city": "Mysore",
               "district": "MYSURU",
@@ -78,7 +80,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "UI-d92cfcccbbc1430fc22e04adc5f49185a82a91ea",
+      "referenceId": "678ae1d7-be75-4a40-b85e-54f5ad6e68a1",
       "inputId": "UDYAM-KR-22-0065578",
       "requestedPackages": [
         "BUSINESS_REGISTRATION"
@@ -86,6 +88,7 @@
       "inputType": "UDYAM_DETAILS",
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -1,3 +1,7 @@
+# Karate Template
+
+Refer to the [Getting Started Guide](https://github.com/karatelabs/karate/wiki/Get-Started:-Maven-and-Gradle#github-template) for instructions.
+
 # Monnai Test/QA Automation #
 
 This repository constitutes of test cases automated at feture level.

@@ -1,3 +1,5 @@
+package monnai.MAIN.insights.Depricated;
+
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
@@ -144,7 +146,7 @@ public class GeneralTestRunner {
     void Test_tag1() {
         Results results = Runner.path("classpath:monnai/MAIN")
                 .outputCucumberJson(true)
-                .tags("@AML_1")
+                .tags("@ADDRESS_VERIFICATION")
                 .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

@@ -20,7 +20,6 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -58,7 +57,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -93,7 +92,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -131,7 +130,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -170,7 +169,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -200,7 +199,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
       | AADHAAR_DETAILS_Negative_scenarios_type_REQUEST_CONSENT_when_phoneDefaultCountryCode_with_number             | 501        |
       | AADHAAR_DETAILS_Negative_scenarios_type_REQUEST_CONSENT_when_phoneDefaultCountryCode_with_boolean            | 501        |
 
-  Scenario Outline:Validate DPI AADHAAR_DETAILS Mock with type_SUBMIT_CONSENT Negative scenario> <Scenario>
+  Scenario Outline:Validate DPI AADHAAR_DETAILS Mock with type_SUBMIT_CONSENT Negative scenario with 200 status code - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/AADHAAR_DETAILS/Negative/<Scenario>.json")
     And headers headers
@@ -209,7 +208,43 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    * match $.data.aadhaar == payload.response.data.aadhaar
+    * match $.meta contains only deep payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match $.errors contains only deep payload.response.errors
+
+    Examples:
+      | Scenario                                                                                                         | statusCode |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_invalid         | 200        |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_invalid_as_juck | 200        |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_number              | 200        |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_boolean             | 200        |
+
+  Scenario Outline:Validate DPI AADHAAR_DETAILS Mock with type_SUBMIT_CONSENT Negative scenarios with 400 status code - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/AADHAAR_DETAILS/Negative/<Scenario>.json")
+    And headers headers
+    And header Content-Type = "application/vnd.monnai.v1.2+json"
+    And header Authorization = BearerToken
+    And request payload.request
+    When method POST
+    * set payload.response.meta.referenceId = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -230,14 +265,11 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     * match $.errors contains only deep payload.response.errors
 
     Examples:
-      | Scenario                                                                                                         | statusCode |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_invalid         | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_invalid_as_juck | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_MISSING         | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_empty_string        | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_space               | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_number              | 400        |
-      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_boolean             | 400        |
+      | Scenario                                                                                                  | statusCode |
+
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_key_requestReferenceId_otp_shareCode_MISSING  | 400        |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_empty_string | 400        |
+      | AADHAAR_DETAILS_Negative_scenarios_type_SUBMIT_CONSENT_when_aadhaarNumber_otp_shareCode_with_space        | 400        |
 
   Scenario Outline: Validate DPI AADHAAR_DETAILS Mock with type_SUBMIT_CONSENT Negative scenario -> <Scenario>
     Given url requestUrl
@@ -248,7 +280,7 @@ Feature:Testing of DPI  - AADHAAR_DETAILS feature scenarios
     And request payload.request
     When method POST
     * set payload.response.meta.referenceId = "#ignore"
-    * set payload.response.data.device.deviceRecords[*].lastModified = "#ignore"
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
