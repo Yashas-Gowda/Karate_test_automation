@@ -155,12 +155,11 @@ pipelines:
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
             # Install Aws CLI for uploading artifacts to S3
-            - apt-get update && apt-get install -y curl unzip zip
+            - apk update && apk add --no-cache curl unzip zip
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
             - unzip awscliv2.zip
-            - sudo ./aws/install
+            - ./aws/install
             - aws --version
-
             - echo "Coping Karate Report to S3"
               # Upload to S3
             - echo "Uploading Karate report to S3..."
