@@ -85,7 +85,6 @@ pipelines:
           script:
             - echo "Running Karate tests - Test_Env_Insights"
             - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
