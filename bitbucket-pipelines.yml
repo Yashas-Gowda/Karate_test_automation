@@ -78,17 +78,16 @@ pipelines:
           artifacts:
             - target/karate-reports/**
 
-#    Release_Env_Verification:
-#      - step:
-#          name: Run Karate Tests
-#          caches:
-#            - maven
-#          script:
-#            script:
-#              - echo "Running Karate tests - Release_Env_Verification"
-#              - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-#          artifacts:
-#            - target/karate-reports/**
+    Release_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+          artifacts:
+            - target/karate-reports/**
 
     Dev_Env_Insights_Verification:
       - step:
@@ -163,7 +162,7 @@ pipelines:
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
             - unzip awscliv2.zip && ./aws/install
             - aws --version
-            # Upload to S3
+              # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
@@ -172,7 +171,3 @@ pipelines:
 
           artifacts:
             - $DATE_TIME
-
-
-    caches:
-      aws-cli: /root/.aws
