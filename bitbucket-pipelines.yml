@@ -149,6 +149,9 @@ pipelines:
       - step:
           image: oraclelinux:8
           name: Generate Report - Release_Env_authGen
+          caches:
+            - aws-cli
+            - maven  # Cache Maven dependencies if needed in this step too
           script:
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
@@ -161,15 +164,13 @@ pipelines:
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
             - unzip awscliv2.zip && ./aws/install
             - aws --version
-              # Upload to S3
+            # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             - Slack_Url="https://hooks.slack.com/services/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"
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
 
-          artifacts:
-            - target/karate-results/**
-
-
-
+    caches:
+      aws-cli: /usr/local/aws-cli/
+      maven: /root/.m2/repository  # Maven cache directory
