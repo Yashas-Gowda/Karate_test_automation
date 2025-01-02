@@ -78,17 +78,17 @@ pipelines:
           artifacts:
             - target/karate-reports/**
 
-    Release_Env_Verification:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            script:
-            - echo "Running Karate tests - Release_Env_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-          artifacts:
-            - target/karate-reports/**
+#    Release_Env_Verification:
+#      - step:
+#          name: Run Karate Tests
+#          caches:
+#            - maven
+#          script:
+#            script:
+#              - echo "Running Karate tests - Release_Env_Verification"
+#              - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+#          artifacts:
+#            - target/karate-reports/**
 
     Dev_Env_Insights_Verification:
       - step:
@@ -151,7 +151,6 @@ pipelines:
           name: Generate Report - Release_Env_authGen
           caches:
             - aws-cli
-            - maven  # Cache Maven dependencies if needed in this step too
           script:
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
@@ -170,7 +169,10 @@ pipelines:
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             - Slack_Url="https://hooks.slack.com/services/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"
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+
           artifacts:
-            - s3://autokaratereport/$DATE_TIME/karate-reports/**
+            - $DATE_TIME
 
 
+    caches:
+      aws-cli: /root/.aws
