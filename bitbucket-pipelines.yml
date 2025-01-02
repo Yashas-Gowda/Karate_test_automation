@@ -168,4 +168,4 @@ pipelines:
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
 
           artifacts:
-            - $DATE_TIME
+            - $DATE_TIME/**
