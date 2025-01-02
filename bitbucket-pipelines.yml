@@ -155,26 +155,10 @@ pipelines:
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
             # Install Aws CLI for uploading artifacts to S3
-            - set -e
-            - echo "Installing AWS CLI..."
-#              # Install Homebrew using the official script
-              if ! command -v brew &> /dev/null; then
-              echo "Homebrew is not installed. Installing Homebrew..."
-              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-              fi
-            - brew install curl unzip
-
-              #            - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-#            - brew install curl unzip
-#            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-#            - apt-get install -y unzip
-#            - unzip awscliv2.zip
-#            - sudo ./aws/install
-#            - aws --version
-             # Install Aws CLI for uploading artifacts to S3
+            - apt-get update && apt-get install -y curl unzip zip
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-            - unzip awscliv2.zip && ./aws/install
-            - rm -rf awscliv2.zip aws
+            - unzip awscliv2.zip
+            - sudo ./aws/install
             - aws --version
 
             - echo "Coping Karate Report to S3"
