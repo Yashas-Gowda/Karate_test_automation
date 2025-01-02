@@ -148,8 +148,6 @@ pipelines:
       - step:
           image: oraclelinux:8
           name: Generate Report - Release_Env_authGen
-          caches:
-            - aws-cli
           script:
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
