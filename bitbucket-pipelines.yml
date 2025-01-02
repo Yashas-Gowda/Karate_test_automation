@@ -14,7 +14,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights_Verification"
-            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner#testInsightsVerification
           artifacts:
             - target/karate-reports/**
 
@@ -35,6 +35,22 @@ pipelines:
           caches:
             - maven
           script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            # Install Aws CLI for uploading artifacts to S3
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - rm -rf awscliv2.zip aws
+            - aws --version
+            # Generate Allure Report
+            - echo "Generating Report."
+            - allure generate allure-results --clean -o allure-report --single-file
+            - aws s3 cp allure-report/** s3://autoreports/$DATE_TIME/
+            - Report_Url="https://autoreports.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/index.html"
+            # Run report
             - echo "Running Karate tests - Test_Env_Verification"
             - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
           artifacts:
@@ -47,7 +63,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Release_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification
           artifacts:
             - target/karate-reports/**
 
@@ -81,7 +97,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Dev_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification
           artifacts:
             - target/karate-reports/**
 
@@ -117,16 +133,47 @@ pipelines:
             - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
           artifacts:
             - target/karate-reports/**
+
     Release_Env_authGen:
       - step:
           name: Run Karate Tests
           caches:
             - maven
           script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            # Install Aws CLI for uploading artifacts to S3
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - rm -rf awscliv2.zip aws
+            - aws --version
+            # Generate Allure Report
+            - echo "Generating Report."
+#            - allure generate allure-results --clean -o allure-report --single-file
+            - aws s3 cp target/karate-reports/** s3://autoreports_Karate/$DATE_TIME/
+            - Report_Url="https://autoreports_Karate.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/index.html"
+            # Run report
             - echo "Running Karate tests - Release_Env_authGen"
             - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
           artifacts:
             - target/karate-reports/**
+
+      - step:
+          name: Generate Report - Release_Env_authGen
+          script:
+            # Install Aws CLI for uploading artifacts to S3
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - rm -rf awscliv2.zip aws
+            - aws --version
+            # Generate Allure Report
+            - echo "Generating Report."
+            #            - allure generate allure-results --clean -o allure-report --single-file
+            - aws s3 cp target/karate-reports/** s3://autoreports_Karate/$DATE_TIME/
+            - Report_Url="https://autoreports_Karate.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/index.html"
 
 
 

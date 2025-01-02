@@ -21,9 +21,18 @@ class MonnaiTestRunner {
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
+
     @Test
     void testVerification() {
         Results results = Runner.path("classpath:monnai/MAIN/verification")
+                .tags("~@ignore")
+                .parallel(5);
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+    }
+
+    @Test
+    void testInsightsVerification() {
+        Results results = Runner.path("classpath:monnai/MAIN")
                 .tags("~@ignore")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());

@@ -17,7 +17,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -31,6 +30,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -54,7 +54,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -68,6 +67,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -85,7 +85,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -99,6 +98,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -118,7 +118,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -132,6 +132,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -150,7 +151,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -164,6 +165,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -182,7 +184,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -196,6 +198,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -214,7 +217,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
+
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -228,6 +231,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -255,7 +259,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -269,6 +272,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -288,7 +292,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -302,6 +305,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -326,7 +330,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -340,6 +343,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
     # https://monnai.atlassian.net/browse/MB-3738
     Then match $.meta contains payload.response.meta
@@ -364,7 +368,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -378,6 +381,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -432,7 +436,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -446,6 +449,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     #    Then match $.data.upi.advanced.upiIdCount == payload.response.data.upi.advanced.upiIdCount
     Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
@@ -472,7 +476,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -486,6 +489,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     #    Then match $.data.upi.advanced.upiIdCount == payload.response.data.upi.advanced.upiIdCount
     Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
@@ -505,7 +509,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -519,6 +522,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     #    Then match $.data.upi.advanced.upiIdCount == payload.response.data.upi.advanced.upiIdCount
     Then match $.data.upi.advanced contains only deep payload.response.data.upi.advanced
     Then match $.meta contains payload.response.meta
@@ -538,7 +542,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -552,6 +555,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $.data == null
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
@@ -576,7 +580,6 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
     When method POST
-    Then status <statusCode>
     # cloud watch traces -start
     * print karate.request.headers
     * print karate.response.headers
@@ -590,6 +593,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * print 'API Request----->',payload.request
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
     Then match $ contains payload.response
     And match $.errors[0].code == "<errorCode>"
     And match $.errors[0].message == "<errorMessage>"
