@@ -155,9 +155,13 @@ pipelines:
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
             # Install Aws CLI for uploading artifacts to S3
+            - set -e
             - echo "Installing AWS CLI..."
-            - apt-get update && apt-get install -y curl unzip
+              # Install Homebrew using the official script
+            - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+            - brew install curl unzip
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - apt-get install -y unzip
             - unzip awscliv2.zip
             - sudo ./aws/install
             - aws --version
