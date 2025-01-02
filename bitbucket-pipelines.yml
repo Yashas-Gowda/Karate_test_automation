@@ -158,7 +158,7 @@ pipelines:
             # Install Aws CLI for uploading artifacts to S3
 
               # Update and install prerequisites
-            - apt-get update && apt-get install -y unzip curl
+            - yum update -y && yum install -y unzip curl
 
               # Download and install AWS CLI
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -167,6 +167,7 @@ pipelines:
 
               # Verify AWS CLI installation
             - aws --version
+
               # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/karate-summary.html s3://autokaratereport/karate-reports/report.html --acl public-read
