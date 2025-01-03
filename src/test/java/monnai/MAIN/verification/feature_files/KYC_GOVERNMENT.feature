@@ -9,67 +9,67 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
     * def BearerToken = authFeature.authToken
 
 
-#  #  @KYC_GOVERNMENT_TH
-#  Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Thailand (TH) <Scenario>
-#    Given url requestUrl
-#    And def payload = read( "../" + source + "/KYC_GOVERNMENT/TH/<Scenario>.json")
-#    And headers headers
-#    And header Authorization = BearerToken
-#    And request payload.request
-#    * set payload.response.meta.referenceId = "#ignore"
-#    When method POST
-#    # cloud watch traces -start
-#    * print karate.request.headers
-#    * print karate.response.headers
-#    * print karate.request.headers['x-reference-id']
-#    * def reference_id = karate.request.headers['x-reference-id']
-#    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-#    * print Cloud_Watch_Traces
-#    # ResponseTime
-#    * print 'responseTime----->',responseTime
-#    # request/response
-#    * print 'API Request----->',payload.request
-#    * print 'Expected Response---->',payload.response
-#    * print 'Actual Response---->',karate.pretty(response)
-#    Then status <statusCode>
-#    Then match $.data.kyc.mobile == "#null"
-#    Then match $.data.kyc.consumer == "#null"
-#    Then match $.data.kyc.aml == "#null"
-#    Then match $.data.kyc.government.matchMiddleName == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchFullGivenName == "NOT_SUPPORTED"
-#
-#    Then match $.data.kyc.government.matchGender == "NOT_SUPPORTED"
-#
-#    Then match $.data.kyc.government.matchId2 == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchId3 == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchId4 == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchId5 == "NOT_SUPPORTED"
-#
-#    Then match $.data.kyc.government.matchBuildingNumber == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchBuildingName == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchUnitNumber == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchStreetName == "NOT_SUPPORTED"
-#
-#
-#    Then match $.data.kyc.government.matchPoBox == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchCity == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchState == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchCountry == "NOT_SUPPORTED"
-#
-#    Then match $.data.kyc.government.matchAdditionalAddressField3 == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchPhone == "NOT_SUPPORTED"
-#    Then match $.data.kyc.government.matchEmail == "NOT_SUPPORTED"
-#
-#    Then match payload.response.data.kyc.government contains only $.data.kyc.government
-#    Then match payload.response.data.kyc.mobile.appendedFields contains only $.data.kyc.mobile.appendedFields
-#    Then match $.meta contains payload.response.meta
-#    Then match $.errors contains payload.response.errors
-#
-#
-#    Examples:
-#      | Scenario                                                                                                                                                                                                                                       | statusCode |
-#      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchAddressLine1_NO_DATA_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT                                    | 200        |
-#      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_MATCH_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT | 200        |
+  #  @KYC_GOVERNMENT_TH
+  Scenario Outline: Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Thailand (TH) <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/KYC_GOVERNMENT/TH/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # request/response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    Then match $.data.kyc.mobile == "#null"
+    Then match $.data.kyc.consumer == "#null"
+    Then match $.data.kyc.aml == "#null"
+    Then match $.data.kyc.government.matchMiddleName == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchFullGivenName == "NOT_SUPPORTED"
+
+    Then match $.data.kyc.government.matchGender == "NOT_SUPPORTED"
+
+    Then match $.data.kyc.government.matchId2 == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchId3 == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchId4 == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchId5 == "NOT_SUPPORTED"
+
+    Then match $.data.kyc.government.matchBuildingNumber == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchBuildingName == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchUnitNumber == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchStreetName == "NOT_SUPPORTED"
+
+
+    Then match $.data.kyc.government.matchPoBox == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchCity == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchState == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchCountry == "NOT_SUPPORTED"
+
+    Then match $.data.kyc.government.matchAdditionalAddressField3 == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchPhone == "NOT_SUPPORTED"
+    Then match $.data.kyc.government.matchEmail == "NOT_SUPPORTED"
+
+    Then match payload.response.data.kyc.government contains only $.data.kyc.government
+    Then match payload.response.data.kyc.mobile.appendedFields contains only $.data.kyc.mobile.appendedFields
+    Then match $.meta contains payload.response.meta
+    Then match $.errors contains payload.response.errors
+
+
+    Examples:
+      | Scenario                                                                                                                                                                                                                                       | statusCode |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchAddressLine1_NO_DATA_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT                                    | 200        |
+      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_MATCH_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT | 200        |
 #      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchLastName_matchDateOfBirth_matchId1_MATCH_matchFirstName_NO_MATCH_matchAddressLine1_NO_DATA                                                   | 200        |
 #      | KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_output_matchDateOfBirth_matchId1_MATCH_matchFirstName_matchLastName_NO_MATCH                                                                                               | 200        |
 #
