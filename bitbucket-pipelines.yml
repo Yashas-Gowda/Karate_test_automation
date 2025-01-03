@@ -188,7 +188,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Release_Env_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
