@@ -16,14 +16,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights_Verification"
-            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner#testInsightsVerification
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -38,10 +31,15 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Test_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Test_Env_Insights:
       - step:
@@ -50,14 +48,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -72,10 +63,16 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Test_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Test_Env_Verification:
       - step:
@@ -84,7 +81,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -106,7 +103,7 @@ pipelines:
             - Slack_Url="https://hooks.slack.com/services/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"
             #yashas - Slack_Url="https://hooks.slack.com/services/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"
             # custom text
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\" DPI Automation Regression Suite - Test_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
           artifacts:
             - target/karate-reports/**
@@ -118,32 +115,31 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Release_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
             - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
             - echo "$DATE_TIME"
             - cat /etc/os-release
-            # Install Aws CLI for uploading artifacts to S3
+              # Install Aws CLI for uploading artifacts to S3
             - dnf install -y unzip curl
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
             - unzip awscliv2.zip && ./aws/install
             - aws --version
-            # Upload to S3
+              # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+              # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+              # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+              #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+             - target/karate-reports/**
 
     Release_Env_Insights:
       - step:
@@ -152,14 +148,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Release_Env_Insights"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -174,19 +163,22 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
-
-
+          artifacts:
+            - target/karate-reports/**
 
     Release_Env_Verification:
       - step:
           name: Run Karate Tests
           caches:
             - maven
-            - aws cli
           script:
             - echo "Running Karate tests - Release_Env_Verification"
             - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
@@ -222,14 +214,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Dev_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -244,10 +229,16 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Dev_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Dev_Env_Insights:
       - step:
@@ -256,14 +247,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Dev_Env_Insights"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -278,10 +262,16 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Dev_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Dev_Env_Verification:
       - step:
@@ -290,14 +280,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Dev_Env_Verification"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -312,10 +295,16 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Dev_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Test_Env_authGen:
       - step:
@@ -324,14 +313,7 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_authGen"
-            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
-          artifacts:
-            - target/karate-reports/**
-
-      - step:
-          image: oraclelinux:8
-          name: Generate Report - Release_Env_authGen
-          script:
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -346,10 +328,16 @@ pipelines:
             # Upload to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-            - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Here is the Automation karate Report for DPI Regression Suite on $DATE at $TIME\n $Report_Url\"}" $Slack_Url'
+              # Slack Url -
+            # slack_alerts_qa_testing
+            - Slack_Url="https://hooks.slack.com/services/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"
+            #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+          artifacts:
+            - target/karate-reports/**
 
     Release_Env_authGen:
       - step:
@@ -359,7 +347,7 @@ pipelines:
           script:
             # Run report
             - echo "Running Karate tests - Release_Env_authGen"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token -Dmaven.test.failure.ignore=true
             - echo "Date and Day ..... "
             - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
             - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
@@ -377,33 +365,11 @@ pipelines:
               # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
               # Slack Url -
-              # slack_alerts_qa_testing   - Slack_Url="https://hooks.slack.com/services/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"
-            - Slack_Url="https://hooks.slack.com/services/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"
+            - Slack_Url="https://hooks.slack.com/services/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"
             - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
           artifacts:
             - target/karate-reports/**
 
-#      - step:
-#          image: oraclelinux:8
-#          name: Generate Report - Release_Env_authGen
-#          script:
-#            - echo "Date and Day ..... "
-#            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
-#            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
-#            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
-#            - echo "$DATE_TIME"
-#            - cat /etc/os-release
-#            # Install Aws CLI for uploading artifacts to S3
-#            - dnf install -y unzip curl
-#            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-#            - unzip awscliv2.zip && ./aws/install
-#            - aws --version
-#              # Upload to S3
-#            - echo "Uploading Karate report to S3..."
-#            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
-#            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-#            # slack_alerts_qa_testing   - Slack_Url="https://hooks.slack.com/services/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"
-#            - Slack_Url="https://hooks.slack.com/services/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"
-#            - 'curl -X POST -H "Content-type: application/json" --data "{\"text\":\" DPI Automation Regression Suite - Release_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
-#
+  # slack_alerts_qa_testing   - Slack_Url="https://hooks.slack.com/services/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"
+  # Yashas channel            - Slack_Url="https://hooks.slack.com/services/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"
