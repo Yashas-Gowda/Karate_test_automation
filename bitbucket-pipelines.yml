@@ -332,17 +332,19 @@ pipelines:
             - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
             - unzip awscliv2.zip && ./aws/install
             - aws --version
-            # Upload to S3
+            # Upload Reports to S3
             - echo "Uploading Karate report to S3..."
             - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
             # Karate_Report_Url -
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
-              # Slack Url -
+            # Send Slack Notification
+            # Slack Url -
             # slack_alerts_qa_testing
             - Slack_Url="https://hooks.slack.com/services/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"
             #yashas channel- Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Automation Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
-              
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE :spiral_calendar_pad: at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
 
     Release_Env_authGen:
       - step:
