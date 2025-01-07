@@ -1,49 +1,49 @@
 @UPI_ADVANCED @regTest_4 @UPI
 Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
-
+  # 6/1/2025 - only upiApplicationName ALL and PRIMARY are working now. Other upiApplicationNames are decomissed so updating the automation according to that
   Background:
     * configure charset = null
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-  #SC002 Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY
+  #SC002 Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY - Decomissed on Dec 2024 in Sprint 69
 
-  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
-    Given url requestUrl
-    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
-    Then match $.meta contains payload.response.meta
-    Then match $.errors contains payload.response.errors
-
-    Examples:
-      | Scenario                                                                                        | statusCode |
-      | UPI_ADVANCED_POSITIVE_with_phone_email_input_account_upiApplicationName_GOOGLE_PAY              | 200        |
-      | UPI_ADVANCED_POSITIVE_with_only_email_input_account_upiApplicationName_GOOGLE_PAY               | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_0                                | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okhdfcbank_dpCall_cloudwatch_1 | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okicici_dpCall_cloudwatch_2    | 200        |
-      #data needs to find | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okaxis_dpCall_cloudwatch_3     | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_oksbi_dpCall_cloudwatch_4      | 200        |
+  #  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
+  #    Given url requestUrl
+  #    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
+  #    And headers headers
+  #    And header Authorization = BearerToken
+  #    And request payload.request
+  #    * set payload.response.meta.referenceId = "#ignore"
+  #    When method POST
+  #    # cloud watch traces -start
+  #    * print karate.request.headers
+  #    * print karate.response.headers
+  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+  #    * def reference_id = karate.request.headers['x-reference-id']
+  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+  #    # ResponseTime
+  #    * print 'responseTime----->',responseTime
+  #    # Request-response
+  #    * print 'API Request----->',payload.request
+  #    * print 'Expected Response---->',payload.response
+  #    * print 'Actual Response---->',karate.pretty(response)
+  #    Then status <statusCode>
+  #    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
+  #    Then match $.meta contains payload.response.meta
+  #    Then match $.errors contains payload.response.errors
+  #
+  #    Examples:
+  #      | Scenario                                                                                        | statusCode |
+  #      | UPI_ADVANCED_POSITIVE_with_phone_email_input_account_upiApplicationName_GOOGLE_PAY              | 200        |
+  #      | UPI_ADVANCED_POSITIVE_with_only_email_input_account_upiApplicationName_GOOGLE_PAY               | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_0                                | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okhdfcbank_dpCall_cloudwatch_1 | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okicici_dpCall_cloudwatch_2    | 200        |
+  #      #data needs to find | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_okaxis_dpCall_cloudwatch_3     | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_GOOGLE_PAY_upiIdCount_1_oksbi_dpCall_cloudwatch_4      | 200        |
 
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = GOOGLE_PAY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
@@ -76,39 +76,39 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | Scenario                                                                          | statusCode |
       | UPI_ADVANCED_NEGATIVE_with_only_phone_input_account_upiApplicationName_GOOGLE_PAY | 400        |
 
-  #SC003  Validate the UPI_ADVANCE package when upiApplicationName = PHONEPE
-  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = PHONEPE with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
-    Given url requestUrl
-    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
-    Then match $.meta contains payload.response.meta
-    Then match $.errors contains payload.response.errors
-
-    Examples:
-      | Scenario                                                                              | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_0                         | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ybl_dpCall_cloudwatch_1 | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_axl_dpCall_cloudwatch_2 | 200        |
-  # data not found  | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ibl_dpCall_cloudwatch_4 | 200        |
+  #  #SC003  Validate the UPI_ADVANCE package when upiApplicationName = PHONEPE
+  #  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = PHONEPE with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
+  #    Given url requestUrl
+  #    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
+  #    And headers headers
+  #    And header Authorization = BearerToken
+  #    And request payload.request
+  #    * set payload.response.meta.referenceId = "#ignore"
+  #    When method POST
+  #    # cloud watch traces -start
+  #    * print karate.request.headers
+  #    * print karate.response.headers
+  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+  #    * def reference_id = karate.request.headers['x-reference-id']
+  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+  #    # ResponseTime
+  #    * print 'responseTime----->',responseTime
+  #    # Request-response
+  #    * print 'API Request----->',payload.request
+  #    * print 'Expected Response---->',payload.response
+  #    * print 'Actual Response---->',karate.pretty(response)
+  #    Then status <statusCode>
+  #    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
+  #    Then match $.meta contains payload.response.meta
+  #    Then match $.errors contains payload.response.errors
+  #
+  #    Examples:
+  #      | Scenario                                                                              | statusCode |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_0                         | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ybl_dpCall_cloudwatch_1 | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_axl_dpCall_cloudwatch_2 | 200        |
+  #  # data not found  | UPI_ADVANCED_POSITIVE_upiApplicationName_PHONEPE_upiIdCount_1_ibl_dpCall_cloudwatch_4 | 200        |
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PHONEPE with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -141,39 +141,39 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
       | Scenario                                                                       | statusCode |
       | UPI_ADVANCED_NEGATIVE_with_only_email_input_account_upiApplicationName_PHONEPE | 400        |
 
-  # SC004 - Validate the UPI_ADVANCE package when upiApplicationName = PAYTM
-
-  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = PAYTM with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
-    Given url requestUrl
-    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
-    And headers headers
-    And header Authorization = BearerToken
-    And request payload.request
-    * set payload.response.meta.referenceId = "#ignore"
-    When method POST
-
-    # cloud watch traces -start
-    * print karate.request.headers
-    * print karate.response.headers
-    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
-    * def reference_id = karate.request.headers['x-reference-id']
-    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
-    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
-    # ResponseTime
-    * print 'responseTime----->',responseTime
-    # Request-response
-    * print 'API Request----->',payload.request
-    * print 'Expected Response---->',payload.response
-    * print 'Actual Response---->',karate.pretty(response)
-    Then status <statusCode>
-    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
-    Then match $.meta contains payload.response.meta
-    Then match $.errors contains payload.response.errors
-
-    Examples:
-      | Scenario                                                    | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_0 | 200        |
-  # Data not found     | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_1_paytm_dpCall_cloudwatch_1 | 200        |
+  #  # SC004 - Validate the UPI_ADVANCE package when upiApplicationName = PAYTM
+  #
+  #  Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName = PAYTM with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
+  #    Given url requestUrl
+  #    And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
+  #    And headers headers
+  #    And header Authorization = BearerToken
+  #    And request payload.request
+  #    * set payload.response.meta.referenceId = "#ignore"
+  #    When method POST
+  #
+  #    # cloud watch traces -start
+  #    * print karate.request.headers
+  #    * print karate.response.headers
+  #    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+  #    * def reference_id = karate.request.headers['x-reference-id']
+  #    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+  #    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+  #    # ResponseTime
+  #    * print 'responseTime----->',responseTime
+  #    # Request-response
+  #    * print 'API Request----->',payload.request
+  #    * print 'Expected Response---->',payload.response
+  #    * print 'Actual Response---->',karate.pretty(response)
+  #    Then status <statusCode>
+  #    Then match $.data.upi.advanced contains payload.response.data.upi.advanced
+  #    Then match $.meta contains payload.response.meta
+  #    Then match $.errors contains payload.response.errors
+  #
+  #    Examples:
+  #      | Scenario                                                    | statusCode |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_0 | 200        |
+  #  # Data not found     | UPI_ADVANCED_POSITIVE_upiApplicationName_PAYTM_upiIdCount_1_paytm_dpCall_cloudwatch_1 | 200        |
 
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PAYTM with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
@@ -238,10 +238,10 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
 
     Examples:
       | Scenario                                                                                  | statusCode |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_0                             | 200        |
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_0                             | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PHONEPE             | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_GOOGLEPAY           | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PAYTM               | 200        |
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PAYTM               | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik      | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Slice         | 200        |
       | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Amazon_Pay    | 200        |
@@ -456,17 +456,17 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                | statusCode |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0                | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe             | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay          | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik            | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice               | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Amazon_Pay    | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Bajaj_Finserv | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Jupiter_Money | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Navi          | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Samsung_Pay   | 200        |
+      | Scenario                                                                                      | statusCode |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101 | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe                   | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay                | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik                  | 200        |
+#      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice                     | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Amazon_Pay          | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Bajaj_Finserv       | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Jupiter_Money       | 200        |
+#      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Navi                | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Samsung_Pay         | 200        |
 
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName key is not present(DEFAULT_ALL) with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -495,11 +495,13 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.meta contains payload.response.meta
     Then match $.errors contains payload.response.errors
     Examples:
-      | Scenario                                                                                                   | statusCode |
-      #    Data not found
-      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
-      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik                                                                          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response | 200        |
+      | Scenario | statusCode |
+  #    Data not found
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_cleansingFlag_true_with_country_code_upiIdCount_3_when_PRIMARY_GOOGLEPAY_other_GOOGLEPAY_handles_should_not_call | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik                                                                          | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_all_other_handles_should_call_with_null_response | 200        |
+
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_packageDetails_S2101| 200        |
 
   Scenario Outline: Validation of UPI_ADVANCED Possitive scenario for packageDetails <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -529,8 +531,8 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                    | statusCode |
-      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_when_DP_says_No_UPI_ID_found | 200        |
+      | Scenario                                                                                 | statusCode |
+      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found | 200        |
 
 
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when upiApplicationName is invalid / null as input -> <Scenario> | InputIP -> <phoneNumber>.

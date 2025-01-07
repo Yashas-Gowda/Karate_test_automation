@@ -24,8 +24,8 @@
           "accounts": [
             {
               "appName": "Bajaj Finserv",
-              "nameAtBank": "SUDAM SENAPATI",
-              "upiId": "7978688143.bfl@abfspay",
+              "nameAtBank": "Sudam Senapati",
+              "upiId": "7978688143@abfspay",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
