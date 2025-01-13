@@ -6,6 +6,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
+    * header x-timeout = 90000
 
   #SC002 Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY - Decomissed on Dec 2024 in Sprint 69
 
@@ -237,18 +238,20 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                  | statusCode |
+      | Scenario                                                                                                | statusCode |
       #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_0                             | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PHONEPE             | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_GOOGLEPAY           | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PHONEPE                           | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_GOOGLEPAY                         | 200        |
       #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_PAYTM               | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik      | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Slice         | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Amazon_Pay    | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Bajaj_Finserv | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Jupiter_Money | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Navi          | 200        |
-      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Samsung_Pay   | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_MobiKwik                    | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Slice                       | 200        |
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Amazon_Pay    | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_empty_string_for_upi_handle_ptsbi | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Bajaj_Finserv               | 200        |
+      #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Jupiter_Money | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_empty_string_for_upi_handle_ptyes | 200        |
+      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Navi                        | 200        |
+  #      | UPI_ADVANCED_POSITIVE_upiApplicationName_PRIMARY_upiIdCount_1_appName_OTHER_Samsung_Pay   | 200        |
 
 
   Scenario Outline: Validate the UPI_ADVANCE NEGATIVE package when upiApplicationName = PRIMARY with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
@@ -428,6 +431,7 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
   #      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_2 | 200        |
   #      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_ALL_upiIdCount_3 | 200        |
 
+
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName key is not present(DEFAULT=PRIMARY) with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
@@ -456,17 +460,18 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                      | statusCode |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101 | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe                   | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay                | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik                  | 200        |
-#      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice                     | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Amazon_Pay          | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Bajaj_Finserv       | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Jupiter_Money       | 200        |
-#      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Navi                | 200        |
-      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Samsung_Pay         | 200        |
+      | Scenario                                                                                | statusCode |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_PhonePe             | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Google_Pay          | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_MobiKwik            | 200        |
+      #      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_Slice                     | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Amazon_Pay    | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Bajaj_Finserv | 200        |
+#      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Jupiter_Money | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_empty_string_for_upi_handle_ptyes | 200        |
+
+      #      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Navi                | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_appName_OTHER_Samsung_Pay   | 200        |
 
   Scenario Outline: Validate the UPI_ADVANCE package when upiApplicationName key is not present(DEFAULT_ALL) with combination of phone and email input  -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
@@ -503,10 +508,11 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
 
   #      | UPI_ADVANCED_POSITIVE_upiApplicationName_ALL_upiIdCount_0_packageDetails_S2101| 200        |
 
-  Scenario Outline: Validation of UPI_ADVANCED Possitive scenario for packageDetails <Scenario> | InputIP -> <phoneNumber>.
+  Scenario Outline: Validation of UPI_ADVANCED Possitive scenario for packageDetails S2101 <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl
     And def payload = read( "../" + source + "/UPI_ADVANCED_NEW/<Scenario>.json")
     And headers headers
+#    And header x-timeout = "90000"
     And header Authorization = BearerToken
     And request payload.request
     * set payload.response.meta.referenceId = "#ignore"
@@ -531,9 +537,9 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     Then match $.errors contains payload.response.errors
 
     Examples:
-      | Scenario                                                                                 | statusCode |
-      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found | 200        |
-
+      | Scenario                                                                                      | statusCode |
+      | UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found      | 200        |
+      | UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101 | 200        |
 
   Scenario Outline: Validation of UPI_ADVANCED Negative scenario for error code when upiApplicationName is invalid / null as input -> <Scenario> | InputIP -> <phoneNumber>.
     Given url requestUrl

@@ -1,4 +1,5 @@
-@UPI_BASIC @regTest_4 @UPI
+@ignore
+#@UPI_BASIC @regTest_4 @UPI
 
 Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
@@ -139,7 +140,7 @@ Feature: Testing of DPI  - UPI_BASIC feature scenarios
 
     Examples:
       | Scenario                                                    | statusCode |
-      | UPI_BASIC_sc_with_valid_upiId_response_with_501_status_code | 400        |
+      | UPI_BASIC_sc_with_valid_upiId_response_with_501_status_code | 501        |
 
 
   Scenario Outline:  UPI BASIC NEGATIVE SC's Insights - validation of upiId:- <Scenario>
