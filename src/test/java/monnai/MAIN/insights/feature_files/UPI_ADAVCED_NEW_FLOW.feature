@@ -7,6 +7,8 @@ Feature:Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
     * header x-timeout = 90000
+    * configure connectTimeout = 60000
+    * configure readTimeout = 60000
 
   #SC002 Validate the UPI_ADVANCE package when upiApplicationName = GOOGLE_PAY - Decomissed on Dec 2024 in Sprint 69
 
