@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "ssam09999329420dsdssdds@xyz.com"
+    "email": "piyushyadav001@outlook1.com"
   },
   "response": {
     "data": {
@@ -13,12 +13,12 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": false,
+          "deliverable": true,
           "domainDetails": {
             "domainType": "valid",
-            "domainName": "xyz.com",
+            "domainName": "outlook1.com",
             "tld": ".com",
-            "creationTime": "1994-04-17 06:47:56",
+            "creationTime": "2023-08-20 07:36:52",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
@@ -29,8 +29,8 @@
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": false,
-            "acceptAll": false,
+            "websiteExists": true,
+            "acceptAll": true,
             "custom": null
           },
           "breach": {
@@ -38,11 +38,11 @@
             "noOfBreaches": 0,
             "firstBreach": null,
             "lastBreach": null,
-            "breaches": [
-            ]
+            "breaches": []
           },
           "emailTenure": null
-        }
+        },
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -57,16 +57,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "eb97861c-d573-44a3-87e6-3daf811a6e35",
-      "inputEmail": "ssam09999329420dsdssdds@xyz.com",
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "piyushyadav001@outlook1.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

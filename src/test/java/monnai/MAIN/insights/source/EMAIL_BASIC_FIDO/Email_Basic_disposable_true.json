@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "ssam09999329420@junk.com"
+    "email": "ledifop150@kvegg.com"
   },
   "response":{
     "data": {
@@ -13,23 +13,25 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": false,
+          "deliverable": true,
           "domainDetails": {
-            "domainName": "junk.com",
+            "domainType": "valid",
+            "domainName": "kvegg.com",
             "tld": ".com",
-            "creationTime": "1998-03-16 05:00:00",
-            "updateTime": "2023-06-23 15:22:58",
-            "expiryTime": "2030-03-15 04:00:00",
+            "creationTime": "2022-11-16 07:40:02",
+            "updateTime": null,
+            "expiryTime": null,
             "registered": true,
-            "companyName": "Domains By Proxy, LLC",
+            "companyName": "PrivacyGuardian.org llc",
+            "registrarName": "NameSilo, LLC",
             "disposable": true,
             "freeProvider": false,
-            "dmarcCompliance": false,
-            "spfStrict": true,
-            "suspiciousTld": false,
-            "websiteExists": true,
-            "acceptAll": false,
-            "custom": false
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": null,
+            "custom": null
           },
           "breach": {
             "isBreached": false,
@@ -39,7 +41,8 @@
             "breaches": []
           },
           "emailTenure": null
-        }
+        },
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -50,11 +53,17 @@
       "employment": null,
       "income": null,
       "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "InFcvhr7SQ0EPxA=",
-      "inputEmail": "ssam09999329420@junk.com",
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "ledifop150@kvegg.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
