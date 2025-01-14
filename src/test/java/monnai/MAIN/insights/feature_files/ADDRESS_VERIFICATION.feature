@@ -99,7 +99,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_IN_Negative_request_where_mandatory_input_country_addressLine1_with_null         | 400        |
 
   #  @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country Indonesia -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
@@ -146,7 +146,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
   #        | ADDRESS_VERIFICATION_ID_positive_XL_request_phoneNumber_locationCoordinates_response_closestDistance_locationConfidence_Medium_cellTowerDensity_Strongest_cellTowerRanking_2_locationType_NIGHT        | 200        |
 
   #  @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country Indonesia -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
@@ -185,7 +185,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
 
 
   #  @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country Indonesia -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
@@ -219,17 +219,21 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
     Then match $.errors contains only payload.response.errors
 
     Examples:
-      | Scenario                                                                                        | statusCode |
+      | Scenario                                                                                                  | statusCode |
       # Use Case 2 - Phone + Address input (Planned)
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_0_250     | 200        |
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_251_500   | 200        |
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_501_750   | 200        |
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_751_1000  | 200        |
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_1001_2000 | 200        |
-      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000 | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_0_250_real_data     | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_0_250               | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_251_500_real_data   | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_251_500             | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_501_750             | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_751_1000            | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_1001_2000           | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000           | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_2001_4000_real_data | 200        |
+      | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_closestDistance_4001_null_real_data | 200        |
 
   #  @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country Indonesia -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
@@ -267,7 +271,7 @@ Feature:Testing of DPI - ADDRESS_VERIFICATION feature scenarios
       | ADDRESS_VERIFICATION_ID_positive_request_phoneNumber_address_response_packageDetails_S2101_when_dp_closest_distance_null | 200        |
 
   #  @ADDRESS_VERIFICATION_ID
-  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country india -> <Scenario>
+  Scenario Outline: Validate DPI ADDRESS_VERIFICATION positive scenarios for Country Indonesia -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/ADDRESS_VERIFICATION/ID/<Scenario>.json")
     And headers headers
