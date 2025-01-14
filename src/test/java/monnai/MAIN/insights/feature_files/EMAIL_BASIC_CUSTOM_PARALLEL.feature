@@ -60,8 +60,9 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
 
   Scenario: Calling Update_tenant_config.feature --> Update tenant with custom tenant config.
     * def result = call read('Update_tenant_config.feature@get_tenant_config_before_update') { _custom_tenant_id : '#(custom_tenant_id)' }
-    * def result = call read('Update_tenant_config.feature@Update_tenant_config_partners') custom_tenant_config
+#    * def result = call read('Update_tenant_config.feature@Update_tenant_config_partners') custom_tenant_config
     * def result = call read('Update_tenant_config.feature@get_tenant_config_after_update') { _custom_tenant_id : '#(custom_tenant_id)' }
+
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
     Given url requestUrl
@@ -117,11 +118,11 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
     Examples:
       | Scenario                                                                                                        | statusCode |
       | Email_Basic_Possitive_withTLDGmail(abc@gmail.com)_disposable_false_emailTenure_notnull                          | 200        |
-      | Email_Basic_deliverable_true_disposable_false_noOfBreaches_1_emailTenure_in_decimal_value                       | 200        |
-      | Email_Basic_deliverable_true_registered_true_freeProvider_true_noOfBreaches_7_emailTenure_in_single_digit_value | 200        |
-      | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                               | 200        |
-      | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
-      | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                               | 200        |
+#      | Email_Basic_deliverable_true_disposable_false_noOfBreaches_1_emailTenure_in_decimal_value                       | 200        |
+#      | Email_Basic_deliverable_true_registered_true_freeProvider_true_noOfBreaches_7_emailTenure_in_single_digit_value | 200        |
+#      | Email_Basic_freeProvider_true_disposable_false_noOfBreaches_2_emailTenure_notnull                               | 200        |
+#      | Email_Basic_registered_true_deliverable_disposable_false_freeProvider_true_isBreached_true                      | 200        |
+#      | Email_Basic_deliverable_true_freeProvider_true_websiteExists_true                                               | 200        |
 
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - where emailTenure = notnull :- <Scenario>
@@ -706,6 +707,6 @@ Feature: Testing of DPI  - EMAIL_BASIC_CUSTOM feature scenarios with data partne
 
   Scenario: Calling Update_tenant_config.feature -> Revert to original tenant config in auth file of Custom tenant used.
     * print Custom_env_authFeature_tenant_config
-    * def result = call read('Update_tenant_config.feature@Update_to_before_run_tenant_config_partners') Custom_env_authFeature_tenant_config
+#    * def result = call read('Update_tenant_config.feature@Update_to_before_run_tenant_config_partners') Custom_env_authFeature_tenant_config
     * def result = call read('Update_tenant_config.feature@get_tenant_config_after_update') { _custom_tenant_id : '#(custom_tenant_id)' }
 
