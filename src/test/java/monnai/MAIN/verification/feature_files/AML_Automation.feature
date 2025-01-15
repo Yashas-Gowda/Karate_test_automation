@@ -1,4 +1,4 @@
-@AML @regTest_4 @KYC
+@AML  @KYC
 Feature: Testing of DPI  - Verification AML Package scenarios
 
   Background:

@@ -1,4 +1,4 @@
-@KYC_MOBILE @regTest_4 @KYC
+@KYC_MOBILE  @KYC
 
 Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
