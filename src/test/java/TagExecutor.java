@@ -16,15 +16,15 @@ class TagExecutor {
     @Test
     void PHONE_PACKAGES() {
         Results results = Runner.path("classpath:monnai/MAIN")
-                .tags("@PHONE_PACKAGES")
+                .tags("@PHONE_PACKAGES","~@ignore" )
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
     @Test
     void EMAIL_PACKAGES() {
-        Results results = Runner.path("classpath:monnai/MAIN")
-                .tags("@EMAIL_PACKAGES")
+        Results results = Runner.path("classpath:monnai/MAIN/insights")
+                .tags("@EMAIL_PACKAGES","~@ignore" )
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
@@ -32,7 +32,7 @@ class TagExecutor {
     @Test
     void EMPLOYMENT_DOMAIN_PACKAGES() {
         Results results = Runner.path("classpath:monnai/MAIN")
-                .tags("@regTest_3")
+                .tags("@regTest_3","~@ignore" )
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
@@ -40,7 +40,7 @@ class TagExecutor {
     @Test
     void UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES() {
         Results results = Runner.path("classpath:monnai/MAIN")
-                .tags("@regTest_4")
+                .tags("@regTest_4","~@ignore" )
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
@@ -48,7 +48,7 @@ class TagExecutor {
     @Test
     void IP_DEVICE_ADDRESS_BASIC_PACKAGES() {
         Results results = Runner.path("classpath:monnai/MAIN")
-                .tags("@regTest_5")
+                .tags("@regTest_5","~@ignore" )
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }

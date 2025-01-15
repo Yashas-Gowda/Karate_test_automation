@@ -171,7 +171,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
   #  cc: @Roopa
 
 
-  @oct_23_release
+
     #  @smokeTest1 @PHONE_BASIC @PHONE_TENURE @WDD @activationDate @activeSinceXDays @Asliri @phoneNumberAge @phoneNumberAgeDescription @Monnai_Derived @phoneTenure @min @max
   Scenario Outline:  DPI PHONE_BASIC_Sub_PHONE_TENURE positive scenario for Indian region with validation of PHONE_TENURE - <Scenario>
     Given url requestUrl
