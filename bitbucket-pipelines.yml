@@ -9,7 +9,7 @@ image: yashasgowdaem/custom-oraclelinux-maven
 
 pipelines:
   custom:
-    Test_Env__Insights_Verification:
+    Test_Env_Insights_Verification:
       - step:
           name: Run Karate Tests
           caches:
@@ -45,7 +45,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env__Insights:
+    Test_Env_Insights:
       - step:
           name: Run Karate Tests
           caches:
@@ -81,7 +81,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env__Verification:
+    Test_Env_Verification:
       - step:
           name: $Run Karate Tests
           caches:
@@ -153,7 +153,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_PHONE_PACKAGES:
+    Test_Env__PHONE_PACKAGES:
       - step:
           name: Run Karate Tests
           caches:
@@ -189,7 +189,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_EMAIL_PACKAGES:
+    Test_Env__EMAIL_PACKAGES:
       - step:
           name: Run Karate Tests
           caches:
@@ -225,7 +225,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_EMPLOYMENT_DOMAIN_PACKAGES:
+    Test_Env__EMPLOYMENT_DOMAIN_PACKAGES:
       - step:
           name: Run Karate Tests
           caches:
@@ -261,7 +261,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_IP_DEVICE_ADDRESS_BASIC_PACKAGES:
+    Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES:
       - step:
           name: Run Karate Tests
           caches:
