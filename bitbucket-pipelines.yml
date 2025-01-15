@@ -9,7 +9,7 @@ image: yashasgowdaem/custom-oraclelinux-maven
 
 pipelines:
   custom:
-    Test_Env_Insights_Verification:
+    Test_Env__Insights_Verification:
       - step:
           name: Run Karate Tests
           caches:
@@ -45,7 +45,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_Insights:
+    Test_Env__Insights:
       - step:
           name: Run Karate Tests
           caches:
@@ -81,7 +81,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_Verification:
+    Test_Env__Verification:
       - step:
           name: $Run Karate Tests
           caches:
@@ -117,7 +117,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env_authGen:
+    Test_Env__authGen:
       - step:
           name: Run Karate Tests
           caches:
