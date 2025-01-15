@@ -117,7 +117,7 @@ pipelines:
             - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
-    Test_Env__authGen:
+    Test_Env_authGen:
       - step:
           name: Run Karate Tests
           caches:
@@ -186,7 +186,7 @@ pipelines:
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             # Send Slack Notification
             - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__PHONE_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
     Test_Env__EMAIL_PACKAGES:
@@ -222,7 +222,7 @@ pipelines:
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             # Send Slack Notification
             - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__EMAIL_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
     Test_Env__EMPLOYMENT_DOMAIN_PACKAGES:
@@ -258,7 +258,7 @@ pipelines:
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             # Send Slack Notification
             - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__EMPLOYMENT_DOMAIN_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
     Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES:
@@ -294,7 +294,7 @@ pipelines:
             - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
             # Send Slack Notification
             - Slack_Url="https://hooks.slack.com/services/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"
-            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
 
     Release_Env_Insights_Verification:
