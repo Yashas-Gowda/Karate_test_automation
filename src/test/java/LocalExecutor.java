@@ -16,7 +16,7 @@ class LocalExecutor {
     @Test
     void regTest_1() {
         Results results = Runner.path("classpath:monnai/MAIN/insights")
-                .tags("@EMPLOYMENT_BASIC")
+                .tags("@EMAIL_BASIC_CUSTOM_PARALLEL")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
