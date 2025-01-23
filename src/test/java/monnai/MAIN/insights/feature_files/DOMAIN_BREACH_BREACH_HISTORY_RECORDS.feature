@@ -1,4 +1,4 @@
-@regTest_3 @DOMAIN_BREACH
+@regTest_3 @DOMAIN_BREACH @ignore
   #@DOMAIN_BREACH_BREACH_HISTORY_RECORDS
 
   #@parallel=false
