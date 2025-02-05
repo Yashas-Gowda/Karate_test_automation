@@ -24,8 +24,8 @@
           "accounts": [
             {
               "appName": "Google Pay",
-              "nameAtBank": "VIJAY SECURITY SERVICES  ",
-              "upiId": "njrane29-3@oksbi",
+              "nameAtBank": "Anjanadry Arun Rane",
+              "upiId": "raneanjan@oksbi",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -40,17 +40,21 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "+918879364922",
       "cleansedPhoneNumber": "+918879364922",
-      "referenceId": "UI-6bfcc651dec9be0b50ff73d234992b208b94c11f",
+      "referenceId": "eef7bd4f-e14f-40fa-961c-30c060e4bb84",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
-      "inputUpiApplicationName": "PRIMARY"
+      "inputUpiApplicationName": "PRIMARY",
+      "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

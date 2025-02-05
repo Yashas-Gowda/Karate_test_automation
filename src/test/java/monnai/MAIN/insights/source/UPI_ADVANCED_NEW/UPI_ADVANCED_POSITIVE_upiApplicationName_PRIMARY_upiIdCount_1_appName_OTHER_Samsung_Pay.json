@@ -4,7 +4,6 @@
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "9652341923",
-    "email": "rachamounika786@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -25,7 +24,7 @@
           "accounts": [
             {
               "appName": "Samsung Pay",
-              "nameAtBank": "RACHA VENKAYAMMA ",
+              "nameAtBank": "Racha Venkayamma",
               "upiId": "rachamounika786@pingpay",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
@@ -48,8 +47,7 @@
     "meta": {
       "inputPhoneNumber": "9652341923",
       "cleansedPhoneNumber": "+919652341923",
-      "referenceId": "Dpi_oct_3_release_1",
-      "inputEmail": "rachamounika786@gmail.com",
+      "referenceId": "Dpi_dec_6_upi_7",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],

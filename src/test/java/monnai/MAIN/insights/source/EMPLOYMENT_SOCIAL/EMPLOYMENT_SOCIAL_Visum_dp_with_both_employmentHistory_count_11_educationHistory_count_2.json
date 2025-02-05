@@ -7,7 +7,7 @@
       "EMPLOYMENT_SOCIAL"
     ]
   },
-  "response": {
+  "response":  {
     "data": {
       "phone": null,
       "email": null,
@@ -25,16 +25,26 @@
             "name": "Harish YVS",
             "linkedinHeadline": "Your Fintduct (Fintech + Product) guy",
             "location": "Bengaluru, Karnataka, India",
+            "employerName": "Finfactor Technologies Private Limited",
             "linkedinUrl": "https://www.linkedin.com/in/harishyvs",
-            "photoUrl": "https://media.licdn.com/dms/image/v2/C5603AQFlFcLmx6gppA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1632690087885?e=1736985600&v=beta&t=hTEn6p2CHEthzUXOhuDR5EI5P1L3s7UTzrveBGeDHFg",
-            "employmentHistoryCount": 12,
+            "photoUrl": "https://media.licdn.com/dms/image/v2/D5603AQGznxXa7zJKoQ/profile-displayphoto-shrink_800_800/B56ZNmcmDSGcAc-/0/1732590593079?e=1741824000&v=beta&t=CEnWU4ktHs53SaVOT4YRrT4Ul-pHaEcMaV5cCY5oyiw",
+            "employmentHistoryCount": 13,
             "educationHistoryCount": 2
           },
           "employmentHistory": [
             {
+              "employeeDesignation": "Head of Product",
+              "employerName": "Finfactor Technologies Private Limited",
+              "employerLocation": "Pune, Maharashtra, India · Hybrid",
+              "dateOfJoining": "2024-11-01",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQED069HFBTHSg/company-logo_400_400/company-logo_400_400/0/1730953725112/finfactor_technologies_private_limited_logo?e=1744848000&v=beta&t=ZBTKZmhy--K2iUdSoKyfd5VB21LiDRsPt-vk5JHAN7A",
+              "employerLinkedinUrl": "https://www.linkedin.com/company/82650443/"
+            },
+            {
               "employeeDesignation": "Personal goal pursuit",
               "employerName": "Career Break",
-              "dateOfJoining": "2024-10-01"
+              "dateOfJoining": "2024-10-01",
+              "dateOfExit": "2024-11-15"
             },
             {
               "employeeDesignation": "Head - Product Development and Product Strategy ",
@@ -42,7 +52,7 @@
               "employerLocation": "Bengaluru, Karnataka, India",
               "dateOfJoining": "2022-05-01",
               "dateOfExit": "2024-09-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/D560BAQHd5VURKeIXAQ/company-logo_400_400/company-logo_400_400/0/1664528260260/monnai_logo?e=1739404800&v=beta&t=vAlxU2QYb2A2hWXiUVFJgEgdH6ogEWpsDmq81bm2IjU",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D560BAQHd5VURKeIXAQ/company-logo_400_400/company-logo_400_400/0/1664528260260/monnai_logo?e=1744848000&v=beta&t=lX5-nYPqFgJ-4hfRbbiI64WBs6sAohbiFWq_wydAJuw",
               "employerLinkedinUrl": "https://www.linkedin.com/company/77158228/"
             },
             {
@@ -51,7 +61,7 @@
               "employerLocation": "Pune, Maharashtra, India · Hybrid",
               "dateOfJoining": "2021-03-01",
               "dateOfExit": "2022-05-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGdBcerOjG2Xg/company-logo_400_400/company-logo_400_400/0/1675239943137/karza_technologies_logo?e=1739404800&v=beta&t=NW61jkSHeuHtG9reHBwjVek5uMNslFMj_MHWGtbkymY",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGdBcerOjG2Xg/company-logo_400_400/company-logo_400_400/0/1675239943137/karza_technologies_logo?e=1744848000&v=beta&t=4udT3OCHjZCC5gFGh3vomfRHyNF-I8GUH2eDnE0Mo3I",
               "employerLinkedinUrl": "https://www.linkedin.com/company/6603026/"
             },
             {
@@ -59,7 +69,7 @@
               "employerName": "Bajaj Finserv",
               "dateOfJoining": "2018-09-01",
               "dateOfExit": "2021-02-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1739404800&v=beta&t=NkHsDAma2SYejV4799lqt4lYicg6bxkMz7bD4YBP_pM",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1744848000&v=beta&t=af-Yj7yVfLAkdT948go8WaglgBcvz_ZPjGjn3l7uUY0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
             },
             {
@@ -67,7 +77,7 @@
               "employerName": "Bajaj Finserv",
               "dateOfJoining": "2017-01-01",
               "dateOfExit": "2018-08-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1739404800&v=beta&t=NkHsDAma2SYejV4799lqt4lYicg6bxkMz7bD4YBP_pM",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQFqvNmVHyb1sQ/company-logo_400_400/company-logo_400_400/0/1693568919419/bajaj_finserv_lending_logo?e=1744848000&v=beta&t=af-Yj7yVfLAkdT948go8WaglgBcvz_ZPjGjn3l7uUY0",
               "employerLinkedinUrl": "https://www.linkedin.com/company/1092003/"
             },
             {
@@ -76,7 +86,7 @@
               "employerLocation": "Bengaluru Area, India",
               "dateOfJoining": "2016-04-01",
               "dateOfExit": "2016-12-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQG8QTQUeybruQ/company-logo_400_400/company-logo_400_400/0/1652177251610/tracxn_logo?e=1739404800&v=beta&t=vB7PweWBcWUtLjL6ZsJS6SL6hUg-ne3eqsi3b9wXi5w",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQG8QTQUeybruQ/company-logo_400_400/company-logo_400_400/0/1652177251610/tracxn_logo?e=1744848000&v=beta&t=u-GoNQyB2PI4dkmNqVgUoLNRIBTXcu6g2OiTuwK-U9U",
               "employerLinkedinUrl": "https://www.linkedin.com/company/3366835/"
             },
             {
@@ -84,7 +94,7 @@
               "employerName": "Reliance",
               "dateOfJoining": "2015-08-01",
               "dateOfExit": "2016-04-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1744848000&v=beta&t=W3xCN85nTkTQGZ8sHutFHWFNEH-IUvhLECSl-npXZc8",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -92,7 +102,7 @@
               "employerName": "Reliance",
               "dateOfJoining": "2014-07-01",
               "dateOfExit": "2015-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1744848000&v=beta&t=W3xCN85nTkTQGZ8sHutFHWFNEH-IUvhLECSl-npXZc8",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -101,7 +111,7 @@
               "employerLocation": "Guwahati Area, India",
               "dateOfJoining": "2013-06-01",
               "dateOfExit": "2014-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1739404800&v=beta&t=x067pQckRhZfkVHPuvEAdxPzjpaiyB3Hlkhb_S33dIs",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1744848000&v=beta&t=0RttZc9qOuMHXrpK6jF-l3LVnj9A8ujgYQfhKB-11bk",
               "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
             },
             {
@@ -110,7 +120,7 @@
               "employerLocation": "Jamnagar Area, India",
               "dateOfJoining": "2013-05-01",
               "dateOfExit": "2013-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1744848000&v=beta&t=W3xCN85nTkTQGZ8sHutFHWFNEH-IUvhLECSl-npXZc8",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             },
             {
@@ -119,7 +129,7 @@
               "employerLocation": "Guwahati Area, India",
               "dateOfJoining": "2012-07-01",
               "dateOfExit": "2013-04-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1739404800&v=beta&t=x067pQckRhZfkVHPuvEAdxPzjpaiyB3Hlkhb_S33dIs",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQFsVma02aZ5dg/company-logo_400_400/company-logo_400_400/0/1631325731159?e=1744848000&v=beta&t=0RttZc9qOuMHXrpK6jF-l3LVnj9A8ujgYQfhKB-11bk",
               "employerLinkedinUrl": "https://www.linkedin.com/company/157270/"
             },
             {
@@ -128,20 +138,19 @@
               "employerLocation": "Jamnagar Area, India",
               "dateOfJoining": "2012-05-01",
               "dateOfExit": "2012-07-15",
-              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1739404800&v=beta&t=jaWHaqpehDQfBlA_-S5jubukiGhj_ZtPhB8Vc8ycue0",
+              "employerLogo": "https://media.licdn.com/dms/image/v2/C560BAQGL2p38Nc6Qkg/company-logo_400_400/company-logo_400_400/0/1661518370542/reliance_logo?e=1744848000&v=beta&t=W3xCN85nTkTQGZ8sHutFHWFNEH-IUvhLECSl-npXZc8",
               "employerLinkedinUrl": "https://www.linkedin.com/company/2378/"
             }
           ],
           "educationHistory": [
             {
-              "fieldOfStudy": "Bachelor of Technology (B.Tech.), Chemical Engineering",
-              "degreeName": "Bachelor of Technology (B.Tech.), Chemical Engineering",
+              "fieldOfStudy": "Chemical Engineering",
+              "degreeName": "Bachelor of Technology (B.Tech.)",
               "schoolName": "Indian Institute of Technology, Guwahati",
               "startYear": 2010,
               "endYear": 2014
             },
             {
-              "fieldOfStudy": "10th Std",
               "degreeName": "10th Std",
               "schoolName": "Sri Krishna Vidya Mandir",
               "startYear": 2002,
@@ -162,7 +171,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "01a5141f-0355-405c-8e04-78be8b65c2a1",
+      "referenceId": "7a16e2a8-52b4-4404-a601-4974fcbe64bf",
       "inputEmail": "harishyvs5@gmail.com",
       "requestedPackages": [
         "EMPLOYMENT_SOCIAL"

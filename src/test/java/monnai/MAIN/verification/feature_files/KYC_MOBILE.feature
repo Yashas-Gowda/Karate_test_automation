@@ -1,4 +1,4 @@
-@KYC_MOBILE @regTest_4 @KYC
+@KYC_MOBILE  @KYC
 
 Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
 
@@ -448,5 +448,5 @@ Feature: Testing of DPI  - Verification KYC_MOBILE Package scenarios
       | KYC_MOBILE_input_phoneNumber_value_bollean             | 400        |
 
 
-      
+
 

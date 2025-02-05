@@ -1,0 +1,74 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "'6281555605225",
+    "address": {
+      "addressLine1": "Jalan Dukuh Pinggir V 6",
+      "addressLine2": null,
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": null,
+      "state": null,
+      "postalCode": null,
+      "country": "INDONESIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "closestDistance": {
+            "min": 4001.0,
+            "max": null
+          }
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "'6281555605225",
+      "cleansedPhoneNumber": "+6281555605225",
+      "referenceId": "jan_13_prime_2",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "Jalan Dukuh Pinggir V 6",
+        "addressLine2": null,
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": null,
+        "state": null,
+        "postalCode": null,
+        "country": "INDONESIA"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

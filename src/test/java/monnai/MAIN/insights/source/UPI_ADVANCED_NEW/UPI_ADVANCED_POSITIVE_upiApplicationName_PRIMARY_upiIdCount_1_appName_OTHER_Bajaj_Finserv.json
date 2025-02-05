@@ -4,7 +4,6 @@
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "7978688143",
-    "email": "sudam.1990@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -25,8 +24,8 @@
           "accounts": [
             {
               "appName": "Bajaj Finserv",
-              "nameAtBank": "SUDAM SENAPATI",
-              "upiId": "7978688143.bfl@abfspay",
+              "nameAtBank": "Sudam Senapati",
+              "upiId": "7978688143@abfspay",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -48,8 +47,7 @@
     "meta": {
       "inputPhoneNumber": "7978688143",
       "cleansedPhoneNumber": "+917978688143",
-      "referenceId": "Dpi_oct_3_release_1",
-      "inputEmail": "sudam.1990@gmail.com",
+      "referenceId": "Dpi_dec_6_upi_7",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],

@@ -5,7 +5,7 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "sdfdsfsd@HDFCBANK.COM"
+    "email": "demo@apple1.COM"
   },
   "response": {
     "data": {
@@ -16,20 +16,20 @@
           "deliverable": false,
           "domainDetails": {
             "domainType": "valid",
-            "domainName": "hdfcbank.com",
+            "domainName": "apple1.com",
             "tld": ".com",
-            "creationTime": "1997-05-14 06:47:56",
+            "creationTime": "2000-03-10 07:38:53",
             "updateTime": null,
             "expiryTime": null,
-            "registered": true,
-            "companyName": "HDFC Bank Limited",
-            "registrarName": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+            "registered": false,
+            "companyName": "REDACTED FOR PRIVACY",
+            "registrarName": "TUCOWS, INC.",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
-            "websiteExists": true,
+            "websiteExists": false,
             "acceptAll": false,
             "custom": null
           },
@@ -38,11 +38,11 @@
             "noOfBreaches": 0,
             "firstBreach": null,
             "lastBreach": null,
-            "breaches": [
-            ]
+            "breaches": []
           },
           "emailTenure": null
-        }
+        },
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -57,16 +57,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "ae806797-eae4-431b-9aa1-5f6e5b8f8399",
-      "inputEmail": "sdfdsfsd@HDFCBANK.COM",
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "demo@apple1.COM",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

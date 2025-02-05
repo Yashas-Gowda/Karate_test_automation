@@ -2,8 +2,10 @@
 # Use a skeleton to build, test and deploy using manual and parallel steps
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
+#
+#image: maven:3.8.5-openjdk-17
 
-image: maven:3.8.5-openjdk-17
+image: yashasgowdaem/custom-oraclelinux-maven
 
 pipelines:
   custom:
@@ -14,9 +16,34 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights_Verification"
-            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore"  -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
           artifacts:
             - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
 
     Test_Env_Insights:
       - step:
@@ -25,87 +52,70 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_Insights"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
           artifacts:
             - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
 
     Test_Env_Verification:
       - step:
-          name: Run Karate Tests
+          name: $Run Karate Tests
           caches:
             - maven
           script:
-            - echo "Running Karate tests - Test_Env_Verification"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
+            - echo "Running Karate tests - Test_Env_Insights"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5  --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
           artifacts:
             - target/karate-reports/**
 
-    Release_Env_Insights_Verification:
       - step:
-          name: Run Karate Tests
-          caches:
-            - maven
+          name: Upload Reports and Notify
           script:
-            - echo "Running Karate tests - Release_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
-          artifacts:
-            - target/karate-reports/**
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
-    Release_Env_Insights:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            - echo "Running Karate tests - Release_Env_Insights"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
-          artifacts:
-            - target/karate-reports/**
-
-    Release_Env_Verification:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            script:
-            - echo "Running Karate tests - Release_Env_Verification"
-            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-          artifacts:
-            - target/karate-reports/**
-
-    Dev_Env_Insights_Verification:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            - echo "Running Karate tests - Dev_Env_Insights_Verification"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner
-          artifacts:
-            - target/karate-reports/**
-
-    Dev_Env_Insights:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            - echo "Running Karate tests - Dev_Env_Insights"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights
-          artifacts:
-            - target/karate-reports/**
-
-    Dev_Env_Verification:
-      - step:
-          name: Run Karate Tests
-          caches:
-            - maven
-          script:
-            - echo "Running Karate tests - Dev_Env_Verification"
-            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification
-          artifacts:
-            - target/karate-reports/**
 
     Test_Env_authGen:
       - step:
@@ -114,19 +124,649 @@ pipelines:
             - maven
           script:
             - echo "Running Karate tests - Test_Env_authGen"
-            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token -Dmaven.test.failure.ignore=true
           artifacts:
             - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Test_Env__PHONE_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags @PHONE_PACKAGES --tags ~@ignore" -Dtest=TagExecutor#PHONE_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__PHONE_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Test_Env__EMAIL_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags @PHONE_PACKAGES --tags ~@ignore" -Dtest=TagExecutor#EMAIL_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__EMAIL_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Test_Env__EMPLOYMENT_DOMAIN_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_3 --tags ~@ignore" -Dtest=TagExecutor#EMPLOYMENT_DOMAIN_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__EMPLOYMENT_DOMAIN_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Test_Env__UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_4 --tags ~@ignore" -Dtest=TagExecutor#UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=test-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_5 --tags ~@ignore" -Dtest=TagExecutor#IP_DEVICE_ADDRESS_BASIC_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Test_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+
+    Release_Env_Insights_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Insights_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env_Insights:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Insights"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Release_Env_Verification"
+            - mvn clean test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env__PHONE_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags @PHONE_PACKAGES --tags ~@ignore" -Dtest=TagExecutor#PHONE_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env__PHONE_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env__EMAIL_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags @PHONE_PACKAGES --tags ~@ignore" -Dtest=TagExecutor#EMAIL_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env__EMAIL_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env__EMPLOYMENT_DOMAIN_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_3 --tags ~@ignore" -Dtest=TagExecutor#EMPLOYMENT_DOMAIN_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env__EMPLOYMENT_DOMAIN_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env__UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_4 --tags ~@ignore" -Dtest=TagExecutor#UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env__UPI_INCOME_KYC_ADDRESS_VERIFICATION_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Release_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Test_Env_authGen"
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags @regTest_5 --tags ~@ignore" -Dtest=TagExecutor#IP_DEVICE_ADDRESS_BASIC_PACKAGES -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env__IP_DEVICE_ADDRESS_BASIC_PACKAGES at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Dev_Env_Insights_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Insights_Verification"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsightsVerification -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Dev_Env_Insights_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Dev_Env_Insights:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Insights"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testInsights -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Dev_Env_Insights at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
+
+    Dev_Env_Verification:
+      - step:
+          name: Run Karate Tests
+          caches:
+            - maven
+          script:
+            - echo "Running Karate tests - Dev_Env_Verification"
+            - mvn clean test -Dkarate.env=dev-m -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#testVerification -Dmaven.test.failure.ignore=true
+          artifacts:
+            - target/karate-reports/**
+
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Dev_Env_Verification at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
+
     Release_Env_authGen:
       - step:
           name: Run Karate Tests
           caches:
             - maven
           script:
+            # Run report
             - echo "Running Karate tests - Release_Env_authGen"
-            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token
+            - mvn test -Dkarate.env=release-fidoV2 -Dkarate.options="--threads 5 --tags ~@ignore" -Dtest=MonnaiTestRunner#auth_Token -Dmaven.test.failure.ignore=true
           artifacts:
             - target/karate-reports/**
 
+      - step:
+          name: Upload Reports and Notify
+          script:
+            - echo "Date and Day ..... "
+            - DATE_TIME=$(TZ="Asia/Kolkata" date '+%d-%m-%Y_%H-%M-%S')
+            - DATE=$(TZ="Asia/Kolkata" date '+%d-%m-%Y')
+            - TIME=$(TZ="Asia/Kolkata" date '+%H:%M:%S')
+            - echo "$DATE_TIME"
+            - cat /etc/os-release
+            # Install AWS CLI for uploading artifacts to S3
+            - dnf install -y unzip curl
+            - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            - unzip awscliv2.zip && ./aws/install
+            - aws --version
+            # Upload Reports to S3
+            - echo "Uploading Karate report to S3..."
+            - aws s3 cp target/karate-reports/ s3://autokaratereport/$DATE_TIME/ --recursive --acl public-read
+            # Construct Report URL
+            # Karate_Report_Url -
+            - Report_Url="https://autokaratereport.s3.ap-southeast-1.amazonaws.com/$DATE_TIME/karate-summary.html"
+            # Send Slack Notification
+            - Slack_Url="https://hooks.slack.com/services/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"
+            - 'curl -X POST -H "Content-type:application/json" --data "{\"text\":\" DPI Karate Regression Suite - Release_Env_authGen at $DATE at $TIME :watch: \n $Report_Url\"}" $Slack_Url'
 
+
+  # regression_alerts         - Slack_Url="https://hooks.slack.com/services/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"
+  # slack_alerts_qa_testing   - Slack_Url="https://hooks.slack.com/services/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"
+  # Yashas channel            - Slack_Url="https://hooks.slack.com/services/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"
 

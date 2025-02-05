@@ -11,6 +11,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
+    * header x-timeout = 90000
 
   Scenario Outline: Validate DPI EMPLOYMENT_BASIC positive scenario  --> <Scenario>
     Given url requestUrl
@@ -190,7 +191,7 @@ Feature: Testing of DPI  - EMPLOYMENT_BASIC package feature scenarios
       | EMPLOYMENT_BASIC_when_request_phoneDefaultCountryCode_other_then_IN | 501        |
 
 
-  @30_oct_2024
+
   Scenario Outline: Validate DPI EMPLOYMENT_DETAILS Negative scenario  --> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMPLOYMENT_BASIC/Negative/<Scenario>.json")

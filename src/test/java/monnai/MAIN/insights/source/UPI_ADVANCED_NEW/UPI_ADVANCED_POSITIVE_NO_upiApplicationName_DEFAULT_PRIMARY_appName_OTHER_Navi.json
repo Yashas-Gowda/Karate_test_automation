@@ -4,7 +4,7 @@
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "7744894646",
-    "email": "ahay58900@gmail.com",
+
     "packages": [
       "UPI_ADVANCED"
     ]
@@ -24,7 +24,7 @@
           "accounts": [
             {
               "appName": "Navi",
-              "nameAtBank": "HEALTH CARE PHARMA",
+              "nameAtBank": "Health Care Pharma",
               "upiId": "7744894646@naviaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
@@ -48,7 +48,6 @@
       "inputPhoneNumber": "7744894646",
       "cleansedPhoneNumber": "+917744894646",
       "referenceId": "Dpi_oct_3_release_1",
-      "inputEmail": "ahay58900@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],

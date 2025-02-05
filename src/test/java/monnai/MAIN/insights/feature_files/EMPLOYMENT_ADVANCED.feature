@@ -13,6 +13,8 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
     * path '/api/insights/'
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
+    * header x-timeout = 90000
+
 
   Scenario Outline: Validate DPI EMPLOYMENT_ADVANCED positive scenario  <Scenario>
     Given url requestUrl

@@ -5,27 +5,27 @@
     "packages": [
       "EMAIL_BASIC"
     ],
-    "email": "PARAS.SHARMA2@HDFCBANK.COM"
+    "email": "meyashasgowda@gmail.com"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": null,
       "email": {
         "social": null,
         "basic": {
-          "deliverable": false,
+          "deliverable": true,
           "domainDetails": {
             "domainType": "valid",
-            "domainName": "hdfcbank.com",
+            "domainName": "gmail.com",
             "tld": ".com",
-            "creationTime": "1997-05-20 06:47:55",
+            "creationTime": "1995-08-13 07:31:22",
             "updateTime": null,
             "expiryTime": null,
             "registered": true,
-            "companyName": "HDFC Bank Limited",
-            "registrarName": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+            "companyName": "Google LLC",
+            "registrarName": "MarkMonitor, Inc.",
             "disposable": false,
-            "freeProvider": false,
+            "freeProvider": true,
             "dmarcCompliance": null,
             "spfStrict": null,
             "suspiciousTld": null,
@@ -38,11 +38,11 @@
             "noOfBreaches": 0,
             "firstBreach": null,
             "lastBreach": null,
-            "breaches": [
-            ]
+            "breaches": []
           },
           "emailTenure": null
-        }
+        },
+        "breach": null
       },
       "address": null,
       "name": null,
@@ -57,16 +57,17 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "22b3ecf8-3832-4f26-b47d-073a8838893f",
-      "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "meyashasgowda@gmail.com",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

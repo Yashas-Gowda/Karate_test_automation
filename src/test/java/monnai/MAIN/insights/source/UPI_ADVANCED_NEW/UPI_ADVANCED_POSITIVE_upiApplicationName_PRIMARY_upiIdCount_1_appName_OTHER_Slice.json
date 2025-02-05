@@ -4,7 +4,6 @@
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "7795731123",
-    "email": "kirankumarbs1985@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -25,7 +24,7 @@
           "accounts": [
             {
               "appName": "Slice",
-              "nameAtBank": "KIRAN KUMAR B S",
+              "nameAtBank": "Kiran Kumar B S",
               "upiId": "kirankumarbs1@sliceaxis",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
@@ -48,8 +47,7 @@
     "meta": {
       "inputPhoneNumber": "7795731123",
       "cleansedPhoneNumber": "+917795731123",
-      "referenceId": "Dpi_oct_3_release_1",
-      "inputEmail": "kirankumarbs1985@gmail.com",
+      "referenceId": "Dpi_dec_6_upi_7",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],

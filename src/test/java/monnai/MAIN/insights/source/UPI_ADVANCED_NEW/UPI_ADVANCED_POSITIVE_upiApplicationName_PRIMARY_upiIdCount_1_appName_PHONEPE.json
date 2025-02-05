@@ -4,7 +4,6 @@
     "cleansingFlag": true,
     "phoneDefaultCountryCode": "IN",
     "phoneNumber": "918428880581",
-    "email": "naveenmj999@gmail.com",
     "upiApplicationName": "PRIMARY",
     "packages": [
       "UPI_ADVANCED"
@@ -25,7 +24,7 @@
           "accounts": [
             {
               "appName": "PhonePe",
-              "nameAtBank": "NARISETTY VENKATA RAVI",
+              "nameAtBank": "Narisetty Venkata Ravi",
               "upiId": "12ravivenkat2@ybl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
@@ -48,15 +47,13 @@
     "meta": {
       "inputPhoneNumber": "918428880581",
       "cleansedPhoneNumber": "+918428880581",
-      "referenceId": "50ad0c37-46df-4d6e-9d54-fd821a8530c0",
-      "inputEmail": "naveenmj999@gmail.com",
+      "referenceId": "Dpi_dec_6_upi_7",
       "requestedPackages": [
         "UPI_ADVANCED"
       ],
       "inputUpiApplicationName": "PRIMARY",
       "inputPhoneDefaultCountryCode": "IN"
     },
-    "errors": [
-    ]
+    "errors": []
   }
 }

@@ -181,7 +181,7 @@ Feature: Testing of DPI  - EMAIL_BASIC feature scenarios with FIDO
       | Email_Basic_isBreached_false_emailTenure_null | 200        |
       | Email_Basic_freeProvider_false                | 200        |
       | Email_Basic_deliverable_false                 | 200        |
-  #data not found for | Email_Basic_disposable_true                   | 200        |
+      | Email_Basic_disposable_true                   | 200        |
   #data not found for | Email_Basic_suspiciousTld_true                | 200        |
 
   Scenario Outline:  DPI EMAIL_BASIC positive scenario - Special cases :- <Scenario>

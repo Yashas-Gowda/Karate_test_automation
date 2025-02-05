@@ -247,7 +247,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_emailProvider_yahoo_true  | 200        |
 
   #fido ecommerce - fido gives { amazon, ebay , deliveroo}
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce - amazon - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/ecommerce/<Scenario>.json")
     And headers headers
@@ -277,7 +277,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * def count_ecommerce_registered_profiles = ecommerce_registered_array.filter(x => x == true).length
     * print count_ecommerce_registered_profiles
     * match count_ecommerce_registered_profiles == $.data.email.social.summary.registeredEcommerceProfiles
-    * match payload.response.data.email.social.profiles.ecommerce == $.data.email.social.profiles.ecommerce
+    * match payload.response.data.email.social.profiles.ecommerce.amazon == $.data.email.social.profiles.ecommerce.amazon
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
     * match  $.errors contains only deep  payload.response.errors
@@ -285,10 +285,84 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | Scenario                                             | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_true     | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_amazon_false    | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true       | 200        |
-      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_false      | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce - deliveroo -  <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/ecommerce/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    #    * match payload.response.data.email.social.summary.registeredEcommerceProfiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * def ecommerce = $.data.email.social.profiles.ecommerce
+    * print ecommerce
+    * def ecommerce_registered_array = $.data.email.social.profiles.ecommerce..registered
+    * print ecommerce_registered_array
+    * def count_ecommerce_registered_profiles = ecommerce_registered_array.filter(x => x == true).length
+    * print count_ecommerce_registered_profiles
+    * match count_ecommerce_registered_profiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * match payload.response.data.email.social.profiles.ecommerce.deliveroo == $.data.email.social.profiles.ecommerce.deliveroo
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                             | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_ecommerce_deliveroo_false | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile  = ecommerce - ebay - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/ecommerce/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    #    * match payload.response.data.email.social.summary.registeredEcommerceProfiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * def ecommerce = $.data.email.social.profiles.ecommerce
+    * print ecommerce
+    * def ecommerce_registered_array = $.data.email.social.profiles.ecommerce..registered
+    * print ecommerce_registered_array
+    * def count_ecommerce_registered_profiles = ecommerce_registered_array.filter(x => x == true).length
+    * print count_ecommerce_registered_profiles
+    * match count_ecommerce_registered_profiles == $.data.email.social.summary.registeredEcommerceProfiles
+    * match payload.response.data.email.social.profiles.ecommerce.ebay == $.data.email.social.profiles.ecommerce.ebay
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                             | statusCode |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_true       | 200        |
+      | EMAIL_SOCIAL_FIDO_profiles_ecommerce_ebay_false      | 200        |
 
   #      Below socialMedia realeted scanarios are covered in the above test cases, so commented the old test cases
   #  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = ecommerce   - <Scenario>
@@ -802,7 +876,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_travel_booking_false_airbnb_null | 200        |
 
   #fido gives only {paypal,binance} as financial profiles | registeredFinancialProfiles <= 2
-  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial   - <Scenario>
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial - paypal - <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/financial/<Scenario>.json")
     And headers headers
@@ -824,7 +898,6 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print 'Expected Response---->',payload.response
     * print 'Actual Response---->',karate.pretty(response)
     Then status <statusCode>
-
     #    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
     * def financial = $.data.email.social.profiles.financial
     * print financial
@@ -834,7 +907,7 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
     * print count_financial_registered_profiles
     * match count_financial_registered_profiles == $.data.email.social.summary.registeredFinancialProfiles
 
-    * match payload.response.data.email.social.profiles.financial == $.data.email.social.profiles.financial
+    * match payload.response.data.email.social.profiles.financial.paypal == $.data.email.social.profiles.financial.paypal
 
     * match  $.meta contains  payload.response.meta
     * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
@@ -844,6 +917,45 @@ Feature: Testing of DPI  - EMAIL_SOCIAL feature scenarios with FIDO V2
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_true   | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_false  | 200        |
       # Data changed     | EMAIL_SOCIAL_FIDO_profiles_financial_paypal_null | 200        |
+
+  Scenario Outline:  DPI EMAIL_SOCIAL Positive scenarios for validating profile = financial - binance - <Scenario>
+    Given url requestUrl
+    And def payload = read( "../" + source + "/EMAIL_SOCIAL_FIDO_V2/financial/<Scenario>.json")
+    And headers headers
+    And header Authorization = BearerToken
+    And request payload.request
+    * set payload.response.meta.referenceId = "#ignore"
+    When method POST
+    # cloud watch traces -start
+    * print karate.request.headers
+    * print karate.response.headers
+    * print 'x-reference-id----->',karate.request.headers['x-reference-id']
+    * def reference_id = karate.request.headers['x-reference-id']
+    * def Cloud_Watch_Traces = "https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22" + reference_id + "*22)~context~(timeRange~(delta~21600000)))"
+    * print 'Cloudwatch_dpi Traces----->',Cloud_Watch_Traces
+    # ResponseTime
+    * print 'responseTime----->',responseTime
+    # Request-response
+    * print 'API Request----->',payload.request
+    * print 'Expected Response---->',payload.response
+    * print 'Actual Response---->',karate.pretty(response)
+    Then status <statusCode>
+    #    * match payload.response.data.email.social.summary.registeredFinancialProfiles == $.data.email.social.summary.registeredFinancialProfiles
+    * def financial = $.data.email.social.profiles.financial
+    * print financial
+    * def financial_registered_array = $.data.email.social.profiles.financial..registered
+    * print financial_registered_array
+    * def count_financial_registered_profiles = financial_registered_array.filter(x => x == true).length
+    * print count_financial_registered_profiles
+    * match count_financial_registered_profiles == $.data.email.social.summary.registeredFinancialProfiles
+
+    * match payload.response.data.email.social.profiles.financial.binance == $.data.email.social.profiles.financial.binance
+
+    * match  $.meta contains  payload.response.meta
+    * match  $.meta.requestedPackages[0] contains  payload.response.meta.requestedPackages[0]
+    * match  $.errors contains only deep  payload.response.errors
+    Examples:
+      | Scenario                                           | statusCode |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_true  | 200        |
       | EMAIL_SOCIAL_FIDO_profiles_financial_binance_false | 200        |
 

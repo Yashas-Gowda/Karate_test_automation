@@ -20,13 +20,16 @@
         },
         "01H6XFS4G3JFMTG43WS0F6FB85": {
           "name": "SEON email_basic"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
         }
       }
     },
     "include": {
       "EMAIL_BASIC": {
-        "01HQ56STADP5RN4YKR6K9RMKM2": {
-          "name": "WhoIsXML",
+        "01JHMMXYC7AXBAA26K3BY1VM4Y": {
+          "name": "inhouse_widc",
           "order": 0
         },
         "01HPVAGR327YWCGH4DAPHRNA18": {
