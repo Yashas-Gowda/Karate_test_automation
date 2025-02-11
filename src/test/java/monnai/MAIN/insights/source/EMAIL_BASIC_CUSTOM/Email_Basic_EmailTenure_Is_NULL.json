@@ -18,12 +18,12 @@
             "domainType": "valid",
             "domainName": "hdfcbank.com",
             "tld": ".com",
-            "creationTime": "1997-04-09 17:50:24",
-            "updateTime": "2023-04-15 17:58:08",
-            "expiryTime": "2027-04-11 04:00:00",
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
             "registered": true,
-            "companyName": "HDFC Bank Limited",
-            "registrarName": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+            "companyName": null,
+            "registrarName": null,
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -38,7 +38,8 @@
             "noOfBreaches": 0,
             "firstBreach": null,
             "lastBreach": null,
-            "breaches": []
+            "breaches": [
+            ]
           },
           "emailTenure": null
         },
@@ -58,15 +59,17 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
-      "referenceId": "Dpi_July_30_email_2",
+      "referenceId": "28626e82-347c-4e7b-b11c-dc5110e8ccec",
       "inputEmail": "PARAS.SHARMA2@HDFCBANK.COM",
       "requestedPackages": [
         "EMAIL_BASIC"
       ]
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

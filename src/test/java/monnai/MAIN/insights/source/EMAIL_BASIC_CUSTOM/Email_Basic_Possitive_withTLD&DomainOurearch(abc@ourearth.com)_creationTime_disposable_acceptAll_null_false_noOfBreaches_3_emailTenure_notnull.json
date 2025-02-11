@@ -18,12 +18,12 @@
             "domainType": "valid",
             "domainName": "ourearth.com",
             "tld": ".com",
-            "creationTime": "1997-02-20 06:35:26",
-            "updateTime": "2024-02-22 13:46:00",
-            "expiryTime": "2025-02-21 00:00:00",
+            "creationTime": "1997-02-20 00:00:00",
+            "updateTime": "2012-07-03 00:00:00",
+            "expiryTime": "2018-02-21 00:00:00",
             "registered": false,
-            "companyName": "Domains By Proxy, LLC",
-            "registrarName": "GoDaddy.com, LLC",
+            "companyName": "John Ullman",
+            "registrarName": "GoDaddy.com LLC",
             "disposable": false,
             "freeProvider": false,
             "dmarcCompliance": null,
@@ -35,10 +35,15 @@
           },
           "breach": {
             "isBreached": true,
-            "noOfBreaches": 3,
+            "noOfBreaches": 4,
             "firstBreach": "2019-02-25",
-            "lastBreach": "2024-05-28",
+            "lastBreach": "2025-01-13",
             "breaches": [
+              {
+                "platformName": "Verifications.io",
+                "domainName": "verifications.io",
+                "breachDate": "2019-02-25"
+              },
               {
                 "platformName": "Naz.API",
                 "domainName": "",
@@ -50,13 +55,13 @@
                 "breachDate": "2024-05-28"
               },
               {
-                "platformName": "Verifications.io",
-                "domainName": "verifications.io",
-                "breachDate": "2019-02-25"
+                "platformName": "Stealer Logs, Jan 2025",
+                "domainName": "",
+                "breachDate": "2025-01-13"
               }
             ]
           },
-          "emailTenure": 5.57
+          "emailTenure": 5.96
         },
         "breach": null
       },
@@ -78,7 +83,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "4ff7e0ba-e414-429e-a0cd-505475226c7c",
+      "referenceId": "a02c79b2-680e-47d2-99a9-b3aa419776aa",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
