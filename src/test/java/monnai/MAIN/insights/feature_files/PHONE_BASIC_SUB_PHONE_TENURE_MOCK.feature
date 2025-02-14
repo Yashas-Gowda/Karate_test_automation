@@ -7,7 +7,7 @@ Feature: MOCK -> Testing of DPI - Phone_basic sub package PHONE_TENURE MOCK scen
     * def authFeature = call read('classpath:monnai/Auth_Token_Generation.feature')
     * def BearerToken = authFeature.authToken
 
-    
+
   Scenario Outline:MOCK -> Testing PHONE_TENURE scenarios data partners fall back for ID region
     Given url requestUrl
     And def payload = read( "../" + source + "/Z_MOCK_PHONE_BASIC_SUB_PHONE_TENURE/<Scenario>.json")
@@ -42,7 +42,12 @@ Feature: MOCK -> Testing of DPI - Phone_basic sub package PHONE_TENURE MOCK scen
     And match $.data.phone.basic.phoneTenure.min == <phoneTenure_min>
     And match $.data.phone.basic.phoneTenure.max == <phoneTenure_max>
     Examples:
-      | Scenario                                                                                                                                                     | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
+      | Scenario                                                                                                                                    | statusCode | activationDate | activeSinceXDays | phoneNumberAge | phoneNumberAgeDescription | phoneTenure | phoneTenure_min | phoneTenure_max |
+      | MOCK_PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_phoneNumberAgeDescription_null_phoneTenure_0_3     | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 0               | 3               |
+      #  Data changed     | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_phoneNumberAgeDescription_null_phoneTenure_3_6                                              | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 3               | 6               |
+      #  Data changed    | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_phoneNumberAgeDescription_null_phoneTenure_6_12                                             | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 6               | 12              |
+      #  Data changed     | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_phoneNumberAgeDescription_null_phoneTenure_12_24                                            | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 12              | 24              |
+      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_phoneNumberAgeDescription_null_phoneTenure_24_null | 200        | "#null"        | "#null"          | "#null"        | "#null"                   | "#notnull"  | 24              | null            |
 
       #        | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_1_phoneNumberAgeDescription_Below_3_Months_phoneTenure_1_2          | 200        | "#null"        | "#null"          | 1              | "Below 3 Months"          | "#notnull"  | 2               | 3               |
       #  Non-indosat     | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_INDOSAT_NUMBER_phoneNumberAge_2_phoneNumberAgeDescription_3_to_6_Months_phoneTenure_4_5           | 200        | "#null"        | "#null"          | 2              | "3 to 6 Months"           | "#notnull"  | 4               | 5               |
@@ -56,15 +61,15 @@ Feature: MOCK -> Testing of DPI - Phone_basic sub package PHONE_TENURE MOCK scen
 
 
       # for below test cases added mock for izidata partner - 01H63M3M35NE02S2S0Y4CB7K09 -izidata_phoneage_v3
-      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_1_phoneNumberAgeDescription_Below_3_Months_phoneTenure_1_2      | 200        | "#null"        | "#null"          | 1              | "Below 3 Months"          | "#notnull"  | 1               | 2               |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_2_phoneNumberAgeDescription_3_to_6_Months_phoneTenure_4_5       | 200        | "#null"        | "#null"          | 2              | "3 to 6 Months"           | "#notnull"  | 4               | 5               |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_6_8      | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 6               | 8               |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_8_10     | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 8               | 10              |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_10_12    | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 10              | 12              |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_4_phoneNumberAgeDescription_12_to_24_Months_phoneTenure_12_24   | 200        | "#null"        | "#null"          | 4              | "12 to 24 Months"         | "#notnull"  | 12              | 24              |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_5_phoneNumberAgeDescription_24_to_36_Months_phoneTenure_24_36   | 200        | "#null"        | "#null"          | 5              | "24 to 36 Months"         | "#notnull"  | 24              | 36              |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_6_phoneNumberAgeDescription_Above_24_Months_phoneTenure_36_null | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
-#      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_null_phoneNumberAgeDescription_null_phoneTenure_null            | 200        | "#null"        | "#null"          | null           | null                      | "#null"     | "#notpresent"   | "#notpresent"   |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_1_phoneNumberAgeDescription_Below_3_Months_phoneTenure_1_2      | 200        | "#null"        | "#null"          | 1              | "Below 3 Months"          | "#notnull"  | 1               | 2               |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_2_phoneNumberAgeDescription_3_to_6_Months_phoneTenure_4_5       | 200        | "#null"        | "#null"          | 2              | "3 to 6 Months"           | "#notnull"  | 4               | 5               |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_6_8      | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 6               | 8               |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_8_10     | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 8               | 10              |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_3_phoneNumberAgeDescription_6_to_12_Months_phoneTenure_10_12    | 200        | "#null"        | "#null"          | 3              | "6 to 12 Months"          | "#notnull"  | 10              | 12              |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_4_phoneNumberAgeDescription_12_to_24_Months_phoneTenure_12_24   | 200        | "#null"        | "#null"          | 4              | "12 to 24 Months"         | "#notnull"  | 12              | 24              |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_5_phoneNumberAgeDescription_24_to_36_Months_phoneTenure_24_36   | 200        | "#null"        | "#null"          | 5              | "24 to 36 Months"         | "#notnull"  | 24              | 36              |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_6_phoneNumberAgeDescription_Above_24_Months_phoneTenure_36_null | 200        | "#null"        | "#null"          | 6              | "Above 36 Months"         | "#notnull"  | 36              | null            |
+      #      | PHONE_BASIC_Sub_PHONE_TENURE_Monnai_Derived_for_country_ID_NON_INDOSAT_NUMBER_phoneNumberAge_null_phoneNumberAgeDescription_null_phoneTenure_null            | 200        | "#null"        | "#null"          | null           | null                      | "#null"     | "#notpresent"   | "#notpresent"   |
 
 
 
