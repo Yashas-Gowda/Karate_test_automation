@@ -13,7 +13,7 @@
       "email": {
         "social": null,
         "basic": {
-          "deliverable": true,
+          "deliverable": false,
           "domainDetails": {
             "domainType": "valid",
             "domainName": "ourearth.com",
@@ -71,7 +71,7 @@
               }
             ]
           },
-          "emailTenure": 5.48
+          "emailTenure": 5.9
         },
         "breach": null
       },
@@ -93,7 +93,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "66b8f9ed-00ea-4229-8655-573ade50b5cf",
+      "referenceId": "eb71bb25-2c96-4cf7-9983-288fb66d5d9b",
       "inputEmail": "mysite@ourearth.com",
       "requestedPackages": [
         "EMAIL_BASIC"
