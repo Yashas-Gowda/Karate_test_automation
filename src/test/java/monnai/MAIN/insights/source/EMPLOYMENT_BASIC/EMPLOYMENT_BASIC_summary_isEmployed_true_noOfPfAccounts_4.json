@@ -8,7 +8,7 @@
     "phoneNumber": "9466760550",
     "phoneDefaultCountryCode": "IN"
   },
-  "response": {
+  "response":  {
     "data": {
       "phone": null,
       "email": null,
@@ -71,7 +71,7 @@
               "employerName": "SHREE BALAJI INDUSTRIAL SERVICES",
               "dateOfJoining": "2013-09-18",
               "dateOfExit": "2014-06-30",
-              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+              "reasonOfExit": ""
             }
           ]
         },
@@ -92,7 +92,7 @@
     "meta": {
       "inputPhoneNumber": "9466760550",
       "cleansedPhoneNumber": "+919466760550",
-      "referenceId": "78d397bd-4b9e-42e3-8930-ceb5e0188508",
+      "referenceId": "b401737a-d046-459c-998d-2f1879a06431",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
@@ -101,4 +101,5 @@
     "errors": [
     ]
   }
+
 }

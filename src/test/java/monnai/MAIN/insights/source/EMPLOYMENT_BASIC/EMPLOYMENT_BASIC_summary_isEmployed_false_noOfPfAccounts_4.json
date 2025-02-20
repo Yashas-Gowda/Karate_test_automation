@@ -21,23 +21,22 @@
       "employment": {
         "basic": {
           "summary": {
-            "isEmployed": false,
-            "recentEmployerName": "CHANNEL PLAY LIMITED",
+            "isEmployed": true,
+            "recentEmployerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
             "noOfPfAccounts": 4,
-            "dateOfJoining": "2019-10-01",
-            "dateOfExit": "2020-07-10",
+            "dateOfJoining": "2024-10-10",
             "matchingPfAccountNumber": "101281942125"
           },
           "employmentHistory": [
             {
               "pfAccountNumber": "101281942125",
-              "name": "Jitesh Mahendra Valantra",
+              "name": "JITESH MAHENDRA VALANTRA",
               "gender": "MALE",
               "dateOfBirth": "1991-07-27",
               "nationalIdVerificationStatus": false,
-              "employerName": "CHANNEL PLAY LIMITED",
-              "dateOfJoining": "2019-10-01",
-              "dateOfExit": "2020-07-10",
+              "employerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
+              "dateOfJoining": "2024-10-10",
+              "dateOfExit": null,
               "reasonOfExit": ""
             },
             {
@@ -92,7 +91,7 @@
     "meta": {
       "inputPhoneNumber": "9892340894",
       "cleansedPhoneNumber": "+919892340894",
-      "referenceId": "94ce30ba-261f-4ffe-a77c-681b1b206905",
+      "referenceId": "e2d76795-bcbb-4d1a-901d-223380ac00be",
       "requestedPackages": [
         "EMPLOYMENT_BASIC"
       ],
