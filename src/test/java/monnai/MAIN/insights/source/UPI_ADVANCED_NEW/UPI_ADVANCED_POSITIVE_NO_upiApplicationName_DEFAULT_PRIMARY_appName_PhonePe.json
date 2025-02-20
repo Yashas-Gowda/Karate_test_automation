@@ -24,8 +24,8 @@
           "accounts": [
             {
               "appName": "PhonePe",
-              "nameAtBank": "Venkata Ravi N",
-              "upiId": "8428880581@ybl",
+              "nameAtBank": "Narisetty Venkata Ravi",
+              "upiId": "12ravivenkat2@ybl",
               "accountType": "PRIMARY",
               "accountStatus": "VALID"
             }
@@ -47,7 +47,7 @@
     "meta": {
       "inputPhoneNumber": "918428880581",
       "cleansedPhoneNumber": "+918428880581",
-      "referenceId": "2b347b19-419a-4ff0-93a4-356a260f53dc",
+      "referenceId": "2b9eaa0c-806a-40ff-9368-dad382925a6d",
       "inputEmail": "naveenmj999@gmail.com",
       "requestedPackages": [
         "UPI_ADVANCED"
