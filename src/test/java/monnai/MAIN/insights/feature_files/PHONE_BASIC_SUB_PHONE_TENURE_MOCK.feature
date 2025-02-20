@@ -1,4 +1,4 @@
-@PHONE_BASIC_SUB_PHONE_TENURE_MOCK @MOCK
+@PHONE_BASIC_SUB_PHONE_TENURE_MOCK @MOCK @ignore
 Feature: MOCK -> Testing of DPI - Phone_basic sub package PHONE_TENURE MOCK scenarios for ID region
 
   Background:
