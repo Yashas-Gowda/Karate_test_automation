@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -33,21 +33,25 @@
             "currentCarrierCircle": "Verizon Verizon Wireless",
             "originalCarrierCircle": "Verizon Verizon Wireless",
             "changeInCarrierRegion": "NOT_SUPPORTED",
-            "portedEvents": []
+            "portedEvents": [
+            ]
           },
           "currentNetwork": {
             "localRoutingNumber": null,
             "mobileCountryCode": "310",
-            "mobileNetworkCode": "004",
+            "mobileNetworkCode": "012",
             "networkName": "Verizon Wireless:6006 - SVR/2",
             "serviceProfileId": "151971"
           },
+          "numberRecycled": null,
           "lastDeactivated": null,
           "isSpam": null,
-          "topUpHistory": null
+          "topUpHistory": null,
+          "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -63,16 +67,20 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "18456413491",
       "cleansedPhoneNumber": "+18456413491",
-      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "referenceId": "a4c93c20-fa5a-4dd6-be84-fb1bee4ce43e",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "US"
     },
-    "errors": []
+    "errors": [
+    ]
   }
 }

@@ -45,7 +45,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_UnitedStates_US_without_ported | 200        |
       | PHONE_BASIC_response_region_MEXICO_MX_without_ported       | 200        |
 
-  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response where active= notnull- ID- topUpHistory is dynamic so assertion<Scenario>
+  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response where active= notnull- ID- topUpHistory is dynamic so assertion -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
     And headers headers
@@ -93,7 +93,7 @@ Feature: Testing of DPI  - Phone_basic scenarios
       | PHONE_BASIC_response_region_Indonesia_ID | 200        |
 
   #  @PHONE_BASIC @smoke @all_data_partner @ported_prod_sanity
-  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response - <Scenario>
+  Scenario Outline:  DPI PHONE_BASIC full package positive scenario for across regions with validation of full response -> <Scenario>
     Given url requestUrl
     And def payload = read( "../" + source + "/PHONE_BASIC_Region_Specific/<Scenario>.json")
     And headers headers

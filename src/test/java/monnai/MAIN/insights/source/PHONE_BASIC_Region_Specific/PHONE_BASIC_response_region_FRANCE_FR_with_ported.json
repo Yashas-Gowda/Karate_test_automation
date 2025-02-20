@@ -8,7 +8,7 @@
     "phoneNumber": "33622788226",
     "phoneDefaultCountryCode": "FR"
   },
-  "response": {
+  "response":  {
     "data": {
       "phone": {
         "basic": {
@@ -16,7 +16,7 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": "NO",
+          "active": "UNKNOWN",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
@@ -32,7 +32,7 @@
           "portedHistory": {
             "portedDate": "2019-06-18",
             "numberOfPorts": 2,
-            "portedSinceXDays": 1924,
+            "portedSinceXDays": 2074,
             "currentCarrierCircle": "Orange Orange S.A.",
             "originalCarrierCircle": "SFR Altice",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -85,7 +85,7 @@
     "meta": {
       "inputPhoneNumber": "33622788226",
       "cleansedPhoneNumber": "+33622788226",
-      "referenceId": "35bdb00e-e644-498f-b28b-dbdc9fe89c7d",
+      "referenceId": "050d3d5c-0b90-46fb-a766-4dadc53f2bee",
       "requestedPackages": [
         "PHONE_BASIC"
       ],

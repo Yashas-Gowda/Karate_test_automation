@@ -7,7 +7,7 @@
     "phoneNumber": "7701979717",
     "phoneDefaultCountryCode": "IN"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": {
         "basic": {
@@ -15,16 +15,13 @@
           "phoneValid": true,
           "phoneType": "MOBILE",
           "phoneDisposable": false,
-          "active": null,
+          "active": "YES",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
-          "phoneTenure": {
-            "min": 0,
-            "max": 6
-          },
+          "phoneTenure": null,
           "country": "IN",
           "originalCarrier": "JIO - Delhi & NCR",
           "ported": false,
@@ -47,8 +44,8 @@
           },
           "numberRecycled": null,
           "lastDeactivated": {
-            "minimumTenureDays": 53,
-            "maximumTenureDays": 84
+            "minimumTenureDays": 190,
+            "maximumTenureDays": 220
           },
           "isSpam": null,
           "topUpHistory": null,
@@ -79,7 +76,7 @@
     "meta": {
       "inputPhoneNumber": "7701979717",
       "cleansedPhoneNumber": "+917701979717",
-      "referenceId": "0d21d59a-5d38-4bde-9628-c09a5c5dd9bd",
+      "referenceId": "4a2298cb-adac-4959-a6a8-57eab49bacdc",
       "requestedPackages": [
         "PHONE_BASIC"
       ],
@@ -88,4 +85,5 @@
     "errors": [
     ]
   }
+
 }

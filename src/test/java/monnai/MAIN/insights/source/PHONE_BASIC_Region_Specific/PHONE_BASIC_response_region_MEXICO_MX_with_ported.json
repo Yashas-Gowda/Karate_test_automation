@@ -16,15 +16,15 @@
           "phoneValid": true,
           "phoneType": "FIXED",
           "phoneDisposable": false,
-          "active": "UNKNOWN",
+          "active": "NO",
           "activationDate": null,
           "activeSinceXDays": null,
           "simType": null,
           "phoneNumberAge": null,
           "phoneNumberAgeDescription": null,
           "phoneTenure": {
-            "min": 12,
-            "max": 24
+            "min": 24,
+            "max": 48
           },
           "country": "MX",
           "originalCarrier": "TELEFONOS DE MEXICO s.a.b. de c.v.",
@@ -32,7 +32,7 @@
           "portedHistory": {
             "portedDate": "2022-11-04",
             "numberOfPorts": 1,
-            "portedSinceXDays": 549,
+            "portedSinceXDays": 839,
             "currentCarrierCircle": "TOTAL PLAY TELECOM",
             "originalCarrierCircle": "TELEFONOS DE MEXICO s.a.b. de c.v.",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -57,7 +57,8 @@
           "simSwap": null
         },
         "social": null,
-        "identity": null
+        "identity": null,
+        "breach": null
       },
       "email": null,
       "address": null,
@@ -73,15 +74,18 @@
       "kyc": null,
       "bank": null,
       "aadhaar": null,
+      "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "526144160457",
       "cleansedPhoneNumber": "+526144160457",
-      "referenceId": "873dfeeb-42c2-46b0-93a7-7c467dccb5b8",
+      "referenceId": "31ab9833-869e-496c-94a7-52ad4a9fbc89",
       "requestedPackages": [
         "PHONE_BASIC"
-      ]
+      ],
+      "inputPhoneDefaultCountryCode": "MX"
     },
     "errors": [
     ]

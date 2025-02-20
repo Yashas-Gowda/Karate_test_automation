@@ -8,7 +8,7 @@
     "phoneNumber": "19193456619",
     "phoneDefaultCountryCode": "US"
   },
-  "response": {
+  "response":{
     "data": {
       "phone": {
         "basic": {
@@ -32,7 +32,7 @@
           "portedHistory": {
             "portedDate": "2020-04-12",
             "numberOfPorts": 2,
-            "portedSinceXDays": 1625,
+            "portedSinceXDays": 1775,
             "currentCarrierCircle": "Verizon Verizon Wireless",
             "originalCarrierCircle": "T-Mobile T-Mobile US",
             "changeInCarrierRegion": "NOT_SUPPORTED",
@@ -50,7 +50,7 @@
           "currentNetwork": {
             "localRoutingNumber": "9198055337",
             "mobileCountryCode": "310",
-            "mobileNetworkCode": "004",
+            "mobileNetworkCode": "012",
             "networkName": "Verizon Wireless:6006 - SVR/2",
             "serviceProfileId": "151971"
           },
@@ -85,7 +85,7 @@
     "meta": {
       "inputPhoneNumber": "19193456619",
       "cleansedPhoneNumber": "+19193456619",
-      "referenceId": "73438d08-689e-485f-b7b4-8558194a43a8",
+      "referenceId": "a57d002f-b78d-4d60-8650-74a107afdb61",
       "requestedPackages": [
         "PHONE_BASIC"
       ],
