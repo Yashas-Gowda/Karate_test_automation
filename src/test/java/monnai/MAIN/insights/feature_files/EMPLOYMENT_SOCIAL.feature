@@ -52,7 +52,7 @@ Feature:Testing of DPI  - EMPLOYMENT_SOCIAL feature scenarios on Social sub pack
 
     Examples:
       | Scenario                                                                                 | statusCode |
-      | EMPLOYMENT_SOCIAL_Visum_dp_with_both_employmentHistory_count_11_educationHistory_count_2 | 200        |
+      | EMPLOYMENT_SOCIAL_Visum_dp_with_both_employmentHistory_count_13_educationHistory_count_2 | 200        |
 
 
   Scenario Outline: Validate DPI EMPLOYMENT_SOCIAL Subpackage positive scenario with employmentHistory(without photoUrl) and educationHistory :- <Scenario>
