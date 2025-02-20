@@ -3,7 +3,7 @@
   "client_id": "1qnv00se7ak3peb0jhu8k9gf6s",
   "client_secret": "d4edqnmk0o26v53oskp5qn9pt0che8shds6nk2rutummhctkj61",
   "grant_type": "client_credentials",
-  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/email_basic insights/email_social insights/phone_basic insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/email_basic insights/email_social insights/phone_basic insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social insights/identity_enrichment",
   "issue-description": " Release_yashas_tenant",
   "tenant_config": {
     "tenant": "tenant_01HYZAXNP24WRMX800Q4ES17JX",

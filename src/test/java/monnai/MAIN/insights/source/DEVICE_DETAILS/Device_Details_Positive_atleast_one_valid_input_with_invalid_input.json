@@ -14,7 +14,7 @@
       null
     ]
   },
-  "response": {
+  "response":{
     "data": {
       "phone": null,
       "email": null,
@@ -28,7 +28,7 @@
           {
             "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
             "country": "IN",
-            "lastModified": "2024-11-08",
+            "lastModified": "2025-02-06",
             "deviceDetails": {
               "platform": "ANDROID",
               "type": "SMART PHONE",
@@ -37,11 +37,11 @@
             },
             "location": {
               "dayLocation": {
-                "latitude": 12.939920425415039,
-                "longitude": 77.73290634155273,
-                "city": "Bengaluru",
-                "state": "KA",
-                "zipCode": "560087"
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
               },
               "nightLocation": {
                 "latitude": 12.93614387512207,
@@ -73,7 +73,7 @@
       "bre": null
     },
     "meta": {
-      "referenceId": "904d6039-9e10-43b0-9b78-35a68e7774db",
+      "referenceId": "3bd8ce73-2af0-477a-82ba-a4d2da86cd22",
       "inputDeviceIds": [
         "3342b21d-6ba2-4294-b808-f9612b24fed6"
       ],
