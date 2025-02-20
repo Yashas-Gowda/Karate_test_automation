@@ -35,13 +35,23 @@
           "employmentHistory": [
             {
               "pfAccountNumber": "101639508624",
-              "name": "Hemraj Jat",
+              "name": "HEMRAJ JAT",
               "gender": "MALE",
               "dateOfBirth": "2000-07-04",
-              "nationalIdVerificationStatus": false,
+              "nationalIdVerificationStatus": true,
               "employerName": "MODERN THREADS (INDIA) LIMITED",
               "dateOfJoining": "2022-06-01",
-              "reasonOfExit": ""
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********9417",
+                "taxId": "",
+                "email": "",
+                "bankAccountNumber": "**********0563",
+                "bankBranchCode": "BARB*****RI",
+                "bankAddress": "BANK OF BARODA,SARERI, RAJASTHAN",
+                "pfNomineeName": "BHANWAR LAL JAT",
+                "pfNomineeRelation": "FATHER"
+              }
             }
           ],
           "pfFilingDetails": {
@@ -50,30 +60,30 @@
                 "name": "HEMRAJ JAT",
                 "confidence": 1.0,
                 "pfHistory": {
-                  "JUN-24": true,
-                  "MAY-24": true,
-                  "APR-24": true
+                  "JAN-25": true,
+                  "DEC-24": true,
+                  "NOV-24": true
                 }
               }
             ],
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "624875",
-                "employeeCount": 265,
-                "wageMonth": "JUN-24"
+                "totalAmount": "802391",
+                "employeeCount": 277,
+                "wageMonth": "JAN-25"
               },
               {
                 "currency": "INR",
-                "totalAmount": "612158",
-                "employeeCount": 260,
-                "wageMonth": "MAY-24"
+                "totalAmount": "784671",
+                "employeeCount": 280,
+                "wageMonth": "DEC-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "609546",
-                "employeeCount": 259,
-                "wageMonth": "APR-24"
+                "totalAmount": "739668",
+                "employeeCount": 279,
+                "wageMonth": "NOV-24"
               }
             ]
           }
@@ -88,12 +98,13 @@
       "bank": null,
       "aadhaar": null,
       "statement": null,
+      "business": null,
       "bre": null
     },
     "meta": {
       "inputPhoneNumber": "916376667019",
       "cleansedPhoneNumber": "+916376667019",
-      "referenceId": "71b7bd42-e393-49b5-a20b-cd5739e86d6d",
+      "referenceId": "7ee257fd-8631-41f8-a695-5cd22d91374f",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ],

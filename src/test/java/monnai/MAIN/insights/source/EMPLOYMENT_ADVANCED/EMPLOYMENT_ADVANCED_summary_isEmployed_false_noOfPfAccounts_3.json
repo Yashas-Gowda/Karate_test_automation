@@ -23,9 +23,7 @@
         "advanced": {
           "summary": {
             "isEmployed": false,
-            "isNameUnique": true,
-            "isNameExact": true,
-            "isPfFiledLastMonth": false,
+            "isNameUnique": false,
             "hasPfFilingDetails": true,
             "recentEmployerName": "WELSPUN LIVING LIMITED",
             "noOfPfAccounts": 3,
@@ -43,7 +41,7 @@
               "employerName": "WELSPUN LIVING LIMITED",
               "dateOfJoining": "2018-02-22",
               "dateOfExit": "2024-08-13",
-              "reasonOfExit": ""
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
               "pfAccountNumber": "101141014604",
@@ -54,49 +52,48 @@
               "employerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
               "dateOfJoining": "2017-06-01",
               "dateOfExit": "2018-06-04",
-              "reasonOfExit": ""
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
             },
             {
               "pfAccountNumber": "100017238671",
-              "name": "Dinaben Gulabbhai Halpati",
+              "name": "DINABEN GULABBHAI HALPATI",
               "gender": "FEMALE",
               "dateOfBirth": "1971-01-08",
-              "nationalIdVerificationStatus": false,
+              "nationalIdVerificationStatus": true,
               "employerName": "RADIANT PLASTRUDERS (I) PVT. LTD",
               "dateOfJoining": "2014-01-01",
-              "reasonOfExit": ""
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4249",
+                "taxId": "AO******4P",
+                "email": "",
+                "bankAccountNumber": "***********6239",
+                "bankBranchCode": "UBIN*****10",
+                "bankAddress": "UNION BANK OF INDIA,DAMAN",
+                "pfNomineeName": "GULABBHAI",
+                "pfNomineeRelation": "FATHER"
+              }
             }
           ],
           "pfFilingDetails": {
-            "employeePfMatches": [
-              {
-                "name": "AJAYKUMAR GULABBHAI HALPATI",
-                "confidence": 1.0,
-                "pfHistory": {
-                  "SEP-24": null,
-                  "AUG-24": true,
-                  "JUL-24": true
-                }
-              }
-            ],
             "employerPfFilingDetails": [
               {
                 "currency": "INR",
-                "totalAmount": "24506389",
-                "employeeCount": 8126,
-                "wageMonth": "SEP-24"
+                "totalAmount": "26023803",
+                "employeeCount": 8018,
+                "wageMonth": "JAN-25"
               },
               {
                 "currency": "INR",
-                "totalAmount": "25969748",
-                "employeeCount": 8244,
-                "wageMonth": "AUG-24"
+                "totalAmount": "24237255",
+                "employeeCount": 8095,
+                "wageMonth": "DEC-24"
               },
               {
                 "currency": "INR",
-                "totalAmount": "25457521",
-                "employeeCount": 8335,
-                "wageMonth": "JUL-24"
+                "totalAmount": "22272308",
+                "employeeCount": 7760,
+                "wageMonth": "NOV-24"
               }
             ]
           }
@@ -117,7 +114,7 @@
     "meta": {
       "inputPhoneNumber": "919978520376",
       "cleansedPhoneNumber": "+919978520376",
-      "referenceId": "16952d7d-e4aa-4138-a9b6-b5364ef5ec63",
+      "referenceId": "0183bc67-4ca5-4f67-99da-12f18757cc5a",
       "requestedPackages": [
         "EMPLOYMENT_ADVANCED"
       ],

@@ -243,7 +243,7 @@ Feature: Testing of DPI  - EMPLOYMENT_ADVANCED package feature scenarios
       | Scenario                                                                          | statusCode |
       | EMPLOYMENT_ADVANCED_summary_isEmployed_false_noOfPfAccounts_4                     | 200        |
 
-      | EMPLOYMENT_ADVANCED_summary_isEmployed_isNameUnique_false_hasPfFilingDetails_true | 200        |
+      | EMPLOYMENT_ADVANCED_summary_isEmployed_isNameUnique_isNameExact_hasPfFilingDetails_true | 200        |
   # bug https://monnai.atlassian.net/browse/MB-4209 - "reasonOfExit"  mapping issue
   #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_RETIREMENT | 200        | --> 8144651776
   #      | EMPLOYMENT_ADVANCED_summary_isEmployed_false_reasonOfExit_SUPERNNUATION | 200        | --> 9585306554
