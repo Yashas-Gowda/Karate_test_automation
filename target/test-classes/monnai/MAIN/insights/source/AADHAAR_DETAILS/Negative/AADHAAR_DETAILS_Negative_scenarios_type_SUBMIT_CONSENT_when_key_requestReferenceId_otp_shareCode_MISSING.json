@@ -1,0 +1,31 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "type": "SUBMIT_CONSENT",
+    "includeAadhaarXMLFile": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "AADHAAR_DETAILS"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-ab76acff49595d5a8e3b5dc317c28ac2f0111d98",
+      "requestedPackages": [
+        "AADHAAR_DETAILS"
+      ],
+      "inputType": "SUBMIT_CONSENT",
+      "inputIncludeAadhaarXMLFile": true,
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "AADHAAR_DETAILS",
+        "message": "RequestReferenceId, Otp, ShareCode or IncludeAadhaarXMLFile is blank/null ",
+        "code": "MISSING_SUBMIT_CONSENT_ATTRIBUTES",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

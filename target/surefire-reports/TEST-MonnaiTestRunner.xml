@@ -1,0 +1,2759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MonnaiTestRunner" time="8.342" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/yashas/IdeaProjects/test-automation/target/test-classes:/Users/yashas/IdeaProjects/test-automation/target/classes:/Users/yashas/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/yashas/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/yashas/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/yashas/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/yashas/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/yashas/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/yashas/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/yashas/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/yashas/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/yashas/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/yashas/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/yashas/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/yashas/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/yashas/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.16.0/native-osx-x86_64-1.16.0.jar:/Users/yashas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/yashas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/yashas/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/yashas/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/yashas/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/yashas/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/yashas/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/yashas/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/yashas/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/yashas/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/yashas/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/yashas/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/yashas/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/yashas/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/yashas/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/yashas/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/yashas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/yashas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/yashas/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/yashas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yashas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/yashas/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/yashas/.m2/repository/net/masterthought/cucumber-reporting/5.8.4/cucumber-reporting-5.8.4.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.1/jackson-databind-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.1/jackson-annotations-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.1/jackson-core-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.1/jackson-datatype-jsr310-2.18.1.jar:/Users/yashas/.m2/repository/org/apache/velocity/velocity-engine-core/2.4.1/velocity-engine-core-2.4.1.jar:/Users/yashas/.m2/repository/joda-time/joda-time/2.13.0/joda-time-2.13.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-configuration2/2.11.0/commons-configuration2-2.11.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/yashas/.m2/repository/commons-io/commons-io/2.17.0/commons-io-2.17.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar:/Users/yashas/.m2/repository/org/jsoup/jsoup/1.18.1/jsoup-1.18.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20240325.1/owasp-java-html-sanitizer-20240325.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java8-shim/20240325.1/java8-shim-20240325.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java10-shim/20240325.1/java10-shim-20240325.1.jar:/Users/yashas/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/yashas/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.16/jcl-over-slf4j-2.0.16.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="release-fidoV2"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/yashas/Library/Java/JavaVirtualMachines/openjdk-22.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/yashas/IdeaProjects/test-automation/target/surefire/surefirebooter-20250103121530073_3.jar /Users/yashas/IdeaProjects/test-automation/target/surefire 2025-01-03T12-15-29_953-jvmRun1 surefire-20250103121530073_1tmp surefire_0-20250103121530073_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="MonnaiTestRunner#testVerification"/>
+    <property name="surefire.test.class.path" value="/Users/yashas/IdeaProjects/test-automation/target/test-classes:/Users/yashas/IdeaProjects/test-automation/target/classes:/Users/yashas/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/yashas/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/yashas/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/yashas/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/yashas/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/yashas/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/yashas/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/yashas/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/yashas/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/yashas/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/yashas/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/yashas/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/yashas/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/yashas/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/yashas/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/yashas/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/yashas/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/yashas/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.16.0/native-osx-x86_64-1.16.0.jar:/Users/yashas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/yashas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/yashas/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/yashas/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/yashas/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/yashas/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/yashas/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/yashas/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/yashas/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/yashas/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/yashas/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/yashas/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/yashas/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/yashas/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/yashas/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/yashas/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/yashas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/yashas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/yashas/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/yashas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/yashas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/yashas/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/yashas/.m2/repository/net/masterthought/cucumber-reporting/5.8.4/cucumber-reporting-5.8.4.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.1/jackson-databind-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.1/jackson-annotations-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.1/jackson-core-2.18.1.jar:/Users/yashas/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.1/jackson-datatype-jsr310-2.18.1.jar:/Users/yashas/.m2/repository/org/apache/velocity/velocity-engine-core/2.4.1/velocity-engine-core-2.4.1.jar:/Users/yashas/.m2/repository/joda-time/joda-time/2.13.0/joda-time-2.13.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-configuration2/2.11.0/commons-configuration2-2.11.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/yashas/.m2/repository/commons-io/commons-io/2.17.0/commons-io-2.17.0.jar:/Users/yashas/.m2/repository/org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar:/Users/yashas/.m2/repository/org/jsoup/jsoup/1.18.1/jsoup-1.18.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20240325.1/owasp-java-html-sanitizer-20240325.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java8-shim/20240325.1/java8-shim-20240325.1.jar:/Users/yashas/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java10-shim/20240325.1/java10-shim-20240325.1.jar:/Users/yashas/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/yashas/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.16/jcl-over-slf4j-2.0.16.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/yashas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/yashas/Library/Java/JavaVirtualMachines/openjdk-22.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/yashas/IdeaProjects/test-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--threads 5 --tags ~@ignore"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/yashas/IdeaProjects/test-automation/target/surefire/surefirebooter-20250103121530073_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="yashas"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/yashas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/8_/kc9g8jjn0yd4n4j34sqf259m0000gn/T/"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="/Users/yashas/IdeaProjects/test-automation"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/yashas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+  </properties>
+  <testcase name="testVerification" classname="MonnaiTestRunner" time="8.31">
+    <failure message="match failed: CONTAINS_ONLY&#10;  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [appendedFields] (MAP:MAP)&#10;  {&quot;matchFirstName&quot;:&quot;NO_MATCH&quot;,&quot;matchMiddleName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchLastName&quot;:&quot;MATCH&quot;,&quot;matchFullGivenName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchDateOfBirth&quot;:&quot;MATCH&quot;,&quot;matchGender&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId1&quot;:&quot;MATCH&quot;,&quot;matchId2&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId4&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId5&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchUnitNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchStreetName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPoBox&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCity&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchState&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCountry&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchAddressLine1&quot;:&quot;NO_DATA&quot;,&quot;matchAddressLine2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField1&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPhone&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchEmail&quot;:&quot;NOT_SUPPORTED&quot;,&quot;appendedFields&quot;:{}}&#10;  {&quot;matchFirstName&quot;:&quot;NO_MATCH&quot;,&quot;matchMiddleName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchLastName&quot;:&quot;MATCH&quot;,&quot;matchFullGivenName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchDateOfBirth&quot;:&quot;MATCH&quot;,&quot;matchGender&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId1&quot;:&quot;MATCH&quot;,&quot;matchId2&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId4&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId5&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchUnitNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchStreetName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPoBox&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCity&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchState&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCountry&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchAddressLine1&quot;:&quot;NO_DATA&quot;,&quot;matchAddressLine2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField1&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPhone&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchEmail&quot;:&quot;NOT_SUPPORTED&quot;,&quot;appendedFields&quot;:{&quot;address&quot;:&quot;34/2 ตะปอน ขลุง&quot;}}&#10;&#10;    $.appendedFields | not equal | actual does not contain key - &apos;address&apos; (MAP:MAP)&#10;    {}&#10;    {&quot;address&quot;:&quot;34/2 ตะปอน ขลุง&quot;}&#10;&#10;&#10;classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63&#10;match failed: CONTAINS_ONLY&#10;  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [matchFirstName] (MAP:MAP)&#10;  {&quot;matchFirstName&quot;:&quot;MATCH&quot;,&quot;matchMiddleName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchLastName&quot;:&quot;MATCH&quot;,&quot;matchFullGivenName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchDateOfBirth&quot;:&quot;MATCH&quot;,&quot;matchGender&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId1&quot;:&quot;MATCH&quot;,&quot;matchId2&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId4&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId5&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchUnitNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchStreetName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPoBox&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCity&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchState&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCountry&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchAddressLine1&quot;:&quot;NO_DATA&quot;,&quot;matchAddressLine2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField1&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPhone&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchEmail&quot;:&quot;NOT_SUPPORTED&quot;,&quot;appendedFields&quot;:{}}&#10;  {&quot;matchFirstName&quot;:&quot;NO_MATCH&quot;,&quot;matchMiddleName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchLastName&quot;:&quot;MATCH&quot;,&quot;matchFullGivenName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchDateOfBirth&quot;:&quot;MATCH&quot;,&quot;matchGender&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId1&quot;:&quot;MATCH&quot;,&quot;matchId2&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId4&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchId5&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchBuildingName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchUnitNumber&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchStreetName&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPoBox&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCity&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchState&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchCountry&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchAddressLine1&quot;:&quot;NO_DATA&quot;,&quot;matchAddressLine2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField1&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField2&quot;:&quot;NO_INPUT&quot;,&quot;matchAdditionalAddressField3&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchPhone&quot;:&quot;NOT_SUPPORTED&quot;,&quot;matchEmail&quot;:&quot;NOT_SUPPORTED&quot;,&quot;appendedFields&quot;:{}}&#10;&#10;    $.matchFirstName | not equal (STRING:STRING)&#10;    &apos;MATCH&apos;&#10;    &apos;NO_MATCH&apos;&#10;&#10;classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63 ==&gt; expected: &lt;0&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [appendedFields] (MAP:MAP)
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{"address":"34/2 ตะปอน ขลุง"}}
+
+    $.appendedFields | not equal | actual does not contain key - 'address' (MAP:MAP)
+    {}
+    {"address":"34/2 ตะปอน ขลุง"}
+
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [matchFirstName] (MAP:MAP)
+  {"matchFirstName":"MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+
+    $.matchFirstName | not equal (STRING:STRING)
+    'MATCH'
+    'NO_MATCH'
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63 ==> expected: <0> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at MonnaiTestRunner.testVerification(MonnaiTestRunner.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+    <system-out><![CDATA[2025-01-03 12:15:31 INFO  com.intuit.karate.Runner - using system property 'karate.options': --threads 5 --tags ~@ignore
+2025-01-03 12:15:31 INFO  com.intuit.karate.Runner - using system property 'karate.env': release-fidoV2
+2025-01-03 12:15:34 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:34 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:34 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:34 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:34 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ0YWM2ZWUtZWQ5ZS00ZGEyLWEwYTktYjYzMDkwNWNmMTA2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.D3LYKQWWlh5vgCwEFJ5vndS7HRaVproxcDf2YdVDt-UIg7v2UulbLVuhi_2TLS-VO8vRPMpZhDNqYCWtPcjp9WTEFFSLCxtwPg1FGJ7IxX7SJq4Hvg-ugTnfoQ7Au_mmMQAvfrkfoJ3K3yzODiFaqwDsgPv69SKAfk2OAjc9M-LLZyUdi2N0H9Bvlj8-kxi7dLlWbOWyaVdKlCM8V2BHVGSJBP8a9qwarbWYFo8FuLxa9iMP6I1BiBM4zQ0ss_5Aq2J9peXglsNR-0bSOf8JlSCNcjmsbhs9ja0Use6CsfcK6r76Gli6pd_iB4P3z5kE72RnuOd6r5VGikGRZ0j1Eg",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ0YWM2ZWUtZWQ5ZS00ZGEyLWEwYTktYjYzMDkwNWNmMTA2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.D3LYKQWWlh5vgCwEFJ5vndS7HRaVproxcDf2YdVDt-UIg7v2UulbLVuhi_2TLS-VO8vRPMpZhDNqYCWtPcjp9WTEFFSLCxtwPg1FGJ7IxX7SJq4Hvg-ugTnfoQ7Au_mmMQAvfrkfoJ3K3yzODiFaqwDsgPv69SKAfk2OAjc9M-LLZyUdi2N0H9Bvlj8-kxi7dLlWbOWyaVdKlCM8V2BHVGSJBP8a9qwarbWYFo8FuLxa9iMP6I1BiBM4zQ0ss_5Aq2J9peXglsNR-0bSOf8JlSCNcjmsbhs9ja0Use6CsfcK6r76Gli6pd_iB4P3z5kE72RnuOd6r5VGikGRZ0j1Eg 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ0YWM2ZWUtZWQ5ZS00ZGEyLWEwYTktYjYzMDkwNWNmMTA2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.D3LYKQWWlh5vgCwEFJ5vndS7HRaVproxcDf2YdVDt-UIg7v2UulbLVuhi_2TLS-VO8vRPMpZhDNqYCWtPcjp9WTEFFSLCxtwPg1FGJ7IxX7SJq4Hvg-ugTnfoQ7Au_mmMQAvfrkfoJ3K3yzODiFaqwDsgPv69SKAfk2OAjc9M-LLZyUdi2N0H9Bvlj8-kxi7dLlWbOWyaVdKlCM8V2BHVGSJBP8a9qwarbWYFo8FuLxa9iMP6I1BiBM4zQ0ss_5Aq2J9peXglsNR-0bSOf8JlSCNcjmsbhs9ja0Use6CsfcK6r76Gli6pd_iB4P3z5kE72RnuOd6r5VGikGRZ0j1Eg 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiNmY4MWZlNjYtMGM0ZS00MDFkLThlOTMtYWVhY2ZiNWU4YzkzIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ZLDyWx9NBXnESYOIU8zoQpZqv_gjUI0ku4zJWtJy0Dy7PNevGKlwC2j7-T3FIY5H6RbI1pbDGT2nuqSvFFlrkrecqPDbvzkdKyXl89fq4FDcvXdtgZhFk_C6TTMBimEw6dVlHL87vlsDvsXQJ4A-A1AlP8A17nNSQZ_zB5nZYwGQNP4AD8kn9Kdn0uPbE3OEtLJkjoxz6NbEurpUO29qaPWBd0M7qWW5xsEoo0setXzNG1WR-jQvZm2wu6mUa1FlDGzsmZi-kLnO6BmiPrzoz7cS_mptyBhpmoDsw0Jhbwww0GAbcq7PFejUzzV12FzVsM4wGITMaEw5rN-ULXvLOA",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiNmY4MWZlNjYtMGM0ZS00MDFkLThlOTMtYWVhY2ZiNWU4YzkzIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ZLDyWx9NBXnESYOIU8zoQpZqv_gjUI0ku4zJWtJy0Dy7PNevGKlwC2j7-T3FIY5H6RbI1pbDGT2nuqSvFFlrkrecqPDbvzkdKyXl89fq4FDcvXdtgZhFk_C6TTMBimEw6dVlHL87vlsDvsXQJ4A-A1AlP8A17nNSQZ_zB5nZYwGQNP4AD8kn9Kdn0uPbE3OEtLJkjoxz6NbEurpUO29qaPWBd0M7qWW5xsEoo0setXzNG1WR-jQvZm2wu6mUa1FlDGzsmZi-kLnO6BmiPrzoz7cS_mptyBhpmoDsw0Jhbwww0GAbcq7PFejUzzV12FzVsM4wGITMaEw5rN-ULXvLOA 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiNmY4MWZlNjYtMGM0ZS00MDFkLThlOTMtYWVhY2ZiNWU4YzkzIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ZLDyWx9NBXnESYOIU8zoQpZqv_gjUI0ku4zJWtJy0Dy7PNevGKlwC2j7-T3FIY5H6RbI1pbDGT2nuqSvFFlrkrecqPDbvzkdKyXl89fq4FDcvXdtgZhFk_C6TTMBimEw6dVlHL87vlsDvsXQJ4A-A1AlP8A17nNSQZ_zB5nZYwGQNP4AD8kn9Kdn0uPbE3OEtLJkjoxz6NbEurpUO29qaPWBd0M7qWW5xsEoo0setXzNG1WR-jQvZm2wu6mUa1FlDGzsmZi-kLnO6BmiPrzoz7cS_mptyBhpmoDsw0Jhbwww0GAbcq7PFejUzzV12FzVsM4wGITMaEw5rN-ULXvLOA 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMWY0MjhiMGYtZjg5Yi00NjE5LWI4MzUtMmU5MTNhZmY3Yzg0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.swZxvnaHb8FMyc_d8CkIQc8UStH0G_318B88pY4sReh5Jcx6gCbevOML_GwyCiXEbJjPel6P15EaICHMndLXKEqKrtA7libgTbLuy47LCttKtqiQ7znIuHZ9y98lrHWQKAWmGtWkkwfkKbSwvAsWrcKgB8iIPnWqhWY_jvK4p59nU5PPcbdp0wAR2LWFV5uerHYXExWT2OINF3-tnEun3vhtikYtBB4BgIUnnDDHn0Mj5PBjGT-3ACGBFK2ACv7kvPpSyOs7vXQLtpXkvll0T-XtBwmVQ5A1OM43Q6Hl9HS1kmokavv7uUfnUzaScmKyjM8seBCLbHU2njlNVcrLgQ",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiZWEwZmQyZjUtNzBjZS00MGU0LWFhNDgtNzg0ZTU2NWRlNmQ0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.qyhCXJRGObsc4kFXdDP4i7jQgUmhpY6hugPfw-3wyvXhNXhgLo7nv4F73OdXCNn7fNQ0FLLyGnHvGNTg9CsLy1ov-0Q_fjANnwmVubPV5AKUf1gP4DBxVhMbuhiVjDUTitVVKlOBztP7syBFx8RN8jvcIQ-QvK97X6U755hIlO3ddvmumXhKR3ybbOkIKSnP_U7NQtiBqrh1CJ9cFugM2nhtGN3weQoY7ZsHrigwFU9dGtUGuyznbBnATmAVi8vzpZMOz-OAdVvrTKL_rX09QSyHcfVgIJ-tWJm547dZvWy7S29nnAzk1np9U6b1e5foh9hRbNMGLgxzbWOyxFqzkA",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMWY0MjhiMGYtZjg5Yi00NjE5LWI4MzUtMmU5MTNhZmY3Yzg0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.swZxvnaHb8FMyc_d8CkIQc8UStH0G_318B88pY4sReh5Jcx6gCbevOML_GwyCiXEbJjPel6P15EaICHMndLXKEqKrtA7libgTbLuy47LCttKtqiQ7znIuHZ9y98lrHWQKAWmGtWkkwfkKbSwvAsWrcKgB8iIPnWqhWY_jvK4p59nU5PPcbdp0wAR2LWFV5uerHYXExWT2OINF3-tnEun3vhtikYtBB4BgIUnnDDHn0Mj5PBjGT-3ACGBFK2ACv7kvPpSyOs7vXQLtpXkvll0T-XtBwmVQ5A1OM43Q6Hl9HS1kmokavv7uUfnUzaScmKyjM8seBCLbHU2njlNVcrLgQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiZWEwZmQyZjUtNzBjZS00MGU0LWFhNDgtNzg0ZTU2NWRlNmQ0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.qyhCXJRGObsc4kFXdDP4i7jQgUmhpY6hugPfw-3wyvXhNXhgLo7nv4F73OdXCNn7fNQ0FLLyGnHvGNTg9CsLy1ov-0Q_fjANnwmVubPV5AKUf1gP4DBxVhMbuhiVjDUTitVVKlOBztP7syBFx8RN8jvcIQ-QvK97X6U755hIlO3ddvmumXhKR3ybbOkIKSnP_U7NQtiBqrh1CJ9cFugM2nhtGN3weQoY7ZsHrigwFU9dGtUGuyznbBnATmAVi8vzpZMOz-OAdVvrTKL_rX09QSyHcfVgIJ-tWJm547dZvWy7S29nnAzk1np9U6b1e5foh9hRbNMGLgxzbWOyxFqzkA 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiZWEwZmQyZjUtNzBjZS00MGU0LWFhNDgtNzg0ZTU2NWRlNmQ0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.qyhCXJRGObsc4kFXdDP4i7jQgUmhpY6hugPfw-3wyvXhNXhgLo7nv4F73OdXCNn7fNQ0FLLyGnHvGNTg9CsLy1ov-0Q_fjANnwmVubPV5AKUf1gP4DBxVhMbuhiVjDUTitVVKlOBztP7syBFx8RN8jvcIQ-QvK97X6U755hIlO3ddvmumXhKR3ybbOkIKSnP_U7NQtiBqrh1CJ9cFugM2nhtGN3weQoY7ZsHrigwFU9dGtUGuyznbBnATmAVi8vzpZMOz-OAdVvrTKL_rX09QSyHcfVgIJ-tWJm547dZvWy7S29nnAzk1np9U6b1e5foh9hRbNMGLgxzbWOyxFqzkA 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMWY0MjhiMGYtZjg5Yi00NjE5LWI4MzUtMmU5MTNhZmY3Yzg0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.swZxvnaHb8FMyc_d8CkIQc8UStH0G_318B88pY4sReh5Jcx6gCbevOML_GwyCiXEbJjPel6P15EaICHMndLXKEqKrtA7libgTbLuy47LCttKtqiQ7znIuHZ9y98lrHWQKAWmGtWkkwfkKbSwvAsWrcKgB8iIPnWqhWY_jvK4p59nU5PPcbdp0wAR2LWFV5uerHYXExWT2OINF3-tnEun3vhtikYtBB4BgIUnnDDHn0Mj5PBjGT-3ACGBFK2ACv7kvPpSyOs7vXQLtpXkvll0T-XtBwmVQ5A1OM43Q6Hl9HS1kmokavv7uUfnUzaScmKyjM8seBCLbHU2njlNVcrLgQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiOGRhZGUwMjItNDgzOS00NmIyLTk5ZDctNzA1NmE1NmJlZDg2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ly6SXylJ2Ra_7Qau92uth9YAnvj-fp4pRRWSMVSt3ZoNQ35VP4uSaPPTRdbKGmagrDlJQT6_Y56u58BDJVPNSnHet4oDlVS7B6ybTRJXpvCkc8MZ5IFXaVNnFhXrkACD3VH4S5mrtA_jzFf5KV81zdmf1HP8q_G7JKT3yczGdbgRXyiI0jGvnADTmkZrnE3FhlnB66AFpxPyblZcZ6hYdJVT2DLbhqW01mbwxnrtizDLDXCxguCcGYHdFH7M8wTAlu7quEL-wT8GPLidiw_8eTzPhKb53B2smGyENxb2hTH8MuZwV1HENyZT5f1g9pj_NDt8zlDR7dFZvNUGsBdUNQ",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiOGRhZGUwMjItNDgzOS00NmIyLTk5ZDctNzA1NmE1NmJlZDg2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ly6SXylJ2Ra_7Qau92uth9YAnvj-fp4pRRWSMVSt3ZoNQ35VP4uSaPPTRdbKGmagrDlJQT6_Y56u58BDJVPNSnHet4oDlVS7B6ybTRJXpvCkc8MZ5IFXaVNnFhXrkACD3VH4S5mrtA_jzFf5KV81zdmf1HP8q_G7JKT3yczGdbgRXyiI0jGvnADTmkZrnE3FhlnB66AFpxPyblZcZ6hYdJVT2DLbhqW01mbwxnrtizDLDXCxguCcGYHdFH7M8wTAlu7quEL-wT8GPLidiw_8eTzPhKb53B2smGyENxb2hTH8MuZwV1HENyZT5f1g9pj_NDt8zlDR7dFZvNUGsBdUNQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiOGRhZGUwMjItNDgzOS00NmIyLTk5ZDctNzA1NmE1NmJlZDg2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ly6SXylJ2Ra_7Qau92uth9YAnvj-fp4pRRWSMVSt3ZoNQ35VP4uSaPPTRdbKGmagrDlJQT6_Y56u58BDJVPNSnHet4oDlVS7B6ybTRJXpvCkc8MZ5IFXaVNnFhXrkACD3VH4S5mrtA_jzFf5KV81zdmf1HP8q_G7JKT3yczGdbgRXyiI0jGvnADTmkZrnE3FhlnB66AFpxPyblZcZ6hYdJVT2DLbhqW01mbwxnrtizDLDXCxguCcGYHdFH7M8wTAlu7quEL-wT8GPLidiw_8eTzPhKb53B2smGyENxb2hTH8MuZwV1HENyZT5f1g9pj_NDt8zlDR7dFZvNUGsBdUNQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "abc2f709-b669-49a8-bfd4-4025ebbddbe9",
+  "x-request-id": "Via_Automation_request_ide7b1b2da-9f62-48d3-9a3e-b52d3216ad60",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMWY0MjhiMGYtZjg5Yi00NjE5LWI4MzUtMmU5MTNhZmY3Yzg0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.swZxvnaHb8FMyc_d8CkIQc8UStH0G_318B88pY4sReh5Jcx6gCbevOML_GwyCiXEbJjPel6P15EaICHMndLXKEqKrtA7libgTbLuy47LCttKtqiQ7znIuHZ9y98lrHWQKAWmGtWkkwfkKbSwvAsWrcKgB8iIPnWqhWY_jvK4p59nU5PPcbdp0wAR2LWFV5uerHYXExWT2OINF3-tnEun3vhtikYtBB4BgIUnnDDHn0Mj5PBjGT-3ACGBFK2ACv7kvPpSyOs7vXQLtpXkvll0T-XtBwmVQ5A1OM43Q6Hl9HS1kmokavv7uUfnUzaScmKyjM8seBCLbHU2njlNVcrLgQ",
+  "Content-Length": "252",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "3af75fac-b3fc-468d-b979-a1e6edb9a8a5",
+  "x-request-id": "Via_Automation_request_idbda3e775-9ca1-49e6-b5b1-f78b2a8e9dcf",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiZWEwZmQyZjUtNzBjZS00MGU0LWFhNDgtNzg0ZTU2NWRlNmQ0IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.qyhCXJRGObsc4kFXdDP4i7jQgUmhpY6hugPfw-3wyvXhNXhgLo7nv4F73OdXCNn7fNQ0FLLyGnHvGNTg9CsLy1ov-0Q_fjANnwmVubPV5AKUf1gP4DBxVhMbuhiVjDUTitVVKlOBztP7syBFx8RN8jvcIQ-QvK97X6U755hIlO3ddvmumXhKR3ybbOkIKSnP_U7NQtiBqrh1CJ9cFugM2nhtGN3weQoY7ZsHrigwFU9dGtUGuyznbBnATmAVi8vzpZMOz-OAdVvrTKL_rX09QSyHcfVgIJ-tWJm547dZvWy7S29nnAzk1np9U6b1e5foh9hRbNMGLgxzbWOyxFqzkA",
+  "Content-Length": "248",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:35 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "178",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIediqayQ0EPDQ=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:35 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "178",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIedhczyQ0EPWg=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] 3af75fac-b3fc-468d-b979-a1e6edb9a8a5 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] abc2f709-b669-49a8-bfd4-4025ebbddbe9 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22abc2f709-b669-49a8-bfd4-4025ebbddbe9*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*223af75fac-b3fc-468d-b979-a1e6edb9a8a5*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] responseTime-----> 532 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] responseTime-----> 533 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "MY",
+  "cleansingFlag": true,
+  "originalCountryCode": "MY",
+  "eventType": "ACCOUNT_CREATION",
+  "packages": [
+    "KYC_GOVERNMENT"
+  ],
+  "userDetails": {
+    "fullGivenName": "Mohamad Hafiz Darimie Bin Mohsin",
+    "dateOfBirth": true,
+    "id1": "870509035409"
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "MY",
+  "cleansingFlag": true,
+  "originalCountryCode": "MY",
+  "eventType": "ACCOUNT_CREATION",
+  "packages": [
+    "KYC_GOVERNMENT"
+  ],
+  "userDetails": {
+    "fullGivenName": "Mohamad Hafiz Darimie Bin Mohsin",
+    "dateOfBirth": "123abc",
+    "id1": "870509035409"
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": null,
+  "meta": {
+    "referenceId": "#ignore"
+  },
+  "errors": [
+    {
+      "package": null,
+      "message": "Invalid DateOfBirth. Please specify a past date in YYYY-MM-DD format",
+      "code": "INVALID_DOB",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": null,
+  "meta": {
+    "referenceId": "#ignore"
+  },
+  "errors": [
+    {
+      "package": null,
+      "message": "Invalid DateOfBirth. Please specify a past date in YYYY-MM-DD format",
+      "code": "INVALID_DOB",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": null,
+  "meta": null,
+  "errors": [
+    {
+      "package": null,
+      "message": "Invalid DateOfBirth. Please specify a past date in YYYY-MM-DD format",
+      "code": "INVALID_DOB",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": null,
+  "meta": null,
+  "errors": [
+    {
+      "package": null,
+      "message": "Invalid DateOfBirth. Please specify a past date in YYYY-MM-DD format",
+      "code": "INVALID_DOB",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMTQzMTU1NTYtNDE0OC00YTQ3LWIwMzktNGEwMjI4ZmEyZWNiIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.kZ5w6tns8I66T5gHhK7p9lImxXlMkIRCEHj-lbw_X8YrWBMxcnp7Tqf74_GcIZm7Ffj_oC20L43XR238L00YVfTKS0YFqguDb9fTHgNWRKXelDI1nHMUzyRRvs6Uw5U8-Oqd6eVjxidt6maKkMrp0KwLUCG80N08_odU8NpPEnxozqfTfZSYL3WKJs_1i_0vnuKP4WbmxeHgTnv98fPU1GrxJ7x4XFuQKYdgmLlX-04eYvDaGdCcGgMR2E3gGBlWxiyJbVgpbf2Xt5AF7BAGTC97Yeb2wq9g45gZaSg2vIZl8Jngp8LBKgaf8ErS1RaPwTSKMXFoRVvRIA1Ql37Dpw",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ5MjViODgtOTY4Zi00ZmY5LWI1OWQtOWQzYjVjMzNkZjcxIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.miw9yG-th4SDMnNCm_62L_iBJAtjzStxsu0umYBPuteQ1CqOl-g_CJePi2uFAfNBj7e0kvlI0w-SmsMuucU-dNnJtbUw6kWj2IZp7RiPFuFWCWavK88VjdZOpvizqLLe3V7K565XUOiiVmZ_auaX4HUhhHixlZzt9YJEpH63IudetV1uxZZi2PbnKrIeSFj5stxBa8jc3xph4KtwdVGluMdJ0J6xmvXMdK4SZMOXVLfUVi-hPNoG-RGpEezCReZSqDTGWxCS3fKCmulfjBE0sNgwIByAXNEJ8czRLHl31MOrjbNqNxqEe2oBq7PXqIgJCqiJhfzo1RbFFcXThFJEFQ",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMTQzMTU1NTYtNDE0OC00YTQ3LWIwMzktNGEwMjI4ZmEyZWNiIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.kZ5w6tns8I66T5gHhK7p9lImxXlMkIRCEHj-lbw_X8YrWBMxcnp7Tqf74_GcIZm7Ffj_oC20L43XR238L00YVfTKS0YFqguDb9fTHgNWRKXelDI1nHMUzyRRvs6Uw5U8-Oqd6eVjxidt6maKkMrp0KwLUCG80N08_odU8NpPEnxozqfTfZSYL3WKJs_1i_0vnuKP4WbmxeHgTnv98fPU1GrxJ7x4XFuQKYdgmLlX-04eYvDaGdCcGgMR2E3gGBlWxiyJbVgpbf2Xt5AF7BAGTC97Yeb2wq9g45gZaSg2vIZl8Jngp8LBKgaf8ErS1RaPwTSKMXFoRVvRIA1Ql37Dpw 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ5MjViODgtOTY4Zi00ZmY5LWI1OWQtOWQzYjVjMzNkZjcxIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.miw9yG-th4SDMnNCm_62L_iBJAtjzStxsu0umYBPuteQ1CqOl-g_CJePi2uFAfNBj7e0kvlI0w-SmsMuucU-dNnJtbUw6kWj2IZp7RiPFuFWCWavK88VjdZOpvizqLLe3V7K565XUOiiVmZ_auaX4HUhhHixlZzt9YJEpH63IudetV1uxZZi2PbnKrIeSFj5stxBa8jc3xph4KtwdVGluMdJ0J6xmvXMdK4SZMOXVLfUVi-hPNoG-RGpEezCReZSqDTGWxCS3fKCmulfjBE0sNgwIByAXNEJ8czRLHl31MOrjbNqNxqEe2oBq7PXqIgJCqiJhfzo1RbFFcXThFJEFQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ5MjViODgtOTY4Zi00ZmY5LWI1OWQtOWQzYjVjMzNkZjcxIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.miw9yG-th4SDMnNCm_62L_iBJAtjzStxsu0umYBPuteQ1CqOl-g_CJePi2uFAfNBj7e0kvlI0w-SmsMuucU-dNnJtbUw6kWj2IZp7RiPFuFWCWavK88VjdZOpvizqLLe3V7K565XUOiiVmZ_auaX4HUhhHixlZzt9YJEpH63IudetV1uxZZi2PbnKrIeSFj5stxBa8jc3xph4KtwdVGluMdJ0J6xmvXMdK4SZMOXVLfUVi-hPNoG-RGpEezCReZSqDTGWxCS3fKCmulfjBE0sNgwIByAXNEJ8czRLHl31MOrjbNqNxqEe2oBq7PXqIgJCqiJhfzo1RbFFcXThFJEFQ 
+2025-01-03 12:15:35 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMTQzMTU1NTYtNDE0OC00YTQ3LWIwMzktNGEwMjI4ZmEyZWNiIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.kZ5w6tns8I66T5gHhK7p9lImxXlMkIRCEHj-lbw_X8YrWBMxcnp7Tqf74_GcIZm7Ffj_oC20L43XR238L00YVfTKS0YFqguDb9fTHgNWRKXelDI1nHMUzyRRvs6Uw5U8-Oqd6eVjxidt6maKkMrp0KwLUCG80N08_odU8NpPEnxozqfTfZSYL3WKJs_1i_0vnuKP4WbmxeHgTnv98fPU1GrxJ7x4XFuQKYdgmLlX-04eYvDaGdCcGgMR2E3gGBlWxiyJbVgpbf2Xt5AF7BAGTC97Yeb2wq9g45gZaSg2vIZl8Jngp8LBKgaf8ErS1RaPwTSKMXFoRVvRIA1Ql37Dpw 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "6c78bb81-2d5d-4cd8-9229-e9aef316b194",
+  "x-request-id": "Via_Automation_request_idd456be44-ab56-4566-9ab6-e7dcbfe3a871",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiMTQzMTU1NTYtNDE0OC00YTQ3LWIwMzktNGEwMjI4ZmEyZWNiIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.kZ5w6tns8I66T5gHhK7p9lImxXlMkIRCEHj-lbw_X8YrWBMxcnp7Tqf74_GcIZm7Ffj_oC20L43XR238L00YVfTKS0YFqguDb9fTHgNWRKXelDI1nHMUzyRRvs6Uw5U8-Oqd6eVjxidt6maKkMrp0KwLUCG80N08_odU8NpPEnxozqfTfZSYL3WKJs_1i_0vnuKP4WbmxeHgTnv98fPU1GrxJ7x4XFuQKYdgmLlX-04eYvDaGdCcGgMR2E3gGBlWxiyJbVgpbf2Xt5AF7BAGTC97Yeb2wq9g45gZaSg2vIZl8Jngp8LBKgaf8ErS1RaPwTSKMXFoRVvRIA1Ql37Dpw",
+  "Content-Length": "204",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:36 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "425",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIelh6hSQ0EP4g=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] 6c78bb81-2d5d-4cd8-9229-e9aef316b194 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*226c78bb81-2d5d-4cd8-9229-e9aef316b194*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] responseTime-----> 356 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "ID",
+  "eventType": "ACCOUNT_CREATION",
+  "cleansingFlag": true,
+  "packages": [
+    "KYC_MOBILE"
+  ],
+  "userDetails": {
+    "fullGivenName": "INDRA SETIAWAN",
+    "dateOfBirth": "1990-02-12",
+    "phoneNumber": " "
+  }
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "6c78bb81-2d5d-4cd8-9229-e9aef316b194",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12",
+    "inputPhoneDefaultCountryCode": "ID"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "ebe27c19-111a-49b1-bff4-b90fcc690bd4",
+  "x-request-id": "Via_Automation_request_id944c4593-f6b0-4510-a880-0ca76170629d",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ5MjViODgtOTY4Zi00ZmY5LWI1OWQtOWQzYjVjMzNkZjcxIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.miw9yG-th4SDMnNCm_62L_iBJAtjzStxsu0umYBPuteQ1CqOl-g_CJePi2uFAfNBj7e0kvlI0w-SmsMuucU-dNnJtbUw6kWj2IZp7RiPFuFWCWavK88VjdZOpvizqLLe3V7K565XUOiiVmZ_auaX4HUhhHixlZzt9YJEpH63IudetV1uxZZi2PbnKrIeSFj5stxBa8jc3xph4KtwdVGluMdJ0J6xmvXMdK4SZMOXVLfUVi-hPNoG-RGpEezCReZSqDTGWxCS3fKCmulfjBE0sNgwIByAXNEJ8czRLHl31MOrjbNqNxqEe2oBq7PXqIgJCqiJhfzo1RbFFcXThFJEFQ",
+  "Content-Length": "203",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:36 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "425",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIelhn-SQ0EP6g=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] ebe27c19-111a-49b1-bff4-b90fcc690bd4 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22ebe27c19-111a-49b1-bff4-b90fcc690bd4*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] responseTime-----> 365 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "ID",
+  "eventType": "ACCOUNT_CREATION",
+  "cleansingFlag": true,
+  "packages": [
+    "KYC_MOBILE"
+  ],
+  "userDetails": {
+    "fullGivenName": "INDRA SETIAWAN",
+    "dateOfBirth": "1990-02-12",
+    "phoneNumber": ""
+  }
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - karate.env system property was: release-fidoV2 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "ebe27c19-111a-49b1-bff4-b90fcc690bd4",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12",
+    "inputPhoneDefaultCountryCode": "ID"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "access_token": "eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzYsImlhdCI6MTczNTg4NjczNiwidmVyc2lvbiI6MiwianRpIjoiZjM0MTk2NTMtOTJmZS00YzI0LWJmYzEtNjBlOTIwNWY2YjFlIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.H-v0P4B2gdnmBM40m5jKfczJg61RNuCYI-BjKtqDnLK4NOOIC4OsGr1R-fijojuOZJzKKQWS4DHU9khnCxZJuhToVhbHystsyZSx3WH86bdpguhINhUiRvCP2AchukgUzT-gy-T9Kjh56IEYSyC-zZ0Gd-IVskPlXUQL-ZpgkQgMz4fnQjiOiPwvW0MYfI3aYPDuwDUg5iTJMKfvAqKvejYl7jpySYqdrl9QkkKbr4NUm-neUZsQFnVGakMTayWptgx7zFmv4Y4rDkA1Yql4pTszz01JUw-Jjj28FbxHjhlY1Ptbe9mPmBrspeBf_TGd4-Y3ScwGciCtkttOpTRKWg",
+  "expires_in": 86400,
+  "token_type": "Bearer"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzYsImlhdCI6MTczNTg4NjczNiwidmVyc2lvbiI6MiwianRpIjoiZjM0MTk2NTMtOTJmZS00YzI0LWJmYzEtNjBlOTIwNWY2YjFlIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.H-v0P4B2gdnmBM40m5jKfczJg61RNuCYI-BjKtqDnLK4NOOIC4OsGr1R-fijojuOZJzKKQWS4DHU9khnCxZJuhToVhbHystsyZSx3WH86bdpguhINhUiRvCP2AchukgUzT-gy-T9Kjh56IEYSyC-zZ0Gd-IVskPlXUQL-ZpgkQgMz4fnQjiOiPwvW0MYfI3aYPDuwDUg5iTJMKfvAqKvejYl7jpySYqdrl9QkkKbr4NUm-neUZsQFnVGakMTayWptgx7zFmv4Y4rDkA1Yql4pTszz01JUw-Jjj28FbxHjhlY1Ptbe9mPmBrspeBf_TGd4-Y3ScwGciCtkttOpTRKWg 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "app_client_name": "Automation Tenant - release-fidoV2  - release_tenant001@tenant_01HD0VFTJRE5C4VWB6CPWMPGWF ",
+  "client_id": "79f4iuqbnu4vjjf874c50tr4mf",
+  "client_secret": "sb9g08e335huc4agg4u7jbm7pqvg3oahcld9f19bvl095d53l6u",
+  "grant_type": "client_credentials",
+  "scope": "insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
+  "issue-description": "Monnai Main Release UI Tenant",
+  "tenant_config": {
+    "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+    "exclude": {
+      "EMAIL_BASIC": {
+        "01HP1HECME5P4JQD91CPAW2Y60": {
+          "name": "BRE_Featurization_EmailBasicAnalysis"
+        },
+        "01HQ56STADP5RN4YKR6K9RMKM2": {
+          "name": "WhoIsXML"
+        },
+        "01HPVAGR327YWCGH4DAPHRNA18": {
+          "name": "Have I Been Pawned"
+        },
+        "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+          "name": "Seon Email"
+        },
+        "01HPVAZ4H2055V28EZ6P4B4DE6": {
+          "name": "Zero Bounce Email Validation"
+        },
+        "01H6XFS4G3JFMTG43WS0F6FB85": {
+          "name": "SEON email_basic"
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H6S1E1Y35A6R65086W7T5Z97": {
+          "name": "FIDO email_social"
+        },
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+          "name": "FIDO Phone"
+        },
+        "01HYZ037G2AKV26HFP7WYKGY0D": {
+          "name": "Inhouse Phone social"
+        },
+        "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+          "name": "Seon Phone"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_BASIC": {
+        "01H785HGK5PSKMST8QZSEDCAQY": {
+          "name": "FIDO email_basic",
+          "order": 0
+        }
+      },
+      "EMAIL_SOCIAL": {
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2",
+          "order": 0
+        }
+      },
+      "PHONE_SOCIAL": {
+        "01H72XCMJ3A08W8MREYD8T1EBS": {
+          "name": "FIDO phone_social_v2",
+          "order": 0
+        }
+      },
+      "ADDRESS_VERIFICATION": {
+        "01J3JFHRPD08X95AGXNX0YX9P9": {
+          "name": "tartan_address_activity_api",
+          "order": 0
+        },
+        "01J3JDV2T86QWE190A86SRZN0E": {
+          "name": "tartan_ecommerce_association_api",
+          "order": 0
+        },
+        "01HN02SR3AJHY16GCR9HZRHKBN": {
+          "name": "prime_analytica_ioh",
+          "order": 0
+        },
+        "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+          "name": "prime_analytics_one_api",
+          "order": 0,
+          "data": {
+            "clientId": "Tester-Client-ID",
+            "partnerId": "Tester-Partner-ID",
+            "productId": "Tester-Product-AV",
+            "clientKey": "prime-sandbox",
+            "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+          }
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Environment AuthGen---> release-fidoV2 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "tenant": "tenant_01HD0VFTJRE5C4VWB6CPWMPGWF",
+  "exclude": {
+    "EMAIL_BASIC": {
+      "01HP1HECME5P4JQD91CPAW2Y60": {
+        "name": "BRE_Featurization_EmailBasicAnalysis"
+      },
+      "01HQ56STADP5RN4YKR6K9RMKM2": {
+        "name": "WhoIsXML"
+      },
+      "01HPVAGR327YWCGH4DAPHRNA18": {
+        "name": "Have I Been Pawned"
+      },
+      "01GVK5Y8D3G5B7R5QKQC0Q75X6": {
+        "name": "Seon Email"
+      },
+      "01HPVAZ4H2055V28EZ6P4B4DE6": {
+        "name": "Zero Bounce Email Validation"
+      },
+      "01H6XFS4G3JFMTG43WS0F6FB85": {
+        "name": "SEON email_basic"
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H6S1E1Y35A6R65086W7T5Z97": {
+        "name": "FIDO email_social"
+      },
+      "01H8C58BBSVB67MHSPPN1D8XYR": {
+        "name": "Seon Email Social"
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H6BBPQ3TVTVSTDH4TKRX3VGY": {
+        "name": "FIDO Phone"
+      },
+      "01HYZ037G2AKV26HFP7WYKGY0D": {
+        "name": "Inhouse Phone social"
+      },
+      "01GVK2BBQCZVCB8A88Q1MW2MTR": {
+        "name": "Seon Phone"
+      }
+    }
+  },
+  "include": {
+    "EMAIL_BASIC": {
+      "01H785HGK5PSKMST8QZSEDCAQY": {
+        "name": "FIDO email_basic",
+        "order": 0
+      }
+    },
+    "EMAIL_SOCIAL": {
+      "01H72X88KKK3R5013F54H5P09T": {
+        "name": "FIDO email_social_v2",
+        "order": 0
+      }
+    },
+    "PHONE_SOCIAL": {
+      "01H72XCMJ3A08W8MREYD8T1EBS": {
+        "name": "FIDO phone_social_v2",
+        "order": 0
+      }
+    },
+    "ADDRESS_VERIFICATION": {
+      "01J3JFHRPD08X95AGXNX0YX9P9": {
+        "name": "tartan_address_activity_api",
+        "order": 0
+      },
+      "01J3JDV2T86QWE190A86SRZN0E": {
+        "name": "tartan_ecommerce_association_api",
+        "order": 0
+      },
+      "01HN02SR3AJHY16GCR9HZRHKBN": {
+        "name": "prime_analytica_ioh",
+        "order": 0
+      },
+      "01J5TA6M5BH7QMD4WC8KHW9C1C": {
+        "name": "prime_analytics_one_api",
+        "order": 0,
+        "data": {
+          "clientId": "Tester-Client-ID",
+          "partnerId": "Tester-Partner-ID",
+          "productId": "Tester-Product-AV",
+          "clientKey": "prime-sandbox",
+          "clientSecret": "erhVxVLIwjEwvjFm9OHH"
+        }
+      }
+    }
+  }
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Bearer Token ---> Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzYsImlhdCI6MTczNTg4NjczNiwidmVyc2lvbiI6MiwianRpIjoiZjM0MTk2NTMtOTJmZS00YzI0LWJmYzEtNjBlOTIwNWY2YjFlIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.H-v0P4B2gdnmBM40m5jKfczJg61RNuCYI-BjKtqDnLK4NOOIC4OsGr1R-fijojuOZJzKKQWS4DHU9khnCxZJuhToVhbHystsyZSx3WH86bdpguhINhUiRvCP2AchukgUzT-gy-T9Kjh56IEYSyC-zZ0Gd-IVskPlXUQL-ZpgkQgMz4fnQjiOiPwvW0MYfI3aYPDuwDUg5iTJMKfvAqKvejYl7jpySYqdrl9QkkKbr4NUm-neUZsQFnVGakMTayWptgx7zFmv4Y4rDkA1Yql4pTszz01JUw-Jjj28FbxHjhlY1Ptbe9mPmBrspeBf_TGd4-Y3ScwGciCtkttOpTRKWg 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "42c51119-18f2-49f4-bc6b-5194aca7d707",
+  "x-request-id": "Via_Automation_request_id7441eb8b-e2a8-4ce9-b00c-8cbc1c56b2b3",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzYsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzYsImlhdCI6MTczNTg4NjczNiwidmVyc2lvbiI6MiwianRpIjoiZjM0MTk2NTMtOTJmZS00YzI0LWJmYzEtNjBlOTIwNWY2YjFlIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.H-v0P4B2gdnmBM40m5jKfczJg61RNuCYI-BjKtqDnLK4NOOIC4OsGr1R-fijojuOZJzKKQWS4DHU9khnCxZJuhToVhbHystsyZSx3WH86bdpguhINhUiRvCP2AchukgUzT-gy-T9Kjh56IEYSyC-zZ0Gd-IVskPlXUQL-ZpgkQgMz4fnQjiOiPwvW0MYfI3aYPDuwDUg5iTJMKfvAqKvejYl7jpySYqdrl9QkkKbr4NUm-neUZsQFnVGakMTayWptgx7zFmv4Y4rDkA1Yql4pTszz01JUw-Jjj28FbxHjhlY1Ptbe9mPmBrspeBf_TGd4-Y3ScwGciCtkttOpTRKWg",
+  "Content-Length": "186",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:36 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "425",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIeqgTHyQ0EP5A=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] 42c51119-18f2-49f4-bc6b-5194aca7d707 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*2242c51119-18f2-49f4-bc6b-5194aca7d707*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] responseTime-----> 259 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "ID",
+  "eventType": "ACCOUNT_CREATION",
+  "cleansingFlag": true,
+  "packages": [
+    "KYC_MOBILE"
+  ],
+  "userDetails": {
+    "fullGivenName": "INDRA SETIAWAN",
+    "dateOfBirth": "1990-02-12"
+  }
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:36 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "42c51119-18f2-49f4-bc6b-5194aca7d707",
+    "requestedPackages": [
+      "KYC_MOBILE"
+    ],
+    "inputFullGivenName": "INDRA SETIAWAN",
+    "inputDateOfBirth": "1990-02-12",
+    "inputPhoneDefaultCountryCode": "ID"
+  },
+  "errors": [
+    {
+      "package": "KYC_MOBILE",
+      "message": "PhoneNumber cannot be blank/null",
+      "code": "MISSING_PHONE_NUMBER",
+      "type": "INVALID_INPUT"
+    }
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "1ff16239-6e3b-40be-854f-7a9d4321c30a",
+  "x-request-id": "Via_Automation_request_ide2745677-04bb-4102-803c-a76a2b8082d3",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiOGRhZGUwMjItNDgzOS00NmIyLTk5ZDctNzA1NmE1NmJlZDg2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ly6SXylJ2Ra_7Qau92uth9YAnvj-fp4pRRWSMVSt3ZoNQ35VP4uSaPPTRdbKGmagrDlJQT6_Y56u58BDJVPNSnHet4oDlVS7B6ybTRJXpvCkc8MZ5IFXaVNnFhXrkACD3VH4S5mrtA_jzFf5KV81zdmf1HP8q_G7JKT3yczGdbgRXyiI0jGvnADTmkZrnE3FhlnB66AFpxPyblZcZ6hYdJVT2DLbhqW01mbwxnrtizDLDXCxguCcGYHdFH7M8wTAlu7quEL-wT8GPLidiw_8eTzPhKb53B2smGyENxb2hTH8MuZwV1HENyZT5f1g9pj_NDt8zlDR7dFZvNUGsBdUNQ",
+  "Content-Length": "164",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:37 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "1500",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIedi7_yQ0EPpw=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] 1ff16239-6e3b-40be-854f-7a9d4321c30a 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*221ff16239-6e3b-40be-854f-7a9d4321c30a*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] responseTime-----> 2088 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] API Request-----> {
+  "eventType": "ACCOUNT_CREATION",
+  "entityType": "INDIVIDUAL",
+  "userDetails": {
+    "fullGivenName": "Joko Widodo"
+  },
+  "recordLimit": 20,
+  "matchThreshold": 80,
+  "packages": [
+    "KYC_AML"
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": {
+        "summary": {
+          "matchFound": true,
+          "noOfProfiles": 1,
+          "totalRecords": 1
+        },
+        "records": [
+          {
+            "entityType": "Individual",
+            "profileId": "5977130753277149787",
+            "matchScore": 100,
+            "firstName": "Joko",
+            "middleName": "Jokowi ",
+            "lastName": "Widodo",
+            "fullName": "Joko Widodo",
+            "nationality": "Indonesia, INS",
+            "type": "PEP",
+            "sourceName": "",
+            "programName": "Leaders and Cabinet Members",
+            "otherInformation": null,
+            "group": "1",
+            "classification": "Presidente de la República (2014-), Pres.",
+            "links": [
+              "https://www.worldpresidentsdb.com//Joko-Widodo/",
+              "https://www.cidob.org/en/biografias_lideres_politicos/asia/indonesia/joko_widodo",
+              "https://www.cia.gov/resources/world-leaders/foreign-governments/indonesia/"
+            ],
+            "summary": "Terms: 1) In office since October 20, 2014  \r\nPolitical Party: Indonesian Democratic Party  \r\nOther Political Titles: Governor of Jakarta, Mayor of Surakarta  \r\nEducation: Gadjah Mada University\r\nTerm of office: 20 october 2014 - Acting\nProfession: Empresario\r\nCountry Unique Code: 850 \r\nLeader Id: cb-850-1 \r\nStart Date: 20/10/2014 \r\nJoko Widodo  doesn't have a military career \r\nOfficially Selected Month: 7 Officially Selected Year: 2014",
+            "mediaAdversary": [
+            ],
+            "otherPossibleNames": [
+              "Joko Widodo",
+              "Joko Widodo",
+              "Jokowi",
+              "Joko Widodo",
+              "Joko Widodo",
+              "Joko Jokowi WIDODO"
+            ],
+            "otherPossibleDob": [
+              "6/21/1961 12:00:00 AM",
+              "21 de junio de 1961",
+              "1961"
+            ],
+            "possibleAddresses": [
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_AML"
+    ],
+    "inputFullGivenName": "Joko Widodo"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": null,
+      "consumer": null,
+      "mobile": null,
+      "aml": {
+        "summary": {
+          "matchFound": true,
+          "noOfProfiles": 1,
+          "totalRecords": 1
+        },
+        "records": [
+          {
+            "entityType": "Individual",
+            "profileId": "5977130753277149787",
+            "matchScore": 100,
+            "firstName": "Joko",
+            "middleName": "Jokowi ",
+            "lastName": "Widodo",
+            "fullName": "Joko Widodo",
+            "nationality": "Indonesia, INS",
+            "type": "PEP",
+            "sourceName": "",
+            "programName": "Leaders and Cabinet Members",
+            "otherInformation": null,
+            "group": "1",
+            "classification": "Pres.",
+            "links": [
+              "https://www.worldpresidentsdb.com//Joko-Widodo/",
+              "https://www.cidob.org/lider-politico/joko-widodo",
+              "https://www.cia.gov/resources/world-leaders/foreign-governments/indonesia/"
+            ],
+            "summary": "Terms: 1) In office since October 20, 2014  \r\nPolitical Party: Indonesian Democratic Party  \r\nOther Political Titles: Governor of Jakarta, Mayor of Surakarta  \r\nEducation: Gadjah Mada University\r\nPresidente de la República (2014-2024)\r\nCountry Unique Code: 850 \r\nLeader Id: cb-850-1 \r\nStart Date: 20/10/2014 \r\nJoko Widodo  doesn't have a military career \r\nOfficially Selected Month: 7 Officially Selected Year: 2014",
+            "mediaAdversary": [
+            ],
+            "otherPossibleNames": [
+              "Joko Widodo",
+              "Joko Widodo",
+              "Joko Widodo",
+              "Joko Jokowi WIDODO"
+            ],
+            "otherPossibleDob": [
+              "6/21/1961 12:00:00 AM",
+              "1961"
+            ],
+            "possibleAddresses": [
+            ]
+          }
+        ]
+      }
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "1ff16239-6e3b-40be-854f-7a9d4321c30a",
+    "requestedPackages": [
+      "KYC_AML"
+    ],
+    "inputFullGivenName": "Joko Widodo",
+    "inputRecordLimit": "20",
+    "inputMatchThreshold": "80"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "004d6276-5cbf-4247-9c6f-b21a03d84cbd",
+  "x-request-id": "Via_Automation_request_id3721e8cb-b935-4a97-b7b2-f14b52bf0ae7",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiNmY4MWZlNjYtMGM0ZS00MDFkLThlOTMtYWVhY2ZiNWU4YzkzIiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.ZLDyWx9NBXnESYOIU8zoQpZqv_gjUI0ku4zJWtJy0Dy7PNevGKlwC2j7-T3FIY5H6RbI1pbDGT2nuqSvFFlrkrecqPDbvzkdKyXl89fq4FDcvXdtgZhFk_C6TTMBimEw6dVlHL87vlsDvsXQJ4A-A1AlP8A17nNSQZ_zB5nZYwGQNP4AD8kn9Kdn0uPbE3OEtLJkjoxz6NbEurpUO29qaPWBd0M7qWW5xsEoo0setXzNG1WR-jQvZm2wu6mUa1FlDGzsmZi-kLnO6BmiPrzoz7cS_mptyBhpmoDsw0Jhbwww0GAbcq7PFejUzzV12FzVsM4wGITMaEw5rN-ULXvLOA",
+  "Content-Length": "415",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:37 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "1341",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIedjk_SQ0EPHw=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] 004d6276-5cbf-4247-9c6f-b21a03d84cbd 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22004d6276-5cbf-4247-9c6f-b21a03d84cbd*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] responseTime-----> 2572 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "TH",
+  "originalCountryCode": "TH",
+  "eventType": "ACCOUNT_CREATION",
+  "packages": [
+    "KYC_GOVERNMENT"
+  ],
+  "userDetails": {
+    "firstName": "KRITTAPAS KHONGRAKSA",
+    "lastName": "KHONGRAKSA",
+    "fullGivenName": "KRITTAPAS KHONGRAKSA",
+    "gender": "",
+    "dateOfBirth": "1997-11-21",
+    "id1": "1229900789471",
+    "addressLine1": "2 34",
+    "addressLine2": "",
+    "additionalAddressField1": "",
+    "additionalAddressField2": "",
+    "city": "Tambon Tapon"
+  }
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": {
+        "matchFirstName": "NO_MATCH",
+        "matchMiddleName": "NOT_SUPPORTED",
+        "matchLastName": "MATCH",
+        "matchFullGivenName": "NOT_SUPPORTED",
+        "matchDateOfBirth": "MATCH",
+        "matchGender": "NOT_SUPPORTED",
+        "matchId1": "MATCH",
+        "matchId2": "NOT_SUPPORTED",
+        "matchId3": "NOT_SUPPORTED",
+        "matchId4": "NOT_SUPPORTED",
+        "matchId5": "NOT_SUPPORTED",
+        "matchBuildingNumber": "NOT_SUPPORTED",
+        "matchBuildingName": "NOT_SUPPORTED",
+        "matchUnitNumber": "NOT_SUPPORTED",
+        "matchStreetName": "NOT_SUPPORTED",
+        "matchPoBox": "NOT_SUPPORTED",
+        "matchCity": "NOT_SUPPORTED",
+        "matchState": "NOT_SUPPORTED",
+        "matchCountry": "NOT_SUPPORTED",
+        "matchAddressLine1": "NO_DATA",
+        "matchAddressLine2": "NO_INPUT",
+        "matchAdditionalAddressField1": "NO_INPUT",
+        "matchAdditionalAddressField2": "NO_INPUT",
+        "matchAdditionalAddressField3": "NOT_SUPPORTED",
+        "matchPhone": "NOT_SUPPORTED",
+        "matchEmail": "NOT_SUPPORTED",
+        "appendedFields": {
+        }
+      },
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_GOVERNMENT"
+    ],
+    "inputFirstName": "KRITTAPAS KHONGRAKSA",
+    "inputLastName": "KHONGRAKSA",
+    "inputFullGivenName": "KRITTAPAS KHONGRAKSA",
+    "inputDateOfBirth": "1997-11-21",
+    "inputId1": "1229900789471",
+    "inputCity": "Tambon Tapon",
+    "inputAddressLine1": "2 34"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": {
+        "matchFirstName": "NO_MATCH",
+        "matchMiddleName": "NOT_SUPPORTED",
+        "matchLastName": "MATCH",
+        "matchFullGivenName": "NOT_SUPPORTED",
+        "matchDateOfBirth": "MATCH",
+        "matchGender": "NOT_SUPPORTED",
+        "matchId1": "MATCH",
+        "matchId2": "NOT_SUPPORTED",
+        "matchId3": "NOT_SUPPORTED",
+        "matchId4": "NOT_SUPPORTED",
+        "matchId5": "NOT_SUPPORTED",
+        "matchBuildingNumber": "NOT_SUPPORTED",
+        "matchBuildingName": "NOT_SUPPORTED",
+        "matchUnitNumber": "NOT_SUPPORTED",
+        "matchStreetName": "NOT_SUPPORTED",
+        "matchPoBox": "NOT_SUPPORTED",
+        "matchCity": "NOT_SUPPORTED",
+        "matchState": "NOT_SUPPORTED",
+        "matchCountry": "NOT_SUPPORTED",
+        "matchAddressLine1": "NO_DATA",
+        "matchAddressLine2": "NO_INPUT",
+        "matchAdditionalAddressField1": "NO_INPUT",
+        "matchAdditionalAddressField2": "NO_INPUT",
+        "matchAdditionalAddressField3": "NOT_SUPPORTED",
+        "matchPhone": "NOT_SUPPORTED",
+        "matchEmail": "NOT_SUPPORTED",
+        "appendedFields": {
+          "address": "34/2 ตะปอน ขลุง"
+        }
+      },
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "004d6276-5cbf-4247-9c6f-b21a03d84cbd",
+    "requestedPackages": [
+      "KYC_GOVERNMENT"
+    ],
+    "inputFirstName": "KRITTAPAS KHONGRAKSA",
+    "inputLastName": "KHONGRAKSA",
+    "inputFullGivenName": "KRITTAPAS KHONGRAKSA",
+    "inputDateOfBirth": "1997-11-21",
+    "inputId1": "1229900789471",
+    "inputCity": "Tambon Tapon",
+    "inputAddressLine1": "2 34",
+    "inputPhoneDefaultCountryCode": "TH"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 ERROR com.intuit.karate - classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+Then match payload.response.data.kyc.government contains only $.data.kyc.government
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [appendedFields] (MAP:MAP)
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{"address":"34/2 ตะปอน ขลุง"}}
+
+    $.appendedFields | not equal | actual does not contain key - 'address' (MAP:MAP)
+    {}
+    {"address":"34/2 ตะปอน ขลุง"}
+
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "x-reference-id": "f36575fe-43f1-407b-9bd8-24db1179123f",
+  "x-request-id": "Via_Automation_request_id0d84ebf3-d46b-4794-88e4-79519fd340bd",
+  "Content-Type": "application/vnd.monnai.v1.2+json",
+  "x-timeout": "60000",
+  "Accept": "application/json",
+  "Authorization": "Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3OWY0aXVxYm51NHZqamY4NzRjNTB0cjRtZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzU4ODY3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV90WEVSUWRlN0YiLCJleHAiOjE3MzU5NzMxMzUsImlhdCI6MTczNTg4NjczNSwidmVyc2lvbiI6MiwianRpIjoiYzQ0YWM2ZWUtZWQ5ZS00ZGEyLWEwYTktYjYzMDkwNWNmMTA2IiwiY2xpZW50X2lkIjoiNzlmNGl1cWJudTR2ampmODc0YzUwdHI0bWYifQ.D3LYKQWWlh5vgCwEFJ5vndS7HRaVproxcDf2YdVDt-UIg7v2UulbLVuhi_2TLS-VO8vRPMpZhDNqYCWtPcjp9WTEFFSLCxtwPg1FGJ7IxX7SJq4Hvg-ugTnfoQ7Au_mmMQAvfrkfoJ3K3yzODiFaqwDsgPv69SKAfk2OAjc9M-LLZyUdi2N0H9Bvlj8-kxi7dLlWbOWyaVdKlCM8V2BHVGSJBP8a9qwarbWYFo8FuLxa9iMP6I1BiBM4zQ0ss_5Aq2J9peXglsNR-0bSOf8JlSCNcjmsbhs9ja0Use6CsfcK6r76Gli6pd_iB4P3z5kE72RnuOd6r5VGikGRZ0j1Eg",
+  "Content-Length": "423",
+  "Host": "release.monnai.com",
+  "Connection": "Keep-Alive",
+  "User-Agent": "Apache-HttpClient/4.5.14 (Java/22.0.2)",
+  "Accept-Encoding": "gzip,deflate"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] {
+  "Date": "Fri, 03 Jan 2025 06:45:38 GMT",
+  "Content-Type": "application/json",
+  "Content-Length": "1304",
+  "Connection": "keep-alive",
+  "apigw-requestid": "DzIedhymyQ0EPMA=",
+  "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+  "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+  "pragma": "no-cache",
+  "expires": "0",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-xss-protection": "1 ; mode=block",
+  "content-security-policy": "form-action 'self'",
+  "referrer-policy": "no-referrer",
+  "strict-transport-security": "max-age=31536000 ; includeSubDomains"
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] f36575fe-43f1-407b-9bd8-24db1179123f 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~'Annotation.x_reference_id*20*3d*20*22f36575fe-43f1-407b-9bd8-24db1179123f*22)~context~(timeRange~(delta~21600000))) 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] responseTime-----> 2861 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] API Request-----> {
+  "phoneDefaultCountryCode": "TH",
+  "originalCountryCode": "TH",
+  "eventType": "ACCOUNT_CREATION",
+  "packages": [
+    "KYC_GOVERNMENT"
+  ],
+  "userDetails": {
+    "firstName": "Chayapon",
+    "lastName": "Phucharoenyos",
+    "fullGivenName": "Chayapon Phucharoenyos",
+    "gender": "",
+    "dateOfBirth": "1967-02-20",
+    "id1": "3120100686021",
+    "addressLine1": "24 Soi Ramkhamhaeng 174,",
+    "addressLine2": "",
+    "additionalAddressField1": "",
+    "additionalAddressField2": "",
+    "city": "Bangkok"
+  }
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Expected Response----> {
+  "data": {
+    "kyc": {
+      "government": {
+        "matchFirstName": "MATCH",
+        "matchMiddleName": "NOT_SUPPORTED",
+        "matchLastName": "MATCH",
+        "matchFullGivenName": "NOT_SUPPORTED",
+        "matchDateOfBirth": "MATCH",
+        "matchGender": "NOT_SUPPORTED",
+        "matchId1": "MATCH",
+        "matchId2": "NOT_SUPPORTED",
+        "matchId3": "NOT_SUPPORTED",
+        "matchId4": "NOT_SUPPORTED",
+        "matchId5": "NOT_SUPPORTED",
+        "matchBuildingNumber": "NOT_SUPPORTED",
+        "matchBuildingName": "NOT_SUPPORTED",
+        "matchUnitNumber": "NOT_SUPPORTED",
+        "matchStreetName": "NOT_SUPPORTED",
+        "matchPoBox": "NOT_SUPPORTED",
+        "matchCity": "NOT_SUPPORTED",
+        "matchState": "NOT_SUPPORTED",
+        "matchCountry": "NOT_SUPPORTED",
+        "matchAddressLine1": "NO_DATA",
+        "matchAddressLine2": "NO_INPUT",
+        "matchAdditionalAddressField1": "NO_INPUT",
+        "matchAdditionalAddressField2": "NO_INPUT",
+        "matchAdditionalAddressField3": "NOT_SUPPORTED",
+        "matchPhone": "NOT_SUPPORTED",
+        "matchEmail": "NOT_SUPPORTED",
+        "appendedFields": {
+        }
+      },
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "KYC_GOVERNMENT"
+    ],
+    "inputFirstName": "Chayapon",
+    "inputLastName": "Phucharoenyos",
+    "inputFullGivenName": "Chayapon Phucharoenyos",
+    "inputDateOfBirth": "1967-02-20",
+    "inputId1": "3120100686021",
+    "inputCity": "Bangkok",
+    "inputAddressLine1": "24 Soi Ramkhamhaeng 174,"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 INFO  com.intuit.karate - [print] Actual Response----> {
+  "data": {
+    "kyc": {
+      "government": {
+        "matchFirstName": "NO_MATCH",
+        "matchMiddleName": "NOT_SUPPORTED",
+        "matchLastName": "MATCH",
+        "matchFullGivenName": "NOT_SUPPORTED",
+        "matchDateOfBirth": "MATCH",
+        "matchGender": "NOT_SUPPORTED",
+        "matchId1": "MATCH",
+        "matchId2": "NOT_SUPPORTED",
+        "matchId3": "NOT_SUPPORTED",
+        "matchId4": "NOT_SUPPORTED",
+        "matchId5": "NOT_SUPPORTED",
+        "matchBuildingNumber": "NOT_SUPPORTED",
+        "matchBuildingName": "NOT_SUPPORTED",
+        "matchUnitNumber": "NOT_SUPPORTED",
+        "matchStreetName": "NOT_SUPPORTED",
+        "matchPoBox": "NOT_SUPPORTED",
+        "matchCity": "NOT_SUPPORTED",
+        "matchState": "NOT_SUPPORTED",
+        "matchCountry": "NOT_SUPPORTED",
+        "matchAddressLine1": "NO_DATA",
+        "matchAddressLine2": "NO_INPUT",
+        "matchAdditionalAddressField1": "NO_INPUT",
+        "matchAdditionalAddressField2": "NO_INPUT",
+        "matchAdditionalAddressField3": "NOT_SUPPORTED",
+        "matchPhone": "NOT_SUPPORTED",
+        "matchEmail": "NOT_SUPPORTED",
+        "appendedFields": {
+        }
+      },
+      "consumer": null,
+      "mobile": null,
+      "aml": null
+    },
+    "kyb": null
+  },
+  "meta": {
+    "referenceId": "f36575fe-43f1-407b-9bd8-24db1179123f",
+    "requestedPackages": [
+      "KYC_GOVERNMENT"
+    ],
+    "inputFirstName": "Chayapon",
+    "inputLastName": "Phucharoenyos",
+    "inputFullGivenName": "Chayapon Phucharoenyos",
+    "inputDateOfBirth": "1967-02-20",
+    "inputId1": "3120100686021",
+    "inputCity": "Bangkok",
+    "inputAddressLine1": "24 Soi Ramkhamhaeng 174,",
+    "inputPhoneDefaultCountryCode": "TH"
+  },
+  "errors": [
+  ]
+}
+ 
+2025-01-03 12:15:37 ERROR com.intuit.karate - classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+Then match payload.response.data.kyc.government contains only $.data.kyc.government
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [matchFirstName] (MAP:MAP)
+  {"matchFirstName":"MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+
+    $.matchFirstName | not equal (STRING:STRING)
+    'MATCH'
+    'NO_MATCH'
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+---------------------------------------------------------
+feature: classpath:monnai/MAIN/verification/feature_files/AML_Automation.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 3.0892
+---------------------------------------------------------
+
+2025-01-03 12:15:38 INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:monnai/MAIN/verification/feature_files/AML_Automation.feature
+---------------------------------------------------------
+feature: classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature
+scenarios:  4 | passed:  2 | failed:  2 | time: 10.3828
+---------------------------------------------------------
+
+2025-01-03 12:15:38 INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature
+---------------------------------------------------------
+feature: classpath:monnai/MAIN/verification/feature_files/KYC_MOBILE.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 1.5272
+---------------------------------------------------------
+
+2025-01-03 12:15:38 INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:monnai/MAIN/verification/feature_files/KYC_MOBILE.feature
+Karate version: 1.5.0 | env: release-fidoV2
+======================================================
+elapsed:   7.71 | threads:    5 | thread time: 15.00 
+features:     3 | skipped:    0 | efficiency: 0.39
+scenarios:    8 | passed:     6 | failed: 2
+======================================================
+>>> failed features:
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [appendedFields] (MAP:MAP)
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{"address":"34/2 ตะปอน ขลุง"}}
+
+    $.appendedFields | not equal | actual does not contain key - 'address' (MAP:MAP)
+    {}
+    {"address":"34/2 ตะปอน ขลุง"}
+
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [matchFirstName] (MAP:MAP)
+  {"matchFirstName":"MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+
+    $.matchFirstName | not equal (STRING:STRING)
+    'MATCH'
+    'NO_MATCH'
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0 | env: release-fidoV2
+file:///Users/yashas/IdeaProjects/test-automation/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

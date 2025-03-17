@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"9077676e-3af5-4a0a-8119-eba7e7b32c01",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>monnai.Auth_Token_Generation</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-02-17 10:37:43 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>generating auth token for env specific</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">monnai/Auth_Token_Generation.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Generating auth token</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">auth_Token_monnai</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">generating auth token for env specific</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1021</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">10:37:42.123 karate.env system property was: release-y 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/oauth2/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Content-Type: &#39;application/x-www-form-urlencoded&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authLoad = read(&quot;classpath:monnai/data/authInfo/&quot; + env + &quot;-auth.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = authLoad.client_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_secret = authLoad.client_secret</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &#39;client_credentials&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field scope = authLoad.scope</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">761</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">10:37:43.233 [print] {
+  &quot;access_token&quot;: &quot;eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL3VwaV9hZHZhbmNlZCBpbnNpZ2h0c1wvYWRkcmVzc192ZXJpZmljYXRpb24gaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL3Bob25lX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X3NvY2lhbCBpbnNpZ2h0c1wvYnVzaW5lc3NfcmVnaXN0cmF0aW9uIGluc2lnaHRzXC9hYWRoYWFyX2RldGFpbHMgdmVyaWZpY2F0aW9uXC9reWNfY29uc3VtZXIgdmVyaWZpY2F0aW9uXC9reWNfYW1sIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMgaW5zaWdodHNcL3Bob25lX3NvY2lhbCIsImF1dGhfdGltZSI6MTczOTc2ODg2MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX3RYRVJRZGU3RiIsImV4cCI6MTczOTg1NTI2MywiaWF0IjoxNzM5NzY4ODYzLCJ2ZXJzaW9uIjoyLCJqdGkiOiJiMGExODQ5Ny01MmRhLTRjY2UtODA4Ny1iOWMxNWI1OGIyMmUiLCJjbGllbnRfaWQiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyJ9.Qz7leu0XIZNgBmoZhpvGWeAIPXFIvIwKmpsH1qmJgTSfYVtp2UlIsRtR64-uZN-5Z24F3uZejcr1ZpAbjvelenmfcyNNsnZ6TrqvsZi1wQTd3ETWg8t0fdJlxTArFvlc7pbi56Hoz7W0kawZlX4448X2IxSVeM4r4vSvb098iqQzwuGaAHoRB1IYKE3tpPvvH54P8pZatjIrKw4S95ZxT02VrENpRV-tsRVGe5JIxnFl5iD-PpUrBIpQfWUWKwsI8WXeIoP4o04GxEXC-GD2PHyZx6zgA_6gdGAkisbeOGwEl0sUBSvBVFkq_D3zY5qS7sBG0K5r8YG6Xu2gTWyzow&quot;,
+  &quot;expires_in&quot;: 86400,
+  &quot;token_type&quot;: &quot;Bearer&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def accessToken = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">10:37:43.236 [print] eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL3VwaV9hZHZhbmNlZCBpbnNpZ2h0c1wvYWRkcmVzc192ZXJpZmljYXRpb24gaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL3Bob25lX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X3NvY2lhbCBpbnNpZ2h0c1wvYnVzaW5lc3NfcmVnaXN0cmF0aW9uIGluc2lnaHRzXC9hYWRoYWFyX2RldGFpbHMgdmVyaWZpY2F0aW9uXC9reWNfY29uc3VtZXIgdmVyaWZpY2F0aW9uXC9reWNfYW1sIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMgaW5zaWdodHNcL3Bob25lX3NvY2lhbCIsImF1dGhfdGltZSI6MTczOTc2ODg2MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX3RYRVJRZGU3RiIsImV4cCI6MTczOTg1NTI2MywiaWF0IjoxNzM5NzY4ODYzLCJ2ZXJzaW9uIjoyLCJqdGkiOiJiMGExODQ5Ny01MmRhLTRjY2UtODA4Ny1iOWMxNWI1OGIyMmUiLCJjbGllbnRfaWQiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyJ9.Qz7leu0XIZNgBmoZhpvGWeAIPXFIvIwKmpsH1qmJgTSfYVtp2UlIsRtR64-uZN-5Z24F3uZejcr1ZpAbjvelenmfcyNNsnZ6TrqvsZi1wQTd3ETWg8t0fdJlxTArFvlc7pbi56Hoz7W0kawZlX4448X2IxSVeM4r4vSvb098iqQzwuGaAHoRB1IYKE3tpPvvH54P8pZatjIrKw4S95ZxT02VrENpRV-tsRVGe5JIxnFl5iD-PpUrBIpQfWUWKwsI8WXeIoP4o04GxEXC-GD2PHyZx6zgA_6gdGAkisbeOGwEl0sUBSvBVFkq_D3zY5qS7sBG0K5r8YG6Xu2gTWyzow 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Token =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.23">function() {
+  return   &#39;Bearer &#39;+accessToken
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authLoad</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">10:37:43.239 [print] {
+  &quot;app_client_name&quot;: &quot;Release_yashas_tenant@tenant_01HYZAXNP24WRMX800Q4ES17JX&quot;,
+  &quot;client_id&quot;: &quot;1qnv00se7ak3peb0jhu8k9gf6s&quot;,
+  &quot;client_secret&quot;: &quot;d4edqnmk0o26v53oskp5qn9pt0che8shds6nk2rutummhctkj61&quot;,
+  &quot;grant_type&quot;: &quot;client_credentials&quot;,
+  &quot;scope&quot;: &quot;insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/email_basic insights/email_social insights/phone_basic insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social insights/identity_enrichment&quot;,
+  &quot;issue-description&quot;: &quot; Release_yashas_tenant&quot;,
+  &quot;tenant_config&quot;: {
+    &quot;tenant&quot;: &quot;tenant_01HYZAXNP24WRMX800Q4ES17JX&quot;,
+    &quot;exclude&quot;: {
+    },
+    &quot;include&quot;: {
+      &quot;UPI_ADVANCED&quot;: {
+        &quot;01HDZYDN1PRT2Q3RXM4RSSD3AQ&quot;: {
+          &quot;name&quot;: &quot;CASHFREE_UPI_MOBILE&quot;,
+          &quot;order&quot;: 0,
+          &quot;data&quot;: {
+            &quot;upiApplicationName&quot;: &quot;ALL&quot;
+          }
+        },
+        &quot;01HD3X5C5ZHB7QB188DFEXTKKY&quot;: {
+          &quot;name&quot;: &quot;CASHFREE UPI&quot;,
+          &quot;order&quot;: 0,
+          &quot;data&quot;: {
+            &quot;upiApplicationName&quot;: &quot;ALL&quot;
+          }
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Environment AuthGen---&gt;&#39;,env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">10:37:43.240 [print] Environment AuthGen---&gt; release-y 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tenant_config = authLoad.tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">10:37:43.243 [print] {
+  &quot;tenant&quot;: &quot;tenant_01HYZAXNP24WRMX800Q4ES17JX&quot;,
+  &quot;exclude&quot;: {
+  },
+  &quot;include&quot;: {
+    &quot;UPI_ADVANCED&quot;: {
+      &quot;01HDZYDN1PRT2Q3RXM4RSSD3AQ&quot;: {
+        &quot;name&quot;: &quot;CASHFREE_UPI_MOBILE&quot;,
+        &quot;order&quot;: 0,
+        &quot;data&quot;: {
+          &quot;upiApplicationName&quot;: &quot;ALL&quot;
+        }
+      },
+      &quot;01HD3X5C5ZHB7QB188DFEXTKKY&quot;: {
+        &quot;name&quot;: &quot;CASHFREE UPI&quot;,
+        &quot;order&quot;: 0,
+        &quot;data&quot;: {
+          &quot;upiApplicationName&quot;: &quot;ALL&quot;
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = Token()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Bearer Token ---&gt;&#39;,authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">10:37:43.247 [print] Bearer Token ---&gt; Bearer eyJraWQiOiJUeHZBRldSUTJ4QVJjSGlVeVRtQisyV3BKa3VLaTZ3aDZKbkNaXC9nNkJBYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL3VwaV9hZHZhbmNlZCBpbnNpZ2h0c1wvYWRkcmVzc192ZXJpZmljYXRpb24gaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL3Bob25lX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X3NvY2lhbCBpbnNpZ2h0c1wvYnVzaW5lc3NfcmVnaXN0cmF0aW9uIGluc2lnaHRzXC9hYWRoYWFyX2RldGFpbHMgdmVyaWZpY2F0aW9uXC9reWNfY29uc3VtZXIgdmVyaWZpY2F0aW9uXC9reWNfYW1sIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMgaW5zaWdodHNcL3Bob25lX3NvY2lhbCIsImF1dGhfdGltZSI6MTczOTc2ODg2MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX3RYRVJRZGU3RiIsImV4cCI6MTczOTg1NTI2MywiaWF0IjoxNzM5NzY4ODYzLCJ2ZXJzaW9uIjoyLCJqdGkiOiJiMGExODQ5Ny01MmRhLTRjY2UtODA4Ny1iOWMxNWI1OGIyMmUiLCJjbGllbnRfaWQiOiIxcW52MDBzZTdhazNwZWIwamh1OGs5Z2Y2cyJ9.Qz7leu0XIZNgBmoZhpvGWeAIPXFIvIwKmpsH1qmJgTSfYVtp2UlIsRtR64-uZN-5Z24F3uZejcr1ZpAbjvelenmfcyNNsnZ6TrqvsZi1wQTd3ETWg8t0fdJlxTArFvlc7pbi56Hoz7W0kawZlX4448X2IxSVeM4r4vSvb098iqQzwuGaAHoRB1IYKE3tpPvvH54P8pZatjIrKw4S95ZxT02VrENpRV-tsRVGe5JIxnFl5iD-PpUrBIpQfWUWKwsI8WXeIoP4o04GxEXC-GD2PHyZx6zgA_6gdGAkisbeOGwEl0sUBSvBVFkq_D3zY5qS7sBG0K5r8YG6Xu2gTWyzow 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

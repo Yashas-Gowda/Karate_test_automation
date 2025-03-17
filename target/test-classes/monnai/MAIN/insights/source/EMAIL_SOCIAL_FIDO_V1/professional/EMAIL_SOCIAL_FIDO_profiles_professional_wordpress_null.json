@@ -1,0 +1,198 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "shivanijasveersingh@gmail.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 12,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 1,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 3,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 0,
+            "registeredEducationProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 0
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": true
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": null,
+                "photo": null
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": true
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": false
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "Shivani singh",
+                "id": "live:.cid.882840455b1f83de",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": null
+              },
+              "atlassian": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": true,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "hubspot": {
+                "registered": null
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "disneyplus": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": false
+              }
+            },
+            "education": {
+              "duolingo": {
+                "registered": true
+              }
+            }
+          }
+        },
+        "basic": null,
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "b789d358-86d3-4260-bd53-5305a095f818",
+      "inputEmail": "shivanijasveersingh@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

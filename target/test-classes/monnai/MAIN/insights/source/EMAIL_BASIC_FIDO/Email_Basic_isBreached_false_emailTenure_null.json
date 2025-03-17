@@ -1,0 +1,73 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "meyashasgowda@gmail.com"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "gmail.com",
+            "tld": ".com",
+            "creationTime": "1995-08-13 07:31:22",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": "Google LLC",
+            "registrarName": "MarkMonitor, Inc.",
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "meyashasgowda@gmail.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

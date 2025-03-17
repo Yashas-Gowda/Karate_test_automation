@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UkgSuhujyQ0EP3w=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "KYC_PAN",
+        "message": "Pan is required",
+        "code": "MISSING_PAN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

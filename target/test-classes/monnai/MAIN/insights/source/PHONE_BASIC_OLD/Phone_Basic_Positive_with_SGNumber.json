@@ -1,0 +1,71 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "98581321",
+    "phoneDefaultCountryCode": "SG"
+  },
+  "response": {
+  "data": {
+    "phone": {
+      "basic": {
+        "phoneNumber": "6598581321",
+        "phoneValid": true,
+        "phoneType": "MOBILE",
+        "phoneDisposable": false,
+        "active": "YES",
+        "activationDate": null,
+        "activeSinceXDays": null,
+        "simType": null,
+        "phoneNumberAge": null,
+        "phoneNumberAgeDescription": null,
+        "phoneTenure": null,
+        "country": "SG",
+        "originalCarrier": "StarHub Mobile",
+        "ported": false,
+        "portedHistory": {
+          "portedDate": null,
+          "numberOfPorts": 0,
+          "portedSinceXDays": null,
+          "currentCarrierCircle": "StarHub StarHub Mobile",
+          "originalCarrierCircle": "StarHub StarHub Mobile",
+          "changeInCarrierRegion": "NOT_SUPPORTED",
+          "portedEvents": null
+        },
+        "currentNetwork": {
+          "localRoutingNumber": null,
+          "mobileCountryCode": "525",
+          "mobileNetworkCode": "05",
+          "networkName": "StarHub Mobile",
+          "serviceProfileId": "65502"
+        },
+        "lastDeactivated": null,
+        "isSpam": null
+      },
+      "social": null,
+      "identity": null
+    },
+    "email": null,
+    "address": null,
+    "name": null,
+    "ip": null,
+    "identity": null,
+    "upi": null,
+    "device": null,
+    "employment": null,
+    "bre": null
+  },
+  "meta": {
+    "inputPhoneNumber": "98581321",
+    "cleansedPhoneNumber": "+6598581321",
+    "referenceId": "#ignore",
+    "requestedPackages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "errors": []
+}
+  }

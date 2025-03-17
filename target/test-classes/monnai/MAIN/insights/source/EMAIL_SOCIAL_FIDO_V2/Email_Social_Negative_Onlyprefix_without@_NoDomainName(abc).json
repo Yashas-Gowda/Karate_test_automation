@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "abc"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "e1685ab5-1718-4078-b21d-65a5b8f5c383",
+      "inputEmail": "abc",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+      {
+        "package": "EMAIL_SOCIAL",
+        "message": "Invalid email address",
+        "code": "INVALID_EMAIL_ADDRESS",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

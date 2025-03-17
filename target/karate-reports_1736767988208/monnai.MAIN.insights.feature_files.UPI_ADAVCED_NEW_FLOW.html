@@ -1,0 +1,3260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"9077676e-3af5-4a0a-8119-eba7e7b32c01",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>monnai.MAIN.insights.feature_files.UPI_ADAVCED_NEW_FLOW</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-01-13 05:02:31 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[11.1:542]"><span>[11.1:542]</span> <span>Validation of UPI_ADVANCED Possitive scenario for packageDetails S2101 UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found | InputIP -&gt; &lt;phoneNumber&gt;.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[11.2:543]"><span>[11.2:543]</span> <span>Validation of UPI_ADVANCED Possitive scenario for packageDetails S2101 UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101 | InputIP -&gt; &lt;phoneNumber&gt;.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">monnai/MAIN/insights/feature_files/UPI_ADAVCED_NEW_FLOW.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing of DPI - UPI_ADVANCED_NEW_FLOW feature scenarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11.1:542]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">upi_jan_13</a><a class="badge badge-primary" href="karate-tags.html">UPI_ADVANCED</a><a class="badge badge-primary" href="karate-tags.html">regTest_4</a><a class="badge badge-primary" href="karate-tags.html">UPI</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11.1:542]</span>
+                <span class="scenario-name">Validation of UPI_ADVANCED Possitive scenario for packageDetails S2101 UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found | InputIP -&gt; &lt;phoneNumber&gt;.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1168</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11.1:542]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11.1:542]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">17:02:29.986 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[11.1:542]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11.1:542]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authFeature = call read(&#39;classpath:monnai/Auth_Token_Generation.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1153</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">monnai.Auth_Token_Generation</div>
+      </div>
+      <div class="time-cell passed">1080</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/oauth2/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Content-Type: &#39;application/x-www-form-urlencoded&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authLoad = read(&quot;classpath:monnai/data/authInfo/&quot; + env + &quot;-auth.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = authLoad.client_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">138</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_secret = authLoad.client_secret</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &#39;client_credentials&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field scope = authLoad.scope</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">821</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">46</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.20">17:02:31.268 [print] {
+  &quot;access_token&quot;: &quot;eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiYTIxYzI4MzMtMjkxZi00MjA0LWIxYzctYjljMWNkNWVmNTQ2IiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.ngqRffN0t3-MNtrIxY7fvXUyCJwzhXrCuBoNUeffi3uGEo-Sy8oKP37v300IuxU4jDo3_60qqwfrnZMnF_rUFPqJI2nBm9UHFyjLHlMd9atY1p6loGBz91bMvTYs9-aQNQh-QVTlnRAgR86I7jJf_FlZoeBsM-B51w98lK7NJGT-vA_TzUE1NogetzoziFh6eHH3Ls_GrTfHHwFS8K4wQa0r6rFo2g1KeuMN1DpJ7lntcKeyNpoQmz-zrom1xc7DKPOxiUmscce3wtqNrqs_UOL5O6zmLrhPY_gEGqHT8aYZl9zl34NolH6La6ZcZeH0w5pQMbOV5g0FmBwPW1rpnw&quot;,
+  &quot;expires_in&quot;: 86400,
+  &quot;token_type&quot;: &quot;Bearer&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def accessToken = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.22">17:02:31.271 [print] eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiYTIxYzI4MzMtMjkxZi00MjA0LWIxYzctYjljMWNkNWVmNTQ2IiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.ngqRffN0t3-MNtrIxY7fvXUyCJwzhXrCuBoNUeffi3uGEo-Sy8oKP37v300IuxU4jDo3_60qqwfrnZMnF_rUFPqJI2nBm9UHFyjLHlMd9atY1p6loGBz91bMvTYs9-aQNQh-QVTlnRAgR86I7jJf_FlZoeBsM-B51w98lK7NJGT-vA_TzUE1NogetzoziFh6eHH3Ls_GrTfHHwFS8K4wQa0r6rFo2g1KeuMN1DpJ7lntcKeyNpoQmz-zrom1xc7DKPOxiUmscce3wtqNrqs_UOL5O6zmLrhPY_gEGqHT8aYZl9zl34NolH6La6ZcZeH0w5pQMbOV5g0FmBwPW1rpnw 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Token =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.7.0.call.0.23">function() {
+  return   &#39;Bearer &#39;+accessToken
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.29">
+      <div class="step-ref bg-step">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authLoad</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.29">17:02:31.275 [print] {
+  &quot;app_client_name&quot;: &quot;Automation Tenant - Test env - test-fidoV2(test-a) - test_tenant001@tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+  &quot;client_id&quot;: &quot;29j416oo22mc4gulkre57mj6s7&quot;,
+  &quot;client_secret&quot;: &quot;1j59i5vusos825eolc39rb1ujq8nfdbhgcoj3r21g8ltf4mul9jd&quot;,
+  &quot;grant_type&quot;: &quot;client_credentials&quot;,
+  &quot;scope&quot;: &quot;insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social&quot;,
+  &quot;issue&quot;: &quot;non&quot;,
+  &quot;tenant_config&quot;: {
+    &quot;tenant&quot;: &quot;tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+    &quot;exclude&quot;: {
+      &quot;EMAIL_BASIC&quot;: {
+        &quot;01HP1HECME5P4JQD91CPAW2Y60&quot;: {
+          &quot;name&quot;: &quot;BRE_Featurization_EmailBasicAnalysis&quot;
+        },
+        &quot;01HQ56STADP5RN4YKR6K9RMKM2&quot;: {
+          &quot;name&quot;: &quot;WhoIsXML&quot;
+        },
+        &quot;01HPVAGR327YWCGH4DAPHRNA18&quot;: {
+          &quot;name&quot;: &quot;Have I Been Pawned&quot;
+        },
+        &quot;01GVK5Y8D3G5B7R5QKQC0Q75X6&quot;: {
+          &quot;name&quot;: &quot;Seon Email&quot;
+        },
+        &quot;01HPVAZ4H2055V28EZ6P4B4DE6&quot;: {
+          &quot;name&quot;: &quot;Zero Bounce Email Validation&quot;
+        },
+        &quot;01H6XFS4G3JFMTG43WS0F6FB85&quot;: {
+          &quot;name&quot;: &quot;SEON email_basic&quot;
+        }
+      },
+      &quot;EMAIL_SOCIAL&quot;: {
+        &quot;01H6S1E1Y35A6R65086W7T5Z97&quot;: {
+          &quot;name&quot;: &quot;FIDO email_social&quot;
+        },
+        &quot;01H8C58BBSVB67MHSPPN1D8XYR&quot;: {
+          &quot;name&quot;: &quot;Seon Email Social&quot;
+        }
+      },
+      &quot;PHONE_SOCIAL&quot;: {
+        &quot;01H6BBPQ3TVTVSTDH4TKRX3VGY&quot;: {
+          &quot;name&quot;: &quot;FIDO Phone&quot;
+        },
+        &quot;01HYZ037G2AKV26HFP7WYKGY0D&quot;: {
+          &quot;name&quot;: &quot;Inhouse Phone social&quot;
+        },
+        &quot;01GVK2BBQCZVCB8A88Q1MW2MTR&quot;: {
+          &quot;name&quot;: &quot;Seon Phone&quot;
+        }
+      }
+    },
+    &quot;include&quot;: {
+      &quot;EMAIL_BASIC&quot;: {
+        &quot;01H785HGK5PSKMST8QZSEDCAQY&quot;: {
+          &quot;name&quot;: &quot;FIDO email_basic&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;EMAIL_SOCIAL&quot;: {
+        &quot;01H72X88KKK3R5013F54H5P09T&quot;: {
+          &quot;name&quot;: &quot;FIDO email_social_v2&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;PHONE_SOCIAL&quot;: {
+        &quot;01H72XCMJ3A08W8MREYD8T1EBS&quot;: {
+          &quot;name&quot;: &quot;FIDO phone_social_v2&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;ADDRESS_VERIFICATION&quot;: {
+        &quot;01J3JFHRPD08X95AGXNX0YX9P9&quot;: {
+          &quot;name&quot;: &quot;tartan_address_activity_api&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01J3JDV2T86QWE190A86SRZN0E&quot;: {
+          &quot;name&quot;: &quot;tartan_ecommerce_association_api&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01HN02SR3AJHY16GCR9HZRHKBN&quot;: {
+          &quot;name&quot;: &quot;prime_analytica_ioh&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01J5TA6M5BH7QMD4WC8KHW9C1C&quot;: {
+          &quot;name&quot;: &quot;prime_analytics_one_api&quot;,
+          &quot;order&quot;: 0,
+          &quot;data&quot;: {
+            &quot;clientId&quot;: &quot;Tester-Client-ID&quot;,
+            &quot;partnerId&quot;: &quot;Tester-Partner-ID&quot;,
+            &quot;productId&quot;: &quot;Tester-Product-AV&quot;,
+            &quot;clientKey&quot;: &quot;prime-sandbox&quot;,
+            &quot;clientSecret&quot;: &quot;erhVxVLIwjEwvjFm9OHH&quot;
+          }
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.30">
+      <div class="step-ref bg-step">30</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Environment AuthGen---&gt;&#39;,env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.30">17:02:31.277 [print] Environment AuthGen---&gt; test-fidoV2 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.31">
+      <div class="step-ref bg-step">31</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tenant_config = authLoad.tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.32">
+      <div class="step-ref bg-step">32</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.32">17:02:31.280 [print] {
+  &quot;tenant&quot;: &quot;tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+  &quot;exclude&quot;: {
+    &quot;EMAIL_BASIC&quot;: {
+      &quot;01HP1HECME5P4JQD91CPAW2Y60&quot;: {
+        &quot;name&quot;: &quot;BRE_Featurization_EmailBasicAnalysis&quot;
+      },
+      &quot;01HQ56STADP5RN4YKR6K9RMKM2&quot;: {
+        &quot;name&quot;: &quot;WhoIsXML&quot;
+      },
+      &quot;01HPVAGR327YWCGH4DAPHRNA18&quot;: {
+        &quot;name&quot;: &quot;Have I Been Pawned&quot;
+      },
+      &quot;01GVK5Y8D3G5B7R5QKQC0Q75X6&quot;: {
+        &quot;name&quot;: &quot;Seon Email&quot;
+      },
+      &quot;01HPVAZ4H2055V28EZ6P4B4DE6&quot;: {
+        &quot;name&quot;: &quot;Zero Bounce Email Validation&quot;
+      },
+      &quot;01H6XFS4G3JFMTG43WS0F6FB85&quot;: {
+        &quot;name&quot;: &quot;SEON email_basic&quot;
+      }
+    },
+    &quot;EMAIL_SOCIAL&quot;: {
+      &quot;01H6S1E1Y35A6R65086W7T5Z97&quot;: {
+        &quot;name&quot;: &quot;FIDO email_social&quot;
+      },
+      &quot;01H8C58BBSVB67MHSPPN1D8XYR&quot;: {
+        &quot;name&quot;: &quot;Seon Email Social&quot;
+      }
+    },
+    &quot;PHONE_SOCIAL&quot;: {
+      &quot;01H6BBPQ3TVTVSTDH4TKRX3VGY&quot;: {
+        &quot;name&quot;: &quot;FIDO Phone&quot;
+      },
+      &quot;01HYZ037G2AKV26HFP7WYKGY0D&quot;: {
+        &quot;name&quot;: &quot;Inhouse Phone social&quot;
+      },
+      &quot;01GVK2BBQCZVCB8A88Q1MW2MTR&quot;: {
+        &quot;name&quot;: &quot;Seon Phone&quot;
+      }
+    }
+  },
+  &quot;include&quot;: {
+    &quot;EMAIL_BASIC&quot;: {
+      &quot;01H785HGK5PSKMST8QZSEDCAQY&quot;: {
+        &quot;name&quot;: &quot;FIDO email_basic&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;EMAIL_SOCIAL&quot;: {
+      &quot;01H72X88KKK3R5013F54H5P09T&quot;: {
+        &quot;name&quot;: &quot;FIDO email_social_v2&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;PHONE_SOCIAL&quot;: {
+      &quot;01H72XCMJ3A08W8MREYD8T1EBS&quot;: {
+        &quot;name&quot;: &quot;FIDO phone_social_v2&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;ADDRESS_VERIFICATION&quot;: {
+      &quot;01J3JFHRPD08X95AGXNX0YX9P9&quot;: {
+        &quot;name&quot;: &quot;tartan_address_activity_api&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01J3JDV2T86QWE190A86SRZN0E&quot;: {
+        &quot;name&quot;: &quot;tartan_ecommerce_association_api&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01HN02SR3AJHY16GCR9HZRHKBN&quot;: {
+        &quot;name&quot;: &quot;prime_analytica_ioh&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01J5TA6M5BH7QMD4WC8KHW9C1C&quot;: {
+        &quot;name&quot;: &quot;prime_analytics_one_api&quot;,
+        &quot;order&quot;: 0,
+        &quot;data&quot;: {
+          &quot;clientId&quot;: &quot;Tester-Client-ID&quot;,
+          &quot;partnerId&quot;: &quot;Tester-Partner-ID&quot;,
+          &quot;productId&quot;: &quot;Tester-Product-AV&quot;,
+          &quot;clientKey&quot;: &quot;prime-sandbox&quot;,
+          &quot;clientSecret&quot;: &quot;erhVxVLIwjEwvjFm9OHH&quot;
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.33">
+      <div class="step-ref bg-step">33</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = Token()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.34">
+      <div class="step-ref bg-step">34</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Bearer Token ---&gt;&#39;,authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.34">17:02:31.283 [print] Bearer Token ---&gt; Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiYTIxYzI4MzMtMjkxZi00MjA0LWIxYzctYjljMWNkNWVmNTQ2IiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.ngqRffN0t3-MNtrIxY7fvXUyCJwzhXrCuBoNUeffi3uGEo-Sy8oKP37v300IuxU4jDo3_60qqwfrnZMnF_rUFPqJI2nBm9UHFyjLHlMd9atY1p6loGBz91bMvTYs9-aQNQh-QVTlnRAgR86I7jJf_FlZoeBsM-B51w98lK7NJGT-vA_TzUE1NogetzoziFh6eHH3Ls_GrTfHHwFS8K4wQa0r6rFo2g1KeuMN1DpJ7lntcKeyNpoQmz-zrom1xc7DKPOxiUmscce3wtqNrqs_UOL5O6zmLrhPY_gEGqHT8aYZl9zl34NolH6La6ZcZeH0w5pQMbOV5g0FmBwPW1rpnw 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[11.1:542]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BearerToken = authFeature.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.512">
+      <div class="step-ref passed">512</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.513">
+      <div class="step-ref passed">513</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read( &quot;../&quot; + source + &quot;/UPI_ADVANCED_NEW/UPI_ADVANCED_POSITVE_with_packageDetails_S2101_upiIdCount_0_when_DP_says_No_UPI_ID_found.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.514">
+      <div class="step-ref passed">514</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    And header x-timeout = &quot;90000&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.516">
+      <div class="step-ref failed">516</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure timeout = 90000</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.516">17:02:31.297 classpath:monnai/MAIN/insights/feature_files/UPI_ADAVCED_NEW_FLOW.feature:516
+* configure timeout = 90000
+unexpected &#39;configure&#39; key: &#39;timeout&#39;
+classpath:monnai/MAIN/insights/feature_files/UPI_ADAVCED_NEW_FLOW.feature:516
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.517">
+      <div class="step-ref skipped">517</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.518">
+      <div class="step-ref skipped">518</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.519">
+      <div class="step-ref skipped">519</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.520">
+      <div class="step-ref skipped">520</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># cloud watch traces -start</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.522">
+      <div class="step-ref skipped">522</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print karate.request.headers</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.523">
+      <div class="step-ref skipped">523</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print karate.response.headers</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.524">
+      <div class="step-ref skipped">524</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;x-reference-id-----&gt;&#39;,karate.request.headers[&#39;x-reference-id&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.525">
+      <div class="step-ref skipped">525</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def reference_id = karate.request.headers[&#39;x-reference-id&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.526">
+      <div class="step-ref skipped">526</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def Cloud_Watch_Traces = &quot;https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~&#39;Annotation.x_reference_id*20*3d*20*22&quot; + reference_id + &quot;*22)~context~(timeRange~(delta~21600000)))&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.527">
+      <div class="step-ref skipped">527</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Cloudwatch_dpi Traces-----&gt;&#39;,Cloud_Watch_Traces</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ResponseTime</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.529">
+      <div class="step-ref skipped">529</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;responseTime-----&gt;&#39;,responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Request-response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.531">
+      <div class="step-ref skipped">531</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;API Request-----&gt;&#39;,payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.532">
+      <div class="step-ref skipped">532</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Expected Response----&gt;&#39;,payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.533">
+      <div class="step-ref skipped">533</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Actual Response----&gt;&#39;,karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.534">
+      <div class="step-ref skipped">534</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Then match $.data.upi.advanced.upiIdCount == payload.response.data.upi.advanced.upiIdCount</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.536">
+      <div class="step-ref skipped">536</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.data.upi.advanced contains only deep payload.response.data.upi.advanced</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.537">
+      <div class="step-ref skipped">537</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.meta contains payload.response.meta</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.538">
+      <div class="step-ref skipped">538</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.errors contains payload.response.errors</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11.2:543]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">upi_jan_13</a><a class="badge badge-primary" href="karate-tags.html">UPI_ADVANCED</a><a class="badge badge-primary" href="karate-tags.html">regTest_4</a><a class="badge badge-primary" href="karate-tags.html">UPI</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11.2:543]</span>
+                <span class="scenario-name">Validation of UPI_ADVANCED Possitive scenario for packageDetails S2101 UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101 | InputIP -&gt; &lt;phoneNumber&gt;.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1168</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11.2:543]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11.2:543]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">17:02:29.986 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[11.2:543]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/api/insights/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11.2:543]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authFeature = call read(&#39;classpath:monnai/Auth_Token_Generation.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1153</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">monnai.Auth_Token_Generation</div>
+      </div>
+      <div class="time-cell passed">1083</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/oauth2/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Content-Type: &#39;application/x-www-form-urlencoded&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authLoad = read(&quot;classpath:monnai/data/authInfo/&quot; + env + &quot;-auth.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = authLoad.client_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">138</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_secret = authLoad.client_secret</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &#39;client_credentials&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field scope = authLoad.scope</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">821</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">46</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.20">17:02:31.268 [print] {
+  &quot;access_token&quot;: &quot;eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiMDU1ODZkOTAtN2M1NS00ZTU3LWJkMzEtODI2Yzk4M2RmYzYzIiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.PSB-vvVLawE0_fIestRhQSNGYfcXwDNT9vhriYhmLjpe3TYrR5EdV3QX1l1E1kqVGA_mR9a0t0-XbZTqOuJ6LX0Z36Ngt_EwLF-P4QNk_xuKIZSrO1ixK6X7w0YaixLfkrEEu5OlIztkkyj6FpBsXEbcHnQRf7NVaX1SJOiPkKjb1Z74PEgtuDcpyjK6tdGzix2nG-0FHProV3QnmTkc10SF52_bj2xJF-fZvmp-pkJt3BWyenrwO9C0_dmZ3N93vpV4DWrX1ud_VIyLQ_gU0BuxyEkuLKe2_bAxw0TdYoSz1mvuh8-ftBqWDa2jJVRw735iLk1vuQtSAYaEdDO1ag&quot;,
+  &quot;expires_in&quot;: 86400,
+  &quot;token_type&quot;: &quot;Bearer&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def accessToken = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.22">17:02:31.271 [print] eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiMDU1ODZkOTAtN2M1NS00ZTU3LWJkMzEtODI2Yzk4M2RmYzYzIiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.PSB-vvVLawE0_fIestRhQSNGYfcXwDNT9vhriYhmLjpe3TYrR5EdV3QX1l1E1kqVGA_mR9a0t0-XbZTqOuJ6LX0Z36Ngt_EwLF-P4QNk_xuKIZSrO1ixK6X7w0YaixLfkrEEu5OlIztkkyj6FpBsXEbcHnQRf7NVaX1SJOiPkKjb1Z74PEgtuDcpyjK6tdGzix2nG-0FHProV3QnmTkc10SF52_bj2xJF-fZvmp-pkJt3BWyenrwO9C0_dmZ3N93vpV4DWrX1ud_VIyLQ_gU0BuxyEkuLKe2_bAxw0TdYoSz1mvuh8-ftBqWDa2jJVRw735iLk1vuQtSAYaEdDO1ag 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Token =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.7.0.call.0.23">function() {
+  return   &#39;Bearer &#39;+accessToken
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.29">
+      <div class="step-ref bg-step">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authLoad</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.29">17:02:31.275 [print] {
+  &quot;app_client_name&quot;: &quot;Automation Tenant - Test env - test-fidoV2(test-a) - test_tenant001@tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+  &quot;client_id&quot;: &quot;29j416oo22mc4gulkre57mj6s7&quot;,
+  &quot;client_secret&quot;: &quot;1j59i5vusos825eolc39rb1ujq8nfdbhgcoj3r21g8ltf4mul9jd&quot;,
+  &quot;grant_type&quot;: &quot;client_credentials&quot;,
+  &quot;scope&quot;: &quot;insights/aadhaar_basic insights/aadhaar_details insights/business_registration insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social&quot;,
+  &quot;issue&quot;: &quot;non&quot;,
+  &quot;tenant_config&quot;: {
+    &quot;tenant&quot;: &quot;tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+    &quot;exclude&quot;: {
+      &quot;EMAIL_BASIC&quot;: {
+        &quot;01HP1HECME5P4JQD91CPAW2Y60&quot;: {
+          &quot;name&quot;: &quot;BRE_Featurization_EmailBasicAnalysis&quot;
+        },
+        &quot;01HQ56STADP5RN4YKR6K9RMKM2&quot;: {
+          &quot;name&quot;: &quot;WhoIsXML&quot;
+        },
+        &quot;01HPVAGR327YWCGH4DAPHRNA18&quot;: {
+          &quot;name&quot;: &quot;Have I Been Pawned&quot;
+        },
+        &quot;01GVK5Y8D3G5B7R5QKQC0Q75X6&quot;: {
+          &quot;name&quot;: &quot;Seon Email&quot;
+        },
+        &quot;01HPVAZ4H2055V28EZ6P4B4DE6&quot;: {
+          &quot;name&quot;: &quot;Zero Bounce Email Validation&quot;
+        },
+        &quot;01H6XFS4G3JFMTG43WS0F6FB85&quot;: {
+          &quot;name&quot;: &quot;SEON email_basic&quot;
+        }
+      },
+      &quot;EMAIL_SOCIAL&quot;: {
+        &quot;01H6S1E1Y35A6R65086W7T5Z97&quot;: {
+          &quot;name&quot;: &quot;FIDO email_social&quot;
+        },
+        &quot;01H8C58BBSVB67MHSPPN1D8XYR&quot;: {
+          &quot;name&quot;: &quot;Seon Email Social&quot;
+        }
+      },
+      &quot;PHONE_SOCIAL&quot;: {
+        &quot;01H6BBPQ3TVTVSTDH4TKRX3VGY&quot;: {
+          &quot;name&quot;: &quot;FIDO Phone&quot;
+        },
+        &quot;01HYZ037G2AKV26HFP7WYKGY0D&quot;: {
+          &quot;name&quot;: &quot;Inhouse Phone social&quot;
+        },
+        &quot;01GVK2BBQCZVCB8A88Q1MW2MTR&quot;: {
+          &quot;name&quot;: &quot;Seon Phone&quot;
+        }
+      }
+    },
+    &quot;include&quot;: {
+      &quot;EMAIL_BASIC&quot;: {
+        &quot;01H785HGK5PSKMST8QZSEDCAQY&quot;: {
+          &quot;name&quot;: &quot;FIDO email_basic&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;EMAIL_SOCIAL&quot;: {
+        &quot;01H72X88KKK3R5013F54H5P09T&quot;: {
+          &quot;name&quot;: &quot;FIDO email_social_v2&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;PHONE_SOCIAL&quot;: {
+        &quot;01H72XCMJ3A08W8MREYD8T1EBS&quot;: {
+          &quot;name&quot;: &quot;FIDO phone_social_v2&quot;,
+          &quot;order&quot;: 0
+        }
+      },
+      &quot;ADDRESS_VERIFICATION&quot;: {
+        &quot;01J3JFHRPD08X95AGXNX0YX9P9&quot;: {
+          &quot;name&quot;: &quot;tartan_address_activity_api&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01J3JDV2T86QWE190A86SRZN0E&quot;: {
+          &quot;name&quot;: &quot;tartan_ecommerce_association_api&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01HN02SR3AJHY16GCR9HZRHKBN&quot;: {
+          &quot;name&quot;: &quot;prime_analytica_ioh&quot;,
+          &quot;order&quot;: 0
+        },
+        &quot;01J5TA6M5BH7QMD4WC8KHW9C1C&quot;: {
+          &quot;name&quot;: &quot;prime_analytics_one_api&quot;,
+          &quot;order&quot;: 0,
+          &quot;data&quot;: {
+            &quot;clientId&quot;: &quot;Tester-Client-ID&quot;,
+            &quot;partnerId&quot;: &quot;Tester-Partner-ID&quot;,
+            &quot;productId&quot;: &quot;Tester-Product-AV&quot;,
+            &quot;clientKey&quot;: &quot;prime-sandbox&quot;,
+            &quot;clientSecret&quot;: &quot;erhVxVLIwjEwvjFm9OHH&quot;
+          }
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.30">
+      <div class="step-ref bg-step">30</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Environment AuthGen---&gt;&#39;,env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.30">17:02:31.277 [print] Environment AuthGen---&gt; test-fidoV2 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.31">
+      <div class="step-ref bg-step">31</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tenant_config = authLoad.tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.32">
+      <div class="step-ref bg-step">32</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tenant_config</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.32">17:02:31.280 [print] {
+  &quot;tenant&quot;: &quot;tenant_01HD10QR1XT0HVQ8QPGZ37Z8YS&quot;,
+  &quot;exclude&quot;: {
+    &quot;EMAIL_BASIC&quot;: {
+      &quot;01HP1HECME5P4JQD91CPAW2Y60&quot;: {
+        &quot;name&quot;: &quot;BRE_Featurization_EmailBasicAnalysis&quot;
+      },
+      &quot;01HQ56STADP5RN4YKR6K9RMKM2&quot;: {
+        &quot;name&quot;: &quot;WhoIsXML&quot;
+      },
+      &quot;01HPVAGR327YWCGH4DAPHRNA18&quot;: {
+        &quot;name&quot;: &quot;Have I Been Pawned&quot;
+      },
+      &quot;01GVK5Y8D3G5B7R5QKQC0Q75X6&quot;: {
+        &quot;name&quot;: &quot;Seon Email&quot;
+      },
+      &quot;01HPVAZ4H2055V28EZ6P4B4DE6&quot;: {
+        &quot;name&quot;: &quot;Zero Bounce Email Validation&quot;
+      },
+      &quot;01H6XFS4G3JFMTG43WS0F6FB85&quot;: {
+        &quot;name&quot;: &quot;SEON email_basic&quot;
+      }
+    },
+    &quot;EMAIL_SOCIAL&quot;: {
+      &quot;01H6S1E1Y35A6R65086W7T5Z97&quot;: {
+        &quot;name&quot;: &quot;FIDO email_social&quot;
+      },
+      &quot;01H8C58BBSVB67MHSPPN1D8XYR&quot;: {
+        &quot;name&quot;: &quot;Seon Email Social&quot;
+      }
+    },
+    &quot;PHONE_SOCIAL&quot;: {
+      &quot;01H6BBPQ3TVTVSTDH4TKRX3VGY&quot;: {
+        &quot;name&quot;: &quot;FIDO Phone&quot;
+      },
+      &quot;01HYZ037G2AKV26HFP7WYKGY0D&quot;: {
+        &quot;name&quot;: &quot;Inhouse Phone social&quot;
+      },
+      &quot;01GVK2BBQCZVCB8A88Q1MW2MTR&quot;: {
+        &quot;name&quot;: &quot;Seon Phone&quot;
+      }
+    }
+  },
+  &quot;include&quot;: {
+    &quot;EMAIL_BASIC&quot;: {
+      &quot;01H785HGK5PSKMST8QZSEDCAQY&quot;: {
+        &quot;name&quot;: &quot;FIDO email_basic&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;EMAIL_SOCIAL&quot;: {
+      &quot;01H72X88KKK3R5013F54H5P09T&quot;: {
+        &quot;name&quot;: &quot;FIDO email_social_v2&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;PHONE_SOCIAL&quot;: {
+      &quot;01H72XCMJ3A08W8MREYD8T1EBS&quot;: {
+        &quot;name&quot;: &quot;FIDO phone_social_v2&quot;,
+        &quot;order&quot;: 0
+      }
+    },
+    &quot;ADDRESS_VERIFICATION&quot;: {
+      &quot;01J3JFHRPD08X95AGXNX0YX9P9&quot;: {
+        &quot;name&quot;: &quot;tartan_address_activity_api&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01J3JDV2T86QWE190A86SRZN0E&quot;: {
+        &quot;name&quot;: &quot;tartan_ecommerce_association_api&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01HN02SR3AJHY16GCR9HZRHKBN&quot;: {
+        &quot;name&quot;: &quot;prime_analytica_ioh&quot;,
+        &quot;order&quot;: 0
+      },
+      &quot;01J5TA6M5BH7QMD4WC8KHW9C1C&quot;: {
+        &quot;name&quot;: &quot;prime_analytics_one_api&quot;,
+        &quot;order&quot;: 0,
+        &quot;data&quot;: {
+          &quot;clientId&quot;: &quot;Tester-Client-ID&quot;,
+          &quot;partnerId&quot;: &quot;Tester-Partner-ID&quot;,
+          &quot;productId&quot;: &quot;Tester-Product-AV&quot;,
+          &quot;clientKey&quot;: &quot;prime-sandbox&quot;,
+          &quot;clientSecret&quot;: &quot;erhVxVLIwjEwvjFm9OHH&quot;
+        }
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.33">
+      <div class="step-ref bg-step">33</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = Token()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.34">
+      <div class="step-ref bg-step">34</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Bearer Token ---&gt;&#39;,authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.34">17:02:31.283 [print] Bearer Token ---&gt; Bearer eyJraWQiOiJRZzhHYTFpM2tYT1ExUGZvZW9PWldcL2F1eFVxa1pIb1wvUG5FbFFhM3JGbjQ9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyOWo0MTZvbzIybWM0Z3Vsa3JlNTdtajZzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiaW5zaWdodHNcL2JsYWNrbGlzdF9kZXRhaWxzIGluc2lnaHRzXC91cGlfYWR2YW5jZWQgaW5zaWdodHNcL2FkZHJlc3NfdmVyaWZpY2F0aW9uIGluc2lnaHRzXC9waG9uZV9iYXNpYyBpbnNpZ2h0c1wvdXBpX2Jhc2ljIGluc2lnaHRzXC9lbWFpbF9zb2NpYWwgdmVyaWZpY2F0aW9uXC9reWNfbW9iaWxlIGluc2lnaHRzXC9lbXBsb3ltZW50X2FkdmFuY2VkIGluc2lnaHRzXC9lbXBsb3ltZW50X2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9jb3JyZWxhdGlvbiBpbnNpZ2h0c1wvaW5jb21lX2VzdGltYXRpb24gaW5zaWdodHNcL2J1c2luZXNzX3JlZ2lzdHJhdGlvbiBpbnNpZ2h0c1wvYWFkaGFhcl9kZXRhaWxzIGluc2lnaHRzXC9reWNfcGFuIHZlcmlmaWNhdGlvblwva3ljX2NvbnN1bWVyIGluc2lnaHRzXC9kZXZpY2VfZGV0YWlscyBpbnNpZ2h0c1wvZW1wbG95bWVudF9kZXRhaWxzIGluc2lnaHRzXC9waG9uZV9zb2NpYWwgaW5zaWdodHNcL2RvbWFpbl9icmVhY2ggaW5zaWdodHNcL2VtYWlsX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50X3BsdXMgaW5zaWdodHNcL2VtcGxveW1lbnRfc29jaWFsIGluc2lnaHRzXC9waG9uZV9pZGVudGl0eSB2ZXJpZmljYXRpb25cL2t5Y19hbWwgaW5zaWdodHNcL2lwX2Jhc2ljIGluc2lnaHRzXC9pZGVudGl0eV9lbnJpY2htZW50IGluc2lnaHRzXC9hZGRyZXNzX2Jhc2ljIHZlcmlmaWNhdGlvblwva3ljX2dvdmVybm1lbnQgaW5zaWdodHNcL2FhZGhhYXJfYmFzaWMiLCJhdXRoX3RpbWUiOjE3MzY3Njc5NTEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9TUDhXOG5uc1AiLCJleHAiOjE3MzY4NTQzNTEsImlhdCI6MTczNjc2Nzk1MSwidmVyc2lvbiI6MiwianRpIjoiMDU1ODZkOTAtN2M1NS00ZTU3LWJkMzEtODI2Yzk4M2RmYzYzIiwiY2xpZW50X2lkIjoiMjlqNDE2b28yMm1jNGd1bGtyZTU3bWo2czcifQ.PSB-vvVLawE0_fIestRhQSNGYfcXwDNT9vhriYhmLjpe3TYrR5EdV3QX1l1E1kqVGA_mR9a0t0-XbZTqOuJ6LX0Z36Ngt_EwLF-P4QNk_xuKIZSrO1ixK6X7w0YaixLfkrEEu5OlIztkkyj6FpBsXEbcHnQRf7NVaX1SJOiPkKjb1Z74PEgtuDcpyjK6tdGzix2nG-0FHProV3QnmTkc10SF52_bj2xJF-fZvmp-pkJt3BWyenrwO9C0_dmZ3N93vpV4DWrX1ud_VIyLQ_gU0BuxyEkuLKe2_bAxw0TdYoSz1mvuh8-ftBqWDa2jJVRw735iLk1vuQtSAYaEdDO1ag 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[11.2:543]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def BearerToken = authFeature.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.512">
+      <div class="step-ref passed">512</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url requestUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.513">
+      <div class="step-ref passed">513</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def payload = read( &quot;../&quot; + source + &quot;/UPI_ADVANCED_NEW/UPI_ADVANCED_POSITIVE_NO_upiApplicationName_DEFAULT_PRIMARY_upiIdCount_0_packageDetails_S2101.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.514">
+      <div class="step-ref passed">514</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    And header x-timeout = &quot;90000&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.516">
+      <div class="step-ref failed">516</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure timeout = 90000</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.516">17:02:31.297 classpath:monnai/MAIN/insights/feature_files/UPI_ADAVCED_NEW_FLOW.feature:516
+* configure timeout = 90000
+unexpected &#39;configure&#39; key: &#39;timeout&#39;
+classpath:monnai/MAIN/insights/feature_files/UPI_ADAVCED_NEW_FLOW.feature:516
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.517">
+      <div class="step-ref skipped">517</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.518">
+      <div class="step-ref skipped">518</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.519">
+      <div class="step-ref skipped">519</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>set payload.response.meta.referenceId = &quot;#ignore&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.520">
+      <div class="step-ref skipped">520</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># cloud watch traces -start</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.522">
+      <div class="step-ref skipped">522</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print karate.request.headers</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.523">
+      <div class="step-ref skipped">523</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print karate.response.headers</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.524">
+      <div class="step-ref skipped">524</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;x-reference-id-----&gt;&#39;,karate.request.headers[&#39;x-reference-id&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.525">
+      <div class="step-ref skipped">525</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def reference_id = karate.request.headers[&#39;x-reference-id&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.526">
+      <div class="step-ref skipped">526</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def Cloud_Watch_Traces = &quot;https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#xray:traces/query?~(query~(expression~&#39;Annotation.x_reference_id*20*3d*20*22&quot; + reference_id + &quot;*22)~context~(timeRange~(delta~21600000)))&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.527">
+      <div class="step-ref skipped">527</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Cloudwatch_dpi Traces-----&gt;&#39;,Cloud_Watch_Traces</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ResponseTime</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.529">
+      <div class="step-ref skipped">529</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;responseTime-----&gt;&#39;,responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Request-response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.531">
+      <div class="step-ref skipped">531</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;API Request-----&gt;&#39;,payload.request</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.532">
+      <div class="step-ref skipped">532</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Expected Response----&gt;&#39;,payload.response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.533">
+      <div class="step-ref skipped">533</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Actual Response----&gt;&#39;,karate.pretty(response)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.534">
+      <div class="step-ref skipped">534</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Then match $.data.upi.advanced.upiIdCount == payload.response.data.upi.advanced.upiIdCount</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.536">
+      <div class="step-ref skipped">536</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.data.upi.advanced contains only deep payload.response.data.upi.advanced</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.537">
+      <div class="step-ref skipped">537</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.meta contains payload.response.meta</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.538">
+      <div class="step-ref skipped">538</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.errors contains payload.response.errors</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

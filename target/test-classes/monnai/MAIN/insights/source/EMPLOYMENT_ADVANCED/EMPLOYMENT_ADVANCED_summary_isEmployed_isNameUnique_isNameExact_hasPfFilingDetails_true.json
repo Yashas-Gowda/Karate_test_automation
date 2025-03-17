@@ -1,0 +1,169 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "9892340894",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
+            "noOfPfAccounts": 4,
+            "dateOfJoining": "2024-10-10",
+            "matchingPfAccountNumber": "101281942125"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101281942125",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "INLEAD ELECTRONICS PRIVATE LIMITED",
+              "dateOfJoining": "2024-10-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "********1912",
+                "bankBranchCode": "ICIC*****04",
+                "bankAddress": "ICICI BANK LIMITED,MUMBAI - NARIMAN POINT",
+                "pfNomineeName": "MAHENDRA NARAYANBHAI VALANTRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100956281807",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "FIRSTMERIDIAN GLOBAL SERVICES PRIVATE LIMITED",
+              "dateOfJoining": "2016-10-01",
+              "dateOfExit": "2018-02-28",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "AL******9R",
+                "email": "J*****************1@GMAIL.COM",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "Mahendra Valantra",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100740741243",
+              "name": "JITESH MAHENDRA VALANTRA",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RELIANCE PROJECTS & PROPERTY MANAGEMENT SERVICES LIMITED",
+              "dateOfJoining": "2015-11-16",
+              "dateOfExit": "2016-09-10",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4086",
+                "taxId": "AL******9R",
+                "email": "",
+                "bankAccountNumber": "*******8330",
+                "bankBranchCode": "SBIN*****84",
+                "bankAddress": "STATE BANK OF INDIA,NAVGHAR (BASSEIN ROAD)",
+                "pfNomineeName": "MAHENDRA",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100029970350",
+              "name": "Jitesh M Valantra",
+              "gender": "MALE",
+              "dateOfBirth": "1991-07-27",
+              "nationalIdVerificationStatus": false,
+              "employerName": "XYLEM RESOURCE MANAGEMENT PVT LTD",
+              "dateOfJoining": "2014-04-23",
+              "dateOfExit": "2015-09-30",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "JITESH MAHENDRA VALANTRA",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "JAN-25": true,
+                  "DEC-24": true,
+                  "NOV-24": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "5948013",
+                "employeeCount": 1730,
+                "wageMonth": "JAN-25"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "5929359",
+                "employeeCount": 1751,
+                "wageMonth": "DEC-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "6025059",
+                "employeeCount": 1760,
+                "wageMonth": "NOV-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9892340894",
+      "cleansedPhoneNumber": "+919892340894",
+      "referenceId": "2f700f8d-935d-45c9-a13b-b47f02338b57",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

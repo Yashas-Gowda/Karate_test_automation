@@ -1,0 +1,63 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "916380803145",
+    "email": "ashupgdim@gmail.com",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  }  ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 2,
+          "accounts": [
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "ASHISH GUPTA",
+              "upiId": "ashupgdim@okhdfcbank",
+              "accountType": "ALTERNATE",
+              "accountStatus": "VALID"
+            },
+            {
+              "appName": "Slice",
+              "nameAtBank": "SANGEETHRAJAN R",
+              "upiId": "sangeethrajan@sliceaxis",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "916380803145",
+      "cleansedPhoneNumber": "+916380803145",
+      "referenceId": "UI-6e0359a0a69ac0ac3fa1e8ab02b563b7d29afc27",
+      "inputEmail": "ashupgdim@gmail.com",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "eventType": "ACCOUNT_CREATION",
+    "address": {
+      "addressLine1": "valavav 4, Parmar faliyu",
+      "addressLine2": "Desar ,valavav",
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": "vadodara",
+      "state": "Gujrat",
+      "postalCode": "391774",
+      "country": "India"
+    },
+    "packages": [
+      "INCOME_ESTIMATION"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": {
+        "estimation": {
+          "source": null,
+          "salaryType": null,
+          "currency": null,
+          "salaryRange": {
+            "min": 0,
+            "max": 0
+          },
+          "addressBased": {
+            "class": [
+              "STRUGGLING_RURAL_CLIMBERS"
+            ],
+            "location": {
+              "category": "RURAL",
+              "postalCode": "391774",
+              "state": "gujarat"
+            },
+            "secLevel": "D2",
+            "regionTypes": [
+              "RURAL"
+            ],
+            "income": {
+              "currency": "INR",
+              "range": {
+                "min": 10000,
+                "max": 20000
+              }
+            },
+            "purchase": {
+              "fashion": {},
+              "automobile": {}
+            },
+            "banking": {},
+            "insurance": {}
+          }
+        }
+      },
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_May_17_enrich_1",
+      "requestedPackages": [
+        "INCOME_ESTIMATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "valavav 4, Parmar faliyu",
+        "addressLine2": "Desar ,valavav",
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "vadodara",
+        "state": "Gujrat",
+        "postalCode": "391774",
+        "country": "India"
+      },
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

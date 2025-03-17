@@ -1,0 +1,75 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "ssam09999329420dsdssdds@xyz.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "xyz.com",
+            "tld": ".com",
+            "creationTime": "1997-04-09 00:00:00",
+            "updateTime": "2018-03-06 00:00:00",
+            "expiryTime": "2019-04-10 00:00:00",
+            "registered": true,
+            "companyName": "Privacy.co.com",
+            "registrarName": "Fabulous.com Pty Ltd.",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": [
+            ]
+          },
+          "emailTenure": null
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "1db6721a-2386-4fc6-a23a-b0600c58999a",
+      "inputEmail": "ssam09999329420dsdssdds@xyz.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

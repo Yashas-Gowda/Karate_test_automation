@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": "dsdsd",
+    "packages": [
+      "IDENTITY_ENRICHMENT",
+      "PHONE_BASIC",
+      "PHONE_SOCIAL",
+      "UPI_ADVANCED",
+      "IDENTITY_ENRICHMENT_PLUS",
+      "EMPLOYMENT_DETAILS"
+    ],
+    "phoneDefaultCountryCode": "INDIA",
+    "originalCountryCode": "IN",
+    "phoneNumber": "9148771222"
+  },
+  "response":{
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": null,
+        "message": "Invalid Cleansing Flag",
+        "code": "INVALID_CLEANSING_FLAG",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

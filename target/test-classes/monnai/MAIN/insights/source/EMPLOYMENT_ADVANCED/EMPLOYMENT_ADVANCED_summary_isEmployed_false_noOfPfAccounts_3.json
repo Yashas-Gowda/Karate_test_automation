@@ -1,0 +1,126 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "919978520376",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": false,
+            "isNameUnique": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "WELSPUN LIVING LIMITED",
+            "noOfPfAccounts": 3,
+            "dateOfJoining": "2018-02-22",
+            "dateOfExit": "2024-08-13",
+            "matchingPfAccountNumber": "101255913872"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101255913872",
+              "name": "Ajaykumar Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "WELSPUN LIVING LIMITED",
+              "dateOfJoining": "2018-02-22",
+              "dateOfExit": "2024-08-13",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+            },
+            {
+              "pfAccountNumber": "101141014604",
+              "name": "Ajay Gulabbhai Halpati",
+              "gender": "MALE",
+              "dateOfBirth": "1995-07-15",
+              "nationalIdVerificationStatus": false,
+              "employerName": "PACIFIC CYBER TECHNOLOGY PRIVATE LIMITED",
+              "dateOfJoining": "2017-06-01",
+              "dateOfExit": "2018-06-04",
+              "reasonOfExit": "CESSATION (SHORT SERVICE) - Any other reason"
+            },
+            {
+              "pfAccountNumber": "100017238671",
+              "name": "DINABEN GULABBHAI HALPATI",
+              "gender": "FEMALE",
+              "dateOfBirth": "1971-01-08",
+              "nationalIdVerificationStatus": true,
+              "employerName": "RADIANT PLASTRUDERS (I) PVT. LTD",
+              "dateOfJoining": "2014-01-01",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4249",
+                "taxId": "AO******4P",
+                "email": "",
+                "bankAccountNumber": "***********6239",
+                "bankBranchCode": "UBIN*****10",
+                "bankAddress": "UNION BANK OF INDIA,DAMAN",
+                "pfNomineeName": "GULABBHAI",
+                "pfNomineeRelation": "FATHER"
+              }
+            }
+          ],
+          "pfFilingDetails": {
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "26023803",
+                "employeeCount": 8018,
+                "wageMonth": "JAN-25"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "24237255",
+                "employeeCount": 8095,
+                "wageMonth": "DEC-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "22272308",
+                "employeeCount": 7760,
+                "wageMonth": "NOV-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919978520376",
+      "cleansedPhoneNumber": "+919978520376",
+      "referenceId": "0183bc67-4ca5-4f67-99da-12f18757cc5a",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

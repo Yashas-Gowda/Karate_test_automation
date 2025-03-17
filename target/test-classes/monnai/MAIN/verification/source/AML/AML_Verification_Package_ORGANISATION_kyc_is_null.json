@@ -1,0 +1,42 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "entityType": "ORGANISATION",
+    "userDetails": {
+      "fullGivenName": "ABCDEF123"
+    },
+    "recordLimit": 20,
+    "matchThreshold": 80,
+    "packages": [
+      "KYC_AML"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": null,
+        "aml": {
+          "summary": {
+            "matchFound": false,
+            "noOfProfiles": 0,
+            "totalRecords": 0
+          },
+          "records": []
+        }
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_feb_21_1",
+      "requestedPackages": [
+        "KYC_AML"
+      ],
+      "inputFullGivenName": "ABCDEF123",
+      "inputRecordLimit": "20",
+      "inputMatchThreshold": "80"
+    },
+    "errors": []
+  }
+}

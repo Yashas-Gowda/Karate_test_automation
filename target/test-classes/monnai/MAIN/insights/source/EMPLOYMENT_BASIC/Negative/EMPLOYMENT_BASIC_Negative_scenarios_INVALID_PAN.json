@@ -1,0 +1,30 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_BASIC"
+    ],
+    "phoneDefaultCountryCode": "IN",
+    "pan": "1234"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_oct_17_release_2",
+      "requestedPackages": [
+        "EMPLOYMENT_BASIC"
+      ],
+      "inputPan": "1234",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "EMPLOYMENT_BASIC",
+        "message": "Pan format is incorrect",
+        "code": "INVALID_PAN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

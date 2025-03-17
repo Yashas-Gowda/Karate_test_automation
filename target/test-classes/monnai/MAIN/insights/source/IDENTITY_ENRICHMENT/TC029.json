@@ -1,0 +1,128 @@
+
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ],
+    "phoneDefaultCountryCode": "PH",
+    "originalCountryCode": "PH",
+    "phoneNumber": "639173000000"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": "2018-10-16T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "Anne Eunoia"
+                },
+                {
+                  "validSince": "2018-10-16T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "Abco"
+                },
+                {
+                  "validSince": "2019-08-15T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "Jose Mari Escario"
+                },
+                {
+                  "validSince": "2021-08-13T18:24:00Z",
+                  "lastSeen": null,
+                  "value": "Jayros Pulvinar"
+                }
+              ],
+              "genders": [],
+              "dateOfBirths": [
+                {
+                  "validSince": "2017-12-22T00:00:00Z",
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1979-03-13",
+                    "end": "1979-03-13"
+                  }
+                },
+                {
+                  "validSince": "2017-12-22T00:00:00Z",
+                  "lastSeen": null,
+                  "dateRange": {
+                    "start": "1976-02-10",
+                    "end": "1976-02-10"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "validSince": "2017-12-22T00:00:00Z",
+                  "lastSeen": null,
+                  "addressLine1": "",
+                  "addressLine2": "",
+                  "city": "",
+                  "postalCode": "",
+                  "country": "Philippines",
+                  "geoLocation": " ",
+                  "state": "",
+                  "countryCode": "PH"
+                },
+                {
+                  "validSince": "2019-08-15T00:00:00Z",
+                  "lastSeen": null,
+                  "addressLine1": "43 Hernaez St",
+                  "addressLine2": "",
+                  "city": "Bacolod City",
+                  "postalCode": "6100",
+                  "country": "Philippines",
+                  "geoLocation": " ",
+                  "state": "",
+                  "countryCode": "PH"
+                }
+              ],
+              "phoneNumber": {
+                "validSince": "2017-12-22T00:00:00Z",
+                "lastSeen": null,
+                "value": "639173000000"
+              },
+              "emailAddress": null,
+              "ipAddresses": [
+                {
+                  "validSince": "2019-08-15T00:00:00Z",
+                  "lastSeen": null,
+                  "value": "112.210.214.228"
+                }
+              ],
+              "nationalId": null
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "639173000000",
+      "cleansedPhoneNumber": "+639173000000",
+      "referenceId": "test123444",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+  }
+}

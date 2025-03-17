@@ -1,0 +1,37 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "123",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "fullGivenName": "INDRA SETIAWAN",
+      "dateOfBirth": "1990-02-12",
+      "phoneNumber": "6281367363659"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": null,
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputFullGivenName": "INDRA SETIAWAN",
+      "inputDateOfBirth": "1990-02-12"
+    },
+    "errors": [
+      {
+        "package": "KYC_MOBILE",
+        "message": "Invalid phoneDefaultCountryCode",
+        "code": "INVALID_PHONE_DEFAULT_COUNTRY_CODE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

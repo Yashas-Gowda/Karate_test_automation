@@ -1,0 +1,55 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": true,
+    "phoneNumber": "+918879364922",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  } ,
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "Google Pay",
+              "nameAtBank": "Anjanadry Arun Rane",
+              "upiId": "raneanjan@oksbi",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "+918879364922",
+      "cleansedPhoneNumber": "+918879364922",
+      "referenceId": "d1636e23-50ee-45d8-ae13-d9c289119f14",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

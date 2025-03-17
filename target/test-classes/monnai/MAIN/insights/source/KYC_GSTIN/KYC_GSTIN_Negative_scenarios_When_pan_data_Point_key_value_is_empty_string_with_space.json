@@ -1,0 +1,28 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "gstin": " ",
+    "packages": [
+      "KYC_GSTIN"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_march_6_upi_1",
+      "requestedPackages": [
+        "KYC_GSTIN"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "KYC_GSTIN",
+        "message": "Gstin is required",
+        "code": "MISSING_GSTIN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

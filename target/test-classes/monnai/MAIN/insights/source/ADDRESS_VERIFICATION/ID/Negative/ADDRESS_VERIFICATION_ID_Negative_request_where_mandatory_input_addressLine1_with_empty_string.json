@@ -1,0 +1,60 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6285893641388",
+    "address": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressLine4": "",
+      "city": "",
+      "province": "",
+      "postalCode": "",
+      "state": "",
+      "country": "INDONESIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ],
+    "consentDetails": {
+      "consentId": "1234567890",
+      "consentTimestamp": "2023-06-01T11:33:54.000Z",
+      "consentType": "TOC"
+    }
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "inputPhoneNumber": "6285893641388",
+      "cleansedPhoneNumber": "+6285893641388",
+      "referenceId": "92109cc2-0c3c-42bd-9e97-3d63f1d8bc76",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "",
+        "addressLine2": "",
+        "addressLine3": "",
+        "addressLine4": "",
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "country": "INDONESIA"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": [
+      {
+        "package": "ADDRESS_VERIFICATION",
+        "message": "AddressLine1 in address is missing",
+        "code": "MISSING_ADDRESSLINE1",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

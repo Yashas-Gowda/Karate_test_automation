@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"monnai\/MAIN\/verification\/feature_files\/AML_Automation[1.1:41]","start":1735886733981,"end":1735886737275,"title":"monnai\/MAIN\/verification\/feature_files\/AML_Automation[1.1:41] 12:15:33.981-12:15:37.275 Validate DPI AML positive scenarios with all input fields AML_Verification_Package_INDIVIDUAL_matchFound_true_with_default_recordLimit_20_matchThreshold_80_noOfProfiles_1_totalRecords_1"},{"id":2,"group":2,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[1.1:71]","start":1735886733981,"end":1735886737703,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[1.1:71] 12:15:33.981-12:15:37.703 Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Thailand (TH) KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchAddressLine1_NO_DATA_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT","className":"failed"},{"id":3,"group":3,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[1.2:72]","start":1735886733982,"end":1735886737982,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[1.2:72] 12:15:33.982-12:15:37.982 Validate DPI KYC_GOVERNMENT positive scenarios with all input fields  for Country Thailand (TH) KYC_GOVERNMENT_Thailand_TH_input_firstName_lastName_dateOfBirth_id1_addressLine1_city_output_matchFirstName_matchLastName_matchDateOfBirth_matchId1_MATCH_matchAddressLine2_matchAdditionalAddressField1_matchAdditionalAddressField2_NO_INPUT","className":"failed"},{"id":4,"group":4,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[2.1:778]","start":1735886733981,"end":1735886735723,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[2.1:778] 12:15:33.981-12:15:35.723 Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Malaysia (MY) KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_bollean"},{"id":5,"group":5,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[2.2:779]","start":1735886733982,"end":1735886735723,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_GOVERNMENT[2.2:779] 12:15:33.982-12:15:35.723 Validate DPI KYC_GOVERNMENT Negative scenarios with all input fields  for Country Malaysia (MY) KYC_GOVERNMENT_Malaysia_MY_input_dateOfBirth_with_alphanumaric_invalid"},{"id":6,"group":5,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.1:399]","start":1735886735732,"end":1735886736295,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.1:399] 12:15:35.732-12:15:36.295 Validate DPI KYC_MOBILE Negative scenarios with all input fields for all the Country  KYC_MOBILE_input_phoneNumber_empty_string"},{"id":7,"group":4,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.2:400]","start":1735886735732,"end":1735886736288,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.2:400] 12:15:35.732-12:15:36.288 Validate DPI KYC_MOBILE Negative scenarios with all input fields for all the Country  KYC_MOBILE_input_phoneNumber_with_space"},{"id":8,"group":4,"content":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.3:401]","start":1735886736292,"end":1735886736724,"title":"monnai\/MAIN\/verification\/feature_files\/KYC_MOBILE[1.3:401] 12:15:36.292-12:15:36.724 Validate DPI KYC_MOBILE Negative scenarios with all input fields for all the Country  KYC_MOBILE_input_phoneNumber_key_missing"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

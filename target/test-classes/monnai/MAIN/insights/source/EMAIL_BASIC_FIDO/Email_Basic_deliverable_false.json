@@ -1,0 +1,73 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "demo@apple1.COM"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "apple1.com",
+            "tld": ".com",
+            "creationTime": "2000-03-10 07:38:53",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": false,
+            "companyName": "REDACTED FOR PRIVACY",
+            "registrarName": "TUCOWS, INC.",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "demo@apple1.COM",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

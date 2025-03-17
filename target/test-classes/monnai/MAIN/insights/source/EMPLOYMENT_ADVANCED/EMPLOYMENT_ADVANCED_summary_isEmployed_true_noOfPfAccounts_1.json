@@ -1,0 +1,116 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "916376667019",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "MODERN THREADS (INDIA) LIMITED",
+            "noOfPfAccounts": 1,
+            "dateOfJoining": "2022-06-01",
+            "matchingPfAccountNumber": "101639508624"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101639508624",
+              "name": "HEMRAJ JAT",
+              "gender": "MALE",
+              "dateOfBirth": "2000-07-04",
+              "nationalIdVerificationStatus": true,
+              "employerName": "MODERN THREADS (INDIA) LIMITED",
+              "dateOfJoining": "2022-06-01",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********9417",
+                "taxId": "",
+                "email": "",
+                "bankAccountNumber": "**********0563",
+                "bankBranchCode": "BARB*****RI",
+                "bankAddress": "BANK OF BARODA,SARERI, RAJASTHAN",
+                "pfNomineeName": "BHANWAR LAL JAT",
+                "pfNomineeRelation": "FATHER"
+              }
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "HEMRAJ JAT",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "JAN-25": true,
+                  "DEC-24": true,
+                  "NOV-24": true
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "802391",
+                "employeeCount": 277,
+                "wageMonth": "JAN-25"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "784671",
+                "employeeCount": 280,
+                "wageMonth": "DEC-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "739668",
+                "employeeCount": 279,
+                "wageMonth": "NOV-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "916376667019",
+      "cleansedPhoneNumber": "+916376667019",
+      "referenceId": "7ee257fd-8631-41f8-a695-5cd22d91374f",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+}

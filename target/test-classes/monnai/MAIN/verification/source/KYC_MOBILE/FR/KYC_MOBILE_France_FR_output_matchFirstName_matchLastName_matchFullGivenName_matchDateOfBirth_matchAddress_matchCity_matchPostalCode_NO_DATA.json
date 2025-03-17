@@ -1,0 +1,61 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "FR",
+    "cleansingFlag": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_MOBILE"
+    ],
+    "userDetails": {
+      "phoneNumber": "305724978",
+      "firstName": "DRETS éP.AMADINE LESCAR",
+      "lastName": "Dominique,Andrée,Pierrette",
+      "dateOfBirth": "1957-03-30",
+      "streetNumber": "40",
+      "streetName": "Rue de l'Église",
+      "city": "Bérenx",
+      "postalCode": "64300"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": null,
+        "consumer": null,
+        "mobile": {
+          "matchFirstName": "NO_DATA",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "NO_DATA",
+          "matchFullGivenName": "NO_DATA",
+          "matchDateOfBirth": "NO_DATA",
+          "matchPhoneNumber": "MATCH",
+          "matchAddress": "NO_DATA",
+          "matchAddressLine1": "NOT_SUPPORTED",
+          "matchId1": "NOT_SUPPORTED",
+          "matchStreetNumber": "NOT_SUPPORTED",
+          "matchStreet": "NOT_SUPPORTED",
+          "matchCity": "NO_DATA",
+          "matchPostalCode": "NO_DATA",
+          "appendedFields": {}
+        },
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_17_kyc_2",
+      "requestedPackages": [
+        "KYC_MOBILE"
+      ],
+      "inputPhoneNumber": "305724978",
+      "cleansedPhoneNumber": "+33305724978",
+      "inputFirstName": "DRETS éP.AMADINE LESCAR",
+      "inputLastName": "Dominique,Andrée,Pierrette",
+      "inputDateOfBirth": "1957-03-30",
+      "inputStreetNumber": "40",
+      "inputCity": "Bérenx",
+      "inputPostalCode": "64300"
+    },
+    "errors": []
+  }
+}

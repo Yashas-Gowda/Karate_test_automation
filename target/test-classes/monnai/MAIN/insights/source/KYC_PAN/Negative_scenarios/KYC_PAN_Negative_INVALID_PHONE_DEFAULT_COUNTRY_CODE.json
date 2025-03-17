@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "abc",
+    "pan": "RWJPS8170M",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Ukfe0h7cyQ0EP2A=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "RWJPS8170M",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "KYC_PAN",
+        "message": "Service unavailable for country ABC",
+        "code": "SERVICE_UNAVAILABLE_FOR_COUNTRY",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

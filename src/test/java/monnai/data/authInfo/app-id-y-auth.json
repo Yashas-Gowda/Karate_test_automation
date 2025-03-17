@@ -4,5 +4,29 @@
   "client_secret": "1cf4lmh6hltkdgs1d99vua2bs1s1sab2tns1l9qovra4crdp83a0",
   "grant_type": "client_credentials",
   "scope": "insights/address_verification insights/address_basic insights/blacklist_details insights/device_details insights/email_basic insights/email_social insights/employment_basic insights/employment_advanced insights/employment_details insights/identity_correlation insights/identity_enrichment insights/identity_enrichment_plus insights/income_estimation insights/ip_basic insights/phone_basic insights/phone_identity insights/phone_social insights/upi_advanced insights/upi_basic insights/address_verification insights/kyc_pan insights/kyc_gstin verification/kyc_consumer verification/kyc_government verification/kyc_mobile verification/kyc_aml insights/domain_breach insights/employment_social",
-  "issue": "non"
+  "issue": "non",
+  "tenant_config": {
+    "tenant": "tenant_01HWYMEQJ6Z1Y56H1MQ4QHWYDP",
+    "exclude": {
+      "EMAIL_SOCIAL": {
+        "01H8C58BBSVB67MHSPPN1D8XYR": {
+          "name": "Seon Email Social"
+        },
+        "01H72X88KKK3R5013F54H5P09T": {
+          "name": "FIDO email_social_v2"
+        }
+      }
+    },
+    "include": {
+      "EMAIL_SOCIAL": {
+        "01JCDCGPK5P0RQFT7YT1FCR8RW": {
+          "name": "Inhouse_email_social_proxy",
+          "order": 0,
+          "data": {
+            "domains": "facebook,twitter,skype,amazon,instagram,duolingo,spotify,atlassian,yahoo,deliveroo,disney,gravatar,hubspot,pinterest,samsung,wordpress,adobe,google,office365,linkedin,apple,rappi,cabify-driver,platinumlist,anghami,clip,carrefour,codecademy,adorocinema,kommo,gaana,plurk,wattpad"
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,120 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "gopi_9621@yahoo.co.in"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "yahoo.co.in",
+            "tld": ".in",
+            "creationTime": "2003-06-30 04:00:00",
+            "updateTime": "2024-06-03 09:12:22",
+            "expiryTime": "2025-06-30 04:00:00",
+            "registered": true,
+            "companyName": null,
+            "registrarName": "MarkMonitor Inc.",
+            "disposable": false,
+            "freeProvider": true,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 9,
+            "firstBreach": "2012-11-01",
+            "lastBreach": "2024-08-03",
+            "breaches": [
+              {
+                "platformName": "Anti Public Combo List",
+                "domainName": "",
+                "breachDate": "2016-12-16"
+              },
+              {
+                "platformName": "Exploit.In",
+                "domainName": "",
+                "breachDate": "2016-10-13"
+              },
+              {
+                "platformName": "Collection #1",
+                "domainName": "",
+                "breachDate": "2019-01-07"
+              },
+              {
+                "platformName": "Evite",
+                "domainName": "evite.com",
+                "breachDate": "2013-08-11"
+              },
+              {
+                "platformName": "Netlog",
+                "domainName": "netlog.com",
+                "breachDate": "2012-11-01"
+              },
+              {
+                "platformName": "Cit0day",
+                "domainName": "cit0day.in",
+                "breachDate": "2020-11-04"
+              },
+              {
+                "platformName": "IndiaMART",
+                "domainName": "indiamart.com",
+                "breachDate": "2021-05-23"
+              },
+              {
+                "platformName": "Gemplex",
+                "domainName": "gemplex.tv",
+                "breachDate": "2021-02-18"
+              },
+              {
+                "platformName": "Not SOCRadar",
+                "domainName": "",
+                "breachDate": "2024-08-03"
+              }
+            ]
+          },
+          "emailTenure": 12.28
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "af366bbd-a020-4dcb-9931-66f938e15383",
+      "inputEmail": "gopi_9621@yahoo.co.in",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

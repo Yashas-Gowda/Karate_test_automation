@@ -1,0 +1,97 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "19193456619",
+    "phoneDefaultCountryCode": "US"
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "19193456619",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": {
+            "min": 48,
+            "max": null
+          },
+          "country": "US",
+          "originalCarrier": "T-Mobile US-SVR-10X/2",
+          "ported": true,
+          "portedHistory": {
+            "portedDate": "2020-04-12",
+            "numberOfPorts": 2,
+            "portedSinceXDays": 1775,
+            "currentCarrierCircle": "Verizon Verizon Wireless",
+            "originalCarrierCircle": "T-Mobile T-Mobile US",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+              {
+                "carrierCircle": null,
+                "portedDate": "2020-04-12"
+              },
+              {
+                "carrierCircle": null,
+                "portedDate": "2016-05-11"
+              }
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": "9198055337",
+            "mobileCountryCode": "310",
+            "mobileNetworkCode": "012",
+            "networkName": "Verizon Wireless:6006 - SVR/2",
+            "serviceProfileId": "151971"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": null,
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "19193456619",
+      "cleansedPhoneNumber": "+19193456619",
+      "referenceId": "a57d002f-b78d-4d60-8650-74a107afdb61",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "US"
+    },
+    "errors": [
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "type": "BREACH_SUBSCRIPTION_RECORDS",
+    "domainName": "example.org",
+    "fromDate": "abc",
+    "toDate": "abc",
+    "cursor": null,
+    "packages": [
+      "DOMAIN_BREACH"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_17_1",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_SUBSCRIPTION_RECORDS",
+      "inputDomainName": "example.org",
+      "inputToDate": "abc",
+      "inputFromDate": "abc"
+    },
+    "errors": [
+      {
+        "package": "DOMAIN_BREACH",
+        "message": "The date range passed in is incorrect, please refer to the API Documentation",
+        "code": "INVALID_DATE_RANGE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

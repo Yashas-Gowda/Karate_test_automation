@@ -1,0 +1,76 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "TH",
+    "originalCountryCode": "TH",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "KYC_GOVERNMENT"
+    ],
+    "userDetails": {
+      "firstName": "KRITTAPAS KHONGRAKSA",
+      "lastName": "KHONGRAKSA",
+      "fullGivenName": "KRITTAPAS KHONGRAKSA",
+      "gender": "",
+      "dateOfBirth": "1997-11-21",
+      "id1": "1229900789471",
+      "addressLine1": "2 34",
+      "addressLine2": "",
+      "additionalAddressField1": "",
+      "additionalAddressField2": "",
+      "city": "Tambon Tapon"
+    }
+  },
+  "response": {
+    "data": {
+      "kyc": {
+        "government": {
+          "matchFirstName": "NO_MATCH",
+          "matchMiddleName": "NOT_SUPPORTED",
+          "matchLastName": "MATCH",
+          "matchFullGivenName": "NOT_SUPPORTED",
+          "matchDateOfBirth": "MATCH",
+          "matchGender": "NOT_SUPPORTED",
+          "matchId1": "MATCH",
+          "matchId2": "NOT_SUPPORTED",
+          "matchId3": "NOT_SUPPORTED",
+          "matchId4": "NOT_SUPPORTED",
+          "matchId5": "NOT_SUPPORTED",
+          "matchBuildingNumber": "NOT_SUPPORTED",
+          "matchBuildingName": "NOT_SUPPORTED",
+          "matchUnitNumber": "NOT_SUPPORTED",
+          "matchStreetName": "NOT_SUPPORTED",
+          "matchPoBox": "NOT_SUPPORTED",
+          "matchCity": "NOT_SUPPORTED",
+          "matchState": "NOT_SUPPORTED",
+          "matchCountry": "NOT_SUPPORTED",
+          "matchAddressLine1": "NO_DATA",
+          "matchAddressLine2": "NO_INPUT",
+          "matchAdditionalAddressField1": "NO_INPUT",
+          "matchAdditionalAddressField2": "NO_INPUT",
+          "matchAdditionalAddressField3": "NOT_SUPPORTED",
+          "matchPhone": "NOT_SUPPORTED",
+          "matchEmail": "NOT_SUPPORTED",
+          "appendedFields": {}
+        },
+        "consumer": null,
+        "mobile": null,
+        "aml": null
+      },
+      "kyb": null
+    },
+    "meta": {
+      "referenceId": "Dpi_may_27_kyc_2",
+      "requestedPackages": [
+        "KYC_GOVERNMENT"
+      ],
+      "inputFirstName": "KRITTAPAS KHONGRAKSA",
+      "inputLastName": "KHONGRAKSA",
+      "inputFullGivenName": "KRITTAPAS KHONGRAKSA",
+      "inputDateOfBirth": "1997-11-21",
+      "inputId1": "1229900789471",
+      "inputCity": "Tambon Tapon",
+      "inputAddressLine1": "2 34"
+    },
+    "errors": []
+  }
+}

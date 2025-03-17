@@ -1,0 +1,59 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "phoneDefaultCountryCode": "IN",
+    "phoneNumber": "9652341923",
+    "upiApplicationName": "PRIMARY",
+    "packages": [
+      "UPI_ADVANCED"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": {
+        "basic": null,
+        "advanced": {
+          "upiIdCount": 1,
+          "accounts": [
+            {
+              "appName": "Samsung Pay",
+              "nameAtBank": "Racha Venkayamma",
+              "upiId": "rachamounika786@pingpay",
+              "accountType": "PRIMARY",
+              "accountStatus": "VALID"
+            }
+          ]
+        }
+      },
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "9652341923",
+      "cleansedPhoneNumber": "+919652341923",
+      "referenceId": "Dpi_dec_6_upi_7",
+      "requestedPackages": [
+        "UPI_ADVANCED"
+      ],
+      "inputUpiApplicationName": "PRIMARY",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "request": {
+    "phoneNumber": "628988402355",
+    "phoneDefaultCountryCode": "ID",
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "628988402355",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": "PREPAID",
+          "phoneNumberAge": 5,
+          "phoneNumberAgeDescription": "Above 24 Months",
+          "phoneTenure": {
+            "min": 24,
+            "max": null
+          },
+          "country": "ID",
+          "originalCarrier": "H3G (PT. Hutchison 3 Indonesia)",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "3 PT Hutchison 3 Indonesia",
+            "originalCarrierCircle": "3 PT Hutchison 3 Indonesia",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": [
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "510",
+            "mobileNetworkCode": "89",
+            "networkName": "H3G (PT. Hutchison 3 Indonesia)",
+            "serviceProfileId": "62501"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": null,
+          "isSpam": null,
+          "topUpHistory": [
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 30
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 60
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 90
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 180
+              },
+              "currency": "IDR",
+              "topUpCount": 7,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 0,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 15,
+              "minimumTopUpAmount": 1000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 180,
+                "max": 360
+              },
+              "currency": "IDR",
+              "topUpCount": 8,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 5000
+            },
+            {
+              "topUpTenure": {
+                "min": 360,
+                "max": 720
+              },
+              "currency": "IDR",
+              "topUpCount": 3,
+              "minimumTopUpAmount": 5000,
+              "maximumTopUpAmount": 10000,
+              "averageTopUpAmount": 8000
+            }
+          ]
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "628988402355",
+      "cleansedPhoneNumber": "+628988402355",
+      "referenceId": "79ef2571-7653-45e5-8342-30bbcfcadf83",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

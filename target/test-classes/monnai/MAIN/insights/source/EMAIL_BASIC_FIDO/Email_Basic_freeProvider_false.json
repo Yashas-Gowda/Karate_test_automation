@@ -1,0 +1,73 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "piyushyadav001@outlook1.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "outlook1.com",
+            "tld": ".com",
+            "creationTime": "2023-08-20 07:36:52",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": "",
+            "registrarName": "GoDaddy.com, LLC",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": true,
+            "acceptAll": true,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "piyushyadav001@outlook1.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,327 @@
+-------------------------------------------------------------------------------
+Test set: TagExecutor
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 90.814 s <<< FAILURE! - in TagExecutor
+TagExecutor.EMAIL_PACKAGES  Time elapsed: 90.772 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:95
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:156
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:156
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:213
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:213
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:213
+match failed: CONTAINS
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [deliverable, domainDetails] (MAP:MAP)
+  {"deliverable":null,"domainDetails":null,"breach":{"isBreached":false,"noOfBreaches":0,"firstBreach":null,"lastBreach":null,"breaches":[]},"emailTenure":null}
+  {"deliverable":false,"domainDetails":{"domainType":"valid","domainName":"moa.gov.in","tld":".in","creationTime":"#ignore","updateTime":"#ignore","expiryTime":"#ignore","registered":false,"companyName":null,"registrarName":null,"disposable":false,"freeProvider":false,"dmarcCompliance":null,"spfStrict":null,"suspiciousTld":null,"websiteExists":false,"acceptAll":false,"custom":null},"breach":"#ignore","emailTenure":"#ignore"}
+
+    $.domainDetails | data types don't match (NULL:MAP)
+    null
+    {"domainType":"valid","domainName":"moa.gov.in","tld":".in","creationTime":"#ignore","updateTime":"#ignore","expiryTime":"#ignore","registered":false,"companyName":null,"registrarName":null,"disposable":false,"freeProvider":false,"dmarcCompliance":null,"spfStrict":null,"suspiciousTld":null,"websiteExists":false,"acceptAll":false,"custom":null}
+
+    $.deliverable | data types don't match (NULL:BOOLEAN)
+    null
+    false
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:288
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:324
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:379
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:433
+match failed: EQUALS
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:433
+match failed: CONTAINS_DEEP
+  $ | data types don't match (NULL:MAP)
+  null
+  {"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:606
+match failed: CONTAINS_DEEP
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [data] (MAP:MAP)
+  {"data":{"phone":null,"email":{"social":null,"basic":{"deliverable":null,"domainDetails":null,"breach":{"isBreached":true,"noOfBreaches":2,"firstBreach":"2018-12-01","lastBreach":"2020-06-20","breaches":[{"platformName":"Dubsmash","domainName":"dubsmash.com","breachDate":"2018-12-01"},{"platformName":"SitePoint","domainName":"sitepoint.com","breachDate":"2020-06-20"}]},"emailTenure":6.12},"breach":null},"address":null,"name":null,"ip":null,"identity":null,"upi":null,"device":null,"employment":null,"income":null,"blacklist":null,"domain":null,"kyc":null,"bank":null,"aadhaar":null,"statement":null,"business":null,"bre":null},"meta":{"referenceId":"b71f1ea7-c060-4e83-bcce-3d3b18e91d46","inputEmail":"yashasgowda2510@gmail.com","requestedPackages":["EMAIL_BASIC"]},"errors":[]}
+  {"data":{"phone":null,"email":{"social":null,"basic":{"deliverable":"#present","domainDetails":{"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"},"breach":{"isBreached":"#present","noOfBreaches":"#present","firstBreach":"#present","lastBreach":"#present","breaches":[{"platformName":"#present","domainName":"#present","breachDate":"#present"}]},"emailTenure":"#present"}},"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"},"meta":{"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_BASIC"]},"errors":[]}
+
+    $.data | actual does not contain expected | all key-values did not match, expected has un-matched keys - [email] (MAP:MAP)
+    {"phone":null,"email":{"social":null,"basic":{"deliverable":null,"domainDetails":null,"breach":{"isBreached":true,"noOfBreaches":2,"firstBreach":"2018-12-01","lastBreach":"2020-06-20","breaches":[{"platformName":"Dubsmash","domainName":"dubsmash.com","breachDate":"2018-12-01"},{"platformName":"SitePoint","domainName":"sitepoint.com","breachDate":"2020-06-20"}]},"emailTenure":6.12},"breach":null},"address":null,"name":null,"ip":null,"identity":null,"upi":null,"device":null,"employment":null,"income":null,"blacklist":null,"domain":null,"kyc":null,"bank":null,"aadhaar":null,"statement":null,"business":null,"bre":null}
+    {"phone":null,"email":{"social":null,"basic":{"deliverable":"#present","domainDetails":{"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"},"breach":{"isBreached":"#present","noOfBreaches":"#present","firstBreach":"#present","lastBreach":"#present","breaches":[{"platformName":"#present","domainName":"#present","breachDate":"#present"}]},"emailTenure":"#present"}},"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","bre":"#null"}
+
+      $.data.email | actual does not contain expected | all key-values did not match, expected has un-matched keys - [basic] (MAP:MAP)
+      {"social":null,"basic":{"deliverable":null,"domainDetails":null,"breach":{"isBreached":true,"noOfBreaches":2,"firstBreach":"2018-12-01","lastBreach":"2020-06-20","breaches":[{"platformName":"Dubsmash","domainName":"dubsmash.com","breachDate":"2018-12-01"},{"platformName":"SitePoint","domainName":"sitepoint.com","breachDate":"2020-06-20"}]},"emailTenure":6.12},"breach":null}
+      {"social":null,"basic":{"deliverable":"#present","domainDetails":{"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"},"breach":{"isBreached":"#present","noOfBreaches":"#present","firstBreach":"#present","lastBreach":"#present","breaches":[{"platformName":"#present","domainName":"#present","breachDate":"#present"}]},"emailTenure":"#present"}}
+
+        $.data.email.basic | actual does not contain expected | all key-values did not match, expected has un-matched keys - [domainDetails] (MAP:MAP)
+        {"deliverable":null,"domainDetails":null,"breach":{"isBreached":true,"noOfBreaches":2,"firstBreach":"2018-12-01","lastBreach":"2020-06-20","breaches":[{"platformName":"Dubsmash","domainName":"dubsmash.com","breachDate":"2018-12-01"},{"platformName":"SitePoint","domainName":"sitepoint.com","breachDate":"2020-06-20"}]},"emailTenure":6.12}
+        {"deliverable":"#present","domainDetails":{"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"},"breach":{"isBreached":"#present","noOfBreaches":"#present","firstBreach":"#present","lastBreach":"#present","breaches":[{"platformName":"#present","domainName":"#present","breachDate":"#present"}]},"emailTenure":"#present"}
+
+          $.data.email.basic.domainDetails | data types don't match (NULL:MAP)
+          null
+          {"domainName":"#present","tld":"#present","creationTime":"#present","updateTime":"#present","expiryTime":"#present","registered":"#present","companyName":"#present","disposable":"#present","freeProvider":"#present","dmarcCompliance":"#present","spfStrict":"#present","suspiciousTld":"#present","websiteExists":"#present","acceptAll":"#present","custom":"#present"}
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_BASIC_CUSTOM_PARALLEL.feature:639
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'gender' (MAP:MAP)
+  {"registered":true,"name":null,"photo":null}
+  {"registered":true,"name":null,"photo":"#ignore","gender":"M"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:185
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'gender' (MAP:MAP)
+  {"registered":true,"name":null,"photo":null}
+  {"registered":true,"name":null,"photo":"#ignore","gender":"M"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:185
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":true}
+  {"registered":null}
+
+    $.registered | data types don't match (BOOLEAN:NULL)
+    true
+    null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:353
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":false}
+  {"registered":null}
+
+    $.registered | data types don't match (BOOLEAN:NULL)
+    false
+    null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:353
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":true}
+  {"registered":false}
+
+    $.registered | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:853
+match failed: EQUALS
+  $ | not equal | match failed for name: 'booking' (MAP:MAP)
+  {"booking":{"registered":true},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+  {"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+
+    $.booking | not equal | match failed for name: 'registered' (MAP:MAP)
+    {"registered":true}
+    {"registered":null}
+
+      $.booking.registered | data types don't match (BOOLEAN:NULL)
+      true
+      null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:975
+match failed: EQUALS
+  $ | not equal | match failed for name: 'booking' (MAP:MAP)
+  {"booking":{"registered":false},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+  {"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+
+    $.booking | not equal | match failed for name: 'registered' (MAP:MAP)
+    {"registered":false}
+    {"registered":null}
+
+      $.booking.registered | data types don't match (BOOLEAN:NULL)
+      false
+      null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:975
+match failed: EQUALS
+  $ | present (MAP:STRING)
+  {"registered":true}
+  '#notpresent'
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:1057
+match failed: EQUALS
+  $ | present (MAP:STRING)
+  {"registered":false}
+  '#notpresent'
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V1.feature:1057
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'gender' (MAP:MAP)
+  {"registered":true,"name":null,"photo":null}
+  {"registered":true,"name":null,"photo":"#ignore","gender":"M"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:184
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'gender' (MAP:MAP)
+  {"registered":true,"name":null,"photo":null}
+  {"registered":true,"name":null,"photo":"#ignore","gender":"M"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:184
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":true}
+  {"registered":null}
+
+    $.registered | data types don't match (BOOLEAN:NULL)
+    true
+    null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:358
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":false}
+  {"registered":null}
+
+    $.registered | data types don't match (BOOLEAN:NULL)
+    false
+    null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:358
+match failed: EQUALS
+  $ | not equal | match failed for name: 'twitter' (MAP:MAP)
+  {"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":null,"photo":null,"connectionCount":null}
+  {"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null}
+
+    $.twitter | data types don't match (NULL:STRING)
+    null
+    ''
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:660
+match failed: EQUALS
+  $ | not equal | match failed for name: 'twitter' (MAP:MAP)
+  {"registered":false,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":null,"photo":null,"connectionCount":null}
+  {"registered":false,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null}
+
+    $.twitter | data types don't match (NULL:STRING)
+    null
+    ''
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:660
+match failed: EQUALS
+  $ | not equal | match failed for name: 'registered' (MAP:MAP)
+  {"registered":true}
+  {"registered":false}
+
+    $.registered | not equal (BOOLEAN:BOOLEAN)
+    true
+    false
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:744
+match failed: EQUALS
+  $ | not equal | match failed for name: 'booking' (MAP:MAP)
+  {"booking":{"registered":true},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+  {"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+
+    $.booking | not equal | match failed for name: 'registered' (MAP:MAP)
+    {"registered":true}
+    {"registered":null}
+
+      $.booking.registered | data types don't match (BOOLEAN:NULL)
+      true
+      null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:868
+match failed: EQUALS
+  $ | not equal | match failed for name: 'booking' (MAP:MAP)
+  {"booking":{"registered":false},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+  {"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}}
+
+    $.booking | not equal | match failed for name: 'registered' (MAP:MAP)
+    {"registered":false}
+    {"registered":null}
+
+      $.booking.registered | data types don't match (BOOLEAN:NULL)
+      false
+      null
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:868
+match failed: EQUALS
+  $ | present (MAP:STRING)
+  {"registered":true}
+  '#notpresent'
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:952
+match failed: EQUALS
+  $ | present (MAP:STRING)
+  {"registered":false}
+  '#notpresent'
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:952
+match failed: CONTAINS_DEEP
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [data] (MAP:MAP)
+  {"data":{"phone":null,"email":{"social":{"summary":{"registeredProfiles":9,"registeredConsumerElectronicsProfiles":2,"registeredEmailProviderProfiles":1,"registeredEcommerceProfiles":1,"registeredSocialMediaProfiles":3,"registeredMessagingProfiles":0,"registeredProfessionalProfiles":2,"registeredEntertainmentProfiles":0,"registeredTravelProfiles":0,"registeredFinancialProfiles":0,"registeredEducationProfiles":0,"ageOnSocial":null,"numberOfNamesReturned":0,"numberOfPhotosReturned":0},"profiles":{"consumerElectronics":{"apple":{"registered":true},"samsung":{"registered":true}},"emailProvider":{"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}},"ecommerce":{"amazon":{"registered":true},"ebay":{"registered":null},"flipkart":{"registered":null},"jdid":{"registered":null},"bukalapak":{"registered":null},"lazada":{"registered":null},"tokopedia":{"registered":null},"deliveroo":{"registered":false}},"socialMedia":{"facebook":{"registered":true,"name":null,"photo":null,"url":null},"instagram":{"registered":false},"flickr":{"registered":null,"username":null},"pinterest":{"registered":true},"twitter":{"registered":true},"tumblr":{"registered":null},"weibo":{"registered":null},"ok":{"registered":null,"age":null,"city":null,"dateJoined":null},"imgur":{"registered":null},"quora":{"registered":null},"qzone":{"registered":null},"gravatar":{"registered":false,"location":null,"name":null,"profileUrl":null,"username":null},"foursquare":{"registered":null,"bio":null,"photo":null,"profileUrl":null},"myspace":{"registered":null}},"messaging":{"skype":{"registered":false,"language":null,"gender":null,"name":null,"id":null,"handle":null,"bio":null,"age":null,"city":null,"state":null,"country":null,"photo":null},"discord":{"registered":null},"kakao":{"registered":null}},"professional":{"github":{"registered":null},"wordpress":{"registered":false},"atlassian":{"registered":false},"linkedin":{"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null},"evernote":{"registered":null},"microsoft":{"registered":true},"zoho":{"registered":null},"adobe":{"registered":null},"hubspot":{"registered":false}},"entertainment":{"spotify":{"registered":false},"lastfm":{"registered":null},"vimeo":{"registered":null},"envato":{"registered":null},"patreon":{"registered":null},"disneyplus":{"registered":false},"netflix":{"registered":null},"archiveorg":{"registered":null}},"travel":{"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}},"financial":{"paypal":{"registered":false}},"education":{"duolingo":{"registered":false}}}},"basic":null,"breach":null},"address":null,"name":null,"ip":null,"identity":null,"upi":null,"device":null,"employment":null,"income":null,"blacklist":null,"domain":null,"kyc":null,"bank":null,"aadhaar":null,"statement":null,"business":null,"bre":null},"meta":{"referenceId":"e59fa3b5-8312-450c-8b7c-1ac67d89c18a","inputEmail":"yashasgowda2510@gmail.com","requestedPackages":["EMAIL_SOCIAL"]},"errors":[]}
+  {"data":{"phone":null,"email":{"social":{"summary":{"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","registeredEducationProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"},"profiles":{"consumerElectronics":{"apple":{"registered":"#present"},"samsung":{"registered":"#present"}},"emailProvider":{"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}},"ecommerce":{"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"},"deliveroo":{"registered":"#present"}},"socialMedia":{"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}},"messaging":{"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}},"professional":{"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}},"entertainment":{"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}},"travel":{"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}},"financial":{"paypal":{"registered":"#present"},"binance":{"registered":"##present"}},"education":{"duolingo":{"registered":"#present"}}}},"basic":"#null"},"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","domain":"#null","kyc":"#null","bank":"#null","aadhaar":"#null","statement":"#null","bre":"#null"},"meta":{"referenceId":"#present","inputEmail":"#present","requestedPackages":["EMAIL_SOCIAL"]},"errors":"#array"}
+
+    $.data | actual does not contain expected | all key-values did not match, expected has un-matched keys - [email] (MAP:MAP)
+    {"phone":null,"email":{"social":{"summary":{"registeredProfiles":9,"registeredConsumerElectronicsProfiles":2,"registeredEmailProviderProfiles":1,"registeredEcommerceProfiles":1,"registeredSocialMediaProfiles":3,"registeredMessagingProfiles":0,"registeredProfessionalProfiles":2,"registeredEntertainmentProfiles":0,"registeredTravelProfiles":0,"registeredFinancialProfiles":0,"registeredEducationProfiles":0,"ageOnSocial":null,"numberOfNamesReturned":0,"numberOfPhotosReturned":0},"profiles":{"consumerElectronics":{"apple":{"registered":true},"samsung":{"registered":true}},"emailProvider":{"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}},"ecommerce":{"amazon":{"registered":true},"ebay":{"registered":null},"flipkart":{"registered":null},"jdid":{"registered":null},"bukalapak":{"registered":null},"lazada":{"registered":null},"tokopedia":{"registered":null},"deliveroo":{"registered":false}},"socialMedia":{"facebook":{"registered":true,"name":null,"photo":null,"url":null},"instagram":{"registered":false},"flickr":{"registered":null,"username":null},"pinterest":{"registered":true},"twitter":{"registered":true},"tumblr":{"registered":null},"weibo":{"registered":null},"ok":{"registered":null,"age":null,"city":null,"dateJoined":null},"imgur":{"registered":null},"quora":{"registered":null},"qzone":{"registered":null},"gravatar":{"registered":false,"location":null,"name":null,"profileUrl":null,"username":null},"foursquare":{"registered":null,"bio":null,"photo":null,"profileUrl":null},"myspace":{"registered":null}},"messaging":{"skype":{"registered":false,"language":null,"gender":null,"name":null,"id":null,"handle":null,"bio":null,"age":null,"city":null,"state":null,"country":null,"photo":null},"discord":{"registered":null},"kakao":{"registered":null}},"professional":{"github":{"registered":null},"wordpress":{"registered":false},"atlassian":{"registered":false},"linkedin":{"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null},"evernote":{"registered":null},"microsoft":{"registered":true},"zoho":{"registered":null},"adobe":{"registered":null},"hubspot":{"registered":false}},"entertainment":{"spotify":{"registered":false},"lastfm":{"registered":null},"vimeo":{"registered":null},"envato":{"registered":null},"patreon":{"registered":null},"disneyplus":{"registered":false},"netflix":{"registered":null},"archiveorg":{"registered":null}},"travel":{"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}},"financial":{"paypal":{"registered":false}},"education":{"duolingo":{"registered":false}}}},"basic":null,"breach":null},"address":null,"name":null,"ip":null,"identity":null,"upi":null,"device":null,"employment":null,"income":null,"blacklist":null,"domain":null,"kyc":null,"bank":null,"aadhaar":null,"statement":null,"business":null,"bre":null}
+    {"phone":null,"email":{"social":{"summary":{"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","registeredEducationProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"},"profiles":{"consumerElectronics":{"apple":{"registered":"#present"},"samsung":{"registered":"#present"}},"emailProvider":{"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}},"ecommerce":{"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"},"deliveroo":{"registered":"#present"}},"socialMedia":{"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}},"messaging":{"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}},"professional":{"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}},"entertainment":{"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}},"travel":{"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}},"financial":{"paypal":{"registered":"#present"},"binance":{"registered":"##present"}},"education":{"duolingo":{"registered":"#present"}}}},"basic":"#null"},"address":"#null","name":"#null","ip":"#null","identity":"#null","upi":"#null","device":"#null","employment":"#null","income":"#null","blacklist":"#null","domain":"#null","kyc":"#null","bank":"#null","aadhaar":"#null","statement":"#null","bre":"#null"}
+
+      $.data.email | actual does not contain expected | all key-values did not match, expected has un-matched keys - [social] (MAP:MAP)
+      {"social":{"summary":{"registeredProfiles":9,"registeredConsumerElectronicsProfiles":2,"registeredEmailProviderProfiles":1,"registeredEcommerceProfiles":1,"registeredSocialMediaProfiles":3,"registeredMessagingProfiles":0,"registeredProfessionalProfiles":2,"registeredEntertainmentProfiles":0,"registeredTravelProfiles":0,"registeredFinancialProfiles":0,"registeredEducationProfiles":0,"ageOnSocial":null,"numberOfNamesReturned":0,"numberOfPhotosReturned":0},"profiles":{"consumerElectronics":{"apple":{"registered":true},"samsung":{"registered":true}},"emailProvider":{"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}},"ecommerce":{"amazon":{"registered":true},"ebay":{"registered":null},"flipkart":{"registered":null},"jdid":{"registered":null},"bukalapak":{"registered":null},"lazada":{"registered":null},"tokopedia":{"registered":null},"deliveroo":{"registered":false}},"socialMedia":{"facebook":{"registered":true,"name":null,"photo":null,"url":null},"instagram":{"registered":false},"flickr":{"registered":null,"username":null},"pinterest":{"registered":true},"twitter":{"registered":true},"tumblr":{"registered":null},"weibo":{"registered":null},"ok":{"registered":null,"age":null,"city":null,"dateJoined":null},"imgur":{"registered":null},"quora":{"registered":null},"qzone":{"registered":null},"gravatar":{"registered":false,"location":null,"name":null,"profileUrl":null,"username":null},"foursquare":{"registered":null,"bio":null,"photo":null,"profileUrl":null},"myspace":{"registered":null}},"messaging":{"skype":{"registered":false,"language":null,"gender":null,"name":null,"id":null,"handle":null,"bio":null,"age":null,"city":null,"state":null,"country":null,"photo":null},"discord":{"registered":null},"kakao":{"registered":null}},"professional":{"github":{"registered":null},"wordpress":{"registered":false},"atlassian":{"registered":false},"linkedin":{"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null},"evernote":{"registered":null},"microsoft":{"registered":true},"zoho":{"registered":null},"adobe":{"registered":null},"hubspot":{"registered":false}},"entertainment":{"spotify":{"registered":false},"lastfm":{"registered":null},"vimeo":{"registered":null},"envato":{"registered":null},"patreon":{"registered":null},"disneyplus":{"registered":false},"netflix":{"registered":null},"archiveorg":{"registered":null}},"travel":{"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}},"financial":{"paypal":{"registered":false}},"education":{"duolingo":{"registered":false}}}},"basic":null,"breach":null}
+      {"social":{"summary":{"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","registeredEducationProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"},"profiles":{"consumerElectronics":{"apple":{"registered":"#present"},"samsung":{"registered":"#present"}},"emailProvider":{"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}},"ecommerce":{"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"},"deliveroo":{"registered":"#present"}},"socialMedia":{"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}},"messaging":{"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}},"professional":{"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}},"entertainment":{"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}},"travel":{"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}},"financial":{"paypal":{"registered":"#present"},"binance":{"registered":"##present"}},"education":{"duolingo":{"registered":"#present"}}}},"basic":"#null"}
+
+        $.data.email.social | actual does not contain expected | all key-values did not match, expected has un-matched keys - [profiles] (MAP:MAP)
+        {"summary":{"registeredProfiles":9,"registeredConsumerElectronicsProfiles":2,"registeredEmailProviderProfiles":1,"registeredEcommerceProfiles":1,"registeredSocialMediaProfiles":3,"registeredMessagingProfiles":0,"registeredProfessionalProfiles":2,"registeredEntertainmentProfiles":0,"registeredTravelProfiles":0,"registeredFinancialProfiles":0,"registeredEducationProfiles":0,"ageOnSocial":null,"numberOfNamesReturned":0,"numberOfPhotosReturned":0},"profiles":{"consumerElectronics":{"apple":{"registered":true},"samsung":{"registered":true}},"emailProvider":{"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}},"ecommerce":{"amazon":{"registered":true},"ebay":{"registered":null},"flipkart":{"registered":null},"jdid":{"registered":null},"bukalapak":{"registered":null},"lazada":{"registered":null},"tokopedia":{"registered":null},"deliveroo":{"registered":false}},"socialMedia":{"facebook":{"registered":true,"name":null,"photo":null,"url":null},"instagram":{"registered":false},"flickr":{"registered":null,"username":null},"pinterest":{"registered":true},"twitter":{"registered":true},"tumblr":{"registered":null},"weibo":{"registered":null},"ok":{"registered":null,"age":null,"city":null,"dateJoined":null},"imgur":{"registered":null},"quora":{"registered":null},"qzone":{"registered":null},"gravatar":{"registered":false,"location":null,"name":null,"profileUrl":null,"username":null},"foursquare":{"registered":null,"bio":null,"photo":null,"profileUrl":null},"myspace":{"registered":null}},"messaging":{"skype":{"registered":false,"language":null,"gender":null,"name":null,"id":null,"handle":null,"bio":null,"age":null,"city":null,"state":null,"country":null,"photo":null},"discord":{"registered":null},"kakao":{"registered":null}},"professional":{"github":{"registered":null},"wordpress":{"registered":false},"atlassian":{"registered":false},"linkedin":{"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null},"evernote":{"registered":null},"microsoft":{"registered":true},"zoho":{"registered":null},"adobe":{"registered":null},"hubspot":{"registered":false}},"entertainment":{"spotify":{"registered":false},"lastfm":{"registered":null},"vimeo":{"registered":null},"envato":{"registered":null},"patreon":{"registered":null},"disneyplus":{"registered":false},"netflix":{"registered":null},"archiveorg":{"registered":null}},"travel":{"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}},"financial":{"paypal":{"registered":false}},"education":{"duolingo":{"registered":false}}}}
+        {"summary":{"registeredProfiles":"#present","registeredConsumerElectronicsProfiles":"#present","registeredEmailProviderProfiles":"#present","registeredEcommerceProfiles":"#present","registeredSocialMediaProfiles":"#present","registeredMessagingProfiles":"#present","registeredProfessionalProfiles":"#present","registeredEntertainmentProfiles":"#present","registeredTravelProfiles":"#present","registeredFinancialProfiles":"#present","registeredEducationProfiles":"#present","ageOnSocial":"#present","numberOfNamesReturned":"#present","numberOfPhotosReturned":"#present"},"profiles":{"consumerElectronics":{"apple":{"registered":"#present"},"samsung":{"registered":"#present"}},"emailProvider":{"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}},"ecommerce":{"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"},"deliveroo":{"registered":"#present"}},"socialMedia":{"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}},"messaging":{"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}},"professional":{"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}},"entertainment":{"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}},"travel":{"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}},"financial":{"paypal":{"registered":"#present"},"binance":{"registered":"##present"}},"education":{"duolingo":{"registered":"#present"}}}}
+
+          $.data.email.social.profiles | actual does not contain expected | all key-values did not match, expected has un-matched keys - [emailProvider, financial] (MAP:MAP)
+          {"consumerElectronics":{"apple":{"registered":true},"samsung":{"registered":true}},"emailProvider":{"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}},"ecommerce":{"amazon":{"registered":true},"ebay":{"registered":null},"flipkart":{"registered":null},"jdid":{"registered":null},"bukalapak":{"registered":null},"lazada":{"registered":null},"tokopedia":{"registered":null},"deliveroo":{"registered":false}},"socialMedia":{"facebook":{"registered":true,"name":null,"photo":null,"url":null},"instagram":{"registered":false},"flickr":{"registered":null,"username":null},"pinterest":{"registered":true},"twitter":{"registered":true},"tumblr":{"registered":null},"weibo":{"registered":null},"ok":{"registered":null,"age":null,"city":null,"dateJoined":null},"imgur":{"registered":null},"quora":{"registered":null},"qzone":{"registered":null},"gravatar":{"registered":false,"location":null,"name":null,"profileUrl":null,"username":null},"foursquare":{"registered":null,"bio":null,"photo":null,"profileUrl":null},"myspace":{"registered":null}},"messaging":{"skype":{"registered":false,"language":null,"gender":null,"name":null,"id":null,"handle":null,"bio":null,"age":null,"city":null,"state":null,"country":null,"photo":null},"discord":{"registered":null},"kakao":{"registered":null}},"professional":{"github":{"registered":null},"wordpress":{"registered":false},"atlassian":{"registered":false},"linkedin":{"registered":true,"url":null,"name":null,"company":null,"title":null,"location":null,"website":null,"twitter":"","photo":null,"connectionCount":null},"evernote":{"registered":null},"microsoft":{"registered":true},"zoho":{"registered":null},"adobe":{"registered":null},"hubspot":{"registered":false}},"entertainment":{"spotify":{"registered":false},"lastfm":{"registered":null},"vimeo":{"registered":null},"envato":{"registered":null},"patreon":{"registered":null},"disneyplus":{"registered":false},"netflix":{"registered":null},"archiveorg":{"registered":null}},"travel":{"booking":{"registered":null},"airbnb":{"registered":null,"about":null,"createdAt":null,"name":null,"identityVerified":null,"location":null,"photo":null,"revieweeCount":null,"trips":null,"work":null}},"financial":{"paypal":{"registered":false}},"education":{"duolingo":{"registered":false}}}
+          {"consumerElectronics":{"apple":{"registered":"#present"},"samsung":{"registered":"#present"}},"emailProvider":{"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}},"ecommerce":{"amazon":{"registered":"#present"},"ebay":{"registered":"#present"},"flipkart":{"registered":"#present"},"jdid":{"registered":"#present"},"bukalapak":{"registered":"#present"},"lazada":{"registered":"#present"},"tokopedia":{"registered":"#present"},"deliveroo":{"registered":"#present"}},"socialMedia":{"facebook":{"registered":"#present","name":"#present","photo":"#present","url":"#present"},"instagram":{"registered":"#present"},"flickr":{"registered":"#present","username":"#present"},"pinterest":{"registered":"#present"},"twitter":{"registered":"#present"},"tumblr":{"registered":"#present"},"weibo":{"registered":"#present"},"ok":{"registered":"#present","age":"#present","city":"#present","dateJoined":"#present"},"imgur":{"registered":"#present"},"quora":{"registered":"#present"},"qzone":{"registered":"#present"},"gravatar":{"registered":"#present","location":"#present","name":"#present","profileUrl":"#present","username":"#present"},"foursquare":{"registered":"#present","bio":"#present","photo":"#present","profileUrl":"#present"},"myspace":{"registered":"#present"}},"messaging":{"skype":{"registered":"#present","language":"#present","gender":"#present","name":"#present","id":"#present","handle":"#present","bio":"#present","age":"#present","city":"#present","state":"#present","country":"#present","photo":"#present"},"discord":{"registered":"#present"},"kakao":{"registered":"#present"}},"professional":{"github":{"registered":"#present"},"wordpress":{"registered":"#present"},"atlassian":{"registered":"#present"},"linkedin":{"registered":"#present","url":"#present","name":"#present","company":"#present","title":"#present","location":"#present","website":"#present","twitter":"#present","photo":"#present","connectionCount":"#present"},"evernote":{"registered":"#present"},"microsoft":{"registered":"#present"},"zoho":{"registered":"#present"},"adobe":{"registered":"#present"},"hubspot":{"registered":"#present"}},"entertainment":{"spotify":{"registered":"#present"},"lastfm":{"registered":"#present"},"vimeo":{"registered":"#present"},"envato":{"registered":"#present"},"patreon":{"registered":"#present"},"disneyplus":{"registered":"#present"},"netflix":{"registered":"#present"},"archiveorg":{"registered":"#present"}},"travel":{"booking":{"registered":"#present"},"airbnb":{"registered":"#present","about":"#present","createdAt":"#present","name":"#present","identityVerified":"#present","location":"#present","photo":"#present","revieweeCount":"#present","trips":"#present","work":"#present"}},"financial":{"paypal":{"registered":"#present"},"binance":{"registered":"##present"}},"education":{"duolingo":{"registered":"#present"}}}
+
+            $.data.email.social.profiles.financial | actual does not contain expected | actual does not contain key - 'binance' (MAP:MAP)
+            {"paypal":{"registered":false}}
+            {"paypal":{"registered":"#present"},"binance":{"registered":"##present"}}
+
+            $.data.email.social.profiles.emailProvider | actual does not contain expected | all key-values did not match, expected has un-matched keys - [google] (MAP:MAP)
+            {"google":{"registered":true,"name":null,"photo":null},"yahoo":{"registered":false},"mailru":{"registered":null},"rambler":{"registered":null}}
+            {"google":{"registered":"#present","name":"#present","photo":"##present","gender":"#present"},"yahoo":{"registered":"#present"},"mailru":{"registered":"#present"},"rambler":{"registered":"#present"}}
+
+              $.data.email.social.profiles.emailProvider.google | actual does not contain expected | actual does not contain key - 'gender' (MAP:MAP)
+              {"registered":true,"name":null,"photo":null}
+              {"registered":"#present","name":"#present","photo":"##present","gender":"#present"}
+
+
+classpath:monnai/MAIN/insights/feature_files/EMAIL_SOCIAL_FIDO_V2.feature:1147 ==> expected: <0> but was: <39>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at TagExecutor.EMAIL_PACKAGES(TagExecutor.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

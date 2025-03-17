@@ -1,0 +1,89 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "7701979717",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response":{
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "917701979717",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": null,
+          "phoneNumberAgeDescription": null,
+          "phoneTenure": null,
+          "country": "IN",
+          "originalCarrier": "JIO - Delhi & NCR",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "Jio Delhi",
+            "originalCarrierCircle": "Jio Delhi",
+            "changeInCarrierRegion": "NOT_CHANGED",
+            "portedEvents": [
+            ]
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "405",
+            "mobileNetworkCode": "872",
+            "networkName": "JIO - Delhi & NCR",
+            "serviceProfileId": "91117"
+          },
+          "numberRecycled": null,
+          "lastDeactivated": {
+            "minimumTenureDays": 190,
+            "maximumTenureDays": 220
+          },
+          "isSpam": null,
+          "topUpHistory": null,
+          "simSwap": null
+        },
+        "social": null,
+        "identity": null,
+        "breach": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "7701979717",
+      "cleansedPhoneNumber": "+917701979717",
+      "referenceId": "4a2298cb-adac-4959-a6a8-57eab49bacdc",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+
+}

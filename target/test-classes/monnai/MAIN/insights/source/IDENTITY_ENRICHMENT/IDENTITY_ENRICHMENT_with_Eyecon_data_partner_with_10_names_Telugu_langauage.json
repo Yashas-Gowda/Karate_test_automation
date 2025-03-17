@@ -1,0 +1,109 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "cleansingFlag": "true",
+    "phoneNumber": "919515652572",
+    "email": "",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "IDENTITY_ENRICHMENT"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": {
+        "correlation": null,
+        "enrichment": {
+          "persons": [
+            {
+              "names": [
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Surya క్లాత్ మార్కెట్"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Vinayaka Mydukur Surya Narayana"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Surya"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Surya Narayanamydk"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Aa Mydukur Bala"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Malli B"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Garments Myd"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Ellu Vinayak Mydukur"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Phodduthoor"
+                },
+                {
+                  "validSince": null,
+                  "lastSeen": null,
+                  "value": "Suryanarayan"
+                }
+              ],
+              "genders": null,
+              "dateOfBirths": null,
+              "addresses": null,
+              "phoneNumber": null,
+              "emailAddress": null,
+              "ipAddresses": null,
+              "nationalId": null
+            }
+          ]
+        },
+        "enrichmentPlus": null
+      },
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919515652572",
+      "cleansedPhoneNumber": "+919515652572",
+      "referenceId": "Dpi_May_27_1",
+      "requestedPackages": [
+        "IDENTITY_ENRICHMENT"
+      ]
+    },
+    "errors": []
+  }
+}

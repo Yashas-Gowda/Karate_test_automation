@@ -1,0 +1,33 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "UPI_BASIC"
+    ],
+    "upiId": ""
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-09e507fcb182c75dfa4b7239f5a9b522a3b05b3d",
+      "requestedPackages": [
+        "UPI_BASIC"
+      ]
+    },
+    "errors": [
+      {
+        "package": "UPI_BASIC",
+        "message": "Missing UPI address",
+        "code": "MISSING_UPI",
+        "type": "INVALID_INPUT"
+      },
+      {
+        "package": "UPI_BASIC",
+        "message": "Invalid UPI address",
+        "code": "INVALID_UPI",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

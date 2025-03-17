@@ -1,0 +1,31 @@
+{
+  "request": {
+    "type": "BREACH_COUNT",
+    "domainName": "example.org",
+    "fromDate": null,
+    "toDate": null,
+    "packages": [
+      "DOMAIN_BREACH"
+    ],
+    "eventType": "ACCOUNT_CREATION"
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "Dpi_April_30_2",
+      "requestedPackages": [
+        "DOMAIN_BREACH"
+      ],
+      "inputType": "BREACH_COUNT",
+      "inputDomainName": "example.org"
+    },
+    "errors": [
+      {
+        "package": null,
+        "message": "Specify date ranges in the request",
+        "code": "INVALID_DATE_RANGE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": []
+  },
+  "response": {
+    "data": null,
+    "meta": null,
+    "errors": [
+      {
+        "package": "DEVICE_DETAILS",
+        "message": "Device Id Format is invalid/incorrect",
+        "code": "INVALID_DEVICE_ID",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

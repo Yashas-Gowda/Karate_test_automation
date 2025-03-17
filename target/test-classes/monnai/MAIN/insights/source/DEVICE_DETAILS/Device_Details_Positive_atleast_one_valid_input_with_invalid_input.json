@@ -1,0 +1,87 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "DEVICE_DETAILS"
+    ],
+    "countryCode": "IN",
+    "deviceIds": [
+      "3342b21d-6ba2-4294-b808-f9612b24fed6",
+      "  ",
+      null,
+      "",
+      null
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": {
+        "deviceRecords": [
+          {
+            "deviceId": "3342b21d-6ba2-4294-b808-f9612b24fed6",
+            "country": "IN",
+            "lastModified": "2025-02-06",
+            "deviceDetails": {
+              "platform": "ANDROID",
+              "type": "SMART PHONE",
+              "manufacturer": "xiaomi",
+              "model": "2107113si"
+            },
+            "location": {
+              "dayLocation": {
+                "latitude": null,
+                "longitude": null,
+                "city": null,
+                "state": null,
+                "zipCode": null
+              },
+              "nightLocation": {
+                "latitude": 12.93614387512207,
+                "longitude": 77.72260665893555,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560087"
+              },
+              "mostSeenLocation": {
+                "latitude": 12.93614387512207,
+                "longitude": 77.72260665893555,
+                "city": "Bengaluru",
+                "state": "KA",
+                "zipCode": "560087"
+              }
+            }
+          }
+        ]
+      },
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "3bd8ce73-2af0-477a-82ba-a4d2da86cd22",
+      "inputDeviceIds": [
+        "3342b21d-6ba2-4294-b808-f9612b24fed6"
+      ],
+      "requestedPackages": [
+        "DEVICE_DETAILS"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

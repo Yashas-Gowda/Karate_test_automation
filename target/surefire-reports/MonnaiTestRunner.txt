@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: MonnaiTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.342 s <<< FAILURE! - in MonnaiTestRunner
+MonnaiTestRunner.testVerification  Time elapsed: 8.31 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [appendedFields] (MAP:MAP)
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{"address":"34/2 ตะปอน ขลุง"}}
+
+    $.appendedFields | not equal | actual does not contain key - 'address' (MAP:MAP)
+    {}
+    {"address":"34/2 ตะปอน ขลุง"}
+
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [matchFirstName] (MAP:MAP)
+  {"matchFirstName":"MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+  {"matchFirstName":"NO_MATCH","matchMiddleName":"NOT_SUPPORTED","matchLastName":"MATCH","matchFullGivenName":"NOT_SUPPORTED","matchDateOfBirth":"MATCH","matchGender":"NOT_SUPPORTED","matchId1":"MATCH","matchId2":"NOT_SUPPORTED","matchId3":"NOT_SUPPORTED","matchId4":"NOT_SUPPORTED","matchId5":"NOT_SUPPORTED","matchBuildingNumber":"NOT_SUPPORTED","matchBuildingName":"NOT_SUPPORTED","matchUnitNumber":"NOT_SUPPORTED","matchStreetName":"NOT_SUPPORTED","matchPoBox":"NOT_SUPPORTED","matchCity":"NOT_SUPPORTED","matchState":"NOT_SUPPORTED","matchCountry":"NOT_SUPPORTED","matchAddressLine1":"NO_DATA","matchAddressLine2":"NO_INPUT","matchAdditionalAddressField1":"NO_INPUT","matchAdditionalAddressField2":"NO_INPUT","matchAdditionalAddressField3":"NOT_SUPPORTED","matchPhone":"NOT_SUPPORTED","matchEmail":"NOT_SUPPORTED","appendedFields":{}}
+
+    $.matchFirstName | not equal (STRING:STRING)
+    'MATCH'
+    'NO_MATCH'
+
+classpath:monnai/MAIN/verification/feature_files/KYC_GOVERNMENT.feature:63 ==> expected: <0> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at MonnaiTestRunner.testVerification(MonnaiTestRunner.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

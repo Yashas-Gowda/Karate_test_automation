@@ -1,0 +1,153 @@
+{
+  "request":{
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_SOCIAL"
+    ],
+    "phoneNumber": "916354392816",
+    "phoneDefaultCountryCode": "IN"
+  } ,
+  "response":{
+    "data": {
+      "phone": {
+        "basic": null,
+        "social": {
+          "summary": {
+            "registeredProfiles": 8,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 2,
+            "registeredProfessionalProfiles": 2,
+            "registeredMessagingProfiles": 2,
+            "lastActivity": null,
+            "numberOfNamesReturned": 0,
+            "numberOfPhotosReturned": 2
+          },
+          "profiles": {
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "accountId": null,
+                "name": null
+              },
+              "yahoo": {
+                "registered": null
+              }
+            },
+            "ecommerce": {
+              "flipkart": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": null
+              },
+              "jdid": {
+                "registered": null
+              },
+              "amazon": {
+                "registered": true
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "instagram": {
+                "registered": true
+              }
+            },
+            "professional": {
+              "microsoft": {
+                "registered": true
+              },
+              "linkedin": {
+                "registered": true
+              }
+            },
+            "messaging": {
+              "telegram": {
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-telegram-production.s3.eu-west-1.amazonaws.com/759a87bb/9ac9/477d/ab6b/18aa9df8568f.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null
+              },
+              "whatsapp": {
+                "registered": true,
+                "photo": "https://eu-west-1-807149116723-wa-profile-production.s3.eu-west-1.amazonaws.com/a2e672e1/25db/4b19/906c/ba1ac33f871a/bc7f68a9-6b2c-4c17-ba81-de76585f597a.jpg",
+                "privacyStatus": "PUBLIC",
+                "lastSeen": null,
+                "about": null
+              },
+              "viber": {
+                "registered": null,
+                "photo": null,
+                "lastSeen": null,
+                "name": null
+              },
+              "kakao": {
+                "registered": null
+              },
+              "skype": {
+                "registered": null,
+                "language": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "name": null,
+                "age": null,
+                "gender": null,
+                "photo": null,
+                "city": null,
+                "state": null,
+                "country": null
+              },
+              "ok": {
+                "registered": null,
+                "age": null
+              },
+              "zalo": {
+                "registered": null,
+                "uid": null,
+                "name": null,
+                "dateOfBirth": null
+              },
+              "line": {
+                "registered": null,
+                "name": null,
+                "photo": null
+              },
+              "snapchat": {
+                "registered": null
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "916354392816",
+      "cleansedPhoneNumber": "+916354392816",
+      "referenceId": "dpi_23_sep25_2",
+      "requestedPackages": [
+        "PHONE_SOCIAL"
+      ]
+    },
+    "errors": []
+  }
+}

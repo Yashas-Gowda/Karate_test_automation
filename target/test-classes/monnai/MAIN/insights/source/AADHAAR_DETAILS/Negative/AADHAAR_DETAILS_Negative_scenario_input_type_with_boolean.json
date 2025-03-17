@@ -1,0 +1,31 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "type": true,
+    "aadhaarNumber": "277145342225",
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "AADHAAR_DETAILS"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UI-152d9f56234f6636a6b8a4ed4a912f326aac0e01",
+      "requestedPackages": [
+        "AADHAAR_DETAILS"
+      ],
+      "inputType": "true",
+      "inputAadhaarNumber": "277145342225",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "AADHAAR_DETAILS",
+        "message": "The passed value of type is invalid for the request",
+        "code": "INVALID_TYPE",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

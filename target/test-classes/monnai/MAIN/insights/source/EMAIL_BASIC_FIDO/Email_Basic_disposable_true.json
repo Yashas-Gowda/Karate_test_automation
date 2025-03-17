@@ -1,0 +1,73 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "ledifop150@kvegg.com"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "kvegg.com",
+            "tld": ".com",
+            "creationTime": "2022-11-16 07:40:02",
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": "PrivacyGuardian.org llc",
+            "registrarName": "NameSilo, LLC",
+            "disposable": true,
+            "freeProvider": false,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": null,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": false,
+            "noOfBreaches": 0,
+            "firstBreach": null,
+            "lastBreach": null,
+            "breaches": []
+          },
+          "emailTenure": null
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "Dpi_nov_14_release_2",
+      "inputEmail": "ledifop150@kvegg.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": []
+  }
+}

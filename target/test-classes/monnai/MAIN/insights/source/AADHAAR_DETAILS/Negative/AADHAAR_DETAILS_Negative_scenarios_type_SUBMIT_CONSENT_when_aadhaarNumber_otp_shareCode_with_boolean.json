@@ -1,0 +1,56 @@
+{
+  "request": {
+    "phoneDefaultCountryCode": "IN",
+    "type": "SUBMIT_CONSENT",
+    "requestReferenceId": true,
+    "otp": true,
+    "shareCode": "1234",
+    "includeAadhaarXMLFile": true,
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "AADHAAR_DETAILS"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": {
+        "basic": null,
+        "details": {
+          "packageDetails": [
+            "S3134"
+          ]
+        }
+      },
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "UI-152d9f56234f6636a6b8a4ed4a912f326aac0e01",
+      "requestedPackages": [
+        "AADHAAR_DETAILS"
+      ],
+      "inputType": "SUBMIT_CONSENT",
+      "inputRequestReferenceId": "true",
+      "inputOtp": "true",
+      "inputShareCode": "1234",
+      "inputIncludeAadhaarXMLFile": true,
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": []
+  }
+}

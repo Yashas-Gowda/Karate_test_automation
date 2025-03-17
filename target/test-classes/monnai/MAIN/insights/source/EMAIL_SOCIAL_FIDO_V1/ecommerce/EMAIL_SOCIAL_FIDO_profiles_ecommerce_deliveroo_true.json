@@ -1,0 +1,184 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "email": "roland@barrow-lane.co.uk",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ]
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 8,
+            "registeredConsumerElectronicsProfiles": 0,
+            "registeredEmailProviderProfiles": 1,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 1,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 1,
+            "registeredEntertainmentProfiles": 1,
+            "registeredTravelProfiles": 1,
+            "registeredFinancialProfiles": 1,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 0
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": false
+              },
+              "samsung": null
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "name": "roland@barrow-lane.co.uk",
+                "photo": null
+              },
+              "yahoo": {
+                "registered": false
+              },
+              "mailru": null,
+              "rambler": null
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": false
+              },
+              "deliveroo": {
+                "registered": true
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": false,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "pinterest": {
+                "registered": false
+              },
+              "twitter": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": null,
+                "id": null,
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": null,
+                "state": null,
+                "country": null,
+                "photo": null
+              },
+              "discord": null,
+              "kakao": null
+            },
+            "professional": {
+              "wordpress": {
+                "registered": false
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "hubspot": {
+                "registered": false
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": true
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": true
+              },
+              "airbnb": {
+                "registered": null,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            },
+            "financial": {
+              "paypal": {
+                "registered": true
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "98507e37-ce6c-40b7-9e39-4a990dbab3ec",
+      "inputEmail": "roland@barrow-lane.co.uk",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

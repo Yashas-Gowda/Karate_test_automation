@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.1:181]","start":1736840692122,"end":1736840700543,"title":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.1:181] 13:14:52.122-13:15:00.543 DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- Email_Basic_isBreached_false_emailTenure_null"},{"id":2,"group":2,"content":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.2:182]","start":1736840692122,"end":1736840696486,"title":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.2:182] 13:14:52.122-13:14:56.486 DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- Email_Basic_freeProvider_false"},{"id":3,"group":3,"content":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.3:183]","start":1736840692122,"end":1736840696408,"title":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.3:183] 13:14:52.122-13:14:56.408 DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- Email_Basic_deliverable_false"},{"id":4,"group":4,"content":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.4:184]","start":1736840692123,"end":1736840696281,"title":"monnai\/MAIN\/insights\/feature_files\/EMAIL_BASIC_FIDO[3.4:184] 13:14:52.123-13:14:56.281 DPI EMAIL_BASIC positive scenario - Imp scenarios for regression with emailTenure null | :- Email_Basic_disposable_true"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

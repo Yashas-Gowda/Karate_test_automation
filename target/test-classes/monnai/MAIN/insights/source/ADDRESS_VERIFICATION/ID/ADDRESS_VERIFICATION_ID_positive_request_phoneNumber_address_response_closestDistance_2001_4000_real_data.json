@@ -1,0 +1,74 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "6285717125065",
+    "address": {
+      "addressLine1": "Jl.jembatan.besi 2 No.65",
+      "addressLine2": null,
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": null,
+      "state": null,
+      "postalCode": null,
+      "country": "INDONESIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "closestDistance": {
+            "min": 2001.0,
+            "max": 4000.0
+          }
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "6285717125065",
+      "cleansedPhoneNumber": "+6285717125065",
+      "referenceId": "jan_13_prime_2",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "Jl.jembatan.besi 2 No.65",
+        "addressLine2": null,
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": null,
+        "state": null,
+        "postalCode": null,
+        "country": "INDONESIA"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

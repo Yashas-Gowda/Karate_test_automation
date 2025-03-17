@@ -1,0 +1,29 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "IN",
+    "pan": "abc123",
+    "packages": [
+      "KYC_PAN"
+    ]
+  },
+  "response": {
+    "data": null,
+    "meta": {
+      "referenceId": "UkgIHje5SQ0EP2A=",
+      "requestedPackages": [
+        "KYC_PAN"
+      ],
+      "inputPan": "abc123",
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+      {
+        "package": "KYC_PAN",
+        "message": "Pan format is incorrect",
+        "code": "INVALID_PAN",
+        "type": "INVALID_INPUT"
+      }
+    ]
+  }
+}

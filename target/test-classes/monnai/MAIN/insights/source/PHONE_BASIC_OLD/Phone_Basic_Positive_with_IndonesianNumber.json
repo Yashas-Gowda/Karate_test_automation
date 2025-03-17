@@ -1,0 +1,74 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "PHONE_BASIC"
+    ],
+    "phoneNumber": "81324446850",
+    "phoneDefaultCountryCode": "ID"
+  },
+  "response": {
+    "data": {
+      "phone": {
+        "basic": {
+          "phoneNumber": "6281324446850",
+          "phoneValid": true,
+          "phoneType": "MOBILE",
+          "phoneDisposable": false,
+          "active": "YES",
+          "activationDate": null,
+          "activeSinceXDays": null,
+          "simType": null,
+          "phoneNumberAge": 4,
+          "phoneNumberAgeDescription": "Above 12 Months",
+          "phoneTenure": {
+            "min": 12,
+            "max": null
+          },
+          "country": "ID",
+          "originalCarrier": "TELKOMSEL",
+          "ported": false,
+          "portedHistory": {
+            "portedDate": null,
+            "numberOfPorts": 0,
+            "portedSinceXDays": null,
+            "currentCarrierCircle": "TELKOMSEL",
+            "originalCarrierCircle": "TELKOMSEL",
+            "changeInCarrierRegion": "NOT_SUPPORTED",
+            "portedEvents": []
+          },
+          "currentNetwork": {
+            "localRoutingNumber": null,
+            "mobileCountryCode": "510",
+            "mobileNetworkCode": "10",
+            "networkName": "TELKOMSEL",
+            "serviceProfileId": "62504"
+          },
+          "lastDeactivated": null,
+          "isSpam": null
+        },
+        "social": null,
+        "identity": null
+      },
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "81324446850",
+      "cleansedPhoneNumber": "+6281324446850",
+      "referenceId": "#ignore",
+      "requestedPackages": [
+        "PHONE_BASIC"
+      ],
+      "inputAddress": null
+    },
+    "errors": []
+  }
+}

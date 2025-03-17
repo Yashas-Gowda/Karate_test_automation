@@ -1,0 +1,80 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "mysite@you.me.net"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": true,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "you.me.net",
+            "tld": ".net",
+            "creationTime": null,
+            "updateTime": null,
+            "expiryTime": null,
+            "registered": true,
+            "companyName": null,
+            "registrarName": null,
+            "disposable": true,
+            "freeProvider": true,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": true,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 1,
+            "firstBreach": "2019-02-25",
+            "lastBreach": "2019-02-25",
+            "breaches": [
+              {
+                "platformName": "Verifications.io",
+                "domainName": "verifications.io",
+                "breachDate": "2019-02-25"
+              }
+            ]
+          },
+          "emailTenure": 5.96
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "66996b3f-a20e-46b0-973a-32c1f79d21de",
+      "inputEmail": "mysite@you.me.net",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}

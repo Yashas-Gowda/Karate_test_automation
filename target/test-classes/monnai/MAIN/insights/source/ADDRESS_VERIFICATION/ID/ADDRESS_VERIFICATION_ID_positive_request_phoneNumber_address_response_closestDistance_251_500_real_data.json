@@ -1,0 +1,74 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "phoneDefaultCountryCode": "ID",
+    "phoneNumber": "'628567848750",
+    "address": {
+      "addressLine1": "Jalan Pegangsaan Dua",
+      "addressLine2": null,
+      "addressLine3": null,
+      "addressLine4": null,
+      "city": null,
+      "state": null,
+      "postalCode": null,
+      "country": "INDONESIA"
+    },
+    "packages": [
+      "ADDRESS_VERIFICATION"
+    ]
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": {
+        "basic": null,
+        "verification": {
+          "closestDistance": {
+            "min": 251.0,
+            "max": 500.0
+          }
+        }
+      },
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "'628567848750",
+      "cleansedPhoneNumber": "+628567848750",
+      "referenceId": "jan_13_prime_2",
+      "requestedPackages": [
+        "ADDRESS_VERIFICATION"
+      ],
+      "inputAddress": {
+        "addressLine1": "Jalan Pegangsaan Dua",
+        "addressLine2": null,
+        "addressLine3": null,
+        "addressLine4": null,
+        "addressLine5": null,
+        "addressLine6": null,
+        "addressLine7": null,
+        "addressLine8": null,
+        "city": null,
+        "state": null,
+        "postalCode": null,
+        "country": "INDONESIA"
+      },
+      "inputPhoneDefaultCountryCode": "ID"
+    },
+    "errors": []
+  }
+}

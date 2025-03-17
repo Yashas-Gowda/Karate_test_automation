@@ -1,0 +1,258 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "packages": [
+      "EMAIL_SOCIAL"
+    ],
+    "email": "nhubinh6@gmail.com"
+  },
+  "response":{
+    "data": {
+      "phone": null,
+      "email": {
+        "social": {
+          "summary": {
+            "registeredProfiles": 16,
+            "registeredConsumerElectronicsProfiles": 2,
+            "registeredEmailProviderProfiles": 2,
+            "registeredEcommerceProfiles": 1,
+            "registeredSocialMediaProfiles": 4,
+            "registeredMessagingProfiles": 1,
+            "registeredProfessionalProfiles": 4,
+            "registeredEntertainmentProfiles": 2,
+            "registeredTravelProfiles": 0,
+            "ageOnSocial": null,
+            "numberOfNamesReturned": 1,
+            "numberOfPhotosReturned": 2
+          },
+          "profiles": {
+            "consumerElectronics": {
+              "apple": {
+                "registered": true
+              },
+              "samsung": {
+                "registered": true
+              }
+            },
+            "emailProvider": {
+              "google": {
+                "registered": true,
+                "photo": "https://lh3.googleusercontent.com/a-/AD_cMMSCTAFcK9oXUIjIO9U-ioUOH5RIYc6AT9EIeTgSJZVWCVy3"
+              },
+              "yahoo": {
+                "registered": true
+              },
+              "mailru": {
+                "registered": false
+              },
+              "rambler": {
+                "registered": false
+              }
+            },
+            "ecommerce": {
+              "amazon": {
+                "registered": false
+              },
+              "ebay": {
+                "registered": null
+              },
+              "flipkart": {
+                "registered": false
+              },
+              "jdid": {
+                "registered": null
+              },
+              "bukalapak": {
+                "registered": false
+              },
+              "lazada": {
+                "registered": true
+              },
+              "tokopedia": {
+                "registered": false
+              }
+            },
+            "socialMedia": {
+              "facebook": {
+                "registered": true,
+                "name": null,
+                "photo": null,
+                "url": null
+              },
+              "instagram": {
+                "registered": true
+              },
+              "flickr": {
+                "registered": true,
+                "username": "nnhubinh16011992"
+              },
+              "pinterest": {
+                "registered": true
+              },
+              "twitter": {
+                "registered": false
+              },
+              "tumblr": {
+                "registered": false
+              },
+              "weibo": {
+                "registered": false
+              },
+              "ok": {
+                "registered": false,
+                "age": null,
+                "city": null,
+                "dateJoined": null
+              },
+              "imgur": {
+                "registered": false
+              },
+              "quora": {
+                "registered": false
+              },
+              "qzone": {
+                "registered": false
+              },
+              "gravatar": {
+                "registered": false,
+                "location": null,
+                "name": null,
+                "profileUrl": null,
+                "username": null
+              },
+              "foursquare": {
+                "registered": false,
+                "bio": null,
+                "photo": null,
+                "profileUrl": null
+              },
+              "myspace": {
+                "registered": false
+              }
+            },
+            "messaging": {
+              "skype": {
+                "registered": true,
+                "language": null,
+                "gender": null,
+                "name": "Trần Bình",
+                "id": "nnhubinh16121991",
+                "handle": null,
+                "bio": null,
+                "age": null,
+                "city": "Thanh Pho Ho Chi Minh",
+                "state": "p11 q6",
+                "country": "Vietnam",
+                "photo": "https://avatar.skype.com/v1/avatars/nnhubinh16121991/public?returnDefaultImage=true"
+              },
+              "discord": {
+                "registered": null
+              },
+              "kakao": {
+                "registered": null
+              }
+            },
+            "professional": {
+              "github": {
+                "registered": true
+              },
+              "wordpress": {
+                "registered": false
+              },
+              "atlassian": {
+                "registered": null
+              },
+              "linkedin": {
+                "registered": null,
+                "url": null,
+                "name": null,
+                "company": null,
+                "title": null,
+                "location": null,
+                "website": null,
+                "twitter": null,
+                "photo": null,
+                "connectionCount": null
+              },
+              "evernote": {
+                "registered": true
+              },
+              "microsoft": {
+                "registered": true
+              },
+              "zoho": {
+                "registered": false
+              },
+              "adobe": {
+                "registered": true
+              }
+            },
+            "entertainment": {
+              "spotify": {
+                "registered": true
+              },
+              "lastfm": {
+                "registered": false
+              },
+              "vimeo": {
+                "registered": false
+              },
+              "envato": {
+                "registered": true
+              },
+              "patreon": {
+                "registered": false
+              },
+              "disneyplus": {
+                "registered": false
+              },
+              "netflix": {
+                "registered": false
+              },
+              "archiveorg": {
+                "registered": false
+              }
+            },
+            "travel": {
+              "booking": {
+                "registered": false
+              },
+              "airbnb": {
+                "registered": false,
+                "about": null,
+                "createdAt": null,
+                "name": null,
+                "identityVerified": null,
+                "location": null,
+                "photo": null,
+                "revieweeCount": null,
+                "trips": null,
+                "work": null
+              }
+            }
+          }
+        },
+        "basic": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "AMS-test-1",
+      "inputEmail": "nhubinh6@gmail.com",
+      "requestedPackages": [
+        "EMAIL_SOCIAL"
+      ]
+    },
+    "errors": [
+    ]
+  }
+  }

@@ -1,0 +1,128 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMPLOYMENT_ADVANCED"
+    ],
+    "phoneNumber": "919163238236",
+    "phoneDefaultCountryCode": "IN"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": null,
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": {
+        "basic": null,
+        "advanced": {
+          "summary": {
+            "isEmployed": true,
+            "isNameUnique": true,
+            "isNameExact": true,
+            "isPfFiledLastMonth": false,
+            "hasPfFilingDetails": true,
+            "recentEmployerName": "TELEPERFORMANCE GLOBAL SERVICES PRIVATE LIMITED",
+            "noOfPfAccounts": 2,
+            "dateOfJoining": "2024-12-16",
+            "matchingPfAccountNumber": "101658587636"
+          },
+          "employmentHistory": [
+            {
+              "pfAccountNumber": "101658587636",
+              "name": "SAIKAT DAS",
+              "gender": "MALE",
+              "dateOfBirth": "1982-10-12",
+              "nationalIdVerificationStatus": true,
+              "employerName": "TELEPERFORMANCE GLOBAL SERVICES PRIVATE LIMITED",
+              "dateOfJoining": "2024-12-16",
+              "reasonOfExit": "",
+              "additionalDetails": {
+                "nationalId": "********4351",
+                "taxId": "AM******5F",
+                "email": "s*********2@rediffmail.com",
+                "bankAccountNumber": "***********3322",
+                "bankBranchCode": "BKID*****42",
+                "bankAddress": "BANK OF INDIA,BARASAT",
+                "pfNomineeName": "SAMIR DAS",
+                "pfNomineeRelation": "FATHER"
+              }
+            },
+            {
+              "pfAccountNumber": "100327821218",
+              "name": "Saikat Das",
+              "gender": "MALE",
+              "dateOfBirth": "1988-06-16",
+              "nationalIdVerificationStatus": false,
+              "employerName": "PACE SETTERS BUSINESS SOLUTIONS PVT LTD",
+              "dateOfJoining": "2013-09-01",
+              "dateOfExit": "2014-03-31",
+              "reasonOfExit": ""
+            }
+          ],
+          "pfFilingDetails": {
+            "employeePfMatches": [
+              {
+                "name": "SAIKAT DAS",
+                "confidence": 1.0,
+                "pfHistory": {
+                  "JAN-25": true,
+                  "DEC-24": true,
+                  "NOV-24": null
+                }
+              }
+            ],
+            "employerPfFilingDetails": [
+              {
+                "currency": "INR",
+                "totalAmount": "177221144",
+                "employeeCount": 53365,
+                "wageMonth": "JAN-25"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "176225360",
+                "employeeCount": 56442,
+                "wageMonth": "DEC-24"
+              },
+              {
+                "currency": "INR",
+                "totalAmount": "175117758",
+                "employeeCount": 56274,
+                "wageMonth": "NOV-24"
+              }
+            ]
+          }
+        },
+        "social": null,
+        "details": null
+      },
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "inputPhoneNumber": "919163238236",
+      "cleansedPhoneNumber": "+919163238236",
+      "referenceId": "423b2b91-8647-449c-aaf0-e33686d6e102",
+      "requestedPackages": [
+        "EMPLOYMENT_ADVANCED"
+      ],
+      "inputPhoneDefaultCountryCode": "IN"
+    },
+    "errors": [
+    ]
+  }
+
+}

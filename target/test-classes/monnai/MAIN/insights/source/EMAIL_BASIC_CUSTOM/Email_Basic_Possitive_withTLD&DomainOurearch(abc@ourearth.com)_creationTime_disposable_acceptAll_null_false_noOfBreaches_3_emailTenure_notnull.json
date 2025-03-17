@@ -1,0 +1,95 @@
+{
+  "request": {
+    "eventType": "ACCOUNT_CREATION",
+    "cleansingFlag": true,
+    "packages": [
+      "EMAIL_BASIC"
+    ],
+    "email": "mysite@ourearth.com"
+  },
+  "response": {
+    "data": {
+      "phone": null,
+      "email": {
+        "social": null,
+        "basic": {
+          "deliverable": false,
+          "domainDetails": {
+            "domainType": "valid",
+            "domainName": "ourearth.com",
+            "tld": ".com",
+            "creationTime": "1997-02-20 00:00:00",
+            "updateTime": "2012-07-03 00:00:00",
+            "expiryTime": "2018-02-21 00:00:00",
+            "registered": false,
+            "companyName": "John Ullman",
+            "registrarName": "GoDaddy.com LLC",
+            "disposable": false,
+            "freeProvider": false,
+            "dmarcCompliance": null,
+            "spfStrict": null,
+            "suspiciousTld": null,
+            "websiteExists": false,
+            "acceptAll": false,
+            "custom": null
+          },
+          "breach": {
+            "isBreached": true,
+            "noOfBreaches": 4,
+            "firstBreach": "2019-02-25",
+            "lastBreach": "2025-01-13",
+            "breaches": [
+              {
+                "platformName": "Verifications.io",
+                "domainName": "verifications.io",
+                "breachDate": "2019-02-25"
+              },
+              {
+                "platformName": "Naz.API",
+                "domainName": "",
+                "breachDate": "2023-09-20"
+              },
+              {
+                "platformName": "Combolists Posted to Telegram",
+                "domainName": "",
+                "breachDate": "2024-05-28"
+              },
+              {
+                "platformName": "Stealer Logs, Jan 2025",
+                "domainName": "",
+                "breachDate": "2025-01-13"
+              }
+            ]
+          },
+          "emailTenure": 5.96
+        },
+        "breach": null
+      },
+      "address": null,
+      "name": null,
+      "ip": null,
+      "identity": null,
+      "upi": null,
+      "device": null,
+      "employment": null,
+      "income": null,
+      "blacklist": null,
+      "domain": null,
+      "kyc": null,
+      "bank": null,
+      "aadhaar": null,
+      "statement": null,
+      "business": null,
+      "bre": null
+    },
+    "meta": {
+      "referenceId": "a02c79b2-680e-47d2-99a9-b3aa419776aa",
+      "inputEmail": "mysite@ourearth.com",
+      "requestedPackages": [
+        "EMAIL_BASIC"
+      ]
+    },
+    "errors": [
+    ]
+  }
+}
